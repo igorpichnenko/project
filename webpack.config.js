@@ -9,6 +9,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
 	entry: {
 	  'index': './src/pages/index/index.js',
+	   'color-type': './src/pages/color-type/color-type.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -68,6 +69,12 @@ module.exports = {
 			hash: true,
 			template: './src/pages/index/index.pug',
 			filename: 'index.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/color-type/color-type.pug',
+			filename: 'color-type.html'
 		}),
 	],
 	// Стартовая страница

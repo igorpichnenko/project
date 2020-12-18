@@ -16,3 +16,10 @@ body{
   color: $dark75;
 }
 
+// fonts 
+@import './fonts.scss';
+
+// blocks style
+
+@import '../blocks/color-options/color-options.scss';
+@import '../blocks/title-options/title-options.scss';
