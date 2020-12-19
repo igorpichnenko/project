@@ -14,7 +14,7 @@
   &__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
+    font-size: rem(19px);
     line-height: 27.79px;
     color: $dark100;
     white-space: nowrap;
@@ -24,7 +24,7 @@
     font-style: normal;
     font-weight: normal;
     color: $dark100;
-    font-size: 19px;
+    font-size: rem(19px);
     line-height: 28px;
   }
   &__block {
