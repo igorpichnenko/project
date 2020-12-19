@@ -1,0 +1,25 @@
+extends ../../layouts/base
+include ../../blocks/header/header
+include ../../blocks/footer/footer
+include ../../blocks/footercard/footercard
+include ../../blocks/headerlogin/headerlogin
+include ../../components/button/button
+include ../../components/nav/nav
+include ../../components/logo/logo
+include ../../components/login/login
+include ../../components/list/list
+
+block title
+  title color-type
+
+block head
+    link(rel="stylesheet" href="headers-footers.css")
+    
+block content
+   +header
+   +header-login
+   +footer
+   +footer-bottom
+
+block script
+    script(src="./headers-footers.js")

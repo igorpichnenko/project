@@ -10,6 +10,8 @@ module.exports = {
 	entry: {
 	  'index': './src/pages/index/index.js',
 	   'color-type': './src/pages/color-type/color-type.js',
+	   'headers-footers': './src/pages/headers-footers/headers-footers.js',
+	    'form-elements': './src/pages/form-elements/form-elements.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -69,6 +71,18 @@ module.exports = {
 			hash: true,
 			template: './src/pages/index/index.pug',
 			filename: 'index.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/form-elements/form-elements.pug',
+			filename: 'form-elements.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/headers-footers/headers-footers.pug',
+			filename: 'headers-footers.html'
 		}),
 		new HtmlWebpackPlugin({
 			inject: false,

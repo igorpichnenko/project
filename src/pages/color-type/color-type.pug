@@ -1,7 +1,6 @@
 extends ../../layouts/base
 include ../../blocks/color-options/color-options
 include ../../blocks/title-options/title-options
-include ../../components/logo/logo
 
 block title
   title color-type
@@ -11,8 +10,6 @@ block head
 
 
 block content
-  .logo-colorType
-  +logo-svg
   .color-type
    .color-type_colors
     +color-options

@@ -1,0 +1,15 @@
+mixin button2({text, mods, theme, disabled=false})
+  -
+    let typeMods = {
+      arrow: 'button__type-arrow',
+    };
+    let themeMods = {
+      flat: 'button_theme_flat',
+      bordered: 'button__type-border',
+    };
+    let classes = [
+      typeMods[mods],
+      themeMods[theme],
+    ];
+
+  button.button(class=classes, disabled=disabled)= text

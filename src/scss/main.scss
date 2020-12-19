@@ -17,9 +17,24 @@ body{
 }
 
 // fonts 
+
 @import './fonts.scss';
 
 // blocks style
 
 @import '../blocks/color-options/color-options.scss';
 @import '../blocks/title-options/title-options.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/footercard/footercard.scss';
+@import '../blocks/headerlogin/headerlogin.scss';
+
+// components style
+
+@import '../components/nav/nav.scss';
+@import '../components/login/login.scss';
+@import '../components/button/button.scss';
+@import '../components/list/list.scss';
+@import '../components/footernav/footernav.scss';
+@import '../components/logo/logo.scss';
+@import '../components/checkbox/checkbox.scss';
