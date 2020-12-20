@@ -78,6 +78,11 @@ module.exports = {
 			template: './src/pages/form-elements/form-elements.pug',
 			filename: 'form-elements.html'
 		}),
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
+			'window.jQuery': 'jquery'
+		}),
 		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
