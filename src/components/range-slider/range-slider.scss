@@ -18,9 +18,7 @@ line-height: 15px;
 text-align: right;
 color: rgba(31, 32, 65, 0.5);
 position: relative;
-
 }
-
 .range-minus{
   color: rgba(31, 32, 65, 0.5);
   font-family: Montserrat;
@@ -28,12 +26,11 @@ font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 15px;
-display: none;
+position: absolute;
 top: 5px;
-left: 50px;
+left: 56.5px;
 z-index: 3;
 }
-
 
 .irs-handle{
 width: 12px;

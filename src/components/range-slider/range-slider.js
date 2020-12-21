@@ -2,7 +2,7 @@ import 'ion-rangeslider';
 import '../../components/range-slider/RangeSlider.scss';
 
 
-    let $range = $("#slider");
+    let $range = $(".range-slider");
     let $inputFrom = $("#out");
     let $inputTo = $("#out2");
     let instance;
@@ -31,5 +31,5 @@ import '../../components/range-slider/RangeSlider.scss';
         to = data.to;
     
         $inputFrom.prop("value", from +"₽");
-        $inputTo.prop("value", "-" +" "+to + "₽");
+        $inputTo.prop("value",to + "₽");
     }
