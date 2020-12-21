@@ -50,7 +50,114 @@ background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	box-shadow:  0 0 0 1.5px #BC9CFF;
 }
 
-	
+	// checkbox list
+
+.checkbox-group{
+  
+  margin:40px 0 0 40px ;
+}
+.checkbox-wrapper {
+  position: absolute;
+  top: 40px;
+  left: 13.5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: none;
+}
+.checkbox-items {
+  margin-top: 8px;
+  position: relative;
+}
+.checkbox-list__label {
+  padding-left: 25px;
+   margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+.checkbox-list__label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background .1s linear, border .1s linear;
+}
+.checkbox-list__icon_rotate{
+  transform: rotate(180deg);
+}
+.checkbox-list__icon{
+  cursor: pointer;
+  
+}
+.checkbox-list__input:checked + .checkbox-list__label:before {
+ /*background-image: url('vector.svg'); */
+ background-repeat: no-repeat;
+  border-color: #BC9CFF;
+  background-position: center ;
+}
+
+.checkbox-list__input:checked + .checkbox-list__label:after {
+  opacity: 1;
+}
+
+.checkbox-list__input {
+
+  webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-list__icon{
+  cursor: pointer;
+}
+.checkbox-list__title{
+  display: flex;
+  align-items: center;}
+
+.checkbox-list {
+  position: relative;
+  max-width: 320px;
+  height: 203px;
+  
+}
+.checkbox-list__button {
+  position: relative;
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  box-sizing: border-box;
+  outline: none;
+  height: 44px;
+  background-color: #fff;
+  padding: 13px 15px 13px 15px;
+  cursor: pointer;
+}
+
+
+.checkbox-wrapper--visible {
+  display: block;
+}
+
+
 
 
 

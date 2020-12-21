@@ -1,3 +1,30 @@
 mixin checkbox
     input(type="checkbox" id="checkbox").checkbox
     label(for="checkbox") Получать спецпредложения
+mixin checkbox-list
+    .checkbox-group
+      .checkbox-list
+        .checkbox-list__title
+          button.checkbox-list__button expandable checkbox list
+          |       
+          i.material-icons.checkbox-list__icon expand_more
+        |       
+        .checkbox-wrapper
+          .checkbox-items
+            input#ip1.checkbox-list__input(type='checkbox')
+            label.checkbox-list__label(for='ip1') &Zcy;&acy;&vcy;&tcy;&rcy;&acy;&kcy;
+          .checkbox-items
+            input#ip2.checkbox-list__input(type='checkbox', checked='')
+            label.checkbox-list__label(for='ip2') &Pcy;&icy;&scy;&softcy;&mcy;&iecy;&ncy;&ncy;&ycy;&jcy; &scy;&tcy;&ocy;&lcy;
+          .checkbox-items
+            input#ip3.checkbox-list__input(type='checkbox', checked='')
+            label.checkbox-list__label(for='ip3') &Scy;&tcy;&ucy;&lcy; &dcy;&lcy;&yacy; &kcy;&ocy;&rcy;&mcy;&lcy;&iecy;&ncy;&icy;&yacy;
+          .checkbox-items
+            input#ip4.checkbox-list__input(type='checkbox', checked='')
+            label.checkbox-list__label(for='ip4') &Kcy;&rcy;&ocy;&vcy;&acy;&tcy;&kcy;&acy;
+          .checkbox-items
+            input#ip5.checkbox-list__input(type='checkbox')
+            label.checkbox-list__label(for='ip5') &Tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;
+          .checkbox-items
+            input#ip6.checkbox-list__input(type='checkbox')
+            label.checkbox-list__label(for='ip6') &SHcy;&acy;&mcy;&pcy;&ucy;&ncy;&softcy;

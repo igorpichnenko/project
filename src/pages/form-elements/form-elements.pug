@@ -2,7 +2,7 @@ extends ../../layouts/base
 include ../../components/range-slider/range-slider
 include ../../components/pagination/pagination
 include ../../blocks/dropdown/dropdown
-
+include ../../components/checkbox/checkbox
 
 block title
   title color-type
@@ -13,7 +13,7 @@ block head
 
 
 block content
-   +pagination
+   +checkbox-list
 
 block script
     script(src="./form-elements.js")
