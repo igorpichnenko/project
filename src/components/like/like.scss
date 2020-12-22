@@ -1,0 +1,53 @@
+$main: rgba(31, 32, 65, 0.25);
+$active: #bc9cff;
+$width: 40px;
+$like: 10px;
+$like-ml: 5px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.like {
+  margin: 40px 0 0 40px;
+  &__number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: $main;
+    width: $width;
+    height: 20px;
+    box-shadow: 0 0 0 1.5px rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    user-select: none;
+
+    &:before {
+      content: "favorite_border";
+      font-family: "Material Icons";
+      z-index: 0;
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $like;
+      color: $main;
+      margin-left: $like-ml;
+      margin-right: $width / 2 - $like - $like-ml;
+    }
+  }
+  &__input {
+    display: none;
+    &:checked + .like__number {
+      box-shadow: 0 0 0 1.5px $active;
+      color: $active;
+      &:before {
+      content: "favorite";
+      color: $active;
+      }
+    }
+  }
+}
