@@ -8,14 +8,6 @@ $green: #6fcf97;
 
 
 
-body{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: $dark75;
-  font-style: normal;
-}
 
 // function px to rem
 
@@ -36,7 +28,7 @@ body{
 @import '../blocks/header/header.scss';
 @import '../blocks/footercard/footercard.scss';
 @import '../blocks/headerlogin/headerlogin.scss';
-@import '../blocks/dropdown/dropdown.scss';
+@import '../blocks/form/form.scss';
 
 // components style
 
@@ -51,3 +43,7 @@ body{
 @import '../components/pagination/pagination.scss';
 @import '../components/like/like.scss';
 @import '../components/rate/rate.scss';
+@import '../components/dropdown/dropdown.scss';
+@import '../components/input/input.scss';
+@import '../components/title/title.scss';
+@import '../components/calendar/calendar.scss';

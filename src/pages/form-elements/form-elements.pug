@@ -1,10 +1,14 @@
 extends ../../layouts/base
 include ../../components/range-slider/range-slider
 include ../../components/pagination/pagination
-include ../../blocks/dropdown/dropdown
+include ../../components/dropdown/dropdown
 include ../../components/checkbox/checkbox
 include ../../components/like/like
 include ../../components/rate/rate
+include ../../components/input/input
+include ../../components/title/title
+include ../../components/button/button
+include ../../components/calendar/calendar
 
 block title
   title color-type
@@ -12,11 +16,19 @@ block title
 block head
     link(rel="stylesheet" href="form-elements.css")
     link(href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet")
-
+    
 
 block content
-    +rate
-
+   form.form-mask
+    +title('Text Field')
+    +input('Email','email')
+    +title('Text Field')
+    +input('This is pretty awesome')
+    +title('dropdown')
+    +dropdown
+    +title('masked text field')
+    +input('ДД.ММ.ГГГГ','text', 'input mask-date')
+    +calendar
 block script
     script(src="./form-elements.js")
     
