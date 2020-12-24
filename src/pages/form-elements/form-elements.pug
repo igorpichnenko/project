@@ -20,6 +20,7 @@ block head
 
 block content
    form.form-mask
+    +calendar
     +title('Text Field')
     +input('Email','email')
     +title('Text Field')
@@ -28,7 +29,7 @@ block content
     +dropdown
     +title('masked text field')
     +input('ДД.ММ.ГГГГ','text', 'input mask-date')
-    +calendar
+    
 block script
     script(src="./form-elements.js")
     
