@@ -1,7 +1,6 @@
 .checkbox {
 	position: absolute;
-	z-index: -1;
-	opacity: 0;
+	
 
 }
 .checkbox + label {
@@ -54,16 +53,18 @@ background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 .checkbox-group{
   
-  margin:40px 0 0 40px ;
+
 }
 .checkbox-wrapper {
   position: absolute;
   top: 40px;
-  left: 13.5px;
+/*  left: 13.5px;*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   display: none;
+  background-color: #fff;
+ z-index: 3;
 }
 .checkbox-items {
   margin-top: 8px;
@@ -99,11 +100,12 @@ background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 .checkbox-list__icon{
   cursor: pointer;
-  
+  margin-left: 63px;
+  color: rgba(31, 32, 65, 0.75);
 }
 .checkbox-list__input:checked + .checkbox-list__label:before {
  /*background-image: url('vector.svg'); */
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   border-color: #BC9CFF;
   background-position: center ;
 }
@@ -113,7 +115,6 @@ background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
 .checkbox-list__input {
-
   webkit-appearance: none;
   appearance: none;
   position: absolute;
@@ -128,14 +129,12 @@ background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 .checkbox-list {
   position: relative;
-  max-width: 320px;
-  height: 203px;
-  
+  max-width: 100%;
 }
 .checkbox-list__button {
   position: relative;
   display: block;
-  text-align: left;
+  
   text-transform: uppercase;
   border: none;
   font-family: Montserrat;
@@ -148,7 +147,6 @@ background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   outline: none;
   height: 44px;
   background-color: #fff;
-  padding: 13px 15px 13px 15px;
   cursor: pointer;
 }
 

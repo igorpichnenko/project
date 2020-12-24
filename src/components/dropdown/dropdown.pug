@@ -24,8 +24,6 @@ mixin dropdown
           .button-box
             button.button-footer Очистить
             button.button-footer.button-left Применить
-        input.dropdown__input-hiden(type='text', name='select-category')
-        
 mixin drop   
     .form-group
       .dropdown
@@ -78,56 +76,27 @@ mixin drop
         |       
         input.dropdown__input-hiden(type='text', name='select-category', value='')
     |   
-    |   
-    .form-group
+    | 
+mixin dropdown-medium(mods,mod)
+    div(class=''+mod).dropdawn-medium
       .dropdown
-        button.dropdown__button 2 &scy;&pcy;&acy;&lcy;&softcy;&ncy;&icy;, 2 &kcy;&rcy;&ocy;&vcy;&acy;&tcy;&icy;...
-        |       
-        .dropdown__list
+        button(type="button").dropdown__button 2 спальни, 2 кровати...
+        .dropdown__list(class=''+mods).dropdawn-medium
           .dropdown__list-item(data-value='travel')
-            span.dropdown__text &scy;&pcy;&acy;&lcy;&softcy;&ncy;&icy;
-            |         
-            |         
+            span.dropdown__text Спальни
             .calculate
-              button.button-mat.button-minus -
-              |         
-              |           
+              button(type="button").button-mat.button-minus -
               span.number 2
-              |           
-              |          
               button.button-mat.button-plus +
-          |         
           .dropdown__list-item(data-value='lessons')
-            span.dropdown__text.sub &kcy;&rcy;&ocy;&vcy;&acy;&tcy;&icy;
-            |           
-            |           
-            |         
+            span.dropdown__text.sub кровати
             .calculate
               button.button-mat.button-minus -
-              |         
-              |         
-              span.number
-                | 2
-              |         
-              |         
+              span.number 2
               button.button-mat.button-plus +
-          |         
           .dropdown__list-item(data-value='photo')
-            span.dropdown__text.sub  &vcy;&acy;&ncy;&ncy;&ycy;&iecy; &kcy;&ocy;&mcy;&ncy;&acy;&tcy;&ycy; 
-            |            
-            |            
+            span.dropdown__text.sub ванные комнаты
             .calculate
               button.button-mat.button-minus -
-              |         
-              |         
               span.number 0
-              |         
-              |         
               button.button-mat.button-plus +
-          .button-box
-            .button-box
-              button.button-footer &ocy;&chcy;&icy;&scy;&tcy;&icy;&tcy;&softcy;
-              button.button-footer.button-left &pcy;&rcy;&icy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;
-          |       
-          |       
-          input.dropdown__input-hiden(type='text', name='select-category', value='')

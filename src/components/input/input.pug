@@ -1,3 +1,2 @@
-mixin input(name,mod="text",className="input")
-   .input-box
-    input(placeholder=''+name, type=''+mod,class=''+className)
+mixin input(name,mod="text",className="input",validate)
+    input(placeholder=''+name, type=''+mod,class=''+className,data-validate-field=''+validate)

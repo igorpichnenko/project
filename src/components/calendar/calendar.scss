@@ -1,3 +1,105 @@
+// двойной календарь //
+
+.datepicker-box {
+  width: 150px;
+  height: 44px;
+  position: relative;
+}
+
+.datepicker-box:after {
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  right: 10px;
+  content: 'expand_more';
+  font-family: 'Material Icons';
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer;
+  pointer-events: none;
+
+}
+
+// фильтр календарь  //
+
+.date-filter {
+  height: 44px;
+  width: 266px;
+  position: relative;
+}
+
+.date-filter:after{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  content: 'expand_more';
+  font-family: 'Material Icons';
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer;
+  pointer-events: none;
+  
+}
+
+
+
+
+
+
+
+
+// календарь для 2 инпутов //
+
+.datepicker-here {
+  width: 100%;
+  height: 100%;
+padding: 13px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+}
+.datepicker-here::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+// обычный календарь //
+
+.datepicker-filter{
+  width: 100%;
+  height: 100%;
+padding: 13px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+}
+.datepicker-filter::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+
+
+// основные настройки //
+
+
+
+
 
   .datepicker.active {
  opacity: 1;
@@ -24,12 +126,7 @@
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   z-index: 100;
-
 }
-
-
-
-
   .datepicker--content {
     padding: 22px 0 11px;
     text-transform: none;

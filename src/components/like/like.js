@@ -1,17 +1,17 @@
 const likeBlocks = document.querySelectorAll(".like");
 
-likeBlocks &&
+//likeBlocks &&
 
   likeBlocks.forEach(function (like) {
     
-    const valueEl = like.querySelector(".like__number");
+    const valueEl = like.querySelector(".like__label");
     
     const checkbox = like.querySelector(".like__input");
-    
-    like.addEventListener("click", (e) => {
-      e.stopPropagation();
-      
-      const checked = e.target.checked;
+    console.log(like)
+    like.addEventListener("click", (event) => {
+      event.stopPropagation();
+      console.log(like)
+      const checked = event.target.checked;
       const value = parseInt(valueEl.innerHTML);
       if (checked === true) {
         valueEl.innerHTML = value + 1;

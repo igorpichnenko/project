@@ -9,6 +9,7 @@ include ../../components/input/input
 include ../../components/title/title
 include ../../components/button/button
 include ../../components/calendar/calendar
+include ../../components/comments/comments
 
 block title
   title color-type
@@ -20,16 +21,50 @@ block head
 
 block content
    form.form-mask
-    +calendar
-    +title('Text Field')
-    +input('Email','email')
-    +title('Text Field')
-    +input('This is pretty awesome')
-    +title('dropdown')
-    +dropdown
-    +title('masked text field')
-    +input('ДД.ММ.ГГГГ','text', 'input mask-date')
-    
+    .form-items
+     .form-item
+      +title('Text Field','title form-items__title')
+      +title('Default','form-item__hover-title')
+     +input('Email','email')
+    .form-items
+     .form-item
+      +title('Text Field','title form-items__title')
+      +title('hover/focus','form-item__hover-title')
+     +input('This is pretty awesome')
+    .form-items
+     +title('dropdown','title form-items__title')
+     +dropdown
+    .form-items
+     +title('masked text field','title form-items__title')
+     +input('ДД.ММ.ГГГГ','text', 'input mask-date')
+    .form-items__dabl-date
+     +datepicker-dabl
+    .form-items__filter
+     +title('filter date dropdown','title form-items__title')
+     +datepicker-filter
+    .form-items
+     +title('subscription text field','title form-items__title')
+     .subscription-input
+      +input('Email','email','input','email')
+      button.subscription-button
+   section.section-dropdowns
+    .section-dropdown
+     .section-dropdown__item
+      +title('dropdown','title form-items__title')
+      +title('Default','form-item__hover-title')
+     +dropdown-medium
+    .section-dropdown__item
+     +title('dropdown','title form-items__title')
+     +title('expanded','form-item__hover-title')
+    +dropdown-medium('dropdown__list--visible')
+    .section-checkbox
+     .section-checkbox__item
+      +checkbox-list
+     .section-checkbox__item
+      +checkbox-list("checkbox-wrapper--visible")
+    .section-commets
+     +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
+     +comments('location_city','Удобство','Окно в каждой из спален')
 block script
     script(src="./form-elements.js")
     

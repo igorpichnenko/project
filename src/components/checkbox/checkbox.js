@@ -10,3 +10,11 @@ document.querySelectorAll('.checkbox-list').forEach(function (checkboxWrapper) {
 
   })
 })
+
+
+/*document.addEventListener('click', function(e) {
+  if (e.target !== checkboxBtn) {
+    checkboxList.classList.remove('checkbox-wrapper--visible');
+    
+  }
+});*/

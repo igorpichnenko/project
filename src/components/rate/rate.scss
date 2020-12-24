@@ -1,11 +1,16 @@
 .star-rating{
 	font-size: 0;
-	width: 150px;
-	margin: 40px 0 0 40px;
+width: 120px;
+}
+.star-rating__wrap{
+  display: flex;
+  flex-direction: row-reverse;
+  
+  
+  
 }
 .star-rating__ico{
 position: relative;
-float: right;
 }
 .star-rating__input{
   display: none;

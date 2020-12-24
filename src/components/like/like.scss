@@ -1,53 +1,82 @@
-$main: rgba(31, 32, 65, 0.25);
-$active: #bc9cff;
-$width: 40px;
-$like: 10px;
-$like-ml: 5px;
-
-* {
-  margin: 0;
-  padding: 0;
+.like{
+  position: relative;
+  width: 40px;
+  height: 20px
+  
 }
 
-.like {
-  margin: 40px 0 0 40px;
-  &__number {
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    color: $main;
-    width: $width;
-    height: 20px;
-    box-shadow: 0 0 0 1.5px rgba(31, 32, 65, 0.25);
-    border-radius: 10px;
-    user-select: none;
+.like__border {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: rgba(31,32,65,0.25);
+  background-image: none
+  
+}
 
-    &:before {
-      content: "favorite_border";
-      font-family: "Material Icons";
-      z-index: 0;
-      font-family: Material Icons;
-      font-style: normal;
-      font-weight: normal;
-      font-size: $like;
-      color: $main;
-      margin-left: $like-ml;
-      margin-right: $width / 2 - $like - $like-ml;
-    }
-  }
-  &__input {
-    display: none;
-    &:checked + .like__number {
-      box-shadow: 0 0 0 1.5px $active;
-      color: $active;
-      &:before {
-      content: "favorite";
-      color: $active;
-      }
-    }
-  }
+.like__input:checked ~ .like__border {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background-image: -o-linear-gradient(top, #bc9cff 0%, #8ba4f9 100%);
+  background-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%)
+  
+}
+
+.like__input {
+  position: absolute;
+  top: 0;
+  /*-webkit-box-alignbox;*/
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 38px;
+  height: 18px;
+  margin: 1px;
+  border-radius: 12px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  
+
+
+}
+
+.like__input::before {
+ content: "favorite_border";
+  font-family: "Material Icons";
+  z-index: 0;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(31,32,65,0.25);
+  margin-left: 5px;
+  margin-right: 5px
+}
+
+.like__input:checked::before {
+  content: "favorite";
+  color: #bc9cff;
+  transition: color 0.3s ease-in;
+}
+
+.like__label {
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  color: rgba(31,32,65,0.25);
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 12px
+}
+
+.like__input:checked+.like__label {
+  color: #bc9cff;
+  transition: color 0.3s ease-in
 }
