@@ -1,20 +1,21 @@
-document.querySelectorAll('.checkbox-list').forEach(function (checkboxWrapper) {
+let acc = document.querySelectorAll(".checkbox-list")
+let accord = acc.forEach(function (accordion) {
+  accordion.addEventListener("click", function() {
+    
+        this.classList.toggle("active");
+        
+let icon = accordion.querySelector('.checkbox-list__icon');
 
-  const checkboxBtn = checkboxWrapper.querySelector('.checkbox-list__title');
-  const checkboxList = checkboxWrapper.querySelector('.checkbox-wrapper');
-  const checkboxIcon = checkboxWrapper.querySelector('.checkbox-list__icon')
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+           icon.classList.toggle("checkbox-list__icon_rotate")
+        } else {
+            panel.style.display = "block";
+           icon.classList.toggle("checkbox-list__icon_rotate")
+        }
+    });
 
-  checkboxBtn.addEventListener('click', function() {
-    checkboxIcon.classList.toggle("checkbox-list__icon_rotate");
-    checkboxList.classList.toggle('checkbox-wrapper--visible')
-
-  })
 })
 
 
-/*document.addEventListener('click', function(e) {
-  if (e.target !== checkboxBtn) {
-    checkboxList.classList.remove('checkbox-wrapper--visible');
-    
-  }
-});*/

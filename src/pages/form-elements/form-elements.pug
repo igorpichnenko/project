@@ -10,6 +10,8 @@ include ../../components/title/title
 include ../../components/button/button
 include ../../components/calendar/calendar
 include ../../components/comments/comments
+include ../../components/radio/radio
+include ../../components/toggle/toggle
 
 block title
   title color-type
@@ -20,6 +22,8 @@ block head
     
 
 block content
+ .form-elements
+  .first-column
    form.form-mask
     .form-items
      .form-item
@@ -33,7 +37,7 @@ block content
      +input('This is pretty awesome')
     .form-items
      +title('dropdown','title form-items__title')
-     +dropdown
+     +dropdown("dropdown__list","2","1","0")
     .form-items
      +title('masked text field','title form-items__title')
      +input('ДД.ММ.ГГГГ','text', 'input mask-date')
@@ -47,7 +51,7 @@ block content
      .subscription-input
       +input('Email','email','input','email')
       button.subscription-button
-   section.section-dropdowns
+   .section-dropdowns
     .section-dropdown
      .section-dropdown__item
       +title('dropdown','title form-items__title')
@@ -61,10 +65,40 @@ block content
      .section-checkbox__item
       +checkbox-list
      .section-checkbox__item
-      +checkbox-list("checkbox-wrapper--visible")
+      +checkbox-list("checkbox-list__icon_rotate",'checkbox-items__visible','checked')
     .section-commets
      +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
      +comments('location_city','Удобство','Окно в каждой из спален')
+  .section-center
+     +title('checkbox buttons')
+     +checkbox-button('checked')
+     .center-items
+      +title('radio buttons')
+      .center-items_radio
+       +radio
+     .center-items
+      +title("toggle",'title title_bottom')
+      .section-center__toggle
+       +toggle("checked")
+      .section-center__toggle
+       +toggle
+     .center-items
+      +title("like button",'title title_bottom')
+      .section-center__like
+       +like("2")
+       +like("12","checked")
+     .center-items
+      +title("rate button",'title title_bottom')
+      .section-center__rate
+       +rate-checked
+       +rate
+     .center-items_dropdown
+      +title("dropdown")
+      +dropdown("dropdown__list--visible","0","0","0")
+     .center-items_button
+      +title("rich checkbox button")
+      +checkbox('Широкий коридор','Ширина коридорв в номере не менее 91 см.')
+      +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера')
 block script
     script(src="./form-elements.js")
     

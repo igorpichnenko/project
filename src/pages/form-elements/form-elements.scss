@@ -1,3 +1,9 @@
+.form-elements{
+  display: flex;
+ gap: 100px;
+ 
+}
+
 .form-mask {
   height: 645px;
   width: 320px;
@@ -34,6 +40,11 @@
   margin-bottom: 55px;
 }
 
+
+//           *******       //
+
+
+
 .section-dropdowns{
   margin-left: 30px;
   width: 267px;
@@ -61,8 +72,49 @@
   
 }
 .section-commets{
-  margin-top: 240px;
-    
- 
+ margin-top: 90px;
+}
+
+//       *******         //
+
+
+.section-center{
+  width: 320px;
+  height: 1198px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.section-center__toggle{
+  display: flex;
   
 }
+.section-center__like{
+  display: flex;
+}
+.section-center__rate{
+  display: flex;
+}
+.center-items{
+  margin-top: 40px;
+}
+.center-items_dropdown{
+  margin-top: 170px;
+}
+.center-items_button{
+  margin-top: 250px;
+  
+}
+.section-center__toggle{
+  margin-top: 10px;
+}
+.star-rating + .star-rating{
+  margin-left: 20px;
+}
+.like + .like{
+  margin-left: 10px;
+  
+}
+  .center-items_radio{
+    margin-top: 7px;
+  }

@@ -1,13 +1,26 @@
 mixin rate
   div.star-rating
     div.star-rating__wrap
-      input(class="star-rating__input" type="checkbox")
+      input(class="star-rating__input" checked type="radio")
       span.star-rating__ico
-      input(class="star-rating__input" type="checkbox")
+      input(class="star-rating__input" type="radio")
       span.star-rating__ico
-      input(class="star-rating__input" checked type="checkbox")
+      input(class="star-rating__input" type="radio")
       span.star-rating__ico
-      input(class="star-rating__input" type="checkbox")
+      input(class="star-rating__input" type="radio")
       span.star-rating__ico
-      input(class="star-rating__input" type="checkbox")
+      input(class="star-rating__input" type="radio")
+      span.star-rating__ico
+mixin rate-checked
+  div.star-rating
+    div.star-rating__wrap
+      input(class="star-rating__input" type="radio")
+      span.star-rating__ico
+      input(class="star-rating__input" checked type="radio")
+      span.star-rating__ico
+      input(class="star-rating__input" type="radio")
+      span.star-rating__ico
+      input(class="star-rating__input" type="radio")
+      span.star-rating__ico
+      input(class="star-rating__input" type="radio")
       span.star-rating__ico

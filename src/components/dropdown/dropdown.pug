@@ -1,25 +1,25 @@
-mixin dropdown
+mixin dropdown(mods,number,number2,number3)
     .form-group
       .dropdown
         button(type="button").dropdown__button Сколько гостей
-        .dropdown__list
+        .dropdown__list(class=""+mods)
           .dropdown__list-item(data-value='travel')
             span.dropdown__text Взрослые
             .calculate
               button(type="button").button-mat.button-minus -
-              span.number 2
+              span(number)=number
               button(type="button").button-mat.button-plus +
           .dropdown__list-item(data-value='lessons')
             span.dropdown__text.sub Дети
             .calculate
               button(type="button").button-mat.button-minus -
-              span.number 1
+              span(number)=number2
               button(type="button").button-mat.button-plus +
           .dropdown__list-item(data-value='photo')
             span.dropdown__text.sub  Младенцы 
             .calculate
               button(type="button").button-mat.button-minus -
-              span.number 0
+              span(number)=number3
               button(type="button").button-mat.button-plus +
           .button-box
             button.button-footer Очистить

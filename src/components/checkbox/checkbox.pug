@@ -1,28 +1,70 @@
-mixin checkbox
-    input(type="checkbox" id="checkbox").checkbox
-    label(for="checkbox") Получать спецпредложения
-mixin checkbox-list(mods="checkbox-wrapper")
-    .checkbox-group
-      .checkbox-list
-        .checkbox-list__title
-          button.checkbox-list__button expandable checkbox list
-          i.material-icons.checkbox-list__icon expand_more
-        div.checkbox-wrapper(class=''+mods)
-          .checkbox-items
-            input#ip1.checkbox-list__input(type='checkbox')
-            label.checkbox-list__label(for='ip1') Завтрак
-          .checkbox-items
-            input#ip2.checkbox-list__input(type='checkbox', checked='')
-            label.checkbox-list__label(for='ip2') Письменный стол
-          .checkbox-items
-            input#ip3.checkbox-list__input(type='checkbox', checked='')
-            label.checkbox-list__label(for='ip3') Стул для кормления
-          .checkbox-items
-            input#ip4.checkbox-list__input(type='checkbox', checked='')
-            label.checkbox-list__label(for='ip4') Кроватка
-          .checkbox-items
-            input#ip5.checkbox-list__input(type='checkbox')
-            label.checkbox-list__label(for='ip5') Телевизор
-          .checkbox-items
-            input#ip6.checkbox-list__input(type='checkbox')
-            label.checkbox-list__label(for='ip6') Шампунь
+mixin checkbox(title,text)
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__title= title
+      .checkbox-items__text= text
+mixin checkbox-button(check)
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Можно курить
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" checked=check class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Можно с питомцами
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" checked=check class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Можно пригласить гостей<br>(до 10 человек)
+
+mixin checkbox-list(mods="",mod="",check)
+  .checkbox-accordion
+   .checkbox-list
+    button.checkbox-list__button expandable checkbox list
+    i(class=""+mods).material-icons.checkbox-list__icon expand_more
+   div(class=""+mod).checkbox-wrapper
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Завтрак
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" checked=check class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Письменный стол
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" checked=check class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Стул для кормления
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" checked=check class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Кроватка
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Телевизор
+    .checkbox-items
+     label.checkbox-items__label
+      .checkbox-items__container
+       input(type="checkbox" class="checkbox-items__input")
+       span.checkbox-items__style
+      .checkbox-items__text Шампунь
