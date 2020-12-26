@@ -1,28 +1,57 @@
-.form-elements {
-  display: flex;
-  gap: 100px;
+.container-grid {
+  display: grid;
+  grid-template: "one two three"
+  "one four four";
 
 }
+
+
+.grid-one {
+  margin-top: 140px;
+  margin-left: 140px;
+  width: 320px;
+  height: 1491px;
+  grid-area: one;
+}
+.grid-two {
+  margin-left: 126px;
+  margin-top: 140px;
+  grid-area: two;
+  width: 320px;
+  height: 1198px;
+}
+
+.grid-three {
+  margin-left: 72px;
+  margin-top: 140px;
+  grid-area: three;
+  width: 320px;
+  height: 1198px;
+}
+
+.grid-four {
+  grid-area: four;
+  margin-left: 126px;
+  margin-top: 170px;
+  width: 650px;
+  height: 133px;
+}
+
 
 .form-mask {
   height: 645px;
   width: 320px;
-
-  margin-left: 30px;
-  margin-top: 30px;
 }
 .dropdown-date {
   display: flex;
   gap: 20px;
 }
-
 .form-item {
   display: flex;
   justify-content: space-between;
 }
 .form-items {
   width: 320px;
-
 }
 .form-items__title {
   margin-bottom: 4px;
@@ -32,61 +61,35 @@
 }
 .form-items + .form-items {
   margin-top: 20px;
-
-
 }
 .form-items__dabl-date {
   margin-top: 40px;
   margin-bottom: 55px;
 }
-
-
 //           *******       //
-
-
-
 .section-dropdowns {
-  margin-left: 30px;
   width: 267px;
   height: 846px;
-  margin-top: 100px;
-
 }
 .section-dropdown {
   margin-bottom: 20px;
-
 }
 .section-dropdown__item {
-
   display: flex;
   justify-content: space-between;
-
-
 }
-
 .section-dropdown + .section-dropdown {
   margin-top: 20px;
 }
 .section-checkbox {
   margin-top: 150px;
-
 }
 .section-commets {
   margin-top: 90px;
 }
-
 //       *******         //
-
-.section-center {
-  width: 320px;
-  height: 1198px;
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
 .section-center__toggle {
   display: flex;
-
 }
 .section-center__like {
   display: flex;
@@ -102,7 +105,6 @@
 }
 .center-items_button {
   margin-top: 250px;
-
 }
 .section-center__toggle {
   margin-top: 10px;
@@ -112,25 +114,14 @@
 }
 .form-like {
   margin-left: 10px;
-
 }
 .center-items_radio {
   margin-top: 7px;
 }
-
-
 ///        *****       ///
-
-.section-three {
-  width: 320px;
-  height: 1198px;
-  margin-left: 30px;
-  margin-top: 30px;
-  border: 1px solid black;
-}
-
 .range-box {
   display: flex;
+  height: 25px;
 }
 .range-start {
   margin-top: 5px;
@@ -142,8 +133,20 @@
 .section-buttons {
   display: flex;
   flex-wrap: wrap;
-
 }
-.box {
+.buttons-container {
   display: flex;
+  margin-top: 30px;
+}
+.buttons-container:first-child {
+  margin-top: 0;
+}
+.buttons-container > *+* {
+  margin-left: 15px;
+}
+.section-three_dropdown {
+  margin-top: 220px;
+}
+.section-bullet {
+  margin-top: 245px;
 }

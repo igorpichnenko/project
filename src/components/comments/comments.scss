@@ -34,3 +34,51 @@ color: rgba(31, 32, 65, 0.75);
 .comments-item__content{
   padding-left: 10px;
 }
+     //     comment     //
+.comment-block__icon{
+  width: 48px;
+  height: 48px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, .1);
+    border-radius: 48px;
+  margin-right: 10px;
+}
+
+.comment-block{
+  display: flex;
+ align-content: center;
+}
+.comment-block__text{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+margin-left: 5px;
+margin-top: 8px;
+}
+.comment-block__date{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+margin-left: 5px;
+}
+.comment-block__name{
+  margin-left: 5px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+
+}
+.comment-block__like{
+  margin-top: 8px;
+ margin-right: 10px;
+}

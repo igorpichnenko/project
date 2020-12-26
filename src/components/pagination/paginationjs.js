@@ -1,8 +1,8 @@
 function onLoad() {
 $(function() {
     
-  (function(name) {
-    var container = $('#pagination-' + name);
+  (function() {
+    var container = $('.js-pagination');
     var sources = function () {
       var result = [];
 
@@ -41,7 +41,7 @@ $(function() {
       window.console && console.log('beforePageOnClick...');
       //return false
     });
-  })('demo1');
+  })()
 
 
 })
@@ -1002,12 +1002,12 @@ window.addEventListener('load', onLoad);
     classPrefix: 'paginationjs',
 
     // Default active class
-    activeClassName: 'active',
+    activeClassName: 'pagination__link_active',
 
     // Default disable class
     disableClassName: 'disabled',
 
-    //ulClassName: '',
+    ulClassName: 'pagination__list',
 
     // Whether to insert inline style
     inlineStyle: true,
@@ -1019,7 +1019,7 @@ window.addEventListener('load', onLoad);
     formatGoButton: '<%= button %>',
 
     // Pagination element's position in the container
-    position: 'bottom',
+    position: 'left',
 
     // Auto hide previous button when current page is the first page
     autoHidePrevious: true,

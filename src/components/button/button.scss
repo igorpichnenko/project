@@ -50,9 +50,13 @@
   }
   &__content-none {
     border: none;
+    background: none;
+
+
   }
   &__color-black {
-    color: black;
+    color: rgba(31, 32, 65, 0.5);
+    background: none;
   }
 
   &__disable {

@@ -23,8 +23,8 @@ block head
     
 
 block content
- .form-elements
-  .first-column
+ .container-grid
+  .grid-one
    form.form-mask
     .form-items
      .form-item
@@ -70,7 +70,7 @@ block content
     .section-commets
      +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
      +comments('location_city','Удобство','Окно в каждой из спален')
-  .section-center
+  .grid-two
      +title('checkbox buttons')
      +checkbox-button('checked')
      .center-items
@@ -100,7 +100,7 @@ block content
       +title("rich checkbox button")
       +checkbox('Широкий коридор','Ширина коридорв в номере не менее 91 см.')
       +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера')
-  .section-three
+  .grid-three
    .range-box
     +title('range slider')
     .range-start
@@ -108,26 +108,31 @@ block content
     .range-end
      +input("text","text","range-out range-end")
    +range-slider
-   +title('buttons')
+   +title('buttons','title title__top')
    .section-buttons
-    .box
+    .buttons-container
      +button({mods: 'content-size'})  
      +button({mods: 'disable,content-size'})
-    .box
+    .buttons-container
      +button({mods: 'border,content-size'})
      +button({mods: 'border,disable,content-size'})
-    .box
+    .buttons-container
      +button({mods: 'border,content-none'})  
      +button({mods: 'border,content-none,color-black'})
-    +button({text: 'ПЕРЕЙТИ К ОПЛАТЕ', mods: 'arrow'})
-   +title('pagination')
+    .buttons-container
+     +button({text: 'ПЕРЕЙТИ К ОПЛАТЕ', mods: 'arrow'})
+   +title('pagination','title title__top')
    +pagination
+   .section-three_dropdown
    +title('dropdown')
    +dropdown("dropdown__list--visible","2","1","0")
-   +title('bullet list')
-   +bullet-list('Нельзя с питомцами')
-   +bullet-list('Без вечеринок и мероприятий')
-   +bullet-list('Время прибытия - после 13:00 а выезд до 12:00')
+   .section-bullet
+    +title('bullet list')
+    +bullet-list('Нельзя с питомцами')
+    +bullet-list('Без вечеринок и мероприятий')
+    +bullet-list('Время прибытия — после 13:00 а выезд до 12:00')
+  .grid-four
+   +comment
 block script
     script(src="./form-elements.js")
     
