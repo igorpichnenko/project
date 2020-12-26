@@ -12,6 +12,7 @@ include ../../components/calendar/calendar
 include ../../components/comments/comments
 include ../../components/radio/radio
 include ../../components/toggle/toggle
+include ../../components/list/list
 
 block title
   title color-type
@@ -86,7 +87,7 @@ block content
       +title("like button",'title title_bottom')
       .section-center__like
        +like("2")
-       +like("12","checked")
+       +like("12","checked","form-like")
      .center-items
       +title("rate button",'title title_bottom')
       .section-center__rate
@@ -99,6 +100,34 @@ block content
       +title("rich checkbox button")
       +checkbox('Широкий коридор','Ширина коридорв в номере не менее 91 см.')
       +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера')
+  .section-three
+   .range-box
+    +title('range slider')
+    .range-start
+     +input("text","text","range-out range-start")
+    .range-end
+     +input("text","text","range-out range-end")
+   +range-slider
+   +title('buttons')
+   .section-buttons
+    .box
+     +button({mods: 'content-size'})  
+     +button({mods: 'disable,content-size'})
+    .box
+     +button({mods: 'border,content-size'})
+     +button({mods: 'border,disable,content-size'})
+    .box
+     +button({mods: 'border,content-none'})  
+     +button({mods: 'border,content-none,color-black'})
+    +button({text: 'ПЕРЕЙТИ К ОПЛАТЕ', mods: 'arrow'})
+   +title('pagination')
+   +pagination
+   +title('dropdown')
+   +dropdown("dropdown__list--visible","2","1","0")
+   +title('bullet list')
+   +bullet-list('Нельзя с питомцами')
+   +bullet-list('Без вечеринок и мероприятий')
+   +bullet-list('Время прибытия - после 13:00 а выезд до 12:00')
 block script
     script(src="./form-elements.js")
     

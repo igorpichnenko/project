@@ -1,8 +1,3 @@
-*{
-  padding: 0;
-  margin: 0;
-}
-
 .irs{
   width: 266px;
 }
@@ -18,18 +13,6 @@ line-height: 15px;
 text-align: right;
 color: rgba(31, 32, 65, 0.5);
 position: relative;
-}
-.range-minus{
-  color: rgba(31, 32, 65, 0.5);
-  font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-position: absolute;
-top: 5px;
-left: 56.5px;
-z-index: 3;
 }
 
 .irs-handle{
@@ -51,4 +34,3 @@ width: 266px;
 background: transparent;
 border: 1px solid rgba(31, 32, 65, 0.25);
 }
-  

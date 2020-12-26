@@ -3,8 +3,8 @@ import '../../components/range-slider/RangeSlider.scss';
 
 
     let $range = $(".range-slider");
-    let $inputFrom = $("#out");
-    let $inputTo = $("#out2");
+    let $inputFrom = $(".range-start");
+    let $inputTo = $(".range-end");
     let instance;
     let min = 0;
     let max = 1500;
@@ -31,5 +31,5 @@ import '../../components/range-slider/RangeSlider.scss';
         to = data.to;
     
         $inputFrom.prop("value", from +"₽");
-        $inputTo.prop("value",to + "₽");
+        $inputTo.prop("value",'-' +' '+to +"₽");
     }

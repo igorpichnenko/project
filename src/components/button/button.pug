@@ -9,3 +9,14 @@ mixin button-cards({title} = {})
    
 mixin btn-signin
     button.header-button.header-button_left.header-button_signin Создать
+
+mixin button({mods = '', text="Click me"} = {})
+  - 
+    let modList = mods.split(',')
+    let allMods = ''
+    
+    modList.forEach(function (mod) {
+    allMods = allMods + ' button__' + mod.trim()
+    })
+    
+  button.button(class= allMods, type="button")= text

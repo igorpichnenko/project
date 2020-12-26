@@ -1,5 +1,5 @@
-mixin like(title,mod)
-   .like
+mixin like(title,mod,mods)
+   .like(class=""+mods)
      input(type="checkbox" checked=mod class="like__input")
      label(class="like__label")=title
      .like__border
