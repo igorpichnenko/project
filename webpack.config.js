@@ -12,6 +12,7 @@ module.exports = {
 	   'color-type': './src/pages/color-type/color-type.js',
 	   'headers-footers': './src/pages/headers-footers/headers-footers.js',
 	    'form-elements': './src/pages/form-elements/form-elements.js',
+	    'cards': './src/pages/cards/cards.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -95,6 +96,12 @@ module.exports = {
 			template: './src/pages/color-type/color-type.pug',
 			filename: 'color-type.html'
 		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/cards/cards.pug',
+			filename: 'cards.html'
+		}),
 	],
 	// Стартовая страница
 	devtool: 'inline-source-map',
@@ -104,3 +111,4 @@ module.exports = {
 		open: true,
 	}
 };
+

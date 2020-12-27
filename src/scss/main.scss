@@ -18,6 +18,9 @@ body{
   @return $size / 14px * 1rem;
 }
 
+// reset
+
+@import './reset.scss';
 
 // fonts 
 
@@ -29,9 +32,14 @@ body{
 @import '../blocks/title-options/title-options.scss';
 @import '../blocks/footer/footer.scss';
 @import '../blocks/header/header.scss';
-@import '../blocks/footercard/footercard.scss';
-@import '../blocks/headerlogin/headerlogin.scss';
-@import '../blocks/form/form.scss';
+@import '../blocks/footer-small/footer-small.scss';
+@import '../blocks/header-login/header-login.scss';
+@import '../blocks/form-reg/form-reg.scss';
+@import '../blocks/image-card/image-card.scss';
+@import '../blocks/form-lux/form-lux.scss';
+@import '../blocks/calendar-card/calendar-card.scss';
+@import '../blocks/form-search/form-search.scss';
+@import '../blocks/form-sign-in/form-sign-in.scss';
 
 // components style
 
@@ -53,3 +61,4 @@ body{
 @import '../components/comments/comments.scss';
 @import '../components/radio/radio.scss';
 @import '../components/toggle/toggle.scss';
+@import '../components/slick/slick.scss';

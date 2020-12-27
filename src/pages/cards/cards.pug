@@ -1,0 +1,36 @@
+extends ../../layouts/base
+include ../../blocks/form-search/form-search
+include ../../blocks/form-lux/form-lux
+include ../../blocks/form-sign-in/form-sign-in
+include ../../blocks/form-reg/form-reg
+include ../../blocks/calendar-card/calendar-card
+include ../../blocks/image-card/image-card
+include ../../components/button/button
+include ../../components/checkbox/checkbox
+include ../../components/radio/radio
+include ../../components/logo/logo
+include ../../components/slick/slick
+include ../../components/calendar/calendar
+include ../../components/title/title
+include ../../components/input/input
+include ../../components/dropdown/dropdown
+include ../../components/toggle/toggle
+
+block title
+  title Cards
+
+block head
+    link(rel="stylesheet" href="cards.css")
+    
+block content
+  .cards
+    .form-top
+      +form-search
+      +form-reg
+    .form-bottom
+     +formlux
+     +form-signin
+  +image-card
+  +calendar
+block script
+    script(src="./cards.js")

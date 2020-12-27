@@ -1,0 +1,13 @@
+mixin form-search
+  form.search
+   .search-container
+      +large-title('Найдём номера под ваши пожелания')
+      .search-container__title
+       +title('Прибытие')
+       +title('Выезд')
+      .search-container__calendar
+       +datepicker-dabl
+      .search-container__dropdown
+       +title('Гости')
+       +dropdown("dropdown__list","2","1","0","Сколько гостей")
+      +button({text: 'Подобрать номер', mods: 'arrow'})

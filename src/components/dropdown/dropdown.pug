@@ -1,7 +1,7 @@
-mixin dropdown(mods,number,number2,number3)
+mixin dropdown(mods,number,number2,number3,text)
     .form-group
       .dropdown
-        button(type="button").dropdown__button Сколько гостей
+        button(type="button").dropdown__button= text
         .dropdown__list(class=""+mods)
           .dropdown__list-item(data-value='travel')
             span.dropdown__text Взрослые
@@ -24,59 +24,7 @@ mixin dropdown(mods,number,number2,number3)
           .button-box
             button.button-footer Очистить
             button.button-footer.button-left Применить
-mixin drop   
-    .form-group
-      .dropdown
-        button.dropdown__button &Scy;&kcy;&ocy;&lcy;&softcy;&kcy;&ocy; &gcy;&ocy;&scy;&tcy;&iecy;&jcy;
-        |       
-        .dropdown__list
-          .dropdown__list-item(data-value='travel')
-            span.dropdown__text &Vcy;&zcy;&rcy;&ocy;&scy;&lcy;&ycy;&iecy; 
-            |         
-            |         
-            .calculate
-              button.button-mat.button-minus -
-              |         
-              |           
-              span.number 0
-              |           
-              |          
-              button.button-mat.button-plus +
-          |         
-          .dropdown__list-item(data-value='lessons')
-            span.dropdown__text.sub &Dcy;&iecy;&tcy;&icy; 
-            |           
-            |           
-            |         
-            .calculate
-              button.button-mat.button-minus -
-              |         
-              |         
-              span.number 0
-              |         
-              |         
-              button.button-mat.button-plus +
-          |         
-          .dropdown__list-item(data-value='photo')
-            span.dropdown__text.sub  &Mcy;&lcy;&acy;&dcy;&iecy;&ncy;&tscy;&ycy; 
-            |            
-            |            
-            .calculate
-              button.button-mat.button-minus -
-              |         
-              |         
-              span.number 0
-              |         
-              |         
-              button.button-mat.button-plus +
-          .button-box
-            button.button-footer &ocy;&chcy;&icy;&scy;&tcy;&icy;&tcy;&softcy;
-            button.button-footer.button-left &pcy;&rcy;&icy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;
-        |       
-        |       
-        input.dropdown__input-hiden(type='text', name='select-category', value='')
-    |   
-    | 
+
 mixin dropdown-medium(mods,mod)
     div(class=''+mod).dropdawn-medium
       .dropdown

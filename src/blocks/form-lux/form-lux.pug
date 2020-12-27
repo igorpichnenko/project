@@ -1,0 +1,30 @@
+mixin formlux
+  .formlux-box
+   .lux-container
+    +title-number('888','люкс','9 990₽')
+    .lux-container__title
+      +title('Прибытие')
+      +title('Выезд')
+    .lux-container__calendar
+     +datepicker-dabl('23.08.2019','19.08.2019')
+    +title('гости')
+    +dropdown("dropdown__list","2","1","0","3 гостя")
+    .formlux-main 
+       .formlux-main__price
+        span.formlux-main__text 9 990₽ х 4 суток
+        span.formlux-main__text.right 39 960
+       .formlux-main__price
+        span.formlux-main__text Сбор за услуги: скидка 2 179₽
+        span.formlux-main__label i
+        span.formlux-main__text.right 0₽
+       .formlux-main__price.bottom
+        .formlux-main__text.wit Сбор за дополнительные <br>услуги
+        span.formlux-main__label.formlux-main__label_number-right i
+        .formlux-main__text 300₽
+   .formlux-footer
+       .formlux-footer__price
+         .formlux-footer__text Итого
+         .formlux-footer__border
+         .formlux-footer__text 38 081₽
+   .lux-container__button
+    +button({text: 'Забронировать', mods: 'arrow'})

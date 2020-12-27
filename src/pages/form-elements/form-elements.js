@@ -1,3 +1,4 @@
+import '../../components/calendar/calendar.js'
 import '../../scss/main.scss';
 import './form-elements.scss';
 import '../../components/dropdown/dropdown.js'
@@ -5,9 +6,19 @@ import '../../components/range-slider/range-slider.js'
 import '../../components/pagination/paginationjs.js'
 import '../../components/checkbox/checkbox.js'
 import '../../components/like/like.js'
-import '../../components/input/input.js'
-import '../../components/calendar/calendar.js'
 import '../../../node_modules/just-validate/dist/js/just-validate.js';
+
+import IMask from 'imask';
+
+
+let dateMask = IMask(
+  document.querySelector('.mask-date'),
+  {
+    mask: Date,
+    min: new Date(1990, 0, 1),
+    max: new Date(2020, 0, 1),
+    lazy: true
+  });
 
 
 

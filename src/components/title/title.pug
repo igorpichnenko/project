@@ -1,3 +1,17 @@
 mixin title(title,name ="title")
 
     h3(class=''+name)= title
+
+mixin large-title(title)
+
+   h2.large-title= title
+
+mixin title-number (text,mods,price)
+   .title-number
+      .number-container
+       span.number-container__title № 
+       .number-container__text= text
+       span.number-container__lux= mods
+      .number-container
+       .number-container__price= price
+       .number-container__duration в сутки

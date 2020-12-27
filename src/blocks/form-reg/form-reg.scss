@@ -1,0 +1,42 @@
+.registration {
+  height: 646px;
+  width: 380px ;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.reg-container {
+  padding-top: 40px;
+  padding-left: 30px;
+  width: 320px;
+  &__input {
+    margin-top: 20px;
+    margin-bottom: 3px;
+  }
+  &__radio, &__toggle {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__radio>*+* {margin-left: 10px; }
+  &__data { margin-top: 20px;}
+  &__sign-in {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    &>*+* {margin-left: 55px;}
+  }
+  &__data-in { margin-bottom: 10px;}
+  &__data-in>*+*, &__input>*+* {
+     margin-top: 10px;
+}
+  &__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+
+}

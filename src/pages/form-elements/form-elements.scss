@@ -1,3 +1,4 @@
+
 .container-grid {
   display: grid;
   grid-template: "one two three"
@@ -42,10 +43,6 @@
   height: 645px;
   width: 320px;
 }
-.dropdown-date {
-  display: flex;
-  gap: 20px;
-}
 .form-item {
   display: flex;
   justify-content: space-between;
@@ -58,6 +55,7 @@
 }
 .form-items__filter {
   margin-bottom:  40px;
+  width: 266px;
 }
 .form-items + .form-items {
   margin-top: 20px;
@@ -149,4 +147,16 @@
 }
 .section-bullet {
   margin-top: 245px;
+}
+.calendar-dabl{
+  display: flex;
+}
+.calendar-dabl>*+*{
+  margin-left: 20px;
+}
+.dropdown-date>*+*{
+  margin-left: 73px;
+}
+.dropdown-date{
+  display: flex;
 }

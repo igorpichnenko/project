@@ -1,0 +1,24 @@
+mixin form-reg
+  form.registration
+   .reg-container
+     +large-title('Регистрация аккаунта')
+     .reg-container__input
+      +input('Имя','text')
+      +input('Фамилия','text')
+     .reg-container__radio
+      +radio
+     +title('Дата рождения')
+     +input('ДД.ММ.ГГГГ','text')
+     .reg-container__data
+      +title('Данные для входа в сервис')
+     .reg-container__data-in
+      +input('Email','email')
+      +input('Пароль','password')
+     .reg-container__toggle
+      +toggle
+     +button({text: 'Перейти к оплате', mods: 'arrow'})
+     .reg-container__sign-in
+      .reg-container__text Уже есть аккаунт на Toxin
+      +button({text: 'Войти', mods: 'border,content-size'})
+     
+     

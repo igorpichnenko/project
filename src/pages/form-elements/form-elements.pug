@@ -19,7 +19,6 @@ block title
 
 block head
     link(rel="stylesheet" href="form-elements.css")
-    link(href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet")
     
 
 block content
@@ -38,15 +37,19 @@ block content
      +input('This is pretty awesome')
     .form-items
      +title('dropdown','title form-items__title')
-     +dropdown("dropdown__list","2","1","0")
+     +dropdown("dropdown__list","2","1","0","Сколько гостей")
     .form-items
      +title('masked text field','title form-items__title')
      +input('ДД.ММ.ГГГГ','text', 'input mask-date')
     .form-items__dabl-date
-     +datepicker-dabl
+     .dropdown-date
+       +title('date dropdown','title form-items__title')
+       +title('date dropdown','title form-items__title')
+     .calendar-dabl
+        +datepicker-dabl('19.08.2019')
     .form-items__filter
      +title('filter date dropdown','title form-items__title')
-     +datepicker-filter
+     +filter-input
     .form-items
      +title('subscription text field','title form-items__title')
      .subscription-input
@@ -95,7 +98,7 @@ block content
        +rate
      .center-items_dropdown
       +title("dropdown")
-      +dropdown("dropdown__list--visible","0","0","0")
+      +dropdown("dropdown__list--visible","0","0","0","Сколько гостей")
      .center-items_button
       +title("rich checkbox button")
       +checkbox('Широкий коридор','Ширина коридорв в номере не менее 91 см.')
@@ -104,9 +107,9 @@ block content
    .range-box
     +title('range slider')
     .range-start
-     +input("text","text","range-out range-start")
+     +input("","","range-out range-start")
     .range-end
-     +input("text","text","range-out range-end")
+     +input("","","range-out range-end")
    +range-slider
    +title('buttons','title title__top')
    .section-buttons
@@ -125,7 +128,7 @@ block content
    +pagination
    .section-three_dropdown
    +title('dropdown')
-   +dropdown("dropdown__list--visible","2","1","0")
+   +dropdown("dropdown__list--visible","2","1","0","3 гостя")
    .section-bullet
     +title('bullet list')
     +bullet-list('Нельзя с питомцами')

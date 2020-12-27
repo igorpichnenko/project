@@ -1,0 +1,92 @@
+.formlux-box {
+  width: 380px;
+  height: 511px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.lux-container {
+  width: 320px;
+  padding-top: 40px;
+  padding-left: 30px;
+
+  &__title {
+    display: flex;
+    margin-top: 20px;
+    &>*+* {
+      margin-left: 106px;
+    }
+  }
+  &__calendar {
+    display: flex;
+    margin-bottom: 20px;
+    &>*+* {
+      margin-left: 20px;
+    }
+  }
+  &__button {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+
+}
+.formlux-main__price + .formlux-main__price {
+  padding-top: 10px;
+}
+.formlux-main {
+  margin-top: 20px;
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__label {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    color: rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    margin-right: 60px;
+    padding-top: 1px;
+    margin-top: 2px;
+
+    &_number-right {
+      margin-right: 18px;
+    }
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+  }}
+
+.formlux-footer {
+  margin-top: 30px;
+  margin-left: 30px;
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+  }
+  &__border {
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+    width: 191px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
+  }
+
+  &__price {
+    display: flex;
+  }}

@@ -1,0 +1,11 @@
+mixin form-signin
+  form.sign-in
+    .signin-container
+      +large-title('Войти')
+      .signin-container__input
+       +input('Email','email')
+       +input('Пароль','password')
+      +button({text: 'Войти', mods: 'arrow'})
+      .signin-container__item
+       .signin-container__text Нет аккаунта на Toxin?
+       +button({text: 'Создать', mods: 'border,content-size'})
