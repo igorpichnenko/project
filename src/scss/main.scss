@@ -24,6 +24,10 @@ body{
 
 // fonts 
 
+@import '~material-design-icons/iconfont/material-icons.css';
+
+//@import "fortawesome/fontawesome-free/css/all.min.css"; 
+
 @import './fonts.scss';
 
 // blocks style
@@ -62,3 +66,4 @@ body{
 @import '../components/radio/radio.scss';
 @import '../components/toggle/toggle.scss';
 @import '../components/slick/slick.scss';
+@import '../components/icon/icon.scss';

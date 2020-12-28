@@ -1,6 +1,6 @@
-mixin slider
-  section.variable.slider
-    img(class="slick__img" src="../../src/components/slick/image/1.png")
-    img(class="slick__img" src="../../src/components/slick/image/2.png")
-    img(class="slick__img" src="../../src/components/slick/image/3.png")
-    img(class="slick__img" src="../../src/components/slick/image/4.png")
+mixin slider(img,img2,img3,img4)
+    .variable.slider
+        img(src=`../../../src/components/slick/images/${img}.png`)
+        img(src=`../../../src/components/slick/images/${img2}.png`)
+        img(src=`../../../src/components/slick/images/${img3}.png`)
+        img(src=`../../../src/components/slick/images/${img4}.png`)

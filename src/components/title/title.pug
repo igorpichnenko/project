@@ -6,7 +6,7 @@ mixin large-title(title)
 
    h2.large-title= title
 
-mixin title-number (text,mods,price)
+mixin title-number (text,price,mods)
    .title-number
       .number-container
        span.number-container__title № 
@@ -15,3 +15,10 @@ mixin title-number (text,mods,price)
       .number-container
        .number-container__price= price
        .number-container__duration в сутки
+
+mixin reviews(number)
+ .reviews
+  +rate
+  .reviews-container
+   .reviews-container__number= number
+   .reviews-container__text Отзывов

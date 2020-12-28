@@ -3,3 +3,8 @@ mixin input(name="",mod="text",className="input",validate)
 mixin filter-input
   .container-input
     input(class='filter-input datepicker-new' type='text' placeholder="19 авг - 23 авг")
+mixin subscription-input(title="Email",mods="email")
+    
+     .subscription-input
+      input(placeholder=""+title type=""+mods class="input subscription-input"+className)
+      button(type="submit").subscription-button

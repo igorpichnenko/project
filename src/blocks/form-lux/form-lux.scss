@@ -8,7 +8,7 @@
   width: 320px;
   padding-top: 40px;
   padding-left: 30px;
-
+  
   &__title {
     display: flex;
     margin-top: 20px;
@@ -27,8 +27,6 @@
     margin-left: 30px;
     margin-top: 20px;
   }
-
-
 }
 .formlux-main__price + .formlux-main__price {
   padding-top: 10px;
@@ -42,7 +40,6 @@
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
   }
-
   &__label {
     border: 1px solid rgba(0, 0, 0, 0.12);
     font-style: normal;
@@ -59,7 +56,6 @@
     margin-right: 60px;
     padding-top: 1px;
     margin-top: 2px;
-
     &_number-right {
       margin-right: 18px;
     }
@@ -68,7 +64,6 @@
     display: flex;
     justify-content: space-between;
   }}
-
 .formlux-footer {
   margin-top: 30px;
   margin-left: 30px;
@@ -86,7 +81,6 @@
     width: 191px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
   }
-
   &__price {
     display: flex;
   }}

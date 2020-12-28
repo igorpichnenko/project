@@ -1,6 +1,11 @@
 
 .cards{
+  padding: 150px 0 0 140px;
   display: flex;
-  margin-left: 140px;
-  margin-top: 150px;
+  gap: 40px;
+}
+.cards-one,.cards-two,.cards-three{
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,9 +1,9 @@
-mixin rate
+mixin rate(mod,mod2)
   div.star-rating.form-rating
     div.star-rating__wrap
-      input(class="star-rating__input" checked type="radio")
+      input(class="star-rating__input" checked=mod type="radio")
       span.star-rating__ico
-      input(class="star-rating__input" type="radio")
+      input(class="star-rating__input" checked=mod2 type="radio")
       span.star-rating__ico
       input(class="star-rating__input" type="radio")
       span.star-rating__ico
