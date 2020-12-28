@@ -26,6 +26,26 @@ body{
 
 @import '~material-design-icons/iconfont/material-icons.css';
 
+/*$fa-font-path:"../node_modules/font-awesome/fonts";
+
+
+@fa-font-path: "font-awesome/fonts";
+
+@import "font-awesome/css/font-awesome.min.css";
+*/
+/*$fa-font-path:"../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";*/
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid'; // fas prefix
+@import '~@fortawesome/fontawesome-free/scss/brands'; // fab prefix
+
+
+
+//@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+//@import "../node_modules/font-awesome/scss/"
+
 //@import "fortawesome/fontawesome-free/css/all.min.css"; 
 
 @import './fonts.scss';
