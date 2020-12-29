@@ -1,5 +1,6 @@
-mixin toggle (mods)
-  label.toggle
-   input(class="toggle__input" checked=mods type="checkbox")
-   span(class="toggle__slider toggle__round")
-  .toggle__title Получать спецпредложения
+mixin toggle(mod)
+  .toggle-container
+    label.toggle-container__label
+      input.toggle-container__input(type="checkbox" checked=mod)
+      span.toggle-container__border
+      span.toggle-container__text Получать спецпредложения

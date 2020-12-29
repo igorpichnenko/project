@@ -92,8 +92,8 @@ block content
      .center-items
       +title("rate button",'title title_bottom')
       .section-center__rate
-       +rate-checked
-       +rate
+       +rate-button('form-elements-2', 2)
+       +rate-button('form-elements', 1)
      .center-items_dropdown
       +title("dropdown")
       +dropdown("dropdown__list--visible","0","0","0","Сколько гостей")
@@ -113,15 +113,15 @@ block content
    .section-buttons
     .buttons-container
      +button({mods: 'content-size'})  
-     +button({mods: 'disable,content-size'})
+     +button({mods: 'disable,content-size,large'})
     .buttons-container
-     +button({mods: 'border,content-size'})
+     +button({mods: 'border,content-size,large'})
      +button({mods: 'border,disable,content-size'})
     .buttons-container
      +button({mods: 'border,content-none'})  
      +button({mods: 'border,content-none,color-black'})
     .buttons-container
-     +button({text: 'ПЕРЕЙТИ К ОПЛАТЕ', mods: 'arrow'})
+     +button({text: 'Перейти к оплате', mods: 'arrow'})
    +title('pagination','title title__top')
    +pagination
    .section-three_dropdown

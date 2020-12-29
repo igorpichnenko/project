@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
+
 // модули --- ***
 module.exports = {
 	entry: {
@@ -33,7 +34,8 @@ module.exports = {
 					options: {
 						plugins: () => autoprefixer({
 							overrideBrowserslist: ['last 4 versions', '> 1%']
-						})
+						}),
+						
 					}
 				}, 'sass-loader']
 			},
@@ -55,7 +57,7 @@ module.exports = {
 				test: /\.(woff|woff2|eot|ttf|svg)$/,
 				loader: 'file-loader',
 				options: {
-					name: 'fonts/[name].[ext]'
+					name: 'fonts/[name].[ext]?[hash]'
 				}
 			}
 		]

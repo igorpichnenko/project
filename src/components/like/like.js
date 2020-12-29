@@ -9,7 +9,7 @@ const likeBlocks = document.querySelectorAll(".like");
     const checkbox = like.querySelector(".like__input");
     console.log(like)
     like.addEventListener("click", (event) => {
-      event.stopPropagation();
+     // event.stopPropagation();
       console.log(like)
       const checked = event.target.checked;
       const value = parseInt(valueEl.innerHTML);

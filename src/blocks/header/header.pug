@@ -1,12 +1,13 @@
 mixin header
-  header.header
-    .header-in
-     .container
-      .header-box
-        .logotype
-           +header-logo
-        .navigation
-         +header-nav
-        .btn
-          +btn-left
-          +btn-right
+ header.header
+  .header-container
+   .header-wrapper
+    .header-top__logo
+       +header-logo
+    .header-top__nav
+       +header-nav
+    .header-top__button
+        .header-top__left-btn
+          +button({text: "Войти",mods: 'border,content-size'})
+        .header-top__right-btn
+          +button({text: 'Зарегистрироваться'})

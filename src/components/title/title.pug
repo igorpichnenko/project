@@ -16,9 +16,9 @@ mixin title-number (text,price,mods)
        .number-container__price= price
        .number-container__duration в сутки
 
-mixin reviews(number)
+mixin reviews(number,name,check)
  .reviews
-  +rate
+  +rate-button(name,check)
   .reviews-container
    .reviews-container__number= number
    .reviews-container__text Отзывов

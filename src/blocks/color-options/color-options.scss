@@ -14,18 +14,20 @@
   &__title {
     font-style: normal;
     font-weight: bold;
-    font-size: rem(19px);
+    font-size: 19px;
     line-height: 27.79px;
     color: $dark100;
     white-space: nowrap;
+    font-family: Montserrat;
   }
 
   &__text {
     font-style: normal;
     font-weight: normal;
     color: $dark100;
-    font-size: rem(19px);
+    font-size: 19px;
     line-height: 28px;
+    font-family: Montserrat;
   }
   &__block {
     width: 70px;

@@ -94,7 +94,13 @@
 }
 .section-center__rate {
   display: flex;
+ 
 }
+.section-center__rate>*+* {
+  margin-left: 20px;
+}
+
+
 .center-items {
   margin-top: 40px;
 }
@@ -106,9 +112,6 @@
 }
 .section-center__toggle {
   margin-top: 10px;
-}
-.form-rating {
-  margin-left: 20px;
 }
 .form-like {
   margin-left: 10px;
