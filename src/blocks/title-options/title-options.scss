@@ -23,17 +23,26 @@ font-weight: normal;
 font-size: 24px;
 line-height: 29px;
 color: $dark25;
+font-family: Montserrat;
+
+&_h1{
+  margin-left: 2px;
+  font-family: Montserrat;
+}
 
 &_h2{
   font-size: 19px;
+  font-family: Montserrat;
 line-height: 23px;}
 
 &_h3{
   font-size: 12px;
+  font-family: Montserrat;
 line-height: 15px;}
 
 &_body{
   font-size: 14px;
+  font-family: Montserrat;
 line-height: 24px;}
 }
 
@@ -43,15 +52,23 @@ font-weight: bold;
 font-size: 24px;
 line-height: 29px;
 color: $dark100;
-margin-left: 30px;
+margin-left: 29px;
+font-family: Montserrat;
+
+
+
+
 
 &_texth2{
 font-size: 19px;
-line-height: 23px;}
+line-height: 23px;
+font-family: Montserrat;
+}
 
 &_texth3{
 font-size: 12px;
 line-height: 15px;
+font-family: Montserrat;
 text-transform: uppercase;}
 
 &_textbody{
@@ -60,6 +77,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 24px;
+
 color: rgba(31, 32, 65, 0.75);
 
 }
