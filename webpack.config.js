@@ -98,6 +98,8 @@ module.exports = {
 			template: './src/pages/color-type/color-type.pug',
 			filename: 'color-type.html'
 		}),
+		new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
 		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
@@ -111,6 +113,7 @@ module.exports = {
 		stats: 'errors-only',
 		index: 'index.html',
 		open: true,
+		hot: true,
 	}
 };
 
