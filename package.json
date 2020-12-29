@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --mode production"
   },
   "author": "",
@@ -13,8 +14,6 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.7.4",
-    "@fortawesome/fontawesome-free": "^5.15.1",
-    "air-datepicker": "^2.2.3",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
@@ -24,14 +23,8 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.3.0",
     "html-webpack-plugin": "^3.2.0",
-    "imask": "^6.0.5",
-    "ion-rangeslider": "^2.3.1",
-    "jquery": "^3.5.1",
-    "just-validate": "^1.5.0",
-    "material-design-icons": "^3.0.1",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.14.1",
-    "paginationjs": "^2.1.5",
     "postcss-loader": "^3.0.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
@@ -42,5 +35,15 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.11.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "air-datepicker": "^2.2.3",
+    "imask": "^6.0.5",
+     "paginationjs": "^2.1.5",
+    "gh-pages": "^3.1.0",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.5.1",
+    "just-validate": "^1.5.0",
+    "material-design-icons": "^3.0.1"
+  }
 }

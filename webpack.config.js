@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
-
+const ghpages = require('gh-pages');
 
 // модули --- ***
 module.exports = {
@@ -111,9 +111,10 @@ module.exports = {
 	devtool: 'inline-source-map',
 	devServer: {
 		stats: 'errors-only',
-		index: 'index.html',
+		index: 'cards.html',
 		open: true,
 		hot: true,
 	}
 };
 
+ghpages.publish('dist', function (err) {});
