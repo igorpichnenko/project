@@ -1,6 +1,7 @@
 import '../../components/calendar/calendar.js'
 import '../../scss/main.scss';
 import './form-elements.scss';
+import '../../pixel.js'
 import '../../components/dropdown/dropdown.js'
 import '../../components/range-slider/range-slider.js'
 import '../../components/pagination/paginationjs.js'

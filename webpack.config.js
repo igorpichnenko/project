@@ -5,12 +5,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const ghpages = require('gh-pages');
+//const ErudaWebpackPlugin = require('eruda-webpack-plugin');
+
 
 // модули --- ***
 module.exports = {
 	entry: {
 	  'index': './src/pages/index/index.js',
-	   'color-type': './src/pages/color-type/color-type.js',
+	  'color-type': './src/pages/color-type/color-type.js',
 	   'headers-footers': './src/pages/headers-footers/headers-footers.js',
 	    'form-elements': './src/pages/form-elements/form-elements.js',
 	    'cards': './src/pages/cards/cards.js',
@@ -69,6 +71,10 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 		}),
+	//	new ErudaWebpackPlugin({
+ //    entry: [/index\.js$/, /color-type\.js$/],
+   //   plugins: ['dom'],
+ //   }),
 		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
@@ -98,8 +104,6 @@ module.exports = {
 			template: './src/pages/color-type/color-type.pug',
 			filename: 'color-type.html'
 		}),
-		new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
 		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
@@ -111,9 +115,8 @@ module.exports = {
 	devtool: 'inline-source-map',
 	devServer: {
 		stats: 'errors-only',
-		index: 'cards.html',
+		index: 'index.html',
 		open: true,
-		hot: true,
 	}
 };
 
