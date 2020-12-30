@@ -1,84 +1,95 @@
-.uikit-content{
+.uikit-content {
   display: flex;
   margin-top: 52px;
 
-&:nth-child(1){
-  margin-top: 0;
-  margin-left: 8px;
+  &:nth-child(1) {
+    margin-top: 0;
+    margin-left: 8px;
+  }
+  &:nth-child(2) {
+    margin-left: 12px;
+  }
+  &:nth-child(3) {
+    margin-left: 21px;
+  }
+  &:nth-child(4) {
+    margin-top: 47px;
+    margin-right: 2px;
+  }
 }
-&:nth-child(2){
-  margin-left: 12px;
-}
-&:nth-child(3){
-  margin-left: 21px;
-}
-&:nth-child(4){
-  margin-top: 47px;
-  margin-right: 2px;
-}
-}
-.uikit-content__title{
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 29px;
-color: $dark25;
-font-family: Montserrat;
-
-&_h1{
-  margin-left: 2px;
+.uikit-content__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: $dark25;
   font-family: Montserrat;
+
+  &_h1 {
+    margin-left: 0.4px;
+    font-family: Montserrat;
+  }
+
+  &_h2 {
+    margin-left: -1.6px;
+    font-size: 19px;
+    font-family: Montserrat;
+    line-height: 23px;
+  }
+
+  &_h3 {
+    margin-left: -1.5px;
+    font-size: 12px;
+    font-family: Montserrat;
+    line-height: 15px;
+  }
+
+  &_body {
+    margin-left: -0.5px;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 24px;
+  }
 }
 
-&_h2{
-  font-size: 19px;
+.uikit-content__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: $dark100;
+  margin-left: 29px;
   font-family: Montserrat;
-line-height: 23px;}
-
-&_h3{
-  font-size: 12px;
-  font-family: Montserrat;
-line-height: 15px;}
-
-&_body{
-  font-size: 14px;
-  font-family: Montserrat;
-line-height: 24px;}
-}
-
-.uikit-content__text{
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 29px;
-color: $dark100;
-margin-left: 29px;
-font-family: Montserrat;
 
 
 
 
 
-&_texth2{
-font-size: 19px;
-line-height: 23px;
-font-family: Montserrat;
-}
+  &_texth2 {
+    margin-top: 0.8px;
+    font-size: 19px;
+    line-height: 23px;
+    font-family: Montserrat;
+  }
 
-&_texth3{
-font-size: 12px;
-line-height: 15px;
-font-family: Montserrat;
-text-transform: uppercase;}
+  &_texth3 {
+    padding-left: 1.4px;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+  }
 
-&_textbody{
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
+  &_textbody {
+    margin-bottom: 0.8px;
+    margin-left: 29.7px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
 
-color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 0.75);
 
-}
+  }
 }
