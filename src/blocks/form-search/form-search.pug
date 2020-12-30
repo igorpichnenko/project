@@ -1,7 +1,8 @@
 mixin form-search
   form.search
    .search-container
-      +large-title('Найдём номера под ваши пожелания')
+      .wrap-title
+       +large-title('Найдём номера под ваши пожелания')
       .search-container__title
        +title('Прибытие')
        +title('Выезд')
@@ -10,4 +11,5 @@ mixin form-search
       .search-container__dropdown
        +title('Гости')
        +dropdown("dropdown__list","2","1","0","Сколько гостей")
-      +button({text: 'Подобрать номер', mods: 'arrow'})
+      .search-container__button
+         +button({text: 'Подобрать номер', mods: 'arrow'})

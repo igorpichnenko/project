@@ -1,55 +1,66 @@
-
-.radio-button {
+.radio {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.radio * {
+  box-sizing: border-box;
+}
+.radio__input {
   position: absolute;
+  z-index: -1;
   opacity: 0;
-
+  margin: 10px 0 0 7px;
 }
-
-
-.radio-button + .radio-label {
-  position: relative;
-  cursor: pointer;
-  line-height: 30px;
-  padding: 0 0 0 28px;
-  font-style: normal;
-font-weight: normal;
-font-size: 14px;
-color: rgba(31, 32, 65, 0.5);
-}
-
-.radio-button + .radio-label:before {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: 0;
-  background: #FFF;
-  width: 20px;
-height: 20px;
-border: 1px solid #BC9CFF;
-box-sizing: border-box;
-border-radius: 10px;
-
-}
-
-.radio-button + .radio-label:after {
-  content: '';
-  position: absolute;
-  top: 9px;
-  left: 12px;
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  opacity: 0;
-  transition: .2s;
-}
-
-.radio-button:checked + .radio-label:after {
+.radio__input:checked+.radio__text:after {
   opacity: 1;
-  top: 1px;
+
+}
+.radio__input:checked + .radio__text:before {
+  border: 1px solid #BC9CFF;
+}
+.radio__input:focus+.radio__text:before {
+  border: 1px solid #BC9CFF;
+
+}
+.radio__input:checked+.radio__text {
+
+  color: rgba(31,32,65,0.75);
+}
+
+.radio__text {
+  position: relative;
+  padding: 0 0 0 30px;
+  cursor: pointer;
+  color: rgba(31,32,65,0.5);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+}
+.radio__text:before {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31,32,65,0.25);
+  border-radius: 50%;
+  background: #fff;
+}
+.radio__text:after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: 4px;
   left: 4px;
   width: 12px;
   height: 12px;
-background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0;
 }
-.radio-button:checked +.radio-label{
-color: rgba(31, 32, 65, 0.75);}

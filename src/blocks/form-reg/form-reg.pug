@@ -6,7 +6,8 @@ mixin form-reg
       +input('Имя','text')
       +input('Фамилия','text')
      .reg-container__radio
-      +radio
+      +radio("Мужчина",'man','check')
+      +radio('Женщина','man')
      +title('Дата рождения')
      +input('ДД.ММ.ГГГГ','text')
      .reg-container__data
@@ -18,7 +19,9 @@ mixin form-reg
       +toggle
      +button({text: 'Перейти к оплате', mods: 'arrow'})
      .reg-container__sign-in
-      .reg-container__text Уже есть аккаунт на Toxin
-      +button({text: 'Войти', mods: 'border,content-size,large'})
+       .reg-container__wrap
+        .reg-container__text Уже есть аккаунт на Toxin
+       .reg-container__button
+        +button({text: 'Войти', mods: 'border,content-size,large'})
      
      

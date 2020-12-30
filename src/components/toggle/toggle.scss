@@ -9,17 +9,17 @@
 .toggle-container__border {
   position: relative;
   display: flex;
-  padding: rem(3px);
-  height: rem(20px);
-  width: rem(40px);
-  border-radius: rem(10px);
+  padding: 3px;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
   border: 1px solid rgba(31,32,65,0.25);
   box-sizing: border-box
 }
 .toggle-container__border::before {
   content: '';
-  height: rem(12px);
-  width: rem(12px);
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   background-color: rgba(31,32,65,0.25);
   transition: margin-left 0.3s
@@ -29,11 +29,13 @@
 }
 .toggle-container__input:checked ~ .toggle-container__border::before {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  margin-left: rem(20px);
+  margin-left: 20px;
 }
 .toggle-container__text {
-  padding-left: rem(10px);
-  font-size: rem(14px);
+  padding-left: 10px;
+  font-size: 14px;
   color: rgba(31,32,65,0.75);
-  user-select: none
+  user-select: none;
+  font-family: Montserrat;
+
 }

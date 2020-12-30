@@ -6,6 +6,7 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
+  margin-bottom: 5px;
 }
 .form-item__hover-title {
   font-family: Montserrat;
@@ -52,6 +53,7 @@
     color: #1F2041;
     margin-bottom: 2px;
     align-self: flex-end;
+    font-family: Montserrat;
   }
   &__text {
     font-style: normal;
@@ -60,6 +62,17 @@
     line-height: 29px;
     color: #1F2041;
     text-indent: 3px;
+    font-family: Montserrat;
+
+  }
+  &__text_low {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24.4px;
+    color: #1F2041;
+    margin-left: 3px;
 
   }
   &__lux {
@@ -69,8 +82,11 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #BC9CFF;
-    margin-bottom: 3px;
+    margin-bottom: 0.7px;
     align-self: flex-end;
+    font-family: Montserrat;
+    margin-left: 1px;
+    
 
   }
   &__price {
@@ -79,34 +95,40 @@
     font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
+    font-family: Montserrat;
+    align-self: flex-end;
+    margin-bottom: 1.2px;
+    margin-right: 4px;
   }
   &__duration {
-    text-indent: 5px;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
-
+    font-family: Montserrat;
+    align-self: flex-end;
     color: rgba(31, 32, 65, 0.5);
   }
 }
 //          ***   ///
-.reviews{
+.reviews {
   display: flex;
   justify-content: space-between;
 }
- 
+
 .reviews-container {
   display: flex;
-  
+  margin-top: 2px;
+font-family: Montserrat;
 
   &__text {
-    text-indent: 5px;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
+    font-family: Montserrat;
+    margin-right: 3px;
   }
   &__number {
     font-style: normal;
@@ -114,5 +136,7 @@
     font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
+    font-family: Montserrat;
+    margin-right: 3.5px;
   }
 }
