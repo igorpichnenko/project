@@ -1,13 +1,24 @@
 .datepicker-box{
   width: 150px;
   box-sizing: border-box;
+  position: relative;
+}
+.datepicker-box:after{
+  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  content: 'expand_more';
+  font-family: 'Material Icons';
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.50);
+  cursor: pointer;
+  pointer-events: none;
   
 }
-  
 
-.datepicker-box{
-  width: 150px;
-}
 
 .datepickers-container {
   position: absolute;

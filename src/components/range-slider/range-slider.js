@@ -14,9 +14,11 @@ import '../../components/range-slider/RangeSlider.scss';
     $range.ionRangeSlider({
         type: "double",
         min: 0,
+      //  values_separator: '-',
         max: 15000,
         from: 5000,
         to: 10000,
+       // step: 10,
         prefix: "₽",
         hide_min_max: true,
 	     	hide_from_to: true,

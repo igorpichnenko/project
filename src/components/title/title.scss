@@ -18,12 +18,19 @@
   color: rgba(31, 32, 65, 0.5);
   
 }
+.title_center{
+  align-self: center;
+  font-size: 11.7px;
+  margin-bottom: 1.5px;
+}
 .title_bottom {
   margin-bottom: 5px;
   font-size: 11.4px;
 }
-.title__top {
-  margin-top: 35px;
+.title_top {
+  align-self: flex-end;
+  margin-bottom: 5px;
+  margin-right: 2px;
 }
 
 //       *****        //

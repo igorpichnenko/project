@@ -1,96 +1,72 @@
 .container-grid {
-  display: flex;
-  flex-wrap: wrap;
-  /* display: grid;
+  display: grid;
   grid-template: "one two three"
-  "one four four";*/
+  "one four four";
   width: 1440px;
+  gap: 0;
 }
-
-
 .grid-one {
-  margin-top: 143.5px;
+  margin-top: 140.5px;
   margin-left: 141px;
-  width: 320px;
-  height: 1491px;
   grid-area: one;
 }
 .grid-two {
   margin-left: 126px;
   margin-top: 143.5px;
   grid-area: two;
-  width: 320px;
-  height: 1198px;
 }
 
 .grid-three {
   margin-left: 72px;
   margin-top: 143.5px;
   grid-area: three;
-  width: 320px;
   height: 1198px;
 }
-
 .grid-four {
   grid-area: four;
-  margin-top: 231px;
-  width: 715px;
-  height: 133px;
-  padding: 0 0 0 55px;
-
-}
-
-
-.form-mask {
-  height: 645px;
-  width: 320px;
+  margin-top: 214px;
+ width: 715px;
+ height: 133px;
+  padding: 0 0 0 125px;
 }
 .form-item {
   display: flex;
   justify-content: space-between;
-
-
 }
 .form-items__masked {
-  margin-top: 23.8px;
+  margin-top: 22.9px;
 }
 .form-item__dropdown {
-  margin-top: 21px;
+  margin-top: 19.8px;
 }
-
 .form-items {
   width: 320px;
 }
 .form-items__title {
-  margin-bottom: 4px;
+  margin-top: 3px;
 }
 .form-items__filter {
-
   width: 266px;
 }
 .form-items + .form-items {
-  margin-top: 21.8px;
+  margin-top: 17px;
 }
 .form-items__dabl-date {
-  margin-top: 41.3px;
-  margin-bottom: 41.8px;
+  margin-top: 37px;
+  margin-bottom: 41px;
 }
 .subscription-input__container {
   width: 266px;
-
-
 }
 .form-items_subscription {
-  margin-top: 42.5px;
+  margin-top: 41.5px;
 }
-//           *******       //
 .section-dropdowns {
+  margin-top: 96.8px;
   width: 267px;
-  height: 846px;
-  margin-top: 88.4px;
 }
 .section-dropdown {
-  margin-bottom: 21px;
+  margin-bottom: 17.2px;
 }
 .section-dropdown__item {
   display: flex;
@@ -105,31 +81,26 @@
 .section-commets {
   margin-top: 83px;
 }
-//       *******         //
 .section-center__toggle {
   display: flex;
 }
 .center-items__like {
   margin-top: 46px;
-
 }
 .section-center__like {
   display: flex;
   margin-top: 15px;
 }
-
 .center-items__rate {
   margin-top: 41px;
 }
 .section-center__rate {
   display: flex;
   margin-top: 18px;
-
 }
 .section-center__rate>*+* {
   margin-left: 20px;
 }
-//***   //
 .grid-two__checkbox {
   margin-top: 16.5px;
 }
@@ -160,7 +131,6 @@
 .center-items_radio>*+* {
   margin-left: 15px;
 }
-///        *****       ///
 .range-box {
   display: flex;
   height: 12px;
@@ -170,22 +140,26 @@
 }
 .range-end {}
 .section-buttons {
-  display: flex;
+ display: flex;
   flex-wrap: wrap;
+}
+.buttons__title{
+ margin-top: 36px;
 }
 .buttons-container {
   display: flex;
   margin-top: 30px;
-  
+  width: 320px;
+  margin-left: 0;
 }
 .section-three_pagination{
-  margin-top: 6px;
+  margin-top: 41px;
 }
 .section-three_pagination_bottom{
   margin-top: 15.6px;
 }
 .buttons-container_top {
-  margin-top: 12px;
+  margin-top: 11px;
   display: flex;
 }
 .buttons-container_bottom {
@@ -196,13 +170,13 @@
   margin-left: 21px;
 }
 .buttons-container_top>*+* {
-  margin-left: 16px;
+  margin-left: 19.5px;
 }
 .buttons-container:first-child {
   margin-top: 0;
 }
 .buttons-container > *+* {
-  margin-left: 17px;
+  margin-left: 19px;
 }
 .section-three_dropdown {
   margin-top: 233.5px;

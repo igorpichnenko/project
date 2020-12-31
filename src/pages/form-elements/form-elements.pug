@@ -33,7 +33,7 @@ block body
     .form-items
      .form-item
       +title('Text Field','title form-items__title')
-      +title('hover / focus','form-item__hover-title')
+      +title('hover / focus','form-item__hover-title title_center')
      +input-hover('This is pretty awesome')
     .form-item__dropdown
      +title('dropdown','title form-items__title')
@@ -57,12 +57,12 @@ block body
    .section-dropdowns
     .section-dropdown
      .section-dropdown__item
-      +title('dropdown','title form-items__title')
-      +title('Default','form-item__hover-title')
+      +title('dropdown','title form-items__title ')
+      +title('Default','title_top form-item__hover-title')
      +dropdown-medium
     .section-dropdown__item
      +title('dropdown','title form-items__title')
-     +title('expanded','form-item__hover-title')
+     +title('expanded','title_top form-item__hover-title')
     +dropdown-medium('dropdown__list--visible')
     .section-checkbox
      .section-checkbox__item
@@ -113,10 +113,11 @@ block body
     .range-end
      +input("","","range-out range-end")
    +range-slider
-   +title('buttons','title title__top')
+   .buttons__title
+    +title('buttons','title')
    .section-buttons
     .buttons-container_top
-      +button({mods: 'content-size'})  
+      +button({mods: 'content-size,large'})  
       +button({mods: 'disable,content-size,large'})
     .buttons-container
      +button({mods: 'border,content-size,large'})
@@ -127,7 +128,7 @@ block body
     .buttons-container
      +button({text: 'Перейти к оплате', mods: 'arrow'})
     .section-three_pagination
-     +title('pagination','title title__top')
+     +title('pagination','title')
      .section-three_pagination_bottom
       +pagination
    .section-three_dropdown
