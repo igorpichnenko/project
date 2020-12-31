@@ -9,12 +9,12 @@ mixin footer
     .footer-container__nav
      +link('main-nav','Навигация','О нас','Новости','Служба поддержки','Услуги')
     .footer-container__nav
-     +link('about-nav','О нас','О сервере','Наша команда','Вакансии','Инвесторы')
+     +link('about-nav','О нас','О сервисе','Наша команда','Вакансии','Инвесторы')
     .footer-container__nav
      +link('support-nav','Служба поддержки','Соглашения','Сообщества','Связь с нами')
     .footer-container__subscription
      ul.footer-container__subscript
-       li.footer-container__list
+       li.footer-container__promo-list
         a.footer-container__title Подписка 
        li.footer-container__text
         a.footer-container__promo Получайте специальные предложения и новости сервиса
@@ -25,4 +25,4 @@ mixin footer
     .footer-bottom__item
      .footer-bottom__text Copyright © 2018 Toxin отель. Все права зачищены.
     .footer-bottom__icons
-       +font-icon('fab fa-facebook-square gradient-icon footer-bottom__icon')
+       +font-icon

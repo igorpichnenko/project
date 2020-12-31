@@ -33,12 +33,12 @@ block body
     .form-items
      .form-item
       +title('Text Field','title form-items__title')
-      +title('hover/focus','form-item__hover-title')
-     +input('This is pretty awesome')
-    .form-items
+      +title('hover / focus','form-item__hover-title')
+     +input-hover('This is pretty awesome')
+    .form-item__dropdown
      +title('dropdown','title form-items__title')
      +dropdown("dropdown__list","2","1","0","Сколько гостей")
-    .form-items
+    .form-items__masked
      +title('masked text field','title form-items__title')
      +input('ДД.ММ.ГГГГ','text', 'input mask-date')
     .form-items__dabl-date
@@ -50,9 +50,10 @@ block body
     .form-items__filter
      +title('filter date dropdown','title form-items__title')
      +filter-input
-    .form-items
+    .form-items_subscription
      +title('subscription text field','title form-items__title')
-     +subscription-input
+     .subscription-input__container
+      +subscription-input
    .section-dropdowns
     .section-dropdown
      .section-dropdown__item
@@ -73,24 +74,26 @@ block body
      +comments('location_city','Удобство','Окно в каждой из спален')
   .grid-two
      +title('checkbox buttons')
-     +checkbox-button('checked')
+     .grid-two__checkbox
+      +checkbox-button('checked')
      .center-items
       +title('radio buttons')
       .center-items_radio
-       +radio
-     .center-items
+       +radio("Мужчина",'man','check')
+       +radio('Женщина','man')
+     .center-items_toggle
       +title("toggle",'title title_bottom')
       .section-center__toggle
        +toggle("checked")
       .section-center__toggle
        +toggle
-     .center-items
-      +title("like button",'title title_bottom')
+     .center-items__like
+      +title("like button",'title')
       .section-center__like
        +like("2")
        +like("12","checked","form-like")
-     .center-items
-      +title("rate button",'title title_bottom')
+     .center-items__rate
+      +title("rate button",'title')
       .section-center__rate
        +rate-button('form-elements-2', 2)
        +rate-button('form-elements', 1)
@@ -98,9 +101,10 @@ block body
       +title("dropdown")
       +dropdown("dropdown__list--visible","0","0","0","Сколько гостей")
      .center-items_button
-      +title("rich checkbox button")
-      +checkbox('Широкий коридор','Ширина коридорв в номере не менее 91 см.')
-      +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера')
+      +title("rich checkbox buttons")
+      .center-items_buttons
+       +checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
+       +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера','checkbox-items__comment checkbox-items__wrap')
   .grid-three
    .range-box
     +title('range slider')
@@ -111,27 +115,32 @@ block body
    +range-slider
    +title('buttons','title title__top')
    .section-buttons
-    .buttons-container
-     +button({mods: 'content-size'})  
-     +button({mods: 'disable,content-size,large'})
+    .buttons-container_top
+      +button({mods: 'content-size'})  
+      +button({mods: 'disable,content-size,large'})
     .buttons-container
      +button({mods: 'border,content-size,large'})
      +button({mods: 'border,disable,content-size'})
-    .buttons-container
+    .buttons-container_bottom
      +button({mods: 'border,content-none'})  
      +button({mods: 'border,content-none,color-black'})
     .buttons-container
      +button({text: 'Перейти к оплате', mods: 'arrow'})
-   +title('pagination','title title__top')
-   +pagination
+    .section-three_pagination
+     +title('pagination','title title__top')
+     .section-three_pagination_bottom
+      +pagination
    .section-three_dropdown
    +title('dropdown')
    +dropdown("dropdown__list--visible","2","1","0","3 гостя")
    .section-bullet
     +title('bullet list')
-    +bullet-list('Нельзя с питомцами')
-    +bullet-list('Без вечеринок и мероприятий')
-    +bullet-list('Время прибытия — после 13:00 а выезд до 12:00')
+    .section-bullet_bottom
+     +bullet-list([
+          'Нельзя с питомцами',
+          'Без вечеринок и мероприятий',
+          'Время прибытия — после 13:00, а выезд до 12:00'
+        ])
   .grid-four
    +comment
 block script

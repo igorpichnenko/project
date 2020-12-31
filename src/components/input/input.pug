@@ -1,5 +1,10 @@
 mixin input(name="",mod="text",className="input",validate)
     input(placeholder=''+name, type=''+mod,class=''+className,data-validate-field=''+validate)
+    
+mixin input-hover(text,mod,className)
+    input.input-hover(placeholder=''+text, type=""+mod, class=""+className)
+    
+    
 mixin filter-input
   .container-input
     input(class='filter-input datepicker-new' type='text' placeholder="19 авг - 23 авг")

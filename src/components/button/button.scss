@@ -16,7 +16,7 @@
   color: #fff;
   text-transform: uppercase;
   font-family: Montserrat;
-
+  white-space: nowrap;
   &__border {
     border: solid 0.125rem transparent;
     border-radius: 80px;
@@ -31,7 +31,7 @@
     position: relative;
     width: 320px;
     height: 44px;
-    
+
 
 
     &:after {
@@ -43,7 +43,7 @@
       font-family: 'Material Icons';
       font-size: 24px;
       text-transform: none;
-      
+
     }
   }
 
@@ -51,7 +51,6 @@
     padding-right: 20px;
     padding-left: 20px;
     width: auto;
-    
   }
   &__content-none {
     border: none;
@@ -68,11 +67,11 @@
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 240, 0.5) 100%);
     background-clip: content-box, border-box;
     background-origin: border-box;
+    
   }
-  &__large{
+  &__large {
     height: 44px;
     width: 99px;
   }
-  
-}
 
+}

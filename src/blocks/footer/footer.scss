@@ -6,7 +6,7 @@
   background-color: #fff;
   width: 1160px;
   margin-left: 140px;
-  
+  padding: 100px 0 80px 0;
 }
 .footer-bottom__wrapper {
  margin-left: 140px;
@@ -18,12 +18,11 @@
 
 }
 .footer-wrapper {
-  height: 373px;
+ // height: 373px;
   width: 100%;
   display: grid;
-  padding: 104px  0 100px 0;
-  box-sizing: border-box;
-  margin: 0 auto;
+  
+ 
 
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 40px;
@@ -32,16 +31,17 @@
 .footer-bottombox {}
 .footer-container__nav {
   grid-column:span 2;
+  padding-top: 4.5px;
 }
 .footer-container__logo {
   grid-column:span 3;
+  
 }
 .footer-container__subscription {
   grid-column:span 3;
 }
 
-.footer-container__paragraf, .footer-container__promo, .footer-container__text {
-  margin-top: 20px;
+.footer-container__paragraf, .footer-container__text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -49,9 +49,7 @@
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
-.footer-container__text {
-  margin-bottom: 20px;
-}
+
 
 .footer-bottom__text {
   font-family: Montserrat;
@@ -62,7 +60,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 .footer-container__list:nth-last-child(-n+4) {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .footer-container__list:nth-last-child(-n+4) {
   font-family: Montserrat;
@@ -73,8 +71,8 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.footer-container__list:nth-child(1), .footer-container__title{
-  margin-bottom: 21px;
+.footer-container__list:nth-child(1){
+  margin-bottom: 21.8px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -83,12 +81,31 @@
   text-transform: uppercase;
   color: #1F2041;
 }
+ .footer-container__paragraf{
+   margin-top: 14.5px;
+ }
+ .footer-container__promo-list{
+   font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 18.5px;
+  padding-top: 4.5px;
+ }
+
 .footer-bottom {
   border-top: 1px solid rgba(31, 32, 65, 0.1);
 }
-.footer-bottom__icon {
-  padding: 0 20px;
+.footer-bottom__icons >*+*{
+ margin-left: 22px;
+}
+.footer-bottom__icons{
+  margin-right: 1.5px;
 }
 .footer-container__input {
   width: 260px;
+  margin-top: 22.5px;
 }

@@ -1,12 +1,10 @@
  .pagination a {
   color: rgba(31,32,65,0.5);
   text-decoration: none;
-  font-size: 0.8571rem;
-  line-height: 3.3333
+  font-size: 12px;
+  line-height: 3.3333;
 }
 .pagination__link_active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-  background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
 }
 .pagination__link_active a {
@@ -14,9 +12,11 @@
   color: white
 }
 .pagination__link_active,.pagination .paginationjs-prev,.pagination .paginationjs-next {
-  min-width: 2.8571rem
+  min-width: 40px;
 }
 .pagination__text {
+  margin-left: 6px;
+  margin-top: 8px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -28,30 +28,23 @@
   display: none
 }
 .pagination__icon {
-  font-size: 1.7143rem;
+  font-size: 24px;
   line-height: 1.6667;
   color: #fff
 }
 .paginationjs-prev,.paginationjs-next {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
-  background: -o-linear-gradient(top, #6FCF97 0%, #66D2EA 100%);
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
 }
 .paginationjs-page,.paginationjs-prev,.paginationjs-next,.paginationjs-ellipsis {
   display: inline-block;
   width: 100%;
-  max-width: 2.8571rem;
-  height: 2.8571rem;
+  max-width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center
 }
 .pagination__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   padding: 0;
   margin: 0

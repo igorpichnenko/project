@@ -1,4 +1,11 @@
-.bullet-list__text {
+.bullet-list {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  max-width: 240px;
+  padding-left: 20px;
+  list-style-type: none;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -6,22 +13,17 @@
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   font-size: 14px;
-  margin-left: 10px;
-}
-.bullet-list__item {
-  box-sizing: border-box;
-  width: 10px;
-  height: 10px;
-  background: rgba(31, 32, 65, 0.25);
-  border-radius: 100px;
-  margin-top: 9px;
-  margin-left: 1px;
-}
+  
 
-
-.bullet-list {
-  display: flex;
-  flex-direction:row;
-  align-items: flex-start;
-
+   .bullet-list__items::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background-color: rgba(31, 32, 65, 0.50);
+    font-family: Montserrat;
+  }
 }

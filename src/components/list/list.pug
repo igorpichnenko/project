@@ -4,8 +4,7 @@ mixin link(classname,...items)
               li(class="footer-container__list footer-container__list_"+classname)
                 a.footer-container__link= item
                 
-mixin bullet-list(text="")
-  
-   .bullet-list
-    .bullet-list__item
-    .bullet-list__text= text
+mixin bullet-list(items)
+  ul.bullet-list
+    each item in items
+      li.bullet-list__items= item

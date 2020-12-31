@@ -1,22 +1,23 @@
-
 .container-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
   grid-template: "one two three"
-  "one four four";
-width: 1440px;
+  "one four four";*/
+  width: 1440px;
 }
 
 
 .grid-one {
-  margin-top: 140px;
-  margin-left: 140px;
+  margin-top: 143.5px;
+  margin-left: 141px;
   width: 320px;
   height: 1491px;
   grid-area: one;
 }
 .grid-two {
   margin-left: 126px;
-  margin-top: 140px;
+  margin-top: 143.5px;
   grid-area: two;
   width: 320px;
   height: 1198px;
@@ -24,7 +25,7 @@ width: 1440px;
 
 .grid-three {
   margin-left: 72px;
-  margin-top: 140px;
+  margin-top: 143.5px;
   grid-area: three;
   width: 320px;
   height: 1198px;
@@ -32,10 +33,11 @@ width: 1440px;
 
 .grid-four {
   grid-area: four;
-  margin-left: 126px;
-  margin-top: 170px;
-  width: 650px;
+  margin-top: 231px;
+  width: 715px;
   height: 133px;
+  padding: 0 0 0 55px;
+
 }
 
 
@@ -46,7 +48,16 @@ width: 1440px;
 .form-item {
   display: flex;
   justify-content: space-between;
+
+
 }
+.form-items__masked {
+  margin-top: 23.8px;
+}
+.form-item__dropdown {
+  margin-top: 21px;
+}
+
 .form-items {
   width: 320px;
 }
@@ -54,83 +65,110 @@ width: 1440px;
   margin-bottom: 4px;
 }
 .form-items__filter {
-  margin-bottom:  40px;
+
   width: 266px;
 }
 .form-items + .form-items {
-  margin-top: 20px;
+  margin-top: 21.8px;
 }
 .form-items__dabl-date {
-  margin-top: 40px;
-  margin-bottom: 55px;
+  margin-top: 41.3px;
+  margin-bottom: 41.8px;
+}
+.subscription-input__container {
+  width: 266px;
+
+
+}
+.form-items_subscription {
+  margin-top: 42.5px;
 }
 //           *******       //
 .section-dropdowns {
   width: 267px;
   height: 846px;
+  margin-top: 88.4px;
 }
 .section-dropdown {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .section-dropdown__item {
   display: flex;
   justify-content: space-between;
 }
-.section-dropdown + .section-dropdown {
-  margin-top: 20px;
-}
 .section-checkbox {
-  margin-top: 150px;
+  margin-top: 170px;
+}
+.section-checkbox__item + .section-checkbox__item {
+  margin-top: 47.6px;
 }
 .section-commets {
-  margin-top: 90px;
+  margin-top: 83px;
 }
 //       *******         //
 .section-center__toggle {
   display: flex;
 }
+.center-items__like {
+  margin-top: 46px;
+
+}
 .section-center__like {
   display: flex;
+  margin-top: 15px;
+}
+
+.center-items__rate {
+  margin-top: 41px;
 }
 .section-center__rate {
   display: flex;
- 
+  margin-top: 18px;
+
 }
 .section-center__rate>*+* {
   margin-left: 20px;
 }
-
-
+//***   //
+.grid-two__checkbox {
+  margin-top: 16.5px;
+}
 .center-items {
-  margin-top: 40px;
+  margin-top: 42.5px;
 }
 .center-items_dropdown {
-  margin-top: 170px;
+  margin-top: 196px;
 }
 .center-items_button {
-  margin-top: 250px;
+  margin-top: 256.5px;
+}
+.center-items_buttons {
+  margin-top: 15.5px;
 }
 .section-center__toggle {
-  margin-top: 10px;
+  margin-top: 14.4px;
+}
+.center-items_toggle {
+  margin-top: 41px;
 }
 .form-like {
   margin-left: 10px;
 }
 .center-items_radio {
-  margin-top: 7px;
+  margin-top: 12px;
+}
+.center-items_radio>*+* {
+  margin-left: 15px;
 }
 ///        *****       ///
 .range-box {
   display: flex;
-  height: 25px;
+  height: 12px;
 }
 .range-start {
-  margin-top: 5px;
-  margin-left: 40px;
+  margin-left: 29px;
 }
-.range-end {
-  margin-top: 5px;
-}
+.range-end {}
 .section-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -138,28 +176,52 @@ width: 1440px;
 .buttons-container {
   display: flex;
   margin-top: 30px;
+  
+}
+.section-three_pagination{
+  margin-top: 6px;
+}
+.section-three_pagination_bottom{
+  margin-top: 15.6px;
+}
+.buttons-container_top {
+  margin-top: 12px;
+  display: flex;
+}
+.buttons-container_bottom {
+  margin-top: 30px;
+  display: flex;
+}
+.buttons-container_bottom>*+* {
+  margin-left: 21px;
+}
+.buttons-container_top>*+* {
+  margin-left: 16px;
 }
 .buttons-container:first-child {
   margin-top: 0;
 }
 .buttons-container > *+* {
-  margin-left: 15px;
+  margin-left: 17px;
 }
 .section-three_dropdown {
-  margin-top: 220px;
+  margin-top: 233.5px;
+}
+.section-bullet_bottom{
+  margin-top: 13px;
 }
 .section-bullet {
-  margin-top: 245px;
+  margin-top: 256px;
 }
-.calendar-dabl{
+.calendar-dabl {
   display: flex;
 }
-.calendar-dabl>*+*{
+.calendar-dabl>*+* {
   margin-left: 20px;
 }
-.dropdown-date>*+*{
-  margin-left: 73px;
+.dropdown-date>*+* {
+  margin-left: 52px;
 }
-.dropdown-date{
+.dropdown-date {
   display: flex;
 }

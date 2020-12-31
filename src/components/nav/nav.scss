@@ -3,6 +3,11 @@
   white-space: nowrap;
   list-style:  none;
 
+&__link_about{
+  margin-right: 2px;
+}
+
+
 &__text{
   text-decoration: none;
   font-size: 14px;
@@ -14,6 +19,7 @@
   position: relative;
   text-align: center;
   cursor: pointer;
+  font-family: Montserrat;
   
 &:nth-child(1){
  font-style: normal;
@@ -21,11 +27,13 @@ font-weight: bold;
 font-size: 14px;
 line-height: 17px;
 color: $dark75;
+font-family: Montserrat;
+
 }}
 }
 
 .nav-list__text_bg_img{
-  margin-right: 10px;
+  margin-right: 25px;
 
 &:after{
 content: 'expand_more';
@@ -34,6 +42,5 @@ position: absolute;
 font-size: 24px;
 line-height: 20px;
 color: $dark50;
-top: -1px;
-
 }}
+
