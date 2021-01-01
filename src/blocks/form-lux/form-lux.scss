@@ -11,7 +11,7 @@
 
   &__title {
     display: flex;
-    margin-top: 21.8px;
+    margin-top: 21.4px;
     &>*+* {
       margin-left: 95px;
     }
@@ -24,7 +24,7 @@
     }
   }
   &__button {
-    margin-left: 30px;
+    margin-left: 28.6px;
     margin-top: 21px;
   }
 }
@@ -44,6 +44,7 @@
   }
   &__text_left{
     margin-left: 1px;
+    margin-top: 0.5px;
   }
   &__text_wrap {
     width: 200px;
@@ -82,7 +83,7 @@
     justify-content: space-between;
   }}
 .formlux-footer {
-  margin-top: 31px;
+  margin-top: 30px;
   margin-left: 30px;
   &__text {
     font-style: normal;
@@ -96,7 +97,7 @@
   &__border {
     margin-right: 3px;
     margin-left: 4.5px;
-    margin-bottom: 3px;
+    margin-bottom: 3.7px;
     width: 183px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
   }

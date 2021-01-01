@@ -74,6 +74,7 @@
 }
 .section-checkbox {
   margin-top: 170px;
+ margin-left: -1px;
 }
 .section-checkbox__item + .section-checkbox__item {
   margin-top: 47.6px;
@@ -137,6 +138,7 @@
 }
 .range-start {
   margin-left: 29px;
+  align-self: center;
 }
 .range-end {}
 .section-buttons {
@@ -150,7 +152,7 @@
   display: flex;
   margin-top: 30px;
   width: 320px;
-  margin-left: 0;
+  margin-left: -1px ;
 }
 .section-three_pagination{
   margin-top: 41px;
@@ -159,11 +161,11 @@
   margin-top: 15.6px;
 }
 .buttons-container_top {
-  margin-top: 11px;
+  margin-top: 10px;
   display: flex;
 }
 .buttons-container_bottom {
-  margin-top: 30px;
+  margin-top: 31.5px;
   display: flex;
 }
 .buttons-container_bottom>*+* {
@@ -176,7 +178,7 @@
   margin-top: 0;
 }
 .buttons-container > *+* {
-  margin-left: 19px;
+  margin-left: 19.5px;
 }
 .section-three_dropdown {
   margin-top: 233.5px;

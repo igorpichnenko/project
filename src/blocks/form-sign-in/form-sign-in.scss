@@ -23,7 +23,7 @@
  &__item{
    display: flex;
    align-items: center;
-   margin-top: 30px;
+   padding-top: 29px;
    justify-content: space-between;
  }
  
@@ -38,6 +38,7 @@
  }
  
  &__button-wrap{
-   margin-right: 2px;
+   margin-right: 1.6px;
+   margin-top: 1px;
  }
 }

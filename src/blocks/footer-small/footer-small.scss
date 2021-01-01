@@ -21,7 +21,19 @@
   line-height: 17px;
   color: rgba(31, 32, 65, 0.75);
 }
+.footer-small__icons{
+  position: relative;
+}
 
+.footer-small__icons:nth-child(3){
+  margin-left: 45.5px;
+}
 .footer-small__icon{
- margin: 0 22.5px;
+  margin-right: 22px;
+}
+
+.footer-small__icon_absolute{
+  position: absolute;
+  bottom: 2.3px;
+  right:  87.2px;
 }
