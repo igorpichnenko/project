@@ -12,6 +12,9 @@ const ghpages = require('gh-pages');
 module.exports = {
 	entry: {
 	  'index': './src/pages/index/index.js',
+	  'registration': './src/pages/registration/registration.js',
+	  'room-search': './src/pages/room-search/room-search.js',
+	  'room-detalis': './src/pages/room-detalis/room-detalis.js',
 	  'landing': './src/pages/landing/landing.js',
 	  'color-type': './src/pages/color-type/color-type.js',
 	   'headers-footers': './src/pages/headers-footers/headers-footers.js',
@@ -81,6 +84,24 @@ module.exports = {
 			hash: true,
 			template: './src/pages/index/index.pug',
 			filename: 'index.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/registration/registration.pug',
+			filename: 'registration.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/room-detalis/room-detalis.pug',
+			filename: 'room-detalis.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/room-search/room-search.pug',
+			filename: 'room-search.html'
 		}),
 		new HtmlWebpackPlugin({
 			inject: false,

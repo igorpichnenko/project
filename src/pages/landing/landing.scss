@@ -1,5 +1,5 @@
 body {
-  width: 1920px;
+  width: 1440px;
   margin: 0 auto;
 }
 .landing-container {
@@ -10,12 +10,12 @@ body {
   width: 100%;
   background-size: cover;
 }
-.landing-content{
+.landing-container__items{
   padding: 70px 134px 18px 140px;
   display: flex;
   justify-content: space-between;
 }
-.landing-slogan{
+.landing-container__slogan{
   font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
