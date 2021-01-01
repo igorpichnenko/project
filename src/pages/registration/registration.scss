@@ -1,33 +1,38 @@
 body {
-  width: 1440px;
+  width: 1920px;
   margin: 0 auto;
+  height: 100vh;
 }
-.registration-container{
-  background: url('./img/registration.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 702px;
- // height: 684.2px;
-  width: 100%;
-  background-size: cover;
-}
-.registration-container__items{
-  height: 100%;
+.registration-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
 }
-.registration-container__signin, .registration-container__reg{
-  
+.registr{
+  background: url('./img/registration.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 683px;
+}
+.signin{
+  background: url('./img/registration2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 702px;
+}
+.registration-container__reg {
+  padding-left: 7px;
+  padding-bottom: 0;
+}
+.registration-container__signin, .registration-container__reg {
   display: none;
 }
-.active{
+.active {
   display: block;
-}
-.registration-container__reg{
-  padding-left: 7px;
-  padding-bottom: 1px;
-}
-.registration-container__signin{
-  //padding-top: 18px;
 }

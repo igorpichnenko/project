@@ -13,12 +13,11 @@ block head
     link(rel="stylesheet" href="registration.css")
     
 block content
-  .registration-container
-   .registration-container__items
-    .registration-container__signin
-     +form-signin
-    .registration-container__reg.active
-     +form-reg
+  .registration-container.registr
+     .registration-container__signin
+      +form-signin
+     .registration-container__reg.active
+       +form-reg
 block footer
 block script
     script(src="./registration.js")
