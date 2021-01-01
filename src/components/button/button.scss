@@ -17,7 +17,7 @@
   text-transform: uppercase;
   font-family: Montserrat;
   white-space: nowrap;
-  &__border {
+  &_border {
     border: solid 0.125rem transparent;
     border-radius: 80px;
     box-shadow: 2px 1000px 1px #fff inset;
@@ -27,7 +27,7 @@
     color: #BC9CFF;
   }
 
-  &__arrow {
+  &_arrow {
     position: relative;
     width: 320px;
     height: 44px;
@@ -47,30 +47,30 @@
     }
   }
 
-  &__content-size {
+  &_content-size {
     padding-right: 20px;
     padding-left: 20px;
     width: auto;
     font-size: 11.5px;
   }
-  &__content-none {
+  &_content-none {
     border: none;
     background: none;
 
 
   }
-  &__color-black {
+  &_color-black {
     color: rgba(31, 32, 65, 0.5);
     background: none;
   }
 
-  &__disable {
+  &_disable {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 240, 0.5) 100%);
     background-clip: content-box, border-box;
     background-origin: border-box;
     
   }
-  &__large {
+  &_large {
     height: 44px;
     width: 99px;
   }

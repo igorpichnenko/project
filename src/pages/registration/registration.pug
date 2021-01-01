@@ -1,4 +1,10 @@
 extends ../../layouts/rooms
+include ../../blocks/form-reg/form-reg
+include ../../blocks/form-sign-in/form-sign-in
+include ../../components/button/button
+include ../../components/title/title
+include ../../components/radio/radio
+include ../../components/toggle/toggle
 
 block title
   title Landing
@@ -7,7 +13,12 @@ block head
     link(rel="stylesheet" href="registration.css")
     
 block content
-
+  .registration-container
+   .registration-container__items
+    .registration-container__signin
+     +form-signin
+    .registration-container__reg.active
+     +form-reg
 block footer
 block script
     script(src="./registration.js")

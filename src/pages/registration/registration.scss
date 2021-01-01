@@ -2,3 +2,32 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
+.registration-container{
+  background: url('./img/registration.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 702px;
+ // height: 684.2px;
+  width: 100%;
+  background-size: cover;
+}
+.registration-container__items{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration-container__signin, .registration-container__reg{
+  
+  display: none;
+}
+.active{
+  display: block;
+}
+.registration-container__reg{
+  padding-left: 7px;
+  padding-bottom: 1px;
+}
+.registration-container__signin{
+  //padding-top: 18px;
+}

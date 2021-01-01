@@ -4,9 +4,16 @@
   list-style:  none;
 
 &__link_about{
-  margin-right: 2px;
+  margin-right:  2px;
 }
-
+&__link_center{
+  margin-right: 0.7px;
+}
+&__text_right{
+  margin-right: 2px;}
+&__link_left{
+  margin-right: 1.7px;
+}
 
 &__text{
   text-decoration: none;
@@ -21,6 +28,7 @@
   cursor: pointer;
   font-family: Montserrat;
   
+ 
 &:hover{
  font-style: normal;
 font-weight: bold;
@@ -33,7 +41,7 @@ font-family: Montserrat;
 }
 
 .nav-list__text_bg_img{
-  margin-right: 25px;
+ margin-right: 24.5px;
 
 &:after{
 content: 'expand_more';

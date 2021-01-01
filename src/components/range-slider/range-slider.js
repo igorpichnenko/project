@@ -17,6 +17,9 @@ import '../../components/range-slider/RangeSlider.scss';
       //  values_separator: '-',
         max: 15000,
         from: 5000,
+        //format: wNumb({
+      //      thousand: ' '
+     //   }),
         to: 10000,
        // step: 10,
         prefix: "₽",
@@ -35,3 +38,23 @@ import '../../components/range-slider/RangeSlider.scss';
         $inputFrom.prop("value", from +"₽");
         $inputTo.prop("value",'-' +' '+to +"₽");
     }
+
+
+/*jQuery(document).ready(function(){
+ var nonLinearSlider = document.getElementById('r-slider');
+
+noUiSlider.create(nonLinearSlider, {
+    connect: true,
+    behaviour: 'tap',
+    step:100,    
+    start: [5000, 10000],
+    range: {
+        'min': [0],
+        'max': [15000], },
+
+    format: wNumb({
+            decimals: 0,
+            thousand: ' '
+        })
+    
+})*/
