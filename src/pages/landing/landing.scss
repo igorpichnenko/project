@@ -1,0 +1,29 @@
+body {
+  width: 1920px;
+  margin: 0 auto;
+}
+.landing-container {
+  background: url('./img/landing.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 830px;
+  width: 100%;
+  background-size: cover;
+}
+.landing-content{
+  padding: 70px 134px 18px 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.landing-slogan{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+text-align: right;
+color: rgba(31, 32, 65, 0.75);
+align-self: flex-end;
+max-width: 300px;
+margin-top: 691px;
+}

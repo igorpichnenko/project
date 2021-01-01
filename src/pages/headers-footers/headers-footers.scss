@@ -3,11 +3,24 @@ body{
 }
 .header-footer{
   width: 1440px;
+  display: flex;
+  flex-direction: column ;
+  gap: 40px;
 }
-
 .footer-large{
-  
+  background-color: #fff;
+  flex-direction: column;
 }
-.header-top{
- 
+.container-bg, .header-background{
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+}
+.header-background{
+ margin-top: 140px;
+}
+.header-top, .header-login, .footer-small, .footer-large{
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }

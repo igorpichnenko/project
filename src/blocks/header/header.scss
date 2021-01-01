@@ -1,7 +1,6 @@
 .header-wrapper{
   background-color: #fff;
   width: 1160px;
-  margin-left: 140px;
   height: 70px;
   display: grid;
   grid-template-rows: 1fr;
@@ -24,12 +23,6 @@
   grid-column-end: 5;
 }
 
-.header-container{
-  margin-top: 140px;
-  margin-bottom: 40px;
-  background-color: #fff;
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-}
 .header-top__button{
   margin-left: 10px;
   display: flex;

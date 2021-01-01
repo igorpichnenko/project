@@ -12,6 +12,7 @@ const ghpages = require('gh-pages');
 module.exports = {
 	entry: {
 	  'index': './src/pages/index/index.js',
+	  'landing': './src/pages/landing/landing.js',
 	  'color-type': './src/pages/color-type/color-type.js',
 	   'headers-footers': './src/pages/headers-footers/headers-footers.js',
 	    'form-elements': './src/pages/form-elements/form-elements.js',
@@ -109,6 +110,12 @@ module.exports = {
 			hash: true,
 			template: './src/pages/cards/cards.pug',
 			filename: 'cards.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			hash: true,
+			template: './src/pages/landing/landing.pug',
+			filename: 'landing.html'
 		}),
 	],
 	// Стартовая страница

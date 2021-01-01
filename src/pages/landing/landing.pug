@@ -1,0 +1,22 @@
+extends ../../layouts/rooms
+include ../../blocks/form-search/form-search
+include ../../components/title/title
+include ../../components/button/button
+include ../../components/calendar/calendar
+include ../../components/dropdown/dropdown
+
+block title
+  title Landing
+
+block head
+    link(rel="stylesheet" href="landing.css")
+    
+block content
+ .landing-container
+  .landing-content
+   +form-search
+   .landing-slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+block footer
+block script
+    script(src="./landing.js")
