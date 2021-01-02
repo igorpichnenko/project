@@ -1,0 +1,28 @@
+mixin pie
+  .canvas-container
+   .canvas-container__title Впечатления от номера
+   .canvas-container__pie
+    .canvas-container__items
+     .canvas-container__number 260
+     .canvas-container__text голосов
+
+    svg(class="chart" viewBox="0 0 32 35")
+     circle(class="unit" stroke="url(#paint5_linear)"  r="15.9" cx="50%" cy="50%")
+     circle(class="unit" stroke="url(#paint4_linear)"  r="15.9" cx="50%" cy="50%")
+     circle(class="unit" stroke="url(#paint3_linear)"  r="15.9" cx="50%" cy="50%")
+     defs
+      linearGradient(id="paint5_linear" x1="0%" y1="0%" x2="0%" y2="100%")
+       stop(offset="0" stop-color="#FFE39C")
+      stop(offset="100%" stop-color="#FFBA9C")
+      linearGradient(id="paint4_linear" x1="100%" y1="0%" x2="0%" y2="0%")
+       stop(offset="0" stop-color="#6FCF97")
+       stop(offset="100%" stop-color="#66D2EA")
+      linearGradient(id="paint3_linear" x1="0%" y1="0%" x2="0%" y2="100%")
+       stop(offset="0" stop-color="#BC9CFF")
+       stop(offset="100%" stop-color="#8BA4F9")
+    .legend
+     ul.caption-list
+      li.caption-item Великолепно
+      li.caption-item Хорошо
+      li.caption-item Удовлетворительно
+      li.caption-item Разочарован

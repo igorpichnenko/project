@@ -1,5 +1,5 @@
 body {
-  width: 1920px;
+  width: 1440px;
   margin: 0 auto;
   height: 100vh;
 }
@@ -9,20 +9,15 @@ body {
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
   width: 100%;
 }
-.registr{
+.form-reg{
   background: url('./img/registration.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: bottom;
   height: 683px;
 }
-.signin{
-  background: url('./img/registration2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.form-signin{
+  background: url('./img/signIn.jpg');
   background-position: bottom;
   height: 702px;
 }

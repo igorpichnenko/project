@@ -36,6 +36,9 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 @import './fonts.scss';
 
+
+// layouts style
+
 @import '../layouts/rooms.scss';
 // blocks style
 
@@ -74,4 +77,5 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '../components/toggle/toggle.scss';
 @import '../components/slick/slick.scss';
 @import '../components/icon/icon.scss';
+@import '../components/pie/pie.scss';
 @import '../pixel.scss';

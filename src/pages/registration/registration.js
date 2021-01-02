@@ -12,15 +12,15 @@ signIn.addEventListener('click', function() {
   formSignIn.classList.toggle('active')
   formCreate.classList.remove('active')
   history.pushState({param: 'Value'}, '', 'signin.html');
-  content.classList.remove('registr')
-  content.classList.add('signin')
+  content.classList.remove('form-reg')
+  content.classList.add('form-signin')
 })
 createAcount.addEventListener('click', function() {
   formCreate.classList.toggle('active')
   formSignIn.classList.remove('active')
 history.pushState({param: 'Value'}, '', 'registration.html');
-content.classList.add('registr')
-content.classList.remove('signin')
+content.classList.add('form-reg')
+content.classList.remove('form-signin')
 
 })
 
