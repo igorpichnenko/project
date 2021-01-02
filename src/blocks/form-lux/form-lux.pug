@@ -1,7 +1,7 @@
-mixin formlux
+mixin formlux(classlux,number="888",price="9 900₽",lux="люкс")
   .formlux-box
    .lux-container
-    +title-number('888','9 990₽','люкс')
+    +title-number(number,price,lux,className,classlux)
     .lux-container__title
       +title('Прибытие')
       +title('Выезд')

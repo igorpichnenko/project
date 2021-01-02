@@ -6,7 +6,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  gap: 7.2px;
+ 
 }
 
 .header-top__logo{
@@ -17,6 +17,7 @@
 .header-top__nav{
   grid-column-start: 3;
   grid-column-end: 4;
+  margin-right: 13px;
 }
 .header-top__button{
   grid-column-start: 4;

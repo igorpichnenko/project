@@ -3,34 +3,28 @@
     stroke-dasharray: 0 100;
   }
 }
-
 html,
 body {
   margin: 0;
   padding: 0;
 }
-
 .canvas-container{
   width: 311px;
   height: 170px;
-  margin-left: 40px;
-  margin-top: 40px;
-
+  display: inline;
 }
-
 .canvas-container__pie {
   display: flex;
   position: relative;
   
 }
-
 .legend {
   width: 146px;
   height: 96px;
   align-self: flex-end;
   
+  
 }
-
 .canvas-container__title {  
   font-family: Montserrat;
 font-style: normal;
@@ -38,16 +32,13 @@ font-weight: bold;
 font-size: 19px;
 line-height: 23px;
 color: #1F2041;
-
 }
-
 .caption-list {
   margin: 0;
   padding: 0;
   list-style: none;
- 
+  margin-top: 2px;
 }
-
 .caption-item {
   position: relative;
   padding-left: 15px;
@@ -57,39 +48,29 @@ font-weight: normal;
 font-size: 14px;
 line-height: 24px;
 color: rgba(31, 32, 65, 0.75);
-margin-left: 30px;
-
+margin-left: 29.5px;
 }
-
 .caption-item:hover {
   opacity: 0.8;
 }
-
 .caption-item::before {
   content: "";
-  
   position: absolute;
   top: 7px;
   left: 0;
-  
   width: 10px;
   height: 10px;
-  
   border-radius: 100px;
 }
-
 .caption-item:nth-child(1)::before {
   background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
 }
-
 .caption-item:nth-child(2)::before {
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
-
 .caption-item:nth-child(3)::before {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
-
 .caption-item:nth-child(4)::before {
   background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
 }
@@ -97,38 +78,37 @@ margin-left: 30px;
   width: 120px;
   height: 120px;
   align-self: flex-start;
-  margin-top: 15px;
+  margin-top: 21.5px;
+  display: inline;
 }
-
 .unit {
   fill: none;
   stroke-width: 1;
   cursor: pointer;
-  
   animation-name: render;
   animation-duration: 1.5s;
   transition-property: all; 
   transition-duration: 1.5s;
 }
-
 .unit:hover,
 .hovered {
   opacity: 0.8;
-  stroke-width: 3;
+  stroke-width: 1.5;
 }
-
 .unit:nth-child(2) {
-  stroke-dasharray: 22 100;
+  // зеленый
+  stroke-dasharray: 24 100;
 }
-
 .unit:nth-child(1) {
-  stroke-dasharray: 50 100;
-  stroke-dashoffset: -23;
+  // оранживый
+  stroke-dasharray: 49 100;
+  stroke-dashoffset: -25;
+  
 }
-
 .unit:nth-child(3) {
-  stroke-dasharray: 25 100;
-  stroke-dashoffset: -74;
+  // фиолетовый
+  stroke-dasharray: 24 100;
+  stroke-dashoffset: -75;
 }
 .canvas-container__items{
   display: flex;
@@ -137,8 +117,8 @@ margin-left: 30px;
   height: 50px;
   justify-content: center;
   position: absolute;
-  left: 35px;
-  top: 55px;
+  left: 35.5px;
+  top: 56.5px;
 }
 .canvas-container__number{
   font-family: Montserrat;
@@ -147,7 +127,6 @@ font-weight: bold;
 font-size: 24px;
 line-height: 29px;
 color: #BC9CFF;
-  
 }
 .canvas-container__text{
   font-family: Montserrat;

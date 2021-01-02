@@ -1,4 +1,77 @@
 body {
   width: 1440px;
- // margin: 0 auto;
+  margin: 0 auto;
 }
+.room-detalis{
+  height: 484px;
+  background: url(img/3.jpg) right bottom no-repeat, url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
+}
+@media screen and (min-width: 1420px) {
+  .room-detalis {
+    background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
+  }
+}
+.room-detalis__content{
+  height: 780px;
+  padding: 70px 140px 90px 140px;
+}
+.room-detalis__item{
+  display: inline-flex;
+  //justify-content: space-between;
+}
+.room-detalis__comments{
+  margin-top: 3px;
+  display: inline;
+  border: 1px solid green;
+}
+.room-detalis__pie{
+  margin-top: 1px;
+  display: inline-block;
+  border: 1px solid red;
+}
+.room-detalis__form{
+  margin-top: 1px;
+  display: inline;
+  border: 1px solid black;
+}
+.room-detalis__lux{
+  margin-left: 9px;
+}
+.room-detalis__reviews{
+  width: 710px;
+  height: 133px;
+  margin-top: 55px;
+}
+.room-detalis__reviews>*+*{
+  margin-top: 21.5px;
+}
+.room-detalis__list{
+  padding-top: 10px;
+}
+.room-detalis__bullet{
+ display: flex;
+}
+.room-detalis__text{
+  margin-left: 20px;
+  margin-bottom: 19.5px;
+}
+
+.room-detalis__cancel{
+  padding-top: 10px;
+  margin-left: 100px;
+  
+}
+.room-detalis__paragraf{
+ margin-top: 18.5px;
+ font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+width: 341px;
+height: 96px;
+  
+}
+
+

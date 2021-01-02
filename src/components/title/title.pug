@@ -6,12 +6,17 @@ mixin large-title(title)
 
    h2.large-title= title
 
-mixin title-number (text,price,mods,className="number-container__text")
+
+mixin medium-title(title)
+  
+    h3.medium-title= title
+
+mixin title-number (text,price,mods,className="number-container__text",classlux="number-container__lux")
    .title-number
       .number-container
        span.number-container__title № 
        span(class=""+className)= text
-       span.number-container__lux= mods
+       span(class=""+classlux)= mods
       .number-container
        .number-container__price= price
        .number-container__duration в сутки
