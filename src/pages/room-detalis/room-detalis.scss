@@ -1,65 +1,65 @@
 body {
-  width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+
 }
 .room-detalis {
   height: 484px;
   background: url(img/3.jpg) right bottom no-repeat, url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
 }
-@media screen and (min-width: 1420px) {
+
+/*@media screen and (min-width: 1420px) {
   .room-detalis {
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
-}
+}*/
+///     ****    ///
+
 .room-detalis__content {
-  height: 780px;
-  padding: 70px 140px 90px 140px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 69px 20px 62px 20px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
 }
+
 .room-detalis__item {
   display: flex;
-  width: 710px;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  min-width: 400px;
+  max-width: 730px;
+  padding-right: 20px;
 }
-.room-detalis__comments {
-  margin-top: 3px;
+.room-detalis__comment {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 13px;
 }
 .room-detalis__pie {
-  margin-top: 1.5px;
-  height: 300px;
-  width: 349px;
+  //margin-right: 28px;
+  //margin-bottom: 20px;
 }
-.room-detalis__form {
-  margin-top: 1px;
-}
-.room-detalis__formlux {
-  margin-left: 10px;
-}
-.room-detalis__reviews {
-  width: 710px;
-  padding-top: 3.5px;
-}
-.room-detalis__reviews>*+* {
-  margin-top: 18.5px;
-}
-.room-detalis__patricia {
-  padding-top: 3px;
-}
-.room-detalis__list {
-  padding-top: 13px;
-}
-.room-detalis__bullet {
-  display: flex;
-}
-.room-detalis__text {
-  margin-left: 20px;
-  margin-bottom: 19.5px;
+.room-detalis__rules {
+  width: 100%;
+  max-width: 260px;
 }
 .room-detalis__cancel {
-  padding-top: 13.5px;
-  margin-left: 100px;
+
+  width: 100%;
+  max-width: 349px;
+  padding-right: 5px;
 }
+
+.room-detalis__form {
+  width: 100%;
+  min-width: 360px;
+  max-width: 380px;
+  margin-bottom: 50px;
+}
+
 .room-detalis__paragraf {
   margin-top: 18.5px;
   font-family: Montserrat;
@@ -71,13 +71,10 @@ body {
   width: 341px;
   height: 96px;
 }
-.room-detalis__title {
-  display: flex;
-  justify-content: space-between;
-}
 .room-detalis__title_lower {
   align-self: center;
   padding-top: 2.5px;
+  margin-left: 10px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;

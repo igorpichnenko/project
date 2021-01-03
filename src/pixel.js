@@ -50,7 +50,7 @@ var Perfetto = new function() {
                                '<li data-pf="show" class="pf_icon __off"></li>' +
                                '<li data-pf="lock" class="pf_icon __unlock"></li>' +
                            '</ul>' +
-                           '<h3 data-pf="close" class="pf_title">Perfetto</h3>' +
+                           '<h3 data-pf="close" class="pf_title">Toxin</h3>' +
                        '</div>' +
                        '<div data-pf="entry" class="pf_entry __visible">' +
                            '<form action="#" class="pf_form">' +

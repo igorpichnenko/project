@@ -2,11 +2,12 @@
 .pf {
 
     position: fixed;
-      margin-top: 50px;
+      margin-top: 65px;
     font-size: 12px;
     font-family: Arial, "Nimbus Sans L", Helvetica, sans-serif;
-    background: #1caf9a;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     z-index: 1001;
+    border-radius: 4px;
 }
 
 .pf_head {
@@ -14,8 +15,9 @@
     padding: 0 20px;
     min-width: 200px;
     overflow: hidden;
-    background: #1a9c89;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     cursor: move;
+    border-radius: 4px;
 }
 
 .pf_layer-control {

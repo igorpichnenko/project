@@ -18,23 +18,30 @@ block head
 block content
  .room-detalis
  .room-detalis__content
-  .box
+ 
    .room-detalis__item
-    .room-detalis__comment
-     +medium-title('Сведения о номере')
-     .room-detalis__comments
-      +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
-      +comments('location_city','Удобство','Окно в каждой из спален')
-      +comments('whatshot','Уют','Номер оснащён камином')
-    .room-detalis__pie
-      +pie
-   .room-detalis__reviews
+   
+     .room-detalis__comment
+        +medium-title('Сведения о номере')
+        .room-detalis__comments
+         +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
+         +comments('location_city','Удобство','Окно в каждой из спален')
+         +comments('whatshot','Уют','Номер оснащён камином')
+      
+     .room-detalis__pie
+       +pie
+
+
+     .room-detalis__reviews
        .room-detalis__title
-        +medium-title('Отзывы посетителей номера')
-        +title('2 отзыва','room-detalis__title_lower')
-       +comment('Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
-       .room-detalis__patricia
-        +comment('Патрисия Стеклышкова','Неделю назад','Обслуживание на высоте! Все аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент','comment-patricia','2')
+         +medium-title('Отзывы посетителей номера')
+         +title('2 отзыва','room-detalis__title_lower')
+         +comment('Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
+         .room-detalis__patricia
+          +comment('Патрисия Стеклышкова','Неделю назад','Обслуживание на высоте! Все аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент','comment-patricia','2')
+          
+          
+     .room-detalis__rules
        .room-detalis__bullet
         .room-detalis__list
          .room-detalis__text
@@ -44,11 +51,14 @@ block content
           'Без вечеринок и мероприятий',
           'Время прибытия — после 13:00, а выезд до 12:00'
          ])
-        .room-detalis__cancel
+         
+     .room-detalis__cancel
          +medium-title('Отмена')
          .room-detalis__paragraf Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. 
-  .room-detalis__form
-   +formlux('number-container__lux room-detalis__formlux','888','9 990₽')
+         
+   .room-detalis__form
+    +formlux('number-container__lux room-detalis__formlux','888','9 990₽')
+    
 block footer
 block script
     script(src="./room-detalis.js")
