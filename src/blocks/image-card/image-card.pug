@@ -1,8 +1,8 @@
-mixin image-card(number,reviews,price,mods,img1,img2,img3,img4,name,check,className)
+mixin image-card(number,reviews,price,mods,img1,img2,img3,img4,name,check,className,classlux)
   .slider-cards
     +slider(img1,img2,img3,img4)
     .slider-cards__reviews
      .slider-cards__title
-      +title-number(number,price,mods,className)
+      +title-number(number,price,mods,className,classlux)
      .slider-cards__rate
       +reviews(reviews,name,check)

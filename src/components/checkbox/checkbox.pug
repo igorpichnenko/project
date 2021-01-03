@@ -27,10 +27,10 @@ mixin checkbox-button(check)
        span.checkbox-items__style
       .checkbox-items__text Можно пригласить гостей<br>(до 10 человек)
 
-mixin checkbox-list(mods="",mod="",check)
+mixin checkbox-list(mods="",mod="",check,title="expandable checkbox list")
   .checkbox-accordion
    .checkbox-list
-    span.checkbox-list__button expandable checkbox list
+    span.checkbox-list__button= title
     i(class=""+mods).material-icons.checkbox-list__icon expand_more
    div(class=""+mod).checkbox-wrapper
     .checkbox-items

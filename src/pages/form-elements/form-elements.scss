@@ -1,33 +1,35 @@
 .container-grid {
-  display: grid;
-  grid-template: "one two three"
-  "one four four";
+  display: flex;
   width: 1440px;
-  gap: 0;
+ 
+ 
 }
 .grid-one {
   margin-top: 140.5px;
   margin-left: 141px;
   grid-area: one;
+  width: 320px;
 }
 .grid-two {
-  margin-left: 126px;
-  margin-top: 143.5px;
+  margin-left: 125.5px;
+  margin-top: 143px;
   grid-area: two;
+  width: 320px;
 }
 
 .grid-three {
-  margin-left: 72px;
+  margin-left: 72.5px;
   margin-top: 143.5px;
   grid-area: three;
   height: 1198px;
+  width: 320px;
 }
 .grid-four {
   grid-area: four;
   margin-top: 214px;
- width: 715px;
+ width: 700px;
  height: 133px;
-  padding: 0 0 0 125px;
+//  padding: 0 0 0 125px;
 }
 .form-item {
   display: flex;
@@ -35,9 +37,11 @@
 }
 .form-items__masked {
   margin-top: 22.9px;
+  width: 320px;
 }
 .form-item__dropdown {
   margin-top: 19.8px;
+  width: 320px;
 }
 .form-items {
   width: 320px;
@@ -110,6 +114,7 @@
 }
 .center-items_dropdown {
   margin-top: 196px;
+  width: 320px;
 }
 .center-items_button {
   margin-top: 256.5px;
@@ -144,6 +149,7 @@
 .section-buttons {
  display: flex;
   flex-wrap: wrap;
+  width: 320px;
 }
 .buttons__title{
  margin-top: 36px;
@@ -155,6 +161,9 @@
 }
 .section-three_pagination{
   margin-top: 41px;
+}
+.form-elements__pagination{
+  margin-left: 6px;
 }
 .section-three_pagination_bottom{
   margin-top: 15.6px;
@@ -177,10 +186,12 @@
   margin-top: 0;
 }
 .buttons-container > *+* {
-  margin-left: 19.5px;
+  margin-left: 18.5px;
 }
 .section-three_dropdown {
   margin-top: 233.5px;
+  width: 320px;
+ 
 }
 .section-bullet_bottom{
   margin-top: 13px;
@@ -200,3 +211,9 @@
 .dropdown-date {
   display: flex;
 }
+
+
+/* 
+ .grid-four
+   +comment('Мурад Сарофанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
+   */

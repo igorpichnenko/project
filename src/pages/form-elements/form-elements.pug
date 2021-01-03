@@ -130,10 +130,10 @@ block body
     .section-three_pagination
      +title('pagination','title')
      .section-three_pagination_bottom
-      +pagination
+      +pagination('pagination__text form-elements__pagination')
    .section-three_dropdown
-   +title('dropdown')
-   +dropdown("dropdown__list--visible","2","1","0","3 гостя")
+    +title('dropdown')
+    +dropdown("dropdown__list--visible","2","1","0","3 гостя")
    .section-bullet
     +title('bullet list')
     .section-bullet_bottom
@@ -142,8 +142,6 @@ block body
           'Без вечеринок и мероприятий',
           'Время прибытия — после 13:00, а выезд до 12:00'
         ])
-  .grid-four
-   +comment('Мурад Сарофанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
 block script
     script(src="./form-elements.js")
     

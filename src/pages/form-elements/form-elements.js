@@ -23,6 +23,7 @@ let dateMask = IMask(
 
 
 
+
 // validate
 
 function validateForms(selector, rules) {

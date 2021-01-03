@@ -1,4 +1,14 @@
 extends ../../layouts/rooms
+include ../../components/title/title
+include ../../components/calendar/calendar
+include ../../components/dropdown/dropdown
+include ../../components/range-slider/range-slider
+include ../../components/checkbox/checkbox
+include ../../components/input/input
+include ../../components/slick/slick
+include ../../components/rate/rate
+include ../../components/pagination/pagination
+include ../../blocks/image-card/image-card
 
 block title
   title Landing
@@ -7,7 +17,53 @@ block head
     link(rel="stylesheet" href="room-search.css")
     
 block content
-
+ .room-search
+   .room-search__aside
+     +title('Даты пребывания в отеле')
+     .room-search__input
+      +filter-input
+     .room-search__dropdown
+      +title('гости')
+      +dropdown("","2","1","0","3 гостя, 1 младенец")
+      .room-search__range
+       +title('Диапазон цены')
+       .room-search__out
+        +input("","","range-out range-start")
+        +input("","","range-out range-end")
+      .room-search__range-slider
+       +range-slider
+      .room-search__price Стоймость за сутки пребывания в номере
+      .room-search__ruls
+       +title('Правила Дома')
+      .room-search__checkbox
+        +checkbox-button('checked')
+      .room-search__rich
+       +title('Доступность')
+      .room-search__rich-button
+       +checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
+       +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера','checkbox-items__comment checkbox-items__wrap')
+      .room-search__medium-drop
+        +title('Удобства номера')
+        +dropdown-medium
+      .room-search__checkbox-list
+       +checkbox-list("",'','checked','Дополнительные удобства')
+   .room-search__cards
+    +large-title('Номера, которые мы для вас подобрали')
+    .room-search__container
+     +image-card('888','145','9 990₽','люкс','1','6','7','8','room-1','1','number-container__text_low','number-container__lux room-search__lux')
+     +image-card('840','65','9 900₽','','2','8','9','4','room-2','2','number-container__text_low')
+     +image-card('980','35','8 500₽','люкс','3','4','2','1','room-3','3','number-container__text_low','number-container__lux room-search__lux')
+     +image-card('856','19','7 300₽','','4','1','4','7','room-4','1','number-container__text_low')
+     +image-card('740','44','6 000₽','','5','6','2','1','room-5','2','number-container__text_low')
+     +image-card('982','56','5 800₽','','6','12','11','10','room-6','3','number-container__text_low')
+     +image-card('678','45','5 500₽','','7','8','7','3','room-7','1','number-container__text_low')
+     +image-card('450','39','5 300₽','','8','12','1','2','room-8','2','number-container__text_low')
+     +image-card('350','77','5 000₽','','9','7','4','5','room-9','3','number-container__text_low')
+     +image-card('666','25','5 000₽','','10','8','12','2','room-10','1','number-container__text_low')
+     +image-card('444','15','5 000₽','','11','4','1','12','room-11','3','number-container__text_low')
+     +image-card('352','55','5 000₽','','12','8','9','4','room-12','3','number-container__text_low')
+    .room-search__pagination
+     +pagination
 block footer
 block script
     script(src="./room-search.js")
