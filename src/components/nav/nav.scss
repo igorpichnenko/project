@@ -1,56 +1,42 @@
-.nav-list{
+.nav-list {
   display: flex;
   white-space: nowrap;
   list-style:  none;
-  
-&__link_vakansii{
-  margin-right: 1.5px;
-}
-&__link_about{
-  margin-right: 1.5px;
-}
-&__text{
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 17px;
-  color: $dark50;
-  font-style: normal;
-  font-weight: normal;
-  margin-left: 20px;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-  font-family: Montserrat;
- 
-&:hover{
- font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-color: $dark75;
-font-family: Montserrat;
 
-}}
-}
+  &__link_vakansii { margin-right: 1.5px;}
 
-.nav-list__text_bg-1{
-margin-right: 24px;
+  &__link_about {margin-right: 1.5px;}
 
-&:after{
-  content: 'expand_more';
-font-family: 'Material Icons';
-position: absolute;
-font-size: 24px;
-line-height: 20px;
-color: $dark50;
-}}
-.nav-list__text_bg-2{
-margin-right: 20px;
-&:after{
-  content: 'expand_more';
-font-family: 'Material Icons';
-position: absolute;
-font-size: 24px;
-line-height: 20px;
-color: $dark50;
-}}
+  &__text {
+    text-decoration: none;
+    @include intermediate-text;
+    color: $dark50;
+    font-weight: normal;
+    margin-left: 20px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+      @include intermediate-text;
+      color: $dark75;
+
+    }}}
+.nav-list__text_bg-1 {
+  margin-right: 24px;
+
+  &:after {
+    @include material-font;
+    content: 'expand_more';
+    position: absolute;
+    color: $dark50;
+  }}
+.nav-list__text_bg-2 {
+  margin-right: 20px;
+  &:after {
+    @include material-font;
+    content: 'expand_more';
+    position: absolute;
+    color: $dark50;
+  }}

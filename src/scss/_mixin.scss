@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-family: Montserrat, Arial, sans-serif;
   color: $dark75;
   font-size: 14px;
@@ -22,7 +22,11 @@ html{
   background-color: #fff;
   height: 100%;
 }
-
+@mixin material-font {
+  font-family: 'Material Icons';
+  font-size: 24px;
+  line-height: 20px;
+}
 
 @mixin large-text {
   font-style: normal;
@@ -36,6 +40,12 @@ html{
   line-height: 23px;
 }
 
+@mixin intermediate-text{
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 @mixin small-text {
   font-style: normal;
   font-size: 12px;
@@ -47,25 +57,25 @@ html{
   line-height: 24px;
 }
 
-@mixin flex-center{
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@mixin flex-column-center{
+@mixin flex-column-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-@mixin flex-wrap{
+@mixin flex-wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@mixin flex-beetwen{
+@mixin flex-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
 }
