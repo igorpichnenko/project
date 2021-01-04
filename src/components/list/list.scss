@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
+ // gap: 10px;
   max-width: 240px;
   padding-left: 20px;
   list-style-type: none;
@@ -26,4 +26,7 @@
     background-color: rgba(31, 32, 65, 0.50);
     font-family: Montserrat;
   }
+}
+.bullet-list>*+*{
+  margin-top: 10px;
 }

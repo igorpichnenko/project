@@ -7,59 +7,83 @@ body {
   background: url(img/3.jpg) right bottom no-repeat, url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
 }
 
-/*@media screen and (min-width: 1420px) {
+@media screen and (min-width: 1420px) {
   .room-detalis {
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
-}*/
+}
 ///     ****    ///
-
 .room-detalis__content {
-  width: 100%;
-  max-width: 1200px;
-  padding: 69px 20px 62px 20px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 320px;
+  max-width: 1920px;
+  padding: 0 140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  padding-top: 70px;
+  padding-bottom: 74px;
   display: flex;
+  gap: 28px;
   justify-content: space-between;
 }
 
 .room-detalis__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  min-width: 400px;
-  max-width: 730px;
-  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 12px;
+  grid-column-gap: 11px;
+  max-width: 700px;
 }
-.room-detalis__comment {
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 13px;
+.room-detalis__reviews {
+  grid-column-start:1;
+  grid-column-end: 3;
 }
-.room-detalis__pie {
-  //margin-right: 28px;
-  //margin-bottom: 20px;
+.room-detalis__pie{
+  padding-top: 1.5px;
 }
-.room-detalis__rules {
-  width: 100%;
-  max-width: 260px;
-}
-.room-detalis__cancel {
 
-  width: 100%;
-  max-width: 349px;
-  padding-right: 5px;
+.room-detalis__comment{
+  padding-top: 2px;
 }
+.room-detalis__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 17px;
+}
+.room-detalis__title_lower{
+ margin-top: 2.5px;
+ margin-right: 1px;
+}
+.room-detalis__title_murad {
+  width: 710px;
+  padding-top: 2.5px;
+}
+.room-detalis__patricia{
+  padding-top: 21px;
+}
+.room-detalis__rules{
+  padding-top: 21px;
+}
+.room-detalis__text{
+  padding-left: 20px;
+  padding-bottom: 17.3px;
+}
+.room-detalis__cancel{
+  padding-top: 20px ;
+}
+
+
 
 .room-detalis__form {
-  width: 100%;
-  min-width: 360px;
   max-width: 380px;
-  margin-bottom: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 1px;
 }
-
+.room-detalis__formlux {
+  margin-left: 10px
+}
 .room-detalis__paragraf {
   margin-top: 18.5px;
   font-family: Montserrat;

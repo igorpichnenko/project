@@ -7,6 +7,11 @@ body{
   display: flex;
   flex-direction: column ;
 }
+
+.header-footer>*+*{
+  margin-top: 40px;
+  
+}
 .footer-large{
   background-color: #fff;
   flex-direction: column;
@@ -20,7 +25,6 @@ body{
 }
 .header-background{
  margin-top: 140px;
- margin-bottom: 40px;
 }
 .header-top, .header-login, .footer-small, .footer-large{
  display: flex;
@@ -30,14 +34,10 @@ body{
 .container-bg-log{
 box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
 height: 70px;
-margin-bottom: 40px;
 width: 100% ;
 background-color: #fff;
 }
 .header-login{
   background-color: #fff;
   
-}
-.footer-small{
-  margin-top: 40px;
 }
