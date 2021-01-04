@@ -1,6 +1,5 @@
 function onLoad() {
 $(function() {
-    
   (function() {
     var container = $('.js-pagination');
     var sources = function () {
@@ -42,7 +41,6 @@ $(function() {
       //return false
     });
   })()
-
 
 })
 

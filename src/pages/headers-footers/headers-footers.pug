@@ -2,11 +2,9 @@ extends ../../layouts/base
 include ../../blocks/header/header
 include ../../blocks/footer/footer
 include ../../blocks/footer-small/footer-small
-include ../../blocks/header-login/header-login
 include ../../components/button/button
 include ../../components/nav/nav
 include ../../components/logo/logo
-include ../../components/login/login
 include ../../components/list/list
 include ../../components/input/input
 include ../../components/icon/icon
@@ -18,18 +16,21 @@ block head
     link(rel="stylesheet" href="headers-footers.css")
     
 block body
-  .header-footer
-    .header-background
-     .header-top
-      +header
-    .container-bg-log
-     .header-login
-      +header-login
-    .container-bg
-     .footer-large
+  .headers-footers
+    .headers-footers__background
+     .headers-footers__container
+      +header({buttons: true})
+
+    .headers-footers__background
+     .headers-footers__container
+      +header({login: true})
+
+    .headers-footers__background
+     .headers-footers__large
       +footer
-    .footer-small
-     +footer-small
+
+    .headers-footers__small
+      +footer-small
 
 block script
     script(src="./headers-footers.js")

@@ -1,12 +1,33 @@
-mixin header
+mixin header(options={})
+
+ - let {buttons=false, login=false, user='Юлий Цезарь'}=options
+
+
  header.header
-   .header-wrapper
-    .header-top__logo
+ 
+   .header-main
+    .header-main__container
+      .header-main__logo
        +logo
-    .header-top__nav
+   
+    .header-main__container
+   
+      .header-main__nav
        +header-nav
-    .header-top__button
-        .header-top__left-btn
-          +button({text: "Войти",mods: 'border,content-size'})
-        .header-top__right-btn
-          +button({text: 'Зарегистрироваться'})
+
+      .header-main__items
+       .header-main__item
+       
+         block
+       if(buttons==true)
+    
+         .header-main__button
+         
+          .header-main__left-btn
+            +button({text: "Войти",mods: 'border,content-size'})
+          .header-main__right-btn
+            +button({text: 'Зарегистрироваться'})
+          
+       if(login==true)
+       
+          .header-main__person= user

@@ -1,25 +1,11 @@
-.logo-colorType{
-  margin-left: 30px;
-  margin-top: 30px;
-}
-body{
+@import '../../scss/_mixin';
 
-}
-.color-type{
-  display: flex;
-  width: 1440px;
+.color-type {
+  @include flex-wrap;
+  @include container;
+  padding: 145px 150px 145px 150px;
 
-
+&__title {
+  width: 444.7px;
 }
-.color-type_title{
-margin-left: 416px;
-width: 440px;
-height: 321px;
-margin-top: 145.4px;
- 
-}
-.color-type_colors{
-  
-  margin-left: 150px;
-  margin-top: 145.7px;
 }

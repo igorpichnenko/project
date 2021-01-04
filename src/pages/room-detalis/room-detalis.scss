@@ -19,18 +19,15 @@ body {
   padding: 0 140px;
   margin: 0 auto;
   box-sizing: border-box;
-
   padding-top: 70px;
   padding-bottom: 74px;
   display: flex;
-  gap: 28px;
   justify-content: space-between;
 }
-
 .room-detalis__item {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-row-gap: 12px;
+   grid-row-gap: 12px;
   grid-column-gap: 11px;
   max-width: 700px;
 }
@@ -56,11 +53,10 @@ body {
  margin-right: 1px;
 }
 .room-detalis__title_murad {
-  width: 710px;
   padding-top: 2.5px;
 }
 .room-detalis__patricia{
-  padding-top: 21px;
+  padding-top: 20.5px;
 }
 .room-detalis__rules{
   padding-top: 21px;
@@ -72,8 +68,6 @@ body {
 .room-detalis__cancel{
   padding-top: 20px ;
 }
-
-
 
 .room-detalis__form {
   max-width: 380px;

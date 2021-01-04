@@ -1,31 +1,16 @@
-$dark100: #1f2041;
-$dark75: rgba(#1F2041,.75);
-$dark50: rgba(#1F2041,.50);
-$dark25: rgba(#1F2041,.25);
-$dark5: rgba(#1F2041,.05);
-$purple: #bc9cff;
-$green: #6fcf97;
+@import './_mixin';
 
-body{
-  
-  font-family: Montserrat;
-}
-
-
-
-
-
-// function px to rem
-
-@function rem($size) {
-  @return $size / 14px * 1rem;
-}
+@import './_vars';
 
 // reset
 
 @import './reset.scss';
 
-// fonts 
+// fonts
+
+@import './fonts.scss';
+
+// icons fonts
 
 @import '~material-design-icons/iconfont/material-icons.css';
 
@@ -33,16 +18,12 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
-//@import '~@fortawesome/fontawesome-free/scss/solid'; // fas prefix
-
 @import '~@fortawesome/fontawesome-free/scss/brands.scss'; // fab prefix
-
-@import './fonts.scss';
-
 
 // layouts style
 
 @import '../layouts/rooms.scss';
+
 // blocks style
 
 @import '../blocks/color-options/color-options.scss';
@@ -50,7 +31,6 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '../blocks/footer/footer.scss';
 @import '../blocks/header/header.scss';
 @import '../blocks/footer-small/footer-small.scss';
-@import '../blocks/header-login/header-login.scss';
 @import '../blocks/form-reg/form-reg.scss';
 @import '../blocks/image-card/image-card.scss';
 @import '../blocks/form-lux/form-lux.scss';
@@ -62,7 +42,6 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 @import '../components/nav/nav.scss';
 @import '../components/range-slider/range-slider.scss';
-@import '../components/login/login.scss';
 @import '../components/button/button.scss';
 @import '../components/list/list.scss';
 @import '../components/footernav/footernav.scss';

@@ -1,42 +1,38 @@
-.header-wrapper{
+.header-main{
   background-color: #fff;
   width: 1160px;
   height: 70px;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
- 
-}
+  @include flex-beetwen;
 
-.header-top__logo{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin-top: 1px;
-}
-.header-top__nav{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  margin-right: 13px;
-}
-.header-top__button{
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-
-.header-top__button{
-  margin-left: 10px;
+&__container{
   display: flex;
+  align-items: center;
+  
+  >*+*{margin-left: 23.5px;}
 }
-.header-top__button>*+*{
-  margin-left: 20px;
-}
-.header-top__right-btn{
+&__button{display: flex;}
+
+&__logo{padding-top: 2px;}
+
+&__button>*+*{margin-left: 20px;}
+
+&__right-btn{
   width: 196px;
   height: 34px;
 }
-.header-top__left-btn{
+&__left-btn{
   width: 87px;
   height: 34px;
   margin-right: 1.5px;
 }
+ &__person{
+white-space: nowrap;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: $dark50;
+padding: 6.5px 0 6.5px 21px;
+border-left: $border-01;
+   
+ }}

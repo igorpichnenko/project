@@ -1,0 +1,71 @@
+@import './_vars';
+
+// function px to rem
+
+@function rem($size) {
+  @return$size / 14px * 1rem;
+}
+
+@mixin container {
+  min-width: 320px;
+  max-width: 1920px;
+  padding: 0 140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Montserrat, Arial, sans-serif;
+  color: $dark75;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #fff;
+  height: 100%;
+}
+
+
+@mixin large-text {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin medium-text {
+  font-style: normal;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+@mixin small-text {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+@mixin body-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-column-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin flex-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@mixin flex-beetwen{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}

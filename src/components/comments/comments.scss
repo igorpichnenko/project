@@ -1,5 +1,5 @@
 .comments-item__icon{
-  font-family: Material Icons;
+font-family: Material Icons;
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
@@ -41,14 +41,16 @@ color: rgba(31, 32, 65, 0.75);
   height: 48px;
   border: 2px solid #fff;
   box-sizing: border-box;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, .1);
-    border-radius: 48px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, .1);
+  border-radius: 48px;
+  margin-top: 2px;
   
 }
 
 .comment-block{
   display: flex;
  align-content: center;
+ box-sizing: border-box;
 }
 .comment-block__text{
 font-family: Montserrat;
@@ -57,7 +59,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 24px;
 color: rgba(31, 32, 65, 0.75);
-margin-top: 10.5px;
+margin-top: 10px;
 padding-left: 14px;
 }
 .comment-block__date{
@@ -70,8 +72,8 @@ color: rgba(31, 32, 65, 0.75);
 margin-left: 9px;
 }
 .comment-block__name{
-  margin-left: 9px;
-  margin-top: 1.5px;
+ margin-left: 9px;
+ margin-top: 1.5px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
@@ -81,6 +83,6 @@ color: rgba(31, 32, 65, 0.75);
 
 }
 .comment-block__like{
-  margin-top: 12px;
+ margin-top: 12px;
  padding-left: 2px;
 }

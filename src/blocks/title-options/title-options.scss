@@ -6,89 +6,56 @@
     margin-top: 0;
     margin-left: 8px;
   }
-  &:nth-child(2) {
-    margin-left: 12px;
-  }
-  &:nth-child(3) {
-    margin-left: 21px;
-  }
+  &:nth-child(2) {margin-left: 12px;}
+  
+  &:nth-child(3) {margin-left: 21px; }
+  
   &:nth-child(4) {
     margin-top: 47px;
     margin-right: 2px;
   }
 }
 .uikit-content__title {
-  font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
+  @include large-text;
   color: $dark25;
-  font-family: Montserrat;
 
-  &_h1 {
-    margin-left: 0.4px;
-    font-family: Montserrat;
-  }
+  &_h1 {padding-left: 1.5px;}
 
-  &_h2 {
-    margin-left: -1.6px;
-    font-size: 19px;
-    font-family: Montserrat;
-    line-height: 23px;
-  }
+  &_h2 {@include medium-text;}
 
-  &_h3 {
-    margin-left: -1.5px;
-    font-size: 12px;
-    font-family: Montserrat;
-    line-height: 15px;
-  }
+  &_h3 {@include small-text;}
 
   &_body {
-    margin-left: -0.5px;
-    font-size: 14px;
-    font-family: Montserrat;
-    line-height: 24px;
+    @include body-text;
+    margin-left: 1px;
   }
 }
 
 .uikit-content__text {
-  font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
+  @include large-text;
   color: $dark100;
   margin-left: 29px;
-  font-family: Montserrat;
 
-
-
-
+  &_h1 {padding-left: 1px;}
 
   &_texth2 {
-    margin-top: 0.8px;
-    font-size: 19px;
-    line-height: 23px;
-    font-family: Montserrat;
+    padding-top: 0.8px;
+    @include medium-text;
   }
 
   &_texth3 {
     padding-left: 1.4px;
-    font-size: 12px;
-    line-height: 15px;
-    font-family: Montserrat;
+    @include small-text;
     text-transform: uppercase;
   }
 
   &_textbody {
     margin-bottom: 0.8px;
-    margin-left: 30.8px;
-    font-family: Montserrat;
-    font-style: normal;
+    padding-left: 1px;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-
+    @include body-text;
     color: rgba(31, 32, 65, 0.75);
 
   }
