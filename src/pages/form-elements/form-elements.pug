@@ -22,126 +22,121 @@ block head
     
 
 block body
- .container-grid
-  .grid-one
-   form.form-mask
-    .form-items
-     .form-item
-      +title('Text Field','title form-items__title')
-      +title('Default','form-item__hover-title')
-     +input('Email','email')
-    .form-items
-     .form-item
-      +title('Text Field','title form-items__title')
-      +title('hover / focus','form-item__hover-title title_center')
+ .form-elements
+  .column-one
+   form.column-one__form-mask
+    .column-one__items
+     .column-one__item
+      .column-one__title
+       +title('Text Field')
+      .column-one__title_hover
+       +title('Default','form-item__hover-title')
+     .column-one__email
+       +input('Email','email')
+     .column-one__item
+      +title('Text Field')
+      +title('hover / focus','form-item__hover-title column-one__title_focus')
      +input-hover('This is pretty awesome')
-    .form-item__dropdown
-     +title('dropdown','title form-items__title')
-     +dropdown("dropdown__list","2","1","0","Сколько гостей")
-    .form-items__masked
-     +title('masked text field','title form-items__title')
+     .column-one__dropdown
+      +title('dropdown')
+      +dropdown("dropdown__list","2","1","0","Сколько гостей")
+     +title('masked text field')
      +input('ДД.ММ.ГГГГ','text', 'input mask-date')
-    .form-items__dabl-date
-     .dropdown-date
-       +title('date dropdown','title form-items__title')
-       +title('date dropdown','title form-items__title')
-     .calendar-dabl
-        +datepicker-dabl('19.08.2019')
-    .form-items__filter
-     +title('filter date dropdown','title form-items__title')
-     +filter-input
-    .form-items_subscription
-     +title('subscription text field','title form-items__title')
-     .subscription-input__container
-      +subscription-input
-   .section-dropdowns
-    .section-dropdown
-     .section-dropdown__item
-      +title('dropdown','title form-items__title ')
-      +title('Default','title_top form-item__hover-title')
-     +dropdown-medium
-    .section-dropdown__item
-     +title('dropdown','title form-items__title')
-     +title('expanded','title_top form-item__hover-title')
-    +dropdown-medium('dropdown__list--visible')
-    .section-checkbox
-     .section-checkbox__item
-      +checkbox-list
-     .section-checkbox__item
+     .column-one__date-title
+      +title('date dropdown')
+      +title('date dropdown')
+     .column-one__dabl-date
+      +datepicker-dabl('19.08.2019')
+     +title('filter date dropdown')
+     .column-one__medium
+      +filter-input
+      .column-one__subscription
+       +title('subscription text field')
+       +subscription-input
+      .column-one__item
+       +title('dropdown')
+       +title('Default','form-item__hover-title')
+      +dropdown-medium
+      .column-one__drop-medium
+       +title('dropdown')
+       +title('expanded', 'form-item__hover-title')
+      +dropdown-medium('dropdown__list--visible')
+      .column-one__checkbox
+       +checkbox-list
       +checkbox-list("checkbox-list__icon_rotate",'checkbox-items__visible','checked')
-    .section-commets
-     +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
-     +comments('location_city','Удобство','Окно в каждой из спален')
-  .grid-two
-     +title('checkbox buttons')
-     .grid-two__checkbox
-      +checkbox-button('checked')
-     .center-items
-      +title('radio buttons')
-      .center-items_radio
+  .column-two
+      +title('checkbox buttons')
+      .column-two__checkbox
+       +checkbox-button('checked')
+      .column-two__radio
+       +title('radio buttons')
+      .column-two__radio-button
        +radio("Мужчина",'man','check')
        +radio('Женщина','man')
-     .center-items_toggle
-      +title("toggle",'title title_bottom')
-      .section-center__toggle
+      +title('toggle','title column-one__title_focus')
+      .column-two__toggle
        +toggle("checked")
-      .section-center__toggle
        +toggle
-     .center-items__like
-      +title("like button",'title')
-      .section-center__like
+      +title("like button")
+      .column-two__like
        +like("2")
        +like("12","checked","form-like")
-     .center-items__rate
-      +title("rate button",'title')
-      .section-center__rate
+      +title("rate button")
+      .column-two__rate
        +rate-button('form-elements-2', 2)
        +rate-button('form-elements', 1)
-     .center-items_dropdown
       +title("dropdown")
-      +dropdown("dropdown__list--visible","0","0","0","Сколько гостей")
-     .center-items_button
-      +title("rich checkbox buttons")
-      .center-items_buttons
-       +checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
-       +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера','checkbox-items__comment checkbox-items__wrap')
-  .grid-three
-   .range-box
-    +title('range slider')
-    .range-start
-     +input("","","range-out range-start")
-     +input("","","range-out range-end")
-   .range-slider__content
+      .column-two__dropdown
+       +dropdown("dropdown__list--visible","0","0","0","Сколько гостей")
+      .column-two__rich
+       +title("rich checkbox buttons")
+       .column-two__rich-button
+        +checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
+        +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера','checkbox-items__comment checkbox-items__wrap')
+  .column-three
+   .column-three__range
+     +title('range slider')
+     .column-three__out
+      +input("","","range-out range-start")
+      +input("","","range-out range-end")
+   .column-three__range-slider
     +range-slider
-   .buttons__title
-    +title('buttons','title')
-   .section-buttons
-    .buttons-container_top
+   .column-three__title-btn
+    +title('buttons')
+    .column-three__button-top
       +button({mods: 'content-size,large'})  
       +button({mods: 'disable,content-size,large'})
-    .buttons-container
+    .column-three__button-center
      +button({mods: 'border,content-size,large'})
      +button({mods: 'border,disable,content-size'})
-    .buttons-container_bottom
-     +button({mods: 'border,content-none'})  
-     +button({mods: 'border,content-none,color-black'})
-    .buttons-container
+    .column-three__button-bottom
+     .column-three__container
+      +button({mods: 'border,content-none'})  
+     .column-three__container
+      +button({mods: 'border,content-none,color-black'})
+    .column-three__container
      +button({text: 'Перейти к оплате', mods: 'arrow'})
-    .section-three_pagination
+    .column-three__pagination-title
      +title('pagination','title')
-     .section-three_pagination_bottom
+    .column-three__pagination
       +pagination('pagination__text form-elements__pagination')
-   .section-three_dropdown
-    +title('dropdown')
-    +dropdown("dropdown__list--visible","2","1","0","3 гостя")
-   .section-bullet
-    +title('bullet list')
-    .section-bullet_bottom
-     +bullet-list([
+    .column-three__dropdown
+     +title('dropdown')
+     +dropdown("dropdown__list--visible","2","1","0","3 гостя")
+    .column-three__bullet
+     +title('bullet list')
+    .column-three__bullet-list
+      +bullet-list([
           'Нельзя с питомцами',
           'Без вечеринок и мероприятий',
           'Время прибытия — после 13:00, а выезд до 12:00'
         ])
+  .column-four
+    .column-four__items
+      +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
+      +comments('location_city','Удобство','Окно в каждой из спален')
+    .column-four__murad
+      +comment('Мурад Сарофанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
 block script
     script(src="./form-elements.js")
     

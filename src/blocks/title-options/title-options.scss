@@ -54,9 +54,7 @@
   &_textbody {
     margin-bottom: 0.8px;
     padding-left: 1px;
-    font-weight: normal;
     @include body-text;
-    color: rgba(31, 32, 65, 0.75);
 
   }
 }

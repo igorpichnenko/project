@@ -1,102 +1,84 @@
-body {
-  width: 100%;
+@import '../../scss/_mixin';
 
-}
-.room-detalis {
+.detalis-background {
   height: 484px;
   background: url(img/3.jpg) right bottom no-repeat, url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
 }
 
 @media screen and (min-width: 1420px) {
-  .room-detalis {
+  .detalis-background {
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
 }
 ///     ****    ///
-.room-detalis__content {
-  min-width: 320px;
-  max-width: 1920px;
-  padding: 0 140px;
-  margin: 0 auto;
-  box-sizing: border-box;
+.room-detalis{
+  @include container;
   padding-top: 70px;
   padding-bottom: 74px;
   display: flex;
   justify-content: space-between;
-}
-.room-detalis__item {
+
+&__item {
   display: grid;
   grid-template-columns: 50% 50%;
    grid-row-gap: 12px;
   grid-column-gap: 11px;
   max-width: 700px;
 }
-.room-detalis__reviews {
+&__reviews {
   grid-column-start:1;
   grid-column-end: 3;
 }
-.room-detalis__pie{
+&__pie{
   padding-top: 1.5px;
 }
 
-.room-detalis__comment{
+&__comment{
   padding-top: 2px;
 }
-.room-detalis__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+&__title {
+  @include flex-between;
   padding-bottom: 17px;
 }
-.room-detalis__title_lower{
+&__title_lower{
  margin-top: 2.5px;
  margin-right: 1px;
 }
-.room-detalis__title_murad {
+&__title_murad {
   padding-top: 2.5px;
 }
-.room-detalis__patricia{
+&__patricia{
   padding-top: 20.5px;
 }
-.room-detalis__rules{
+&__rules{
   padding-top: 21px;
 }
-.room-detalis__text{
+&__text{
   padding-left: 20px;
   padding-bottom: 17.3px;
 }
-.room-detalis__cancel{
+&__cancel{
   padding-top: 20px ;
 }
 
-.room-detalis__form {
+&__form {
   max-width: 380px;
   flex-grow: 1;
   flex-shrink: 0;
   padding-top: 1px;
 }
-.room-detalis__formlux {
+&__formlux {
   margin-left: 10px
 }
-.room-detalis__paragraf {
+&__paragraf {
   margin-top: 18.5px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  @include body-text;
   width: 341px;
   height: 96px;
 }
-.room-detalis__title_lower {
+&__title_lower {
+  @include intermediate-text($lh:14px,);
   align-self: center;
   padding-top: 2.5px;
   margin-left: 10px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  color: rgba(31, 32, 65, 0.5);
-}
+}}

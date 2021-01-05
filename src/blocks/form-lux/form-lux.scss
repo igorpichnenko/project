@@ -39,11 +39,8 @@
   margin-left: 5px ;
 }
 
-  &__text {
-    font-weight: normal;
-    @include body-text;
-    color: $dark75;
-  }
+  &__text {@include body-text;}
+    
   &__text_left{
     margin-left: 1px;
     margin-top: 0.5px;

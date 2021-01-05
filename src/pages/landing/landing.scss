@@ -1,7 +1,5 @@
-body {
-  width: 1440px;
-  margin: 0 auto;
-}
+@import '../../scss/_mixin';
+
 .landing-container {
   background: url('./img/landing.jpg');
   background-repeat: no-repeat;
@@ -9,21 +7,16 @@ body {
   height: 830px;
   width: 100%;
   background-size: cover;
-}
-.landing-container__items{
+
+&__items{
   padding: 70px 134px 18px 140px;
   display: flex;
   justify-content: space-between;
 }
-.landing-container__slogan{
-  font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
+&__slogan{
+ @include body-text;
 text-align: right;
-color: rgba(31, 32, 65, 0.75);
 align-self: flex-end;
 max-width: 300px;
 margin-top: 691px;
-}
+}}

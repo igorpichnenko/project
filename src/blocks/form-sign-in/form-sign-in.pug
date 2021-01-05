@@ -1,4 +1,4 @@
-mixin form-signin
+mixin form-signin(mod= "border,content-size,large")
   form.sign-in
     .signin-container
       +large-title('Войти')
@@ -9,4 +9,4 @@ mixin form-signin
       .signin-container__item
        .signin-container__text Нет аккаунта на Toxin?
        .signin-container__button-wrap
-        +button({text: 'Создать', mods: 'border,content-size,large,regCreate'})
+        +button({text: 'Создать', mods: mod})

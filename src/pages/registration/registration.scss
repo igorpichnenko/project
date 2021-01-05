@@ -1,33 +1,28 @@
-body {
-  width: 1440px;
-  margin: 0 auto;
-  height: 100vh;
-}
+@import '../../scss/_mixin';
+
 .registration-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-}
-.form-reg{
+
+&_reg-bg{
   background: url('./img/registration.jpg');
   background-position: bottom;
   height: 683px;
 }
-.form-signin{
+&_signIn-bg{
   background: url('./img/signIn.jpg');
   background-position: bottom;
   height: 702px;
 }
-.registration-container__reg {
+&__reg {
   padding-left: 7px;
   padding-bottom: 0;
 }
-.registration-container__signin, .registration-container__reg {
+&__signin, &__reg {
   display: none;
 }
-.active {
+&_active {
   display: block;
-}
+}}

@@ -1,5 +1,5 @@
-mixin input(name="",mod="text",className="input",validate)
-    input(placeholder=''+name, type=''+mod,class=''+className,data-validate-field=''+validate)
+mixin input(name="",mod="text",className="input")
+    input(placeholder=''+name, type=''+mod,class=''+className)
     
 mixin input-hover(text,mod,className)
     input.input-hover(placeholder=''+text, type=""+mod, class=""+className)
@@ -8,8 +8,8 @@ mixin input-hover(text,mod,className)
 mixin filter-input
   .container-input
     input(class='filter-input datepicker-new' type='text' placeholder="19 авг - 23 авг")
-mixin subscription-input(title="Email",mods="email")
+mixin subscription-input(title="Email",mods="email",validate="email")
     
      .subscription-input
-      input(placeholder=""+title type=""+mods class="input subscription-input"+className)
+      input(placeholder=""+title type=""+mods class="input subscription-input"+className,data-validate-field=''+validate)
       button(type="submit").subscription-button

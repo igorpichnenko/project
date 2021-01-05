@@ -9,18 +9,19 @@ let formCreate = document.querySelector('.registration-container__reg')
 let content = document.querySelector('.registration-container')
 
 signIn.addEventListener('click', function() {
-  formSignIn.classList.toggle('active')
-  formCreate.classList.remove('active')
+  formSignIn.classList.toggle('registration-container_active')
+  formCreate.classList.remove('registration-container_active')
   history.pushState({param: 'Value'}, '', 'signin.html');
-  content.classList.remove('form-reg')
-  content.classList.add('form-signin')
+  content.classList.remove('registration-container_reg-bg')
+  content.classList.add('registration-container_signIn-bg')
 })
+
 createAcount.addEventListener('click', function() {
-  formCreate.classList.toggle('active')
-  formSignIn.classList.remove('active')
+  formCreate.classList.toggle('registration-container_active')
+  formSignIn.classList.remove('registration-container_active')
 history.pushState({param: 'Value'}, '', 'registration.html');
-content.classList.add('form-reg')
-content.classList.remove('form-signin')
+content.classList.add('registration-container_reg-bg')
+content.classList.remove('registration-container_signIn-bg')
 
 })
 

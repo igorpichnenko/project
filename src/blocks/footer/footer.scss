@@ -18,11 +18,8 @@
 
 &__subscription {grid-column:span 3;}
 
-&__paragraf, &__text {
-   @include body-text;
-  font-weight: normal;
-  color: $dark75;
-}
+&__paragraf, &__text {@include body-text;}
+   
 &__list:nth-last-child(-n+4) {
   margin-bottom: 21px;
 }

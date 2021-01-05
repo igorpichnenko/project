@@ -45,4 +45,4 @@ function validateForms(selector, rules) {
     });
 }
 
-validateForms('.form-mask', { email: { required: true, email: true }, fio: { required: true }, tel: { required: true } });
+validateForms('.column-one__form-mask', { email: { required: true, email: true }, fio: { required: true }, tel: { required: true } });

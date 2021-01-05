@@ -1,219 +1,179 @@
-.container-grid {
-  display: flex;
-  width: 1440px;
- 
- 
-}
-.grid-one {
-  margin-top: 140.5px;
-  margin-left: 141px;
-  grid-area: one;
-  width: 320px;
-}
-.grid-two {
-  margin-left: 125.5px;
-  margin-top: 143px;
-  grid-area: two;
-  width: 320px;
-}
+@import '../../scss/_mixin';
 
-.grid-three {
-  margin-left: 72.5px;
-  margin-top: 143.5px;
-  grid-area: three;
-  height: 1198px;
-  width: 320px;
-}
-.grid-four {
-  grid-area: four;
-  margin-top: 214px;
- width: 700px;
- height: 133px;
-//  padding: 0 0 0 125px;
-}
-.form-item {
+.form-elements{
   display: flex;
-  justify-content: space-between;
-}
-.form-items__masked {
-  margin-top: 22.9px;
-  width: 320px;
-}
-.form-item__dropdown {
-  margin-top: 19.8px;
-  width: 320px;
-}
-.form-items {
-  width: 320px;
-}
-.form-items__title {
-  margin-top: 3px;
-}
-.form-items__filter {
-  width: 266px;
-}
-.form-items + .form-items {
-  margin-top: 17px;
-}
-.form-items__dabl-date {
-  margin-top: 37px;
-  margin-bottom: 41px;
-}
-.subscription-input__container {
-  width: 266px;
-}
-.form-items_subscription {
-  margin-top: 41.5px;
-}
-.section-dropdowns {
-  margin-top: 96.8px;
-  width: 267px;
-}
-.section-dropdown {
-  margin-bottom: 17.2px;
-}
-.section-dropdown__item {
-  display: flex;
-  justify-content: space-between;
-}
-.section-checkbox {
-  margin-top: 170px;
- margin-left: -1px;
-}
-.section-checkbox__item + .section-checkbox__item {
-  margin-top: 47.6px;
-}
-.section-commets {
-  margin-top: 83px;
-}
-.section-center__toggle {
-  display: flex;
-}
-.center-items__like {
-  margin-top: 46px;
-}
-.section-center__like {
-  display: flex;
-  margin-top: 15px;
-}
-.center-items__rate {
-  margin-top: 41px;
-}
-.section-center__rate {
-  display: flex;
-  margin-top: 18px;
-}
-.section-center__rate>*+* {
-  margin-left: 20px;
-}
-.grid-two__checkbox {
-  margin-top: 16.5px;
-}
-.center-items {
-  margin-top: 42.5px;
-}
-.center-items_dropdown {
-  margin-top: 196px;
-  width: 320px;
-}
-.center-items_button {
-  margin-top: 256.5px;
-}
-.center-items_buttons {
-  margin-top: 15.5px;
-}
-.section-center__toggle {
-  margin-top: 14.4px;
-}
-.center-items_toggle {
-  margin-top: 41px;
-}
-.form-like {
-  margin-left: 10px;
-}
-.center-items_radio {
-  margin-top: 12px;
-}
-.center-items_radio>*+* {
-  margin-left: 15px;
-}
-.range-box {
-  display: flex;
-  height: 12px;
-}
-.range-start {
-  margin-left: 29px;
-  align-self: center;
-}
-.range-end {}
-.section-buttons {
- display: flex;
   flex-wrap: wrap;
-  width: 320px;
+  @include container;
+  padding: 140px 140px 0 140px;
 }
-.buttons__title{
- margin-top: 36px;
-}
-.buttons-container {
-  display: flex;
-  margin-top: 30px;
-  width: 320px;
-}
-.section-three_pagination{
-  margin-top: 41px;
-}
-.form-elements__pagination{
-  margin-left: 6px;
-}
-.section-three_pagination_bottom{
-  margin-top: 15.6px;
-}
-.buttons-container_top {
-  margin-top: 10px;
-  display: flex;
-}
-.buttons-container_bottom {
-  margin-top: 31.5px;
-  display: flex;
-}
-.buttons-container_bottom>*+* {
-  margin-left: 21px;
-}
-.buttons-container_top>*+* {
-  margin-left: 19.5px;
-}
-.buttons-container:first-child {
-  margin-top: 0;
-}
-.buttons-container > *+* {
-  margin-left: 18.5px;
-}
-.section-three_dropdown {
-  margin-top: 233.5px;
-  width: 320px;
+
+.column-one {
+ margin-left: 0.7px;
+ margin-top: 0.5px;
  
-}
-.section-bullet_bottom{
-  margin-top: 13px;
-}
-.section-bullet {
-  margin-top: 256px;
-}
-.calendar-dabl {
+  &__item{
+    display: flex;
+    justify-content: space-between;}
+    
+&__title{padding-top: 3px;}
+
+&__email{margin-bottom: 20.3px;}
+
+&__title_focus{ font-size: 11.7px;}
+
+&__dropdown{
+  margin-top: 19.5px;
+  margin-bottom: 22.9px;}
+
+&__date-title{
   display: flex;
-}
-.calendar-dabl>*+* {
-  margin-left: 20px;
-}
-.dropdown-date>*+* {
-  margin-left: 52px;
-}
-.dropdown-date {
-  display: flex;
+  margin-top: 40px;
+  
+  &>*+*{margin-left: 52px;}
 }
 
+&__dabl-date{
+  display: flex;
+  margin-bottom: 41.5px;
+  
+  &>*+*{margin-left: 20px;}
+}
 
-/* 
- .grid-four
-   +comment('Мурад Сарофанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
-   */
+&__medium{ width: 266px;}
+
+&__subscription{
+  margin-top: 40.8px;
+  margin-bottom: 100px;
+}
+&__drop-medium{
+  margin-top: 20.2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+&__checkbox{
+  margin-top: 172px;
+  margin-bottom: 49px;
+}}
+
+
+.column-two {
+  margin-top: 3.6px;
+  margin-left: 126px;
+  
+  
+  &__checkbox{margin-top: 16.5px; }
+  
+  &__radio{
+    margin-top: 43px;
+    margin-bottom: 12px;
+  }
+  &__radio-button{
+    margin-bottom: 40.3px;
+    
+    &>*+*{margin-left: 17px;}
+  }
+  &__toggle{
+    margin-top: 15px;
+    margin-bottom: 45.5px;
+    
+    &>*+*{margin-top: 14px;}
+  }
+  &__like{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 41px;
+    
+    &>*+*{ margin-left: 10px;}
+  }
+  &__rate{
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 197.5px;
+    
+    &>*+*{margin-left: 20px;}
+    
+  }
+  &__dropdown{
+    width: 320px;
+  }
+  &__rich{
+    margin-top: 256px;
+  }
+  &__rich-button{
+    margin-top: 16px;
+    margin-left: 1px;
+  }}
+  
+  .column-three{
+    margin-top: 4px;
+    margin-left: 72px;
+    
+    &__range{
+      height: 11.5px;
+      width: 266px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__out{
+      align-self: center;
+      margin-right: 1.5px;
+    }
+    &__title-btn{ margin-top: 36px;}
+      
+    &__button-top{
+      margin-top: 15px;
+      
+      &>*+*{ margin-left: 15px;}
+    }
+    &__button-center{
+      margin-top: 30px;
+      
+      &>*+*{ margin-left: 15px; }
+    }
+    &__button-bottom{
+      margin-bottom: 30px;
+      margin-top: 32px;
+      display: flex;
+      
+      &>*+*{ margin-left: 21px;}
+    }
+    &__pagination-title{
+      margin-top: 40px;
+      margin-left: 1px;
+    }
+    &__pagination{
+      margin-top: 16px;
+      margin-left: 1px;
+      margin-bottom: 234px;
+    }
+    &__bullet{margin-top: 256px;}
+    
+    &__bullet-list{
+      margin-top: 13px;
+      margin-left: 0.5px;
+    }}
+  
+  .column-four{
+    display: flex;
+    margin-top: 82px;
+    
+    &__murad{
+      width: 710px;
+      margin-top: 29px;
+      margin-left: 168px;
+    }
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+  
+  
+ 

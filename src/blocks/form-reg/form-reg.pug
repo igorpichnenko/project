@@ -1,4 +1,4 @@
-mixin form-reg
+mixin form-reg(mod='' + "border,content-size,large")
   form.registration
    .reg-container
      +large-title('Регистрация аккаунта')
@@ -22,6 +22,6 @@ mixin form-reg
        .reg-container__wrap
         .reg-container__text Уже есть аккаунт на Toxin
        .reg-container__button
-        +button({text: 'Войти', mods: 'border,content-size,large,signIn'})
+        +button({text: 'Войти', mods: mod})
      
      

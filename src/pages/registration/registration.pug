@@ -13,11 +13,11 @@ block head
     link(rel="stylesheet" href="registration.css")
     
 block content
-  .registration-container.form-reg
+  .registration-container.registration-container_reg-bg
      .registration-container__signin
-      +form-signin
-     .registration-container__reg.active
-       +form-reg
+      +form-signin('border,content-size,large,regCreate')
+     .registration-container__reg.registration-container_active
+       +form-reg('signIn,border,content-size,large')
 block footer
 block script
     script(src="./registration.js")
