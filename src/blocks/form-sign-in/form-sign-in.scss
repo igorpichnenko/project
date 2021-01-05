@@ -2,39 +2,26 @@
   width: 380px;
   height: 358px;
   background-color: #fff;
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-02;
 }
-
 .signin-container{
   width: 320px;
   padding-top: 40px;
   padding-left: 30px;
 
-
-
  &__input{
    margin: 21px 0 20px 0;
    &>*+*{
      margin-top: 10px;
-   }
-   
- }
+   }}
    
  &__item{
-   display: flex;
-   align-items: center;
+   @include flex-between;
    padding-top: 29px;
-   justify-content: space-between;
  }
  
  &__text{
-   font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-     
+   @include intermediate-text($fs:14px,$lh:18px,$col:#000)
  }
  
  &__button-wrap{

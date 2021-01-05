@@ -1,9 +1,10 @@
 .footer-wrapper {
   background-color: #fff;
-  width: 1160px;
-  padding: 100px 0 80px 0;
+  @include container;
 }
+
 .footer-container{
+  padding: 100px 0 80px 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -27,8 +28,6 @@
 }
 &__list:nth-last-child(-n+4) {
   @include intermediate-text;
-  font-weight: normal;
-  color: $dark50;
 }
 &__list:nth-child(1) {
   margin-bottom: 21.8px;
@@ -72,7 +71,5 @@
   margin-right: 1.5px;
 }
 &__text {
-   @include intermediate-text;
-  font-weight: normal;
-  color: $dark75;
+   @include intermediate-text(normal, $dark75);
 }}

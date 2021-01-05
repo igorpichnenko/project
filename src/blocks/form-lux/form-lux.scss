@@ -1,7 +1,7 @@
 .formlux-box {
   width: 380px;
   height: 511px;
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-02;
   background-color: #fff;
 }
 .lux-container {
@@ -28,19 +28,21 @@
     margin-top: 21px;
   }
 }
-.formlux-main__price + .formlux-main__price {
-  padding-top: 9.5px;
-}
+
 .formlux-main {
   margin-top: 18px;
-  &__text {
+  
+  &__price + &__price {
+  padding-top: 9.5px;
+}
+  &__label_top {
+  margin-left: 5px ;
+}
 
-    font-style: normal;
+  &__text {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    font-family: Montserrat;
+    @include body-text;
+    color: $dark75;
   }
   &__text_left{
     margin-left: 1px;
@@ -51,18 +53,11 @@
     line-height: 18px;
     margin-top: 3.5px;
     margin-left: 1px;
-
-  }
-
-
+ }
+ 
   &__label {
     border: 1px solid rgba(0, 0, 0, 0.12);
-    font-style: normal;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 11px;
-    color: rgba(31, 32, 65, 0.25);
+    @include intermediate-text($fw:bold,$col:$dark25,$fs:10px,$lh:11px)
     border-radius: 100px;
     width: 20px;
     height: 20px;
@@ -72,39 +67,30 @@
     margin-right: 60px;
     padding-top: 3.5px;
     margin-top: 2px;
+    
     &_number-right {
       margin-right: 22.5px;
+}}
 
-    }
-
-  }
   &__price {
     display: flex;
     justify-content: space-between;
   }}
+  
 .formlux-footer {
   margin-top: 30px;
   margin-left: 30px;
   &__text {
-    font-style: normal;
+    @include medium-text;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
-    color: #1F2041;
-    font-family: Montserrat;
+    color: $dark100;
     margin-left: 1px;
   }
   &__border {
-    margin-right: 3px;
-    margin-left: 4.5px;
-    margin-bottom: 3.7px;
+    margin: 0 3px 3.7px 4.5px;
     width: 183px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
   }
   &__price {
     display: flex;
   }}
-.formlux-main__label_top {
-  margin-left: 5px ;
-
-}

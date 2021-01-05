@@ -1,5 +1,6 @@
 include ../blocks/header/header
 include ../blocks/footer/footer
+include ../blocks/footer-small/footer-small
 include ../components/logo/logo
 include ../components/button/button
 include ../components/nav/nav
@@ -18,11 +19,17 @@ block head
  
 body
  
-.header-mixin
- +header({buttons: true})
++header({buttons: true})
 block content
 
 block footer
-.footer-mixin
- +footer
+
+
+footer.footer-rooms
+      .footer-rooms__large
+        +footer
+
+      .footer-rooms__small
+        +footer-small
+
 block script

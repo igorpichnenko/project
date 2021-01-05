@@ -1,5 +1,12 @@
 extends ../../layouts/base
-
+include ../../blocks/header/header
+include ../../blocks/footer/footer
+include ../../blocks/footer-small/footer-small
+include ../../components/button/button
+include ../../components/nav/nav
+include ../../components/list/list
+include ../../components/input/input
+include ../../components/icon/icon
 
 block title
   title index-page
@@ -9,6 +16,7 @@ block head
         link(rel="stylesheet" href="index.css")
         
 block body
+   +header({buttons: true})
    .index__link
     a(href="../color-type.html").index__page color-type 
    .index__link
@@ -25,7 +33,12 @@ block body
     a(href="../room-detalis.html").index__page room-detalis
    .index__link
     a(href="../room-search.html").index__page room-search
-   
+    footer.footer-rooms
+      .footer-rooms__large
+        +footer
+
+      .footer-rooms__small
+        +footer-small
 
 block script
     script(src="./index.js")

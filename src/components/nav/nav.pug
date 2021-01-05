@@ -1,12 +1,12 @@
-mixin header-nav
-        ul.nav-list
+mixin header-nav(classList="nav-list")
+        ul(class=""+classList)
          li.nav-list__text О нас
           a(href="#").nav-list__link.nav-list__link_about
-         li.nav-list__text.nav-list__text_bg-1 Услуги
+         li.nav-list__text.nav-list__text_icon-1 Услуги
           a(href="#").nav-list__link
          li.nav-list__text Вакансии
           a(href="#").nav-list__link.nav-list__link_vakansii
          li.nav-list__text Новости
           a(href="#").nav-list__link
-         li.nav-list__text.nav-list__text_bg-2 Соглашения
+         li.nav-list__text.nav-list__text_icon-2 Соглашения
           a(href="#").nav-list__link

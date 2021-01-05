@@ -1,15 +1,15 @@
 .footer-mobilie {
   @include flex-column-center;
   background-color: #fff;
-  width: 768px;
-  height: 367px;
+  min-width: 320px;
+  padding: 120px 180px 120px 180px;
   
 &__text{
-  padding-bottom: 27px;
-  padding-top: 18px;
-  @include intermediate-text;
-  font-weight: normal;
-  color: $dark75;
+    max-width: 600px;
+    text-align: center;
+    padding: 18px 21px 27px;
+  @include intermediate-text($col:$dark75);
+
 }
 &__icons{position: relative;}
 

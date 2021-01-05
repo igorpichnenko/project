@@ -1,13 +1,12 @@
 .search {
   height: 374px;
   width: 380px;
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-02;
   background-color: #fff;
 }
 .search-container {
   padding-left: 30px;
   padding-top: 40px;
-
 
   &__title {
     display: flex;

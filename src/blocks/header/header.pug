@@ -9,23 +9,24 @@ mixin header(options={})
     .header-main__container
       .header-main__logo
        +logo
-   
-    .header-main__container
+       .header-main__burger-menu
+         .header-main__burger-item.header-main__burger-item_1
+         .header-main__burger-item.header-main__burger-item_2
+         .header-main__burger-item.header-main__burger-item_3
    
       .header-main__nav
        +header-nav
 
-      .header-main__items
-       .header-main__item
+       .header-main__items
        
          block
        if(buttons==true)
     
          .header-main__button
          
-          .header-main__left-btn
+          .header-main__button.header-main__left-button
             +button({text: "Войти",mods: 'border,content-size'})
-          .header-main__right-btn
+          .header-main__button.header-main__right-button
             +button({text: 'Зарегистрироваться'})
           
        if(login==true)
