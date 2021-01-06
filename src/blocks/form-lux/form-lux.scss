@@ -79,8 +79,6 @@
   margin-left: 30px;
   &__text {
     @include medium-text;
-    font-weight: bold;
-    color: $dark100;
     margin-left: 1px;
   }
   &__border {

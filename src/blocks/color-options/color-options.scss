@@ -8,21 +8,14 @@
   &:nth-child(2) {margin-left: 40px;}
 
   &__title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 27.79px;
-    color: $dark100;
+    @include intermediate-text($fw: bold,$fs: 19px,$lh: 27.79px, $col: $dark100)
     white-space: nowrap;
   }
 
   &__text {
-    font-style: normal;
-    font-weight: normal;
-    color: $dark100;
-    font-size: 19px;
-    line-height: 28px;
+    @include intermediate-text($fs: 19px,$lh: 28px, $col: $dark100)
   }
+  
   &__block {
     width: 70px;
     height: 70px;

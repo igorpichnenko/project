@@ -2,16 +2,11 @@
   width: 266px;
 }
 .range-out{
+   @include intermediate-text($col: $dark50, $fs: 12px, $lh: 15px)
   width: 53px;
   border: none;
   outline: none;
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
 text-align: right;
-color: rgba(31, 32, 65, 0.5);
 position: relative;
 }
 
@@ -19,11 +14,11 @@ position: relative;
 width: 12px;
 height: 12px;
 background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-border: 2px solid #FFFFFF;
+border: 2px solid #fff;
 border-radius: 10px;
 }
 .irs-handle i{
-  color: fff;
+  color: #fff;
 }
 .irs-bar{
 background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
@@ -32,5 +27,5 @@ background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 .irs-line{
 width: 266px;
 background: transparent;
-border: 1px solid rgba(31, 32, 65, 0.25);
+border: 1px solid $dark25;
 }

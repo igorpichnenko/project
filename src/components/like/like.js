@@ -4,7 +4,7 @@ const likeBlocks = document.querySelectorAll(".like");
 
   likeBlocks.forEach(function (like) {
     
-    const valueEl = like.querySelector(".like__label");
+    const valueEl = like.querySelector(".like__number");
     
     const checkbox = like.querySelector(".like__input");
     console.log(like)

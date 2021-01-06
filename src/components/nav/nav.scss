@@ -27,10 +27,10 @@
   
   &__text_icon-1 { margin-right: 25px;
 
-&:after {@include material-font-dark;}}
+&:after {@include material-font;}}
     
 &__text_icon-2 {margin-right: 10px;
 
- &:after {@include material-font-dark; }}
+ &:after {@include material-font; }}
   
 }

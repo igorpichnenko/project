@@ -56,7 +56,6 @@
   margin-bottom: 49px;
 }}
 
-
 .column-two {
   margin-top: 3.6px;
   margin-left: 126px;
@@ -128,9 +127,15 @@
     }
     &__button-center{
       margin-top: 30px;
+      display: flex;
       
-      &>*+*{ margin-left: 15px; }
+      &>*+*{ margin-left: 20px; }
     }
+    
+    &__button-small{
+  width: 100px;
+  height: 44px;}
+    
     &__button-bottom{
       margin-bottom: 30px;
       margin-top: 32px;
@@ -141,6 +146,9 @@
     &__pagination-title{
       margin-top: 40px;
       margin-left: 1px;
+    }
+    &__pagination-text{
+      margin-left: 5px;
     }
     &__pagination{
       margin-top: 16px;

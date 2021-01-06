@@ -27,28 +27,37 @@ html {
   width: $w;
   height: $h;
 }
-
-@mixin material-font-dark {
-  font-family: 'Material Icons';
-  font-size: 24px;
-  line-height: 20px;
-  content: 'expand_more';
-  position: absolute;
-  color: $dark50;
+@mixin base-size($w: 40px, $h: 20px){
+  width: $w;
+  height: $h;
 }
 
-@mixin large-text {
+@mixin material-font($ff: 'Material Icons', $fs: 24px, $lh: 20px, $con:'expand_more',$pos: absolute,$col: $dark50,$bg: transparent) {
+  font-family: $ff;
+  font-size: $fs;
+  line-height: $lh;
+  content: $con;
+  position: $pos;
+  color: $col;
+  background: $bg;
+}
+
+@mixin large-text($col: $dark100, $fw: bold) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 24px;
   line-height: 29px;
+  color: $col;
+  font-weight: $fw;
 }
 
-@mixin medium-text {
+@mixin medium-text ($col: $dark100,$fw: bold){
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 19px;
   line-height: 23px;
+  font-weight: $fw;
+    color: $col;
 }
 
 @mixin intermediate-text($fw: normal, $col: $dark50, $fs: 14px, $lh: 17px, $fsty: normal) {
@@ -60,18 +69,20 @@ html {
   color: $col;
 }
 
-@mixin small-text {
+@mixin small-text($col: $dark100,$fw: bold) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
+  color: $col;
+  font-weight: $fw;
 }
-@mixin body-text {
+@mixin body-text($col: $dark75) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  color: $dark75;
+  color: $col;
   font-weight: normal;
 }
 

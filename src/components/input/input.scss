@@ -1,56 +1,40 @@
 .input {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: #fff;
+  border: 1px solid $dark25;
   box-sizing: border-box;
   border-radius: 4px;
-
   padding: 11.5px 10px 12px 13.5px ;
   height: 44px;
   width: 100%;
   outline: none;
 
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
+  @include intermediate-text($fs:14px,$lh:18px,$col:$dark75);
 
   &:hover {
-    border: 1px solid rgba(31, 32, 65, 0.50);
+    border: 1px solid $dark50;
     outline: none;
   }
   &::-webkit-input-placeholder {
-    color: rgba(31, 32, 65, 0.25);
+    color: $dark25;
   }
   &:hover::-webkit-input-placeholder {
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark75;
   }
 }
-
-
 .input-hover {
-  color: rgba(31, 32, 65, 0.75);
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13.6px;
-  line-height: 24px;
+  @include intermediate-text($fs:13.6px,$lh:24px,$col:$dark75);
   width: 320px;
   height: 44px;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.50);
+  background: #fff;
+  border: 1px solid $dark50;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 9px 10px 10px 14px;
 
   &::-webkit-input-placeholder {
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark75;
   }
-
 }
-
-
 
 // filter input //
 
@@ -58,23 +42,16 @@
   position: relative;
 }
 .container-input:after {
-  position: absolute;
+  @include material-font;
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
-  content: 'expand_more';
-  font-family: 'Material Icons';
-  font-size: 24px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.50);
   cursor: pointer;
   pointer-events: none;
 }
-
-
 .filter-input {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: #fff;
+  border: 1px solid $dark25;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 8px 13px 9px 14px;
@@ -82,31 +59,20 @@
   height: 44px;
   width: 100%;
   outline: none;
+    @include intermediate-text($fs:14px,$lh:18px,$col:$dark25);
 
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-
-  color: rgba(31, 32, 65, 0.75);
   &:hover {
-    border: 1px solid rgba(31, 32, 65, 0.75);
+    border: 1px solid $dark75;
     outline: none;
   }
   &::-webkit-input-placeholder {
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark75;
   }
   &:hover::-webkit-input-placeholder {
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark75;
   }
-
 }
-
-
-
 // subscription-input  //
-
 
 .subscription-input {
   position: relative;
@@ -123,18 +89,11 @@
   background-color: transparent;
 }
 .subscription-button:after {
-  position: absolute;
+  @include material-font($fs: 24px, $lh: 24px, $con:'arrow_forwards',$bg: $purple-gradient);
   transform: translateY(-50%);
-  content: 'arrow_forwards';
-  font-family: 'Material Icons';
   left: 5px;
-  font-size: 24px;
-  line-height: 24px;
   cursor: pointer;
   pointer-events: none;
-  font-style: normal;
-  font-weight: normal;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -28,10 +28,8 @@
 }
 &__list:nth-child(1) {
   margin-bottom: 21.8px;
-  font-weight: bold;
   @include small-text;
   text-transform: uppercase;
-  color: $dark100;
 }
 &__paragraf {
   margin-top: 14.5px;
@@ -42,9 +40,7 @@
 }
 &__promo-list {
   @include small-text;
-  font-weight: bold;
   text-transform: uppercase;
-  color: $dark100;
   margin-bottom: 18.5px;
   padding-top: 4.5px;
 }}

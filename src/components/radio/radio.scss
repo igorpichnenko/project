@@ -16,28 +16,22 @@
 
 }
 .radio__input:checked + .radio__text:before {
-  border: 1px solid #BC9CFF;
+  border: 1px solid $purple;
 }
 .radio__input:focus+.radio__text:before {
-  border: 1px solid #BC9CFF;
+  border: 1px solid $purple;
 
 }
 .radio__input:checked+.radio__text {
 
-  color: rgba(31,32,65,0.75);
+  color: $dark75;
 }
 
 .radio__text {
   position: relative;
   padding: 0 0 0 30px;
   cursor: pointer;
-  color: rgba(31,32,65,0.5);
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+ @include intermediate-text($col: $dark50, $fs: 14px, $lh: 24px)
 
 }
 .radio__text:before {
@@ -48,7 +42,7 @@
   left: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid rgba(31,32,65,0.25);
+  border: 1px solid $dark25;
   border-radius: 50%;
   background: #fff;
 }

@@ -16,26 +16,22 @@
   }
 }
 .uikit-content__title {
-  font-weight: normal;
-  @include large-text;
-  color: $dark25;
+  @include large-text($dark25, normal);
 
   &_h1 {padding-left: 1.5px;}
 
-  &_h2 {@include medium-text;}
+  &_h2 {@include medium-text($dark25,normal);}
 
-  &_h3 {@include small-text;}
+  &_h3 {@include small-text($dark25, normal);}
 
   &_body {
-    @include body-text;
+    @include body-text($dark25);
     margin-left: 1px;
   }
 }
 
 .uikit-content__text {
-  font-weight: bold;
   @include large-text;
-  color: $dark100;
   margin-left: 29px;
 
   &_h1 {padding-left: 1px;}

@@ -3,31 +3,18 @@
     stroke-dasharray: 0 100;
   }
 }
-// FFE39C
-// FFBA9C
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
 .canvas-container{
   width: 311px;
   height: 170px;
- 
 }
 .canvas-container__pie {
  display: flex;
   position: relative;
-  
-  
 }
 .legend {
   width: 146px;
   height: 96px;
   align-self: flex-end;
-  
-  
 }
 .canvas-container__title {  
   font-family: Montserrat;

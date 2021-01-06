@@ -4,33 +4,23 @@ font-style: normal;
 font-weight: normal;
 font-size: 48px;
 line-height: 41px;
-background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+background: $purple-gradient;
 -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
 }
 .comments-item{
   display: flex;
   align-items: center;
-border-bottom:1px solid rgba(31, 32, 65, 0.1); 
+border-bottom: $border-01; 
 padding-bottom: 19.5px;
 padding-top: 20.5px;
 width: 280px;
 }
 .comments-item__title{
-  font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 24px;
-color: rgba(31, 32, 65, 0.75);
+  @include intermediate-text($fs:14px,$fw:bold,$lh:24px,$col:$dark75);
 }
 .comments-item__text{
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: rgba(31, 32, 65, 0.75);
+    @include intermediate-text($fs:14px,$lh:24px,$col:$dark75);
 }
 .comments-item__content{
   padding-left: 10px;
@@ -46,40 +36,24 @@ color: rgba(31, 32, 65, 0.75);
   margin-top: 2px;
   
 }
-
 .comment-block{
   display: flex;
  align-content: center;
  box-sizing: border-box;
 }
 .comment-block__text{
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: rgba(31, 32, 65, 0.75);
+    @include intermediate-text($fs:14px,$lh:24px,$col:$dark75);
 margin-top: 10px;
 padding-left: 14px;
 }
 .comment-block__date{
-  font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: rgba(31, 32, 65, 0.75);
+    @include intermediate-text($fs:14px,$lh:24px,$col:$dark75);
 margin-left: 9px;
 }
 .comment-block__name{
+    @include intermediate-text($fs:14px,$fw:bold,$lh:24px,$col:$dark75);
  margin-left: 9px;
  margin-top: 1.5px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 24px;
-color: rgba(31, 32, 65, 0.75);
 
 }
 .comment-block__like{

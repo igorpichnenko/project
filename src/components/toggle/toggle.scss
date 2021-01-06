@@ -13,7 +13,7 @@
   height: 20px;
   width: 40px;
   border-radius: 10px;
-  border: 1px solid rgba(31,32,65,0.25);
+  border: 1px solid $dark25;
   box-sizing: border-box
 }
 .toggle-container__border::before {
@@ -21,11 +21,11 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: rgba(31,32,65,0.25);
+  background-color: $dark25;
   transition: margin-left 0.3s
 }
 .toggle-container__input:checked ~ .toggle-container__border{
-  border-color: #bc9cff
+  border-color: $purple;
 }
 .toggle-container__input:checked ~ .toggle-container__border::before {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -34,7 +34,7 @@
 .toggle-container__text {
   padding-left: 10px;
   font-size: 14px;
-  color: rgba(31,32,65,0.75);
+  color: $dark75;
   user-select: none;
   font-family: Montserrat;
 

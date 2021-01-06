@@ -5,18 +5,13 @@ width: 120px;
 .star-rating__wrap{
   display: flex;
   flex-direction: row-reverse;
-  
-  
-  
 }
 .star-rating__ico{
 position: relative;
 }
 .star-rating__input{
   display: none;
-  
 }
-
 .star-rating__ico:after{
 	content: "star_border";
 font-family: Material Icons;
