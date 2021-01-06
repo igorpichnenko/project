@@ -1,6 +1,25 @@
 .irs{
   width: 266px;
+  
+  &-handle i{
+  color: #fff;
 }
+&-bar{
+background: $green-gradient;
+}
+
+&-line{
+width: 100%;
+background: transparent;
+border: 1px solid $dark25;
+}
+&-handle{
+@include base-size(12px,12px);
+background: $green-gradient;
+border: 2px solid #fff;
+border-radius: 10px;
+}}
+
 .range-out{
    @include intermediate-text($col: $dark50, $fs: 12px, $lh: 15px)
   width: 53px;
@@ -10,22 +29,4 @@ text-align: right;
 position: relative;
 }
 
-.irs-handle{
-width: 12px;
-height: 12px;
-background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-border: 2px solid #fff;
-border-radius: 10px;
-}
-.irs-handle i{
-  color: #fff;
-}
-.irs-bar{
-background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-}
 
-.irs-line{
-width: 266px;
-background: transparent;
-border: 1px solid $dark25;
-}

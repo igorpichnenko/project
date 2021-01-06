@@ -1,5 +1,5 @@
 .bullet-list {
-  @include intermediate-text($col: $dark75, $fs: 14px, $lh: 24px)
+  @include body-text;
   position: relative;
   display: flex;
   flex-flow: column nowrap;

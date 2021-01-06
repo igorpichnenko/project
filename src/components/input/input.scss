@@ -42,12 +42,13 @@
   position: relative;
 }
 .container-input:after {
-  @include material-font;
+  @include material-font($bg: $dark50);
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
   cursor: pointer;
   pointer-events: none;
+  position: absolute;
 }
 .filter-input {
   background: #fff;
@@ -90,6 +91,7 @@
 }
 .subscription-button:after {
   @include material-font($fs: 24px, $lh: 24px, $con:'arrow_forwards',$bg: $purple-gradient);
+  position: absolute;
   transform: translateY(-50%);
   left: 5px;
   cursor: pointer;

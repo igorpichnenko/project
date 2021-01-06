@@ -17,10 +17,10 @@ padding-top: 20.5px;
 width: 280px;
 }
 .comments-item__title{
-  @include intermediate-text($fs:14px,$fw:bold,$lh:24px,$col:$dark75);
+  @include body-text($fw: bold);
 }
 .comments-item__text{
-    @include intermediate-text($fs:14px,$lh:24px,$col:$dark75);
+    @include body-text;
 }
 .comments-item__content{
   padding-left: 10px;
@@ -42,16 +42,16 @@ width: 280px;
  box-sizing: border-box;
 }
 .comment-block__text{
-    @include intermediate-text($fs:14px,$lh:24px,$col:$dark75);
+    @include body-text;
 margin-top: 10px;
 padding-left: 14px;
 }
 .comment-block__date{
-    @include intermediate-text($fs:14px,$lh:24px,$col:$dark75);
+    @include body-text;
 margin-left: 9px;
 }
 .comment-block__name{
-    @include intermediate-text($fs:14px,$fw:bold,$lh:24px,$col:$dark75);
+    @include body-text($fw:bold);
  margin-left: 9px;
  margin-top: 1.5px;
 

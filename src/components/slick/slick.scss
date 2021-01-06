@@ -1,3 +1,5 @@
+.slider { overflow: hidden}
+
 .slick-slider {
   position: relative;
   max-width: 270px;
@@ -59,9 +61,6 @@
 }
 .slick-dots .slick-active button {
   background-color: #fff
-}
-.slider {
-  overflow: hidden
 }
 .slider__item {
   height: 151px

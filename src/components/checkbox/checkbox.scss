@@ -10,6 +10,10 @@
   height: 44px;
   background: none;
 }
+body{
+  background-color: #fff;
+  
+}
 .checkbox-wrapper {
   background-color: #fff;
   display: none;
@@ -61,9 +65,9 @@
   content: '';
   position: absolute;
   left: 5px;
-  top: 6px;
-  height: 5px;
-  width: 7px;
+  top: 4.5px;
+  height: 6px;
+  width: 8px;
   background: linear-gradient(270deg, #bc9cff 0%, #8ba4f9 100%);
   transform: rotate(-45deg);
   display: none;
@@ -71,10 +75,10 @@
 .checkbox-items__style:before {
   content: '';
   position: absolute;
-  left: 4px;
-  top: 3px;
-  height: 6px;
-  width: 6px;
+  left: 5.3px;
+  top: 2px;
+  height: 6.5px;
+  width: 6.5px;
   background: #fff;
   z-index: 2;
   transform: rotate(-45deg);

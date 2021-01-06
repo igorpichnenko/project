@@ -1,39 +1,40 @@
- .pagination a {
-  color: rgba(31,32,65,0.5);
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 3.3333;
-}
-.pagination__link_active {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
-}
-.pagination__link_active a {
-  font-weight: bold;
-  color: white
-}
-.pagination__link_active,.pagination .paginationjs-prev,.pagination .paginationjs-next {
-  min-width: 40px;
-}
-.pagination__text {
-  margin-top: 7px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31,32,65,0.75)
-}
 .data-container {
   display: none
 }
-.pagination__icon {
+.paginationjs-container{
+  width: 242px;
+}
+ .pagination a {
+  @include intermediate-text($fs: 12px,$lh: 3.3333,$col: $dark25);
+  text-decoration: none;
+}
+.pagination{
+&__link_active { background: $purple-gradient;}
+
+&__text {
+  @include body-text;
+  margin-top: 7px;
+}
+&__icon {
   font-size: 24px;
   line-height: 1.6667;
   color: #fff
 }
-.paginationjs-prev,.paginationjs-next {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+&__list {
+  display: flex;
+  user-select: none;
+  padding: 0;
+  margin: 0
 }
+&__link_active a {
+  font-weight: bold;
+  color: white
+}}
+.pagination__link_active,.pagination .paginationjs-prev,.pagination .paginationjs-next {min-width: 40px;}
+
+.paginationjs-prev,.paginationjs-next {
+  background: $green-gradient;}
+  
 .paginationjs-page,.paginationjs-prev,.paginationjs-next,.paginationjs-ellipsis {
   display: inline-block;
   width: 100%;
@@ -41,14 +42,4 @@
   height: 40px;
   border-radius: 50%;
   text-align: center
-}
-.pagination__list {
-  display: flex;
-  user-select: none;
-  padding: 0;
-  margin: 0
-}
-.paginationjs-container{
-  
-  width: 242px;
 }

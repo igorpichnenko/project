@@ -32,14 +32,15 @@ html {
   height: $h;
 }
 
-@mixin material-font($ff: 'Material Icons', $fs: 24px, $lh: 20px, $con:'expand_more',$pos: absolute,$col: $dark50,$bg: transparent) {
+@mixin material-font($ff: 'Material Icons', $fs: 24px, $lh: 20px, $con:'expand_more',$col: $dark50,$bg: #fff) {
   font-family: $ff;
   font-size: $fs;
   line-height: $lh;
   content: $con;
-  position: $pos;
   color: $col;
   background: $bg;
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
 
 @mixin large-text($col: $dark100, $fw: bold) {
@@ -77,13 +78,13 @@ html {
   color: $col;
   font-weight: $fw;
 }
-@mixin body-text($col: $dark75) {
+@mixin body-text($col: $dark75,$fw: normal,$lh: 24px) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: $lh;
   color: $col;
-  font-weight: normal;
+  font-weight: $fw;
 }
 
 @mixin flex-center {

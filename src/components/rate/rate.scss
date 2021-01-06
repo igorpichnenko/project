@@ -1,40 +1,26 @@
 .star-rating{
 font-size: 0;
 width: 120px;
-}
-.star-rating__wrap{
+
+&__wrap{
   display: flex;
   flex-direction: row-reverse;
 }
-.star-rating__ico{
-position: relative;
-}
-.star-rating__input{
-  display: none;
-}
-.star-rating__ico:after{
-	content: "star_border";
-font-family: Material Icons;
-font-size: 24px;
-line-height: 20px;
-background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
--webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
-    
-}
-.star-rating__ico:hover:before,
-.star-rating__ico:hover ~ .star-rating__ico:before,
-.star-rating__input:checked ~ .star-rating__ico:before
-{
-	content: "star";
-font-family: Material Icons;
-font-size: 24px;
-line-height: 20px;
-background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
--webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
+
+&__input{display: none;}
+
+&__ico{
+	position: relative;
+	&:after {
+ 	@include material-font($con:'star_border',$bg: $purple-gradient);
+ 	}}
+&__ico:hover:before,
+&__ico:hover ~ &__ico:before,
+&__input:checked ~ &__ico:before{
+  @include material-font($con:'star',$bg: $purple-gradient);
+  
  position: absolute;
-}
+}}
 
 
 
@@ -42,3 +28,4 @@ background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
  
 
 
+  

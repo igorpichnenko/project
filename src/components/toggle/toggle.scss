@@ -1,12 +1,13 @@
-.toggle-container__label {
+.toggle-container{
+
+&__label {
   display: flex;
   align-items: center;
   cursor: pointer
 }
-.toggle-container__input {
-  display: none
-}
-.toggle-container__border {
+&__input {display: none}
+
+&__border {
   position: relative;
   display: flex;
   padding: 3px;
@@ -16,7 +17,7 @@
   border: 1px solid $dark25;
   box-sizing: border-box
 }
-.toggle-container__border::before {
+&__border::before {
   content: '';
   height: 12px;
   width: 12px;
@@ -24,18 +25,16 @@
   background-color: $dark25;
   transition: margin-left 0.3s
 }
-.toggle-container__input:checked ~ .toggle-container__border{
-  border-color: $purple;
-}
-.toggle-container__input:checked ~ .toggle-container__border::before {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+&__input:checked ~ &__border{
+  border-color: $purple;}
+
+&__input:checked ~ &__border::before {
+  background: $purple-gradient;
   margin-left: 20px;
 }
-.toggle-container__text {
+&__text {
+  @include body-text($lh: 20px);
   padding-left: 10px;
-  font-size: 14px;
-  color: $dark75;
   user-select: none;
-  font-family: Montserrat;
 
-}
+}}
