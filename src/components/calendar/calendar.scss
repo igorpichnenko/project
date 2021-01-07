@@ -1,7 +1,15 @@
-  .datepicker-box{
+ .datepicker-box{
   width: 150px;
-  box-sizing: border-box;
   position: relative;
+}
+.datepicker{
+ // display: none;
+  
+}
+.dat{
+  background-color: transparent;}
+.ac{
+  display: block;
 }
 .datepicker-box:after{
   @include material-font($lh: 24px,$bg: $dark50);
@@ -16,7 +24,9 @@
 .datepickers-container {
   position: absolute;
   left: 0;
-  top: -5px;}
+  top: 0;}
+  
+  
 .datepicker{
   width: 320px;
   height: 369px;
@@ -157,6 +167,15 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+  }
+  .datepicker__button{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
   }
 .datepicker--button {
     font-family: Montserrat;

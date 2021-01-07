@@ -1,40 +1,35 @@
 .radio {
   display: inline-block;
   box-sizing: border-box;
-}
-.radio * {
+
+&* {
   box-sizing: border-box;
 }
-.radio__input {
+&__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
   margin: 10px 0 0 7px;
 }
-.radio__input:checked+.radio__text:after {
+&__input:checked+.radio__text:after {
   opacity: 1;
-
 }
-.radio__input:checked + .radio__text:before {
-  border: 1px solid $purple;
-}
-.radio__input:focus+.radio__text:before {
-  border: 1px solid $purple;
+&__input:checked + .radio__text:before {
+  border: $purple-border;}
+  
+&__input:focus+.radio__text:before {
+  border: $purple-border;}
+  
+&__input:checked+.radio__text {
+ color: $dark75;}
 
-}
-.radio__input:checked+.radio__text {
-
-  color: $dark75;
-}
-
-.radio__text {
+&__text {
   position: relative;
   padding: 0 0 0 30px;
   cursor: pointer;
- @include intermediate-text($col: $dark50, $fs: 14px, $lh: 24px)
-
+ @include body-text($dark50);
 }
-.radio__text:before {
+&__text:before {
   box-sizing: border-box;
   content: '';
   position: absolute;
@@ -46,7 +41,7 @@
   border-radius: 50%;
   background: #fff;
 }
-.radio__text:after {
+&__text:after {
   box-sizing: border-box;
   content: '';
   position: absolute;
@@ -55,6 +50,6 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: $purple-gradient;
   opacity: 0;
-}
+}}

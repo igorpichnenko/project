@@ -16,7 +16,6 @@ block head
         link(rel="stylesheet" href="index.css")
         
 block body
-   +header({buttons: true})
    .index__link
     a(href="../color-type.html").index__page color-type 
    .index__link
@@ -33,12 +32,6 @@ block body
     a(href="../room-detalis.html").index__page room-detalis
    .index__link
     a(href="../room-search.html").index__page room-search
-    footer.footer-rooms
-      .footer-rooms__large
-        +footer
-
-      .footer-rooms__small
-        +footer-small
 
 block script
     script(src="./index.js")

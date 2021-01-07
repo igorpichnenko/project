@@ -6,10 +6,10 @@ mixin pie
      .canvas-container__number 260
      .canvas-container__text голосов
 
-    svg(class="chart" viewBox="0 0 32.3 33.3")
-     circle(class="unit" stroke="url(#paint5_linear)"  r="15.9" cx="50%" cy="50%")
-     circle(class="unit" stroke="url(#paint4_linear)"  r="15.9" cx="50%" cy="50%")
-     circle(class="unit" stroke="url(#paint3_linear)"  r="15.9" cx="50%" cy="50%")
+    svg(class="canvas-container__chart" viewBox="0 0 32.3 33.3")
+     circle(class="canvas-container__unit" stroke="url(#paint5_linear)"  r="15.9" cx="50%" cy="50%")
+     circle(class="canvas-container__unit" stroke="url(#paint4_linear)"  r="15.9" cx="50%" cy="50%")
+     circle(class="canvas-container__unit" stroke="url(#paint3_linear)"  r="15.9" cx="50%" cy="50%")
      defs
       linearGradient(id="paint5_linear" x1="0%" y1="0%" x2="0%" y2="100%")
        stop(offset="0" stop-color="#FFE39C")
@@ -20,9 +20,9 @@ mixin pie
       linearGradient(id="paint3_linear" x1="0%" y1="0%" x2="0%" y2="100%")
        stop(offset="0" stop-color="#BC9CFF")
        stop(offset="100%" stop-color="#8BA4F9")
-    .legend
-     ul.caption-list
-      li.caption-item Великолепно
-      li.caption-item Хорошо
-      li.caption-item Удовлетворительно
-      li.caption-item Разочарован
+    .canvas-container__legend
+     ul.canvas-container__list
+      li.canvas-container__item Великолепно
+      li.canvas-container__item Хорошо
+      li.canvas-container__item Удовлетворительно
+      li.canvas-container__item Разочарован

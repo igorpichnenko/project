@@ -21,6 +21,9 @@
     color: $dark75;
   }
 }
+
+// hover input 
+
 .input-hover {
   @include intermediate-text($fs:13.6px,$lh:24px,$col:$dark75);
   width: 320px;
@@ -60,7 +63,7 @@
   height: 44px;
   width: 100%;
   outline: none;
-    @include intermediate-text($fs:14px,$lh:18px,$col:$dark25);
+    @include intermediate-text($fs:14px,$lh:18px,$col:$dark75);
 
   &:hover {
     border: 1px solid $dark75;
@@ -96,6 +99,4 @@
   left: 5px;
   cursor: pointer;
   pointer-events: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const ghpages = require('gh-pages');
-//const ErudaWebpackPlugin = require('eruda-webpack-plugin');
 
 
 // модули --- ***
@@ -75,10 +74,6 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 		}),
-	//	new ErudaWebpackPlugin({
- //    entry: [/index\.js$/, /color-type\.js$/],
-   //   plugins: ['dom'],
- //   }),
 		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,

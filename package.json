@@ -20,7 +20,6 @@
     "css-loader": "^3.2.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
-    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.3.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.7.0",
@@ -37,14 +36,14 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "air-datepicker": "^2.2.3",
-    "imask": "^6.0.5",
-    "eruda-webpack-plugin": "^1.2.0",
-    "paginationjs": "^2.1.5",
     "gh-pages": "^3.1.0",
-    "slick-carousel": "^1.8.1",
+    "imask": "^6.0.5",
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.5.1",
     "just-validate": "^1.5.0",
-    "material-design-icons": "^3.0.1"
+    "material-design-icons": "^3.0.1",
+    "paginationjs": "^2.1.5",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^6.4.5"
   }
 }

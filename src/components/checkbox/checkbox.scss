@@ -4,16 +4,13 @@
   text-align: left;
   border: none;
   outline: none;
-  @include intermediate-text($fw: bold, $col: $dark100, $fs: 12px, $lh: 15px)
+  @include small-text;
   position: relative;
   text-transform: uppercase;
   height: 44px;
   background: none;
 }
-body{
-  background-color: #fff;
-  
-}
+
 .checkbox-wrapper {
   background-color: #fff;
   display: none;
@@ -68,7 +65,7 @@ body{
   top: 4.5px;
   height: 6px;
   width: 8px;
-  background: linear-gradient(270deg, #bc9cff 0%, #8ba4f9 100%);
+  background: $purple-gradient;
   transform: rotate(-45deg);
   display: none;
 }

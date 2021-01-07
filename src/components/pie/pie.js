@@ -1,5 +1,5 @@
-let captionsList = document.querySelectorAll('.caption-item');
-let unitsList = document.querySelectorAll('.unit');
+let captionsList = document.querySelectorAll('.canvas-container__item');
+let unitsList = document.querySelectorAll('.canvas-container__unit');
 
 captionsList.forEach(function (item, index) {
   item.addEventListener('mouseover', function () {
