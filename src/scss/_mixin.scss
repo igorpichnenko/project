@@ -23,6 +23,12 @@ html {
   height: 100%;
 }
 
+@mixin foto-bg-size{
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
 @mixin max-size($w: 100%, $h: 100%) {
   width: $w;
   height: $h;
