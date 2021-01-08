@@ -32,7 +32,7 @@ html {
   height: $h;
 }
 
-@mixin material-font($ff: 'Material Icons', $fs: 24px, $lh: 20px, $con:'expand_more',$col: $dark50,$bg: #fff) {
+@mixin material-font($ff: 'Material Icons', $fs: 24px, $lh: 20px, $con:'expand_more',$col: $dark50,$bg: $dark50) {
   font-family: $ff;
   font-size: $fs;
   line-height: $lh;

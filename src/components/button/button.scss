@@ -28,7 +28,7 @@
     height: 44px;
 
     &:after {
-        @include material-font($lh: 24px, $con:'arrow_forwards',$col: #fff);
+        @include material-font($lh: 24px, $con:'arrow_forwards',$col: #fff,$bg:#fff);
       top: 50%;
       position: absolute;
       transform: translateY(-50%);
