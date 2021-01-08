@@ -17,6 +17,7 @@
   padding-bottom: 74px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 &__item {
   display: grid;

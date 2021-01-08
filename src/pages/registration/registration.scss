@@ -10,11 +10,13 @@
   background: url('./img/registration.jpg');
   background-position: bottom;
   height: 683px;
+  background-repeat: no-repeat;
 }
 &_signIn-bg{
   background: url('./img/signIn.jpg');
   background-position: bottom;
   height: 702px;
+  background-repeat: no-repeat;
 }
 &__reg {
   padding-left: 7px;
