@@ -13,7 +13,7 @@ import IMask from 'imask';
 
 
 let dateMask = IMask(
-  document.querySelector('.mask-date'),
+  document.querySelector('.input_mask'),
   {
     mask: Date,
     min: new Date(1990, 0, 1),
@@ -45,7 +45,7 @@ function validateForms(selector, rules) {
     });
 }
 
-validateForms('.column-one__form-mask', { email: { required: true, email: true }, fio: { required: true }, tel: { required: true } });
+validateForms('.column-one__form-mask', { email: { required: true, email: true } });
 
 
 

@@ -1,14 +1,16 @@
-.input {
+.input{
+  
+&_standart{
   background: #fff;
+  height: 44px;
+  width: 100%;
   border: 1px solid $dark25;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 11.5px 10px 12px 13.5px ;
-  height: 44px;
-  width: 100%;
   outline: none;
-
-  @include intermediate-text($fs:14px,$lh:18px,$col:$dark75);
+  padding: 11.5px 10px 12px 13.5px ;
+  
+    @include intermediate-text($fs:14px,$lh:18px,$col:$dark75);
 
   &:hover {
     border: 1px solid $dark50;
@@ -19,12 +21,9 @@
   }
   &:hover::-webkit-input-placeholder {
     color: $dark75;
-  }
-}
+  }}
 
-// hover input 
-
-.input-hover {
+&_hover {
   @include intermediate-text($fs:13.6px,$lh:24px,$col:$dark75);
   width: 320px;
   height: 44px;
@@ -36,15 +35,14 @@
 
   &::-webkit-input-placeholder {
     color: $dark75;
-  }
-}
-
+  }}}
+  
 // filter input //
 
-.container-input {
+.container-filter {
   position: relative;
-}
-.container-input:after {
+
+&:after {
   @include material-font($bg: $dark50);
   top: 50%;
   transform: translateY(-50%);
@@ -53,7 +51,7 @@
   pointer-events: none;
   position: absolute;
 }
-.filter-input {
+&__input {
   background: #fff;
   border: 1px solid $dark25;
   box-sizing: border-box;
@@ -75,13 +73,14 @@
   &:hover::-webkit-input-placeholder {
     color: $dark75;
   }
-}
+}}
+
 // subscription-input  //
 
-.subscription-input {
+.subscription{
   position: relative;
-}
-.subscription-button {
+
+&__button {
   position: absolute;
   right: 14px;
   transform: translateY(-50%);
@@ -92,11 +91,11 @@
   outline: none;
   background-color: transparent;
 }
-.subscription-button:after {
+&__button:after {
   @include material-font($fs: 24px, $lh: 24px, $con:'arrow_forwards',$bg: $purple-gradient);
   position: absolute;
   transform: translateY(-50%);
   left: 5px;
   cursor: pointer;
   pointer-events: none;
-}
+}}

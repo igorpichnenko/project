@@ -35,19 +35,19 @@ block body
        +title('Default','title_hover')
        
      .column-one__email
-       +input('Email','email')
+       +input
      .column-one__item
       +title('Text Field')
       +title('hover / focus','title_hover column-one__title_focus')
       
-     +input-hover('This is pretty awesome')
+     +input({mods: 'hover',inType: 'text',text: 'This is pretty awesome'})
      .column-one__dropdown
       +title('dropdown')
       
       +dropdown("dropdown__list","2","1","0","Сколько гостей")
      +title('masked text field')
      
-     +input('ДД.ММ.ГГГГ','text', 'input mask-date')
+     +input({mods: 'standart,mask',inType: 'text',text: 'ДД.ММ.ГГГГ'})
      .column-one__date-title
       +title('date dropdown')
       +title('date dropdown')
@@ -57,11 +57,11 @@ block body
      +title('filter date dropdown')
      .column-one__medium
      
-      +filter-input
+      +input({filter: false})
       .column-one__subscription
        +title('subscription text field')
        
-       +subscription-input
+       +input({filter: false, subscription: true})
       .column-one__item
        +title('dropdown')
        +title('Default','title_hover')
@@ -74,13 +74,16 @@ block body
       
       .column-one__checkbox
        +checkbox-list
-      +checkbox-list("checkbox-list__icon_rotate",'checkbox-items__visible','checked')
+       .column-one__checkbox-list
+        +checkbox-list("checkbox-list__icon_rotate",'checkbox-list__visible')
       
       
   .column-two
       +title('checkbox buttons')
       .column-two__checkbox
-       +checkbox-button('checked')
+       +checkbox-button('Можно курить')
+       +checkbox-button('Можно с питомцами','','check')
+       +checkbox-button('Можно пригласить гостей (до 10 человек)','checkbox-items__wrap','check')
        
       .column-two__radio
        +title('radio buttons')
@@ -110,16 +113,16 @@ block body
       .column-two__rich
        +title("rich checkbox buttons")
        .column-two__rich-button
-        +checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
-        +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера','checkbox-items__comment checkbox-items__wrap')
+        +checkbox-rich({title: 'Широкий коридор',text:'Ширина коридоров в номере не менее 91 см.'})
+        +checkbox-rich({title: 'Помощник для инвалидов',text:'На 1 этаже вас встретит специалист и проводит до номера',mods:'checkbox-rich__wrap'})
         
   .column-three
 
    .column-three__range
      +title('range slider')
      .column-three__out
-      +input("","","range-out range-start")
-      +input("","","range-out range-end")
+      input.range-out.range-start
+      input.range-out.range-end
    .column-three__range-slider
     +range-slider
 

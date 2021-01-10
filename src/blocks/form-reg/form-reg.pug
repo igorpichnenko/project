@@ -3,18 +3,18 @@ mixin form-reg(mod='' + "border,content-size,large")
    .reg-container
      +large-title('Регистрация аккаунта')
      .reg-container__input
-      +input('Имя','text')
-      +input('Фамилия','text')
+      +input({inType:'text',text:'Имя'})
+      +input({inType:'text',text: 'Фамилия'})
      .reg-container__radio
       +radio("Мужчина",'man','check')
       +radio('Женщина','man')
      +title('Дата рождения')
-     +input('ДД.ММ.ГГГГ','text')
+     +input({inType:'text',text:'ДД.ММ.ГГГГ'})
      .reg-container__data
       +title('Данные для входа в сервис')
      .reg-container__data-in
-      +input('Email','email')
-      +input('Пароль','password')
+      +input
+      +input({inType: 'password',text:'Пароль'})
      .reg-container__toggle
       +toggle
      +button({text: 'Перейти к оплате', mods: 'arrow'})

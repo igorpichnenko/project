@@ -21,32 +21,46 @@ block content
    .room-search__aside
      +title('Даты пребывания в отеле')
      .room-search__input
-      +filter-input
+      +input({filter: false})
+      
+      
      .room-search__dropdown
       +title('гости')
       +dropdown("","2","1","0","3 гостя, 1 младенец")
+      
+      
       .room-search__range
        +title('Диапазон цены')
        .room-search__out
-        +input("","","range-out range-start")
-        +input("","","range-out range-end")
+        input.range-out.range-start
+        input.range-out.range-end
       .room-search__range-slider
        +range-slider
       .room-search__price Стоймость за сутки пребывания в номере
+
+
       .room-search__ruls
        +title('Правила Дома')
       .room-search__checkbox
-        +checkbox-button('checked')
+       +checkbox-button('Можно курить')
+       +checkbox-button('Можно с питомцами','','check')
+       +checkbox-button('Можно пригласить гостей (до 10 человек)','checkbox-items__wrap','check')
+       
+       
       .room-search__rich
        +title('Доступность')
       .room-search__rich-button
-       +checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
-       +checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера','checkbox-items__comment checkbox-items__wrap')
+       +checkbox-rich({title: 'Широкий коридор',text:'Ширина коридоров в номере не менее 91 см.'})
+       +checkbox-rich({title: 'Помощник для инвалидов',text:'На 1 этаже вас встретит специалист и проводит до номера',mods:'checkbox-item__wrap'})
+       
+       
       .room-search__medium-drop
         +title('Удобства номера')
         +dropdown-medium
       .room-search__checkbox-list
-       +checkbox-list("",'','checked','Дополнительные удобства')
+       +checkbox-list("",'','Дополнительные удобства')
+       
+       
    .room-search__cards
     +large-title('Номера, которые мы для вас подобрали')
     .room-search__container

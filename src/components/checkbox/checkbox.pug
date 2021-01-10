@@ -1,71 +1,32 @@
-mixin checkbox(title,text,mods="checkbox-items__comment")
-    .checkbox-rich
+mixin checkbox-button(text,mods="", check)
+    .checkbox-items
      label.checkbox-items__label
       .checkbox-items__container
-       input(type="checkbox" class="checkbox-items__input")
+       input(type="checkbox" class="checkbox-items__input" checked= check)
        span.checkbox-items__style
-      .checkbox-items__title= title
-      div(class=""+mods)= text
+      .checkbox-items__text(class=""+mods)= text 
 
-mixin checkbox-button(check)
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Можно курить
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" checked=check class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Можно с питомцами
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" checked=check class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Можно пригласить гостей<br>(до 10 человек)
-
-mixin checkbox-list(mods="",mod="",check,title="expandable checkbox list")
+mixin checkbox-list(mods="",mod="",title="expandable checkbox list")
   .checkbox-accordion
    .checkbox-list
+
     span.checkbox-list__button= title
+
     i(class=""+mods).material-icons.checkbox-list__icon expand_more
-   div(class=""+mod).checkbox-wrapper
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Завтрак
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" checked=check class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Письменный стол
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" checked=check class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Стул для кормления
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" checked=check class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Кроватка
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Телевизор
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" class="checkbox-items__input")
-       span.checkbox-items__style
-      .checkbox-items__text Шампунь
+   div(class=""+mod).checkbox-list__wrapper
+      .checkbox-items
+
+      +checkbox-button('Завтрак')
+      +checkbox-button('Письменный стол','','check')
+      +checkbox-button('Стул для кормления','','check')
+      +checkbox-button('Кроватка','','check')
+      +checkbox-button('Телевизор')
+      +checkbox-button('Шампунь')
+      
+mixin checkbox-rich(options={})
+  - let {text='',title='',mods="",mod="checkbox-items__title"}= options
+
+    .checkbox-rich
+     +checkbox-button(title,mod)
+     .checkbox-rich__comment(class=""+mods)= text
+     

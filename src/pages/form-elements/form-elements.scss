@@ -55,8 +55,12 @@
 
 &__checkbox{
   margin-top: 172px;
-  margin-bottom: 49px;
-}}
+}
+  &__checkbox-list{
+    margin-top: 49px;
+  }
+  
+}
 
 .column-two {
   margin-top: 3.6px;

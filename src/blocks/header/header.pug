@@ -1,6 +1,6 @@
 mixin header(options={})
 
- - let {buttons=false, login=false, user='Юлий Цезарь'}=options
+ - let {login=true, user='Юлий Цезарь'}=options
 
 
  header.header
@@ -19,8 +19,7 @@ mixin header(options={})
 
        .header-main__items
        
-         block
-       if(buttons==true)
+       if login
     
          .header-main__button
          
@@ -29,6 +28,6 @@ mixin header(options={})
           .header-main__button.header-main__right-button
             +button({text: 'Зарегистрироваться'})
           
-       if(login==true)
+       else
        
           .header-main__person= user

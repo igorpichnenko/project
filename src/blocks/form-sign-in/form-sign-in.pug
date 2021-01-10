@@ -3,8 +3,8 @@ mixin form-signin(mod= "border,content-size,large")
     .signin-container
       +large-title('Войти')
       .signin-container__input
-       +input('Email','email')
-       +input('Пароль','password')
+       +input
+       +input({inType:'password',text:'Пароль'})
       +button({text: 'Войти', mods: 'arrow'})
       .signin-container__item
        .signin-container__text Нет аккаунта на Toxin?

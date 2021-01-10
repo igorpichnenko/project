@@ -1,4 +1,4 @@
-mixin pie
+mixin pie(items)
   .canvas-container
    +medium-title('Впечатления от номера')
    .canvas-container__pie
@@ -22,7 +22,5 @@ mixin pie
        stop(offset="100%" stop-color="#8BA4F9")
     .canvas-container__legend
      ul.canvas-container__list
-      li.canvas-container__item Великолепно
-      li.canvas-container__item Хорошо
-      li.canvas-container__item Удовлетворительно
-      li.canvas-container__item Разочарован
+       each item in items
+         li.canvas-container__item= item

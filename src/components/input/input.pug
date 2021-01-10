@@ -1,15 +1,24 @@
-mixin input(name="",mod="text",className="input")
-    input(placeholder=''+name, type=''+mod,class=''+className)
+mixin input(options={})
+  - let {mods = 'standart',inType="email", text="Email", filter=true, subscription=false}=options
+  - 
+    let modList = mods.split(',')
+    let allMods = ''
     
-mixin input-hover(text,mod,className)
-    input.input-hover(placeholder=''+text, type=""+mod, class=""+className)
+    modList.forEach(function (mod) {
+    allMods = allMods + ' input_' + mod.trim()
+    })
+
+  if filter
     
-    
-mixin filter-input
-  .container-input
-    input(class='filter-input datepicker-new' type='text' placeholder="19 авг - 23 авг")
-mixin subscription-input(title="Email",mods="email",validate="email")
-    
-     .subscription-input
-      input(placeholder=""+title type=""+mods class="input subscription-input"+className,data-validate-field=''+validate)
-      button(type="submit").subscription-button
+   input.input(class= allMods, type=inType, placeholder= text)
+   
+  else if subscription
+
+   .subscription
+      input(placeholder=text type=inType class="input_standart subscription__input"+className,data-validate-field='email')
+      button(type="submit").subscription__button
+
+  else  
+   .container-filter
+    input(class='container-filter__input datepicker-new' type='text' placeholder="19 авг - 23 авг")
+
