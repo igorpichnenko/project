@@ -9,8 +9,8 @@ mixin title({mods='standart',title=""}={})
     
   h3.title(class= allMods)= title
 
-mixin title-price (text,price,mods,className="number-container__text",classlux="number-container__lux")
-   .title-price
+mixin title-number (text,price,mods,className="number-container__text",classlux="number-container__lux")
+   .title-number
       .number-container
        span.number-container__title № 
        span(class=""+className)= text

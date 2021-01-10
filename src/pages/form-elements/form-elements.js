@@ -4,7 +4,7 @@ import './form-elements.scss';
 import '../../pixel.js'
 import '../../components/dropdown/dropdown.js'
 import '../../components/range-slider/range-slider.js'
-import '../../components/pagination/paginationjs.js'
+import '../../components/pagination/pagination.js'
 import '../../components/checkbox/checkbox.js'
 import '../../components/like/like.js'
 import '../../../node_modules/just-validate/dist/js/just-validate.js';

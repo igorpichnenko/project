@@ -1,5 +1,4 @@
 import 'ion-rangeslider';
-import '../../components/range-slider/RangeSlider.scss';
 
 
     let $range = $(".range-slider");
