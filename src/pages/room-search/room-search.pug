@@ -19,18 +19,18 @@ block head
 block content
  .room-search
    .room-search__aside
-     +title('Даты пребывания в отеле')
+     +title({title:'Даты пребывания в отеле'})
      .room-search__input
       +input({filter: false})
       
       
      .room-search__dropdown
-      +title('гости')
+      +title({title:'гости'})
       +dropdown("","2","1","0","3 гостя, 1 младенец")
       
       
       .room-search__range
-       +title('Диапазон цены')
+       +title({title:'Диапазон цены'})
        .room-search__out
         input.range-out.range-start
         input.range-out.range-end
@@ -40,7 +40,7 @@ block content
 
 
       .room-search__ruls
-       +title('Правила Дома')
+       +title({title:'Правила Дома'})
       .room-search__checkbox
        +checkbox-button('Можно курить')
        +checkbox-button('Можно с питомцами','','check')
@@ -48,21 +48,21 @@ block content
        
        
       .room-search__rich
-       +title('Доступность')
+       +title({title:'Доступность'})
       .room-search__rich-button
        +checkbox-rich({title: 'Широкий коридор',text:'Ширина коридоров в номере не менее 91 см.'})
        +checkbox-rich({title: 'Помощник для инвалидов',text:'На 1 этаже вас встретит специалист и проводит до номера',mods:'checkbox-item__wrap'})
        
        
       .room-search__medium-drop
-        +title('Удобства номера')
+        +title({title:'Удобства номера'})
         +dropdown-medium
       .room-search__checkbox-list
        +checkbox-list("",'','Дополнительные удобства')
        
        
    .room-search__cards
-    +large-title('Номера, которые мы для вас подобрали')
+    +title({title:'Номера, которые мы для вас подобрали',mods:'large'})
     .room-search__container
      +image-card('888','145','9 990₽','люкс','1','6','7','8','room-1','1','number-container__text_low','number-container__lux room-search__lux')
      +image-card('840','65','9 900₽','','2','8','9','4','room-2','2','number-container__text_low')

@@ -1,17 +1,17 @@
 mixin form-reg(mod='' + "border,content-size,large")
   form.registration
    .reg-container
-     +large-title('Регистрация аккаунта')
+     +title({title:'Регистрация аккаунта',mods:'large'})
      .reg-container__input
       +input({inType:'text',text:'Имя'})
       +input({inType:'text',text: 'Фамилия'})
      .reg-container__radio
       +radio("Мужчина",'man','check')
       +radio('Женщина','man')
-     +title('Дата рождения')
+     +title({title:'Дата рождения'})
      +input({inType:'text',text:'ДД.ММ.ГГГГ'})
      .reg-container__data
-      +title('Данные для входа в сервис')
+      +title({title:'Данные для входа в сервис'})
      .reg-container__data-in
       +input
       +input({inType: 'password',text:'Пароль'})

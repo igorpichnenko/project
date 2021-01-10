@@ -1,13 +1,13 @@
 mixin formlux(classlux,number="888",price="9 990₽",lux="люкс")
   .formlux-box
    .lux-container
-    +title-number(number,price,lux,className,classlux)
+    +title-price(number,price,lux,className,classlux)
     .lux-container__title
-      +title('Прибытие')
-      +title('Выезд')
+      +title({title:'Прибытие'})
+      +title({title:'Выезд'})
     .lux-container__calendar
      +datepicker-dabl('23.08.2019','19.08.2019')
-    +title('гости')
+    +title({title:'гости'})
     +dropdown("dropdown__list","2","1","0","3 гостя")
     .formlux-main 
        .formlux-main__price

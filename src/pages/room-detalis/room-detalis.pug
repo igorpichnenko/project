@@ -22,7 +22,7 @@ block content
    .room-detalis__item
    
      .room-detalis__comment
-        +medium-title('Сведения о номере')
+        +title({title:'Сведения о номере',mods:'medium'})
         .room-detalis__comments
          +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
          +comments('location_city','Удобство','Окно в каждой из спален')
@@ -34,8 +34,8 @@ block content
 
      .room-detalis__reviews
        .room-detalis__title
-         +medium-title('Отзывы посетителей номера')
-         +title('2 отзыва','room-detalis__title_lower')
+         +title({title:'Отзывы посетителей номера',mods:'medium'})
+         span.room-detalis__title_lower 2 отзыва
        .room-detalis__title_murad
           +comment('Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
        .room-detalis__patricia
@@ -44,7 +44,7 @@ block content
           
      .room-detalis__rules
          .room-detalis__text
-          +medium-title('Правила')
+          +title({title:'Правила',mods:'medium'})
          +bullet-list([
           'Нельзя с питомцами',
           'Без вечеринок и мероприятий',
@@ -52,7 +52,7 @@ block content
          ])
          
      .room-detalis__cancel
-         +medium-title('Отмена')
+         +title({title:'Отмена',mods:'medium'})
          .room-detalis__paragraf Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. 
          
    .room-detalis__form

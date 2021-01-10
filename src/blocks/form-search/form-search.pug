@@ -2,14 +2,14 @@ mixin form-search
   form.search
    .search-container
       .search-container__wrap-title
-       +large-title('Найдём номера под ваши пожелания')
+       +title({title:'Найдём номера под ваши пожелания',mods:'large'})
       .search-container__title
-       +title('Прибытие')
-       +title('Выезд')
+       +title({title:'Прибытие'})
+       +title({title:'Выезд'})
       .search-container__calendar
        +datepicker-dabl
       .search-container__dropdown
-       +title('Гости')
+       +title({title:'Гости'})
        +dropdown("dropdown__list","2","1","0","Сколько гостей")
    .search-container__button
          +button({text: 'Подобрать номер', mods: 'arrow'})

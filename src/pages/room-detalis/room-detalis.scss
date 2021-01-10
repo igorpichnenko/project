@@ -42,8 +42,9 @@
   padding-bottom: 17px;
 }
 &__title_lower{
+  @include intermediate-text($lh:14px);
  margin-top: 2.5px;
- margin-right: 1px;
+ 
 }
 &__title_murad {
   padding-top: 2.5px;

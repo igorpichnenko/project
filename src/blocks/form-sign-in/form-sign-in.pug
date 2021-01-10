@@ -1,7 +1,7 @@
 mixin form-signin(mod= "border,content-size,large")
   form.sign-in
     .signin-container
-      +large-title('Войти')
+      +title({title:'Войти',mods:'large'})
       .signin-container__input
        +input
        +input({inType:'password',text:'Пароль'})

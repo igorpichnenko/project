@@ -1,18 +1,16 @@
-mixin title(title,name ="title")
+mixin title({mods='standart',title=""}={})
+  - 
+    let modList = mods.split(',')
+    let allMods = ''
+    
+    modList.forEach(function (mod) {
+    allMods = allMods + ' title_' + mod.trim()
+    })
+    
+  h3.title(class= allMods)= title
 
-    h3(class=''+name)= title
-
-mixin large-title(title)
-
-   h2.large-title= title
-
-
-mixin medium-title(title)
-  
-    h3.medium-title= title
-
-mixin title-number (text,price,mods,className="number-container__text",classlux="number-container__lux")
-   .title-number
+mixin title-price (text,price,mods,className="number-container__text",classlux="number-container__lux")
+   .title-price
       .number-container
        span.number-container__title № 
        span(class=""+className)= text
@@ -27,3 +25,4 @@ mixin reviews(number,name,check)
   .reviews-container
    .reviews-container__number= number
    .reviews-container__text Отзывов
+

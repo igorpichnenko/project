@@ -1,22 +1,25 @@
 .title {
+  
+  &_standart{
   @include small-text;
   text-transform: uppercase;
   margin-bottom: 5px;
-}
-.title_hover {
+  }
+
+&_hover {
   @include small-text($dark50, normal);
   text-transform: uppercase;
 }
 
-.large-title {
+&_large {
    @include large-text;
 }
-.medium-title{
+&_medium{
   @include medium-text;
 }
-
+}
 //         ****       ///
-.title-number {
+.title-price {
   display: flex;
   justify-content: space-between;
 }
