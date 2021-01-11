@@ -6,6 +6,10 @@ padding-bottom: 19.5px;
 padding-top: 20.5px;
 width: 280px;
 
+&_border{
+  border: none;
+}
+
 &__icon{
   @include material-font($fs: 48px, $lh: 41px,$bg:$purple-gradient);}
   
@@ -52,3 +56,4 @@ margin-left: 9px;
  margin-top: 12px;
  padding-left: 2px;
 }}
+

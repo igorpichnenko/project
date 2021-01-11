@@ -1,6 +1,7 @@
 import '../../scss/main.scss';
 import './registration.scss';
 import '../../pixel.js'
+import '../../blocks/header/header-init.js'
 
 let signIn = document.querySelector('.button_signIn')
 let createAcount = document.querySelector('.button_regCreate')

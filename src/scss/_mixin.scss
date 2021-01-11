@@ -14,15 +14,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: Montserrat, Arial, sans-serif;
-  color: $dark75;
-  font-size: 14px;
-  line-height: 24px;
-  background-color: #fff;
-  height: 100%;
-}
-
 @mixin foto-bg-size{
   background-repeat: no-repeat;
   background-position: bottom;

@@ -1,5 +1,5 @@
-mixin comments(title,titleText,contentText,mod="material-icons")
-  .comments-item
+mixin comments(title,titleText,contentText,mod="material-icons",mods)
+  .comments-item(class=""+mods)
    i(class=""+mod).comments-item__icon= title
    .comments-item__content
     .comments-item__title= titleText
