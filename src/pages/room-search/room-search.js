@@ -7,4 +7,3 @@ import '../../components/checkbox/checkbox.js'
 import '../../scss/main.scss';
 import './room-search.scss';
 import '../../pixel.js'
-import '../../blocks/header/header-init.js'

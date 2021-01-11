@@ -1,8 +1,6 @@
 let acc = document.querySelectorAll(".checkbox-list")
 let accord = acc.forEach(function (accordion) {
   accordion.addEventListener("click", function() {
-    
-        this.classList.toggle("active");
         
 let icon = accordion.querySelector('.checkbox-list__icon');
 

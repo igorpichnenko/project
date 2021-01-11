@@ -4,9 +4,10 @@
   background: url('./img/landing.jpg');
   @include foto-bg-size;
   height: 830px;
+  min-width: 320px;
 
 &__items{
-  padding: 70px 134px 18px 140px;
+  padding: 4.9% 9.3% 18px 9.7%;
   display: flex;
   justify-content: space-between;
 }
@@ -16,4 +17,5 @@ text-align: right;
 align-self: flex-end;
 max-width: 300px;
 margin-top: 691px;
+
 }}

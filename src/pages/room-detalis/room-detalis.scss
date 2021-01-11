@@ -22,18 +22,15 @@
   flex-wrap: wrap;
 
 &__item {
-  display: grid;
-  grid-template-columns: 50% 50%;
-   grid-row-gap: 12px;
-  grid-column-gap: 11px;
-  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
 }
 &__reviews {
-  grid-column-start:1;
-  grid-column-end: 3;
+
 }
 &__pie{
   padding-top: 1.5px;
+  margin-left: 10.5%;
 }
 
 &__comment{
@@ -41,28 +38,31 @@
 }
 &__title {
   @include flex-between;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
+  margin-top: 13px;
 }
 &__title_lower{
   @include intermediate-text($lh:14px);
  margin-top: 2.5px;
+ margin-right: 70px;
  
 }
 &__title_murad {
-  padding-top: 2.5px;
+  padding-top: 2px;
 }
 &__patricia{
   padding-top: 20.5px;
 }
 &__rules{
-  padding-top: 21px;
+  padding-top: 33px;
 }
 &__text{
   padding-left: 20px;
   padding-bottom: 17.3px;
 }
 &__cancel{
-  padding-top: 20px ;
+  padding-top: 32px ;
+  padding-left: 13%;
 }
 
 &__form {

@@ -3,7 +3,8 @@
 .color-type {
   @include flex-wrap;
   @include container;
-  padding:  10.1% 10.45% 9.7% 10.46%;
+  gap: 60px;
+  padding:  10.1% 10.44% 9.7% 10.46%;
 
 &__title {
   width: 444.7px;

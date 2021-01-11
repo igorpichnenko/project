@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   @include container;
-  padding: 140px 140px 0 140px;
+  padding: 9.73% 9.73% 0 9.73%;
 }
 
 
@@ -54,17 +54,20 @@
 }
 
 &__checkbox{
-  margin-top: 172px;
+  margin-top: 171px;
 }
   &__checkbox-list{
-    margin-top: 49px;
+    margin-top: 46.5px;
   }
   
 }
 
+.column-one ~ *{
+  margin-left: 10.9%;
+}
 .column-two {
   margin-top: 3.6px;
-  margin-left: 126px;
+  
   
   
   &__checkbox{margin-top: 16.5px; }
@@ -110,9 +113,13 @@
     margin-left: 1px;
   }}
   
+  .column-two ~ *{
+    margin-left: 6.2%;
+  }
+  
   .column-three{
     margin-top: 4px;
-    margin-left: 72px;
+   
     
     &__range{
       height: 11.5px;
@@ -144,7 +151,7 @@
     
     &__button-bottom{
       margin-bottom: 30px;
-      margin-top: 32px;
+      margin-top: 30px;
       display: flex;
       
       &>*+*{ margin-left: 21px;}
@@ -171,11 +178,13 @@
   .column-four{
     display: flex;
     margin-top: 82px;
+    margin-left: 9.8%;
+    flex-wrap: wrap;
     
     &__murad{
       width: 710px;
       margin-top: 29px;
-      margin-left: 168px;
+      margin-left: 12.8%;
     }
   }
   

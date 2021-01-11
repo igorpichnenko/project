@@ -1,10 +1,11 @@
 .footer-wrapper {
   background-color: #fff;
   @include container;
+  padding: 0 9.7% 0 9.7%;
 }
 
 .footer-container{
-  padding: 100px 0 80px 0;
+  padding: 8.6% 0 7% 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
