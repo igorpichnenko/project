@@ -1,6 +1,7 @@
 import '../../scss/main.scss';
 import './registration.scss';
 import '../../blocks/header/header-init.ts'
+import '../../pixel.js'
 
 
 let signIn = document.querySelector('.button_signIn')
