@@ -25,11 +25,10 @@ import 'ion-rangeslider';
     });
     instance = $range.data("ionRangeSlider");
     
-    function updateInputs (data) {
+    function updateInputs (data: any) {
         from = data.from;
         to = data.to;
     
         $inputFrom.prop("value", from +"₽");
         $inputTo.prop("value",'-' +' '+to +"₽");
     }
-

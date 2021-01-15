@@ -10,20 +10,24 @@ const ghpages = require('gh-pages');
 // модули --- ***
 module.exports = {
 	entry: {
-	  'index': './src/pages/index/index.js',
-	  'registration': './src/pages/registration/registration.js',
-	  'room-search': './src/pages/room-search/room-search.js',
-	  'room-detalis': './src/pages/room-detalis/room-detalis.js',
-	  'landing': './src/pages/landing/landing.js',
-	  'color-type': './src/pages/color-type/color-type.js',
-	   'headers-footers': './src/pages/headers-footers/headers-footers.js',
-	    'form-elements': './src/pages/form-elements/form-elements.js',
-	    'cards': './src/pages/cards/cards.js',
+	  
+	  // точка входа, у меня для каждой страницы свой js файл подключается
+	  'index': './src/pages/index/index.ts',
+	  'registration': './src/pages/registration/registration.ts',
+	  'room-search': './src/pages/room-search/room-search.ts',
+	  'room-detalis': './src/pages/room-detalis/room-detalis.ts',
+	  'landing': './src/pages/landing/landing.ts',
+	  'color-type': './src/pages/color-type/color-type.ts',
+	   'headers-footers': './src/pages/headers-footers/headers-footers.ts',
+	    'form-elements': './src/pages/form-elements/form-elements.ts',
+	    'cards': './src/pages/cards/cards.ts',
 	},
+	// точка вывода билда
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].js'
 	},
+	// модули
 	module: {
 		rules: [{
 				test: /\.js$/,
@@ -32,6 +36,7 @@ module.exports = {
 					loader: "babel-loader"
 				}
 			},
+			// сборщик scss 
 			{
 				test: /\.s?css$/,
 				use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', {
@@ -44,6 +49,12 @@ module.exports = {
 					}
 				}, 'sass-loader']
 			},
+			// правила
+	    {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
 			{
 				test: /\.pug$/,
 				loader: 'pug-loader',
@@ -74,6 +85,7 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 		}),
+		// каждая страница к меня вот так подключена
 		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
@@ -104,6 +116,7 @@ module.exports = {
 			template: './src/pages/form-elements/form-elements.pug',
 			filename: 'form-elements.html'
 		}),
+		// подключение jQuery
 		new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery',

@@ -1,4 +1,4 @@
-import { Burger } from './header.js';
+import { Burger } from './header.ts';
 
 function onLoad() {
 
@@ -10,3 +10,4 @@ function onLoad() {
 }
 
 window.addEventListener('load', onLoad);
+

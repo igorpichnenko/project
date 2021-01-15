@@ -1,0 +1,10 @@
+import '../../components/calendar/calendar.ts'
+import '../../components/dropdown/dropdown.ts'
+import '../../components/slick/slick.ts'
+import '../../components/range-slider/range-slider.ts'
+import '../../components/pagination/pagination.ts'
+import '../../components/checkbox/checkbox.ts'
+import '../../scss/main.scss';
+import './room-search.scss';
+import '../../pixel.js'
+import '../../blocks/header/header-init.ts'

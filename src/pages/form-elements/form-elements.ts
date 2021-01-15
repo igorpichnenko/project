@@ -1,19 +1,21 @@
-import '../../components/calendar/calendar.js'
+import '../../components/calendar/calendar.ts'
 import '../../scss/main.scss';
 import './form-elements.scss';
 import '../../pixel.js'
-import '../../components/dropdown/dropdown.js'
-import '../../components/range-slider/range-slider.js'
-import '../../components/pagination/pagination.js'
-import '../../components/checkbox/checkbox.js'
-import '../../components/like/like.js'
-import '../../../node_modules/just-validate/dist/js/just-validate.js';
+import '../../components/dropdown/dropdown.ts'
+import '../../components/range-slider/range-slider.ts'
+import '../../components/pagination/pagination.ts'
+import '../../components/checkbox/checkbox.ts'
+import '../../components/like/like.ts'
+
+
+
 
 import IMask from 'imask';
 
 
 let dateMask = IMask(
-  document.querySelector('.input_mask'),
+  <HTMLElement>document.querySelector('.input_mask'),
   {
     mask: Date,
     min: new Date(1990, 0, 1),
@@ -23,13 +25,18 @@ let dateMask = IMask(
 
 
 
+declare global {
+    interface Window {
+       JustValidate :any;
+    }
+}
 
-// validate
 
-function validateForms(selector, rules) {
+
+function validateForms(selector:any, rules:any) {
     new window.JustValidate(selector, {
         rules: rules,
-        submitHandler: function (form, values, ajax) {
+        submitHandler: function (form:any, values:any, ajax:any) {
 
             let formData = new FormData(form);
 
@@ -46,6 +53,3 @@ function validateForms(selector, rules) {
 }
 
 validateForms('.column-one__form-mask', { email: { required: true, email: true } });
-
-
-

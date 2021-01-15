@@ -1,9 +1,0 @@
-import '../../components/calendar/calendar.js'
-import '../../components/dropdown/dropdown.js'
-import '../../components/slick/slick.js'
-import '../../components/range-slider/range-slider.js'
-import '../../components/pagination/pagination.js'
-import '../../components/checkbox/checkbox.js'
-import '../../scss/main.scss';
-import './room-search.scss';
-import '../../pixel.js'

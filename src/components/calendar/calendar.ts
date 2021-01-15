@@ -1,6 +1,7 @@
 import 'air-datepicker';
 import 'air-datepicker/src/sass/datepicker.scss';
 
+
 $('.datepicker-dabl').datepicker({
   
 
@@ -26,7 +27,7 @@ $('.datepicker-dabl').datepicker({
     timeFormat: 'hh:ii',
     firstDay: 1},
  
-   onSelect: function (fd, d, picker) { 
+   onSelect: function (fd: any, d: any, picker: any) { 
     $(".datepicker-start").val(fd.split("-")[0],[1]);
   $(".datepicker-end").val(fd.split("-")[1]);
   }
@@ -58,6 +59,7 @@ $('.datepicker-new').datepicker({
     firstDay: 1},
     
 })
+
 /*
 
 let calendar = document.querySelectorAll('.datepicker'); 
@@ -86,19 +88,3 @@ let calendar = document.querySelectorAll('.datepicker');
  })
    
    */
-   
-
-        
-        
- 
-
-
-
-    
-        
-  
-
-
-
-
-
