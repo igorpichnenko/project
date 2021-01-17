@@ -3,6 +3,8 @@ include ../../components/range-slider/range-slider
 include ../../components/pagination/pagination
 include ../../components/dropdown/dropdown
 include ../../components/checkbox/checkbox
+include ../../components/checkbox-rich/checkbox-rich
+include ../../components/checkbox-list/checkbox-list
 include ../../components/like/like
 include ../../components/rate/rate
 include ../../components/input/input
@@ -12,7 +14,8 @@ include ../../components/calendar/calendar
 include ../../components/comments/comments
 include ../../components/radio/radio
 include ../../components/toggle/toggle
-include ../../components/list/list
+include ../../components/bullet-list/bullet-list
+include ../../components/person-comment/person-comment
 
 block title
   title color-type
@@ -82,9 +85,9 @@ block body
   .column-two
       +title({title:'checkbox buttons'})
       .column-two__checkbox
-       +checkbox-button('Можно курить')
-       +checkbox-button('Можно с питомцами','','check')
-       +checkbox-button('Можно пригласить гостей (до 10 человек)','checkbox-items__wrap','check')
+       +checkbox('Можно курить')
+       +checkbox('Можно с питомцами','','check')
+       +checkbox('Можно пригласить гостей (до 10 человек)','checkbox__wrap','check')
        
       .column-two__radio
        +title({title:'radio buttons'})
@@ -169,6 +172,6 @@ block body
       +comments('location_city','Удобство','Окно в каждой из спален')
       
     .column-four__murad
-      +comment('Мурад Сарофанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
+      +person-comment('Мурад Сарофанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
 block script
     script(src="./form-elements.js")

@@ -1,0 +1,14 @@
+.checkbox-rich {
+  margin-top: 9.5px;
+  
+  &__comment {
+  @include intermediate-text($col: $dark50, $fs: 12px, $lh: 14px)
+  margin-left: 29px;
+  cursor: pointer;
+  margin-top: 7px;
+  width: 200px;
+}
+&__wrap {
+  width: 230px;
+}
+}

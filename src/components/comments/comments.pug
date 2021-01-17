@@ -4,15 +4,3 @@ mixin comments(title,titleText,contentText,mod="material-icons",mods)
    .comments-item__content
     .comments-item__title= titleText
     .comments-item__text= contentText
-
-mixin comment(title,text,content,png,mod,check)
-   .comment-body
-    .comment-block
-     img(class='comment-block__icon' src=`../../src/components/comments/icon/${png}.png`)
-     .comments-block
-      div(class="comment-block__name")= title
-      div(class="comment-block__date")= text
-    .comment-block
-     .comment-block__like
-      +like(mod,check)
-     span(class="comment-block__text")= content

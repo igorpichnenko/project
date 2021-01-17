@@ -1,0 +1,5 @@
+mixin footer-nav(classname,...items)  
+       ul(class=""+classname)
+          each item in items
+              li(class="footer-navigation__list")
+                a(href="#").footer-navigation__link= item

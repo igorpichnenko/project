@@ -1,4 +1,4 @@
-let acc = document.querySelectorAll(".checkbox-accordion")
+let acc = document.querySelectorAll(".checkbox-list")
 acc.forEach(function (accordion) {
   
   accordion.addEventListener("click", function() {

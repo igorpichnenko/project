@@ -6,17 +6,17 @@ mixin footer
         +logo
        .footer-container__paragraf Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
     .footer-container__nav
-     +link('main-nav','Навигация','О нас','Новости','Служба поддержки','Услуги')
+     +footer-nav('main-nav','Навигация','О нас','Новости','Служба поддержки','Услуги')
     .footer-container__nav
-     +link('about-nav','О нас','О сервисе','Наша команда','Вакансии','Инвесторы')
+     +footer-nav('about-nav','О нас','О сервисе','Наша команда','Вакансии','Инвесторы')
     .footer-container__nav
-     +link('support-nav','Служба поддержки','Соглашения','Сообщества','Связь с нами')
+     +footer-nav('support-nav','Служба поддержки','Соглашения','Сообщества','Связь с нами')
     .footer-container__subscription
      ul.footer-container__subscript
        li.footer-container__promo-list
-        a.footer-container__title Подписка 
+        a(href="#").footer-container__title Подписка 
        li.footer-container__text
-        a.footer-container__promo Получайте специальные предложения и новости сервиса
+        a(href="#").footer-container__promo Получайте специальные предложения и новости сервиса
      .footer-container__input
       +input({button:'arrow_forward', inType: 'email',text: 'Email',mod: "input__button"})
   .footer-bottom

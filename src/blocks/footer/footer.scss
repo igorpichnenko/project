@@ -20,24 +20,17 @@
 &__subscription {grid-column:span 3;}
 
 &__paragraf, &__text {@include body-text;}
-   
-&__list:nth-last-child(-n+4) {
-  margin-bottom: 21px;
-}
-&__list:nth-last-child(-n+4) {
-  @include intermediate-text;
-}
-&__list:nth-child(1) {
-  margin-bottom: 21.8px;
-  @include small-text;
-  text-transform: uppercase;
-}
+
 &__paragraf {
   margin-top: 14.5px;
 }
 &__input {
   width: 260px;
   margin-top: 22.5px;
+}
+&__promo, &__title{
+  text-decoration: none;
+  color: inherit;
 }
 &__promo-list {
   @include small-text;

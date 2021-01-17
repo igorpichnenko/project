@@ -1,32 +1,7 @@
-mixin checkbox-button(text,mods="", check)
-    .checkbox-items
-     label.checkbox-items__label
-      .checkbox-items__container
-       input(type="checkbox" class="checkbox-items__input" checked= check)
-       span.checkbox-items__style
-      .checkbox-items__text(class=""+mods)= text 
-
-mixin checkbox-list(mods="",mod="",title="expandable checkbox list")
-  .checkbox-accordion
-   .checkbox-list
-
-    span.checkbox-list__button= title
-
-    i(class=""+mods).material-icons.checkbox-list__icon expand_more
-   div(class=""+mod).checkbox-list__wrapper
-      .checkbox-items
-
-      +checkbox-button('Завтрак')
-      +checkbox-button('Письменный стол','','check')
-      +checkbox-button('Стул для кормления','','check')
-      +checkbox-button('Кроватка','','check')
-      +checkbox-button('Телевизор')
-      +checkbox-button('Шампунь')
-      
-mixin checkbox-rich(options={})
-  - let {text='',title='',mods="",mod="checkbox-items__title"}= options
-
-    .checkbox-rich
-     +checkbox-button(title,mod)
-     .checkbox-rich__comment(class=""+mods)= text
-     
+mixin checkbox(text,mods="", check)
+    .checkbox
+     label.checkbox__label
+      .checkbox__container
+       input(type="checkbox" class="checkbox__input" checked= check)
+       span.checkbox__style
+      .checkbox__text(class=""+mods)= text 

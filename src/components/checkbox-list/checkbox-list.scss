@@ -1,0 +1,47 @@
+.checkbox-list {
+  
+&__container{  
+  position: relative;
+  width: 100%;
+}
+  &__button {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  @include small-text;
+  position: relative;
+  text-transform: uppercase;
+  height: 44px;
+  background: none;
+}
+  
+  &__icon {
+  cursor: pointer;
+  position: absolute;
+  right: 11px;
+  top: -1.5px;
+  transition: transform 0.3s;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark75;
+}
+&__icon_rotate {
+  transform: rotate(180deg);
+}
+  &__wrapper {
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+  z-index: 2;
+  width: 100%;
+  margin-top: 5px;
+  
+}
+&__indent{
+  margin-top: 12.3px;
+}
+&__visible {
+display: block;
+}}

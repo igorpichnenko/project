@@ -21,12 +21,7 @@
   }
   &:hover::-webkit-input-placeholder {
     color: $dark75;
-  }
-
-}
-
-
-
+  }}
 
 &_hover {
   @include intermediate-text($fs:13.6px,$lh:24px,$col:$dark75);
@@ -65,6 +60,22 @@
     color: $dark75;
   }
 }
+   &__button,  &__button_arrow {
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    @include base-size($w:44px,$h:44px);
+    @include flex-center;
+    @include material-font($bg: $purple);
+   
+  }
+  &__button_arrow{
+    pointer-events: none;
+    @include material-font;
+  }
 }
   
 
@@ -72,36 +83,3 @@
 
 
 
-    .input__button {
-    border: none;
-    background: none;
-    position: absolute;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    top: 0;
-    color: #BC9CFF;
-    font-size: 24px;
-    right: 0;
-    font-family: 'Material Icons';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  }
-  .input__button_arrow{
-    pointer-events: none;
-    border: none;
-    background: none;
-    position: absolute;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    top: 0;
-    color: $dark50;
-    font-size: 24px;
-    right: 0;
-    font-family: 'Material Icons';
-    display: flex;
-    justify-content: center;
-    align-items: center;}

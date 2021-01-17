@@ -1,0 +1,9 @@
+mixin price (text,price,mods,className="price-container__text",classlux="price-container__lux")
+   .price
+      .price-container
+       span.price-container__title № 
+       span(class=""+className)= text
+       span(class=""+classlux)= mods
+      .price-container
+       .price-container__cost= price
+       .price-container__duration в сутки

@@ -8,21 +8,3 @@ mixin title({mods='standart',title=""}={})
     })
     
   h3.title(class= allMods)= title
-
-mixin title-number (text,price,mods,className="number-container__text",classlux="number-container__lux")
-   .title-number
-      .number-container
-       span.number-container__title № 
-       span(class=""+className)= text
-       span(class=""+classlux)= mods
-      .number-container
-       .number-container__price= price
-       .number-container__duration в сутки
-
-mixin reviews(number,name,check)
- .reviews
-  +rate-button(name,check)
-  .reviews-container
-   .reviews-container__number= number
-   .reviews-container__text Отзывов
-

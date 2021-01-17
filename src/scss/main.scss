@@ -55,12 +55,17 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 // components style
 
-@import '../components/nav/nav.scss';
+@import '../components/header-navigation/header-navigation.scss';
+@import '../components/person-comment/person-comment.scss';
+@import '../components/price/price.scss';
+@import '../components/reviews/reviews.scss';
 @import '../components/range-slider/range-slider.scss';
 @import '../components/button/button.scss';
-@import '../components/list/list.scss';
+@import '../components/bullet-list/bullet-list.scss';
 @import '../components/logo/logo.scss';
 @import '../components/checkbox/checkbox.scss';
+@import '../components/checkbox-rich/checkbox-rich.scss';
+@import '../components/checkbox-list/checkbox-list.scss';
 @import '../components/pagination/pagination.scss';
 @import '../components/like/like.scss';
 @import '../components/rate/rate.scss';
@@ -74,4 +79,5 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '../components/slick/slick.scss';
 @import '../components/icon/icon.scss';
 @import '../components/pie/pie.scss';
+@import '../components/footer-navigation/footer-navigation.scss';
 @import '../pixel.scss';
