@@ -1,0 +1,28 @@
+{
+  "formSignIn": {
+    
+    "text":{
+     "mods": "large",
+    "title": "Войти"
+    },
+    "inputPass":{
+      "inType": "password",
+      "text": "Пароль"
+    },
+    "inputEmail": {
+      "inType": "email",
+      "text": "Email"
+    },
+    "btnIn":{
+      "mods":  "border,content-size,large,regCreate",
+      "text": "Создать"
+    },
+    "btnSign":{
+      "mods": "arrow",
+      "text": "Войти"
+    },
+    "content": "Нет аккаунта на Toxin?"
+  }
+  
+  
+}

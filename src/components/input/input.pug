@@ -1,5 +1,5 @@
-mixin input(options={})
-  - let {mods = 'standart',inType="email", text="Email", filter=true, subscription=false}=options
+mixin input(options)
+  - const {inType, mods="standart", text="Email",button,mod} = options
   - 
     let modList = mods.split(',')
     let allMods = ''
@@ -7,18 +7,8 @@ mixin input(options={})
     modList.forEach(function (mod) {
     allMods = allMods + ' input_' + mod.trim()
     })
-
-  if filter
-    
-   input.input(class= allMods, type=inType, placeholder= text)
-   
-  else if subscription
-
-   .subscription
-      input(placeholder=text type=inType class="input_standart subscription__input"+className,data-validate-field='email')
-      button(type="submit").subscription__button
-
-  else  
-   .container-filter
-    input(class='container-filter__input datepicker-new' type='text' placeholder="19 авг - 23 авг")
-
+  
+  .input
+    input.input__input(type=inType placeholder=text && text class=allMods)
+    if button
+      button(class=mod type="submit")= button

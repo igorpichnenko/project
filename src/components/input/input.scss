@@ -1,5 +1,5 @@
 .input{
-  
+  position: relative;
 &_standart{
   background: #fff;
   height: 44px;
@@ -21,7 +21,12 @@
   }
   &:hover::-webkit-input-placeholder {
     color: $dark75;
-  }}
+  }
+
+}
+
+
+
 
 &_hover {
   @include intermediate-text($fs:13.6px,$lh:24px,$col:$dark75);
@@ -35,23 +40,9 @@
 
   &::-webkit-input-placeholder {
     color: $dark75;
-  }}}
+  }}
   
-// filter input //
-
-.container-filter {
-  position: relative;
-
-&:after {
-  @include material-font($bg: $dark50);
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
-  cursor: pointer;
-  pointer-events: none;
-  position: absolute;
-}
-&__input {
+  &_filter {
   background: #fff;
   border: 1px solid $dark25;
   box-sizing: border-box;
@@ -73,29 +64,44 @@
   &:hover::-webkit-input-placeholder {
     color: $dark75;
   }
-}}
-
-// subscription-input  //
-
-.subscription{
-  position: relative;
-
-&__button {
-  position: absolute;
-  right: 14px;
-  transform: translateY(-50%);
-  top: 50%;
-  width: 25px;
-  height: 25px;
-  border: none;
-  outline: none;
-  background-color: transparent;
 }
-&__button:after {
-  @include material-font($fs: 24px, $lh: 24px, $con:'arrow_forwards',$bg: $purple-gradient);
-  position: absolute;
-  transform: translateY(-50%);
-  left: 5px;
-  cursor: pointer;
-  pointer-events: none;
-}}
+}
+  
+
+
+
+
+
+    .input__button {
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    color: #BC9CFF;
+    font-size: 24px;
+    right: 0;
+    font-family: 'Material Icons';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .input__button_arrow{
+    pointer-events: none;
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    color: $dark50;
+    font-size: 24px;
+    right: 0;
+    font-family: 'Material Icons';
+    display: flex;
+    justify-content: center;
+    align-items: center;}

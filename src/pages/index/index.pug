@@ -5,7 +5,7 @@ include ../../blocks/footer-small/footer-small
 include ../../components/button/button
 include ../../components/nav/nav
 include ../../components/list/list
-include ../../components/input/input
+include ../../components/title/title
 include ../../components/dropdown/dropdown
 
 block title
@@ -16,6 +16,9 @@ block head
         link(rel="stylesheet" href="index.css")
         
 block body
+   - 
+     data = require('./index.json');
+
    .index__link
     a(href="../color-type.html").index__page color-type 
    .index__link

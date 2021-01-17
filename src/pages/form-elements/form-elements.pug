@@ -27,6 +27,7 @@ block body
   .column-one
    form.column-one__form-mask
     .column-one__items
+     
     
      .column-one__item
       .column-one__title
@@ -35,7 +36,7 @@ block body
        +title({title:'Default',mods:'hover'})
        
      .column-one__email
-       +input
+       +input({inType: "email"})
      .column-one__item
       +title({title: 'Text Field'})
       +title({title:'hover / focus',mods: 'hover column-one__title_focus'})
@@ -57,11 +58,11 @@ block body
      +title({title:'filter date dropdown'})
      .column-one__medium
      
-      +input({filter: false})
+      +input({mods: 'filter datepicker-new',inType: 'text',text: '19 авг - 23 авг',button: 'expand_more',mod:"input__button_arrow" })
       .column-one__subscription
        +title({title:'subscription text field'})
        
-       +input({filter: false, subscription: true})
+       +input({ button:'arrow_forward', inType: 'email',text: 'Email',mod: "input__button"})
       .column-one__item
        +title({title:'dropdown'})
        +title({title:'Default',mods:'hover'})

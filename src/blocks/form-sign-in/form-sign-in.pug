@@ -1,12 +1,12 @@
-mixin form-signin(mod= "border,content-size,large")
+mixin form-signin({btnSign,btnIn,text,inputEmail,inputPass,content})
   form.sign-in
     .signin-container
-      +title({title:'Войти',mods:'large'})
+      +title(text)
       .signin-container__input
-       +input
-       +input({inType:'password',text:'Пароль'})
-      +button({text: 'Войти', mods: 'arrow'})
+       +input(inputEmail)
+       +input(inputPass)
+      +button(btnSign)
       .signin-container__item
-       .signin-container__text Нет аккаунта на Toxin?
+       .signin-container__text= content
        .signin-container__button-wrap
-        +button({text: 'Создать', mods: mod})
+        +button(btnIn)

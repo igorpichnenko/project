@@ -13,7 +13,7 @@ mixin form-reg(mod='' + "border,content-size,large")
      .reg-container__data
       +title({title:'Данные для входа в сервис'})
      .reg-container__data-in
-      +input
+      +input({inType:"email"})
       +input({inType: 'password',text:'Пароль'})
      .reg-container__toggle
       +toggle
