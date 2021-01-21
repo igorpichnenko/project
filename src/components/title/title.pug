@@ -1,4 +1,4 @@
-mixin title({mods='standart',title=""}={})
+mixin title({mods='standart',title="",tag}={})
   - 
     let modList = mods.split(',')
     let allMods = ''
@@ -7,4 +7,16 @@ mixin title({mods='standart',title=""}={})
     allMods = allMods + ' title_' + mod.trim()
     })
     
-  h3.title(class= allMods)= title
+  - let tagName;
+  
+  case tag
+    when 'h1'
+      - tagName = 'h1';
+      
+    when 'h2'
+      - tagName = 'h2';
+      
+    default
+      - tagName = 'h3';
+  
+  #{tagName}.title(class= allMods)= title

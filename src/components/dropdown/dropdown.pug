@@ -1,50 +1,80 @@
-mixin dropdown(mods,number,number2,number3,text)
-    .form-group
-      .dropdown
-        button(type="button").dropdown__button= text
-        .dropdown__list(class=""+mods)
-          .dropdown__list-item(data-value='travel')
-            span.dropdown__text Взрослые
-            .calculate
-              button(type="button").button-mat.button-minus -
-              span(number)=number
-              button(type="button").button-mat.button-plus +
-          .dropdown__list-item(data-value='lessons')
-            span.dropdown__text.sub Дети
-            .calculate
-              button(type="button").button-mat.button-minus -
-              span(number)=number2
-              button(type="button").button-mat.button-plus +
-          .dropdown__list-item(data-value='photo')
-            span.dropdown__text.sub  Младенцы 
-            .calculate
-              button(type="button").button-mat.button-minus -
-              span(number)=number3
-              button(type="button").button-mat.button-plus +
-          .button-box
-            button.button-footer Очистить
-            button.button-footer.button-left Применить
+mixin dropdown(name="")
+ .dropdown(data-words='гость,гостя,гостей', data-default='Сколько гостей')
+ 
+  .dropdown__section
+    h3.dropdown__title 3 гостя
+    button.dropdown__arrow(type='button') expand_more
+    
+  .dropdown__menu(class=""+name)
+  
+    .dropdown__option
+      .dropdown-counters
+        .dropdown-counter__name
+          h3.dropdown-counters__title Взрослые
+        .dropdown-counters__controls
+          .dropdown-counters__button.dropdown-counters__minus -
+          .dropdown-counters__value 2
+          .dropdown-counters__button.dropdown-counters__plus +
+          
+    .dropdown__option
+      .dropdown-counters
+        .dropdown-counter__name
+          h3.dropdown-counters__title Дети
+        .dropdown-counters__controls
+          .dropdown-counters__button.dropdown-counters__minus -
+          .dropdown-counters__value 1
+          .dropdown-counters__button.dropdown-counters__plus +
+          
+    .dropdown__option
+      .dropdown-counters
+        .dropdown-counter__name
+          h3.dropdown-counters__title Младенцы
+        .dropdown-counters__controls
+          .dropdown-counters__button.dropdown-counters__minus -
+          .dropdown-counters__value 0
+          .dropdown-counters__button.dropdown-counters__plus +
+          
+    .dropdown__buttons
+      button.dropdown__button.dropdown__button_clear(type='button') очистить
+      button.dropdown__button.dropdown__button_use(type='button') применить
 
-mixin dropdown-medium(mods,mod)
-    div(class=''+mod).dropdawn-medium
-      .dropdown
-        button(type="button").dropdown__button 2 спальни, 2 кровати...
-        .dropdown__list(class=''+mods).dropdawn-medium
-          .dropdown__list-item(data-value='travel')
-            span.dropdown__text Спальни
-            .calculate
-              button(type="button").button-mat.button-minus -
-              span.number 2
-              button.button-mat.button-plus +
-          .dropdown__list-item(data-value='lessons')
-            span.dropdown__text.dropdown__text_center кровати
-            .calculate
-              button.button-mat.button-minus -
-              span.number 2
-              button.button-mat.button-plus +
-          .dropdown__list-item(data-value='photo')
-            span.dropdown__text.dropdown__text_bottom ванные комнаты
-            .calculate
-              button.button-mat.button-minus -
-              span.number 0
-              button.button-mat.button-plus +
+mixin dropdown-medium(name="")
+    
+  .dropdown(data-default='Сколько спален и кроватей?')
+ 
+   .dropdown__section
+     h3.dropdown__title 2 спальни, 2 кровати...
+     button.dropdown__arrow(type='button') expand_more
+     
+   .dropdown__menu(class=""+name)
+   
+    .dropdown__option
+      .dropdown-counters(data-words='спальня,спальни,спален')
+        .dropdown-counter__name
+          h3.dropdown-counters__title Спальни
+        .dropdown-counters__controls(data-min='1')
+          .dropdown-counters__button.dropdown-counters__minus -
+          .dropdown-counters__value 2
+          .dropdown-counters__button.dropdown-counters__plus +
+          
+    .dropdown__option
+      .dropdown-counters(data-words='кровать,кровати,кроватей')
+        .dropdown-counter__name
+          h3.dropdown-counters__title кровати
+        .dropdown-counters__controls(data-min='1')
+          .dropdown-counters__button.dropdown-counters__minus -
+          .dropdown-counters__value 2
+          .dropdown-counters__button.dropdown-counters__plus +
+          
+    .dropdown__option
+      .dropdown-counters(data-words='ванная,ванные,ванных')
+        .dropdown-counter__name
+          h3.dropdown-counters__title Ванные Комнаты
+        .dropdown-counters__controls
+          .dropdown-counters__button.dropdown-counters__minus -
+          .dropdown-counters__value 0
+          .dropdown-counters__button.dropdown-counters__plus +
+          
+    .dropdown__buttons.dropdown__button_hidden
+      button(class="dropdown__button dropdown__button_clear" type='button') очистить
+      button.dropdown__button.dropdown__button_use(type='button') применить

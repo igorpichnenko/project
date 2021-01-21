@@ -2,7 +2,7 @@ import '../../components/calendar/calendar.ts'
 import '../../scss/main.scss';
 import './form-elements.scss';
 import '../../pixel.js'
-import '../../components/dropdown/dropdown.ts'
+import '../../components/dropdown/dropdown.js'
 import '../../components/range-slider/range-slider.ts'
 import '../../components/pagination/pagination.ts'
 import '../../components/checkbox-list/checkbox-list.ts'

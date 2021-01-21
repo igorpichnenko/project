@@ -1,174 +1,4 @@
-
-.input-number {
-  outline: none;
-  border: none;
-}
-.button-minus{
-position: absolute;
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 22px;
-color: rgba(31, 32, 65, 0.5);
-top: 0;
-}
-.button-plus{
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 22px;
-color: rgba(31, 32, 65, 0.5);
-  
-}
-
-.calculate{
-  position: relative;
-  
-}
-
-
-.number{
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-text-align: center;
-text-transform: uppercase;
-color: #1F2041;
-
-  margin-right: 5px;
-  
-}
-.button-box{
-  margin-top: 29px;
-  margin-bottom: 6px;
-  display: flex;
-  justify-content: space-between;
-  
-  
-}
-.button-left{
-
-  
-}
-
-.button-footer {
-  outline: none;
-  border: none;
-  background: none;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #BC9CFF;
-
-
-}
-
-.form-group{
- // width: 320px;
-  
-}
-.dropdawn-medium{
-  width: 266px;
-}
-
-.dropdown {
- position: relative;
- 
-}
-.button-mat {
-  background-color: #fff;
-  width: 30px;
-  height: 30px;
-  color: rgba(31, 32, 65, 0.5);
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
- margin-right: 7px;
-  margin-bottom: 5px;
-font-family: Montserrat;
-
-}
-.dropdown__text {
- margin-top: 12.7px;
-  font-family: Montserrat;
-}
-.dropdown__text_center{
-  margin-top: 14px;
-}
-.dropdown__text_bottom{
-  margin-top: 16px;
-  margin-bottom: 17px;
-}
-
-.dropdown__button {
-  position: relative;
-  text-align: left;
-  width: 100%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 3px;
-  outline: none;
-  height: 44px;
-  background: none;
-  cursor: pointer;
-  padding-left: 13.4px;
-  
-}
-
-
-.dropdown__button:hover{
-  border: 1px solid rgba(31, 32, 65, 0.50);
-  
-}
-.dropdown__button::after {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
-  content: 'expand_more';
-  font-family: 'Material Icons';
-  font-size: 24px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  cursor: pointer;
-}
-.dropdown__list{
- border-radius: 0 0 2px 2px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  display: none;
-  position: absolute;
-  top: 44px;
-  left: 0;
-  list-style: none;
-  z-index: 4;
-  background-color: #fff;
-  border-top: none;
-  width: 100%;
-  
-}
-.dropdown__list-item{
- padding-left: 13.2px;
-  border-bottom: 0;
-  cursor: pointer;
-  display: flex;
-    width: 100%;
-box-sizing: border-box;
+.dropdown-counters__title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -176,19 +6,162 @@ box-sizing: border-box;
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
-
-  justify-content: space-between;
-
+  padding-left: 13.5px;
+  padding-top: 1.7px;
 }
 
-.dropdown__list-item:first-child {}
 
-.dropdown__list-item:last-child {}
-.dropdown__list-item:hover {}
-.dropdown__list--visible {
+
+.dropdown-counters {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown__menu {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 2px;
+   display: none;
+  z-index: 2;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+}
+
+.dropdown__title {
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.50);
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  padding: 11.7px 12px 11.7px 13.5px;
+
+  
+}
+
+
+
+
+
+.dropdown_active {
   display: block;
 }
 
-.dropdown__input-hiden {
+.dropdown__button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.dropdown__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-left: 2px;
+  padding-bottom: 11px;
+  
+}
+.dropdown__button_clear{
+  padding-left: 11.5px;
+}
+
+
+.dropdown__arrow {
+  padding: 10px;
+  pointer-events: none;
+  border: none;
+  background: none;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  width: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+
+.dropdown__button_hidden {
   display: none;
+}
+
+
+
+.dropdown-counters__controls {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 6px 1.5px 2px;
+}
+
+
+.dropdown-counters__plus, .dropdown-counters__minus{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+ font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.50);
+  box-sizing: border-box;
+ 
+
+
+}
+.dropdown-counters__minus{
+  padding-bottom: 1.5px;
+}
+
+.dropdown-counters__value {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  width: 32px;
+  border: none;
+  text-align: center;
+  outline: none;
+  padding-bottom: 3px;
+  
+}
+.dropdown-counters__minus_disabled {
+      opacity: 0.5;
+      cursor: unset;
 }

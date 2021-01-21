@@ -47,7 +47,7 @@ block body
      +input({mods: 'hover',inType: 'text',text: 'This is pretty awesome'})
      .column-one__dropdown
       +title({title:'dropdown'})
-      +dropdown("dropdown__list","2","1","0","Сколько гостей")
+      +dropdown
       
      +title({title:'masked text field'})
      +input({mods: 'standart,mask',inType: 'text',text: 'ДД.ММ.ГГГГ'})
@@ -74,7 +74,7 @@ block body
       .column-one__drop-medium
        +title({title:'dropdown'})
        +title({title:'expanded',mods: 'hover'})
-      +dropdown-medium('dropdown__list--visible')
+      +dropdown-medium('dropdown_active')
       
       .column-one__checkbox
        +checkbox-list
@@ -112,7 +112,7 @@ block body
        
       +title({title:"dropdown"})
       .column-two__dropdown
-       +dropdown("dropdown__list--visible","0","0","0","Сколько гостей")
+       +dropdown("dropdown_active")
        
       .column-two__rich
        +title({title:"rich checkbox buttons"})
@@ -154,7 +154,7 @@ block body
       
     .column-three__dropdown
      +title({title:'dropdown'})
-     +dropdown("dropdown__list--visible","2","1","0","3 гостя")
+     +dropdown("dropdown_active")
      
     .column-three__bullet
      +title({title:'bullet list'})
