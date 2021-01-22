@@ -1,4 +1,4 @@
-
+/*
 class DropdownControl{
   
   _minusButton:any
@@ -162,8 +162,8 @@ sum:any
    
    this._values = this._dropdown.querySelectorAll('.dropdown-counters')
    
-   this._buttonClear = this._dropdown.querySelector('.dropdown__button_clear') || null;
-   this._buttonUse = this._dropdown.querySelector('.dropdown__button_use') || null;
+   this._buttonClear = this._dropdown.querySelector('.dropdown__button_clear')
+   this._buttonUse = this._dropdown.querySelector('.dropdown__button_use')
 
     }
      _getSum () {
@@ -249,18 +249,18 @@ sum:any
    }
   }
   _buttonClearHidden(){
- this._buttonClear.classList.add('offBtn')
+// this._buttonClear.classList.add('offBtn')
  
    }
    _buttonClearVisible(){
-  this._buttonClear.classList.remove('offBtn')
+//  this._buttonClear.classList.remove('offBtn')
      
    }
    _buttonUseHidden(){
-     this._buttonUse.classList.add('offBtn')
+   //  this._buttonUse.classList.add('offBtn')
    }
    _buttonUseVisible(){
-    this._buttonUse.classList.remove('offBtn')
+  //  this._buttonUse.classList.remove('offBtn')
    }
   _formDeclension(num:number, form:any) {
   num = Math.abs(num) % 100; var n1 = num % 10;
@@ -285,5 +285,5 @@ sum:any
 
 
 
-const items = document.querySelectorAll('.dropdown').forEach((item:any) => new Dropdown(item));
+const items = document.querySelectorAll('.dropdown').forEach((item:any) => new Dropdown(item));*/
 

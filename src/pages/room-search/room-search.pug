@@ -30,7 +30,12 @@ block content
       
      .room-search__dropdown
       +title({title:'гости'})
-      +dropdown("","2","1","0","3 гостя, 1 младенец")
+      +dropdown({name: 'room',
+          items: [ 
+             { title: 'взрослые', number: '2'}, 
+             { title: 'дети', number: '1'}, 
+             { title: 'младенцы',number: '1'}, 
+            ], })
       
       
       .room-search__range
@@ -60,7 +65,13 @@ block content
        
       .room-search__medium-drop
         +title({title:'Удобства номера'})
-        +dropdown-medium
+        +dropdown({modBtn: 'dropdown__button_hidden',
+      title: 'Сколько спален и кроватей',
+      items: [ 
+              { title: 'спальни', name:1,number:2}, 
+              { title: 'кровати', name: 1,number:2}, 
+              { title: 'ванные комнаты'}, 
+            ], })
       .room-search__checkbox-list
        +checkbox-list("",'','Дополнительные удобства')
        

@@ -47,8 +47,12 @@ block body
      +input({mods: 'hover',inType: 'text',text: 'This is pretty awesome'})
      .column-one__dropdown
       +title({title:'dropdown'})
-      +dropdown
-      
+      +dropdown({name: 'room', items: [ 
+              { title: 'взрослые'}, 
+              { title: 'дети' }, 
+              { title: 'младенцы'}, 
+            ], })
+            
      +title({title:'masked text field'})
      +input({mods: 'standart,mask',inType: 'text',text: 'ДД.ММ.ГГГГ'})
      
@@ -70,11 +74,24 @@ block body
        +title({title:'dropdown'})
        +title({title:'Default',mods:'hover'})
        
-      +dropdown-medium
+      +dropdown({modBtn: 'dropdown__button_hidden',
+      title: 'Сколько спален и кроватей',
+      items: [ 
+              { title: 'спальни', name:1,number:2}, 
+              { title: 'кровати', name: 1,number:2}, 
+              { title: 'ванные комнаты'}, 
+            ], })
       .column-one__drop-medium
        +title({title:'dropdown'})
        +title({title:'expanded',mods: 'hover'})
-      +dropdown-medium('dropdown_active')
+      +dropdown({btn: 'dropdown_active',mod: 'dropdown_active',modSect: 'dropdown__toggle_activ',
+      modBtn: 'dropdown__button_hidden',
+      title: 'Сколько спален и кроватей',
+      items: [ 
+              { title: 'спальни', name:1,number:2}, 
+              { title: 'кровати', name: 1,number:2}, 
+              { title: 'ванные комнаты'}, 
+            ], })
       
       .column-one__checkbox
        +checkbox-list
@@ -112,7 +129,12 @@ block body
        
       +title({title:"dropdown"})
       .column-two__dropdown
-       +dropdown("dropdown_active")
+       +dropdown({name: 'room',mod: 'dropdown_active',modSect: 'dropdown__toggle_activ',
+           items: [ 
+              { title: 'взрослые'}, 
+              { title: 'дети' }, 
+              { title: 'младенцы'}, 
+            ], })
        
       .column-two__rich
        +title({title:"rich checkbox buttons"})
@@ -154,7 +176,12 @@ block body
       
     .column-three__dropdown
      +title({title:'dropdown'})
-     +dropdown("dropdown_active")
+     +dropdown({name: 'room', mod: 'dropdown_active',modSect: 'dropdown__toggle_activ',
+           items: [ 
+             { title: 'взрослые', number: '2'}, 
+             { title: 'дети', number: '1'}, 
+             { title: 'младенцы'}, 
+            ], })
      
     .column-three__bullet
      +title({title:'bullet list'})

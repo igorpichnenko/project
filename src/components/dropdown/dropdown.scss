@@ -1,3 +1,8 @@
+.dropdown-counters:nth-child(3) {
+  padding-bottom: 5px;
+}
+
+
 .dropdown-counters__title {
   font-family: Montserrat;
   font-style: normal;
@@ -24,14 +29,14 @@
 }
 
 .dropdown__menu {
+  top: 100%;
   position: absolute;
   background: #fff;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  border-radius: 2px;
-   display: none;
-  z-index: 2;
+  display: none;
+  z-index: 5;
   border-top: none;
   border-radius: 0 0 2px 2px;
 }
@@ -44,20 +49,26 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.50);
-  border-radius: 2px 2px 0 0;
   position: relative;
   padding: 11.7px 12px 11.7px 13.5px;
-
-  
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 2px;
 }
 
+.title-active {
+  border-radius: 2px 2px 0 0;
+  border: 1px solid rgba(31, 32, 65, 0.50);
+}
 
-
-
+.dropdown__title:hover {
+  border: 1px solid rgba(31, 32, 65, 0.50);
+  border-radius: 2px 2px 0 0;
+}
 
 .dropdown_active {
   display: block;
+
+
 }
 
 .dropdown__button {
@@ -76,12 +87,12 @@
 .dropdown__buttons {
   display: flex;
   justify-content: space-between;
-  padding-top: 17px;
+  padding-top: 11px;
   padding-left: 2px;
   padding-bottom: 11px;
-  
+
 }
-.dropdown__button_clear{
+.dropdown__button_clear {
   padding-left: 11.5px;
 }
 
@@ -124,11 +135,11 @@
 }
 
 
-.dropdown-counters__plus, .dropdown-counters__minus{
+.dropdown-counters__plus, .dropdown-counters__minus {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
- font-size: 18px;
+  font-size: 18px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -139,11 +150,11 @@
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.50);
   box-sizing: border-box;
- 
+
 
 
 }
-.dropdown-counters__minus{
+.dropdown-counters__minus {
   padding-bottom: 1.5px;
 }
 
@@ -159,9 +170,9 @@
   text-align: center;
   outline: none;
   padding-bottom: 3px;
-  
+
 }
 .dropdown-counters__minus_disabled {
-      opacity: 0.5;
-      cursor: unset;
+  opacity: 0.5;
+  cursor: unset;
 }

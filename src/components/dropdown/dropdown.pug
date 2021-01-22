@@ -1,80 +1,29 @@
-mixin dropdown(name="")
- .dropdown(data-words='гость,гостя,гостей', data-default='Сколько гостей')
+mixin dropdown({mod="",modSect="",title="Сколько гостей",modBtn,name,items = [{ title, name, number, }]})
+ .dropdown(data-name=""+name data-default=""+title)
  
-  .dropdown__section
-    h3.dropdown__title 3 гостя
+  .dropdown__section(class=""+modSect)
+    h3.dropdown__title
     button.dropdown__arrow(type='button') expand_more
     
-  .dropdown__menu(class=""+name)
-  
+  .dropdown__menu(class=""+mod)
     .dropdown__option
-      .dropdown-counters
-        .dropdown-counter__name
-          h3.dropdown-counters__title Взрослые
-        .dropdown-counters__controls
-          .dropdown-counters__button.dropdown-counters__minus -
-          .dropdown-counters__value 2
-          .dropdown-counters__button.dropdown-counters__plus +
+       each item in items
+    
+          +dropdown-counters(item)
           
-    .dropdown__option
-      .dropdown-counters
-        .dropdown-counter__name
-          h3.dropdown-counters__title Дети
-        .dropdown-counters__controls
-          .dropdown-counters__button.dropdown-counters__minus -
-          .dropdown-counters__value 1
-          .dropdown-counters__button.dropdown-counters__plus +
-          
-    .dropdown__option
-      .dropdown-counters
-        .dropdown-counter__name
-          h3.dropdown-counters__title Младенцы
-        .dropdown-counters__controls
-          .dropdown-counters__button.dropdown-counters__minus -
-          .dropdown-counters__value 0
-          .dropdown-counters__button.dropdown-counters__plus +
-          
-    .dropdown__buttons
+    .dropdown__buttons(class=""+modBtn)
+     .dropdown__container
       button.dropdown__button.dropdown__button_clear(type='button') очистить
+     .dropdown__container
       button.dropdown__button.dropdown__button_use(type='button') применить
 
-mixin dropdown-medium(name="")
-    
-  .dropdown(data-default='Сколько спален и кроватей?')
- 
-   .dropdown__section
-     h3.dropdown__title 2 спальни, 2 кровати...
-     button.dropdown__arrow(type='button') expand_more
-     
-   .dropdown__menu(class=""+name)
-   
-    .dropdown__option
-      .dropdown-counters(data-words='спальня,спальни,спален')
+
+mixin dropdown-counters({title="",name="",number="0"}={})
+        
+      .dropdown-counters(data-name="room")
         .dropdown-counter__name
-          h3.dropdown-counters__title Спальни
-        .dropdown-counters__controls(data-min='1')
+          h3.dropdown-counters__title= title
+        .dropdown-counters__controls(data-min=""+name)
           .dropdown-counters__button.dropdown-counters__minus -
-          .dropdown-counters__value 2
+          .dropdown-counters__value= number
           .dropdown-counters__button.dropdown-counters__plus +
-          
-    .dropdown__option
-      .dropdown-counters(data-words='кровать,кровати,кроватей')
-        .dropdown-counter__name
-          h3.dropdown-counters__title кровати
-        .dropdown-counters__controls(data-min='1')
-          .dropdown-counters__button.dropdown-counters__minus -
-          .dropdown-counters__value 2
-          .dropdown-counters__button.dropdown-counters__plus +
-          
-    .dropdown__option
-      .dropdown-counters(data-words='ванная,ванные,ванных')
-        .dropdown-counter__name
-          h3.dropdown-counters__title Ванные Комнаты
-        .dropdown-counters__controls
-          .dropdown-counters__button.dropdown-counters__minus -
-          .dropdown-counters__value 0
-          .dropdown-counters__button.dropdown-counters__plus +
-          
-    .dropdown__buttons.dropdown__button_hidden
-      button(class="dropdown__button dropdown__button_clear" type='button') очистить
-      button.dropdown__button.dropdown__button_use(type='button') применить

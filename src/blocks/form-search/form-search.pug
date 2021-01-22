@@ -10,6 +10,10 @@ mixin form-search
        +datepicker-dabl
       .search-container__dropdown
        +title({title:'Гости'})
-       +dropdown("dropdown__list","2","1","0","Сколько гостей")
+       +dropdown({ name: 'room',items: [ 
+              { title: 'взрослые'}, 
+              { title: 'дети' }, 
+              { title: 'младенцы'}, 
+            ], })
    .search-container__button
          +button({text: 'Подобрать номер', mods: 'arrow'})

@@ -1,5 +1,5 @@
 import '../../components/calendar/calendar.ts'
-import '../../components/dropdown/dropdown.ts'
+import '../../components/dropdown/dropdown.js'
 import '../../components/slick/slick.ts'
 import '../../components/range-slider/range-slider.ts'
 import '../../components/pagination/pagination.ts'
