@@ -6,12 +6,12 @@
   max-width: 240px;
   padding-left: 20px;
   list-style-type: none;
-  
-&>*+*{
-  margin-top: 10px;
-}
-   .bullet-list__items::before {
-    content: "";
+
+  & > * + * {
+    margin-top: 10px;
+  }
+  .bullet-list__items::before {
+    content: '';
     position: absolute;
     left: 0;
     width: 10px;

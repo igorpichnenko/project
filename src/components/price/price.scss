@@ -6,37 +6,42 @@
 .price-container {
   display: flex;
   &__title {
-     @include intermediate-text($fw:bold,$col:$dark100);
+    @include intermediate-text($fw: bold, $col: $dark100);
     margin-bottom: 2px;
     align-self: flex-end;
   }
   &__text {
-     @include large-text;
+    @include large-text;
     text-indent: 3px;
   }
-  
+
   &__text_low {
-     @include intermediate-text($fw:bold,$fs:20px,$lh:24.4px,$col:$dark100);
+    @include intermediate-text(
+      $fw: bold,
+      $fs: 20px,
+      $lh: 24.4px,
+      $col: $dark100
+    );
     margin-left: 3px;
   }
-  
+
   &__lux {
-     @include small-text($col:$purple);
+    @include small-text($col: $purple);
     text-transform: uppercase;
     margin-bottom: 0.7px;
     align-self: flex-end;
     margin-left: 1px;
   }
-  
+
   &__cost {
-     @include intermediate-text($fw:bold,$fs:14px,$lh:18px);
+    @include intermediate-text($fw: bold, $fs: 14px, $lh: 18px);
     align-self: flex-end;
     margin-bottom: 1.2px;
     margin-right: 4px;
   }
-  
+
   &__duration {
-     @include intermediate-text($fs:12px,$lh:18px);
+    @include intermediate-text($fs: 12px, $lh: 18px);
     align-self: flex-end;
   }
 }

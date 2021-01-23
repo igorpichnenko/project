@@ -2,16 +2,16 @@
   background-color: #fff;
   min-width: 320px;
   min-height: 70px;
-  
-   &__container {
+
+  &__container {
     @include container;
     @include flex-between;
     padding: 1% 9.74%;
-    
-   @media (max-width: 1439px) {
+
+    @media (max-width: 1439px) {
       padding: 0 28px;
     }
-    
+
     @media (max-width: 970px) {
       flex-direction: column;
       align-items: unset;
@@ -21,46 +21,44 @@
   }
 
   &__nav {
-
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-    
+
     @media (max-width: 970px) {
       display: none;
       margin-top: 10px;
-      }
+    }
   }
-    &__open-menu{
+  &__open-menu {
     display: block;
   }
   &__button {
     display: flex;
     justify-content: space-between;
- 
+
     @media (max-width: 970px) {
-     @include flex-column-center;
+      @include flex-column-center;
       margin-top: 10px;
-      &>*+*{
+      & > * + * {
         margin-top: 10px;
       }
-      
     }
   }
-    &__button>*+* {
+  &__button > * + * {
     margin-left: 20px;
   }
-  
-   &__left-button{
-      height: 34px;
-      width: 87px;
-    }
-   &__right-button{
-      height: 34px;
-      width: 196px;
-    }
+
+  &__left-button {
+    height: 34px;
+    width: 87px;
+  }
+  &__right-button {
+    height: 34px;
+    width: 196px;
+  }
   &__logo {
     line-height: 0;
     display: flex;
@@ -74,23 +72,23 @@
     border-left: $border-01;
   }
   &__burger-menu {
-    display:flex;
-    align-items:center;
-    flex-direction:column;
-    cursor:pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
   }
   &__burger-menu &__burger-item {
     background-color: $purple;
     width: 28px;
     height: 2.8px;
     margin: 3.64px 0;
-    transition: all .4s ease;
-    transform-origin:0 0;
+    transition: all 0.4s ease;
+    transform-origin: 0 0;
     z-index: 2;
     display: none;
     border: none;
     outline: none;
-    
+
     @media (max-width: 970px) {
       display: block;
     }
@@ -99,12 +97,9 @@
     transform: rotate(45deg) translate(1px, -1px);
   }
   &__burger-open &__burger-item_2 {
-    Transform: scaleX(0);
+    transform: scaleX(0);
   }
   &__burger-open &__burger-item_3 {
     transform: rotate(-45deg) translate(1px, 0);
-  }}
-  
- 
-    
- 
+  }
+}

@@ -1,0 +1,8 @@
+mixin dropdown-counters({title="",name="",number="0"}={})
+  .dropdown-counters(data-name='room')
+    .dropdown-counter__name
+      h3.dropdown-counters__title= title
+    .dropdown-counters__controls(data-min="" + name)
+      .dropdown-counters__button.dropdown-counters__minus -
+      .dropdown-counters__value= number
+      .dropdown-counters__button.dropdown-counters__plus +

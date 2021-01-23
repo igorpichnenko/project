@@ -1,17 +1,21 @@
 .nav-list {
   display: flex;
-  list-style:  none;
+  list-style: none;
   padding-right: 35px;
-  
+
   @media (max-width: 970px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  &__link_vakansii { margin-right: 0.5px;}
+  &__link_vakansii {
+    margin-right: 0.5px;
+  }
 
-  &__link_about {margin-right: 1px;}
+  &__link_about {
+    margin-right: 1px;
+  }
 
   &__text {
     @include intermediate-text;
@@ -21,24 +25,26 @@
     text-align: center;
     cursor: pointer;
 
-    &:hover { 
+    &:hover {
       @include intermediate-text(bold, $dark75);
- }}
-  
-  &__text_icon-1 { margin-right: 25px;
+    }
+  }
 
-&:after {
-  @include material-font;
-  position: absolute;
-}}
-    
-&__text_icon-2 {margin-right: 10px;
+  &__text_icon-1 {
+    margin-right: 25px;
 
- &:after {
-   @include material-font; 
-   position: absolute;
-  
-   
- }}
-  
+    &:after {
+      @include material-font;
+      position: absolute;
+    }
+  }
+
+  &__text_icon-2 {
+    margin-right: 10px;
+
+    &:after {
+      @include material-font;
+      position: absolute;
+    }
+  }
 }

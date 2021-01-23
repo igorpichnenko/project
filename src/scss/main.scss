@@ -2,9 +2,6 @@
 
 @import './_vars';
 
-
-
-
 html {
   font-family: Montserrat, Arial, sans-serif;
   color: $dark75;
@@ -13,10 +10,6 @@ html {
   background-color: #fff;
   height: 100%;
 }
-
-
-
-
 
 // reset
 
@@ -70,6 +63,7 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '../components/like/like.scss';
 @import '../components/rate/rate.scss';
 @import '../components/dropdown/dropdown.scss';
+@import '../components/dropdown-counters/dropdown-counters.scss';
 @import '../components/input/input.scss';
 @import '../components/title/title.scss';
 @import '../components/calendar/calendar.scss';

@@ -1,27 +1,25 @@
 mixin form-reg(mod='' + "border,content-size,large")
   form.registration
-   .reg-container
-     +title({title:'Регистрация аккаунта',mods:'large'})
-     .reg-container__input
-      +input({inType:'text',text:'Имя'})
-      +input({inType:'text',text: 'Фамилия'})
-     .reg-container__radio
-      +radio("Мужчина",'man','check')
-      +radio('Женщина','man')
-     +title({title:'Дата рождения'})
-     +input({inType:'text',text:'ДД.ММ.ГГГГ'})
-     .reg-container__data
-      +title({title:'Данные для входа в сервис'})
-     .reg-container__data-in
-      +input({inType:"email"})
-      +input({inType: 'password',text:'Пароль'})
-     .reg-container__toggle
-      +toggle
-     +button({text: 'Перейти к оплате', mods: 'arrow'})
-     .reg-container__sign-in
-       .reg-container__wrap
-        .reg-container__text Уже есть аккаунт на Toxin
-       .reg-container__button
-        +button({text: 'Войти', mods: mod})
-     
-     
+    .reg-container
+      +title({title:'Регистрация аккаунта',mods:'large'})
+      .reg-container__input
+        +input({inType:'text',text:'Имя'})
+        +input({inType:'text',text: 'Фамилия'})
+      .reg-container__radio
+        +radio("Мужчина",'man','check')
+        +radio('Женщина','man')
+      +title({title:'Дата рождения'})
+      +input({inType:'text',text:'ДД.ММ.ГГГГ'})
+      .reg-container__data
+        +title({title:'Данные для входа в сервис'})
+      .reg-container__data-in
+        +input({inType:"email"})
+        +input({inType: 'password',text:'Пароль'})
+      .reg-container__toggle
+        +toggle
+      +button({text: 'Перейти к оплате', mods: 'arrow'})
+      .reg-container__sign-in
+        .reg-container__wrap
+          .reg-container__text Уже есть аккаунт на Toxin
+        .reg-container__button
+          +button({text: 'Войти', mods: mod})

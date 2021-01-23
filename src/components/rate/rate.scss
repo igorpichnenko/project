@@ -1,31 +1,27 @@
-.star-rating{
-font-size: 0;
-width: 120px;
+.star-rating {
+  font-size: 0;
+  width: 120px;
 
-&__wrap{
-  display: flex;
-  flex-direction: row-reverse;
+  &__wrap {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__ico {
+    position: relative;
+    &:after {
+      @include material-font($con: 'star_border', $bg: $purple-gradient);
+    }
+  }
+  &__ico:hover:before,
+  &__ico:hover ~ &__ico:before,
+  &__input:checked ~ &__ico:before {
+    @include material-font($con: 'star', $bg: $purple-gradient);
+
+    position: absolute;
+  }
 }
-
-&__input{display: none;}
-
-&__ico{
-	position: relative;
-	&:after {
- 	@include material-font($con:'star_border',$bg: $purple-gradient);
- 	}}
-&__ico:hover:before,
-&__ico:hover ~ &__ico:before,
-&__input:checked ~ &__ico:before{
-  @include material-font($con:'star',$bg: $purple-gradient);
-  
- position: absolute;
-}}
-
-
-
-
- 
-
-
-  

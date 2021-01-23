@@ -11,56 +11,49 @@ include ../../components/reviews/reviews
 include ../../components/price/price
 include ../../components/bullet-list/bullet-list
 include ../../components/person-comment/person-comment
+include ../../components/dropdown-counters/dropdown-counters
 
 block title
   title Landing
 
 block head
-    link(rel="stylesheet" href="room-detalis.css")
-    
+  link(rel='stylesheet', href='room-detalis.css')
+
 block content
- .detalis-background
- .room-detalis
- 
-   .room-detalis__item
-   
-     .room-detalis__comment
+  .detalis-background
+  .room-detalis
+    .room-detalis__item
+      .room-detalis__comment
         +title({title:'Сведения о номере',mods:'medium'})
         .room-detalis__comments
-         +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
-         +comments('location_city','Удобство','Окно в каждой из спален')
-         +comments('whatshot','Уют','Номер оснащён камином','material-icons','comments-item_border')
-      
-     .room-detalis__pie
-       +pie(['Великолепно','Хорошо','Удовлетворительно','Разочарован'])
+          +comments('insert_emoticon','Комфорт','Шумопоглощающие стены')
+          +comments('location_city','Удобство','Окно в каждой из спален')
+          +comments('whatshot','Уют','Номер оснащён камином','material-icons','comments-item_border')
 
+      .room-detalis__pie
+        +pie(['Великолепно','Хорошо','Удовлетворительно','Разочарован'])
 
-     .room-detalis__reviews
-       .room-detalis__title
-         +title({title:'Отзывы посетителей номера',mods:'medium'})
-         span.room-detalis__title_lower 2 отзыва
-       .room-detalis__title_murad
+      .room-detalis__reviews
+        .room-detalis__title
+          +title({title:'Отзывы посетителей номера',mods:'medium'})
+          span.room-detalis__title_lower 2 отзыва
+        .room-detalis__title_murad
           +person-comment('Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','comment-murad','12','checked')
-       .room-detalis__patricia
+        .room-detalis__patricia
           +person-comment('Патрисия Стеклышкова','Неделю назад','Обслуживание на высоте! Все аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент','comment-patricia','2')
-          
-     
-     .room-detalis__rules
-         .room-detalis__text
+
+      .room-detalis__rules
+        .room-detalis__text
           +title({title:'Правила',mods:'medium'})
-         +bullet-list([
-          'Нельзя с питомцами',
-          'Без вечеринок и мероприятий',
-          'Время прибытия — после 13:00, а выезд до 12:00'
-         ])
-         
-     .room-detalis__cancel
-         +title({title:'Отмена',mods:'medium'})
-         .room-detalis__paragraf Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. 
-         
-   .room-detalis__form
-    +formlux('number-container__lux room-detalis__formlux','888','9 990₽')
-    
+        +bullet-list([ 'Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00' ])
+
+      .room-detalis__cancel
+        +title({title:'Отмена',mods:'medium'})
+        .room-detalis__paragraf Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+    .room-detalis__form
+      +formlux('number-container__lux room-detalis__formlux','888','9 990₽')
+
 block footer
 block script
-    script(src="./room-detalis.js")
+  script(src='./room-detalis.js')

@@ -1,35 +1,33 @@
-.irs{
+.irs {
   width: 266px;
-  
-  &-handle i{
-  color: #fff;
-}
-&-bar{
-background: $green-gradient;
+
+  &-handle i {
+    color: #fff;
+  }
+  &-bar {
+    background: $green-gradient;
+  }
+
+  &-line {
+    width: 100%;
+    background: transparent;
+    border: 1px solid $dark25;
+  }
+  &-handle {
+    @include base-size(12px, 12px);
+    background: $green-gradient;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
 }
 
-&-line{
-width: 100%;
-background: transparent;
-border: 1px solid $dark25;
-}
-&-handle{
-@include base-size(12px,12px);
-background: $green-gradient;
-border: 2px solid #fff;
-border-radius: 10px;
-}}
-
-.range-out{
-   @include intermediate-text($col: $dark50, $fs: 12px, $lh: 15px)
-  width: 53px;
+.range-out {
+  @include intermediate-text($col: $dark50, $fs: 12px, $lh: 15px) width: 53px;
   border: none;
   outline: none;
-text-align: right;
-position: relative;
+  text-align: right;
+  position: relative;
 }
-
-
 
 .irs {
   position: relative;
@@ -42,12 +40,10 @@ position: relative;
   user-select: none;
   font-size: 12px;
   font-family: Arial, sans-serif;
-  
 }
 .irs-line {
   position: relative;
   display: block;
-  
 }
 .irs-bar {
   position: absolute;
@@ -63,7 +59,6 @@ position: relative;
   box-sizing: border-box;
   cursor: default;
   z-index: 1;
-  
 }
 .irs-handle.type_last {
   z-index: 2;
@@ -138,21 +133,21 @@ position: relative;
 }
 .irs-hidden-input {
   position: absolute;
-  display: block ;
-  top: 0 ;
-  left: 0 ;
-  width: 0 ;
-  height: 0 ;
-  font-size: 0 ;
-  line-height: 0 ;
-  padding: 0 ;
-  margin: 0 ;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
-  outline: none ;
-  z-index: -9999 ;
-  background: none ;
-  border-style: solid ;
-  border-color: transparent ;
+  outline: none;
+  z-index: -9999;
+  background: none;
+  border-style: solid;
+  border-color: transparent;
 }
 .irs--flat {
   height: 40px;
@@ -165,21 +160,16 @@ position: relative;
   height: 6px;
   background-color: #fff;
   border-radius: 6px;
-border: 1px solid rgba(31, 32, 65, 0.25);
-outline: none;
-width: 264px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  outline: none;
+  width: 264px;
 }
 .irs--flat .irs-bar {
   top: 25px;
   height: 7.5px;
-  
-  
 }
 .irs--flat .irs-handle {
   top: 22px;
   width: 15px;
   height: 15px;
 }
-
-  
-  

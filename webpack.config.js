@@ -22,6 +22,9 @@ module.exports = {
 	    'form-elements': './src/pages/form-elements/form-elements.ts',
 	    'cards': './src/pages/cards/cards.ts',
 	},
+	resolve: {
+    extensions: ['.js', '.ts', '.json'],
+  },
 	// точка вывода билда
 	output: {
 		path: path.resolve(__dirname, 'dist'),

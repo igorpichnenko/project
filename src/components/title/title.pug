@@ -1,22 +1,22 @@
 mixin title({mods='standart',title="",tag}={})
-  - 
+  -
     let modList = mods.split(',')
     let allMods = ''
-    
+
     modList.forEach(function (mod) {
     allMods = allMods + ' title_' + mod.trim()
     })
-    
+
   - let tagName;
-  
+
   case tag
     when 'h1'
-      - tagName = 'h1';
-      
+      - tagName = "h1";
+
     when 'h2'
-      - tagName = 'h2';
-      
+      - tagName = "h2";
+
     default
-      - tagName = 'h3';
-  
-  #{tagName}.title(class= allMods)= title
+      - tagName = "h3";
+
+  #{tagName}.title(class=allMods)= title

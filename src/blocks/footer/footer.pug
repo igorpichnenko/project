@@ -1,26 +1,26 @@
 mixin footer
   .footer-wrapper
-   .footer-container
-    .footer-container__logo
-       .footer-container__logotype
-        +logo
-       .footer-container__paragraf Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-    .footer-container__nav
-     +footer-nav('main-nav','Навигация','О нас','Новости','Служба поддержки','Услуги')
-    .footer-container__nav
-     +footer-nav('about-nav','О нас','О сервисе','Наша команда','Вакансии','Инвесторы')
-    .footer-container__nav
-     +footer-nav('support-nav','Служба поддержки','Соглашения','Сообщества','Связь с нами')
-    .footer-container__subscription
-     ul.footer-container__subscript
-       li.footer-container__promo-list
-        a(href="#").footer-container__title Подписка 
-       li.footer-container__text
-        a(href="#").footer-container__promo Получайте специальные предложения и новости сервиса
-     .footer-container__input
-      +input({button:'arrow_forward', inType: 'email',text: 'Email',mod: "input__button"})
+    .footer-container
+      .footer-container__logo
+        .footer-container__logotype
+          +logo
+        .footer-container__paragraf Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      .footer-container__nav
+        +footer-nav('main-nav','Навигация','О нас','Новости','Служба поддержки','Услуги')
+      .footer-container__nav
+        +footer-nav('about-nav','О нас','О сервисе','Наша команда','Вакансии','Инвесторы')
+      .footer-container__nav
+        +footer-nav('support-nav','Служба поддержки','Соглашения','Сообщества','Связь с нами')
+      .footer-container__subscription
+        ul.footer-container__subscript
+          li.footer-container__promo-list
+            a.footer-container__title(href='#') Подписка
+          li.footer-container__text
+            a.footer-container__promo(href='#') Получайте специальные предложения и новости сервиса
+        .footer-container__input
+          +input({button:'arrow_forward', inType: 'email',text: 'Email',mod: "input__button"})
   .footer-bottom
-   .footer-bottom__wrapper
-     .footer-bottom__text Copyright © 2018 Toxin отель. Все права зачищены.
-     .footer-bottom__icons
-       +font-icon
+    .footer-bottom__wrapper
+      .footer-bottom__text Copyright © 2018 Toxin отель. Все права зачищены.
+      .footer-bottom__icons
+        +font-icon

@@ -4,19 +4,20 @@ include ../../components/title/title
 include ../../components/button/button
 include ../../components/calendar/calendar
 include ../../components/dropdown/dropdown
+include ../../components/dropdown-counters/dropdown-counters
 
 block title
   title Landing
 
 block head
-    link(rel="stylesheet" href="landing.css")
-    
+  link(rel='stylesheet', href='landing.css')
+
 block content
- .landing-container
-  .landing-container__items
-   +form-search
-   .landing-container__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+  .landing-container
+    .landing-container__items
+      +form-search
+      .landing-container__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
 
 block footer
 block script
-    script(src="./landing.js")
+  script(src='./landing.js')

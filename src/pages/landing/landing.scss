@@ -6,16 +6,16 @@
   height: 830px;
   min-width: 320px;
 
-&__items{
-  padding: 4.8% 9.3% 18px 9.7%;
-  display: flex;
-  justify-content: space-between;
+  &__items {
+    padding: 4.8% 9.3% 18px 9.7%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slogan {
+    @include body-text;
+    text-align: right;
+    align-self: flex-end;
+    max-width: 300px;
+    margin-top: 691px;
+  }
 }
-&__slogan{
- @include body-text;
-text-align: right;
-align-self: flex-end;
-max-width: 300px;
-margin-top: 691px;
-
-}}

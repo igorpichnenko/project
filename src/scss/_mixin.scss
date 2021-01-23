@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-@mixin foto-bg-size{
+@mixin foto-bg-size {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -24,12 +24,19 @@
   width: $w;
   height: $h;
 }
-@mixin base-size($w: 40px, $h: 20px){
+@mixin base-size($w: 40px, $h: 20px) {
   width: $w;
   height: $h;
 }
 
-@mixin material-font($ff: 'Material Icons', $fs: 24px, $lh: 20px, $con:'expand_more',$col: $dark50,$bg: $dark50) {
+@mixin material-font(
+  $ff: 'Material Icons',
+  $fs: 24px,
+  $lh: 20px,
+  $con: 'expand_more',
+  $col: $dark50,
+  $bg: $dark50
+) {
   font-family: $ff;
   font-size: $fs;
   line-height: $lh;
@@ -37,7 +44,7 @@
   color: $col;
   background: $bg;
   -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 @mixin large-text($col: $dark100, $fw: bold) {
@@ -49,16 +56,22 @@
   font-weight: $fw;
 }
 
-@mixin medium-text ($col: $dark100,$fw: bold){
+@mixin medium-text($col: $dark100, $fw: bold) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 19px;
   line-height: 23px;
   font-weight: $fw;
-    color: $col;
+  color: $col;
 }
 
-@mixin intermediate-text($fw: normal, $col: $dark50, $fs: 14px, $lh: 17px, $fsty: normal) {
+@mixin intermediate-text(
+  $fw: normal,
+  $col: $dark50,
+  $fs: 14px,
+  $lh: 17px,
+  $fsty: normal
+) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: $fsty;
   font-size: $fs;
@@ -67,7 +80,7 @@
   color: $col;
 }
 
-@mixin small-text($col: $dark100,$fw: bold) {
+@mixin small-text($col: $dark100, $fw: bold) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -75,7 +88,7 @@
   color: $col;
   font-weight: $fw;
 }
-@mixin body-text($col: $dark75,$fw: normal,$lh: 24px) {
+@mixin body-text($col: $dark75, $fw: normal, $lh: 24px) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -104,5 +117,4 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }

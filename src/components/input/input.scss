@@ -1,85 +1,81 @@
-.input{
+.input {
   position: relative;
-&_standart{
-  background: #fff;
-  height: 44px;
-  width: 100%;
-  border: 1px solid $dark25;
-  box-sizing: border-box;
-  border-radius: 4px;
-  outline: none;
-  padding: 11.5px 10px 12px 13.5px ;
-  
-    @include intermediate-text($fs:14px,$lh:18px,$col:$dark75);
+  &_standart {
+    background: #fff;
+    height: 44px;
+    width: 100%;
+    border: 1px solid $dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    padding: 11.5px 10px 12px 13.5px;
 
-  &:hover {
+    @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
+
+    &:hover {
+      border: 1px solid $dark50;
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: $dark25;
+    }
+    &:hover::-webkit-input-placeholder {
+      color: $dark75;
+    }
+  }
+
+  &_hover {
+    @include intermediate-text($fs: 13.6px, $lh: 24px, $col: $dark75);
+    width: 320px;
+    height: 44px;
+    background: #fff;
     border: 1px solid $dark50;
-    outline: none;
-  }
-  &::-webkit-input-placeholder {
-    color: $dark25;
-  }
-  &:hover::-webkit-input-placeholder {
-    color: $dark75;
-  }}
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 9px 10px 10px 14px;
 
-&_hover {
-  @include intermediate-text($fs:13.6px,$lh:24px,$col:$dark75);
-  width: 320px;
-  height: 44px;
-  background: #fff;
-  border: 1px solid $dark50;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 9px 10px 10px 14px;
+    &::-webkit-input-placeholder {
+      color: $dark75;
+    }
+  }
 
-  &::-webkit-input-placeholder {
-    color: $dark75;
-  }}
-  
   &_filter {
-  background: #fff;
-  border: 1px solid $dark25;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 8px 13px 9px 14px;
+    background: #fff;
+    border: 1px solid $dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 13px 9px 14px;
 
-  height: 44px;
-  width: 100%;
-  outline: none;
-    @include intermediate-text($fs:14px,$lh:18px,$col:$dark75);
-
-  &:hover {
-    border: 1px solid $dark75;
+    height: 44px;
+    width: 100%;
     outline: none;
+    @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
+
+    &:hover {
+      border: 1px solid $dark75;
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: $dark75;
+    }
+    &:hover::-webkit-input-placeholder {
+      color: $dark75;
+    }
   }
-  &::-webkit-input-placeholder {
-    color: $dark75;
-  }
-  &:hover::-webkit-input-placeholder {
-    color: $dark75;
-  }
-}
-   &__button,  &__button_arrow {
+  &__button,
+  &__button_arrow {
     border: none;
     background: none;
     position: absolute;
     cursor: pointer;
     top: 0;
     right: 0;
-    @include base-size($w:44px,$h:44px);
+    @include base-size($w: 44px, $h: 44px);
     @include flex-center;
     @include material-font($bg: $purple);
-   
   }
-  &__button_arrow{
+  &__button_arrow {
     pointer-events: none;
     @include material-font;
   }
 }
-  
-
-
-
-
-

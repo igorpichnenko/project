@@ -1,60 +1,61 @@
 .like {
   position: relative;
 
-&__label {
-  color: $dark25;
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-}
+  &__label {
+    color: $dark25;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-&__border {
-  @include base-size(38px,18px);
-  border-radius: 100px;
-  background-image: none;
-  border: solid 1px $dark25;
-}
+  &__border {
+    @include base-size(38px, 18px);
+    border-radius: 100px;
+    background-image: none;
+    border: solid 1px $dark25;
+  }
 
-&__input:checked ~ &__border {
-  @include base-size;
-  background-image: $purple-gradient;
-  border: none;
-}
-&__number {
-  position: absolute;
-  left: 21.7px;
-  top: 5px;
-}
+  &__input:checked ~ &__border {
+    @include base-size;
+    background-image: $purple-gradient;
+    border: none;
+  }
+  &__number {
+    position: absolute;
+    left: 21.7px;
+    top: 5px;
+  }
 
-&__input {
- position: absolute;
-   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  @include base-size(38px,18px);
-  margin: 1px;
-  border-radius: 12px;
-  background-color: #fff;
-  appearance: none;
-  outline: none;
-}
+  &__input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include base-size(38px, 18px);
+    margin: 1px;
+    border-radius: 12px;
+    background-color: #fff;
+    appearance: none;
+    outline: none;
+  }
 
-&__input::before {
-  content: "favorite_border";
-  font-family: "Material Icons";
-  z-index: 0;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  color: $dark25;
-  margin-left: 5px;
-  margin-right: 5px
+  &__input::before {
+    content: 'favorite_border';
+    font-family: 'Material Icons';
+    z-index: 0;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: $dark25;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  &__input:checked::before {
+    content: 'favorite';
+    color: $purple;
+    transition: color 0.3s ease-in;
+  }
+  &__input:checked + &__border {
+    color: $purple;
+  }
 }
-&__input:checked::before {
-  content: "favorite";
-  color: $purple;
-  transition: color 0.3s ease-in;
-}
-&__input:checked+ &__border {
-  color: $purple;
-}}

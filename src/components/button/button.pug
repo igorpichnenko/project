@@ -1,10 +1,10 @@
 mixin button({mods = '', text="Click me"} = {})
-  - 
+  -
     let modList = mods.split(',')
     let allMods = ''
-    
+
     modList.forEach(function (mod) {
     allMods = allMods + ' button_' + mod.trim()
     })
-    
-  button.button(class= allMods, type="button")= text
+
+  button.button(class=allMods, type='button')= text

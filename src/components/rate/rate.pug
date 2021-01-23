@@ -1,7 +1,10 @@
 mixin rate-button(newName, checked)
- .star-rating
-   .star-rating__wrap
-    - for (var x = 1; x <= 5; x++)
-    
-      input.star-rating__input(checked=x == checked name=newName type='radio')
-      span.star-rating__ico
+  .star-rating
+    .star-rating__wrap
+      - for (var x = 1; x <= 5; x++)
+        input.star-rating__input(
+          checked=x == checked,
+          name=newName,
+          type='radio'
+        )
+        span.star-rating__ico

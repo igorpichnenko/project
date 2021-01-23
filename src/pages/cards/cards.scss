@@ -1,15 +1,16 @@
 @import '../../scss/_mixin';
 
-.cards{
+.cards {
   background-color: $grey;
   @include container;
   padding: 10.45% 0 0 9.7%;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
- 
 }
-.cards-one,.cards-two,.cards-three{
+.cards-one,
+.cards-two,
+.cards-three {
   gap: 40px;
   display: flex;
   flex-direction: column;

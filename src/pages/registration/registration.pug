@@ -10,18 +10,17 @@ block title
   title Landing
 
 block head
-    link(rel="stylesheet" href="registration.css")
-    
-block content
+  link(rel='stylesheet', href='registration.css')
 
-  - 
+block content
+  -
     data = require('./registration.json');
-    
+
   .registration-container.registration-container_reg-bg
-     .registration-container__signin
+    .registration-container__signin
       +form-signin(data.formSignIn)
-     .registration-container__reg.registration-container_active
-       +form-reg('signIn,border,content-size,large')
+    .registration-container__reg.registration-container_active
+      +form-reg('signIn,border,content-size,large')
 block footer
 block script
-    script(src="./registration.js")
+  script(src='./registration.js')

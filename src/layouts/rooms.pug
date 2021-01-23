@@ -9,29 +9,28 @@ include ../components/icon/icon
 include ../components/input/input
 
 doctype html
-html(lang="ru")
-    head
-        meta(charset = "utf-8")
-        //meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        meta(name="viewport" content="width=1440, initial-scale=1.0")
-        
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    //meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name='viewport', content='width=1440, initial-scale=1.0')
+
 block title
 
 block head
- 
+
 body
- 
+
 +header
 block content
 
 block footer
 
-
 footer.footer-rooms
-      .footer-rooms__large
-        +footer
+  .footer-rooms__large
+    +footer
 
-      .footer-rooms__small
-        +footer-small
+  .footer-rooms__small
+    +footer-small
 
 block script

@@ -1,11 +1,11 @@
-.footer-navigation__link{
+.footer-navigation__link {
   text-decoration: none;
   color: inherit;
 }
-.footer-navigation__list:nth-last-child(-n+4) {
+.footer-navigation__list:nth-last-child(-n + 4) {
   margin-bottom: 21px;
 }
-.footer-navigation__list:nth-last-child(-n+4) {
+.footer-navigation__list:nth-last-child(-n + 4) {
   @include intermediate-text;
 }
 .footer-navigation__list:nth-child(1) {

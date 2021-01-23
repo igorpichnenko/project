@@ -1,202 +1,219 @@
 @import '../../scss/_mixin';
 
-.form-elements{
+.form-elements {
   display: flex;
   flex-wrap: wrap;
   @include container;
   padding: 9.73% 9.73% 0 9.73%;
 }
 
-
-
 .column-one {
- margin-left: 0.7px;
- margin-top: 0.5px;
- 
-  &__item{
+  margin-left: 0.7px;
+  margin-top: 0.5px;
+
+  &__item {
     display: flex;
-    justify-content: space-between;}
-    
-&__title{padding-top: 3px;}
+    justify-content: space-between;
+  }
 
-&__email{margin-bottom: 20.3px;}
+  &__title {
+    padding-top: 3px;
+  }
 
-&__title_focus{ font-size: 11.7px;}
+  &__email {
+    margin-bottom: 20.3px;
+  }
 
-&__dropdown{
-  margin-top: 19.5px;
-  margin-bottom: 23.5px;}
+  &__title_focus {
+    font-size: 11.7px;
+  }
 
-&__date-title{
-  display: flex;
-  margin-top: 40px;
-  
-  &>*+*{margin-left: 52px;}
-}
+  &__dropdown {
+    margin-top: 19.5px;
+    margin-bottom: 23.5px;
+  }
 
-&__dabl-date{
-  display: flex;
-  margin-bottom: 41.5px;
-  
-  &>*+*{margin-left: 20px;}
-}
+  &__date-title {
+    display: flex;
+    margin-top: 40px;
 
-&__medium{ width: 266px;}
+    & > * + * {
+      margin-left: 52px;
+    }
+  }
 
-&__subscription{
-  margin-top: 40.8px;
-  margin-bottom: 100.5px;
-}
-&__drop-medium{
-  margin-top: 20.5px;
-  display: flex;
-  justify-content: space-between;
-}
+  &__dabl-date {
+    display: flex;
+    margin-bottom: 41.5px;
 
-&__checkbox{
-  margin-top: 171px;
-}
-  &__checkbox-list{
+    & > * + * {
+      margin-left: 20px;
+    }
+  }
+
+  &__medium {
+    width: 266px;
+  }
+
+  &__subscription {
+    margin-top: 40.8px;
+    margin-bottom: 100.5px;
+  }
+  &__drop-medium {
+    margin-top: 20.5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__checkbox {
+    margin-top: 171px;
+  }
+  &__checkbox-list {
     margin-top: 47.5px;
   }
-  
 }
 
-.column-one ~ *{
+.column-one ~ * {
   margin-left: 10.9%;
 }
 .column-two {
   margin-top: 3.6px;
-  
-  
-  
-  &__checkbox{margin-top: 16.5px; }
-  
-  &__radio{
+
+  &__checkbox {
+    margin-top: 16.5px;
+  }
+
+  &__radio {
     margin-top: 43px;
     margin-bottom: 12px;
   }
-  &__radio-button{
+  &__radio-button {
     margin-bottom: 40.3px;
-    
-    &>*+*{margin-left: 17px;}
+
+    & > * + * {
+      margin-left: 17px;
+    }
   }
-  &__toggle{
+  &__toggle {
     margin-top: 15px;
     margin-bottom: 45.5px;
-    
-    &>*+*{margin-top: 14px;}
+
+    & > * + * {
+      margin-top: 14px;
+    }
   }
-  &__like{
+  &__like {
     display: flex;
     margin-top: 15px;
     margin-bottom: 41px;
-    
-    &>*+*{ margin-left: 10px;}
+
+    & > * + * {
+      margin-left: 10px;
+    }
   }
-  &__rate{
+  &__rate {
     display: flex;
     margin-top: 17px;
     margin-bottom: 197.5px;
-    
-    &>*+*{margin-left: 20px;}
-    
+
+    & > * + * {
+      margin-left: 20px;
+    }
   }
-  &__dropdown{
+  &__dropdown {
     width: 320px;
   }
-  &__rich{
+  &__rich {
     margin-top: 256px;
   }
-  &__rich-button{
+  &__rich-button {
     margin-top: 16px;
     margin-left: 1px;
-  }}
-  
-  .column-two ~ *{
-    margin-left: 6.2%;
   }
-  
-  .column-three{
-    margin-top: 4px;
-   
-    
-    &__range{
-      height: 11.5px;
-      width: 266px;
-      display: flex;
-      justify-content: space-between;
-    }
-    &__out{
-      align-self: center;
-      margin-right: 1.5px;
-    }
-    &__title-btn{ margin-top: 36px;}
-      
-    &__button-top{
-      margin-top: 15px;
-      
-      &>*+*{ margin-left: 15px;}
-    }
-    &__button-center{
-      margin-top: 30px;
-      display: flex;
-      
-      &>*+*{ margin-left: 20px; }
-    }
-    
-    &__button-small{
-  width: 100px;
-  height: 44px;}
-    
-    &__button-bottom{
-      margin-bottom: 30px;
-      margin-top: 30px;
-      display: flex;
-      
-      &>*+*{ margin-left: 21px;}
-    }
-    &__pagination-title{
-      margin-top: 40px;
-      margin-left: 1px;
-    }
-    &__pagination-text{
-      margin-left: 5px;
-    }
-    &__pagination{
-      margin-top: 16px;
-      margin-left: 1px;
-      margin-bottom: 234px;
-    }
-    &__bullet{margin-top: 256px;}
-    
-    &__bullet-list{
-      margin-top: 13px;
-      margin-left: 0.5px;
-    }}
-  
-  .column-four{
+}
+
+.column-two ~ * {
+  margin-left: 6.2%;
+}
+
+.column-three {
+  margin-top: 4px;
+
+  &__range {
+    height: 11.5px;
+    width: 266px;
     display: flex;
-    margin-top: 82px;
-    margin-left: 9.8%;
-    flex-wrap: wrap;
-    
-    &__murad{
-      width: 710px;
-      margin-top: 29px;
-      margin-left: 12.8%;
+    justify-content: space-between;
+  }
+  &__out {
+    align-self: center;
+    margin-right: 1.5px;
+  }
+  &__title-btn {
+    margin-top: 36px;
+  }
+
+  &__button-top {
+    margin-top: 15px;
+
+    & > * + * {
+      margin-left: 15px;
     }
   }
-  
-  
-  
-  
+  &__button-center {
+    margin-top: 30px;
+    display: flex;
 
+    & > * + * {
+      margin-left: 20px;
+    }
+  }
 
+  &__button-small {
+    width: 100px;
+    height: 44px;
+  }
 
+  &__button-bottom {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
 
+    & > * + * {
+      margin-left: 21px;
+    }
+  }
+  &__pagination-title {
+    margin-top: 40px;
+    margin-left: 1px;
+  }
+  &__pagination-text {
+    margin-left: 5px;
+  }
+  &__pagination {
+    margin-top: 16px;
+    margin-left: 1px;
+    margin-bottom: 234px;
+  }
+  &__bullet {
+    margin-top: 256px;
+  }
 
+  &__bullet-list {
+    margin-top: 13px;
+    margin-left: 0.5px;
+  }
+}
 
-  
-  
- 
+.column-four {
+  display: flex;
+  margin-top: 82px;
+  margin-left: 9.8%;
+  flex-wrap: wrap;
+
+  &__murad {
+    width: 710px;
+    margin-top: 29px;
+    margin-left: 12.8%;
+  }
+}

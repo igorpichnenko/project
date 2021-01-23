@@ -3,22 +3,28 @@
   background-color: #fff;
   min-width: 320px;
   padding: 8.23% 12.5% 8.23% 12.5%;
-  
-&__text{
+
+  &__text {
     max-width: 600px;
     text-align: center;
     padding: 18px 21px 27px;
-  @include intermediate-text($col:$dark75);
+    @include intermediate-text($col: $dark75);
+  }
+  &__icons {
+    position: relative;
+  }
 
+  &__icons:nth-child(3) {
+    margin-left: 45.5px;
+  }
+
+  &__icon {
+    margin-right: 22px;
+  }
+
+  &__icon_absolute {
+    position: absolute;
+    bottom: 2.3px;
+    right: 87.2px;
+  }
 }
-&__icons{position: relative;}
-
-&__icons:nth-child(3){margin-left: 45.5px;}
-
-&__icon{margin-right: 22px;}
-
-&__icon_absolute{
-  position: absolute;
-  bottom: 2.3px;
-  right:  87.2px;
-}}

@@ -1,6 +1,6 @@
 .registration {
   height: 646px;
-  width: 380px ;
+  width: 380px;
   box-shadow: $shadow-02;
   background-color: #fff;
 }
@@ -12,35 +12,41 @@
     margin-top: 21px;
     margin-bottom: 3px;
   }
-   &__toggle {
+  &__toggle {
     margin-bottom: 25px;
     display: flex;
   }
-  &__radio{
+  &__radio {
     display: flex;
     margin-bottom: 22px;
     margin-top: 8px;
   }
-  
-  &__radio>*+* {margin-left: 20px;}
-  
-  &__data { margin-top: 20.5px;
+
+  &__radio > * + * {
+    margin-left: 20px;
   }
-  
+
+  &__data {
+    margin-top: 20.5px;
+  }
+
   &__sign-in {
-     margin-top: 28.5px;
+    margin-top: 28.5px;
     display: flex;
     align-items: center;
-    &>*+* {margin-left: 35.8px;}
+    & > * + * {
+      margin-left: 35.8px;
+    }
   }
-  &__data-in { margin-bottom: 9.8px;}
-  &__data-in>*+*, &__input>*+* {
-     margin-top: 10px;
-}
+  &__data-in {
+    margin-bottom: 9.8px;
+  }
+  &__data-in > * + *,
+  &__input > * + * {
+    margin-top: 10px;
+  }
   &__text {
-    @include intermediate-text($fs:14px,$lh:18px,$col:#000)
-    white-space: nowrap ;
+    @include intermediate-text($fs: 14px, $lh: 18px, $col: #000) white-space:
+      nowrap;
   }
-
-
 }

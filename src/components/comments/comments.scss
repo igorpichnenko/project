@@ -1,28 +1,27 @@
-.comments-item{
+.comments-item {
   display: flex;
   align-items: center;
-border-bottom: $border-01; 
-padding-bottom: 19.5px;
-padding-top: 20.5px;
-width: 280px;
+  border-bottom: $border-01;
+  padding-bottom: 19.5px;
+  padding-top: 20.5px;
+  width: 280px;
 
-&_border{
-  border: none;
+  &_border {
+    border: none;
+  }
+
+  &__icon {
+    @include material-font($fs: 48px, $lh: 41px, $bg: $purple-gradient);
+  }
+
+  &__title {
+    @include body-text($fw: bold);
+  }
+  &__text {
+    @include body-text;
+  }
+
+  &__content {
+    padding-left: 10px;
+  }
 }
-
-&__icon{
-  @include material-font($fs: 48px, $lh: 41px,$bg:$purple-gradient);}
-  
-&__title{
-  @include body-text($fw: bold);
-}
-&__text{@include body-text;}
-
-&__content{
-  padding-left: 10px;
-}
-}
-
-
-
-

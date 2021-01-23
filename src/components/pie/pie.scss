@@ -3,122 +3,108 @@
     stroke-dasharray: 0 100;
   }
 }
-.canvas-container{
+.canvas-container {
   width: 311px;
   height: 170px;
-  
-&__pie {
- display: flex;
-  position: relative;
-}
-&__title {  
-  @include medium-text;
-}
-&__items{
-  display: flex;
-  flex-wrap: wrap;
-  width: 50px;
-  height: 50px;
-  justify-content: center;
-  position: absolute;
-  left: 35.5px;
-  top: 56.5px;
-}
-&__number{
-  @include large-text($col: $purple);}
 
-&__text{
-  @include small-text($col: $purple);
-text-transform: uppercase;
-}
-&__chart {
-  width: 120px;
-  height: 120px;
-  align-self: flex-start;
-  margin-top: 21.5px;
-}
+  &__pie {
+    display: flex;
+    position: relative;
+  }
+  &__title {
+    @include medium-text;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    position: absolute;
+    left: 35.5px;
+    top: 56.5px;
+  }
+  &__number {
+    @include large-text($col: $purple);
+  }
 
-&__legend {
-  width: 146px;
-  height: 96px;
-  align-self: flex-end;
+  &__text {
+    @include small-text($col: $purple);
+    text-transform: uppercase;
+  }
+  &__chart {
+    width: 120px;
+    height: 120px;
+    align-self: flex-start;
+    margin-top: 21.5px;
+  }
+
+  &__legend {
+    width: 146px;
+    height: 96px;
+    align-self: flex-end;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 2px;
+  }
+  &__item {
+    @include body-text;
+    position: relative;
+    padding-left: 15px;
+    margin-left: 29.5px;
+  }
+  &__item:hover {
+    opacity: 0.8;
+  }
+  &__item::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+  }
+  &__item:nth-child(1)::before {
+    background: $yellow-gradient;
+  }
+  &__item:nth-child(2)::before {
+    background: $green-gradient;
+  }
+  &__item:nth-child(3)::before {
+    background: $purple-gradient;
+  }
+  &__item:nth-child(4)::before {
+    background: $black-gradient;
+  }
+
+  &__unit {
+    fill: none;
+    stroke-width: 1;
+    cursor: pointer;
+    animation-name: render;
+    animation-duration: 1.5s;
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+  &__unit:hover,
+  .hovered {
+    opacity: 0.8;
+    stroke-width: 1.5;
+  }
+  &__unit:nth-child(2) {
+    stroke-dasharray: 24 100;
+  }
+  &__unit:nth-child(1) {
+    stroke-dasharray: 49 100;
+    stroke-dashoffset: -25;
+  }
+  &__unit:nth-child(3) {
+    stroke-dasharray: 24 100;
+    stroke-dashoffset: -75;
+  }
 }
-
-&__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-top: 2px;
-}
-&__item{
-  @include body-text;
-  position: relative;
-  padding-left: 15px;
-margin-left: 29.5px;
-}
-&__item:hover {
-  opacity: 0.8;
-}
-&__item::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-}
-&__item:nth-child(1)::before {
-  background: $yellow-gradient;
-}
-&__item:nth-child(2)::before {
-  background: $green-gradient;
-}
-&__item:nth-child(3)::before {
-  background: $purple-gradient;
-}
-&__item:nth-child(4)::before {
-  background: $black-gradient;
-}
-
-&__unit {
-  fill: none;
-  stroke-width: 1;
-  cursor: pointer;
-  animation-name: render;
-  animation-duration: 1.5s;
-  transition-property: all; 
-  transition-duration: 1.5s;
-}
-&__unit:hover,
-.hovered {
-  opacity: 0.8;
-  stroke-width: 1.5;
-}
-&__unit:nth-child(2) {
-  stroke-dasharray: 24 100;
-}
-&__unit:nth-child(1) {
-  stroke-dasharray: 49 100;
-  stroke-dashoffset: -25;
-  
-}
-&__unit:nth-child(3) {
-  stroke-dasharray: 24 100;
-  stroke-dashoffset: -75;
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-

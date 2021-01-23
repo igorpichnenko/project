@@ -1,0 +1,50 @@
+.dropdown-counters {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &:nth-child(3) {
+    padding-bottom: 5px;
+  }
+
+  &__title {
+    @include intermediate-text($fw: bold, $col: $dark100, $fs: 12px, $lh: 15px)
+      text-transform: uppercase;
+    padding-left: 13.5px;
+    padding-top: 1.7px;
+  }
+
+  &__controls {
+    @include flex-center;
+    cursor: pointer;
+    padding: 6px 6px 1.5px 2px;
+  }
+
+  &__plus,
+  &__minus {
+    @include intermediate-text($col: $dark75, $fs: 18px, $lh: 22px) width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    @include flex-center;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+  }
+
+  &__minus {
+    padding-bottom: 1.5px;
+  }
+
+  &__value {
+    @include small-text;
+    width: 32px;
+    border: none;
+    text-align: center;
+    outline: none;
+    padding-bottom: 3px;
+  }
+
+  &__minus_disabled {
+    opacity: 0.5;
+    cursor: unset;
+  }
+}

@@ -1,6 +1,6 @@
-import '../../components/calendar/calendar.ts';
-import '../../components/dropdown/dropdown.js';
+import '../../components/calendar/calendar';
+import '../../components/dropdown/dropdown-init';
 import '../../scss/main.scss';
 import './cards.scss';
-import '../../components/slick/slick.ts';
-import '../../pixel.js';
+import '../../components/slick/slick';
+import '../../../pixel';

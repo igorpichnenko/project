@@ -1,178 +1,71 @@
-.dropdown-counters:nth-child(3) {
-  padding-bottom: 5px;
-}
-
-
-.dropdown-counters__title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041;
-  padding-left: 13.5px;
-  padding-top: 1.7px;
-}
-
-
-
-.dropdown-counters {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 .dropdown {
   position: relative;
   width: 100%;
-}
 
-.dropdown__menu {
-  top: 100%;
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  display: none;
-  z-index: 5;
-  border-top: none;
-  border-radius: 0 0 2px 2px;
-}
+  &__menu {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    display: none;
+    z-index: 5;
+    border-top: none;
+    border-radius: 0 0 2px 2px;
+  }
 
-.dropdown__title {
-  cursor: pointer;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
-  position: relative;
-  padding: 11.7px 12px 11.7px 13.5px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 2px;
-}
+  &__title {
+    @include intermediate-text($col: $dark75, $lh: 18px) cursor: pointer;
+    position: relative;
+    padding: 11.7px 12px 11.7px 13.5px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 2px;
+  }
 
-.title-active {
-  border-radius: 2px 2px 0 0;
-  border: 1px solid rgba(31, 32, 65, 0.50);
-}
+  &__title:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 2px 2px 0 0;
+  }
 
-.dropdown__title:hover {
-  border: 1px solid rgba(31, 32, 65, 0.50);
-  border-radius: 2px 2px 0 0;
-}
+  &_active {
+    display: block;
+  }
 
-.dropdown_active {
-  display: block;
+  &__button {
+    @include small-text($col: $purple);
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    outline: none;
+  }
 
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 11px;
+    padding-left: 2px;
+    padding-bottom: 11px;
+  }
+  &__button_clear {
+    padding-left: 11.5px;
+  }
 
-}
+  &__arrow {
+    padding: 10px;
+    pointer-events: none;
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 44px;
+    width: 44px;
+    @include flex-center;
+    @include material-font($lh: 24px, $col: $dark75, $bg: $dark75);
+  }
 
-.dropdown__button {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #BC9CFF;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.dropdown__buttons {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 11px;
-  padding-left: 2px;
-  padding-bottom: 11px;
-
-}
-.dropdown__button_clear {
-  padding-left: 11.5px;
-}
-
-
-.dropdown__arrow {
-  padding: 10px;
-  pointer-events: none;
-  border: none;
-  background: none;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  right: 0;
-  width: 44px;
-  width: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-
-.dropdown__button_hidden {
-  display: none;
-}
-
-
-
-.dropdown-counters__controls {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 6px 1.5px 2px;
-}
-
-
-.dropdown-counters__plus, .dropdown-counters__minus {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  line-height: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.50);
-  box-sizing: border-box;
-
-
-
-}
-.dropdown-counters__minus {
-  padding-bottom: 1.5px;
-}
-
-.dropdown-counters__value {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #1F2041;
-  width: 32px;
-  border: none;
-  text-align: center;
-  outline: none;
-  padding-bottom: 3px;
-
-}
-.dropdown-counters__minus_disabled {
-  opacity: 0.5;
-  cursor: unset;
+  &__button_hidden {
+    display: none;
+  }
 }

@@ -1,14 +1,13 @@
-declare const $:any
+declare const $: any;
 
-/*declare global {
+/* declare global {
     interface JQuery {
    pagination(options?: any, callback?: Function) : any;
-}}*/
+}} */
 
-/*declare module 'jquery' {
-  
+/* declare module 'jquery' {
+
   const  $:any
   export default $
 
-
-}*/
+} */

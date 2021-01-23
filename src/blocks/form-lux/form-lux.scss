@@ -12,14 +12,14 @@
   &__title {
     display: flex;
     margin-top: 21.4px;
-    &>*+* {
+    & > * + * {
       margin-left: 95px;
     }
   }
   &__calendar {
     display: flex;
     margin-bottom: 20px;
-    &>*+* {
+    & > * + * {
       margin-left: 20px;
     }
   }
@@ -31,17 +31,19 @@
 
 .formlux-main {
   margin-top: 18px;
-  
-  &__price + &__price {
-  padding-top: 9.5px;
-}
-  &__label_top {
-  margin-left: 5px ;
-}
 
-  &__text {@include body-text;}
-    
-  &__text_left{
+  &__price + &__price {
+    padding-top: 9.5px;
+  }
+  &__label_top {
+    margin-left: 5px;
+  }
+
+  &__text {
+    @include body-text;
+  }
+
+  &__text_left {
     margin-left: 1px;
     margin-top: 0.5px;
   }
@@ -50,12 +52,12 @@
     line-height: 18px;
     margin-top: 3.5px;
     margin-left: 1px;
- }
- 
+  }
+
   &__label {
     border: 1px solid rgba(0, 0, 0, 0.12);
-    @include intermediate-text($fw:bold,$col:$dark25,$fs:10px,$lh:11px)
-    border-radius: 100px;
+    @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px)
+      border-radius: 100px;
     width: 20px;
     height: 20px;
     box-sizing: border-box;
@@ -64,16 +66,18 @@
     margin-right: 60px;
     padding-top: 3.5px;
     margin-top: 2px;
-    
+
     &_number-right {
       margin-right: 22.5px;
-}}
+    }
+  }
 
   &__price {
     display: flex;
     justify-content: space-between;
-  }}
-  
+  }
+}
+
 .formlux-footer {
   margin-top: 30px;
   margin-left: 30px;
@@ -88,4 +92,5 @@
   }
   &__price {
     display: flex;
-  }}
+  }
+}

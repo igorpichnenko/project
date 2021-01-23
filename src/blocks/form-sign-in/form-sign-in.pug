@@ -3,10 +3,10 @@ mixin form-signin({btnSign,btnIn,text,inputEmail,inputPass,content})
     .signin-container
       +title(text)
       .signin-container__input
-       +input(inputEmail)
-       +input(inputPass)
+        +input(inputEmail)
+        +input(inputPass)
       +button(btnSign)
       .signin-container__item
-       .signin-container__text= content
-       .signin-container__button-wrap
-        +button(btnIn)
+        .signin-container__text= content
+        .signin-container__button-wrap
+          +button(btnIn)

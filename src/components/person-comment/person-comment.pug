@@ -1,10 +1,12 @@
 mixin person-comment(title,text,content,png,mod,check)
-    .person-comment
-     img(class='person-comment__icon' src=`../../src/components/person-comment/icon/${png}.png`)
-     .person-comment__block
-      div(class="person-comment__name")= title
-      div(class="person-comment__date")= text
-    .person-comment
-     .person-comment__like
+  .person-comment
+    img.person-comment__icon(
+      src=`../../src/components/person-comment/icon/${png}.png`
+    )
+    .person-comment__block
+      .person-comment__name= title
+      .person-comment__date= text
+  .person-comment
+    .person-comment__like
       +like(mod,check)
-     span(class="person-comment__text")= content
+    span.person-comment__text= content

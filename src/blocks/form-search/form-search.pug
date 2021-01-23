@@ -1,19 +1,15 @@
 mixin form-search
   form.search
-   .search-container
+    .search-container
       .search-container__wrap-title
-       +title({title:'Найдём номера под ваши пожелания',mods:'large'})
+        +title({title:'Найдём номера под ваши пожелания',mods:'large'})
       .search-container__title
-       +title({title:'Прибытие'})
-       +title({title:'Выезд'})
+        +title({title:'Прибытие'})
+        +title({title:'Выезд'})
       .search-container__calendar
-       +datepicker-dabl
+        +datepicker-dabl
       .search-container__dropdown
-       +title({title:'Гости'})
-       +dropdown({ name: 'room',items: [ 
-              { title: 'взрослые'}, 
-              { title: 'дети' }, 
-              { title: 'младенцы'}, 
-            ], })
-   .search-container__button
-         +button({text: 'Подобрать номер', mods: 'arrow'})
+        +title({title:'Гости'})
+        +dropdown({ name: 'room',items: [ { title: 'взрослые'}, { title: 'дети' }, { title: 'младенцы'}, ], })
+    .search-container__button
+      +button({text: 'Подобрать номер', mods: 'arrow'})

@@ -1,43 +1,54 @@
-
-.paginationjs-container{
+.paginationjs-container {
   width: 242px;
 }
- .pagination a {
-  @include intermediate-text($fs: 12px,$lh: 3.3333,$col: $dark25);
+.pagination a {
+  @include intermediate-text($fs: 12px, $lh: 3.3333, $col: $dark25);
   text-decoration: none;
 }
-.pagination{
-&__link_active { background: $purple-gradient;}
+.pagination {
+  &__link_active {
+    background: $purple-gradient;
+  }
 
-&__text {
-  @include body-text;
-  margin-top: 7px;
+  &__text {
+    @include body-text;
+    margin-top: 7px;
+  }
+  &__icon {
+    font-size: 24px;
+    line-height: 1.6667;
+    color: #fff;
+  }
+  &__list {
+    display: flex;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__link_active a {
+    font-weight: bold;
+    color: white;
+  }
 }
-&__icon {
-  font-size: 24px;
-  line-height: 1.6667;
-  color: #fff
+.pagination__link_active,
+.pagination .paginationjs-prev,
+.pagination .paginationjs-next {
+  min-width: 40px;
 }
-&__list {
-  display: flex;
-  user-select: none;
-  padding: 0;
-  margin: 0
-}
-&__link_active a {
-  font-weight: bold;
-  color: white
-}}
-.pagination__link_active,.pagination .paginationjs-prev,.pagination .paginationjs-next {min-width: 40px;}
 
-.paginationjs-prev,.paginationjs-next {
-  background: $green-gradient;}
-  
-.paginationjs-page,.paginationjs-prev,.paginationjs-next,.paginationjs-ellipsis {
+.paginationjs-prev,
+.paginationjs-next {
+  background: $green-gradient;
+}
+
+.paginationjs-page,
+.paginationjs-prev,
+.paginationjs-next,
+.paginationjs-ellipsis {
   display: inline-block;
   width: 100%;
   max-width: 40px;
   height: 40px;
   border-radius: 50%;
-  text-align: center
+  text-align: center;
 }

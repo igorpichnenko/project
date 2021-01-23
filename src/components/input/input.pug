@@ -1,14 +1,14 @@
 mixin input(options)
-  - const {inType, mods="standart", text="Email",button,mod} = options
-  - 
+  - const { inType, mods = "standart", text = "Email", button, mod } = options;
+  -
     let modList = mods.split(',')
     let allMods = ''
-    
+
     modList.forEach(function (mod) {
     allMods = allMods + ' input_' + mod.trim()
     })
-  
+
   .input
-    input.input__input(type=inType placeholder=text class=allMods)
+    input.input__input(type=inType, placeholder=text, class=allMods)
     if button
-      button(class=mod type="submit")= button
+      button(class=mod, type='submit')= button

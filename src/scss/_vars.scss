@@ -1,8 +1,8 @@
 $dark100: #1f2041;
-$dark75: rgba(#1F2041,.75);
-$dark50: rgba(#1F2041,.50);
-$dark25: rgba(#1F2041,.25);
-$dark5: rgba(#1F2041,.05);
+$dark75: rgba(#1f2041, 0.75);
+$dark50: rgba(#1f2041, 0.5);
+$dark25: rgba(#1f2041, 0.25);
+$dark5: rgba(#1f2041, 0.05);
 $purple: #bc9cff;
 $green: #6fcf97;
 $grey: #f4f4f6;
@@ -10,10 +10,8 @@ $grey: #f4f4f6;
 $yellow-gradient: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
 $purple-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 $green-gradient: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-$black-gradient: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+$black-gradient: linear-gradient(180deg, #919191 0%, #3d4975 100%);
 $shadow-5: 0px 10px 20px 0px $dark5;
 $border-01: $dark5 1px solid;
 $purple-border: 1px solid $purple;
 $shadow-02: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
-
-

@@ -1,8 +1,15 @@
 mixin datepicker-dabl(text2='ДД.ММ.ГГГГ',text='ДД.ММ.ГГГГ')
   .datepicker-box
-    input(placeholder=''+text type='text' class='datepicker-dabl input_filter datepicker-start' data-position="bottom left")
+    input.js-datepicker-dabl.input_filter.js-datepicker-start(
+      placeholder="" + text,
+      type='text',
+      data-position='bottom left'
+    )
   .datepicker-box
-    input(placeholder=''+text2 class='text' class='datepicker-end input_filter datepicker-dabl' data-position="bottom center")
+    input.text.js-datepicker-end.input_filter.js-datepicker-dabl(
+      placeholder="" + text2,
+      data-position='bottom center'
+    )
 
 mixin datepicker
-   .datepicker-dabl
+  .js-datepicker-dabl

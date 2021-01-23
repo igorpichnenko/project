@@ -17,27 +17,28 @@ include ../../components/toggle/toggle
 include ../../components/rate/rate
 include ../../components/reviews/reviews
 include ../../components/price/price
+include ../../components/dropdown-counters/dropdown-counters
 
 block title
   title Cards
 
 block head
-    link(rel="stylesheet" href="cards.css")
-    
+  link(rel='stylesheet', href='cards.css')
+
 block body
-  - 
+  -
     data = require('./cards.json');
-    
+
   .cards
     .cards-one
       +form-search
       +form-reg
     .cards-two
-     +formlux
-     +form-signin(data.formSignIn)
+      +formlux
+      +form-signin(data.formSignIn)
     .cards-three
-     +datepicker
-     +image-card('888','145','9 990₽','люкс','1','6','7','8','room-1','1','price-container__text_low')
-     +image-card('840','65','9 900₽','','2','8','9','4','room-2','2','price-container__text_low')
+      +datepicker
+      +image-card('888','145','9 990₽','люкс','1','6','7','8','room-1','1','price-container__text_low')
+      +image-card('840','65','9 900₽','','2','8','9','4','room-2','2','price-container__text_low')
 block script
-    script(src="./cards.js")
+  script(src='./cards.js')

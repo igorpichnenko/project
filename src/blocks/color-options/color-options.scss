@@ -3,36 +3,59 @@
   align-items: center;
 }
 .uikit-item {
-  &:not(first-child) {margin-bottom: 20px;}
+  &:not(first-child) {
+    margin-bottom: 20px;
+  }
 
-  &:nth-child(2) {margin-left: 40px;}
+  &:nth-child(2) {
+    margin-left: 40px;
+  }
 
   &__title {
-    @include intermediate-text($fw: bold,$fs: 19px,$lh: 27.79px, $col: $dark100)
-    white-space: nowrap;
+    @include intermediate-text(
+        $fw: bold,
+        $fs: 19px,
+        $lh: 27.79px,
+        $col: $dark100
+      )
+      white-space: nowrap;
   }
 
   &__text {
-    @include intermediate-text($fs: 19px,$lh: 28px, $col: $dark100)
+    @include intermediate-text($fs: 19px, $lh: 28px, $col: $dark100);
   }
-  
+
   &__block {
     width: 70px;
     height: 70px;
     border-radius: 6px;
-    
-    &_dark100 { background-color: $dark100;}
-    
-    &_dark75 {background-color: $dark75;}
-    
-    &_dark50 {background-color: $dark50;}
-    
-    &_dark25 {background-color: $dark25;}
-    
-    &_dark5 {background-color: $dark5;}
-    
-    &_purple {background-color: $purple;}
-    
-    &_green { background-color: $green;}
-    
-  }}
+
+    &_dark100 {
+      background-color: $dark100;
+    }
+
+    &_dark75 {
+      background-color: $dark75;
+    }
+
+    &_dark50 {
+      background-color: $dark50;
+    }
+
+    &_dark25 {
+      background-color: $dark25;
+    }
+
+    &_dark5 {
+      background-color: $dark5;
+    }
+
+    &_purple {
+      background-color: $purple;
+    }
+
+    &_green {
+      background-color: $green;
+    }
+  }
+}

@@ -2,27 +2,28 @@
 
 .registration-container {
   @include flex-center;
-  
 
-&_reg-bg{
-  background: url('./img/registration.jpg');
-  @include foto-bg-size;
-  height: 683px;
-  min-width: 320px;
+  &_reg-bg {
+    background: url('./img/registration.jpg');
+    @include foto-bg-size;
+    height: 683px;
+    min-width: 320px;
+  }
+  &_signIn-bg {
+    background: url('./img/signIn.jpg');
+    @include foto-bg-size;
+    height: 702px;
+    min-width: 320px;
+  }
+  &__reg {
+    padding-left: 7px;
+    padding-bottom: 0;
+  }
+  &__signin,
+  &__reg {
+    display: none;
+  }
+  &_active {
+    display: block;
+  }
 }
-&_signIn-bg{
-  background: url('./img/signIn.jpg');
-  @include foto-bg-size;
-  height: 702px;
-  min-width: 320px;
-}
-&__reg {
-  padding-left: 7px;
-  padding-bottom: 0;
-}
-&__signin, &__reg {
-  display: none;
-}
-&_active {
-  display: block;
-}}

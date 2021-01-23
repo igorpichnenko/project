@@ -1,13 +1,7 @@
-import { Burger } from './header.ts';
+import { Burger } from './header';
 
 function onLoad() {
-
-  let Allmenu = document.querySelectorAll('.header-main').forEach((item) =>
- 
-   new Burger(item));
- 
-
+  document.querySelectorAll('.header-main').forEach((item) => new Burger(item));
 }
 
 window.addEventListener('load', onLoad);
-

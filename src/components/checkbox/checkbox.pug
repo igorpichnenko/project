@@ -1,7 +1,7 @@
 mixin checkbox(text,mods="", check)
-    .checkbox
-     label.checkbox__label
+  .checkbox
+    label.checkbox__label
       .checkbox__container
-       input(type="checkbox" class="checkbox__input" checked= check)
-       span.checkbox__style
-      .checkbox__text(class=""+mods)= text 
+        input.checkbox__input(type='checkbox', checked=check)
+        span.checkbox__style
+      .checkbox__text(class="" + mods)= text

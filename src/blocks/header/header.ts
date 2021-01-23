@@ -1,20 +1,27 @@
-class Burger{
-   constructor(menu:any){
-       this.playMenu(menu)
-     }
+class Burger {
+  button: any;
 
-playMenu(menu:any){
-  
-  let navbar = menu.querySelector('.header-main__nav');
-  let burger = menu.querySelector('.header-main__burger-menu');
-  
-   burger.addEventListener('click', function(){
-     
-  burger.classList.toggle('header-main__burger-open');
-  navbar.classList.toggle("header-main__open-menu")
- 
-   })}
-  
+  navbar: any;
+
+  menu: any;
+
+  constructor(menu: any) {
+    this.menu = menu;
+    this.findItems();
+  }
+
+  findItems(): void {
+    this.button = this.menu.querySelector('.header-main__burger-menu');
+    this.navbar = this.menu.querySelector('.header-main__nav');
+
+    this.clickMenu = this.clickMenu.bind(this);
+    this.button.addEventListener('click', this.clickMenu);
+  }
+
+  clickMenu(): void {
+    this.button.classList.toggle('header-main__burger-open');
+    this.navbar.classList.toggle('header-main__open-menu');
+  }
 }
-  
-  export { Burger };
+
+export { Burger };

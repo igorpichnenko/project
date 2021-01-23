@@ -9,31 +9,30 @@ include ../../components/dropdown/dropdown
 block title
   title index-page
 
-
 block head
-        link(rel="stylesheet" href="index.css")
-        
+  link(rel='stylesheet', href='index.css')
+
 block body
-   - 
-     data = require('./index.json');
-   
-   .index__link
-    a(href="../color-type.html").index__page color-type 
-   .index__link
-    a(href="../headers-footers.html").index__page headers-footers
-   .index__link
-    a(href="../form-elements.html").index__page form-elements
-   .index__link
-    a(href="../cards.html").index__page cards
-   .index__link
-    a(href="../landing.html").index__page landing
-   .index__link
-    a(href="../registration.html").index__page registration
-   .index__link
-    a(href="../room-detalis.html").index__page room-detalis
-   .index__link
-    a(href="../room-search.html").index__page room-search
-     
+  -
+    data = require('./index.json');
+
+  .index__link
+    a.index__page(href='../color-type.html') color-type
+  .index__link
+    a.index__page(href='../headers-footers.html') headers-footers
+  .index__link
+    a.index__page(href='../form-elements.html') form-elements
+  .index__link
+    a.index__page(href='../cards.html') cards
+  .index__link
+    a.index__page(href='../landing.html') landing
+  .index__link
+    a.index__page(href='../registration.html') registration
+  .index__link
+    a.index__page(href='../room-detalis.html') room-detalis
+  .index__link
+    a.index__page(href='../room-search.html') room-search
+
 block script
-    script(src="./index.js")
-    script(src="perfetto.js")
+  script(src='./index.js')
+  script(src='perfetto.js')

@@ -1,20 +1,20 @@
-.slider-cards{
+.slider-cards {
   height: 258px;
   width: 270px;
   box-shadow: $shadow-5;
   border-radius: 4px;
   background: #fff;
-  
-  &__reviews{
+
+  &__reviews {
     width: 233px;
     margin-top: 19px;
     margin-left: 20px;
   }
-  &__title{
+  &__title {
     margin-bottom: 10px;
   }
-  &__rate{
-  padding-top: 10px;
-border-top: $border-01;
+  &__rate {
+    padding-top: 10px;
+    border-top: $border-01;
   }
 }
