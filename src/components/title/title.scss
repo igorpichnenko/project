@@ -1,18 +1,22 @@
 .title {
+
   &_standart {
-    @include small-text;
     text-transform: uppercase;
     margin-bottom: 5px;
+
+    @include small-text;
   }
 
   &_hover {
-    @include small-text($dark50, normal);
     text-transform: uppercase;
+
+    @include small-text($dark50, normal);
   }
 
   &_large {
     @include large-text;
   }
+
   &_medium {
     @include medium-text;
   }

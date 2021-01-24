@@ -6,9 +6,11 @@
   &:first-child {
     margin-top: 0;
   }
+
   &__input:checked ~ &__style {
     border: 1px solid $purple;
   }
+
   &__style {
     position: absolute;
     height: 20px;
@@ -47,22 +49,28 @@
   &__input:checked ~ &__style:before {
     display: block;
   }
+
   &__input {
     position: absolute;
     height: 0;
     width: 0;
     display: none;
   }
+
   &__text {
-    @include intermediate-text($col: $dark50, $fs: 14px, $lh: 18px) margin-left:
-      29.5px;
-    cursor: pointer;
-  }
-  &__title {
-    @include intermediate-text($fw: bold, $col: $dark75, $fs: 14px, $lh: 18px)
-      cursor: pointer;
     margin-left: 29.5px;
+    cursor: pointer;
+
+    @include intermediate-text($col: $dark50, $fs: 14px, $lh: 18px);
   }
+
+  &__title {
+    cursor: pointer;
+    margin-left: 29.5px;
+
+    @include intermediate-text($fw: bold, $col: $dark75, $fs: 14px, $lh: 18px);
+  }
+
   &__wrap {
     width: 200px;
   }

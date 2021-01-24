@@ -2,20 +2,23 @@
 
 .landing-container {
   background: url('./img/landing.jpg');
-  @include foto-bg-size;
   height: 830px;
   min-width: 320px;
 
+  @include foto-bg-size;
+
   &__items {
-    padding: 4.8% 9.3% 18px 9.7%;
+    padding: 4.85% 9.3% 18px 9.7%;
     display: flex;
     justify-content: space-between;
   }
+
   &__slogan {
-    @include body-text;
     text-align: right;
     align-self: flex-end;
     max-width: 300px;
     margin-top: 691px;
+
+    @include body-text;
   }
 }

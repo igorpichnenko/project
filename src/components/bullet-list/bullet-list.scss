@@ -1,5 +1,4 @@
 .bullet-list {
-  @include body-text;
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -7,9 +6,12 @@
   padding-left: 20px;
   list-style-type: none;
 
+  @include body-text;
+
   & > * + * {
     margin-top: 10px;
   }
+
   .bullet-list__items::before {
     content: '';
     position: absolute;

@@ -2,12 +2,13 @@
 
 .cards {
   background-color: $grey;
-  @include container;
-  padding: 10.45% 0 0 9.7%;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+
+  @include container(10.45%, 0, 0, 9.7%);
 }
+
 .cards-one,
 .cards-two,
 .cards-three {

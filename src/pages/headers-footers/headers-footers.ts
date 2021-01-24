@@ -1,4 +1,4 @@
 import '../../scss/main.scss';
 import './headers-footers.scss';
-// import '../../pixel.js'
+import '../../../pixel';
 import '../../blocks/header/header-init';

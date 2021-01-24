@@ -1,35 +1,44 @@
 .paginationjs-container {
   width: 242px;
 }
+
 .pagination a {
-  @include intermediate-text($fs: 12px, $lh: 3.3333, $col: $dark25);
   text-decoration: none;
+
+  @include intermediate-text($fs: 12px, $lh: 3.3333, $col: $dark25);
 }
+
 .pagination {
+
   &__link_active {
     background: $purple-gradient;
   }
 
   &__text {
-    @include body-text;
     margin-top: 7px;
+
+    @include body-text;
   }
+
   &__icon {
     font-size: 24px;
     line-height: 1.6667;
     color: #fff;
   }
+
   &__list {
     display: flex;
     user-select: none;
     padding: 0;
     margin: 0;
   }
+
   &__link_active a {
     font-weight: bold;
     color: white;
   }
 }
+
 .pagination__link_active,
 .pagination .paginationjs-prev,
 .pagination .paginationjs-next {

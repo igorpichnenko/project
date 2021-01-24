@@ -6,12 +6,16 @@
   @return$size / 14px * 1rem;
 }
 
-@mixin container {
+@mixin container($pt: 0, $pr: 140px, $pb: 0, $pl: 140px) {
   min-width: 320px;
   max-width: 1920px;
   padding: 0 140px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding-bottom: $pb;
+  padding-top: $pt;
+  padding-left: $pl;
+  padding-right: $pr;
 }
 
 @mixin foto-bg-size {
@@ -24,6 +28,7 @@
   width: $w;
   height: $h;
 }
+
 @mixin base-size($w: 40px, $h: 20px) {
   width: $w;
   height: $h;
@@ -56,11 +61,11 @@
   font-weight: $fw;
 }
 
-@mixin medium-text($col: $dark100, $fw: bold) {
+@mixin medium-text($lh: 23px, $col: $dark100, $fw: bold) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-size: 19px;
-  line-height: 23px;
+  line-height: $lh;
   font-weight: $fw;
   color: $col;
 }
@@ -88,6 +93,7 @@
   color: $col;
   font-weight: $fw;
 }
+
 @mixin body-text($col: $dark75, $fw: normal, $lh: 24px) {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
@@ -102,17 +108,20 @@
   justify-content: center;
   align-items: center;
 }
+
 @mixin flex-column-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 @mixin flex-wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 @mixin flex-between {
   display: flex;
   align-items: center;

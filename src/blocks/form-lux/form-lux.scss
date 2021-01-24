@@ -4,6 +4,7 @@
   box-shadow: $shadow-02;
   background-color: #fff;
 }
+
 .lux-container {
   width: 320px;
   padding-top: 40px;
@@ -12,17 +13,21 @@
   &__title {
     display: flex;
     margin-top: 21.4px;
+
     & > * + * {
       margin-left: 95px;
     }
   }
+
   &__calendar {
     display: flex;
     margin-bottom: 20px;
+
     & > * + * {
       margin-left: 20px;
     }
   }
+
   &__button {
     margin-left: 28.6px;
     margin-top: 21px;
@@ -35,6 +40,7 @@
   &__price + &__price {
     padding-top: 9.5px;
   }
+
   &__label_top {
     margin-left: 5px;
   }
@@ -45,8 +51,9 @@
 
   &__text_left {
     margin-left: 1px;
-    margin-top: 0.5px;
+    margin-top: .5px;
   }
+
   &__text_wrap {
     width: 200px;
     line-height: 18px;
@@ -55,9 +62,8 @@
   }
 
   &__label {
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px)
-      border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 100px;
     width: 20px;
     height: 20px;
     box-sizing: border-box;
@@ -67,7 +73,8 @@
     padding-top: 3.5px;
     margin-top: 2px;
 
-    &_number-right {
+    @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px)
+      &_number-right {
       margin-right: 22.5px;
     }
   }
@@ -81,15 +88,19 @@
 .formlux-footer {
   margin-top: 30px;
   margin-left: 30px;
+
   &__text {
-    @include medium-text;
     margin-left: 1px;
+
+    @include medium-text;
   }
+
   &__border {
     margin: 0 3px 3.7px 4.5px;
     width: 183px;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
+    border-bottom: 1px dotted rgba(0, 0, 0, .12);
   }
+
   &__price {
     display: flex;
   }

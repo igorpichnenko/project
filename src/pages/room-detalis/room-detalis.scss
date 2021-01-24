@@ -7,27 +7,21 @@
 }
 
 @media screen and (min-width: 1420px) {
+
   .detalis-background {
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
 }
-///     ****    ///
+
 .room-detalis {
-  @include container;
-  padding-left: 9.7%;
-  padding-right: 9.7%;
-  padding-top: 70px;
-  padding-bottom: 74px;
   display: flex;
   justify-content: space-between;
-  //flex-wrap: wrap;
 
-  &__item {
+  @include container(70px, 9.7%, 74px, 9.7%) &__item {
     display: flex;
     flex-wrap: wrap;
   }
-  &__reviews {
-  }
+
   &__pie {
     padding-top: 1.5px;
     margin-left: 10.5%;
@@ -36,29 +30,38 @@
   &__comment {
     padding-top: 2px;
   }
+
   &__title {
-    @include flex-between;
     padding-bottom: 18px;
     margin-top: 13px;
+
+    @include flex-between;
   }
+
   &__title_lower {
-    @include intermediate-text($lh: 14px);
     margin-top: 2.5px;
     margin-right: 70px;
+
+    @include intermediate-text($lh: 14px);
   }
+
   &__title_murad {
     padding-top: 2px;
   }
+
   &__patricia {
     padding-top: 20.5px;
   }
+
   &__rules {
     padding-top: 33px;
   }
+
   &__text {
     padding-left: 20px;
     padding-bottom: 17.3px;
   }
+
   &__cancel {
     padding-top: 32px;
     padding-left: 13%;
@@ -70,19 +73,24 @@
     flex-shrink: 0;
     padding-top: 1px;
   }
+
   &__formlux {
     margin-left: 10px;
   }
+
   &__paragraf {
-    margin-top: 18.5px;
-    @include body-text;
     width: 341px;
     height: 96px;
+    margin-top: 18.5px;
+
+    @include body-text;
   }
+
   &__title_lower {
-    @include intermediate-text($lh: 14px);
     align-self: center;
     padding-top: 2.5px;
     margin-left: 10px;
+
+    @include intermediate-text($lh: 14px);
   }
 }

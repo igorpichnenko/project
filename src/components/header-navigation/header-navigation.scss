@@ -10,7 +10,7 @@
   }
 
   &__link_vakansii {
-    margin-right: 0.5px;
+    margin-right: .5px;
   }
 
   &__link_about {
@@ -18,33 +18,36 @@
   }
 
   &__text {
-    @include intermediate-text;
     margin-left: 20px;
     text-decoration: none;
     position: relative;
     text-align: center;
     cursor: pointer;
 
+    @include intermediate-text;
+
     &:hover {
       @include intermediate-text(bold, $dark75);
     }
   }
 
-  &__text_icon-1 {
+  &__text_icon-first {
     margin-right: 25px;
 
     &:after {
-      @include material-font;
       position: absolute;
+
+      @include material-font;
     }
   }
 
-  &__text_icon-2 {
+  &__text_icon-last {
     margin-right: 10px;
 
     &:after {
-      @include material-font;
       position: absolute;
+
+      @include material-font;
     }
   }
 }

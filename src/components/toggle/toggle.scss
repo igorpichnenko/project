@@ -1,9 +1,11 @@
 .toggle {
+
   &__label {
     display: flex;
     align-items: center;
     cursor: pointer;
   }
+
   &__input {
     display: none;
   }
@@ -18,14 +20,16 @@
     border: 1px solid $dark25;
     box-sizing: border-box;
   }
+
   &__border::before {
     content: '';
     height: 12px;
     width: 12px;
     border-radius: 50%;
     background-color: $dark25;
-    transition: margin-left 0.3s;
+    transition: margin-left .3s;
   }
+
   &__input:checked ~ &__border {
     border-color: $purple;
   }
@@ -34,9 +38,11 @@
     background: $purple-gradient;
     margin-left: 20px;
   }
+
   &__text {
-    @include body-text($lh: 20px);
     padding-left: 10px;
     user-select: none;
+
+    @include body-text($lh: 20px);
   }
 }

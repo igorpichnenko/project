@@ -18,8 +18,10 @@ class Dropdown {
     this.name = this.dropdown.dataset.name;
     this.defaultTitle = this.dropdown.dataset.default || '';
     this.values = this.dropdown.querySelectorAll('.dropdown-counters');
-    this.buttonClear = this.dropdown.querySelector('.dropdown__button_clear') || undefined;
-    this.buttonUse = this.dropdown.querySelector('.dropdown__button_use') || undefined;
+    this.buttonClear =
+      this.dropdown.querySelector('.dropdown__button_clear') || undefined;
+    this.buttonUse =
+      this.dropdown.querySelector('.dropdown__button_use') || undefined;
   }
 
   getChild() {
@@ -65,8 +67,9 @@ class Dropdown {
   }
 
   closeDropdown() {
-    const isDropdownClosed = this.toggle.classList.contains('dropdown__toggle_active')
-      && this.menu.classList.contains('dropdown_active');
+    const isDropdownClosed =
+      this.toggle.classList.contains('dropdown__toggle_active') &&
+      this.menu.classList.contains('dropdown_active');
     if (isDropdownClosed) {
       this.toggle.classList.remove('dropdown__toggle_active');
       this.menu.classList.remove('dropdown_active');
@@ -195,9 +198,11 @@ class Dropdown {
       const messageBathroom = this.formDeclension(array[2], formBathroom);
 
       if (sum > 0 && array[2] > 0) {
-        this.title.innerHTML = `${array[0]} ${messageBedroom}, ${array[1]} ${messageBed},${array[2]} ${messageBathroom}`
-          + '...';
-      } else this.title.innerHTML = `${array[0]} ${messageBedroom}, ${array[1]} ${messageBed}...`;
+        this.title.innerHTML =
+          `${array[0]} ${messageBedroom}, ${array[1]} ${messageBed},${array[2]} ${messageBathroom}` +
+          '...';
+      } else
+        this.title.innerHTML = `${array[0]} ${messageBedroom}, ${array[1]} ${messageBed}...`;
     }
   }
 }

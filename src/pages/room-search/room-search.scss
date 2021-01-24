@@ -1,56 +1,61 @@
 @import '../../scss/_mixin';
 
 .room-search {
-  @include container;
   display: flex;
-  padding: 2.1% 9.7% 5.1% 9.7%;
-  //flex-wrap: wrap;
+  gap: 5.2%;
 
-  & > * + * {
-    margin-left: 5.15%;
-  }
+  @include container(2.1%, 9.7%, 5.1%, 9.7%);
 
   &__aside {
     width: 266px;
   }
+
   &__dropdown {
     margin-top: 20.3px;
   }
+
   &__range {
     display: flex;
     justify-content: space-between;
     margin-top: 31.5px;
     height: 12px;
   }
+
   &__out {
     align-self: center;
     margin-right: 2px;
   }
+
   &__price {
-    @include intermediate-text($fs: 12px, $lh: 14px);
     margin-top: 5.6px;
+
+    @include intermediate-text($fs: 12px, $lh: 14px);
   }
+
   &__ruls {
     margin-top: 30px;
   }
+
   &__checkbox {
     padding-top: 12px;
   }
+
   &__rich {
     margin-top: 32px;
   }
+
   &__rich-button {
     padding-top: 2px;
   }
+
   &__medium-drop {
     margin-top: 29.4px;
   }
+
   &__checkbox-list {
     margin-top: 29.5px;
   }
 }
-
-//    *****     ///
 
 .room-search__container {
   display: flex;
@@ -59,11 +64,14 @@
   column-gap: 11.5px;
   margin-top: 22px;
 }
+
 .room-search__pagination {
-  @include flex-column-center;
   margin-top: 40px;
   margin-right: 15px;
+
+  @include flex-column-center;
 }
+
 .room-search__lux {
   margin-left: 7px;
 }

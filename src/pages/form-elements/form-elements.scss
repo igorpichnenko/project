@@ -3,13 +3,11 @@
 .form-elements {
   display: flex;
   flex-wrap: wrap;
-  @include container;
-  padding: 9.73% 9.73% 0 9.73%;
+
+  @include container(9.75%, 9.73%, 0, 9.77%);
 }
 
 .column-one {
-  margin-left: 0.7px;
-  margin-top: 0.5px;
 
   &__item {
     display: flex;
@@ -30,7 +28,7 @@
   }
 
   &__dropdown {
-    margin-top: 19.5px;
+    margin-top: 20px;
     margin-bottom: 23.5px;
     width: 320px;
   }
@@ -52,6 +50,7 @@
       margin-left: 20px;
     }
   }
+
   &__iMask {
     width: 320px;
   }
@@ -64,6 +63,7 @@
     margin-top: 40.8px;
     margin-bottom: 100.5px;
   }
+
   &__drop-medium {
     margin-top: 20.5px;
     display: flex;
@@ -73,6 +73,7 @@
   &__checkbox {
     margin-top: 171px;
   }
+
   &__checkbox-list {
     margin-top: 47.5px;
   }
@@ -81,6 +82,7 @@
 .column-one ~ * {
   margin-left: 10.9%;
 }
+
 .column-two {
   margin-top: 3.6px;
 
@@ -92,6 +94,7 @@
     margin-top: 43px;
     margin-bottom: 12px;
   }
+
   &__radio-button {
     margin-bottom: 40.3px;
 
@@ -99,6 +102,7 @@
       margin-left: 17px;
     }
   }
+
   &__toggle {
     margin-top: 15px;
     margin-bottom: 45.5px;
@@ -107,6 +111,7 @@
       margin-top: 14px;
     }
   }
+
   &__like {
     display: flex;
     margin-top: 15px;
@@ -116,6 +121,7 @@
       margin-left: 10px;
     }
   }
+
   &__rate {
     display: flex;
     margin-top: 17px;
@@ -125,12 +131,15 @@
       margin-left: 20px;
     }
   }
+
   &__dropdown {
     width: 320px;
   }
+
   &__rich {
     margin-top: 256px;
   }
+
   &__rich-button {
     margin-top: 16px;
     margin-left: 1px;
@@ -150,10 +159,12 @@
     display: flex;
     justify-content: space-between;
   }
+
   &__out {
     align-self: center;
     margin-right: 1.5px;
   }
+
   &__title-btn {
     margin-top: 36px;
   }
@@ -165,6 +176,7 @@
       margin-left: 15px;
     }
   }
+
   &__button-center {
     margin-top: 30px;
     display: flex;
@@ -188,25 +200,29 @@
       margin-left: 21px;
     }
   }
+
   &__pagination-title {
     margin-top: 40px;
     margin-left: 1px;
   }
+
   &__pagination-text {
     margin-left: 5px;
   }
+
   &__pagination {
     margin-top: 16px;
     margin-left: 1px;
     margin-bottom: 234px;
   }
+
   &__bullet {
     margin-top: 256px;
   }
 
   &__bullet-list {
-    margin-top: 13px;
-    margin-left: 0.5px;
+    margin-top: 13.5px;
+    margin-left: .5px;
   }
 }
 

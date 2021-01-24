@@ -1,9 +1,9 @@
 @import '../../scss/_mixin';
 
 .headers-footers {
-  @include container;
   background-color: $grey;
-  padding: 9.75% 0 0 0;
+
+  @include container(9.75%, 0, 0, 0);
 
   & > * + * {
     margin-top: 40px;
@@ -13,6 +13,7 @@
     background-color: white;
     box-shadow: $shadow-5;
   }
+
   &__container {
     @include flex-center;
   }
@@ -23,6 +24,7 @@
 
   &__small {
     box-shadow: $shadow-5;
+
     @include flex-center;
   }
 }

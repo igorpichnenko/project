@@ -1,5 +1,5 @@
 mixin input(options)
-  - const { inType, mods = "standart", text = "Email", button, mod, data} = options;
+  - const { inType, mods = "standart", text = "Email", button, mod, data } = options;
   -
     let modList = mods.split(',')
     let allMods = ''
@@ -9,6 +9,11 @@ mixin input(options)
     })
 
   .input
-    input.input__input(type=inType, placeholder=text, class=allMods data-date-format=data)
+    input.input__input(
+      type=inType,
+      placeholder=text,
+      class=allMods,
+      data-date-format=data
+    )
     if button
       button(class=mod, type='submit')= button

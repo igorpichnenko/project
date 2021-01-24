@@ -8,12 +8,14 @@
   margin-top: 2px;
 
   &__text {
-    @include intermediate-text($fs: 14px, $lh: 18px);
     margin-right: 3px;
+
+    @include intermediate-text($fs: 14px, $lh: 18px);
   }
 
   &__number {
-    @include intermediate-text($fw: bold, $fs: 14px, $lh: 18px);
     margin-right: 3.5px;
+
+    @include intermediate-text($fw: bold, $fs: 14px, $lh: 18px);
   }
 }

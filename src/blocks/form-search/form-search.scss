@@ -4,6 +4,7 @@
   box-shadow: $shadow-02;
   background-color: #fff;
 }
+
 .search-container {
   padding-left: 30px;
   padding-top: 40px;
@@ -12,6 +13,7 @@
     display: flex;
     margin-top: 22.5px;
   }
+
   &__title > * + * {
     margin-left: 95px;
   }
@@ -19,6 +21,7 @@
   &__calendar {
     display: flex;
   }
+
   &__calendar > * + * {
     margin-left: 20px;
   }
@@ -28,6 +31,7 @@
     margin-bottom: 31px;
     width: 320px;
   }
+
   &__button {
     margin-left: 28.7px;
   }

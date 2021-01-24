@@ -5,15 +5,18 @@
   &* {
     box-sizing: border-box;
   }
+
   &__input {
     position: absolute;
     z-index: -1;
     opacity: 0;
     margin: 10px 0 0 7px;
   }
+
   &__input:checked + .radio__text:after {
     opacity: 1;
   }
+
   &__input:checked + .radio__text:before {
     border: $purple-border;
   }
@@ -30,8 +33,10 @@
     position: relative;
     padding: 0 0 0 30px;
     cursor: pointer;
+
     @include body-text($dark50);
   }
+
   &__text:before {
     box-sizing: border-box;
     content: '';
@@ -44,6 +49,7 @@
     border-radius: 50%;
     background: #fff;
   }
+
   &__text:after {
     box-sizing: border-box;
     content: '';

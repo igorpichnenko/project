@@ -2,14 +2,25 @@
   text-decoration: none;
   color: inherit;
 }
+
 .footer-navigation__list:nth-last-child(-n + 4) {
   margin-bottom: 21px;
 }
+
 .footer-navigation__list:nth-last-child(-n + 4) {
   @include intermediate-text;
 }
+
 .footer-navigation__list:nth-child(1) {
   margin-bottom: 21.8px;
-  @include small-text;
   text-transform: uppercase;
+
+  @include small-text;
+}
+
+.footer-navigation__list {
+
+  &:hover {
+    @include intermediate-text(bold, $dark75);
+  }
 }

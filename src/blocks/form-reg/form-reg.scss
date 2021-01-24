@@ -4,18 +4,22 @@
   box-shadow: $shadow-02;
   background-color: #fff;
 }
+
 .reg-container {
   padding-top: 40px;
   padding-left: 30px;
   width: 320px;
+
   &__input {
     margin-top: 21px;
     margin-bottom: 3px;
   }
+
   &__toggle {
     margin-bottom: 25px;
     display: flex;
   }
+
   &__radio {
     display: flex;
     margin-bottom: 22px;
@@ -34,17 +38,21 @@
     margin-top: 28.5px;
     display: flex;
     align-items: center;
+
     & > * + * {
       margin-left: 35.8px;
     }
   }
+
   &__data-in {
     margin-bottom: 9.8px;
   }
+
   &__data-in > * + *,
   &__input > * + * {
     margin-top: 10px;
   }
+
   &__text {
     @include intermediate-text($fs: 14px, $lh: 18px, $col: #000) white-space:
       nowrap;

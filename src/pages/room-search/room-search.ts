@@ -6,5 +6,5 @@ import '../../components/pagination/pagination';
 import '../../components/checkbox-list/checkbox-list';
 import '../../scss/main.scss';
 import './room-search.scss';
-// import '../../pixel.js'
+import '../../../pixel';
 import '../../blocks/header/header-init';
