@@ -1,30 +1,6 @@
-.datepicker-box {
+.js-datepicker-start,
+.js-datepicker-end {
   width: 150px;
-  position: relative;
-}
-.datepicker {
-  // display: none;
-}
-.dat {
-  background-color: transparent;
-}
-.ac {
-  display: block;
-}
-.datepicker-box:after {
-  @include material-font($lh: 24px, $bg: $dark50);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
-  cursor: pointer;
-  pointer-events: none;
-}
-
-.datepickers-container {
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .datepicker {

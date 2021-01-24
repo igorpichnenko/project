@@ -9,7 +9,7 @@ mixin form-reg(mod='' + "border,content-size,large")
         +radio("Мужчина",'man','check')
         +radio('Женщина','man')
       +title({title:'Дата рождения'})
-      +input({inType:'text',text:'ДД.ММ.ГГГГ'})
+      +input({mods: 'standart,mask',inType: 'text',text: 'ДД.ММ.ГГГГ'})
       .reg-container__data
         +title({title:'Данные для входа в сервис'})
       .reg-container__data-in

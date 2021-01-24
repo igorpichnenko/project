@@ -1,7 +1,7 @@
-mixin dropdown({mod="",modSect="",title="Сколько гостей",modBtn,name,items = [{ title, name, number, }]})
+mixin dropdown({mod="",modSect="",title="Сколько гостей",modBtn,name,defaultTitle="Сколько гостей",items = [{ title, name, number, }]})
   .dropdown(data-name=name, data-default="" + title)
     .dropdown__section(class="" + modSect)
-      h3.dropdown__title
+      h3.dropdown__title= defaultTitle
       button.dropdown__arrow(type='button') expand_more
 
     .dropdown__menu(class="" + mod)

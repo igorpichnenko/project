@@ -6,8 +6,10 @@ mixin form-search
       .search-container__title
         +title({title:'Прибытие'})
         +title({title:'Выезд'})
-      .search-container__calendar
-        +datepicker-dabl
+      .search-container__calendar.js-datepicker-container
+        +datepicker
+        +datepicker({mods: "filter js-datepicker-end"})
+
       .search-container__dropdown
         +title({title:'Гости'})
         +dropdown({ name: 'room',items: [ { title: 'взрослые'}, { title: 'дети' }, { title: 'младенцы'}, ], })

@@ -1,155 +1,40 @@
 import 'air-datepicker';
 import 'air-datepicker/src/sass/datepicker.scss';
 
-$('.js-datepicker-dabl').datepicker({
-  range: true,
-  multipleDates: '2',
-  multipleDatesSeparator: ' - ',
-  clearButton: true,
-  prevHtml: '<i class="datepicker--icon material-icons">arrow_back</i>',
-  nextHtml: '<i class="datepicker--icon material-icons">arrow_forwards</i>',
-  navTitles: {
-    days: 'MM  <i>yyyy</i>',
-    months: 'yyyy',
-    years: 'yyyy1 - yyyy2',
-  },
+$('.js-datepicker-container').each(function findCalendar(this: HTMLDivElement) {
+  const item = $(this);
 
-  language: {
-    days: [
-      'Воскресенье',
-      'Понедельник',
-      'Вторник',
-      'Среда',
-      'Четверг',
-      'Пятница',
-      'Суббота',
-    ],
-    daysShort: ['Вос', 'Пон', 'Вто', 'Сре', 'Чет', 'Пят', 'Суб'],
-    daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-    months: [
-      'Январь',
-      'Февраль',
-      'Март',
-      'Апрель',
-      'Май',
-      'Июнь',
-      'Июль',
-      'Август',
-      'Сентябрь',
-      'Октябрь',
-      'Ноябрь',
-      'Декабрь',
-    ],
-    monthsShort: [
-      'Янв',
-      'Фев',
-      'Мар',
-      'Апр',
-      'Май',
-      'Июн',
-      'Июл',
-      'Авг',
-      'Сен',
-      'Окт',
-      'Ноя',
-      'Дек',
-    ],
-    clear: 'Очистить',
-    dateFormat: 'dd.mm.yyyy',
-    timeFormat: 'hh:ii',
-    firstDay: 1,
-  },
+  const dateFrom = item.find('.js-datepicker-start');
+  const dateTo = item.find('.js-datepicker-end');
 
-  onSelect(fd: any) {
-    $('.js-datepicker-start').val(fd.split('-')[0], [1]);
-    $('.js-datepicker-end').val(fd.split('-')[1]);
-  },
+  item.find('.js-datepicker').datepicker({
+    clearButton: true,
+    range: true,
+    multipleDatesSeparator: ' - ',
+    prevHtml: '<i class="datepicker--icon material-icons">arrow_back</i>',
+    nextHtml: '<i class="datepicker--icon material-icons">arrow_forwards</i>',
+    navTitles: {
+      days: 'MM  <i>yyyy</i>',
+    },
+
+    onSelect(data: string) {
+      dateFrom.val(data.split('-')[0]);
+      dateTo.val(data.split('-')[1]);
+    },
+  });
+
+  const datep = item.find('.js-datepicker').data('datepicker');
+
+  const datepEl = datep.$datepicker;
+
+  const applyButton = $("<span class='datepicker--button'>Применить</span>");
+
+  applyButton.click(() => {
+    if (datep.selectedDates.length < 2) return;
+    datep.hide();
+  });
+
+  datepEl.find('.datepicker--buttons').append(applyButton);
+  dateTo.click(() => datep.show());
+  dateFrom.click(() => datep.show());
 });
-
-$('.js-datepicker-new').datepicker({
-  range: true,
-  multipleDatesSeparator: ' - ',
-  multipleDates: '2',
-  prevHtml: '<i class="datepicker--icon material-icons">arrow_back</i>',
-  nextHtml: '<i class="datepicker--icon material-icons">arrow_forwards</i>',
-  navTitles: {
-    days: 'MM  <i>yyyy</i>',
-    months: 'yyyy',
-    years: 'yyyy1 - yyyy2',
-  },
-
-  clearButton: true,
-  language: {
-    days: [
-      'Воскресенье',
-      'Понедельник',
-      'Вторник',
-      'Среда',
-      'Четверг',
-      'Пятница',
-      'Суббота',
-    ],
-    daysShort: ['Вос', 'Пон', 'Вто', 'Сре', 'Чет', 'Пят', 'Суб'],
-    daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-    months: [
-      'Январь',
-      'Февраль',
-      'Март',
-      'Апрель',
-      'Май',
-      'Июнь',
-      'Июль',
-      'Август',
-      'Сентябрь',
-      'Октябрь',
-      'Ноябрь',
-      'Декабрь',
-    ],
-    monthsShort: [
-      'Янв',
-      'Фев',
-      'Мар',
-      'Апр',
-      'Май',
-      'Июн',
-      'Июл',
-      'Авг',
-      'Сен',
-      'Окт',
-      'Ноя',
-      'Дек',
-    ],
-    clear: 'Очистить',
-    dateFormat: 'dd.mm',
-    timeFormat: 'hh:ii',
-    firstDay: 1,
-  },
-});
-
-/*
-
-let calendar = document.querySelectorAll('.datepicker');
- calendar.forEach(function (item) {
-
-   item.querySelector('.datepicker--buttons').insertAdjacentHTML('beforeend', `
-        <span class="datepicker__button">Применить
-        </span>`)
-
-        let btn = item.querySelector('.datepicker__button')
-
-      btn.addEventListener('click', function() {
-    item.classList.toggle('ac')
-
-})
-    let calen = document.querySelector('.box')
-
-     let inp = calen.querySelector('.dat')
-
-  inp.addEventListener('click', function(){
-
-    item.classList.toggle('ac')
-
-  })
- })
-
-   */

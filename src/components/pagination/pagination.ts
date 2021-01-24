@@ -13,7 +13,7 @@ function onLoad() {
         }
 
         return result;
-      })();
+      }());
 
       const options: any = {
         activeClassName: 'pagination__link_active',
@@ -29,7 +29,7 @@ function onLoad() {
       };
 
       container.pagination(options);
-    })();
+    }());
   });
 }
 window.addEventListener('load', onLoad);

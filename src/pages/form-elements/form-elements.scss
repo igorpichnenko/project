@@ -22,6 +22,7 @@
 
   &__email {
     margin-bottom: 20.3px;
+    width: 320px;
   }
 
   &__title_focus {
@@ -31,6 +32,7 @@
   &__dropdown {
     margin-top: 19.5px;
     margin-bottom: 23.5px;
+    width: 320px;
   }
 
   &__date-title {
@@ -49,6 +51,9 @@
     & > * + * {
       margin-left: 20px;
     }
+  }
+  &__iMask {
+    width: 320px;
   }
 
   &__medium {

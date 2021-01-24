@@ -1,15 +1,2 @@
-mixin datepicker-dabl(text2='ДД.ММ.ГГГГ',text='ДД.ММ.ГГГГ')
-  .datepicker-box
-    input.js-datepicker-dabl.input_filter.js-datepicker-start(
-      placeholder="" + text,
-      type='text',
-      data-position='bottom left'
-    )
-  .datepicker-box
-    input.text.js-datepicker-end.input_filter.js-datepicker-dabl(
-      placeholder="" + text2,
-      data-position='bottom center'
-    )
-
-mixin datepicker
-  .js-datepicker-dabl
+mixin datepicker({text="ДД.ММ.ГГГГ",mods="filter js-datepicker js-datepicker-start",data}={})
+  +input({mods: mods,inType: 'text',text: text,button: 'expand_more',mod:"input__button_arrow",data: data})
