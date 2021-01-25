@@ -1,10 +1,10 @@
 extends ../../layouts/rooms
 include ../../blocks/form-search/form-search
-include ../../components/title/title
-include ../../components/button/button
-include ../../components/calendar/calendar
-include ../../components/dropdown/dropdown
-include ../../components/dropdown-counters/dropdown-counters
+include ../../blocks/title/title
+include ../../blocks/button/button
+include ../../blocks/calendar/calendar
+include ../../blocks/dropdown/dropdown
+include ../../blocks/dropdown-counters/dropdown-counters
 
 block title
   title Landing
@@ -15,7 +15,7 @@ block head
 block content
   .landing-container
     .landing-container__items
-      +form-search
+      //+form-search
       .landing-container__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
 
 block footer

@@ -79,40 +79,4 @@
 
     @include intermediate-text;
   }
-
-  &__burger-menu {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  &__burger-menu &__burger-item {
-    background-color: $purple;
-    width: 28px;
-    height: 2.8px;
-    margin: 3.64px 0;
-    transition: all .4s ease;
-    transform-origin: 0 0;
-    z-index: 2;
-    display: none;
-    border: unset;
-    outline: none;
-
-    @media (max-width: 970px) {
-      display: block;
-    }
-  }
-
-  &__burger-open &__burger-item_1 {
-    transform: rotate(45deg) translate(1px, -1px);
-  }
-
-  &__burger-open &__burger-item_2 {
-    transform: scaleX(0);
-  }
-
-  &__burger-open &__burger-item_3 {
-    transform: rotate(-45deg) translate(1px, 0);
-  }
 }

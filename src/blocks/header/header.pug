@@ -1,18 +1,15 @@
 mixin header(options={})
-  - let { login = true, user = "Юлий Цезарь" } = options;
+  - let { login = true, user = "Юлий Цезарь", list } = options;
 
   header.header
     .header-main
       .header-main__container
         .header-main__logo
           +logo
-          .header-main__burger-menu
-            .header-main__burger-item.header-main__burger-item_1
-            .header-main__burger-item.header-main__burger-item_2
-            .header-main__burger-item.header-main__burger-item_3
+          +burger
 
-        .header-main__nav
-          +header-nav
+        nav.header-main__nav
+          +header-nav(list)
 
           .header-main__items
 

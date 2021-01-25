@@ -1,20 +1,10 @@
-mixin title-options
-  .uikit-content
-    .uikit-content__title.uikit-content__title_h1 H1
+mixin title-options(types)
 
-    .uikit-content__text.uikit-content__text_h1 This one is the sub-section or widget title
+  .title-options
+    each item in types
 
-  .uikit-content
-    .uikit-content__title.uikit-content__title_h2 H2
-
-    .uikit-content__text.uikit-content__text_texth2 Next one is the item title inside widgets
-
-  .uikit-content
-    .uikit-content__title.uikit-content__title_h3 H3
-
-    .uikit-content__text.uikit-content__text_texth3 This is a label or CTA text
-
-  .uikit-content
-    .uikit-content__title.uikit-content__title_body Body
-
-    .uikit-content__text.uikit-content__text_textbody This is the body text which is used for most <br>of the design, like paragraphs, lists, etc.
+      - const { title, text, className } = item;
+      
+      .title-options__container
+        div(class=`title-options__title title-options__title_${className}`)=title
+        div(class=`title-options__text title-options__text_${className}`)=text

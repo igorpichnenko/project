@@ -1,12 +1,13 @@
 include ../blocks/header/header
 include ../blocks/footer/footer
 include ../blocks/footer-small/footer-small
-include ../components/logo/logo
-include ../components/button/button
-include ../components/header-navigation/header-navigation
-include ../components/footer-navigation/footer-navigation
-include ../components/icon/icon
-include ../components/input/input
+include ../blocks/logo/logo
+include ../blocks/button/button
+include ../blocks/header-navigation/header-navigation
+include ../blocks/footer-navigation/footer-navigation
+include ../blocks/icon/icon
+include ../blocks/input/input
+include ../blocks/burger/burger
 
 doctype html
 html(lang='ru')
@@ -20,17 +21,19 @@ block title
 block head
 
 body
+-
+    data = require('../../layouts/rooms.json');
 
-+header
+//+header(data.nav)
 block content
 
 block footer
 
 footer.footer-rooms
   .footer-rooms__large
-    +footer
+    //+footer
 
   .footer-rooms__small
-    +footer-small
+    //+footer-small
 
 block script

@@ -2,12 +2,13 @@ extends ../../layouts/base
 include ../../blocks/header/header
 include ../../blocks/footer/footer
 include ../../blocks/footer-small/footer-small
-include ../../components/button/button
-include ../../components/header-navigation/header-navigation
-include ../../components/logo/logo
-include ../../components/footer-navigation/footer-navigation
-include ../../components/input/input
-include ../../components/icon/icon
+include ../../blocks/button/button
+include ../../blocks/header-navigation/header-navigation
+include ../../blocks/logo/logo
+include ../../blocks/footer-navigation/footer-navigation
+include ../../blocks/input/input
+include ../../blocks/icon/icon
+include ../../blocks/burger/burger
 
 block title
   title color-type
@@ -16,12 +17,16 @@ block head
   link(rel='stylesheet', href='headers-footers.css')
 
 block body
+
+  -
+    data = require('./headers-footers.json');
+    
   .headers-footers
     .headers-footers__background
-      +header
+      +header(data.nav)
 
     .headers-footers__background
-      +header({login: false})
+      +header(data.login)
 
     .headers-footers__background
       .headers-footers__large

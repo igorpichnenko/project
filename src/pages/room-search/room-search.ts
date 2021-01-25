@@ -1,10 +1,10 @@
-import '../../components/calendar/calendar';
-import '../../components/dropdown/dropdown-init';
-import '../../components/slick/slick';
-import '../../components/range-slider/range-slider';
-import '../../components/pagination/pagination';
-import '../../components/checkbox-list/checkbox-list';
+import '../../blocks/calendar/calendar';
+import '../../blocks/dropdown/dropdown-init';
+import '../../blocks/slick/slick';
+import '../../blocks/range-slider/range-slider';
+import '../../blocks/pagination/pagination';
+import '../../blocks/checkbox-list/checkbox-list';
 import '../../scss/main.scss';
 import './room-search.scss';
 import '../../../pixel';
-import '../../blocks/header/header-init';
+import '../../blocks/burger/burger';

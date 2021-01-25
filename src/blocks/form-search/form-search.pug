@@ -1,17 +1,20 @@
-mixin form-search
+mixin form-search({largeTitle,arrival,departure,datepicker,guests,btn,dropdown})
+
   form.search
     .search-container
       .search-container__wrap-title
-        +title({title:'Найдём номера под ваши пожелания',mods:'large'})
+        +title(largeTitle)
       .search-container__title
-        +title({title:'Прибытие'})
-        +title({title:'Выезд'})
+        +title(arrival)
+        +title(departure)
       .search-container__calendar.js-datepicker-container
         +datepicker
-        +datepicker({mods: "filter js-datepicker-end"})
+        +datepicker(datepicker)
 
       .search-container__dropdown
-        +title({title:'Гости'})
-        +dropdown({ name: 'room',items: [ { title: 'взрослые'}, { title: 'дети' }, { title: 'младенцы'}, ], })
+        +title(guests)
+        +dropdown(dropdown)
     .search-container__button
-      +button({text: 'Подобрать номер', mods: 'arrow'})
+      +button(btn)   
+      
+    

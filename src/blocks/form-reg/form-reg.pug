@@ -1,25 +1,27 @@
-mixin form-reg(mod='' + "border,content-size,large")
+mixin form-reg(options)
+  - const {regAcount,name,surname,radioMan,radioWoman,birthday,data,title,button, password,email,text,btnReg} = options
+
   form.registration
     .reg-container
-      +title({title:'Регистрация аккаунта',mods:'large'})
+      +title(regAcount)
       .reg-container__input
-        +input({inType:'text',text:'Имя'})
-        +input({inType:'text',text: 'Фамилия'})
+        +input(name)
+        +input(surname)
       .reg-container__radio
-        +radio("Мужчина",'man','check')
-        +radio('Женщина','man')
-      +title({title:'Дата рождения'})
-      +input({mods: 'standart,mask',inType: 'text',text: 'ДД.ММ.ГГГГ'})
+        +radio(radioMan)
+        +radio(radioWoman)
+      +title(birthday)
+      +input(data)
       .reg-container__data
-        +title({title:'Данные для входа в сервис'})
+        +title(title)
       .reg-container__data-in
-        +input({inType:"email"})
-        +input({inType: 'password',text:'Пароль'})
+        +input(email)
+        +input(password)
       .reg-container__toggle
         +toggle
-      +button({text: 'Перейти к оплате', mods: 'arrow'})
+      +button(button)
       .reg-container__sign-in
         .reg-container__wrap
-          .reg-container__text Уже есть аккаунт на Toxin
+          .reg-container__text= text
         .reg-container__button
-          +button({text: 'Войти', mods: mod})
+          +button(btnReg)

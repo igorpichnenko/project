@@ -9,11 +9,16 @@ block head
   link(rel='stylesheet', href='color-type.css')
 
 block body
+
+  -
+    data = require('./color-type.json');
+    
   .color-type
-    .color-type__vars
-      +color-options
-    .color-type__title
-      +title-options
+    .color-type__color
+      +color-options(data.color)
+    .color-type__options
+     +title-options(data.types)
+     
 
 block script
   script(src='./color-type.js')

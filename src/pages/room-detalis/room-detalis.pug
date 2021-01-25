@@ -1,17 +1,17 @@
 extends ../../layouts/rooms
-include ../../components/pie/pie
-include ../../components/comments/comments
-include ../../components/title/title
-include ../../components/calendar/calendar
-include ../../components/dropdown/dropdown
-include ../../components/button/button
-include ../../components/like/like
+include ../../blocks/pie/pie
+include ../../blocks/comments/comments
+include ../../blocks/title/title
+include ../../blocks/calendar/calendar
+include ../../blocks/dropdown/dropdown
+include ../../blocks/button/button
+include ../../blocks/like/like
 include ../../blocks/form-lux/form-lux
-include ../../components/reviews/reviews
-include ../../components/price/price
-include ../../components/bullet-list/bullet-list
-include ../../components/person-comment/person-comment
-include ../../components/dropdown-counters/dropdown-counters
+include ../../blocks/reviews/reviews
+include ../../blocks/price/price
+include ../../blocks/bullet-list/bullet-list
+include ../../blocks/person-comment/person-comment
+include ../../blocks/dropdown-counters/dropdown-counters
 
 block title
   title Landing
@@ -52,7 +52,7 @@ block content
         .room-detalis__paragraf Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
     .room-detalis__form
-      +formlux('number-container__lux room-detalis__formlux','888','9 990₽')
+      //+formlux('number-container__lux room-detalis__formlux','888','9 990₽')
 
 block footer
 block script

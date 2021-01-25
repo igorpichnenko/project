@@ -1,6 +1,6 @@
-import '../../components/calendar/calendar';
-import '../../components/dropdown/dropdown-init';
+import '../../blocks/calendar/calendar';
+import '../../blocks/dropdown/dropdown-init';
 import '../../scss/main.scss';
 import './landing.scss';
 import '../../../pixel';
-import '../../blocks/header/header-init';
+import '../../blocks/burger/burger';

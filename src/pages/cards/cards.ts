@@ -1,7 +1,7 @@
-import '../../components/calendar/calendar';
-import '../../components/dropdown/dropdown-init';
+import '../../blocks/calendar/calendar';
+import '../../blocks/dropdown/dropdown-init';
 import '../../scss/main.scss';
 import './cards.scss';
-import '../../components/slick/slick';
+import '../../blocks/slick/slick';
 import '../../../pixel';
-import '../../components/iMask/iMask';
+import '../../blocks/iMask/iMask';

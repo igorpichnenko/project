@@ -1,10 +1,10 @@
 extends ../../layouts/rooms
 include ../../blocks/form-reg/form-reg
 include ../../blocks/form-sign-in/form-sign-in
-include ../../components/button/button
-include ../../components/title/title
-include ../../components/radio/radio
-include ../../components/toggle/toggle
+include ../../blocks/button/button
+include ../../blocks/title/title
+include ../../blocks/radio/radio
+include ../../blocks/toggle/toggle
 
 block title
   title Landing
@@ -20,7 +20,7 @@ block content
     .registration-container__signin
       +form-signin(data.formSignIn)
     .registration-container__reg.registration-container_active
-      +form-reg('signIn,border,content-size,large')
+      //+form-reg('signIn,border,content-size,large')
 block footer
 block script
   script(src='./registration.js')

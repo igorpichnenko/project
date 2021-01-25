@@ -1,10 +1,10 @@
-import '../../components/dropdown/dropdown-init';
-import '../../components/calendar/calendar';
-import '../../components/iMask/iMask';
+import '../../blocks/dropdown/dropdown-init';
+import '../../blocks/calendar/calendar';
+import '../../blocks/iMask/iMask';
 import '../../scss/main.scss';
 import './form-elements.scss';
 import '../../../pixel';
-import '../../components/range-slider/range-slider';
-import '../../components/pagination/pagination';
-import '../../components/checkbox-list/checkbox-list';
-import '../../components/like/like';
+import '../../blocks/range-slider/range-slider';
+import '../../blocks/pagination/pagination';
+import '../../blocks/checkbox-list/checkbox-list';
+import '../../blocks/like/like';

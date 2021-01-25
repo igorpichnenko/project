@@ -1,0 +1,5 @@
+mixin footer-nav(className,...items)
+  ul(class="" + className)
+    each item in items
+      li.footer-navigation__list= item
+        a.footer-navigation__link(href='/mock-address/change-me')

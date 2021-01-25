@@ -1,22 +1,22 @@
-mixin formlux(classlux,number="888",price="9 990₽",lux="люкс")
-  .formlux-box
+mixin formlux({classlux,number="888",price="9 990₽",lux="люкс",arrival,departure,startData,endData,guests,dropdown,btn,text,cost})
+  form.formlux-box
     .lux-container
       +price(number,price,lux,className,classlux)
       .lux-container__title
-        +title({title:'Прибытие'})
-        +title({title:'Выезд'})
+        +title(arrival)
+        +title(departure)
       .lux-container__calendar.js-datepicker-container
-        +datepicker({text: "19.08.2019"})
-        +datepicker({text: "23.08.2019",mods: "filter js-datepicker-end"})
+        +datepicker(startData)
+        +datepicker(endData)
 
-      +title({title:'гости'})
-      +dropdown({ name: 'room',items: [ { title: 'взрослые',number: '2'}, { title: 'дети', number: '1'}, { title: 'младенцы'}, ], })
+      +title(guests)
+      +dropdown(dropdown)
       .formlux-main 
         .formlux-main__price
-          span.formlux-main__text.formlux-main__text_left 9 990₽ х 4 суток
+          span.formlux-main__text.formlux-main__text_left= cost
           span.formlux-main__text 39 960₽
         .formlux-main__price
-          span.formlux-main__text.formlux-main__text_left Сбор за услуги: скидка 2 179₽
+          span.formlux-main__text.formlux-main__text_left= text
           span.formlux-main__label.formlux-main__label_top i
           span.formlux-main__text 0₽
         .formlux-main__price.bottom
@@ -29,4 +29,4 @@ mixin formlux(classlux,number="888",price="9 990₽",lux="люкс")
         .formlux-footer__border
         .formlux-footer__text 38 081₽
     .lux-container__button
-      +button({text: 'Забронировать', mods: 'arrow '})
+      +button(btn)

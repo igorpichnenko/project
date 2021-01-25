@@ -1,6 +1,6 @@
 import '../../scss/main.scss';
 import './registration.scss';
-import '../../blocks/header/header-init';
+import '../../blocks/burger/burger';
 import '../../../pixel';
-import '../../components/logic-room-reg/logic-room-reg';
-import '../../components/iMask/iMask';
+import '../../blocks/logic-room-reg/logic-room-reg';
+import '../../blocks/iMask/iMask';

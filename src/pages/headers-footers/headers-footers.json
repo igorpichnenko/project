@@ -1,0 +1,65 @@
+{
+  
+  "nav": {
+    
+    "list":[
+      {
+      "title": "О нас",
+      "className": "about"
+      },
+      {
+      "title": "Услуги",
+      "className": "services"
+      },
+      {
+      "title": "Вакансии",
+      "className": "vacancies"
+      },
+      {
+      "title": "Новости",
+      "className": "news"
+      },
+      {
+      "title": "Соглашения",
+      "className": "agree"
+      }
+        ]
+  },
+  
+  "login": {
+    
+    
+    "login": false,
+    
+    
+    "list":[
+      {
+      "title": "О нас",
+      "className": "about"
+      },
+      {
+      "title": "Услуги",
+      "className": "services"
+      },
+      {
+      "title": "Вакансии",
+      "className": "vacancies"
+      },
+      {
+      "title": "Новости",
+      "className": "news"
+      },
+      {
+      "title": "Соглашения",
+      "className": "agree"
+      }
+        ]
+  }
+  
+  
+  
+  
+  
+  
+  
+}

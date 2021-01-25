@@ -1,16 +1,19 @@
-.uikit-items {
-  display: flex;
-  align-items: center;
-}
+.color-options {
 
-.uikit-item {
-
-  &:not(first-child) {
-    margin-bottom: 20px;
+  &__items {
+    display: flex;
+    align-items: center;
   }
 
-  &:nth-child(2) {
-    margin-left: 40px;
+  &__item {
+
+    &:not(first-child) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 40px;
+    }
   }
 
   &__title {
@@ -32,33 +35,33 @@
     width: 70px;
     height: 70px;
     border-radius: 6px;
+  }
+  
+  &__block_dark100 {
+    background-color: $dark100;
+  }
 
-    &_dark100 {
-      background-color: $dark100;
-    }
+  &__block_dark75 {
+    background-color: $dark75;
+  }
 
-    &_dark75 {
-      background-color: $dark75;
-    }
+  &__block_dark50 {
+    background-color: $dark50;
+  }
 
-    &_dark50 {
-      background-color: $dark50;
-    }
+  &__block_dark25 {
+    background-color: $dark25;
+  }
 
-    &_dark25 {
-      background-color: $dark25;
-    }
+  &__block_dark5 {
+    background-color: $dark5;
+  }
 
-    &_dark5 {
-      background-color: $dark5;
-    }
+  &__block_purple {
+    background-color: $purple;
+  }
 
-    &_purple {
-      background-color: $purple;
-    }
-
-    &_green {
-      background-color: $green;
-    }
+  &__block_green {
+    background-color: $green;
   }
 }

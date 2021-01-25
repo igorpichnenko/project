@@ -4,20 +4,20 @@ include ../../blocks/form-lux/form-lux
 include ../../blocks/form-sign-in/form-sign-in
 include ../../blocks/form-reg/form-reg
 include ../../blocks/image-card/image-card
-include ../../components/button/button
-include ../../components/checkbox/checkbox
-include ../../components/radio/radio
-include ../../components/logo/logo
-include ../../components/slick/slick
-include ../../components/calendar/calendar
-include ../../components/title/title
-include ../../components/input/input
-include ../../components/dropdown/dropdown
-include ../../components/toggle/toggle
-include ../../components/rate/rate
-include ../../components/reviews/reviews
-include ../../components/price/price
-include ../../components/dropdown-counters/dropdown-counters
+include ../../blocks/button/button
+include ../../blocks/checkbox/checkbox
+include ../../blocks/radio/radio
+include ../../blocks/logo/logo
+include ../../blocks/slick/slick
+include ../../blocks/calendar/calendar
+include ../../blocks/title/title
+include ../../blocks/input/input
+include ../../blocks/dropdown/dropdown
+include ../../blocks/toggle/toggle
+include ../../blocks/rate/rate
+include ../../blocks/reviews/reviews
+include ../../blocks/price/price
+include ../../blocks/dropdown-counters/dropdown-counters
 
 block title
   title Cards
@@ -31,10 +31,10 @@ block body
 
   .cards
     .cards-one
-      +form-search
-      +form-reg
+      +form-search(data.formSearch)
+      +form-reg(data.formReg)
     .cards-two
-      +formlux
+      +formlux(data.formLux)
       +form-signin(data.formSignIn)
     .cards-three 
       .js-datepicker-container
