@@ -1,4 +1,4 @@
-mixin checkbox-list(mods="",mod="",title="expandable checkbox list")
+mixin checkbox-list({mods="",mod="",title="expandable checkbox list"}={})
   .checkbox-list
     .checkbox-list__container
       span.checkbox-list__button= title
@@ -6,9 +6,9 @@ mixin checkbox-list(mods="",mod="",title="expandable checkbox list")
     .checkbox-list__wrapper(class="" + mod)
       .checkbox-list__indent
 
-      +checkbox('Завтрак')
-      +checkbox('Письменный стол','','check')
-      +checkbox('Стул для кормления','','check')
-      +checkbox('Кроватка','','check')
-      +checkbox('Телевизор')
-      +checkbox('Шампунь')
+      +checkbox({text:'Завтрак'})
+      +checkbox({text:'Письменный стол',check: "check"})
+      +checkbox({text:'Стул для кормления',check: "check"})
+      +checkbox({text:'Кроватка',check: "check"})
+      +checkbox({text:'Телевизор'})
+      +checkbox({text:'Шампунь'})

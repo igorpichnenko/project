@@ -13,10 +13,14 @@ block head
   link(rel='stylesheet', href='landing.css')
 
 block content
+
+  -
+    content = require('./landing.json');
+    
   .landing-container
     .landing-container__items
-      //+form-search
-      .landing-container__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+      +form-search(content.formSearch)
+      .landing-container__slogan= content.text 
 
 block footer
 block script

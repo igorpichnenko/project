@@ -22,59 +22,63 @@ block head
   link(rel='stylesheet', href='room-search.css')
 
 block content
+
+  -
+    content = require('./room-search.json');
+    
   .room-search
     .room-search__aside
-      +title({title:'Даты пребывания в отеле'})
-      .room-search__input
-        +input({mods: 'filter datepicker-new',inType: 'text',text: '19 авг - 23 авг',button: 'expand_more',mod:"input__button_arrow" })
+      +title(content.titleDate)
+      .room-search__input.js-datepicker-container
+        +input(content.filter)
 
       .room-search__dropdown
-        +title({title:'гости'})
-        +dropdown({name: 'room', items: [ { title: 'взрослые', number: '2'}, { title: 'дети', number: '1'}, { title: 'младенцы',number: '1'}, ], })
+        +title(content.guest)
+        +dropdown(content.dropdown)
 
         .room-search__range
-          +title({title:'Диапазон цены'})
+          +title(content.range)
           .room-search__out
             input.range-out.range-start
             input.range-out.range-end
         .room-search__range-slider
           +range-slider
-        .room-search__price Стоймость за сутки пребывания в номере
+        .room-search__price= content.price
 
         .room-search__ruls
-          +title({title:'Правила Дома'})
+          +title(content.rules)
         .room-search__checkbox
-          +checkbox('Можно курить')
-          +checkbox('Можно с питомцами','','check')
-          +checkbox('Можно пригласить гостей (до 10 человек)','checkbox__wrap','check')
+          +checkbox(content.checkOne)
+          +checkbox(content.checkTwo)
+          +checkbox(content.checkThree)
 
         .room-search__rich
-          +title({title:'Доступность'})
+          +title(content.titleBox)
         .room-search__rich-button
-          +checkbox-rich({title: 'Широкий коридор',text:'Ширина коридоров в номере не менее 91 см.'})
-          +checkbox-rich({title: 'Помощник для инвалидов',text:'На 1 этаже вас встретит специалист и проводит до номера',mods:'checkbox-rich__wrap'})
-
+          +checkbox-rich(content.rich)
+          +checkbox-rich(content.richTwo)
+          
         .room-search__medium-drop
-          +title({title:'Удобства номера'})
-          +dropdown({modBtn: 'dropdown__button_hidden', title: 'Сколько спален и кроватей', items: [ { title: 'спальни', name:1,number:2}, { title: 'кровати', name: 1,number:2}, { title: 'ванные комнаты'}, ], })
+          +title(content.titleDrop)
+          +dropdown(content.dropdownMedium)
         .room-search__checkbox-list
-          +checkbox-list("",'','Дополнительные удобства')
+          +checkbox-list(content.checkboxList)
 
     .room-search__cards
-      +title({title:'Номера, которые мы для вас подобрали',mods:'large'})
+      +title(content.title)
       .room-search__container
-        +image-card('888','145','9 990₽','люкс','1','6','7','8','room-1','1','price-container__text_low','price-container__lux room-search__lux')
-        +image-card('840','65','9 900₽','','2','8','9','4','room-2','2','price-container__text_low')
-        +image-card('980','35','8 500₽','люкс','3','4','2','1','room-3','3','price-container__text_low','price-container__lux room-search__lux')
-        +image-card('856','19','7 300₽','','4','1','4','7','room-4','1','price-container__text_low')
-        +image-card('740','44','6 000₽','','5','6','2','1','room-5','2','price-container__text_low')
-        +image-card('982','56','5 800₽','','6','12','11','10','room-6','3','price-container__text_low')
-        +image-card('678','45','5 500₽','','7','8','7','3','room-7','1','price-container__text_low')
-        +image-card('450','39','5 300₽','','8','12','1','2','room-8','2','price-container__text_low')
-        +image-card('350','77','5 000₽','','9','7','4','5','room-9','3','price-container__text_low')
-        +image-card('666','25','5 000₽','','10','8','12','2','room-10','1','price-container__text_low')
-        +image-card('444','15','5 000₽','','11','4','1','12','room-11','3','price-container__text_low')
-        +image-card('352','55','5 000₽','','12','8','9','4','room-12','3','price-container__text_low')
+       +slider-card(content.slider)
+       +slider-card(content.sliderOne)
+       +slider-card(content.sliderTwo)
+       +slider-card(content.sliderThree)
+       +slider-card(content.sliderFour)
+       +slider-card(content.sliderFive)
+       +slider-card(content.sliderSix)
+       +slider-card(content.sliderSeven)
+       +slider-card(content.sliderEight)
+       +slider-card(content.sliderNine)
+       +slider-card(content.sliderTen)
+       +slider-card(content.sliderEleven)
       .room-search__pagination
         +pagination
 block footer

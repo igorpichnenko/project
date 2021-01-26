@@ -1,4 +1,5 @@
 mixin dropdown({mod="",modSect="",title="Сколько гостей",modBtn,name,defaultTitle="Сколько гостей",items = [{ title, name, number, }]})
+
   .dropdown(data-name=name, data-default="" + title)
     .dropdown__section(class="" + modSect)
       h3.dropdown__title= defaultTitle

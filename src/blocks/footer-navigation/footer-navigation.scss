@@ -1,26 +1,37 @@
-.footer-navigation__link {
-  text-decoration: none;
-  color: inherit;
-}
+.footer-navigation {
 
-.footer-navigation__list:nth-last-child(-n + 4) {
-  margin-bottom: 21px;
-}
-
-.footer-navigation__list:nth-last-child(-n + 4) {
-  @include intermediate-text;
-}
-
-.footer-navigation__list:nth-child(1) {
-  margin-bottom: 21.8px;
-  text-transform: uppercase;
-
-  @include small-text;
-}
-
-.footer-navigation__list {
-
-  &:hover {
-    @include intermediate-text(bold, $dark75);
+  &__link {
+    text-decoration: none;
+    color: inherit;
   }
+
+  &__list {
+
+    &:hover {
+      @include intermediate-text(bold, $dark75);
+    }
+  }
+
+  &__list_subscription {
+    margin-top: 17.5px;
+
+    @include body-text;
+  }
+
+  &__list_one {
+    text-transform: uppercase;
+
+    @include small-text;
+  }
+
+  &__list_other, &__list_two {
+    margin-bottom: 21px;
+
+    @include intermediate-text;
+  }
+
+  &__list_two {
+    margin-top: 21.8px;
+  }
+
 }

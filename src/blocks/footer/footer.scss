@@ -22,34 +22,18 @@
 
   &__subscription {
     grid-column: span 3;
-  }
-
-  &__paragraf,
-  &__text {
-    @include body-text;
+    padding-top: 4.5px;
   }
 
   &__paragraf {
     margin-top: 14.5px;
+    
+    @include body-text;
   }
 
   &__input {
     width: 260px;
     margin-top: 22.5px;
-  }
-
-  &__promo,
-  &__title {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  &__promo-list {
-    text-transform: uppercase;
-    margin-bottom: 18.5px;
-    padding-top: 4.5px;
-
-    @include small-text;
   }
 }
 

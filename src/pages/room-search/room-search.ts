@@ -1,4 +1,3 @@
-import '../../blocks/calendar/calendar';
 import '../../blocks/dropdown/dropdown-init';
 import '../../blocks/slick/slick';
 import '../../blocks/range-slider/range-slider';
@@ -8,3 +7,4 @@ import '../../scss/main.scss';
 import './room-search.scss';
 import '../../../pixel';
 import '../../blocks/burger/burger';
+import '../../blocks/calendar/calendar';

@@ -1,5 +1,5 @@
 mixin header(options={})
-  - let { login = true, user = "Юлий Цезарь", list } = options;
+  - let { login = true, user = "Юлий Цезарь", list, button} = options;
 
   header.header
     .header-main
@@ -16,9 +16,9 @@ mixin header(options={})
           if login
             .header-main__button
               .header-main__button.header-main__left-button
-                +button({text: "Войти",mods: 'border,content-size'})
+                +button(button.SigIn)
               .header-main__button.header-main__right-button
-                +button({text: 'Зарегистрироваться'})
+                +button(button.Reg)
 
           else
             .header-main__person= user

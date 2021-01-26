@@ -1,20 +1,20 @@
-mixin form-search({largeTitle,arrival,departure,datepicker,guests,btn,dropdown})
+mixin form-search({data})
 
   form.search
     .search-container
       .search-container__wrap-title
-        +title(largeTitle)
+        +title(data.largeTitle)
       .search-container__title
-        +title(arrival)
-        +title(departure)
+        +title(data.arrival)
+        +title(data.departure)
       .search-container__calendar.js-datepicker-container
         +datepicker
-        +datepicker(datepicker)
+        +datepicker(data.datepicker)
 
       .search-container__dropdown
-        +title(guests)
-        +dropdown(dropdown)
+        +title(data.guests)
+        +dropdown(data.dropdown)
     .search-container__button
-      +button(btn)   
+      +button(data.btn)   
       
     

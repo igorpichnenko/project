@@ -1,5 +1,9 @@
-mixin footer-nav(className,...items)
-  ul(class="" + className)
-    each item in items
-      li.footer-navigation__list= item
-        a.footer-navigation__link(href='/mock-address/change-me')
+mixin footer-navigation(list)
+
+  ul.footer-navigation
+    each item in list
+
+      - const { title, className } = item;
+      
+        li(class=`footer-navigation__list footer-navigation__list_${className}`)
+         a(class=`footer-navigation__link footer-navigation__link_${className}` href="/mock-address/change-me")= title

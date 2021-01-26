@@ -22,18 +22,18 @@ block head
 
 body
 -
-    data = require('../../layouts/rooms.json');
+    data = require('../../pages/headers-footers/headers-footers.json');
 
-//+header(data.nav)
++header(data.header)
 block content
 
 block footer
 
 footer.footer-rooms
   .footer-rooms__large
-    //+footer
+    +footer(data.footer)
 
   .footer-rooms__small
-    //+footer-small
+    +footer-small(data.footerSmall)
 
 block script

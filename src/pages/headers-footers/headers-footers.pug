@@ -23,17 +23,17 @@ block body
     
   .headers-footers
     .headers-footers__background
-      +header(data.nav)
+      +header(data.header)
 
     .headers-footers__background
       +header(data.login)
 
     .headers-footers__background
       .headers-footers__large
-        +footer
+        +footer(data.footer)
 
     .headers-footers__small
-      +footer-small
+      +footer-small(data.footerSmall)
 
 block script
   script(src='./headers-footers.js')

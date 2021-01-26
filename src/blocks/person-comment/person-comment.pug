@@ -1,4 +1,4 @@
-mixin person-comment(title,text,content,png,mod,check)
+mixin person-comment({title,text,content,png,mod,check}={})
   .person-comment
     img.person-comment__icon(
       src=`../../src/blocks/person-comment/icon/${png}.png`
@@ -8,5 +8,5 @@ mixin person-comment(title,text,content,png,mod,check)
       .person-comment__date= text
   .person-comment
     .person-comment__like
-      +like(mod,check)
+      +like({number: mod,check: check})
     span.person-comment__text= content
