@@ -1,63 +1,61 @@
 {
   "color": [
     {
-    "className": "dark100",
-    "text": "Dark Shade 100%",
-    "color": "#1F2041"
+      "className": "dark100",
+      "text": "Dark Shade 100%",
+      "color": "#1F2041"
     },
-        {
-    "className": "dark75",
-    "text": "Dark Shade 75%",
-    "color": "#1F2041"
-    },
-        {
-    "className": "dark50",
-    "text": "Dark Shade 50%",
-    "color": "#1F2041"
-    },
-        {
-    "className": "dark25",
-    "text": "Dark Shade 25%",
-    "color": "#1F2041"
-    },
-         {
-    "className": "dark5",
-    "text": "Dark Shade 5%",
-    "color": "#1F2041"
-    },
-        {
-    "className": "purple",
-    "text": "Purple",
-    "color": "#BC9CFF"
-    },
-        {
-    "className": "green",
-    "text": "Green",
-    "color": "#6FCF97"
-    }
-    ],
-    "types": [
-  {
-    "title": "H1",
-    "text": "This one is the sub-section or widget title",
-    "className": "h1"
-  },
-  {
-    "title": "H2",
-    "text": "Next one is the item title inside widgets",
-    "className": "h2"
-  },
-  {
-    "title": "H3",
-    "text": "This is a label or CTA text",
-    "className": "h3"
-  },
     {
-    "title": "Body",
-    "text": "This is the body text which is used for most of the design, like paragraphs, lists, etc.",
-    "className": "body"
-  }
-]
-
-
+      "className": "dark75",
+      "text": "Dark Shade 75%",
+      "color": "#1F2041"
+    },
+    {
+      "className": "dark50",
+      "text": "Dark Shade 50%",
+      "color": "#1F2041"
+    },
+    {
+      "className": "dark25",
+      "text": "Dark Shade 25%",
+      "color": "#1F2041"
+    },
+    {
+      "className": "dark5",
+      "text": "Dark Shade 5%",
+      "color": "#1F2041"
+    },
+    {
+      "className": "purple",
+      "text": "Purple",
+      "color": "#BC9CFF"
+    },
+    {
+      "className": "green",
+      "text": "Green",
+      "color": "#6FCF97"
+    }
+  ],
+  "types": [
+    {
+      "title": "H1",
+      "text": "This one is the sub-section or widget title",
+      "className": "h1"
+    },
+    {
+      "title": "H2",
+      "text": "Next one is the item title inside widgets",
+      "className": "h2"
+    },
+    {
+      "title": "H3",
+      "text": "This is a label or CTA text",
+      "className": "h3"
+    },
+    {
+      "title": "Body",
+      "text": "This is the body text which is used for most of the design, like paragraphs, lists, etc.",
+      "className": "body"
+    }
+  ]
 }

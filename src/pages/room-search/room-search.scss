@@ -4,7 +4,7 @@
   display: flex;
   gap: 5.2%;
 
-  @include container(2.1%, 9.7%, 5.1%, 9.7%);
+  @include container(1.95%, 9.7%, 5.1%, 9.7%);
 
   &__aside {
     width: 266px;
@@ -74,4 +74,8 @@
 
 .room-search__lux {
   margin-left: 7px;
+}
+
+.room-search__title {
+  margin-top: 2px;
 }

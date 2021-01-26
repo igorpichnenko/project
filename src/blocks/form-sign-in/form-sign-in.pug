@@ -3,8 +3,9 @@ mixin form-signin({data})
     .signin-container
       +title(data.text)
       .signin-container__input
-        +input(data.inputEmail)
-        +input(data.inputPass)
+        +text-field(data.inputEmail)
+        .signin-container__passwd
+          +text-field(data.inputPass)
       +button(data.btnSign)
       .signin-container__item
         .signin-container__text= data.content

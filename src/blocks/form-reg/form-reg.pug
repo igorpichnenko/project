@@ -1,21 +1,21 @@
 mixin form-reg({data})
-
   form.registration
     .reg-container
       +title(data.regAcount)
       .reg-container__input
-        +input(data.name)
-        +input(data.surname)
+        +text-field(data.name)
+        .reg-container__surname
+          +text-field(data.surname)
       .reg-container__radio
         +radio(data.radioMan)
         +radio(data.radioWoman)
-      +title(data.birthday)
-      +input(data.data)
+      +text-field(data.data)
       .reg-container__data
         +title(data.title)
       .reg-container__data-in
-        +input(data.email)
-        +input(data.password)
+        +text-field(data.email)
+        .reg-container__passwd
+          +text-field(data.password)
       .reg-container__toggle
         +toggle
       +button(data.button)

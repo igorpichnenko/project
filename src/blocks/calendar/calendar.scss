@@ -90,7 +90,7 @@
     flex: 1;
     text-align: center;
 
-    @include small-text;
+    @include small-text($col:$purple);
 
     @include flex-center;
   }

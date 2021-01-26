@@ -1,34 +1,38 @@
 {
-
-  "titleDate": {
-    "title":"Даты пребывания в отеле"
-  },
   "filter": {
     "mods": "filter js-datepicker",
     "inType": "text",
     "text": "19 авг - 23 авг",
     "button": "expand_more",
-    "mod":"input__button_arrow"
+    "mod": "text-field__button_arrow",
+    "label": "Даты пребывания в отеле"
   },
   "guest": {
-    "title":"гости"
+    "title": "гости"
   },
   "dropdown": {
     "name": "room",
-    "items": [ {
-      "title": "взрослые", "number": "2"
-    }, {
-      "title": "дети", "number": "1"
-    }, {
-      "title": "младенцы","number": "1"
-    }]
+    "items": [
+      {
+        "title": "взрослые",
+        "number": "2"
+      },
+      {
+        "title": "дети",
+        "number": "1"
+      },
+      {
+        "title": "младенцы",
+        "number": "1"
+      }
+    ]
   },
   "range": {
     "title": "Диапазон цены"
   },
   "price": "Стоймость за сутки пребывания в номере",
   "rules": {
-    "title":"Правила Дома"
+    "title": "Правила Дома"
   },
   "checkOne": {
     "text": "Можно курить"
@@ -39,40 +43,49 @@
   },
   "checkThree": {
     "text": "Можно пригласить гостей (до 10 человек)",
-    "mods":"checkbox__wrap",
+    "mods": "checkbox__wrap",
     "check": "check"
   },
   "titleBox": {
-    "title":"Доступность"
+    "title": "Доступность"
   },
   "rich": {
     "title": "Широкий коридор",
-    "text":"Ширина коридоров в номере не менее 91 см."
+    "text": "Ширина коридоров в номере не менее 91 см."
   },
   "richTwo": {
     "title": "Помощник для инвалидов",
-    "text":"На 1 этаже вас встретит специалист и проводит до номера",
-    "mods":"checkbox-rich__wrap"
+    "text": "На 1 этаже вас встретит специалист и проводит до номера",
+    "mods": "checkbox-rich__wrap"
   },
   "titleDrop": {
-    "title":"Удобства номера"
+    "title": "Удобства номера"
   },
   "dropdownMedium": {
-    "modBtn": "dropdown__button_hidden", "title": "Сколько спален и кроватей",
-    "items": [ {
-      "title": "спальни", "name":"1","number":"2"
-    }, {
-      "title": "кровати", "name": 1,"number":2
-    }, {
-      "title": "ванные комнаты"
-    }]
+    "modBtn": "dropdown__button_hidden",
+    "title": "Сколько спален и кроватей",
+    "items": [
+      {
+        "title": "спальни",
+        "name": "1",
+        "number": "2"
+      },
+      {
+        "title": "кровати",
+        "name": 1,
+        "number": 2
+      },
+      {
+        "title": "ванные комнаты"
+      }
+    ]
   },
   "checkboxList": {
     "title": "Дополнительные удобства"
   },
   "title": {
-    "title":"Номера, которые мы для вас подобрали",
-    "mods":"large",
+    "title": "Номера, которые мы для вас подобрали",
+    "mods": "large",
     "tag": "h1"
   },
   "slider": {
@@ -82,8 +95,8 @@
       "text": "888",
       "price": "9 990₽",
       "mods": "люкс",
-      "number":  "145",
-      "name":  "slider",
+      "number": "145",
+      "name": "slider",
       "check": "1",
       "png": "1",
       "png2": "2",
@@ -96,8 +109,8 @@
       "className": "price-container__text_low",
       "text": "840",
       "price": "9 900₽",
-      "number":  "65",
-      "name":  "sliderOne",
+      "number": "65",
+      "name": "sliderOne",
       "check": "2",
       "png": "2",
       "png2": "8",
@@ -111,8 +124,8 @@
       "classlux": "price-container__lux room-search__lux",
       "text": "980",
       "price": "8 500₽",
-      "number":  "35",
-      "name":  "sliderTwo",
+      "number": "35",
+      "name": "sliderTwo",
       "check": "3",
       "mods": "люкс",
       "png": "3",
@@ -126,8 +139,8 @@
       "className": "price-container__text_low",
       "text": "856",
       "price": "7 300₽",
-      "number":  "19",
-      "name":  "sliderThree",
+      "number": "19",
+      "name": "sliderThree",
       "check": "1",
       "png": "4",
       "png2": "1",
@@ -140,8 +153,8 @@
       "className": "price-container__text_low",
       "text": "740",
       "price": "6 000₽",
-      "number":  "44",
-      "name":  "sliderFour",
+      "number": "44",
+      "name": "sliderFour",
       "check": "2",
       "png": "5",
       "png2": "7",
@@ -154,8 +167,8 @@
       "className": "price-container__text_low",
       "text": "982",
       "price": "5 800₽",
-      "number":  "56",
-      "name":  "sliderFive",
+      "number": "56",
+      "name": "sliderFive",
       "check": "3",
       "png": "6",
       "png2": "4",
@@ -168,8 +181,8 @@
       "className": "price-container__text_low",
       "text": "678",
       "price": "5 500₽",
-      "number":  "45",
-      "name":  "sliderSix",
+      "number": "45",
+      "name": "sliderSix",
       "check": "1",
       "png": "7",
       "png2": "9",
@@ -182,8 +195,8 @@
       "className": "price-container__text_low",
       "text": "450",
       "price": "5 300₽",
-      "number":  "39",
-      "name":  "sliderSeven",
+      "number": "39",
+      "name": "sliderSeven",
       "check": "2",
       "png": "8",
       "png2": "6",
@@ -196,8 +209,8 @@
       "className": "price-container__text_low",
       "text": "350",
       "price": "5 000₽",
-      "number":  "77",
-      "name":  "sliderEight",
+      "number": "77",
+      "name": "sliderEight",
       "check": "3",
       "png": "9",
       "png2": "1",
@@ -210,8 +223,8 @@
       "className": "price-container__text_low",
       "text": "666",
       "price": "5 000₽",
-      "number":  "25",
-      "name":  "sliderNine",
+      "number": "25",
+      "name": "sliderNine",
       "check": "1",
       "png": "10",
       "png2": "8",
@@ -224,8 +237,8 @@
       "className": "price-container__text_low",
       "text": "444",
       "price": "5 000₽",
-      "number":  "15",
-      "name":  "sliderTen",
+      "number": "15",
+      "name": "sliderTen",
       "check": "3",
       "png": "11",
       "png2": "4",
@@ -238,8 +251,8 @@
       "className": "price-container__text_low",
       "text": "352",
       "price": "5 000₽",
-      "number":  "55",
-      "name":  "sliderEleven",
+      "number": "55",
+      "name": "sliderEleven",
       "check": "3",
       "png": "12",
       "png2": "4",
@@ -247,6 +260,4 @@
       "png4": "5"
     }
   }
-
-
 }

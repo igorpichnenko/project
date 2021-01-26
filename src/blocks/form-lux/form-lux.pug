@@ -1,32 +1,30 @@
 mixin formlux({data})
-  form.formlux-box
-    .lux-container
+  form.card-lux
+    .card-lux__container
       +price(data.price)
-      .lux-container__title
-        +title(data.arrival)
-        +title(data.departure)
-      .lux-container__calendar.js-datepicker-container
+      .card-lux__calendar.js-datepicker-container
         +datepicker(data.startData)
         +datepicker(data.endData)
 
       +title(data.guests)
       +dropdown(data.dropdown)
-      .formlux-main 
-        .formlux-main__price
-          span.formlux-main__text.formlux-main__text_left= data.cost
-          span.formlux-main__text 39 960₽
-        .formlux-main__price
-          span.formlux-main__text.formlux-main__text_left= data.text
-          span.formlux-main__label.formlux-main__label_top i
-          span.formlux-main__text 0₽
-        .formlux-main__price.bottom
-          .formlux-main__text.formlux-main__text_wrap Сбор за дополнительные услуги
-          span.formlux-main__label.formlux-main__label_number-right i
-          .formlux-main__text 300₽
-    .formlux-footer
-      .formlux-footer__price
-        .formlux-footer__text Итого
-        .formlux-footer__border
-        .formlux-footer__text 38 081₽
-    .lux-container__button
+
+      .card-lux__wrapper 
+        .card-lux__price
+          span.card-lux__text.card-lux__text_left= data.cost
+          span.card-lux__text 39 960₽
+        .card-lux__price
+          span.card-lux__text.card-lux__text_left= data.text
+          span.card-lux__label.card-lux__label_top i
+          span.card-lux__text 0₽
+        .card-lux__price
+          .card-lux__text.card-lux__text_wrap= data.tax
+          span.card-lux__label.card-lux__label_icon-right i
+          .card-lux__text 300₽
+    .card-lux__bottom
+      .card-lux__wrap
+        .card-lux__sum Итого
+        .card-lux__border
+        .card-lux__sum 38 081₽
+    .card-lux__button
       +button(data.btn)

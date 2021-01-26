@@ -12,7 +12,7 @@ include ../../blocks/input/input
 include ../../blocks/slick/slick
 include ../../blocks/rate/rate
 include ../../blocks/pagination/pagination
-include ../../blocks/image-card/image-card
+include ../../blocks/slider-card/slider-card
 include ../../blocks/dropdown-counters/dropdown-counters
 
 block title
@@ -22,15 +22,13 @@ block head
   link(rel='stylesheet', href='room-search.css')
 
 block content
-
   -
     content = require('./room-search.json');
-    
+
   .room-search
     .room-search__aside
-      +title(content.titleDate)
       .room-search__input.js-datepicker-container
-        +input(content.filter)
+        +text-field(content.filter)
 
       .room-search__dropdown
         +title(content.guest)
@@ -57,7 +55,7 @@ block content
         .room-search__rich-button
           +checkbox-rich(content.rich)
           +checkbox-rich(content.richTwo)
-          
+
         .room-search__medium-drop
           +title(content.titleDrop)
           +dropdown(content.dropdownMedium)
@@ -65,20 +63,21 @@ block content
           +checkbox-list(content.checkboxList)
 
     .room-search__cards
-      +title(content.title)
+      .room-search__title
+        +title(content.title)
       .room-search__container
-       +slider-card(content.slider)
-       +slider-card(content.sliderOne)
-       +slider-card(content.sliderTwo)
-       +slider-card(content.sliderThree)
-       +slider-card(content.sliderFour)
-       +slider-card(content.sliderFive)
-       +slider-card(content.sliderSix)
-       +slider-card(content.sliderSeven)
-       +slider-card(content.sliderEight)
-       +slider-card(content.sliderNine)
-       +slider-card(content.sliderTen)
-       +slider-card(content.sliderEleven)
+        +slider-card(content.slider)
+        +slider-card(content.sliderOne)
+        +slider-card(content.sliderTwo)
+        +slider-card(content.sliderThree)
+        +slider-card(content.sliderFour)
+        +slider-card(content.sliderFive)
+        +slider-card(content.sliderSix)
+        +slider-card(content.sliderSeven)
+        +slider-card(content.sliderEight)
+        +slider-card(content.sliderNine)
+        +slider-card(content.sliderTen)
+        +slider-card(content.sliderEleven)
       .room-search__pagination
         +pagination
 block footer

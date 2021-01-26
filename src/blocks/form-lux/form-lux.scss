@@ -1,41 +1,28 @@
-.formlux-box {
+.card-lux {
   width: 380px;
   height: 511px;
   box-shadow: $shadow-02;
   background-color: #fff;
-}
 
-.lux-container {
-  width: 320px;
-  padding-top: 40px;
-  padding-left: 30px;
-
-  &__title {
-    display: flex;
-    margin-top: 21.4px;
-
-    & > * + * {
-      margin-left: 95px;
-    }
+  &__container {
+    width: 320px;
+    padding-top: 40px;
+    padding-left: 30px;
   }
 
   &__calendar {
     display: flex;
     margin-bottom: 20px;
-
-    & > * + * {
-      margin-left: 20px;
-    }
+    margin-top: 21.4px;
   }
 
-  &__button {
-    margin-left: 28.6px;
-    margin-top: 21px;
+  &__calendar > * + * {
+    margin-left: 20px;
   }
-}
 
-.formlux-main {
-  margin-top: 18px;
+  &__wrapper {
+    margin-top: 18px;
+  }
 
   &__price + &__price {
     padding-top: 9.5px;
@@ -73,23 +60,24 @@
     padding-top: 3.5px;
     margin-top: 2px;
 
-    @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px)
-      &_number-right {
-      margin-right: 22.5px;
-    }
+    @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px);
+  }
+
+  &__label_icon-right {
+    margin-right: 22.5px;
   }
 
   &__price {
     display: flex;
     justify-content: space-between;
   }
-}
 
-.formlux-footer {
-  margin-top: 30px;
-  margin-left: 30px;
+  &__bottom {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 
-  &__text {
+  &__sum {
     margin-left: 1px;
 
     @include medium-text;
@@ -101,7 +89,12 @@
     border-bottom: 1px dotted rgba(0, 0, 0, .12);
   }
 
-  &__price {
+  &__wrap {
     display: flex;
+  }
+
+  &__button {
+    margin-left: 28.6px;
+    margin-top: 21px;
   }
 }

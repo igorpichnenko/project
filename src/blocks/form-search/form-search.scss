@@ -1,25 +1,17 @@
-.search {
+.card-search {
   height: 374px;
   width: 380px;
   box-shadow: $shadow-02;
   background-color: #fff;
-}
 
-.search-container {
-  padding-left: 30px;
-  padding-top: 40px;
-
-  &__title {
-    display: flex;
-    margin-top: 22.5px;
-  }
-
-  &__title > * + * {
-    margin-left: 95px;
+  &__wrapper {
+    padding-left: 30px;
+    padding-top: 40px;
   }
 
   &__calendar {
     display: flex;
+    margin-top: 22.5px;
   }
 
   &__calendar > * + * {

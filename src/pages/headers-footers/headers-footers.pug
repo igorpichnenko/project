@@ -17,10 +17,9 @@ block head
   link(rel='stylesheet', href='headers-footers.css')
 
 block body
-
   -
     data = require('./headers-footers.json');
-    
+
   .headers-footers
     .headers-footers__background
       +header(data.header)

@@ -13,14 +13,13 @@ block head
   link(rel='stylesheet', href='landing.css')
 
 block content
-
   -
     content = require('./landing.json');
-    
+
   .landing-container
     .landing-container__items
       +form-search(content.formSearch)
-      .landing-container__slogan= content.text 
+      .landing-container__slogan= content.text
 
 block footer
 block script

@@ -1,56 +1,56 @@
-.burger{
+.burger {
   position: relative;
   display: none;
   margin-top: 15px;
-  
+
   @media (max-width: 970px) {
     display: block;
   }
 
-&__item {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
+  &__item {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
 
-&__items {
-  width: 30px;
-  height: 3px;
-  background-color: $purple;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: 0.5s;
-}
+  &__items {
+    width: 30px;
+    height: 3px;
+    background-color: $purple;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+  }
 
-&__items::before,
-&__items::after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background: $purple;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: 0.5s;
-}
+  &__items::before,
+  &__items::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: $purple;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+  }
 
-&__items::before {
-  top: -10px;
-}
+  &__items::before {
+    top: -10px;
+  }
 
-&__items::after {
-  top: 10px;
-}
+  &__items::after {
+    top: 10px;
+  }
 
-&__item.active &__items {
-  background: #fff;
-}
+  &__item.active &__items {
+    background: #fff;
+  }
 
-&__item.active &__items::before {
-  top: 0;
-  transform: rotate(45deg);
-}
+  &__item.active &__items::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
 
-&__item.active &__items::after {
-  top: 0;
-  transform: rotate(135deg);
-}
+  &__item.active &__items::after {
+    top: 0;
+    transform: rotate(135deg);
+  }
 }

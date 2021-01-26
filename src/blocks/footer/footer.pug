@@ -6,15 +6,15 @@ mixin footer({data})
           +logo
           .footer-container__paragraf= data.title
       .footer-container__nav
-       +footer-navigation(data.main)
+        +footer-navigation(data.main)
       .footer-container__nav
-       +footer-navigation(data.about)
+        +footer-navigation(data.about)
       .footer-container__nav
-       +footer-navigation(data.support)
+        +footer-navigation(data.support)
       .footer-container__subscription
-       +footer-navigation(data.subscription)
-       .footer-container__input
-          +input(data.input)
+        +footer-navigation(data.subscription)
+        .footer-container__input
+          +text-field(data.input)
   .footer-bottom
     .footer-bottom__wrapper
       .footer-bottom__text= data.text

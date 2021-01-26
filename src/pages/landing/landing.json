@@ -1,49 +1,40 @@
 {
   "text": "Лучшие номера для вашей работы, отдыха и просто вдохновения",
   "formSearch": {
-    
-    "data":{
-    "largeTitle": {
-      "title": "Найдём номера под ваши пожелания",
-      "mods": "large"
-    },
-    "arrival": {
-      "title": "Прибытие"
-    },
-    "departure": {
-      "title": "Выезд"
-
-    },
-    "datepicker": {
-      "mods": "filter js-datepicker-end"
-    },
-    "guests": {
-      "title": "Гости"
-    },
-    "btn": {
-      "text": "Подобрать номер",
-      "mods": "arrow"
-    },
-    "dropdown": {
-      "name": "room",
-      "items": [ {
-        "title": "взрослые"
-      }, {
-        "title": "дети"
-      }, {
-        "title": "младенцы"
-      }]
-    }
+    "data": {
+      "largeTitle": {
+        "title": "Найдём номера под ваши пожелания",
+        "mods": "large",
+        "tag": "h1"
+      },
+      "start": {
+        "label": "Прибытие"
+      },
+      "end": {
+        "mods": "filter js-datepicker-end",
+        "label": "Выезд"
+      },
+      "guests": {
+        "title": "Гости"
+      },
+      "btn": {
+        "text": "Подобрать номер",
+        "mods": "arrow"
+      },
+      "dropdown": {
+        "name": "room",
+        "items": [
+          {
+            "title": "взрослые"
+          },
+          {
+            "title": "дети"
+          },
+          {
+            "title": "младенцы"
+          }
+        ]
+      }
     }
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }

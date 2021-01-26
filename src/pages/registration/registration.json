@@ -1,92 +1,81 @@
 {
-  
   "formSignIn": {
-    "data":{
-    "text": {
-      "mods": "large",
-      "title": "Войти"
-    },
-    "inputPass": {
-      "inType": "password",
-      "text": "Пароль"
-    },
-    "inputEmail": {
-      "inType": "email",
-      "text": "Email"
-    },
-    "btnIn": {
-      "mods": "border,content-size,large,regCreate",
-      "text": "Создать"
-    },
-    "btnSign": {
-      "mods": "arrow",
-      "text": "Войти"
-    },
-    "content": "Нет аккаунта на Toxin?"
-   }
-  },
-  
-  
-  "formReg": {
     "data": {
-    "regAcount": {
-      "title":"Регистрация аккаунта",
-      "mods": "large"
-    },
-    "name": {
-      "inType":"text",
-      "text":"Имя"
-    },
-    "surname": {
-      "inType":"text",
-      "text": "Фамилия"
-    },
-
-    "radioMan": {
-      "text": "Мужчина",
-      "name":  "man",
-      "check": "check"
-    },
-    "radioWoman": {
-      "text": "Женщина",
-      "name": "man"
-    },
-    "birthday": {
-      "title":"Дата рождения"
-    },
-    "data":{
-      "mods": "standart, mask",
-      "inType": "text",
-      "text": "ДД.ММ.ГГГГ"
-    },
-    "title":{
-      "title":"Данные для входа в сервис"
-    },
-    "email": {
-      "inType": "email"
-    },
-    "password":{
-      "inType": "password",
-      "text": "Пароль"
-    },
-    "button":{
-      "text": "Перейти к оплате", 
-      "mods": "arrow"
-    },
-    "text": "Уже есть аккаунт на Toxin",
-    "btnReg": {
-     "mods": "signIn,border,content-size,large",
-     "text": "Войти"
+      "text": {
+        "mods": "large",
+        "title": "Войти",
+        "tag": "h1"
+      },
+      "inputPass": {
+        "inType": "password",
+        "text": "Пароль"
+      },
+      "inputEmail": {
+        "inType": "email",
+        "text": "Email"
+      },
+      "btnIn": {
+        "mods": "border,content-size,large,regCreate",
+        "text": "Создать"
+      },
+      "btnSign": {
+        "mods": "arrow",
+        "text": "Войти"
+      },
+      "content": "Нет аккаунта на Toxin?"
     }
+  },
+
+   "formReg": {
+    "data": {
+      "regAcount": {
+        "title": "Регистрация аккаунта",
+        "mods": "large",
+        "tag": "h1"
+      },
+      "name": {
+        "inType": "text",
+        "text": "Имя"
+      },
+      "surname": {
+        "inType": "text",
+        "text": "Фамилия"
+      },
+
+      "radioMan": {
+        "text": "Мужчина",
+        "name": "man",
+        "check": "check"
+      },
+      "radioWoman": {
+        "text": "Женщина",
+        "name": "man"
+      },
+      "data": {
+        "mods": "standart input_mask",
+        "inType": "text",
+        "text": "ДД.ММ.ГГГГ",
+        "label": "Дата рождения"
+      },
+      "title": {
+        "title": "Данные для входа в сервис"
+      },
+      "email": {
+        "inType": "email"
+      },
+      "password": {
+        "inType": "password",
+        "text": "Пароль"
+      },
+      "button": {
+        "text": "Перейти к оплате",
+        "mods": "arrow"
+      },
+      "text": "Уже есть аккаунт на Toxin",
+      "btnReg": {
+        "mods": "border,content-size,large,signIn",
+        "text": "Войти"
+      }
     }
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }

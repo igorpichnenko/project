@@ -1,2 +1,2 @@
-mixin datepicker({text="ДД.ММ.ГГГГ",mods="filter js-datepicker js-datepicker-start",data}={})
-  +input({mods: mods,inType: 'text',text: text,button: 'expand_more',mod:"input__button_arrow",data: data})
+mixin datepicker({text="ДД.ММ.ГГГГ",mods="filter js-datepicker js-datepicker-start",data,label}={})
+  +text-field({mods: mods,inType: 'text',text: text,button: 'expand_more',mod:"text-field__button_arrow",data: data,label:label})

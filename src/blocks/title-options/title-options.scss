@@ -1,78 +1,78 @@
-.title-options{
+.title-options {
 
-&__container {
-  display: flex;
-  margin-top: 52px;
+  &__container {
+    display: flex;
+    margin-top: 52px;
 
-  &:nth-child(1) {
-    margin-top: 0;
-    margin-left: 8px;
+    &:nth-child(1) {
+      margin-top: 0;
+      margin-left: 8px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 12px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 21px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 47px;
+      margin-right: 2px;
+    }
   }
 
-  &:nth-child(2) {
-    margin-left: 12px;
+  &__title {
+    @include large-text($dark25, $fw: normal);
+
+    &_h1 {
+      padding-left: 1.5px;
+    }
+
+    &_h2 {
+      @include medium-text($col: $dark25, $fw: normal);
+    }
+
+    &_h3 {
+      @include small-text($col: $dark25, $fw: normal);
+    }
+
+    &_body {
+      margin-left: 1px;
+
+      @include body-text($dark25);
+    }
   }
 
-  &:nth-child(3) {
-    margin-left: 21px;
+  &__text {
+    margin-left: 29px;
+
+    @include large-text;
+
+    &_h1 {
+      padding-left: 1px;
+    }
+
+    &_h2 {
+      padding-top: .8px;
+
+      @include medium-text;
+    }
+
+    &_h3 {
+      padding-left: 1.4px;
+      text-transform: uppercase;
+
+      @include small-text;
+    }
+
+    &_body {
+      margin-bottom: .8px;
+      padding-left: 1px;
+      width: 310px;
+
+      @include body-text;
+    }
   }
-
-  &:nth-child(4) {
-    margin-top: 47px;
-    margin-right: 2px;
-  }
-}
-
-&__title {
-  @include large-text($dark25, $fw: normal);
-
-  &_h1 {
-    padding-left: 1.5px;
-  }
-
-  &_h2 {
-    @include medium-text($col:$dark25,$fw: normal);
-  }
-
-  &_h3 {
-    @include small-text($col: $dark25,$fw: normal);
-  }
-
-  &_body {
-    margin-left: 1px;
-
-    @include body-text($dark25);
-  }
-}
-
-&__text {
-  margin-left: 29px;
-
-  @include large-text;
-
-  &_h1 {
-    padding-left: 1px;
-  }
-
-  &_h2 {
-    padding-top: .8px;
-
-    @include medium-text;
-  }
-
-  &_h3 {
-    padding-left: 1.4px;
-    text-transform: uppercase;
-
-    @include small-text;
-  }
-
-  &_body {
-    margin-bottom: .8px;
-    padding-left: 1px;
-    width: 310px;
-    
-    @include body-text;
-  }
-}
 }

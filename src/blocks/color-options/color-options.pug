@@ -1,10 +1,8 @@
 mixin color-options(color)
-
   .color-options
     each item in color
-
       - const { className, text, color } = item;
-      
+
       .color-options__items
         .color-options__item
           div(class=`color-options__block color-options__block_${className}`)

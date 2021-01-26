@@ -24,7 +24,8 @@
     @include small-text;
   }
 
-  &__list_other, &__list_two {
+  &__list_other,
+  &__list_two {
     margin-bottom: 21px;
 
     @include intermediate-text;
@@ -33,5 +34,4 @@
   &__list_two {
     margin-top: 21.8px;
   }
-
 }

@@ -1,20 +1,14 @@
 mixin form-search({data})
-
-  form.search
-    .search-container
-      .search-container__wrap-title
+  form.card-search
+    .card-search__wrapper
+      .card-search__wrap-title
         +title(data.largeTitle)
-      .search-container__title
-        +title(data.arrival)
-        +title(data.departure)
-      .search-container__calendar.js-datepicker-container
-        +datepicker
-        +datepicker(data.datepicker)
+      .card-search__calendar.js-datepicker-container
+        +datepicker(data.start)
+        +datepicker(data.end)
 
-      .search-container__dropdown
+      .card-search__dropdown
         +title(data.guests)
         +dropdown(data.dropdown)
-    .search-container__button
-      +button(data.btn)   
-      
-    
+    .card-search__button
+      +button(data.btn) 

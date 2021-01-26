@@ -20,10 +20,9 @@ block head
   link(rel='stylesheet', href='room-detalis.css')
 
 block content
-
   -
     content = require('./room-detalis.json');
-    
+
   .detalis-background
   .room-detalis
     .room-detalis__item
@@ -40,7 +39,7 @@ block content
       .room-detalis__reviews
         .room-detalis__title
           +title(content.review)
-          span.room-detalis__title_lower= content.number 
+          span.room-detalis__title_lower= content.number
         .room-detalis__title_murad
           +person-comment(content.person)
         .room-detalis__patricia

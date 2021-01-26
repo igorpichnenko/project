@@ -1,19 +1,13 @@
-mixin input(options)
-  - const { inType, mods = "standart", text = "Email", button, mod, data } = options;
-  -
-    let modList = mods.split(',')
-    let allMods = ''
+mixin text-field(options)
+  - const { inType, mods = "standart", text = "Email", button, mod, data, label } = options;
 
-    modList.forEach(function (mod) {
-    allMods = allMods + ' input_' + mod.trim()
-    })
-
-  .input
-    input.input__input(
-      type=inType,
-      placeholder=text,
-      class=allMods,
-      data-date-format=data
-    )
-    if button
-      button(class=mod, type='submit')= button
+  label.text-field= label
+    .text-field__input
+      input.text-field__input_standart(
+        type=inType,
+        placeholder=text,
+        class=`text-field_${mods}`,
+        data-date-format=data
+      )
+      if button
+        button(class=mod, type='submit')= button

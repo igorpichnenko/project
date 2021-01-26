@@ -1,13 +1,12 @@
 {
   "footerSmall": {
-    "data":{
-      
-    "text": "Copyright © 2018 Toxin отель. Все права зачищены.",
-    
-    "icon": {
-      "className": "footer-mobilie__icon fab fa-facebook-square",
-      "mod":  "fab fa-twitter footer-mobilie__icon_absolute"
-    }
+    "data": {
+      "text": "Copyright © 2018 Toxin отель. Все права зачищены.",
+
+      "icon": {
+        "className": "footer-mobilie__icon fab fa-facebook-square",
+        "mod": "fab fa-twitter footer-mobilie__icon_absolute"
+      }
     }
   },
 
@@ -17,15 +16,16 @@
         "button": "arrow_forward",
         "inType": "email",
         "text": "Email",
-        "mod": "input__button"
+        "mod": "text-field__button"
       },
       "title": "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
       "text": "Copyright © 2018 Toxin отель. Все права зачищены.",
 
-      "main":[{
-        "title": "Навигация",
-        "className": "one"
-      },
+      "main": [
+        {
+          "title": "Навигация",
+          "className": "one"
+        },
         {
           "title": "О нас",
           "className": "two"
@@ -41,11 +41,13 @@
         {
           "title": "Услуги",
           "className": "other"
-        }],
-      "about":[{
-        "title": "О нас",
-        "className": "one"
-      },
+        }
+      ],
+      "about": [
+        {
+          "title": "О нас",
+          "className": "one"
+        },
         {
           "title": "О сервисе",
           "className": "two"
@@ -61,11 +63,13 @@
         {
           "title": "Инвесторы",
           "className": "other"
-        }],
-      "support":[{
-        "title": "Служба поддержки",
-        "className": "one"
-      },
+        }
+      ],
+      "support": [
+        {
+          "title": "Служба поддержки",
+          "className": "one"
+        },
         {
           "title": "Соглашения",
           "className": "two"
@@ -77,21 +81,23 @@
         {
           "title": "Связь с нами",
           "className": "other"
-        }],
-      "subscription":[{
-        "title": "Подписка",
-        "className": "one"
-      },
+        }
+      ],
+      "subscription": [
+        {
+          "title": "Подписка",
+          "className": "one"
+        },
         {
           "title": "Получайте специальные предложения и новости сервиса",
           "className": "subscription"
-        }]
+        }
+      ]
     }
   },
 
   "header": {
     "button": {
-
       "SigIn": {
         "text": "Войти",
         "mods": "border,content-size"
@@ -101,10 +107,11 @@
       }
     },
 
-    "list":[{
-      "title": "О нас",
-      "className": "about"
-    },
+    "list": [
+      {
+        "title": "О нас",
+        "className": "about"
+      },
       {
         "title": "Услуги",
         "className": "services"
@@ -120,18 +127,18 @@
       {
         "title": "Соглашения",
         "className": "agree"
-      }]
+      }
+    ]
   },
 
-
   "login": {
-    
     "login": false,
-    
-    "list":[{
-      "title": "О нас",
-      "className": "about"
-    },
+
+    "list": [
+      {
+        "title": "О нас",
+        "className": "about"
+      },
       {
         "title": "Услуги",
         "className": "services"
@@ -147,6 +154,7 @@
       {
         "title": "Соглашения",
         "className": "agree"
-      }]
+      }
+    ]
   }
 }

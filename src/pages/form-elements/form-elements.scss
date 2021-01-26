@@ -9,18 +9,28 @@
 
 .column-one {
 
-  &__item {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__title {
-    padding-top: 3px;
+    padding-top: 1px;
+    width: 320px;
+    position: relative;
   }
 
-  &__email {
-    margin-bottom: 20.3px;
+  &__title_hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__focus {
+    margin-top: 18px;
     width: 320px;
+    position: relative;
+  }
+
+  &__pretty {
+    position: absolute;
+    top: 2px;
+    right: 0;
   }
 
   &__title_focus {
@@ -29,30 +39,22 @@
 
   &__dropdown {
     margin-top: 20px;
-    margin-bottom: 23.5px;
+    margin-bottom: 21px;
     width: 320px;
-  }
-
-  &__date-title {
-    display: flex;
-    margin-top: 40px;
-
-    & > * + * {
-      margin-left: 52px;
-    }
-  }
-
-  &__dabl-date {
-    display: flex;
-    margin-bottom: 41.5px;
-
-    & > * + * {
-      margin-left: 20px;
-    }
   }
 
   &__iMask {
     width: 320px;
+  }
+
+  &__dabl-date {
+    display: flex;
+    width: 320px;
+    margin: 40px 0 39px 0;
+
+    & > * + * {
+      margin-left: 20px;
+    }
   }
 
   &__medium {
@@ -60,8 +62,13 @@
   }
 
   &__subscription {
-    margin-top: 40.8px;
+    margin-top: 39px;
     margin-bottom: 100.5px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__drop-medium {
@@ -99,7 +106,7 @@
     margin-bottom: 40.3px;
 
     & > * + * {
-      margin-left: 17px;
+      margin-left: 16px;
     }
   }
 
@@ -118,7 +125,7 @@
     margin-bottom: 41px;
 
     & > * + * {
-      margin-left: 10px;
+      margin-left: 9.5px;
     }
   }
 

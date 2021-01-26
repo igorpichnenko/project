@@ -25,65 +25,54 @@ block head
   link(rel='stylesheet', href='form-elements.css')
 
 block body
-
   -
     data = require('./form-elements.json');
-    
+
   .form-elements
     .column-one
       form.column-one__form-mask
-        .column-one__items
-          .column-one__item
-            .column-one__title
-              +title(data.field)
+        .column-one__container
+          .column-one__title
+            +text-field(data.email)
             .column-one__title_hover
-              +title(data.default)
-
-          .column-one__email
-            +input(data.email)
-          .column-one__item
-            +title(data.title)
-            +title(data.focus)
-
-          +input(data.pretty)
-          .column-one__dropdown
-            +title(data.drop)
-            +dropdown(data.dropdown)
-
-          +title(data.masked)
-          .column-one__iMask
-            +input(data.Imask)
-
-          .column-one__date-title
-            +title(data.titleStart)
-            +title(data.titleEnd)
-
-          .column-one__dabl-date.js-datepicker-container
-            +datepicker
-            +datepicker(data.end)
-
-          +title(data.titleFilter)
-          .column-one__medium.js-datepicker-container
-            +datepicker(data.datepicker)
-
-            .column-one__subscription
-              +title(data.subscription)
-              +input(data.arrow)
-
-            .column-one__item
-              +title(data.titleDrop)
               +title(data.hover)
 
-            +dropdown(data.medium)
-            .column-one__drop-medium
-              +title(data.titleDrop)
-              +title(data.expanted)
-            +dropdown(data.bedrooms)
+        .column-one__focus
+          +text-field(data.pretty)
+          .column-one__pretty
+            +title(data.focus)
 
-            .column-one__checkbox
-              +checkbox-list
-              .column-one__checkbox-list
-               +checkbox-list(data.checkboxList)
+        .column-one__dropdown
+          +title(data.drop)
+          +dropdown(data.dropdown)
+
+        .column-one__iMask
+          +text-field(data.Imask)
+
+        .column-one__dabl-date.js-datepicker-container
+          +datepicker(data.start)
+          +datepicker(data.end)
+
+        .column-one__medium.js-datepicker-container
+          +datepicker(data.datepicker)
+
+          .column-one__subscription
+            +text-field(data.arrow)
+
+          .column-one__item
+            +title(data.titleDrop)
+            +title(data.hover)
+
+          +dropdown(data.medium)
+          .column-one__drop-medium
+            +title(data.titleDrop)
+            +title(data.expanted)
+          +dropdown(data.bedrooms)
+
+          .column-one__checkbox
+            +checkbox-list
+            .column-one__checkbox-list
+              +checkbox-list(data.checkboxList)
 
     .column-two
       +title(data.titleCheck)
