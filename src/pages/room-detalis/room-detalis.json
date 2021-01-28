@@ -88,7 +88,7 @@
         "title": "гости"
       },
       "dropdown": {
-        "name": "room",
+        "className": "dropdown_guest",
         "items": [{
           "title": "взрослые",
           "number": "2"

@@ -1,10 +1,13 @@
-import { DropdownControl } from '../dropdown-counters/dropdown-counters';
+import {
+  DropdownControl,
+} from '../dropdown-counters/dropdown-counters';
 
 class Dropdown {
   constructor(dropdown) {
     this.dropdown = dropdown;
     this.findElement();
     this.handlersBind();
+    this.defaultSum();
     this.controls = [...this.values].map(
       (item) => new DropdownControl(item, () => this.update()),
     );
@@ -15,30 +18,11 @@ class Dropdown {
     this.menu = this.dropdown.querySelector('.dropdown__menu');
     this.toggle = this.dropdown.querySelector('.dropdown__section');
     this.title = this.dropdown.querySelector('.dropdown__title');
-    this.name = this.dropdown.dataset.name;
+    this.isGuests = this.dropdown.classList.contains('dropdown_guest');
     this.defaultTitle = this.dropdown.dataset.default || '';
     this.values = this.dropdown.querySelectorAll('.dropdown-counters');
     this.buttonClear = this.dropdown.querySelector('.dropdown__button_clear') || undefined;
     this.buttonUse = this.dropdown.querySelector('.dropdown__button_use') || undefined;
-  }
-
-  getChild() {
-    const { length } = this.controls;
-    let childSum = 0;
-    let array = [];
-    this.controls.forEach((item, index) => {
-      childSum = item.childSum(index, length);
-      array = array.concat(childSum);
-    });
-    return array;
-  }
-
-  getSum() {
-    let sum = 0;
-    this.controls.forEach((item) => {
-      sum += item.getValue();
-    });
-    return sum;
   }
 
   handlersBind() {
@@ -53,7 +37,6 @@ class Dropdown {
   }
 
   handlerMenu() {
-    this.toggle.classList.toggle('dropdown__toggle_active');
     this.menu.classList.toggle('dropdown_active');
     this.title.classList.toggle('title-active');
   }
@@ -65,17 +48,17 @@ class Dropdown {
   }
 
   closeDropdown() {
-    const isDropdownClosed = this.toggle.classList.contains('dropdown__toggle_active')
-      && this.menu.classList.contains('dropdown_active');
+    const isDropdownClosed =  this.menu.classList.contains('dropdown_active');
     if (isDropdownClosed) {
-      this.toggle.classList.remove('dropdown__toggle_active');
       this.menu.classList.remove('dropdown_active');
     }
   }
 
   handlerUse(event) {
-    event.preventDefault();
-    this.closeDropdown();
+    if (this.sumGuests !== 0) {
+      event.preventDefault();
+      this.closeDropdown();
+    }
   }
 
   handlerClear(event) {
@@ -86,52 +69,50 @@ class Dropdown {
   }
 
   update() {
-    this.checkButtonClear();
-    this.checkButtonUse();
     this.updateTitle();
-    this.checkAdultUse();
+    this.checkAdultButtonUse();
   }
 
   checkButtonClear() {
     const allMin = !this.controls.map((item) => item.isMin()).includes(false);
     if (allMin === true) {
-      this.buttonClearHidden();
+      this.hiddenClearButton();
     } else {
-      this.buttonClearVisible();
+      this.visibleClearButton();
     }
   }
 
   checkButtonUse() {
     const isAllZerro = !this.controls
-      .map((item) => item.isZerro())
-      .includes(false);
+    .map((item) => item.isZerro())
+    .includes(false);
     if (isAllZerro === true) {
-      this.buttonUseHidden();
+      this.hiddenButtonUse();
     } else {
-      this.buttonUseVisible();
+      this.visibleButtonUse();
     }
   }
 
-  checkAdultUse() {
+  checkAdultButtonUse() {
     if (this.sumAdult === 0 && this.sumBabies > 0) {
-      this.buttonUseHidden();
+      this.hiddenButtonUse();
     }
   }
 
-  buttonClearHidden() {
-    this.buttonClear.classList.add('dropdown__button_hidden');
+  hiddenClearButton() {
+    this.buttonClear.style.display = "none"
   }
 
-  buttonClearVisible() {
-    this.buttonClear.classList.remove('dropdown__button_hidden');
+  visibleClearButton() {
+    this.buttonClear.style.display = "block"
   }
 
-  buttonUseHidden() {
-    this.buttonUse.classList.add('dropdown__button_hidden');
+  hiddenButtonUse() {
+    this.buttonUse.style.display = "none"
   }
 
-  buttonUseVisible() {
-    this.buttonUse.classList.remove('dropdown__button_hidden');
+  visibleButtonUse() {
+    this.buttonUse.style.display = "block"
   }
 
   formDeclension(number, form) {
@@ -149,57 +130,124 @@ class Dropdown {
     return form[2];
   }
 
+  defaultSum() {
+    let DefaultSum = 0
+    this.values.forEach((item)=> {
+      this.AllInput = item.querySelectorAll('.dropdown-counters__value')
+
+      this.AllInput.forEach((el)=> {
+        DefaultSum += Number(el.value)
+      })})
+
+    this.DefaultSum = DefaultSum
+  }
+
   // логика всех заголовков
   updateTitle() {
-    if (this.name !== undefined) {
-      const arraySum = this.getChild();
-
-      for (
-        let index = 0, sumAdult = 0;
-        index < 4;
-        sumAdult += arraySum[index++]
-      ) {
-        this.sumAdult = sumAdult;
-      }
-      for (
-        let index = 4, sumBabies = 0;
-        index <= 6;
-        sumBabies += arraySum[index++]
-      ) {
-        this.sumBabies = sumBabies;
-      }
-      const formGuests = ['гость', 'гостя', 'гостей'];
-      const formNewborns = ['младенец', 'младенца', 'младенцев'];
-      this.messageGuests = this.formDeclension(this.sumAdult, formGuests);
-
-      this.messageNewborns = this.formDeclension(this.sumBabies, formNewborns);
-      if (this.sumBabies === 0 && this.sumAdult === 0) {
-        this.title.innerHTML = 'Сколько гостей';
-      } else if (this.sumAdult !== 0 && this.sumBabies === 0) {
-        this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}`;
-      } else {
-        this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}, ${this.sumBabies} ${this.messageNewborns}`;
-      }
+    if (this.isGuests === true) {
+      this.updateDropdownGuests();
     } else {
-      const sum = this.getSum();
-
-      let array = this.controls.map((item) => item.getString());
-      array = array.filter((element) => element !== null);
-
-      const formBedroom = ['спальня', 'спальни', 'спален'];
-      const formBed = ['кровать', 'кровати', 'кроватей'];
-      const formBathroom = ['ванная', 'ванные', 'ванных'];
-
-      const messageBedroom = this.formDeclension(array[0], formBedroom);
-      const messageBed = this.formDeclension(array[1], formBed);
-      const messageBathroom = this.formDeclension(array[2], formBathroom);
-
-      if (sum > 0 && array[2] > 0) {
-        this.title.innerHTML = `${array[0]} ${messageBedroom}, ${array[1]} ${messageBed},${array[2]} ${messageBathroom}`
-          + '...';
-      } else this.title.innerHTML = `${array[0]} ${messageBedroom}, ${array[1]} ${messageBed}...`;
+      this.updateDropdownRoom();
     }
   }
-}
 
-export { Dropdown };
+  updateDropdownGuests() {
+    const array = this.controls.map((item) => item.getValue());
+
+    const [adults,
+      children,
+      babies] = [array[0],
+      array[1],
+      array[2]];
+
+    this.sumGuests = adults + children + babies;
+    this.sumAdult = adults + children;
+    this.sumBabies = babies;
+
+    if (adults + children < 10) {
+
+      this.controls.map((item) => item.activatePlus());
+
+    } else {
+      this.sumAdult = 10
+      this.length = this.controls.length
+      this.controls.forEach((item, index) => {
+        if (index !== this.length -1) {
+          item.deactivatePlus()
+        } 
+      })
+    }
+    if (babies === 10) {
+      let length = this.controls.length
+      this.controls.forEach((item, index) => {
+        if (index === length -1) {
+          item.deactivatePlus()
+        } 
+      })
+    }
+
+    if (adults > 0 || children > 0) {
+      this.checkButtonClear();
+      this.checkButtonUse();
+    } else {
+      this.checkButtonClear();
+
+    }
+
+    const formGuests = ['гость',
+      'гостя',
+      'гостей'];
+    const formNewborns = ['младенец',
+      'младенца',
+      'младенцев'];
+    this.messageGuests = this.formDeclension(this.sumAdult, formGuests);
+
+    this.messageNewborns = this.formDeclension(this.sumBabies, formNewborns);
+    if (this.sumBabies === 0 && this.sumAdult === 0) {
+      this.title.innerHTML = 'Сколько гостей';
+    } else if (this.sumAdult !== 0 && this.sumBabies === 0) {
+      this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}`;
+    } else {
+      this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}, ${this.sumBabies} ${this.messageNewborns}`;
+    }
+  }
+
+  updateDropdownRoom() {
+    const array = this.controls.map((item) => item.getValue());
+
+    const [Bedroom,
+      Bed,
+      Bathroom] = [array[0],
+      array[1],
+      array[2]];
+
+    let sum = Bedroom + Bed + Bathroom
+
+    if (sum !== this.DefaultSum) {
+    this.checkButtonClear();
+      this.checkButtonUse();
+    } 
+
+    const formBedroom = ['спальня',
+      'спальни',
+      'спален'];
+    const formBed = ['кровать',
+      'кровати',
+      'кроватей'];
+    const formBathroom = ['ванная',
+      'ванные',
+      'ванных'];
+
+    const messageBedroom = this.formDeclension(Bedroom, formBedroom);
+    const messageBed = this.formDeclension(Bed, formBed);
+    const messageBathroom = this.formDeclension(Bathroom, formBathroom);
+
+    if (sum > 0 && Bathroom > 0) {
+      this.title.innerHTML = `${Bedroom} ${messageBedroom}, ${Bed} ${messageBed},${Bathroom} ${messageBathroom}`
+      + '...';
+    } else this.title.innerHTML = `${Bedroom} ${messageBedroom}, ${Bed} ${messageBed}...`;
+  }
+}
+export {
+  Dropdown,
+};

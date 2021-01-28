@@ -1,8 +1,8 @@
-mixin dropdown-counters({title="",name="",number="0"}={})
-  .dropdown-counters(data-name='room')
+mixin dropdown-counters({title="",max="10",min="0",number="0"}={})
+  .dropdown-counters
     .dropdown-counter__name
       h3.dropdown-counters__title= title
-    .dropdown-counters__controls(data-min="" + name)
-      .dropdown-counters__button.dropdown-counters__minus -
-      .dropdown-counters__value= number
-      .dropdown-counters__button.dropdown-counters__plus +
+    .dropdown-counters__controls
+      button(type="button").dropdown-counters__button.dropdown-counters__minus -
+      input.dropdown-counters__value(value=number,min=min,max=max, type="number")
+      button(type="button").dropdown-counters__button.dropdown-counters__plus +

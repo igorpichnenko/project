@@ -21,7 +21,7 @@
     "title": "dropdown"
   },
   "dropdown": {
-    "name": "room",
+    "className": "dropdown_guest",
     "items": [
       {
         "title": "взрослые"
@@ -76,16 +76,19 @@
     "items": [
       {
         "title": "спальни",
-        "name": 1,
+        "min": 1,
+        "max": 5,
         "number": 2
       },
       {
         "title": "кровати",
-        "name": 1,
+        "min": 1,
+        "max": 6,
         "number": 2
       },
       {
-        "title": "ванные комнаты"
+        "title": "ванные комнаты",
+        "max": 4
       }
     ]
   },
@@ -94,24 +97,25 @@
     "mods": "hover"
   },
   "bedrooms": {
-    "btn": "dropdown_active",
     "mod": "dropdown_active",
-    "modSect": "dropdown__toggle_activ",
     "modBtn": "dropdown__button_hidden",
     "title": "Сколько спален и кроватей",
     "items": [
       {
         "title": "спальни",
-        "name": 1,
-        "number": 2
+        "min": 1,
+        "number": 2,
+        "max": 6
       },
       {
         "title": "кровати",
-        "name": 1,
-        "number": 2
+        "min": 1,
+        "number": 2,
+        "max": 5
       },
       {
-        "title": "ванные комнаты"
+        "title": "ванные комнаты",
+        "max": 4
       }
     ]
   },
@@ -175,9 +179,8 @@
     "checked": "1"
   },
   "dropGuest": {
-    "name": "room",
+    "className": "dropdown_guest",
     "mod": "dropdown_active",
-    "modSect": "dropdown__toggle_activ",
     "items": [
       {
         "title": "взрослые"
@@ -237,9 +240,8 @@
     "className": "pagination__text column-three__pagination-text"
   },
   "dropdownThree": {
-    "name": "room",
+    "className": "dropdown_guest",
     "mod": "dropdown_active",
-    "modSect": "dropdown__toggle_activ",
     "items": [
       {
         "title": "взрослые",

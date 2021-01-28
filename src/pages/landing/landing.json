@@ -22,7 +22,7 @@
         "mods": "arrow"
       },
       "dropdown": {
-        "name": "room",
+        "className": "dropdown_guest",
         "items": [
           {
             "title": "взрослые"

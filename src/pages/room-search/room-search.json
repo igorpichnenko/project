@@ -11,7 +11,7 @@
     "title": "гости"
   },
   "dropdown": {
-    "name": "room",
+    "className": "dropdown_guest",
     "items": [
       {
         "title": "взрослые",
@@ -67,16 +67,19 @@
     "items": [
       {
         "title": "спальни",
-        "name": "1",
-        "number": "2"
+        "min": "1",
+        "number": "2",
+        "max": "5"
       },
       {
         "title": "кровати",
-        "name": 1,
-        "number": 2
+        "min": "1",
+        "number": "2",
+        "max": "6"
       },
       {
-        "title": "ванные комнаты"
+        "title": "ванные комнаты",
+        "max": "5"
       }
     ]
   },

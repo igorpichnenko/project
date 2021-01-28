@@ -5,14 +5,15 @@ class DropdownControl {
     this.handlersBind();
     this.checkValue();
     this.update = update;
-    this.name = this.items.dataset.name;
   }
 
   getElement() {
     this.option = this.items.querySelector('.dropdown-counters__controls');
-    this.min = this.option.dataset.min ? Number(this.option.dataset.min) : 0;
+
     this.input = this.items.querySelector('.dropdown-counters__value');
-    this.value = Number(this.input.textContent);
+    this.max = Number(this.input.max);
+    this.min = Number(this.input.min);
+    this.value = Number(this.input.value);
     this.plusAll = this.items.querySelectorAll('.dropdown-counters__plus');
     this.plusAll.forEach((plus) => {
       this.plusButton = plus;
@@ -21,18 +22,6 @@ class DropdownControl {
     this.minusAll.forEach((minus) => {
       this.minusButton = minus;
     });
-  }
-
-  childSum(index, len) {
-    let guestsValue = 0;
-    let newbornsValue = 0;
-    const item = this.items.querySelector('.dropdown-counters__value');
-    if (index !== len - 1) {
-      guestsValue += Number(item.textContent);
-    } else {
-      newbornsValue += Number(item.textContent);
-    }
-    return [guestsValue, newbornsValue];
   }
 
   handlersBind() {
@@ -51,15 +40,19 @@ class DropdownControl {
   }
 
   upValue(val) {
-    const value = val > this.min ? val : this.min;
-    this.value = value;
+    if (val <= this.max && val >= this.min) {
+      this.value = val;
+    } else if (val === 0) {
+      this.value = this.min;
+    }
+
     this.updateValue();
     this.checkValue();
-    this.update(this.value);
+    this.update();
   }
 
   updateValue() {
-    this.input.innerHTML = this.value;
+    this.input.value = this.value;
   }
 
   checkValue() {
@@ -67,6 +60,12 @@ class DropdownControl {
       this.deactivateMinus();
     } else {
       this.activateMinus();
+    }
+
+    if (this.value === this.max) {
+      this.deactivatePlus();
+    } else {
+      this.activatePlus();
     }
   }
 
@@ -78,15 +77,20 @@ class DropdownControl {
     return this.value === 0;
   }
 
-  getString() {
-    if (this.name !== undefined) {
-      // return this.value;
-    }
+  getValue() {
     return this.value;
   }
 
-  getValue() {
-    return this.value;
+  activatePlus() {
+    if (this.plusButton.classList.contains('dropdown-counters__plus_disabled')) {
+      this.plusButton.classList.remove('dropdown-counters__plus_disabled');
+      this.plusButton.removeAttribute('disabled');
+    }
+  }
+
+  deactivatePlus() {
+    this.plusButton.classList.add('dropdown-counters__plus_disabled');
+    this.plusButton.setAttribute('disabled', 'true');
   }
 
   activateMinus() {
@@ -102,4 +106,6 @@ class DropdownControl {
   }
 }
 
-export { DropdownControl };
+export {
+  DropdownControl,
+};
