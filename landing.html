@@ -37,19 +37,19 @@
             </linearGradient>
           </defs>
         </svg>
-        <div class="header-main__burger-menu">
-          <div class="header-main__burger-item header-main__burger-item_1"></div>
-          <div class="header-main__burger-item header-main__burger-item_2"></div>
-          <div class="header-main__burger-item header-main__burger-item_3"></div>
+        <div class="burger">
+          <div class="burger__item">
+            <div class="burger__items"></div>
+          </div>
         </div>
       </div>
-      <div class="header-main__nav">
+      <nav class="header-main__nav">
         <ul class="nav-list">
-          <li class="nav-list__text">О нас<a class="nav-list__link nav-list__link_about" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-1">Услуги<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text">Вакансии<a class="nav-list__link nav-list__link_vakansii" href="#"></a></li>
-          <li class="nav-list__text">Новости<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-2">Соглашения<a class="nav-list__link" href="#"></a></li>
+          <li class="nav-list__text nav-list__text_about">О нас<a class="nav-list__link nav-list__link_about" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_services">Услуги<a class="nav-list__link nav-list__link_services" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_vacancies">Вакансии<a class="nav-list__link nav-list__link_vacancies" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_news">Новости<a class="nav-list__link nav-list__link_news" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_agree">Соглашения<a class="nav-list__link nav-list__link_agree" href="/mock-address/change-me"></a></li>
         </ul>
         <div class="header-main__items"></div>
         <div class="header-main__button">
@@ -60,63 +60,84 @@
             <button class="button  button_" type="button">Зарегистрироваться</button>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
 <div class="landing-container">
   <div class="landing-container__items">
-    <form class="search">
-      <div class="search-container">
-        <div class="search-container__wrap-title">
-          <h3 class="title  title_large">Найдём номера под ваши пожелания</h3>
+    <form class="card-search">
+      <div class="card-search__wrapper">
+        <div class="card-search__wrap-title">
+          <h1 class="title  title_large">Найдём номера под ваши пожелания</h1>
         </div>
-        <div class="search-container__title">
-          <h3 class="title  title_standart">Прибытие</h3>
-          <h3 class="title  title_standart">Выезд</h3>
+        <div class="card-search__calendar js-datepicker-container">
+          <label class="text-field">Прибытие
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker js-datepicker-start" type="text" placeholder="ДД.ММ.ГГГГ">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
+          <label class="text-field">Выезд
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker-end" type="text" placeholder="ДД.ММ.ГГГГ">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
         </div>
-        <div class="search-container__calendar">
-          <div class="datepicker-box">
-            <input class="datepicker-dabl input_filter datepicker-start" placeholder="ДД.ММ.ГГГГ" type="text" data-position="bottom left">
-          </div>
-          <div class="datepicker-box">
-            <input class="text datepicker-end input_filter datepicker-dabl" placeholder="ДД.ММ.ГГГГ" data-position="bottom center">
-          </div>
-        </div>
-        <div class="search-container__dropdown">
+        <div class="card-search__dropdown">
           <h3 class="title  title_standart">Гости</h3>
-          <div class="form-group">
-            <div class="dropdown">
-              <button class="dropdown__button" type="button">Сколько гостей</button>
-              <div class="dropdown__list dropdown__list">
-                <div class="dropdown__list-item" data-value="travel"><span class="dropdown__text">Взрослые</span>
-                  <div class="calculate">
-                    <button class="button-mat button-minus" type="button">-</button><span number>2</span>
-                    <button class="button-mat button-plus" type="button">+</button>
+          <div class="dropdown dropdown_guest">
+            <div class="dropdown__section">
+              <h3 class="dropdown__title">Сколько гостей</h3>
+              <button class="dropdown__arrow" type="button">expand_more</button>
+            </div>
+            <div class="dropdown__menu">
+              <div class="dropdown__option">
+                <div class="dropdown-counters">
+                  <div class="dropdown-counter__name">
+                    <h3 class="dropdown-counters__title">взрослые</h3>
+                  </div>
+                  <div class="dropdown-counters__controls">
+                    <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                    <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                    <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                   </div>
                 </div>
-                <div class="dropdown__list-item" data-value="lessons"><span class="dropdown__text sub">Дети</span>
-                  <div class="calculate">
-                    <button class="button-mat button-minus" type="button">-</button><span number>1</span>
-                    <button class="button-mat button-plus" type="button">+</button>
+                <div class="dropdown-counters">
+                  <div class="dropdown-counter__name">
+                    <h3 class="dropdown-counters__title">дети</h3>
+                  </div>
+                  <div class="dropdown-counters__controls">
+                    <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                    <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                    <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                   </div>
                 </div>
-                <div class="dropdown__list-item" data-value="photo"><span class="dropdown__text sub"> Младенцы </span>
-                  <div class="calculate">
-                    <button class="button-mat button-minus" type="button">-</button><span number>0</span>
-                    <button class="button-mat button-plus" type="button">+</button>
+                <div class="dropdown-counters">
+                  <div class="dropdown-counter__name">
+                    <h3 class="dropdown-counters__title">младенцы</h3>
+                  </div>
+                  <div class="dropdown-counters__controls">
+                    <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                    <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                    <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                   </div>
                 </div>
-                <div class="button-box">
-                  <button class="button-footer">Очистить</button>
-                  <button class="button-footer button-left">Применить</button>
+              </div>
+              <div class="dropdown__buttons">
+                <div class="dropdown__container">
+                  <button class="dropdown__button dropdown__button_clear undefined" type="button">очистить</button>
+                </div>
+                <div class="dropdown__container">
+                  <button class="dropdown__button dropdown__button_use undefined" type="button">применить</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="search-container__button">
+      <div class="card-search__button">
         <button class="button  button_arrow" type="button">Подобрать номер</button>
       </div>
     </form>
@@ -153,45 +174,47 @@
                 </linearGradient>
               </defs>
             </svg>
+            <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
           </div>
-          <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <div class="footer-container__nav">
-          <ul class="main-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Навигация</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Новости</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Услуги</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Навигация</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Новости</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Услуги</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="about-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О сервисе</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Наша команда</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Вакансии</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Инвесторы</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О сервисе</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Наша команда</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Вакансии</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Инвесторы</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="support-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Соглашения</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Сообщества</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Связь с нами</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">Соглашения</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Сообщества</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Связь с нами</a></li>
           </ul>
         </div>
         <div class="footer-container__subscription">
-          <ul class="footer-container__subscript">
-            <li class="footer-container__promo-list"><a class="footer-container__title" href="#">Подписка </a></li>
-            <li class="footer-container__text"><a class="footer-container__promo" href="#">Получайте специальные предложения и новости сервиса</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Подписка</a></li>
+            <li class="footer-navigation__list footer-navigation__list_subscription"><a class="footer-navigation__link footer-navigation__link_subscription" href="/mock-address/change-me">Получайте специальные предложения и новости сервиса</a></li>
           </ul>
           <div class="footer-container__input">
-            <div class="input">
-              <input class="input__input  input_standart" type="email" placeholder="Email">
-              <button class="input__button" type="submit">arrow_forward</button>
-            </div>
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+                <button class="text-field__button" type="submit">arrow_forward</button>
+              </div>
+            </label>
           </div>
         </div>
       </div>

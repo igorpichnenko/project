@@ -37,19 +37,19 @@
             </linearGradient>
           </defs>
         </svg>
-        <div class="header-main__burger-menu">
-          <div class="header-main__burger-item header-main__burger-item_1"></div>
-          <div class="header-main__burger-item header-main__burger-item_2"></div>
-          <div class="header-main__burger-item header-main__burger-item_3"></div>
+        <div class="burger">
+          <div class="burger__item">
+            <div class="burger__items"></div>
+          </div>
         </div>
       </div>
-      <div class="header-main__nav">
+      <nav class="header-main__nav">
         <ul class="nav-list">
-          <li class="nav-list__text">О нас<a class="nav-list__link nav-list__link_about" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-1">Услуги<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text">Вакансии<a class="nav-list__link nav-list__link_vakansii" href="#"></a></li>
-          <li class="nav-list__text">Новости<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-2">Соглашения<a class="nav-list__link" href="#"></a></li>
+          <li class="nav-list__text nav-list__text_about">О нас<a class="nav-list__link nav-list__link_about" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_services">Услуги<a class="nav-list__link nav-list__link_services" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_vacancies">Вакансии<a class="nav-list__link nav-list__link_vacancies" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_news">Новости<a class="nav-list__link nav-list__link_news" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_agree">Соглашения<a class="nav-list__link nav-list__link_agree" href="/mock-address/change-me"></a></li>
         </ul>
         <div class="header-main__items"></div>
         <div class="header-main__button">
@@ -60,7 +60,7 @@
             <button class="button  button_" type="button">Зарегистрироваться</button>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
@@ -68,21 +68,21 @@
 <div class="room-detalis">
   <div class="room-detalis__item">
     <div class="room-detalis__comment">
-      <h3 class="title  title_medium">Сведения о номере</h3>
+      <h2 class="title  title_medium">Сведения о номере</h2>
       <div class="room-detalis__comments">
-        <div class="comments-item undefined"><i class="material-icons comments-item__icon">insert_emoticon</i>
+        <div class="comments-item undefined"><i class="comments-item__icon material-icons">insert_emoticon</i>
           <div class="comments-item__content">
             <div class="comments-item__title">Комфорт</div>
             <div class="comments-item__text">Шумопоглощающие стены</div>
           </div>
         </div>
-        <div class="comments-item undefined"><i class="material-icons comments-item__icon">location_city</i>
+        <div class="comments-item undefined"><i class="comments-item__icon material-icons">location_city</i>
           <div class="comments-item__content">
             <div class="comments-item__title">Удобство</div>
             <div class="comments-item__text">Окно в каждой из спален</div>
           </div>
         </div>
-        <div class="comments-item comments-item_border"><i class="material-icons comments-item__icon">whatshot</i>
+        <div class="comments-item comments-item_border"><i class="comments-item__icon material-icons">whatshot</i>
           <div class="comments-item__content">
             <div class="comments-item__title">Уют</div>
             <div class="comments-item__text">Номер оснащён камином</div>
@@ -130,12 +130,12 @@
     </div>
     <div class="room-detalis__reviews">
       <div class="room-detalis__title">
-        <h3 class="title  title_medium">Отзывы посетителей номера</h3><span class="room-detalis__title_lower">2 отзыва</span>
+        <h2 class="title  title_medium">Отзывы посетителей номера</h2><span class="room-detalis__title_lower">2 отзыва</span>
       </div>
       <div class="room-detalis__title_murad">
-        <div class="person-comment"><img class="person-comment__icon" src="../../src/components/person-comment/icon/comment-murad.png">
+        <div class="person-comment"><img class="person-comment__icon" src="../../src/blocks/person-comment/icon/comment-murad.png">
           <div class="person-comment__block">
-            <div class="person-comment__name">Мурад Сарафанов</div>
+            <div class="person-comment__name">Мурад Сарофанов</div>
             <div class="person-comment__date">5 дней назад</div>
           </div>
         </div>
@@ -153,7 +153,7 @@
         </div>
       </div>
       <div class="room-detalis__patricia">
-        <div class="person-comment"><img class="person-comment__icon" src="../../src/components/person-comment/icon/comment-patricia.png">
+        <div class="person-comment"><img class="person-comment__icon" src="../../src/blocks/person-comment/icon/comment-patricia.png">
           <div class="person-comment__block">
             <div class="person-comment__name">Патрисия Стеклышкова</div>
             <div class="person-comment__date">Неделю назад</div>
@@ -175,7 +175,7 @@
     </div>
     <div class="room-detalis__rules">
       <div class="room-detalis__text">
-        <h3 class="title  title_medium">Правила</h3>
+        <h2 class="title  title_medium">Правила</h2>
       </div>
       <ul class="bullet-list">
         <li class="bullet-list__items">Нельзя с питомцами</li>
@@ -184,82 +184,103 @@
       </ul>
     </div>
     <div class="room-detalis__cancel">
-      <h3 class="title  title_medium">Отмена</h3>
-      <div class="room-detalis__paragraf">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. </div>
+      <h2 class="title  title_medium">Отмена</h2>
+      <div class="room-detalis__paragraf">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</div>
     </div>
   </div>
   <div class="room-detalis__form">
-    <div class="formlux-box">
-      <div class="lux-container">
+    <form class="card-lux">
+      <div class="card-lux__container">
         <div class="price">
-          <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text">888</span><span class="number-container__lux room-detalis__formlux">люкс</span></div>
+          <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text">888</span><span class="price-container__lux room-detalis__formlux">люкс</span></div>
           <div class="price-container">
             <div class="price-container__cost">9 990₽</div>
             <div class="price-container__duration">в сутки</div>
           </div>
         </div>
-        <div class="lux-container__title">
-          <h3 class="title  title_standart">Прибытие</h3>
-          <h3 class="title  title_standart">Выезд</h3>
-        </div>
-        <div class="lux-container__calendar">
-          <div class="datepicker-box">
-            <input class="datepicker-dabl input_filter datepicker-start" placeholder="19.08.2019" type="text" data-position="bottom left">
-          </div>
-          <div class="datepicker-box">
-            <input class="text datepicker-end input_filter datepicker-dabl" placeholder="23.08.2019" data-position="bottom center">
-          </div>
+        <div class="card-lux__calendar js-datepicker-container">
+          <label class="text-field">Прибытие
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker js-datepicker-start" type="text" placeholder="19.08.2019">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
+          <label class="text-field">Выезд
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker-end" type="text" placeholder="23.08.2019">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
         </div>
         <h3 class="title  title_standart">гости</h3>
-        <div class="form-group">
-          <div class="dropdown">
-            <button class="dropdown__button" type="button">3 гостя</button>
-            <div class="dropdown__list dropdown__list">
-              <div class="dropdown__list-item" data-value="travel"><span class="dropdown__text">Взрослые</span>
-                <div class="calculate">
-                  <button class="button-mat button-minus" type="button">-</button><span number>2</span>
-                  <button class="button-mat button-plus" type="button">+</button>
+        <div class="dropdown dropdown_guest">
+          <div class="dropdown__section">
+            <h3 class="dropdown__title">Сколько гостей</h3>
+            <button class="dropdown__arrow" type="button">expand_more</button>
+          </div>
+          <div class="dropdown__menu">
+            <div class="dropdown__option">
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">взрослые</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="2" min="0" max="10" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="dropdown__list-item" data-value="lessons"><span class="dropdown__text sub">Дети</span>
-                <div class="calculate">
-                  <button class="button-mat button-minus" type="button">-</button><span number>1</span>
-                  <button class="button-mat button-plus" type="button">+</button>
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">дети</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="1" min="0" max="10" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="dropdown__list-item" data-value="photo"><span class="dropdown__text sub"> Младенцы </span>
-                <div class="calculate">
-                  <button class="button-mat button-minus" type="button">-</button><span number>0</span>
-                  <button class="button-mat button-plus" type="button">+</button>
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">младенцы</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="button-box">
-                <button class="button-footer">Очистить</button>
-                <button class="button-footer button-left">Применить</button>
+            </div>
+            <div class="dropdown__buttons">
+              <div class="dropdown__container">
+                <button class="dropdown__button dropdown__button_clear undefined" type="button">очистить</button>
+              </div>
+              <div class="dropdown__container">
+                <button class="dropdown__button dropdown__button_use undefined" type="button">применить</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="formlux-main"> 
-          <div class="formlux-main__price"><span class="formlux-main__text formlux-main__text_left">9 990₽ х 4 суток</span><span class="formlux-main__text">39 960₽</span></div>
-          <div class="formlux-main__price"><span class="formlux-main__text formlux-main__text_left">Сбор за услуги: скидка 2 179₽</span><span class="formlux-main__label formlux-main__label_top">i</span><span class="formlux-main__text">0₽</span></div>
-          <div class="formlux-main__price bottom">
-            <div class="formlux-main__text formlux-main__text_wrap">Сбор за дополнительные услуги</div><span class="formlux-main__label formlux-main__label_number-right">i</span>
-            <div class="formlux-main__text">300₽</div>
+        <div class="card-lux__wrapper"> 
+          <div class="card-lux__price"><span class="card-lux__text card-lux__text_left">9 990₽ х 4 суток</span><span class="card-lux__text">39 960₽</span></div>
+          <div class="card-lux__price"><span class="card-lux__text card-lux__text_left">Сбор за услуги: скидка 2 179₽</span><span class="card-lux__label card-lux__label_top">i</span><span class="card-lux__text">0₽</span></div>
+          <div class="card-lux__price">
+            <div class="card-lux__text card-lux__text_wrap">Сбор за дополнительные услуги</div><span class="card-lux__label card-lux__label_icon-right">i</span>
+            <div class="card-lux__text">300₽</div>
           </div>
         </div>
       </div>
-      <div class="formlux-footer">
-        <div class="formlux-footer__price">
-          <div class="formlux-footer__text">Итого</div>
-          <div class="formlux-footer__border"></div>
-          <div class="formlux-footer__text">38 081₽</div>
+      <div class="card-lux__bottom">
+        <div class="card-lux__wrap">
+          <div class="card-lux__sum">Итого</div>
+          <div class="card-lux__border"></div>
+          <div class="card-lux__sum">38 081₽</div>
         </div>
       </div>
-      <div class="lux-container__button">
+      <div class="card-lux__button">
         <button class="button  button_arrow" type="button">Забронировать</button>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 <footer class="footer-rooms">
@@ -292,45 +313,47 @@
                 </linearGradient>
               </defs>
             </svg>
+            <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
           </div>
-          <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <div class="footer-container__nav">
-          <ul class="main-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Навигация</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Новости</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Услуги</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Навигация</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Новости</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Услуги</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="about-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О сервисе</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Наша команда</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Вакансии</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Инвесторы</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О сервисе</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Наша команда</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Вакансии</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Инвесторы</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="support-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Соглашения</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Сообщества</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Связь с нами</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">Соглашения</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Сообщества</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Связь с нами</a></li>
           </ul>
         </div>
         <div class="footer-container__subscription">
-          <ul class="footer-container__subscript">
-            <li class="footer-container__promo-list"><a class="footer-container__title" href="#">Подписка </a></li>
-            <li class="footer-container__text"><a class="footer-container__promo" href="#">Получайте специальные предложения и новости сервиса</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Подписка</a></li>
+            <li class="footer-navigation__list footer-navigation__list_subscription"><a class="footer-navigation__link footer-navigation__link_subscription" href="/mock-address/change-me">Получайте специальные предложения и новости сервиса</a></li>
           </ul>
           <div class="footer-container__input">
-            <div class="input">
-              <input class="input__input  input_standart" type="email" placeholder="Email">
-              <button class="input__button" type="submit">arrow_forward</button>
-            </div>
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+                <button class="text-field__button" type="submit">arrow_forward</button>
+              </div>
+            </label>
           </div>
         </div>
       </div>

@@ -37,19 +37,19 @@
             </linearGradient>
           </defs>
         </svg>
-        <div class="header-main__burger-menu">
-          <div class="header-main__burger-item header-main__burger-item_1"></div>
-          <div class="header-main__burger-item header-main__burger-item_2"></div>
-          <div class="header-main__burger-item header-main__burger-item_3"></div>
+        <div class="burger">
+          <div class="burger__item">
+            <div class="burger__items"></div>
+          </div>
         </div>
       </div>
-      <div class="header-main__nav">
+      <nav class="header-main__nav">
         <ul class="nav-list">
-          <li class="nav-list__text">О нас<a class="nav-list__link nav-list__link_about" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-1">Услуги<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text">Вакансии<a class="nav-list__link nav-list__link_vakansii" href="#"></a></li>
-          <li class="nav-list__text">Новости<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-2">Соглашения<a class="nav-list__link" href="#"></a></li>
+          <li class="nav-list__text nav-list__text_about">О нас<a class="nav-list__link nav-list__link_about" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_services">Услуги<a class="nav-list__link nav-list__link_services" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_vacancies">Вакансии<a class="nav-list__link nav-list__link_vacancies" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_news">Новости<a class="nav-list__link nav-list__link_news" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_agree">Соглашения<a class="nav-list__link nav-list__link_agree" href="/mock-address/change-me"></a></li>
         </ul>
         <div class="header-main__items"></div>
         <div class="header-main__button">
@@ -60,46 +60,66 @@
             <button class="button  button_" type="button">Зарегистрироваться</button>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
 <div class="room-search">
   <div class="room-search__aside">
-    <h3 class="title  title_standart">Даты пребывания в отеле</h3>
-    <div class="room-search__input">
-      <div class="input">
-        <input class="input__input  input_filter datepicker-new" type="text" placeholder="19 авг - 23 авг">
-        <button class="input__button_arrow" type="submit">expand_more</button>
-      </div>
+    <div class="room-search__input js-datepicker-container">
+      <label class="text-field">Даты пребывания в отеле
+        <div class="text-field__input">
+          <input class="text-field__input_standart text-field_filter js-datepicker" type="text" placeholder="19 авг - 23 авг">
+          <button class="text-field__button_arrow" type="submit">expand_more</button>
+        </div>
+      </label>
     </div>
     <div class="room-search__dropdown">
       <h3 class="title  title_standart">гости</h3>
-      <div class="form-group">
-        <div class="dropdown">
-          <button class="dropdown__button" type="button">3 гостя, 1 младенец</button>
-          <div class="dropdown__list">
-            <div class="dropdown__list-item" data-value="travel"><span class="dropdown__text">Взрослые</span>
-              <div class="calculate">
-                <button class="button-mat button-minus" type="button">-</button><span number>2</span>
-                <button class="button-mat button-plus" type="button">+</button>
+      <div class="dropdown dropdown_guest">
+        <div class="dropdown__section">
+          <h3 class="dropdown__title">Сколько гостей</h3>
+          <button class="dropdown__arrow" type="button">expand_more</button>
+        </div>
+        <div class="dropdown__menu">
+          <div class="dropdown__option">
+            <div class="dropdown-counters">
+              <div class="dropdown-counter__name">
+                <h3 class="dropdown-counters__title">взрослые</h3>
+              </div>
+              <div class="dropdown-counters__controls">
+                <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                <input class="dropdown-counters__value" value="2" min="0" max="10" type="number">
+                <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
               </div>
             </div>
-            <div class="dropdown__list-item" data-value="lessons"><span class="dropdown__text sub">Дети</span>
-              <div class="calculate">
-                <button class="button-mat button-minus" type="button">-</button><span number>1</span>
-                <button class="button-mat button-plus" type="button">+</button>
+            <div class="dropdown-counters">
+              <div class="dropdown-counter__name">
+                <h3 class="dropdown-counters__title">дети</h3>
+              </div>
+              <div class="dropdown-counters__controls">
+                <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                <input class="dropdown-counters__value" value="1" min="0" max="10" type="number">
+                <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
               </div>
             </div>
-            <div class="dropdown__list-item" data-value="photo"><span class="dropdown__text sub"> Младенцы </span>
-              <div class="calculate">
-                <button class="button-mat button-minus" type="button">-</button><span number>0</span>
-                <button class="button-mat button-plus" type="button">+</button>
+            <div class="dropdown-counters">
+              <div class="dropdown-counter__name">
+                <h3 class="dropdown-counters__title">младенцы</h3>
+              </div>
+              <div class="dropdown-counters__controls">
+                <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                <input class="dropdown-counters__value" value="1" min="0" max="10" type="number">
+                <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
               </div>
             </div>
-            <div class="button-box">
-              <button class="button-footer">Очистить</button>
-              <button class="button-footer button-left">Применить</button>
+          </div>
+          <div class="dropdown__buttons">
+            <div class="dropdown__container">
+              <button class="dropdown__button dropdown__button_clear undefined" type="button">очистить</button>
+            </div>
+            <div class="dropdown__container">
+              <button class="dropdown__button dropdown__button_use undefined" type="button">применить</button>
             </div>
           </div>
         </div>
@@ -121,7 +141,7 @@
       <div class="room-search__checkbox">
         <div class="checkbox">
           <label class="checkbox__label">
-            <div class="checkbox__container">
+            <div class="checkbox__content">
               <input class="checkbox__input" type="checkbox"><span class="checkbox__style"></span>
             </div>
             <div class="checkbox__text">Можно курить</div>
@@ -129,7 +149,7 @@
         </div>
         <div class="checkbox">
           <label class="checkbox__label">
-            <div class="checkbox__container">
+            <div class="checkbox__content">
               <input class="checkbox__input" type="checkbox" checked="check"><span class="checkbox__style"></span>
             </div>
             <div class="checkbox__text">Можно с питомцами</div>
@@ -137,7 +157,7 @@
         </div>
         <div class="checkbox">
           <label class="checkbox__label">
-            <div class="checkbox__container">
+            <div class="checkbox__content">
               <input class="checkbox__input" type="checkbox" checked="check"><span class="checkbox__style"></span>
             </div>
             <div class="checkbox__text checkbox__wrap">Можно пригласить гостей (до 10 человек)</div>
@@ -151,7 +171,7 @@
         <div class="checkbox-rich">
           <div class="checkbox">
             <label class="checkbox__label">
-              <div class="checkbox__container">
+              <div class="checkbox__content">
                 <input class="checkbox__input" type="checkbox"><span class="checkbox__style"></span>
               </div>
               <div class="checkbox__text checkbox__title">Широкий коридор</div>
@@ -162,7 +182,7 @@
         <div class="checkbox-rich">
           <div class="checkbox">
             <label class="checkbox__label">
-              <div class="checkbox__container">
+              <div class="checkbox__content">
                 <input class="checkbox__input" type="checkbox"><span class="checkbox__style"></span>
               </div>
               <div class="checkbox__text checkbox__title">Помощник для инвалидов</div>
@@ -173,27 +193,50 @@
       </div>
       <div class="room-search__medium-drop">
         <h3 class="title  title_standart">Удобства номера</h3>
-        <div class="undefined dropdawn-medium">
-          <div class="dropdown">
-            <button class="dropdown__button" type="button">2 спальни, 2 кровати...</button>
-            <div class="dropdown__list undefined dropdawn-medium">
-              <div class="dropdown__list-item" data-value="travel"><span class="dropdown__text">Спальни</span>
-                <div class="calculate">
-                  <button class="button-mat button-minus" type="button">-</button><span class="number">2</span>
-                  <button class="button-mat button-plus">+</button>
+        <div class="dropdown undefined">
+          <div class="dropdown__section">
+            <h3 class="dropdown__title">Сколько спален и кроватей</h3>
+            <button class="dropdown__arrow" type="button">expand_more</button>
+          </div>
+          <div class="dropdown__menu">
+            <div class="dropdown__option">
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">спальни</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="2" min="1" max="5" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="dropdown__list-item" data-value="lessons"><span class="dropdown__text dropdown__text_center">кровати</span>
-                <div class="calculate">
-                  <button class="button-mat button-minus">-</button><span class="number">2</span>
-                  <button class="button-mat button-plus">+</button>
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">кровати</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="2" min="1" max="6" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="dropdown__list-item" data-value="photo"><span class="dropdown__text dropdown__text_bottom">ванные комнаты</span>
-                <div class="calculate">
-                  <button class="button-mat button-minus">-</button><span class="number">0</span>
-                  <button class="button-mat button-plus">+</button>
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">ванные комнаты</h3>
                 </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="0" min="0" max="5" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown__buttons">
+              <div class="dropdown__container">
+                <button class="dropdown__button dropdown__button_clear dropdown__button_hidden" type="button">очистить</button>
+              </div>
+              <div class="dropdown__container">
+                <button class="dropdown__button dropdown__button_use dropdown__button_hidden" type="button">применить</button>
               </div>
             </div>
           </div>
@@ -206,7 +249,7 @@
             <div class="checkbox-list__indent"></div>
             <div class="checkbox">
               <label class="checkbox__label">
-                <div class="checkbox__container">
+                <div class="checkbox__content">
                   <input class="checkbox__input" type="checkbox"><span class="checkbox__style"></span>
                 </div>
                 <div class="checkbox__text">Завтрак</div>
@@ -214,7 +257,7 @@
             </div>
             <div class="checkbox">
               <label class="checkbox__label">
-                <div class="checkbox__container">
+                <div class="checkbox__content">
                   <input class="checkbox__input" type="checkbox" checked="check"><span class="checkbox__style"></span>
                 </div>
                 <div class="checkbox__text">Письменный стол</div>
@@ -222,7 +265,7 @@
             </div>
             <div class="checkbox">
               <label class="checkbox__label">
-                <div class="checkbox__container">
+                <div class="checkbox__content">
                   <input class="checkbox__input" type="checkbox" checked="check"><span class="checkbox__style"></span>
                 </div>
                 <div class="checkbox__text">Стул для кормления</div>
@@ -230,7 +273,7 @@
             </div>
             <div class="checkbox">
               <label class="checkbox__label">
-                <div class="checkbox__container">
+                <div class="checkbox__content">
                   <input class="checkbox__input" type="checkbox" checked="check"><span class="checkbox__style"></span>
                 </div>
                 <div class="checkbox__text">Кроватка</div>
@@ -238,7 +281,7 @@
             </div>
             <div class="checkbox">
               <label class="checkbox__label">
-                <div class="checkbox__container">
+                <div class="checkbox__content">
                   <input class="checkbox__input" type="checkbox"><span class="checkbox__style"></span>
                 </div>
                 <div class="checkbox__text">Телевизор</div>
@@ -246,7 +289,7 @@
             </div>
             <div class="checkbox">
               <label class="checkbox__label">
-                <div class="checkbox__container">
+                <div class="checkbox__content">
                   <input class="checkbox__input" type="checkbox"><span class="checkbox__style"></span>
                 </div>
                 <div class="checkbox__text">Шампунь</div>
@@ -258,14 +301,16 @@
     </div>
   </div>
   <div class="room-search__cards">
-    <h3 class="title  title_large">Номера, которые мы для вас подобрали</h3>
+    <div class="room-search__title">
+      <h1 class="title  title_large">Номера, которые мы для вас подобрали</h1>
+    </div>
     <div class="room-search__container">
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/1.png"><img src="../../../src/components/slick/images/6.png"><img src="../../../src/components/slick/images/7.png"><img src="../../../src/components/slick/images/8.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/1.png"><img src="../../../src/blocks/slick/images/2.png"><img src="../../../src/blocks/slick/images/3.png"><img src="../../../src/blocks/slick/images/4.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">888</span><span class="price-container__lux room-search__lux">люкс</span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">888</span><span class="price-container__lux room-search__lux">люкс</span></div>
               <div class="price-container">
                 <div class="price-container__cost">9 990₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -276,11 +321,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" checked name="room-1" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="slider" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="slider" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="slider" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="slider" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="slider" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -292,11 +337,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/2.png"><img src="../../../src/components/slick/images/8.png"><img src="../../../src/components/slick/images/9.png"><img src="../../../src/components/slick/images/4.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/2.png"><img src="../../../src/blocks/slick/images/8.png"><img src="../../../src/blocks/slick/images/9.png"><img src="../../../src/blocks/slick/images/3.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">840</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">840</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">9 900₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -307,11 +352,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-2" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderOne" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderOne" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderOne" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderOne" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderOne" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -323,11 +368,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/3.png"><img src="../../../src/components/slick/images/4.png"><img src="../../../src/components/slick/images/2.png"><img src="../../../src/components/slick/images/1.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/3.png"><img src="../../../src/blocks/slick/images/4.png"><img src="../../../src/blocks/slick/images/2.png"><img src="../../../src/blocks/slick/images/1.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">980</span><span class="price-container__lux room-search__lux">люкс</span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">980</span><span class="price-container__lux room-search__lux">люкс</span></div>
               <div class="price-container">
                 <div class="price-container__cost">8 500₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -338,11 +383,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-3" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-3" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-3" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-3" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-3" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTwo" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTwo" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderTwo" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTwo" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTwo" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -354,11 +399,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/4.png"><img src="../../../src/components/slick/images/1.png"><img src="../../../src/components/slick/images/4.png"><img src="../../../src/components/slick/images/7.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/4.png"><img src="../../../src/blocks/slick/images/1.png"><img src="../../../src/blocks/slick/images/7.png"><img src="../../../src/blocks/slick/images/9.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">856</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">856</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">7 300₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -369,11 +414,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" checked name="room-4" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-4" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-4" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-4" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-4" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderThree" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderThree" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderThree" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderThree" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderThree" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -385,11 +430,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/5.png"><img src="../../../src/components/slick/images/6.png"><img src="../../../src/components/slick/images/2.png"><img src="../../../src/components/slick/images/1.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/5.png"><img src="../../../src/blocks/slick/images/7.png"><img src="../../../src/blocks/slick/images/11.png"><img src="../../../src/blocks/slick/images/12.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">740</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">740</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">6 000₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -400,11 +445,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-5" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-5" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-5" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-5" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-5" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFour" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderFour" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFour" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFour" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFour" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -416,11 +461,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/6.png"><img src="../../../src/components/slick/images/12.png"><img src="../../../src/components/slick/images/11.png"><img src="../../../src/components/slick/images/10.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/6.png"><img src="../../../src/blocks/slick/images/4.png"><img src="../../../src/blocks/slick/images/1.png"><img src="../../../src/blocks/slick/images/10.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">982</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">982</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">5 800₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -431,11 +476,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-6" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-6" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-6" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-6" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-6" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFive" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFive" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderFive" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFive" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderFive" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -447,11 +492,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/7.png"><img src="../../../src/components/slick/images/8.png"><img src="../../../src/components/slick/images/7.png"><img src="../../../src/components/slick/images/3.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/7.png"><img src="../../../src/blocks/slick/images/9.png"><img src="../../../src/blocks/slick/images/8.png"><img src="../../../src/blocks/slick/images/3.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">678</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">678</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">5 500₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -462,11 +507,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" checked name="room-7" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-7" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-7" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-7" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-7" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderSix" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSix" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSix" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSix" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSix" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -478,11 +523,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/8.png"><img src="../../../src/components/slick/images/12.png"><img src="../../../src/components/slick/images/1.png"><img src="../../../src/components/slick/images/2.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/8.png"><img src="../../../src/blocks/slick/images/6.png"><img src="../../../src/blocks/slick/images/4.png"><img src="../../../src/blocks/slick/images/2.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">450</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">450</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">5 300₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -493,11 +538,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-8" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-8" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-8" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-8" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-8" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSeven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderSeven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSeven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSeven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderSeven" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -509,11 +554,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/9.png"><img src="../../../src/components/slick/images/7.png"><img src="../../../src/components/slick/images/4.png"><img src="../../../src/components/slick/images/5.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/9.png"><img src="../../../src/blocks/slick/images/1.png"><img src="../../../src/blocks/slick/images/10.png"><img src="../../../src/blocks/slick/images/12.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">350</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">350</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">5 000₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -524,11 +569,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-9" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-9" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-9" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-9" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-9" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEight" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEight" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderEight" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEight" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEight" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -540,11 +585,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/10.png"><img src="../../../src/components/slick/images/8.png"><img src="../../../src/components/slick/images/12.png"><img src="../../../src/components/slick/images/2.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/10.png"><img src="../../../src/blocks/slick/images/8.png"><img src="../../../src/blocks/slick/images/12.png"><img src="../../../src/blocks/slick/images/3.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">666</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">666</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">5 000₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -555,11 +600,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" checked name="room-10" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-10" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-10" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-10" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-10" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderNine" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderNine" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderNine" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderNine" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderNine" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -571,11 +616,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/11.png"><img src="../../../src/components/slick/images/4.png"><img src="../../../src/components/slick/images/1.png"><img src="../../../src/components/slick/images/12.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/11.png"><img src="../../../src/blocks/slick/images/4.png"><img src="../../../src/blocks/slick/images/1.png"><img src="../../../src/blocks/slick/images/7.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">444</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">444</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">5 000₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -586,11 +631,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-11" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-11" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-11" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-11" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-11" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTen" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTen" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderTen" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTen" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderTen" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -602,11 +647,11 @@
         </div>
       </div>
       <div class="slider-cards">
-        <div class="variable slider"><img src="../../../src/components/slick/images/12.png"><img src="../../../src/components/slick/images/8.png"><img src="../../../src/components/slick/images/9.png"><img src="../../../src/components/slick/images/4.png"></div>
+        <div class="variable js-slider"><img src="../../../src/blocks/slick/images/12.png"><img src="../../../src/blocks/slick/images/4.png"><img src="../../../src/blocks/slick/images/6.png"><img src="../../../src/blocks/slick/images/5.png"></div>
         <div class="slider-cards__reviews">
           <div class="slider-cards__title">
             <div class="price">
-              <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">352</span><span class="price-container__lux"></span></div>
+              <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">352</span><span class="price-container__lux"></span></div>
               <div class="price-container">
                 <div class="price-container__cost">5 000₽</div>
                 <div class="price-container__duration">в сутки</div>
@@ -617,11 +662,11 @@
             <div class="reviews">
               <div class="star-rating">
                 <div class="star-rating__wrap">
-                  <input class="star-rating__input" name="room-12" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-12" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" checked name="room-12" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-12" type="radio"><span class="star-rating__ico"></span>
-                  <input class="star-rating__input" name="room-12" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEleven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEleven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" checked name="sliderEleven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEleven" type="radio"><span class="star-rating__ico"></span>
+                  <input class="star-rating__input" name="sliderEleven" type="radio"><span class="star-rating__ico"></span>
                 </div>
               </div>
               <div class="reviews-container">
@@ -671,45 +716,47 @@
                 </linearGradient>
               </defs>
             </svg>
+            <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
           </div>
-          <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <div class="footer-container__nav">
-          <ul class="main-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Навигация</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Новости</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Услуги</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Навигация</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Новости</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Услуги</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="about-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О сервисе</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Наша команда</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Вакансии</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Инвесторы</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О сервисе</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Наша команда</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Вакансии</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Инвесторы</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="support-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Соглашения</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Сообщества</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Связь с нами</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">Соглашения</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Сообщества</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Связь с нами</a></li>
           </ul>
         </div>
         <div class="footer-container__subscription">
-          <ul class="footer-container__subscript">
-            <li class="footer-container__promo-list"><a class="footer-container__title" href="#">Подписка </a></li>
-            <li class="footer-container__text"><a class="footer-container__promo" href="#">Получайте специальные предложения и новости сервиса</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Подписка</a></li>
+            <li class="footer-navigation__list footer-navigation__list_subscription"><a class="footer-navigation__link footer-navigation__link_subscription" href="/mock-address/change-me">Получайте специальные предложения и новости сервиса</a></li>
           </ul>
           <div class="footer-container__input">
-            <div class="input">
-              <input class="input__input  input_standart" type="email" placeholder="Email">
-              <button class="input__button" type="submit">arrow_forward</button>
-            </div>
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+                <button class="text-field__button" type="submit">arrow_forward</button>
+              </div>
+            </label>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!--meta(name="viewport" content="width=device-width, initial-scale=1.0")-->
+    <!--meta(name='viewport', content='width=device-width, initial-scale=1.0')-->
     <meta name="viewport" content="width=1440, initial-scale=1.0">
   </head>
 </html>
@@ -16,69 +16,96 @@
 </svg>
 <div class="cards">
   <div class="cards-one">
-    <form class="search">
-      <div class="search-container">
-        <div class="search-container__wrap-title">
-          <h3 class="title  title_large">Найдём номера под ваши пожелания</h3>
+    <form class="card-search">
+      <div class="card-search__wrapper">
+        <div class="card-search__wrap-title">
+          <h1 class="title  title_large">Найдём номера под ваши пожелания</h1>
         </div>
-        <div class="search-container__title">
-          <h3 class="title  title_standart">Прибытие</h3>
-          <h3 class="title  title_standart">Выезд</h3>
+        <div class="card-search__calendar js-datepicker-container">
+          <label class="text-field">Прибытие
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker js-datepicker-start" type="text" placeholder="ДД.ММ.ГГГГ">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
+          <label class="text-field">Выезд
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker-end" type="text" placeholder="ДД.ММ.ГГГГ">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
         </div>
-        <div class="search-container__calendar">
-          <div class="datepicker-box">
-            <input class="datepicker-dabl input_filter datepicker-start" placeholder="ДД.ММ.ГГГГ" type="text" data-position="bottom left">
-          </div>
-          <div class="datepicker-box">
-            <input class="text datepicker-end input_filter datepicker-dabl" placeholder="ДД.ММ.ГГГГ" data-position="bottom center">
-          </div>
-        </div>
-        <div class="search-container__dropdown">
+        <div class="card-search__dropdown">
           <h3 class="title  title_standart">Гости</h3>
-          <div class="form-group">
-            <div class="dropdown">
-              <button class="dropdown__button" type="button">Сколько гостей</button>
-              <div class="dropdown__list dropdown__list">
-                <div class="dropdown__list-item" data-value="travel"><span class="dropdown__text">Взрослые</span>
-                  <div class="calculate">
-                    <button class="button-mat button-minus" type="button">-</button><span number>2</span>
-                    <button class="button-mat button-plus" type="button">+</button>
+          <div class="dropdown dropdown_guest">
+            <div class="dropdown__section">
+              <h3 class="dropdown__title">Сколько гостей</h3>
+              <button class="dropdown__arrow" type="button">expand_more</button>
+            </div>
+            <div class="dropdown__menu">
+              <div class="dropdown__option">
+                <div class="dropdown-counters">
+                  <div class="dropdown-counter__name">
+                    <h3 class="dropdown-counters__title">взрослые</h3>
+                  </div>
+                  <div class="dropdown-counters__controls">
+                    <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                    <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                    <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                   </div>
                 </div>
-                <div class="dropdown__list-item" data-value="lessons"><span class="dropdown__text sub">Дети</span>
-                  <div class="calculate">
-                    <button class="button-mat button-minus" type="button">-</button><span number>1</span>
-                    <button class="button-mat button-plus" type="button">+</button>
+                <div class="dropdown-counters">
+                  <div class="dropdown-counter__name">
+                    <h3 class="dropdown-counters__title">дети</h3>
+                  </div>
+                  <div class="dropdown-counters__controls">
+                    <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                    <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                    <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                   </div>
                 </div>
-                <div class="dropdown__list-item" data-value="photo"><span class="dropdown__text sub"> Младенцы </span>
-                  <div class="calculate">
-                    <button class="button-mat button-minus" type="button">-</button><span number>0</span>
-                    <button class="button-mat button-plus" type="button">+</button>
+                <div class="dropdown-counters">
+                  <div class="dropdown-counter__name">
+                    <h3 class="dropdown-counters__title">младенцы</h3>
+                  </div>
+                  <div class="dropdown-counters__controls">
+                    <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                    <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                    <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                   </div>
                 </div>
-                <div class="button-box">
-                  <button class="button-footer">Очистить</button>
-                  <button class="button-footer button-left">Применить</button>
+              </div>
+              <div class="dropdown__buttons">
+                <div class="dropdown__container">
+                  <button class="dropdown__button dropdown__button_clear undefined" type="button">очистить</button>
+                </div>
+                <div class="dropdown__container">
+                  <button class="dropdown__button dropdown__button_use undefined" type="button">применить</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="search-container__button">
+      <div class="card-search__button">
         <button class="button  button_arrow" type="button">Подобрать номер</button>
       </div>
     </form>
     <form class="registration">
       <div class="reg-container">
-        <h3 class="title  title_large">Регистрация аккаунта</h3>
+        <h1 class="title  title_large">Регистрация аккаунта</h1>
         <div class="reg-container__input">
-          <div class="input">
-            <input class="input__input  input_standart" type="text" placeholder="Имя">
-          </div>
-          <div class="input">
-            <input class="input__input  input_standart" type="text" placeholder="Фамилия">
+          <label class="text-field">
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_standart" type="text" placeholder="Имя">
+            </div>
+          </label>
+          <div class="reg-container__surname">
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="text" placeholder="Фамилия">
+              </div>
+            </label>
           </div>
         </div>
         <div class="reg-container__radio">
@@ -93,19 +120,26 @@
             </label>
           </div>
         </div>
-        <h3 class="title  title_standart">Дата рождения</h3>
-        <div class="input">
-          <input class="input__input  input_standart" type="text" placeholder="ДД.ММ.ГГГГ">
-        </div>
+        <label class="text-field">Дата рождения
+          <div class="text-field__input">
+            <input class="text-field__input_standart text-field_standart input_mask" type="text" placeholder="ДД.ММ.ГГГГ">
+          </div>
+        </label>
         <div class="reg-container__data">
           <h3 class="title  title_standart">Данные для входа в сервис</h3>
         </div>
         <div class="reg-container__data-in">
-          <div class="input">
-            <input class="input__input  input_standart" type="email" placeholder="Email">
-          </div>
-          <div class="input">
-            <input class="input__input  input_standart" type="password" placeholder="Пароль">
+          <label class="text-field">
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+            </div>
+          </label>
+          <div class="reg-container__passwd">
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="password" placeholder="Пароль">
+              </div>
+            </label>
           </div>
         </div>
         <div class="reg-container__toggle">
@@ -128,86 +162,113 @@
     </form>
   </div>
   <div class="cards-two">
-    <div class="formlux-box">
-      <div class="lux-container">
+    <form class="card-lux">
+      <div class="card-lux__container">
         <div class="price">
-          <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text">888</span><span class="price-container__lux">люкс</span></div>
+          <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text">888</span><span class="price-container__lux">люкс</span></div>
           <div class="price-container">
             <div class="price-container__cost">9 990₽</div>
             <div class="price-container__duration">в сутки</div>
           </div>
         </div>
-        <div class="lux-container__title">
-          <h3 class="title  title_standart">Прибытие</h3>
-          <h3 class="title  title_standart">Выезд</h3>
-        </div>
-        <div class="lux-container__calendar">
-          <div class="datepicker-box">
-            <input class="datepicker-dabl input_filter datepicker-start" placeholder="19.08.2019" type="text" data-position="bottom left">
-          </div>
-          <div class="datepicker-box">
-            <input class="text datepicker-end input_filter datepicker-dabl" placeholder="23.08.2019" data-position="bottom center">
-          </div>
+        <div class="card-lux__calendar js-datepicker-container">
+          <label class="text-field">Прибытие
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker js-datepicker-start" type="text" placeholder="19.08.2019">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
+          <label class="text-field">Выезд
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_filter js-datepicker-end" type="text" placeholder="23.08.2019">
+              <button class="text-field__button_arrow" type="submit">expand_more</button>
+            </div>
+          </label>
         </div>
         <h3 class="title  title_standart">гости</h3>
-        <div class="form-group">
-          <div class="dropdown">
-            <button class="dropdown__button" type="button">3 гостя</button>
-            <div class="dropdown__list dropdown__list">
-              <div class="dropdown__list-item" data-value="travel"><span class="dropdown__text">Взрослые</span>
-                <div class="calculate">
-                  <button class="button-mat button-minus" type="button">-</button><span number>2</span>
-                  <button class="button-mat button-plus" type="button">+</button>
+        <div class="dropdown dropdown_guest">
+          <div class="dropdown__section">
+            <h3 class="dropdown__title">Сколько гостей</h3>
+            <button class="dropdown__arrow" type="button">expand_more</button>
+          </div>
+          <div class="dropdown__menu">
+            <div class="dropdown__option">
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">взрослые</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="2" min="0" max="10" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="dropdown__list-item" data-value="lessons"><span class="dropdown__text sub">Дети</span>
-                <div class="calculate">
-                  <button class="button-mat button-minus" type="button">-</button><span number>1</span>
-                  <button class="button-mat button-plus" type="button">+</button>
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">дети</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="1" min="0" max="10" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="dropdown__list-item" data-value="photo"><span class="dropdown__text sub"> Младенцы </span>
-                <div class="calculate">
-                  <button class="button-mat button-minus" type="button">-</button><span number>0</span>
-                  <button class="button-mat button-plus" type="button">+</button>
+              <div class="dropdown-counters">
+                <div class="dropdown-counter__name">
+                  <h3 class="dropdown-counters__title">младенцы</h3>
+                </div>
+                <div class="dropdown-counters__controls">
+                  <button class="dropdown-counters__button dropdown-counters__minus" type="button">-</button>
+                  <input class="dropdown-counters__value" value="0" min="0" max="10" type="number">
+                  <button class="dropdown-counters__button dropdown-counters__plus" type="button">+</button>
                 </div>
               </div>
-              <div class="button-box">
-                <button class="button-footer">Очистить</button>
-                <button class="button-footer button-left">Применить</button>
+            </div>
+            <div class="dropdown__buttons">
+              <div class="dropdown__container">
+                <button class="dropdown__button dropdown__button_clear undefined" type="button">очистить</button>
+              </div>
+              <div class="dropdown__container">
+                <button class="dropdown__button dropdown__button_use undefined" type="button">применить</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="formlux-main"> 
-          <div class="formlux-main__price"><span class="formlux-main__text formlux-main__text_left">9 990₽ х 4 суток</span><span class="formlux-main__text">39 960₽</span></div>
-          <div class="formlux-main__price"><span class="formlux-main__text formlux-main__text_left">Сбор за услуги: скидка 2 179₽</span><span class="formlux-main__label formlux-main__label_top">i</span><span class="formlux-main__text">0₽</span></div>
-          <div class="formlux-main__price bottom">
-            <div class="formlux-main__text formlux-main__text_wrap">Сбор за дополнительные услуги</div><span class="formlux-main__label formlux-main__label_number-right">i</span>
-            <div class="formlux-main__text">300₽</div>
+        <div class="card-lux__wrapper"> 
+          <div class="card-lux__price"><span class="card-lux__text card-lux__text_left">9 990₽ х 4 суток</span><span class="card-lux__text">39 960₽</span></div>
+          <div class="card-lux__price"><span class="card-lux__text card-lux__text_left">Сбор за услуги: скидка 2 179₽</span><span class="card-lux__label card-lux__label_top">i</span><span class="card-lux__text">0₽</span></div>
+          <div class="card-lux__price">
+            <div class="card-lux__text card-lux__text_wrap">Сбор за дополнительные услуги</div><span class="card-lux__label card-lux__label_icon-right">i</span>
+            <div class="card-lux__text">300₽</div>
           </div>
         </div>
       </div>
-      <div class="formlux-footer">
-        <div class="formlux-footer__price">
-          <div class="formlux-footer__text">Итого</div>
-          <div class="formlux-footer__border"></div>
-          <div class="formlux-footer__text">38 081₽</div>
+      <div class="card-lux__bottom">
+        <div class="card-lux__wrap">
+          <div class="card-lux__sum">Итого</div>
+          <div class="card-lux__border"></div>
+          <div class="card-lux__sum">38 081₽</div>
         </div>
       </div>
-      <div class="lux-container__button">
+      <div class="card-lux__button">
         <button class="button  button_arrow" type="button">Забронировать</button>
       </div>
-    </div>
+    </form>
     <form class="sign-in">
       <div class="signin-container">
-        <h3 class="title  title_large">Войти</h3>
+        <h1 class="title  title_large">Войти</h1>
         <div class="signin-container__input">
-          <div class="input">
-            <input class="input__input  input_standart" type="email" placeholder="Email">
-          </div>
-          <div class="input">
-            <input class="input__input  input_standart" type="password" placeholder="Пароль">
+          <label class="text-field">
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+            </div>
+          </label>
+          <div class="signin-container__passwd">
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="password" placeholder="Пароль">
+              </div>
+            </label>
           </div>
         </div>
         <button class="button  button_arrow" type="button">Войти</button>
@@ -220,14 +281,16 @@
       </div>
     </form>
   </div>
-  <div class="cards-three">
-    <div class="datepicker-dabl"></div>
+  <div class="cards-three"> 
+    <div class="js-datepicker-container">
+      <div class="js-datepicker"></div>
+    </div>
     <div class="slider-cards">
-      <div class="variable slider"><img src="../../../src/components/slick/images/1.png"><img src="../../../src/components/slick/images/6.png"><img src="../../../src/components/slick/images/7.png"><img src="../../../src/components/slick/images/8.png"></div>
+      <div class="variable js-slider"><img src="../../../src/blocks/slick/images/1.png"><img src="../../../src/blocks/slick/images/2.png"><img src="../../../src/blocks/slick/images/3.png"><img src="../../../src/blocks/slick/images/4.png"></div>
       <div class="slider-cards__reviews">
         <div class="slider-cards__title">
           <div class="price">
-            <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">888</span><span class="price-container__lux">люкс</span></div>
+            <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">888</span><span class="price-container__lux">люкс</span></div>
             <div class="price-container">
               <div class="price-container__cost">9 990₽</div>
               <div class="price-container__duration">в сутки</div>
@@ -238,11 +301,11 @@
           <div class="reviews">
             <div class="star-rating">
               <div class="star-rating__wrap">
-                <input class="star-rating__input" checked name="room-1" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" name="room-1" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" checked name="images" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="images" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="images" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="images" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="images" type="radio"><span class="star-rating__ico"></span>
               </div>
             </div>
             <div class="reviews-container">
@@ -254,11 +317,11 @@
       </div>
     </div>
     <div class="slider-cards">
-      <div class="variable slider"><img src="../../../src/components/slick/images/2.png"><img src="../../../src/components/slick/images/8.png"><img src="../../../src/components/slick/images/9.png"><img src="../../../src/components/slick/images/4.png"></div>
+      <div class="variable js-slider"><img src="../../../src/blocks/slick/images/2.png"><img src="../../../src/blocks/slick/images/8.png"><img src="../../../src/blocks/slick/images/9.png"><img src="../../../src/blocks/slick/images/3.png"></div>
       <div class="slider-cards__reviews">
         <div class="slider-cards__title">
           <div class="price">
-            <div class="price-container"><span class="price-container__title">№ </span><span class="price-container__text_low">840</span><span class="price-container__lux"></span></div>
+            <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">840</span><span class="price-container__lux"></span></div>
             <div class="price-container">
               <div class="price-container__cost">9 900₽</div>
               <div class="price-container__duration">в сутки</div>
@@ -269,11 +332,11 @@
           <div class="reviews">
             <div class="star-rating">
               <div class="star-rating__wrap">
-                <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" checked name="room-2" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
-                <input class="star-rating__input" name="room-2" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="imagesTwo" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" checked name="imagesTwo" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="imagesTwo" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="imagesTwo" type="radio"><span class="star-rating__ico"></span>
+                <input class="star-rating__input" name="imagesTwo" type="radio"><span class="star-rating__ico"></span>
               </div>
             </div>
             <div class="reviews-container">

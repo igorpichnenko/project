@@ -37,19 +37,19 @@
             </linearGradient>
           </defs>
         </svg>
-        <div class="header-main__burger-menu">
-          <div class="header-main__burger-item header-main__burger-item_1"></div>
-          <div class="header-main__burger-item header-main__burger-item_2"></div>
-          <div class="header-main__burger-item header-main__burger-item_3"></div>
+        <div class="burger">
+          <div class="burger__item">
+            <div class="burger__items"></div>
+          </div>
         </div>
       </div>
-      <div class="header-main__nav">
+      <nav class="header-main__nav">
         <ul class="nav-list">
-          <li class="nav-list__text">О нас<a class="nav-list__link nav-list__link_about" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-1">Услуги<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text">Вакансии<a class="nav-list__link nav-list__link_vakansii" href="#"></a></li>
-          <li class="nav-list__text">Новости<a class="nav-list__link" href="#"></a></li>
-          <li class="nav-list__text nav-list__text_icon-2">Соглашения<a class="nav-list__link" href="#"></a></li>
+          <li class="nav-list__text nav-list__text_about">О нас<a class="nav-list__link nav-list__link_about" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_services">Услуги<a class="nav-list__link nav-list__link_services" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_vacancies">Вакансии<a class="nav-list__link nav-list__link_vacancies" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_news">Новости<a class="nav-list__link nav-list__link_news" href="/mock-address/change-me"></a></li>
+          <li class="nav-list__text nav-list__text_agree">Соглашения<a class="nav-list__link nav-list__link_agree" href="/mock-address/change-me"></a></li>
         </ul>
         <div class="header-main__items"></div>
         <div class="header-main__button">
@@ -60,7 +60,7 @@
             <button class="button  button_" type="button">Зарегистрироваться</button>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
@@ -68,13 +68,19 @@
   <div class="registration-container__signin">
     <form class="sign-in">
       <div class="signin-container">
-        <h3 class="title  title_large">Войти</h3>
+        <h1 class="title  title_large">Войти</h1>
         <div class="signin-container__input">
-          <div class="input">
-            <input class="input__input  input_standart" type="email" placeholder="Email">
-          </div>
-          <div class="input">
-            <input class="input__input  input_standart" type="password" placeholder="Пароль">
+          <label class="text-field">
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+            </div>
+          </label>
+          <div class="signin-container__passwd">
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="password" placeholder="Пароль">
+              </div>
+            </label>
           </div>
         </div>
         <button class="button  button_arrow" type="button">Войти</button>
@@ -90,13 +96,19 @@
   <div class="registration-container__reg registration-container_active">
     <form class="registration">
       <div class="reg-container">
-        <h3 class="title  title_large">Регистрация аккаунта</h3>
+        <h1 class="title  title_large">Регистрация аккаунта</h1>
         <div class="reg-container__input">
-          <div class="input">
-            <input class="input__input  input_standart" type="text" placeholder="Имя">
-          </div>
-          <div class="input">
-            <input class="input__input  input_standart" type="text" placeholder="Фамилия">
+          <label class="text-field">
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_standart" type="text" placeholder="Имя">
+            </div>
+          </label>
+          <div class="reg-container__surname">
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="text" placeholder="Фамилия">
+              </div>
+            </label>
           </div>
         </div>
         <div class="reg-container__radio">
@@ -111,19 +123,26 @@
             </label>
           </div>
         </div>
-        <h3 class="title  title_standart">Дата рождения</h3>
-        <div class="input">
-          <input class="input__input  input_standart" type="text" placeholder="ДД.ММ.ГГГГ">
-        </div>
+        <label class="text-field">Дата рождения
+          <div class="text-field__input">
+            <input class="text-field__input_standart text-field_standart input_mask" type="text" placeholder="ДД.ММ.ГГГГ">
+          </div>
+        </label>
         <div class="reg-container__data">
           <h3 class="title  title_standart">Данные для входа в сервис</h3>
         </div>
         <div class="reg-container__data-in">
-          <div class="input">
-            <input class="input__input  input_standart" type="email" placeholder="Email">
-          </div>
-          <div class="input">
-            <input class="input__input  input_standart" type="password" placeholder="Пароль">
+          <label class="text-field">
+            <div class="text-field__input">
+              <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+            </div>
+          </label>
+          <div class="reg-container__passwd">
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="password" placeholder="Пароль">
+              </div>
+            </label>
           </div>
         </div>
         <div class="reg-container__toggle">
@@ -139,7 +158,7 @@
             <div class="reg-container__text">Уже есть аккаунт на Toxin</div>
           </div>
           <div class="reg-container__button">
-            <button class="button  button_signIn button_border button_content-size button_large" type="button">Войти</button>
+            <button class="button  button_border button_content-size button_large button_signIn" type="button">Войти</button>
           </div>
         </div>
       </div>
@@ -176,45 +195,47 @@
                 </linearGradient>
               </defs>
             </svg>
+            <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
           </div>
-          <div class="footer-container__paragraf">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <div class="footer-container__nav">
-          <ul class="main-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Навигация</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Новости</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Услуги</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Навигация</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Новости</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Услуги</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="about-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О нас</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">О сервисе</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Наша команда</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Вакансии</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Инвесторы</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">О нас</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">О сервисе</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Наша команда</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Вакансии</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Инвесторы</a></li>
           </ul>
         </div>
         <div class="footer-container__nav">
-          <ul class="support-nav">
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Служба поддержки</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Соглашения</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Сообщества</a></li>
-            <li class="footer-navigation__list"><a class="footer-navigation__link" href="#">Связь с нами</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Служба поддержки</a></li>
+            <li class="footer-navigation__list footer-navigation__list_two"><a class="footer-navigation__link footer-navigation__link_two" href="/mock-address/change-me">Соглашения</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Сообщества</a></li>
+            <li class="footer-navigation__list footer-navigation__list_other"><a class="footer-navigation__link footer-navigation__link_other" href="/mock-address/change-me">Связь с нами</a></li>
           </ul>
         </div>
         <div class="footer-container__subscription">
-          <ul class="footer-container__subscript">
-            <li class="footer-container__promo-list"><a class="footer-container__title" href="#">Подписка </a></li>
-            <li class="footer-container__text"><a class="footer-container__promo" href="#">Получайте специальные предложения и новости сервиса</a></li>
+          <ul class="footer-navigation">
+            <li class="footer-navigation__list footer-navigation__list_one"><a class="footer-navigation__link footer-navigation__link_one" href="/mock-address/change-me">Подписка</a></li>
+            <li class="footer-navigation__list footer-navigation__list_subscription"><a class="footer-navigation__link footer-navigation__link_subscription" href="/mock-address/change-me">Получайте специальные предложения и новости сервиса</a></li>
           </ul>
           <div class="footer-container__input">
-            <div class="input">
-              <input class="input__input  input_standart" type="email" placeholder="Email">
-              <button class="input__button" type="submit">arrow_forward</button>
-            </div>
+            <label class="text-field">
+              <div class="text-field__input">
+                <input class="text-field__input_standart text-field_standart" type="email" placeholder="Email">
+                <button class="text-field__button" type="submit">arrow_forward</button>
+              </div>
+            </label>
           </div>
         </div>
       </div>
