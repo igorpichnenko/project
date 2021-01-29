@@ -6,34 +6,30 @@ include ../blocks/button/button
 include ../blocks/header-navigation/header-navigation
 include ../blocks/footer-navigation/footer-navigation
 include ../blocks/icon/icon
-include ../blocks/input/input
+include ../blocks/text-field/text-field
 include ../blocks/burger/burger
 
 doctype html
-html(lang='ru')
+html(lang="ru")
   head
     meta(charset='utf-8')
     //meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(name='viewport', content='width=1440, initial-scale=1.0')
 
-block title
+    block title
 
-block head
 
-body
--
-  data = require('../../pages/headers-footers/headers-footers.json');
+  body
+   -
+     data = require('../../pages/headers-footers/headers-footers.json');
+   header.header-room
+    +header(data.header)
+   block content
 
-+header(data.header)
-block content
+   footer.footer-rooms
+    .footer-rooms__large
+     +footer(data.footer)
 
-block footer
+    .footer-rooms__small
+     +footer-small(data.footerSmall)
 
-footer.footer-rooms
-  .footer-rooms__large
-    +footer(data.footer)
-
-  .footer-rooms__small
-    +footer-small(data.footerSmall)
-
-block script

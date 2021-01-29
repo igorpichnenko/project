@@ -6,9 +6,9 @@ mixin form-search({data})
       .card-search__calendar.js-datepicker-container
         +datepicker(data.start)
         +datepicker(data.end)
-
       .card-search__dropdown
-        +title(data.guests)
+        .card-search__title
+         +title(data.guests)
         +dropdown(data.dropdown)
     .card-search__button
       +button(data.btn) 

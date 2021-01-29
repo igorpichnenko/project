@@ -7,32 +7,35 @@ include ../../blocks/title/title
 include ../../blocks/dropdown/dropdown
 
 block title
-  title index-page
+    title index-page
+    link(rel='stylesheet', href='index.css')
+    
+    
+    
 
-block head
-  link(rel='stylesheet', href='index.css')
 
-block body
-  -
-    data = require('./index.json');
 
-  .index__link
-    a.index__page(href='../color-type.html') color-type
-  .index__link
-    a.index__page(href='../headers-footers.html') headers-footers
-  .index__link
-    a.index__page(href='../form-elements.html') form-elements
-  .index__link
-    a.index__page(href='../cards.html') cards
-  .index__link
-    a.index__page(href='../landing.html') landing
-  .index__link
-    a.index__page(href='../registration.html') registration
-  .index__link
-    a.index__page(href='../room-detalis.html') room-detalis
-  .index__link
-    a.index__page(href='../room-search.html') room-search
+block content
+     -
+         data = require('./index.json');
 
-block script
-  script(src='./index.js')
-  script(src='perfetto.js')
+     .index__link
+       a.index__page(href='../color-type.html') color-type
+     .index__link
+       a.index__page(href='../headers-footers.html') headers-footers
+     .index__link
+       a.index__page(href='../form-elements.html') form-elements
+     .index__link
+       a.index__page(href='../cards.html') cards
+     .index__link
+       a.index__page(href='../landing.html') landing
+     .index__link
+       a.index__page(href='../registration.html') registration
+     .index__link
+       a.index__page(href='../room-detalis.html') room-detalis
+     .index__link
+       a.index__page(href='../room-search.html') room-search
+
+    
+     script(src='./index.js')
+ 

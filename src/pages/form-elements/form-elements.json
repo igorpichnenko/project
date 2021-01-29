@@ -131,12 +131,12 @@
   },
   "checkTwo": {
     "text": "Можно с питомцами",
-    "check": "check"
+    "checked": "checked"
   },
   "checkThree": {
     "text": "Можно пригласить гостей (до 10 человек)",
     "mods": "checkbox__wrap",
-    "check": "check"
+    "checked": "checked"
   },
   "radio": {
     "title": "radio buttons"
@@ -144,7 +144,7 @@
   "radioMan": {
     "text": "Мужчина",
     "name": "man",
-    "check": "check"
+    "checked": "checked"
   },
   "radioWoman": {
     "text": "Женщина",
@@ -165,7 +165,7 @@
   },
   "likeTwo": {
     "number": "12",
-    "check": "checked"
+    "checked": "checked"
   },
   "titleRate": {
     "title": "rate button"
@@ -282,6 +282,6 @@
     "content": "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.",
     "png": "comment-murad",
     "mod": "12",
-    "check": "checked"
+    "checked": "checked"
   }
 }

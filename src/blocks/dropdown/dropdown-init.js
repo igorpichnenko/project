@@ -1,4 +1,4 @@
-import { Dropdown } from './dropdown';
+import { Dropdown } from './Dropdown';
 
 function onLoad() {
   document.querySelectorAll('.dropdown').forEach((item) => new Dropdown(item));

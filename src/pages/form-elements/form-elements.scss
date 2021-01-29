@@ -42,6 +42,14 @@
     margin-bottom: 21px;
     width: 320px;
   }
+  
+  &__drop {
+    margin-top: 5px;
+  }
+  
+  &__dropdown-title {
+    margin-bottom: 5px;
+  }
 
   &__iMask {
     width: 320px;
@@ -50,7 +58,7 @@
   &__dabl-date {
     display: flex;
     width: 320px;
-    margin: 40px 0 39px 0;
+    margin: 38px 0 39px 0;
 
     & > * + * {
       margin-left: 20px;
@@ -62,7 +70,7 @@
   }
 
   &__subscription {
-    margin-top: 39px;
+    margin-top: 38.8px;
     margin-bottom: 100.5px;
   }
 
@@ -141,6 +149,7 @@
 
   &__dropdown {
     width: 320px;
+    margin-top: 5px;
   }
 
   &__rich {
@@ -222,7 +231,11 @@
     margin-left: 1px;
     margin-bottom: 234px;
   }
-
+  
+  &__drop {
+    margin-top: 5px;
+  }
+  
   &__bullet {
     margin-top: 256px;
   }
@@ -233,7 +246,7 @@
   }
 }
 
-.column-four {
+.elements-footer {
   display: flex;
   margin-top: 82px;
   margin-left: 9.8%;

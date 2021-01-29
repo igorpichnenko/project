@@ -11,13 +11,12 @@ include ../../blocks/reviews/reviews
 include ../../blocks/price/price
 include ../../blocks/bullet-list/bullet-list
 include ../../blocks/person-comment/person-comment
-include ../../blocks/dropdown-counters/dropdown-counters
+include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title Landing
-
-block head
   link(rel='stylesheet', href='room-detalis.css')
+  
 
 block content
   -
@@ -56,7 +55,4 @@ block content
 
     .room-detalis__form
       +formlux(content.formLux)
-
-block footer
-block script
   script(src='./room-detalis.js')

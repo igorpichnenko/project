@@ -5,8 +5,8 @@ mixin formlux({data})
       .card-lux__calendar.js-datepicker-container
         +datepicker(data.startData)
         +datepicker(data.endData)
-
-      +title(data.guests)
+      .card-lux__title
+       +title(data.guests)
       +dropdown(data.dropdown)
 
       .card-lux__wrapper 

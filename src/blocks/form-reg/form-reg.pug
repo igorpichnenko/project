@@ -4,8 +4,7 @@ mixin form-reg({data})
       +title(data.regAcount)
       .reg-container__input
         +text-field(data.name)
-        .reg-container__surname
-          +text-field(data.surname)
+        +text-field(data.surname)
       .reg-container__radio
         +radio(data.radioMan)
         +radio(data.radioWoman)
@@ -14,8 +13,7 @@ mixin form-reg({data})
         +title(data.title)
       .reg-container__data-in
         +text-field(data.email)
-        .reg-container__passwd
-          +text-field(data.password)
+        +text-field(data.password)
       .reg-container__toggle
         +toggle
       +button(data.button)

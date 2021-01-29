@@ -1,4 +1,3 @@
-import '../../blocks/dropdown/dropdown-init';
 import '../../blocks/calendar/calendar';
 import '../../blocks/iMask/iMask';
 import '../../scss/main.scss';
@@ -7,4 +6,5 @@ import '../../../pixel';
 import '../../blocks/range-slider/range-slider';
 import '../../blocks/pagination/pagination';
 import '../../blocks/checkbox-list/checkbox-list';
+import '../../blocks/dropdown/dropdown-init';
 import '../../blocks/like/like';

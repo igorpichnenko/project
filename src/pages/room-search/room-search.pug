@@ -8,17 +8,15 @@ include ../../blocks/checkbox-rich/checkbox-rich
 include ../../blocks/checkbox-list/checkbox-list
 include ../../blocks/price/price
 include ../../blocks/reviews/reviews
-include ../../blocks/input/input
+include ../../blocks/text-field/text-field
 include ../../blocks/slick/slick
 include ../../blocks/rate/rate
 include ../../blocks/pagination/pagination
 include ../../blocks/slider-card/slider-card
-include ../../blocks/dropdown-counters/dropdown-counters
+include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title Landing
-
-block head
   link(rel='stylesheet', href='room-search.css')
 
 block content
@@ -32,7 +30,8 @@ block content
 
       .room-search__dropdown
         +title(content.guest)
-        +dropdown(content.dropdown)
+        .room-search__drop
+         +dropdown(content.dropdown)
 
         .room-search__range
           +title(content.range)
@@ -51,13 +50,15 @@ block content
           +checkbox(content.checkThree)
 
         .room-search__rich
-          +title(content.titleBox)
+          .room-search__rich-title
+           +title(content.titleBox)
         .room-search__rich-button
           +checkbox-rich(content.rich)
           +checkbox-rich(content.richTwo)
 
         .room-search__medium-drop
-          +title(content.titleDrop)
+          .room-search__drop-title
+           +title(content.titleDrop)
           +dropdown(content.dropdownMedium)
         .room-search__checkbox-list
           +checkbox-list(content.checkboxList)
@@ -80,6 +81,4 @@ block content
         +slider-card(content.sliderEleven)
       .room-search__pagination
         +pagination
-block footer
-block script
   script(src='./room-search.js')

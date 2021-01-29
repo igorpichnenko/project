@@ -1,6 +1,6 @@
 import {
   DropdownControl,
-} from '../dropdown-counters/dropdown-counters';
+} from '../dropdown-control/DropdownControl';
 
 class Dropdown {
   constructor(dropdown) {
@@ -48,7 +48,7 @@ class Dropdown {
   }
 
   closeDropdown() {
-    const isDropdownClosed =  this.menu.classList.contains('dropdown_active');
+    const isDropdownClosed = this.menu.classList.contains('dropdown_active');
     if (isDropdownClosed) {
       this.menu.classList.remove('dropdown_active');
     }
@@ -84,8 +84,8 @@ class Dropdown {
 
   checkButtonUse() {
     const isAllZerro = !this.controls
-    .map((item) => item.isZerro())
-    .includes(false);
+      .map((item) => item.isZerro())
+      .includes(false);
     if (isAllZerro === true) {
       this.hiddenButtonUse();
     } else {
@@ -100,19 +100,19 @@ class Dropdown {
   }
 
   hiddenClearButton() {
-    this.buttonClear.style.display = "none"
+    this.buttonClear.style.display = 'none';
   }
 
   visibleClearButton() {
-    this.buttonClear.style.display = "block"
+    this.buttonClear.style.display = 'block';
   }
 
   hiddenButtonUse() {
-    this.buttonUse.style.display = "none"
+    this.buttonUse.style.display = 'none';
   }
 
   visibleButtonUse() {
-    this.buttonUse.style.display = "block"
+    this.buttonUse.style.display = 'block';
   }
 
   formDeclension(number, form) {
@@ -131,15 +131,16 @@ class Dropdown {
   }
 
   defaultSum() {
-    let DefaultSum = 0
-    this.values.forEach((item)=> {
-      this.AllInput = item.querySelectorAll('.dropdown-counters__value')
+    let DefaultSum = 0;
+    this.values.forEach((item) => {
+      this.AllInput = item.querySelectorAll('.dropdown-counters__value');
 
-      this.AllInput.forEach((el)=> {
-        DefaultSum += Number(el.value)
-      })})
+      this.AllInput.forEach((el) => {
+        DefaultSum += Number(el.value);
+      });
+    });
 
-    this.DefaultSum = DefaultSum
+    this.DefaultSum = DefaultSum;
   }
 
   // логика всех заголовков
@@ -165,25 +166,23 @@ class Dropdown {
     this.sumBabies = babies;
 
     if (adults + children < 10) {
-
       this.controls.map((item) => item.activatePlus());
-
     } else {
-      this.sumAdult = 10
-      this.length = this.controls.length
+      this.sumAdult = 10;
+      this.length = this.controls.length;
       this.controls.forEach((item, index) => {
-        if (index !== this.length -1) {
-          item.deactivatePlus()
-        } 
-      })
+        if (index !== this.length - 1) {
+          item.deactivatePlus();
+        }
+      });
     }
     if (babies === 10) {
-      let length = this.controls.length
+      const { length } = this.controls;
       this.controls.forEach((item, index) => {
-        if (index === length -1) {
-          item.deactivatePlus()
-        } 
-      })
+        if (index === length - 1) {
+          item.deactivatePlus();
+        }
+      });
     }
 
     if (adults > 0 || children > 0) {
@@ -191,7 +190,6 @@ class Dropdown {
       this.checkButtonUse();
     } else {
       this.checkButtonClear();
-
     }
 
     const formGuests = ['гость',
@@ -221,12 +219,12 @@ class Dropdown {
       array[1],
       array[2]];
 
-    let sum = Bedroom + Bed + Bathroom
+    const sum = Bedroom + Bed + Bathroom;
 
     if (sum !== this.DefaultSum) {
-    this.checkButtonClear();
+      this.checkButtonClear();
       this.checkButtonUse();
-    } 
+    }
 
     const formBedroom = ['спальня',
       'спальни',

@@ -4,8 +4,7 @@ mixin form-signin({data})
       +title(data.text)
       .signin-container__input
         +text-field(data.inputEmail)
-        .signin-container__passwd
-          +text-field(data.inputPass)
+        +text-field(data.inputPass)
       +button(data.btnSign)
       .signin-container__item
         .signin-container__text= data.content

@@ -4,11 +4,10 @@ include ../../blocks/title-options/title-options
 
 block title
   title color-type
-
-block head
   link(rel='stylesheet', href='color-type.css')
+  
 
-block body
+block content
   -
     data = require('./color-type.json');
 
@@ -18,5 +17,4 @@ block body
     .color-type__options
       +title-options(data.types)
 
-block script
   script(src='./color-type.js')

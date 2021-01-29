@@ -4,13 +4,12 @@ include ../../blocks/title/title
 include ../../blocks/button/button
 include ../../blocks/calendar/calendar
 include ../../blocks/dropdown/dropdown
-include ../../blocks/dropdown-counters/dropdown-counters
+include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title Landing
-
-block head
   link(rel='stylesheet', href='landing.css')
+  
 
 block content
   -
@@ -20,7 +19,5 @@ block content
     .landing-container__items
       +form-search(content.formSearch)
       .landing-container__slogan= content.text
-
-block footer
-block script
+      
   script(src='./landing.js')

@@ -11,21 +11,19 @@ include ../../blocks/logo/logo
 include ../../blocks/slick/slick
 include ../../blocks/calendar/calendar
 include ../../blocks/title/title
-include ../../blocks/input/input
+include ../../blocks/text-field/text-field
 include ../../blocks/dropdown/dropdown
 include ../../blocks/toggle/toggle
 include ../../blocks/rate/rate
 include ../../blocks/reviews/reviews
 include ../../blocks/price/price
-include ../../blocks/dropdown-counters/dropdown-counters
+include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title Cards
-
-block head
   link(rel='stylesheet', href='cards.css')
 
-block body
+block content
   -
     data = require('./cards.json');
 
@@ -41,5 +39,4 @@ block body
         .js-datepicker
       +slider-card(data.sliderCard)
       +slider-card(data.sliderCardTwo)
-block script
   script(src='./cards.js')

@@ -13,6 +13,10 @@
   &__dropdown {
     margin-top: 20.3px;
   }
+  
+  &__drop {
+    margin-top: 5px;
+  }
 
   &__range {
     display: flex;
@@ -37,11 +41,15 @@
   }
 
   &__checkbox {
-    padding-top: 12px;
+    padding-top: 17px;
   }
 
   &__rich {
     margin-top: 32px;
+  }
+  
+  &__rich-title {
+    margin-bottom: 5px;
   }
 
   &__rich-button {
@@ -50,6 +58,10 @@
 
   &__medium-drop {
     margin-top: 29.4px;
+  }
+  
+  &__drop-title {
+    margin-bottom: 5px;
   }
 
   &__checkbox-list {

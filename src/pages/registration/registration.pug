@@ -8,10 +8,8 @@ include ../../blocks/toggle/toggle
 
 block title
   title Landing
-
-block head
   link(rel='stylesheet', href='registration.css')
-
+  
 block content
   -
     content = require('./registration.json');
@@ -21,6 +19,4 @@ block content
       +form-signin(content.formSignIn)
     .registration-container__reg.registration-container_active
       +form-reg(content.formReg)
-block footer
-block script
   script(src='./registration.js')

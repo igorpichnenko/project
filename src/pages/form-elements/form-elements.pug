@@ -2,13 +2,14 @@ extends ../../layouts/base
 include ../../blocks/range-slider/range-slider
 include ../../blocks/pagination/pagination
 include ../../blocks/dropdown/dropdown
-include ../../blocks/dropdown-counters/dropdown-counters
+include ../../blocks/dropdown-control/dropdown-control
+include ../../blocks/person-comment/person-comment
 include ../../blocks/checkbox/checkbox
 include ../../blocks/checkbox-rich/checkbox-rich
 include ../../blocks/checkbox-list/checkbox-list
 include ../../blocks/like/like
 include ../../blocks/rate/rate
-include ../../blocks/input/input
+include ../../blocks/text-field/text-field
 include ../../blocks/title/title
 include ../../blocks/button/button
 include ../../blocks/calendar/calendar
@@ -16,15 +17,13 @@ include ../../blocks/comments/comments
 include ../../blocks/radio/radio
 include ../../blocks/toggle/toggle
 include ../../blocks/bullet-list/bullet-list
-include ../../blocks/person-comment/person-comment
 
 block title
   title color-type
-
-block head
   link(rel='stylesheet', href='form-elements.css')
+     
 
-block body
+block content
   -
     data = require('./form-elements.json');
 
@@ -36,82 +35,69 @@ block body
             +text-field(data.email)
             .column-one__title_hover
               +title(data.hover)
-               
         .column-one__focus
           +text-field(data.pretty)
           .column-one__pretty
             +title(data.focus)
-
         .column-one__dropdown
-          +title(data.drop)
+          .column-one__dropdown-title
+           +title(data.drop)
           +dropdown(data.dropdown)
-
         .column-one__iMask
           +text-field(data.Imask)
-            
         .column-one__dabl-date.js-datepicker-container
           +datepicker(data.start)
           +datepicker(data.end)
-
         .column-one__medium.js-datepicker-container
           +datepicker(data.datepicker)
-
           .column-one__subscription
             +text-field(data.arrow)
-
           .column-one__item
             +title(data.titleDrop)
             +title(data.hover)
-
-          +dropdown(data.medium)
+          .column-one__drop
+           +dropdown(data.medium)
           .column-one__drop-medium
             +title(data.titleDrop)
             +title(data.expanted)
-          +dropdown(data.bedrooms)
+          .column-one__drop
+           +dropdown(data.bedrooms)
 
           .column-one__checkbox
             +checkbox-list
             .column-one__checkbox-list
               +checkbox-list(data.checkboxList)
-
     .column-two
       +title(data.titleCheck)
       .column-two__checkbox
         +checkbox(data.checkOne)
         +checkbox(data.checkTwo)
         +checkbox(data.checkThree)
-
       .column-two__radio
         +title(data.radio)
       .column-two__radio-button
         +radio(data.radioMan)
         +radio(data.radioWoman)
-
       +title(data.titleToggle)
       .column-two__toggle
         +toggle(data.toggle)
         +toggle
-
       +title(data.titleLike)
       .column-two__like
         +like(data.like)
         +like(data.likeTwo)
-
       +title(data.titleRate)
       .column-two__rate
         +rate-button(data.rate)
         +rate-button(data.rateTwo)
-
       +title(data.titleDrop)
       .column-two__dropdown
         +dropdown(data.dropGuest)
-
       .column-two__rich
         +title(data.titleRich)
         .column-two__rich-button
           +checkbox-rich(data.rich)
           +checkbox-rich(data.richTwo)
-
     .column-three
       .column-three__range
         +title(data.titleRange)
@@ -120,7 +106,6 @@ block body
           input.range-out.range-end
       .column-three__range-slider
         +range-slider
-
       .column-three__title-btn
         +title(data.titleButton)
         .column-three__button-top
@@ -137,27 +122,23 @@ block body
             +button(data.buttonSix)
         .column-three__container
           +button(data.buttonSeven)
-
         .column-three__pagination-title
           +title(data.titlePagination)
         .column-three__pagination
           +pagination(data.pagination)
-
         .column-three__dropdown
           +title(data.titleDrop)
-          +dropdown(data.dropdownThree)
-
+          .column-three__drop
+           +dropdown(data.dropdownThree)
         .column-three__bullet
           +title(data.titleBullet)
         .column-three__bullet-list
           +bullet-list(data.bullet)
-
-  .column-four
-    .column-four__items
-      +comments(data.comments)
-      +comments(data.commentsTwo)
-
-    .column-four__murad
-      +person-comment(data.person)
-block script
+  .elements-footer
+      .elements-footer__comments
+        +comments(data.comments)
+        +comments(data.commentsTwo)
+      .elements-footer__murad
+       +person-comment(data.person)
+ 
   script(src='./form-elements.js')

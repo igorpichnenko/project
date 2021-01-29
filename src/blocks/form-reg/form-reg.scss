@@ -11,18 +11,17 @@
   width: 320px;
 
   &__input {
-    margin-top: 21px;
+    margin-top: 16px;
+  }
+
+  &__input > * + * {
+    margin-top: 5px;
   }
 
   &__radio {
     display: flex;
     margin-bottom: 20.5px;
-    margin-top: 8px;
-  }
-
-  &__toggle {
-    margin-bottom: 25px;
-    display: flex;
+    margin-top: 7.3px;
   }
 
   &__radio > * + * {
@@ -33,24 +32,27 @@
     margin-top: 20.5px;
   }
 
+  &__data-in {
+    margin-bottom: 9px;
+  }
+
+  &__data-in >*+* {
+    margin-top: 5px;
+  }
+
+  &__toggle {
+    margin-bottom: 25px;
+    display: flex;
+  }
+
   &__sign-in {
     margin-top: 28.5px;
-
     display: flex;
     align-items: center;
 
     & > * + * {
       margin-left: 35.8px;
     }
-  }
-
-  &__data-in {
-    margin-bottom: 9px;
-  }
-
-  &__data-in > * + *,
-  &__input > * + * {
-    margin-top: 10px;
   }
 
   &__button {
@@ -61,4 +63,8 @@
     @include intermediate-text($fs: 14px, $lh: 18px, $col: #000) white-space:
       nowrap;
   }
+}
+
+.title_reg {
+  margin-bottom: 20px;
 }

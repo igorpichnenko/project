@@ -44,6 +44,10 @@
       display: none;
     }
   }
+  
+  &__content {
+    display: block;
+  }
 
   &__input:checked ~ &__style:after,
   &__input:checked ~ &__style:before {
@@ -60,6 +64,7 @@
   &__text {
     margin-left: 29.5px;
     cursor: pointer;
+    display: block;
 
     @include intermediate-text($col: $dark50, $fs: 14px, $lh: 18px);
   }

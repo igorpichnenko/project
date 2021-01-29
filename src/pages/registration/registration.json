@@ -45,7 +45,7 @@
       "radioMan": {
         "text": "Мужчина",
         "name": "man",
-        "check": "check"
+        "checked": "checked"
       },
       "radioWoman": {
         "text": "Женщина",

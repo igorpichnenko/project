@@ -30,7 +30,7 @@
   }
 
   &--cell-year {
-    width: 100% / 4;
+    width: 25%;
     height: 33.33%;
   }
 
@@ -100,7 +100,7 @@
     width: 39.58px;
     height: 40px;
 
-    @include intermediate-text($fs: 12);
+    @include intermediate-text($fs: 12px);
   }
 
   &--cell-day.-other-month- {

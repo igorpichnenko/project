@@ -13,6 +13,7 @@
     border: solid 1px $dark25;
     width: 38px;
     height: 18px;
+    display: block;
   }
 
   &__input:checked ~ &__border {
@@ -26,6 +27,7 @@
     position: absolute;
     left: 21.7px;
     top: 5px;
+    display: block;
   }
 
   &__input {
