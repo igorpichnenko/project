@@ -94,7 +94,7 @@
   }
 }
 
-.column-one ~ * {
+.column-one ~ .column-two {
   margin-left: 10.9%;
 }
 
@@ -162,7 +162,7 @@
   }
 }
 
-.column-two ~ * {
+.column-two  + .column-three {
   margin-left: 6.2%;
 }
 
