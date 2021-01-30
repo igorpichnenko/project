@@ -12,9 +12,12 @@ mixin footer({data})
       .footer-container__nav
         +footer-navigation(data.support)
       .footer-container__subscription
-        +footer-navigation(data.subscription)
-        .footer-container__input
-         +text-field(data.input)
+         +footer-navigation(data.subscription)
+         .footer-container__label
+          label.footer-container__text(for ="subscription")= data.label
+         .footer-container__text-field
+          input(type="email", placeholder="Email",class="footer-container__input", id ="subscription")
+          button.footer-container__button arrow_forward
   .footer-bottom
     .footer-bottom__wrapper
       .footer-bottom__text= data.text

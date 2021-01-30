@@ -42,11 +42,11 @@
     margin-bottom: 21px;
     width: 320px;
   }
-  
+
   &__drop {
     margin-top: 5px;
   }
-  
+
   &__dropdown-title {
     margin-bottom: 5px;
   }
@@ -72,6 +72,10 @@
   &__subscription {
     margin-top: 38.8px;
     margin-bottom: 100.5px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__item {
@@ -94,12 +98,18 @@
   }
 }
 
-.column-one ~ .column-two {
-  margin-left: 10.9%;
-}
 
 .column-two {
   margin-top: 3.6px;
+  margin-left: 10.9%;
+
+  @media (max-width: 900px) {
+    margin-left: 2%;
+  }
+
+  @media (max-width: 811px) {
+    margin-top: 40px;
+  }
 
   &__checkbox {
     margin-top: 16.5px;
@@ -142,6 +152,11 @@
     margin-top: 17px;
     margin-bottom: 197.5px;
 
+    @media (max-width: 800px) {
+
+      margin-bottom: 40px;
+    }
+
     & > * + * {
       margin-left: 20px;
     }
@@ -154,6 +169,11 @@
 
   &__rich {
     margin-top: 256px;
+
+    @media (max-width: 800px) {
+
+      margin-top: 180px;
+    }
   }
 
   &__rich-button {
@@ -162,12 +182,17 @@
   }
 }
 
-.column-two  + .column-three {
-  margin-left: 6.2%;
-}
-
 .column-three {
+  margin-left: 6.2%;
   margin-top: 4px;
+
+  @media (max-width: 1439px) {
+
+    margin-top: 40px;
+    margin-left: 1%;
+
+  }
+
 
   &__range {
     height: 11.5px;
@@ -230,12 +255,17 @@
     margin-top: 16px;
     margin-left: 1px;
     margin-bottom: 234px;
+
+    @media (max-width: 800px) {
+
+      margin-bottom: 40px;
+    }
   }
-  
+
   &__drop {
     margin-top: 5px;
   }
-  
+
   &__bullet {
     margin-top: 256px;
   }
@@ -252,9 +282,19 @@
   margin-left: 9.8%;
   flex-wrap: wrap;
 
+  @media (max-width: 1439px) {
+
+    flex-wrap: no-wrap;
+  }
+
   &__murad {
     width: 710px;
     margin-top: 29px;
     margin-left: 12.8%;
+
+    @media (max-width: 1439px) {
+
+      margin-left: 1%;
+    }
   }
 }

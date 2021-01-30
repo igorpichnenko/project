@@ -3,16 +3,27 @@
 .cards {
   background-color: $grey;
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
+  overflow: hidden;
+  gap: 40px;
 
   @include container(10.45%, 0, 0, 9.7%);
+
+  @media (max-width: 450px) {
+
+    padding-left: 6.5%;
+  }
+
+  @media (max-width: 420px) {
+
+    padding-left: 1.8%;
+  }
 }
 
 .cards-one,
 .cards-two,
 .cards-three {
-  gap: 40px;
   display: flex;
   flex-direction: column;
+  row-gap: 40px;
 }

@@ -4,21 +4,55 @@
   background: url('./img/landing.jpg');
   height: 830px;
   min-width: 520px;
+  overflow: hidden;
 
   @include foto-bg-size;
 
+  @media (max-width: 760px) {
+
+    height: 100%;
+    min-width: 320px;
+  }
+
   &__items {
-    padding: 4.85% 9.3% 18px 9.7%;
+    padding: 4.9% 9.3% 18px 9.7%;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @media (max-width: 760px) {
+      padding: 1% ;
+    }
+  }
+
+  &__form {
+    max-width: 380px;
+
+    @media (max-width: 860px) {
+      margin-top: 10%;
+      align-self: center;
+    }
   }
 
   &__slogan {
     text-align: right;
     align-self: flex-end;
     max-width: 300px;
-    margin-top: 691px;
+    margin-top: 316.5px;
 
     @include body-text;
+
+    @media (min-width: 1700px) {
+
+      margin-top: 300px;
+    }
+
+    @media (max-width: 860px) {
+
+      text-align: center;
+      align-self: center;
+      margin-top: 30%;
+      margin-bottom: 10%;
+    }
   }
 }

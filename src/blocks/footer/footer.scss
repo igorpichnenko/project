@@ -31,9 +31,64 @@
     @include body-text;
   }
 
+  &__text-field {
+    position: relative;
+    height: 44px;
+    box-sizing: border-box;
+  }
+
+  &__button {
+    padding: 10px;
+    pointer-events: none;
+    border: unset;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    right: 0;
+    width: 44px;
+    width: 44px;
+
+    @include flex-center;
+
+    @include material-font($bg: $purple);
+  }
+  
+  &__label {
+    margin-top: 6.7%;
+    margin-left: .7px;
+  }
+
+  &__text {
+    @include body-text;
+  }
+
   &__input {
-    max-width: 260px;
-    margin-top: 18px;
+    margin-top: 9%;
+    background: #fff;
+    height: 44px;
+    width: 100%;
+    border: 1px solid $dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px 10px 12px 13.5px;
+    display: block;
+
+    @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
+
+    &:hover {
+      border: 1px solid $dark50;
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $dark25;
+    }
+
+    &:hover::-webkit-input-placeholder {
+      color: $dark75;
+    }
   }
 }
 
@@ -41,11 +96,10 @@
   width: 100%;
   border-top: $border-01;
 
-  @include flex-center;
+  @include container(0, 9.7%, 0, 9.7%);
 
   &__wrapper {
     height: 70px;
-    width: 1160px;
 
     @include flex-between;
   }

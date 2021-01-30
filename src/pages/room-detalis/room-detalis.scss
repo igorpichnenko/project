@@ -4,12 +4,18 @@
   height: 484px;
   background: url(img/3.jpg) right bottom no-repeat,
     url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
-}
 
-@media screen and (min-width: 1420px) {
 
-  .detalis-background {
+  @media (min-width: 1420px) {
+
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
+  }
+
+  @media (max-width: 600px) {
+    background: url(img/3.jpg) right bottom no-repeat,
+      url(img/1.jpg) right top no-repeat;
+    background-size: 100% 51%, 100% 50%;
+    min-width: 320px;
   }
 }
 
@@ -17,18 +23,55 @@
   display: flex;
   justify-content: space-between;
 
-  @include container(70px, 9.7%, 74px, 9.7%) &__item {
+  @include container(70px, 9.7%, 74px, 9.7%)
+
+    @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 450px) {
+    padding-left: 5%;
+  }
+
+  @media (max-width: 400px) {
+    padding-left: 1.5%;
+  }
+
+  &__item {
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 1200px) {
+      order: 2;
+    }
   }
 
   &__pie {
     padding-top: 1.5px;
     margin-left: 10.5%;
+
+    @media (max-width: 1320px) {
+      margin-left: 3%;
+    }
+    
+    @media (max-width: 780px) {
+      margin-top: 40px;
+    }
   }
 
   &__comment {
     padding-top: 2px;
+
+    @media (max-width: 1320px) {
+      padding-left: 3%;
+    }
+  }
+
+  &__reviews {
+    @media (max-width: 1320px) {
+      margin-left: 3%;
+      margin-top: 40px;
+    }
   }
 
   &__title {
@@ -36,6 +79,11 @@
     margin-top: 13px;
 
     @include flex-between;
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__title_lower {
@@ -57,6 +105,10 @@
 
   &__rules {
     padding-top: 33px;
+
+    @media (max-width: 1320px) {
+      padding-left: 3%;
+    }
   }
 
   &__text {
@@ -67,13 +119,20 @@
   &__cancel {
     padding-top: 32px;
     padding-left: 13%;
+
+    @media (max-width: 1320px) {
+      padding-left: 3%;
+    }
   }
 
   &__form {
     max-width: 380px;
-    flex-grow: 1;
-    flex-shrink: 0;
     padding-top: 1px;
+
+    @media (max-width: 1240px) {
+      order: 1;
+      margin-bottom: 40px;
+    }
   }
 
   &__formlux {

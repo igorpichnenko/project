@@ -1,6 +1,8 @@
 @import '../../scss/_mixin';
 
 .registration-container {
+  overflow: hidden;
+
   @include flex-center;
 
   &_reg-bg {
@@ -22,6 +24,11 @@
   &__reg {
     padding-left: 7px;
     padding-bottom: 0;
+
+    @media (max-width: 500px) {
+
+      padding-left: 0;
+    }
   }
 
   &__signin,

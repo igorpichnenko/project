@@ -1,13 +1,15 @@
 mixin text-field(options)
-  - const { inType, mods = "standart", text = "Email", button, mod, data, label } = options;
+  - const { inType, mods = "standart", text = "Email", button, mod, data, label,className="text-field__label" } = options;
   
   .text-field
-    label.text-field__label= label
-      input.text-field__input_standart(
-        type=inType,
-        placeholder=text,
-        class=`text-field_${mods}`,
-        data-date-format=data
-      )
+
     if button
       button(class=mod, type='submit')= button
+ 
+    label(class=className)= label
+      input(
+        type=inType,
+        placeholder=text,
+        class=`text-field__input_${mods}`,
+        data-date-format=data
+      )

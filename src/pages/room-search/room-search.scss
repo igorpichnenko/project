@@ -6,14 +6,25 @@
 
   @include container(1.95%, 9.7%, 5.1%, 9.7%);
 
+  @media (max-width: 1080px) {
+
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 850px) {
+
+    justify-content: center;
+  }
+
   &__aside {
     width: 266px;
+    margin-bottom: 60px;
   }
 
   &__dropdown {
     margin-top: 20.3px;
   }
-  
+
   &__drop {
     margin-top: 5px;
   }
@@ -47,7 +58,7 @@
   &__rich {
     margin-top: 32px;
   }
-  
+
   &__rich-title {
     margin-bottom: 5px;
   }
@@ -59,7 +70,7 @@
   &__medium-drop {
     margin-top: 29.4px;
   }
-  
+
   &__drop-title {
     margin-bottom: 5px;
   }
@@ -75,6 +86,11 @@
   row-gap: 20px;
   column-gap: 11.5px;
   margin-top: 22px;
+  
+  @media (max-width: 850px) {
+
+    justify-content: center;
+  }
 }
 
 .room-search__pagination {
@@ -90,4 +106,9 @@
 
 .room-search__title {
   margin-top: 2px;
+  
+  @media (max-width: 850px) {
+
+    text-align: center;
+  }
 }

@@ -5,6 +5,11 @@
 
   @include flex-column-center;
 
+  @media (max-width: 760px) {
+
+    padding: 8.23% 6.5% 8.23% 6.5%;
+  }
+  
   &__text {
     max-width: 600px;
     text-align: center;

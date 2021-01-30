@@ -2,7 +2,8 @@
 
 .headers-footers {
   background-color: $grey;
-
+  overflow: hidden;
+  
   @include container(9.75%, 0, 0, 0);
 
   & > * + * {
@@ -20,6 +21,12 @@
 
   &__large {
     @include flex-column-center;
+    
+    @media (max-width: 767px) {
+
+      display: none;
+      flex: 0 0 auto;
+    }
   }
 
   &__small {

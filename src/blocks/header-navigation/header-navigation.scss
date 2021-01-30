@@ -1,12 +1,10 @@
 .nav-list {
   display: flex;
   list-style: none;
-  padding-right: 35px;
 
   @media (max-width: 970px) {
-    display: flex;
+
     flex-direction: column;
-    align-items: center;
   }
 
   &__link_vacancies {
@@ -25,6 +23,32 @@
     cursor: pointer;
 
     @include intermediate-text;
+
+    @media (max-width: 1120px) {
+
+      margin-left: 10px;
+    }
+
+    @media (max-width: 1130px) {
+
+      margin-left: 5px;
+    }
+
+    @media (max-width: 970px) {
+      
+      padding-left: 43%;
+      text-align: left;
+    }
+
+    @media (max-width: 800px) {
+      
+      padding-left: 40%;
+    }
+    
+    @media (max-width: 500px) {
+
+      padding-left: 35%;
+    }
 
     &:hover {
       @include intermediate-text(bold, $dark75);

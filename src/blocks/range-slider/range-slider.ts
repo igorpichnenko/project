@@ -25,5 +25,5 @@ function updateInputs(data: any) {
   to = data.to;
 
   $inputFrom.prop('value', `${from}₽`);
-  $inputTo.prop('value', `-  ${to}₽`);
+  $inputTo.prop('value', `- ${to}₽`);
 }

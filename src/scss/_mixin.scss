@@ -24,16 +24,6 @@
   background-size: cover;
 }
 
-@mixin max-size($w: 100%, $h: 100%) {
-  width: $w;
-  height: $h;
-}
-
-@mixin base-size($w: 40px, $h: 20px) {
-  width: $w;
-  height: $h;
-}
-
 @mixin material-font(
   $ff: 'Material Icons',
   $fs: 24px,

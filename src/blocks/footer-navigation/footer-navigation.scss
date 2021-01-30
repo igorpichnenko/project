@@ -5,19 +5,6 @@
     color: inherit;
   }
 
-  &__list {
-
-    &:hover {
-      @include intermediate-text(bold, $dark75);
-    }
-  }
-
-  &__list_subscription {
-    margin-top: 17.5px;
-
-    @include body-text;
-  }
-
   &__list_one {
     text-transform: uppercase;
 
@@ -26,12 +13,16 @@
 
   &__list_other,
   &__list_two {
-    margin-bottom: 21px;
+    margin-bottom: 13%;
 
     @include intermediate-text;
+    
+    &:hover {
+      @include intermediate-text(bold, $dark75);
+    }
   }
 
   &__list_two {
-    margin-top: 21.8px;
+    margin-top: 13.7%;
   }
 }

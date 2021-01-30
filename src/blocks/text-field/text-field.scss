@@ -1,9 +1,9 @@
 .text-field {
   position: relative;
- 
+
   &__label {
     text-transform: uppercase;
-   
+
     @include small-text;
   }
 
@@ -11,14 +11,12 @@
   &__button_arrow {
     border: unset;
     background: none;
-    position: absolute;
     cursor: pointer;
     top: 38%;
     right: 2px;
     width: 40px;
     height: 40px;
-
-    @include flex-center;
+    position: absolute;
 
     @include material-font($bg: $purple);
   }
@@ -29,7 +27,7 @@
     @include material-font;
   }
 
-  &_standart {
+  &__input_standart {
     margin-top: 5px;
     background: #fff;
     height: 44px;
@@ -56,7 +54,7 @@
     }
   }
 
-  &_hover {
+  &__input_hover {
     margin-top: 5px;
     width: 320px;
     height: 44px;
@@ -73,7 +71,7 @@
     }
   }
 
-  &_filter {
+  &__input_filter {
     margin-top: 5px;
     background: #fff;
     border: 1px solid $dark25;

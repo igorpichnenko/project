@@ -8,15 +8,10 @@
 
     @include flex-between;
 
-    @media (max-width: 1439px) {
-      padding: 0 28px;
-    }
-
     @media (max-width: 970px) {
       flex-direction: column;
       align-items: unset;
       justify-content: center;
-      padding: 15px 28px;
     }
   }
 
@@ -25,7 +20,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
 
     @media (max-width: 970px) {
       display: none;
@@ -33,11 +27,20 @@
     }
   }
 
+  &__items {
+    padding-right: 3.38%;
+
+    @media (max-width: 990px) {
+
+      padding-right: 10px;
+    }
+  }
+
   &__open-menu {
     display: block;
   }
 
-  &__button {
+  &__buttons {
     display: flex;
     justify-content: space-between;
 
@@ -46,14 +49,7 @@
 
       @include flex-column-center;
 
-      & > * + * {
-        margin-top: 10px;
-      }
     }
-  }
-
-  &__button > * + * {
-    margin-left: 20px;
   }
 
   &__left-button {
@@ -64,12 +60,30 @@
   &__right-button {
     height: 34px;
     width: 196px;
+    margin-left: 20px;
+
+    @media (max-width: 1120px) {
+
+      margin-left: 10px;
+    }
+
+    @media (max-width: 970px) {
+
+      margin-top: 10px;
+    }
   }
 
-  &__logo {
+  &__element {
     line-height: 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  &__logo {
+    @media (max-width: 970px) {
+
+      margin-top: 10px;
+    }
   }
 
   &__person {
@@ -78,5 +92,10 @@
     border-left: $border-01;
 
     @include intermediate-text;
+
+    @media (max-width: 970px) {
+      @include flex-column-center;
+
+    }
   }
 }
