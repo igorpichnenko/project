@@ -14,14 +14,15 @@ npm install
 npm run start
 ```
 ## Билд 
-
+```
 npm run build
-
+```
 ## gh pages
-
+```
 npm run deploy
+```
 
-Плагины которые использовались в проекте.. 
+## Плагины которые использовались в проекте.. 
 ```
 "paginationjs"
 "ion-rangeslider"
