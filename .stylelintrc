@@ -1,8 +1,0 @@
-{
-  "extends": "stylelint-config-airbnb",
-  "rules": {
-    "string-quotes": "single",
-    "max-nesting-depth": null,
-    "scss/dollar-variable-pattern": null
-  }
-}

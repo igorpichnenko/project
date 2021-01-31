@@ -9,11 +9,8 @@ const autoprefixer = require('autoprefixer');
 const ghpages = require('gh-pages');
 
 
-// модули --- ***
 module.exports = {
   entry: {
-
-    // точка входа, у меня для каждой страницы свой js файл подключается
     'index': './src/pages/index/index.ts',
     'registration': './src/pages/registration/registration.ts',
     'room-search': './src/pages/room-search/room-search.ts',
@@ -29,12 +26,10 @@ module.exports = {
       '.ts',
       '.json'],
   },
-  // точка вывода билда
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
   },
-  // модули
   module: {
     rules: [{
       test: /\.js$/,
@@ -43,7 +38,6 @@ module.exports = {
         loader: "babel-loader"
       }
     },
-      // сборщик scss
       {
         test: /\.s?css$/,
         use: ['style-loader',
@@ -60,7 +54,6 @@ module.exports = {
           },
           'sass-loader']
       },
-      // правила
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
@@ -89,13 +82,11 @@ module.exports = {
       }]
   },
 
-  // Плагины *** ---
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    // каждая страница к меня вот так подключена
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
@@ -126,7 +117,6 @@ module.exports = {
       template: './src/pages/form-elements/form-elements.pug',
       filename: 'form-elements.html'
     }),
-    // подключение jQuery
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
@@ -157,7 +147,6 @@ module.exports = {
       filename: 'landing.html'
     }),
   ],
-  // Стартовая страница
   devtool: 'inline-source-map',
   devServer: {
     stats: 'errors-only',

@@ -5,6 +5,5 @@ import '../../blocks/pagination/pagination';
 import '../../blocks/checkbox-list/checkbox-list';
 import '../../scss/main.scss';
 import './room-search.scss';
-import '../../../pixel';
 import '../../blocks/burger/burger';
 import '../../blocks/calendar/calendar';
