@@ -25,7 +25,7 @@ npm run deploy
 ## Плагины которые использовались в проекте.. 
 ```
 "paginationjs"
-"ion-rangeslider"
+"color-range-slider мой плагин из 4 задания.."
 "imask"
 "air-datepicker"
 "slick-carousel"
