@@ -35,14 +35,12 @@
     margin-top: 31.5px;
     height: 12px;
   }
-
-  &__out {
-    align-self: center;
-    margin-right: 2px;
+  &__range-slider{
+    margin-top: 22px;
   }
 
   &__price {
-    margin-top: 5.6px;
+    padding-top: 23px;
 
     @include intermediate-text($fs: 12px, $lh: 14px);
   }

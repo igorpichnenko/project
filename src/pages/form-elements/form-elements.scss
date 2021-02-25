@@ -193,21 +193,14 @@
 
   }
 
-
-  &__range {
-    height: 11.5px;
+  &__range-slider {
     width: 266px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__out {
-    align-self: center;
-    margin-right: 1.5px;
+    margin-top: 18.5px;
+    
   }
 
   &__title-btn {
-    margin-top: 36px;
+    margin-top: 72px;
   }
 
   &__button-top {

@@ -11,7 +11,7 @@ const ghpages = require('gh-pages');
 
 module.exports = {
   entry: {
-    'index': './src/pages/index/index.ts',
+    'index': './src/pages/index.ts',
     'registration': './src/pages/registration/registration.ts',
     'room-search': './src/pages/room-search/room-search.ts',
     'room-detalis': './src/pages/room-detalis/room-detalis.ts',
@@ -90,7 +90,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/pages/index/index.pug',
+      template: './src/pages/index.pug',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
