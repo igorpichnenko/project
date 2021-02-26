@@ -23,9 +23,9 @@ npm run deploy
 ```
 
 ## Плагины которые использовались в проекте.. 
-```
-"paginationjs"
-"color-range-slider мой плагин из 4 задания.."
-"imask"
-"air-datepicker"
-"slick-carousel"
+
+#### [paginationjs](https://pagination.js.org/)
+#### [color-range-slider мой плагин](https://www.npmjs.com/package/color-range-slider)
+#### [imask](https://imask.js.org/)
+#### [air-datepicker](http://t1m0n.name/air-datepicker/docs/index-ru.html)
+#### [slick-carousel](https://kenwheeler.github.io/slick/)
