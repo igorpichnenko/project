@@ -3,6 +3,7 @@
     "mods": "filter js-datepicker",
     "inType": "text",
     "text": "19 авг - 23 авг",
+    "data": "d M",
     "button": "expand_more",
     "mod": "text-field__button_arrow",
     "label": "Даты пребывания в отеле"

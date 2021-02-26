@@ -1,6 +1,5 @@
 import '../../../node_modules/color-range-slider/dist/slider.js'
-
-
+//import slider from 'color-range-slider'
 
 $('.js-range-slider').colorSlider({
   fromTo: true,
