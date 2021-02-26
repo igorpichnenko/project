@@ -1,4 +1,4 @@
-import '../../../node_modules/color-range-slider/dist/slider/slider.js'
+import '../../../node_modules/color-range-slider/dist/slider.js'
 
 
 
