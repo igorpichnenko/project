@@ -28,7 +28,7 @@ npm run deploy
 ##### sass
 ##### jquery
 
-##### Иконочные шрифты
+### Иконочные шрифты
 
 #### fortawesome/fontawesome-free
 #### material-design-icons
