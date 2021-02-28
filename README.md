@@ -22,6 +22,17 @@ npm run build
 npm run deploy
 ```
 
+### Используемые библиотеки:
+
+pug
+sass
+jquery
+
+##### Иконочные шрифты
+
+fortawesome/fontawesome-free
+material-design-icons
+
 ## Плагины которые использовались в проекте.. 
 
 #### [paginationjs](https://pagination.js.org/)
