@@ -3,17 +3,18 @@
 .room-search {
   display: flex;
   flex: 1 0 auto;
+  justify-content: center;
   gap: 5.2%;
-
+  
   @include container(1.95%, 9.7%, 5.1%, 9.7%);
 
-  @media (max-width: 1080px) {
-
-    flex-wrap: wrap;
+  @media (max-width: 1439px) {
+   gap: 3%;
+    
   }
   
-  @media (max-width: 850px) {
-
+  @media (max-width: 1080px) {
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -86,8 +87,8 @@
   column-gap: 11.5px;
   margin-top: 22px;
   
-  @media (max-width: 850px) {
-
+  @media (max-width: 1439px) {
+     row-gap: 40px;
     justify-content: center;
   }
 }
@@ -106,7 +107,7 @@
 .room-search__title {
   margin-top: 2px;
   
-  @media (max-width: 850px) {
+  @media (max-width: 1439px) {
 
     text-align: center;
   }
