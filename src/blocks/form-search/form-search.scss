@@ -1,20 +1,24 @@
 .card-search {
-  height: 374px;
-  min-width: 380px;
+  min-height: 374px;
   box-shadow: $shadow-02;
   background-color: #fff;
   border-radius: 4px;
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-right: 30px;
 
   &__wrapper {
-    padding-left: 30px;
-    padding-top: 40px;
     width: 320px;
   }
 
   &__wrap-title {
     width: 300px;
   }
-
+  
+  &__container{
+     box-sizing: border-box;
+  }
+  
   &__calendar {
     display: flex;
     margin-top: 20px;
@@ -35,6 +39,6 @@
   }
 
   &__button {
-    margin-left: 28.7px;
+
   }
 }
