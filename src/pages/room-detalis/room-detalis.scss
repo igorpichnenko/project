@@ -1,13 +1,13 @@
 @import '../../scss/_mixin';
 
-.detalis{
+.detalis {
   flex: 1 0 auto;
 }
 
 .detalis-background {
   height: 484px;
   background: url(img/3.jpg) right bottom no-repeat,
-    url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
+  url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
 
 
   @media (min-width: 1420px) {
@@ -15,12 +15,16 @@
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
 
-  /*@media (max-width: 600px) {
-    background: url(img/3.jpg) right bottom no-repeat,
-      url(img/1.jpg) right top no-repeat;
-    background-size: 100% 51%, 100% 50%;
+  @media (max-width: 1280px) {
+
+    background-size: 40% 50.15%, 40% 50%, 60% 100%;
+  }
+
+  @media (max-width: 1180px) {
+
+    background-size: 50% 50.15%, 50% 50%, 50% 100%;
     min-width: 320px;
-  }*/
+  }
 }
 
 .room-detalis {
@@ -30,7 +34,7 @@
 
   @include container(70px, 9.7%, 74px, 9.7%)
 
-    @media (max-width: 1200px) {
+  @media (max-width: 1200px) {
     flex-wrap: wrap;
   }
 
@@ -58,7 +62,7 @@
     @media (max-width: 1320px) {
       margin-left: 3%;
     }
-    
+
     @media (max-width: 780px) {
       margin-top: 40px;
     }
