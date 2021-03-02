@@ -6,7 +6,8 @@ mixin header(options={})
       .header-main__container
         .header-main__element
           .header-main__logo
-           +logo
+           a.header-main__link(href='/mock-address/change-me' target="_blank")
+            +logo
           +burger
 
         nav.header-main__nav

@@ -15,7 +15,7 @@
     margin-right: 1px;
   }
 
-  &__text {
+  &__link {
     margin-left: 20px;
     text-decoration: none;
     position: relative;
@@ -51,6 +51,9 @@
     }
 
     &:hover {
+      @include intermediate-text(bold, $dark75);
+    }
+    &:active {
       @include intermediate-text(bold, $dark75);
     }
   }

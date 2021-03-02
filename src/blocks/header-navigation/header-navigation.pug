@@ -2,8 +2,8 @@ mixin header-nav(list)
   ul.nav-list
     each item in list
       - const { title, className } = item;
-        li(class=`nav-list__text nav-list__text_${className}`)= title
+        li(class=`nav-list__text nav-list__text_${className}`)
           a(
             class=`nav-list__link nav-list__link_${className}`,
-            href='/mock-address/change-me'
-          )
+            href="/mock-address/change-me" target="_blank" 
+          )= title

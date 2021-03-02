@@ -1,4 +1,6 @@
 mixin font-icon({className="fab fa-facebook-square",mod="fab fa-twitter"}={})
-  i(class="" + mod)
-  i(class="" + className)
-  i.fab.fa-instagram
+
+
+  a(class="" + mod target="_blank" href="https://mobile.twitter.com/")
+  a(class="" + className target="_blank" href="https://m.facebook.com/")
+  a.fab.fa-instagram(target="_blank" href="https://www.instagram.com/")
