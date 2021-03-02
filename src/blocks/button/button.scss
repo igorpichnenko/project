@@ -17,11 +17,21 @@
 
   &:active {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-      linear-gradient(
-        180deg,
-        rgba(188, 156, 255, .5) 0%,
-        rgba(139, 164, 240, .5) 100%
-      );
+    linear-gradient(
+      180deg,
+      rgba(188, 156, 255, .5) 0%,
+      rgba(139, 164, 240, .5) 100%
+    );
+    background-clip: content-box, border-box;
+    background-origin: border-box;
+  }
+  &:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(
+      180deg,
+      rgba(188, 156, 255, .5) 0%,
+      rgba(139, 164, 240, .5) 100%
+    );
     background-clip: content-box, border-box;
     background-origin: border-box;
   }
@@ -31,7 +41,7 @@
     border-radius: 80px;
     box-shadow: 2px 1000px 1px #fff inset;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-      linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     background-clip: content-box, border-box;
     background-origin: border-box;
     color: $purple;
@@ -69,26 +79,34 @@
   &_content-none {
     border: unset;
     background: none;
+    &:hover {
+      color: rgba(#bc9cff, .5);
+    }
   }
 
   &_color-black {
     color: $dark50;
     background: none;
+    &:hover {
+      color: $dark25;
+    }
   }
 
   &_disable {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-      linear-gradient(
-        180deg,
-        rgba(188, 156, 255, .5) 0%,
-        rgba(139, 164, 240, .5) 100%
-      );
+    linear-gradient(
+      180deg,
+      rgba(188, 156, 255, .5) 0%,
+      rgba(139, 164, 240, .5) 100%
+    );
     background-clip: content-box, border-box;
     background-origin: border-box;
+    
   }
 
   &_large {
     height: 44px;
     width: 99px;
+
   }
 }
