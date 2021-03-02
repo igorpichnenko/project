@@ -1,5 +1,9 @@
 @import '../../scss/_mixin';
 
+.detalis{
+  flex: 1 0 auto;
+}
+
 .detalis-background {
   height: 484px;
   background: url(img/3.jpg) right bottom no-repeat,
