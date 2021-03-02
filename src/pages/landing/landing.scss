@@ -1,6 +1,7 @@
 @import '../../scss/_mixin';
 
 .landing-container {
+  flex: 1 0 auto;
   background: url('./img/landing.jpg');
   height: 830px;
   min-width: 520px;

@@ -20,17 +20,19 @@ html(lang="ru")
     block title
 
 
-  body
-   -
+  body.pages
+    -
      data = require('../../pages/headers-footers/headers-footers.json');
-   header.header-room
-    +header(data.header)
-   block content
 
-   footer.footer-rooms
-    .footer-rooms__large
-     +footer(data.footer)
+    header.header-room
+     +header(data.header)
+    
+    block content
 
-    .footer-rooms__small
-     +footer-small(data.footerSmall)
+    footer.footer-rooms
+     .footer-rooms__large
+      +footer(data.footer)
+
+     .footer-rooms__small
+      +footer-small(data.footerSmall)
 

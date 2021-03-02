@@ -11,17 +11,18 @@
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
 
-  @media (max-width: 600px) {
+  /*@media (max-width: 600px) {
     background: url(img/3.jpg) right bottom no-repeat,
       url(img/1.jpg) right top no-repeat;
     background-size: 100% 51%, 100% 50%;
     min-width: 320px;
-  }
+  }*/
 }
 
 .room-detalis {
   display: flex;
   justify-content: space-between;
+  flex: 1 0 auto;
 
   @include container(70px, 9.7%, 74px, 9.7%)
 

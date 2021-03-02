@@ -2,9 +2,11 @@
 
 .registration-container {
   overflow: hidden;
-
+  
   @include flex-center;
-
+  
+  flex: 1 0 auto;
+  
   &_reg-bg {
     background: url('./img/registration.jpg');
     height: 683px;

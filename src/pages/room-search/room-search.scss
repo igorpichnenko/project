@@ -2,6 +2,7 @@
 
 .room-search {
   display: flex;
+  flex: 1 0 auto;
   gap: 5.2%;
 
   @include container(1.95%, 9.7%, 5.1%, 9.7%);
