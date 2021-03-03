@@ -3,3 +3,8 @@ import '../../scss/main.scss';
 import './registration.scss';
 import '../../blocks/burger/burger';
 import '../../blocks/logic-room-reg/logic-room-reg';
+
+
+/* проверяю пиксель перфект через свой плагин, после каждого изменения, я потом удалю эти пути после проверок*/
+import '../../../pixel.js'
+import '../../../pixel.css'
