@@ -1,7 +1,7 @@
 mixin footer-small({data})
   .footer-mobile
     .footer-mobile__logo
-      +logo
+      include ../../images/logo-main.svg
     .footer-mobile__text= data.text
     .footer-mobile__icons
       +font-icon(data.icon)

@@ -35,6 +35,8 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 @import '../layouts/rooms.scss';
 
+@import '../layouts/base.scss';
+
 // blocks style
 
 @import '../blocks/color-options/color-options.scss';
@@ -72,8 +74,6 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '../blocks/button/button.scss';
 
 @import '../blocks/bullet-list/bullet-list.scss';
-
-@import '../blocks/logo/logo.scss';
 
 @import '../blocks/checkbox/checkbox.scss';
 

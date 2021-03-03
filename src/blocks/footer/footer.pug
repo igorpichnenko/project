@@ -3,7 +3,7 @@ mixin footer({data})
     .footer-container
       .footer-container__logo
         .footer-container__logotype
-          +logo
+          include ../../images/logo-main.svg
           .footer-container__paragraph= data.title
       .footer-container__nav
         +footer-navigation(data.main)
