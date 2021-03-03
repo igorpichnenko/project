@@ -62,11 +62,10 @@ block content
             +title(data.expanded)
           .column-one__drop
            +dropdown(data.bedrooms)
-
           .column-one__checkbox
-            +checkbox-list
+            +checkbox-list(data.checkListOne)
             .column-one__checkbox-list
-              +checkbox-list(data.checkboxList)
+              +checkbox-list(data.checkListTwo)
     .column-two
       +title(data.titleCheck)
       .column-two__checkbox

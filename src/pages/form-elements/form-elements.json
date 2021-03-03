@@ -119,10 +119,35 @@
       }
     ]
   },
-  "checkboxList": {
-    "mods": "checkbox-list__icon_rotate",
-    "mod": "checkbox-list__visible"
+  
+  "checkListOne": {
+    
+    "options": [ 
+      
+     {"text": "Завтрак"}, 
+     {"text": "Письменный стол", "checked": "checked"}, 
+     {"text":"Стул для кормления","checked": "checked"},
+     {"text":"Кроватка","checked": "checked"}, 
+     {"text":"Телевизор"},
+     {"text":"Шампунь"}
+     
+     ]
   },
+  "checkListTwo": {
+    "mods": "js-checkbox-list__icon_rotate",
+    "mod": "checkbox-list__visible",
+    "options": [ 
+     
+     {"text": "Завтрак"}, 
+     {"text": "Письменный стол", "checked": "checked"}, 
+     {"text":"Стул для кормления","checked": "checked"},
+     {"text":"Кроватка","checked": "checked"}, 
+     {"text":"Телевизор"},
+     {"text":"Шампунь"}
+     
+     ]
+  },
+  
   "titleCheck": {
     "title": "checkbox buttons"
   },
