@@ -30,13 +30,13 @@
   }
 
   &__number {
-    @include large-text($col: $purple);
+    @include large-text($col: $primary);
   }
 
   &__text {
     text-transform: uppercase;
 
-    @include small-text($col: $purple);
+    @include small-text($col: $primary);
   }
 
   &__chart {
@@ -86,11 +86,11 @@
   }
 
   &__item:nth-child(2)::before {
-    background: $green-gradient;
+    background: $secondary-gradient;
   }
 
   &__item:nth-child(3)::before {
-    background: $purple-gradient;
+    background: $primary-gradient;
   }
 
   &__item:nth-child(4)::before {

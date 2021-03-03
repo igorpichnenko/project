@@ -36,7 +36,7 @@
     align-self: flex-end;
     margin-left: 1px;
 
-    @include small-text($col: $purple);
+    @include small-text($col: $primary);
   }
 
   &__cost {

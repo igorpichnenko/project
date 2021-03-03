@@ -11,7 +11,7 @@
 .pagination {
 
   &__link_active {
-    background: $purple-gradient;
+    background: $primary-gradient;
   }
 
   &__text {
@@ -47,7 +47,7 @@
 
 .paginationjs-prev,
 .paginationjs-next {
-  background: $green-gradient;
+  background: $secondary-gradient;
 }
 
 .paginationjs-page,

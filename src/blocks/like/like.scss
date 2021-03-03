@@ -17,7 +17,7 @@
   }
 
   &__input:checked ~ &__border {
-    background-image: $purple-gradient;
+    background-image: $primary-gradient;
     border: unset;
     width: 40px;
     height: 20px;
@@ -57,11 +57,11 @@
 
   &__input:checked::before {
     content: 'favorite';
-    color: $purple;
+    color: $primary;
     transition: color .3s ease-in;
   }
 
   &__input:checked + &__border {
-    color: $purple;
+    color: $primary;
   }
 }

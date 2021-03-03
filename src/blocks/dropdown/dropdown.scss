@@ -39,7 +39,7 @@
     border: unset;
     outline: none;
 
-    @include small-text($col: $purple);
+    @include small-text($col: $primary);
   }
 
   &__buttons {

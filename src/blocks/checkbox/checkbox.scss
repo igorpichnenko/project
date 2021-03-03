@@ -8,7 +8,7 @@
   }
 
   &__input:checked ~ &__style {
-    border: 1px solid $purple;
+    border: 1px solid $primary;
   }
 
   &__style {
@@ -39,7 +39,7 @@
       top: 4.5px;
       height: 6px;
       width: 8px;
-      background: $purple-gradient;
+      background: $primary-gradient;
       transform: rotate(-45deg);
       display: none;
     }

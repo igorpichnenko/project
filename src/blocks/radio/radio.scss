@@ -13,11 +13,11 @@
   }
 
   &__input:checked + .radio__text:before {
-    border: $purple-border;
+    border: $primary-border;
   }
 
   &__input:focus + .radio__text:before {
-    border: $purple-border;
+    border: $primary-border;
   }
 
   &__input:checked + .radio__text {
@@ -54,7 +54,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: $purple-gradient;
+    background: $primary-gradient;
     opacity: 0;
   }
 }

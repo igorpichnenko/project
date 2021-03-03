@@ -3,15 +3,22 @@ $dark75: rgba(#1f2041, .75);
 $dark50: rgba(#1f2041, .5);
 $dark25: rgba(#1f2041, .25);
 $dark5: rgba(#1f2041, .05);
-$purple: #bc9cff;
-$green: #6fcf97;
+
+$primary: #bc9cff;
+$secondary: #6fcf97;
+
+$primary-font-family: Montserrat, Arial, sans-serif;
+$secondary-font-family: Quicksand, Arial, sans-serif;
+
 $grey: #f4f4f6;
 
+
+$primary-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+$secondary-gradient: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+
 $yellow-gradient: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
-$purple-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-$green-gradient: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 $black-gradient: linear-gradient(180deg, #919191 0%, #3d4975 100%);
 $shadow-5: 0px 10px 20px 0px $dark5;
 $border-01: $dark5 1px solid;
-$purple-border: 1px solid $purple;
+$primary-border: 1px solid $primary;
 $shadow-02: 0px 0px 25px 0px rgba(0, 0, 0, .2);

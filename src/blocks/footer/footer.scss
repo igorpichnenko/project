@@ -53,7 +53,7 @@
 
     @include flex-center;
 
-    @include material-font($bg: $purple);
+    @include material-font($bg: $primary);
   }
   
   &__label {

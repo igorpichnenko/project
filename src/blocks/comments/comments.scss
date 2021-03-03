@@ -11,7 +11,7 @@
   }
 
   &__icon {
-    @include material-font($fs: 48px, $lh: 41px, $bg: $purple-gradient);
+    @include material-font($fs: 48px, $lh: 41px, $bg: $primary-gradient);
   }
 
   &__title {

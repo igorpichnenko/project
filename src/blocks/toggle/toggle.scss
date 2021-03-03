@@ -31,11 +31,11 @@
   }
 
   &__input:checked ~ &__border {
-    border-color: $purple;
+    border-color: $primary;
   }
 
   &__input:checked ~ &__border::before {
-    background: $purple-gradient;
+    background: $primary-gradient;
     margin-left: 20px;
   }
 

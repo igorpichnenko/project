@@ -18,7 +18,7 @@
     height: 40px;
     position: absolute;
 
-    @include material-font($bg: $purple);
+    @include material-font($bg: $primary);
   }
 
   &__button_arrow {
