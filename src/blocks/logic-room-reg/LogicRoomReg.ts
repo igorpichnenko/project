@@ -19,14 +19,14 @@ class LogicRoomReg {
       formSignIn]
   }
   private bindEventListeners() {
-    this.handleSignIn = this.handleSignIn.bind(this);
-    this.elements[0].addEventListener('click', this.handleSignIn);
+    this.handlerSignIn = this.handlerSignIn.bind(this);
+    this.elements[0].addEventListener('click', this.handlerSignIn);
 
-    this.handleCreateAccountButton = this.handleCreateAccountButton.bind(this);
-    this.elements[1].addEventListener('click', this.handleCreateAccountButton);
+    this.handlerCreateAccountButton = this.handlerCreateAccountButton.bind(this);
+    this.elements[1].addEventListener('click', this.handlerCreateAccountButton);
   }
 
-  private handleCreateAccountButton() {
+  private handlerCreateAccountButton() {
     this.elements[2].classList.toggle('registration-container_active');
     this.elements[3].classList.remove('registration-container_active');
     window.history.pushState({
@@ -36,7 +36,7 @@ class LogicRoomReg {
     this.room.classList.remove('registration-container_signIn-bg');
   }
 
-  private handleSignIn() {
+  private handlerSignIn() {
     this.elements[3].classList.toggle('registration-container_active');
     this.elements[2].classList.remove('registration-container_active');
     window.history.pushState({
