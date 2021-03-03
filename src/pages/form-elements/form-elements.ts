@@ -4,9 +4,9 @@ import '../../scss/main.scss';
 import './form-elements.scss';
 import '../../blocks/range-slider/range-slider';
 import '../../blocks/pagination/pagination';
-import '../../blocks/checkbox-list/checkbox-list';
+import '../../blocks/checkbox-list/checkbox-list-init';
 import '../../blocks/dropdown/dropdown-init';
-import '../../blocks/like/like';
+import '../../blocks/like/like-init';
 
 
 

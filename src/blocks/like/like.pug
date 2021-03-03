@@ -1,6 +1,6 @@
 mixin like({number,checked}={})
-  .like
+  .like.js-like
     label.like__label
-      input.like__input(type='checkbox', checked=checked)
+      input.like__input.js-like__input(type='checkbox', checked=checked)
       span.like__border
-        span.like__number= number
+        span.like__number.js-like__number= number

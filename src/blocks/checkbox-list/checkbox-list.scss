@@ -29,11 +29,7 @@
     line-height: 24px;
     color: $dark75;
   }
-
-  &__icon_rotate {
-    transform: rotate(180deg);
-  }
-
+  
   &__wrapper {
     background-color: #fff;
     display: none;
@@ -51,3 +47,7 @@
     display: block;
   }
 }
+
+.js-checkbox-list__icon_rotate {
+    transform: rotate(180deg);
+  }

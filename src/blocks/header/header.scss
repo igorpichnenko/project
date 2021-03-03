@@ -37,10 +37,6 @@
     }
   }
 
-  &__open-menu {
-    display: block;
-  }
-
   &__buttons {
     display: flex;
     justify-content: space-between;
@@ -100,3 +96,6 @@
     }
   }
 }
+.js__open-menu {
+    display: block;
+  }

@@ -2,7 +2,7 @@ mixin header(options={})
   - let { login = true, user = "Юлий Цезарь", list, button } = options;
 
   .header
-    .header-main
+    .header-main.js-header-main
       .header-main__container
         .header-main__element
           .header-main__logo
@@ -11,7 +11,7 @@ mixin header(options={})
                 
           +burger
 
-        nav.header-main__nav
+        nav.header-main__nav.js-header-nav
           +header-nav(list)
 
           .header-main__items

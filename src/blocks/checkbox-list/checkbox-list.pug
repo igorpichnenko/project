@@ -1,9 +1,9 @@
 mixin checkbox-list({mods="",mod="",title="expandable checkbox list"}={})
-  .checkbox-list
+  .checkbox-list.js-checkbox-list
     .checkbox-list__container
       span.checkbox-list__button= title
-      i.material-icons.checkbox-list__icon(class="" + mods) expand_more
-    .checkbox-list__wrapper(class="" + mod)
+      i.material-icons.checkbox-list__icon.js-checkbox-list__icon(class="" + mods) expand_more
+    .checkbox-list__wrapper.js-checkbox-list__wrapper(class="" + mod)
       .checkbox-list__indent
 
       +checkbox({text:'Завтрак'})

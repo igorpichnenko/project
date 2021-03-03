@@ -2,10 +2,10 @@ import '../../blocks/dropdown/dropdown-init';
 import '../../blocks/slick/slick';
 import '../../blocks/range-slider/range-slider';
 import '../../blocks/pagination/pagination';
-import '../../blocks/checkbox-list/checkbox-list';
+import '../../blocks/checkbox-list/checkbox-list-init';
 import '../../scss/main.scss';
 import './room-search.scss';
-import '../../blocks/burger/burger';
+import '../../blocks/burger/burger-init';
 import '../../blocks/calendar/calendar';
 
 

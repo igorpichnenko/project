@@ -38,16 +38,16 @@
     top: 10px;
   }
 
-  &__item.active &__items {
+  &__item.js-active &__items {
     background: #fff;
   }
 
-  &__item.active &__items::before {
+  &__item.js-active &__items::before {
     top: 0;
     transform: rotate(45deg);
   }
 
-  &__item.active &__items::after {
+  &__item.js-active &__items::after {
     top: 0;
     transform: rotate(135deg);
   }
