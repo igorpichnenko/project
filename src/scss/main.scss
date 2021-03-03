@@ -13,7 +13,9 @@ html {
 
 // reset
 
-@import './reset.scss';
+@import 'reset-css';
+
+@import '../../node_modules/normalize-css/normalize.css';
 
 // fonts
 
@@ -108,3 +110,4 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '../blocks/pie/pie.scss';
 
 @import '../blocks/footer-navigation/footer-navigation.scss';
+
