@@ -17,11 +17,11 @@ include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title room-search
-  link(rel='stylesheet', href='room-search.css')
+  link(rel="stylesheet", href="room-search.css")
 
 block content
   -
-    content = require('./room-search.json');
+    content = require("./room-search.json");
 
   .room-search
     .room-search__aside
@@ -78,4 +78,4 @@ block content
         +slider-card(content.sliderEleven)
       .room-search__pagination
         +pagination
-  script(src='./room-search.js')
+  script(src="./room-search.js")

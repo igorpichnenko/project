@@ -2,7 +2,7 @@ mixin dropdown({mod="",title="Сколько гостей",modBtn,className,item
   .dropdown(class=""+className)
     .dropdown__section
       h3.dropdown__title= title
-      button.dropdown__arrow(type='button') expand_more
+      button.dropdown__arrow(type="button") expand_more
 
     .dropdown__menu(class="" + mod)
       .dropdown__option
@@ -11,6 +11,6 @@ mixin dropdown({mod="",title="Сколько гостей",modBtn,className,item
 
       .dropdown__buttons
         .dropdown__container
-          button.dropdown__button.dropdown__button_clear(class="" + modBtn type='button') очистить
+          button.dropdown__button.dropdown__button_clear(class="" + modBtn type="button") очистить
         .dropdown__container
-          button.dropdown__button.dropdown__button_use(class="" + modBtn type='button') применить
+          button.dropdown__button.dropdown__button_use(class="" + modBtn type="button") применить

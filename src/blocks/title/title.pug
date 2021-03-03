@@ -1,19 +1,19 @@
-mixin title({mods='standard',title="",tag="h3"}={})
+mixin title({mods="standard",title="",tag="h3"}={})
   -
-    let modList = mods.split(',')
-    let allMods = ''
+    let modList = mods.split(",")
+    let allMods = ""
 
     modList.forEach(function (mod) {
-    allMods = allMods + ' title_' + mod.trim()
+    allMods = allMods + " title_" + mod.trim()
     })
 
   - let tagName;
 
   case tag
-    when 'h1'
+    when "h1"
       - tag = "h1";
 
-    when 'h2'
+    when "h1"
       - tag = "h2";
 
     default

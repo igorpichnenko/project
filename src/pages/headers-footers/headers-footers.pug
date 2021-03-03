@@ -11,12 +11,12 @@ include ../../blocks/burger/burger
 
 block title
   title headers-footers
-  link(rel='stylesheet', href='headers-footers.css')
+  link(rel="stylesheet", href="headers-footers.css")
   
 
 block content
   -
-    data = require('./headers-footers.json');
+    data = require("./headers-footers.json");
 
   .headers-footers
     .headers-footers__background
@@ -32,4 +32,4 @@ block content
     .headers-footers__small
       +footer-small(data.footerSmall)
 
-  script(src='./headers-footers.js')
+  script(src="./headers-footers.js")

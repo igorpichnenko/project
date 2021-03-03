@@ -8,11 +8,11 @@ include ../../blocks/toggle/toggle
 
 block title
   title registration
-  link(rel='stylesheet', href='registration.css')
+  link(rel="stylesheet", href="registration.css")
   
 block content
   -
-    content = require('./registration.json');
+    content = require("./registration.json");
 
   .registration-container.registration-container_reg-bg.js-registration-container
     .registration-container__signing.js-registration-container__signing
@@ -22,4 +22,4 @@ block content
     .registration-container__reg.registration-container_active.js-registration-container__reg
     
       +form-reg(content.formReg)
-  script(src='./registration.js')
+  script(src="./registration.js")

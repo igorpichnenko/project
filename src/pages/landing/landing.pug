@@ -8,12 +8,12 @@ include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title landing
-  link(rel='stylesheet', href='landing.css')
+  link(rel="stylesheet", href="landing.css")
   
 
 block content
   -
-    content = require('./landing.json');
+    content = require("./landing.json");
 
   .landing-container
     .landing-container__items
@@ -21,4 +21,4 @@ block content
        +form-search(content.formSearch)
       .landing-container__slogan= content.text
       
-  script(src='./landing.js')
+  script(src="./landing.js")

@@ -20,11 +20,11 @@ include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title cards
-  link(rel='stylesheet', href='cards.css')
+  link(rel="stylesheet", href="cards.css")
 
 block content
   -
-    data = require('./cards.json');
+    data = require("./cards.json");
 
   .cards
     .cards-one
@@ -38,4 +38,4 @@ block content
         .js-datepicker
       +slider-card(data.sliderCard)
       +slider-card(data.sliderCardTwo)
-  script(src='./cards.js')
+  script(src="./cards.js")

@@ -15,12 +15,12 @@ include ../../blocks/dropdown-control/dropdown-control
 
 block title
   title room-details
-  link(rel='stylesheet', href='details.css')
+  link(rel="stylesheet", href="details.css")
   
 
 block content
  -
-    content = require('./room-details.json');
+    content = require("./room-details.json");
  section.details
   .details-background
   .room-details
@@ -55,4 +55,4 @@ block content
 
     .room-details__form
       +formlux(content.formLux)
- script(src='./details.js')
+ script(src="./details.js")
