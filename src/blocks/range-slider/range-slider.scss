@@ -19,7 +19,6 @@
 
 &__tooltip {
   position: absolute;
-  font-family: Montserrat,Arial, sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
@@ -55,7 +54,6 @@
 }
 
 &__out {
-  font-family: Montserrat,Arial, sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
@@ -116,7 +114,6 @@
   text-align: center;
   cursor: pointer;
   user-select: none;
-  font-family: Montserrat,Arial, sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
@@ -164,7 +161,6 @@
 &__scale-value:after {
   content: attr(data-text);
   position: absolute;
-  font-family: Montserrat,Arial, sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
