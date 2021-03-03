@@ -1,12 +1,12 @@
-mixin form-signin({data})
+mixin form-signing({data})
   form.sign-in
-    .signin-container
+    .signing-container
       +title(data.text)
-      .signin-container__input
+      .signing-container__input
         +text-field(data.inputEmail)
         +text-field(data.inputPass)
       +button(data.btnSign)
-      .signin-container__item
-        .signin-container__text= data.content
-        .signin-container__button-wrap
+      .signing-container__item
+        .signing-container__text= data.content
+        .signing-container__button-wrap
           +button(data.btnIn)

@@ -14,7 +14,7 @@ module.exports = {
     'index': './src/pages/index.ts',
     'registration': './src/pages/registration/registration.ts',
     'room-search': './src/pages/room-search/room-search.ts',
-    'room-detalis': './src/pages/room-detalis/room-detalis.ts',
+    'details': './src/pages/room-details/room-details.ts',
     'landing': './src/pages/landing/landing.ts',
     'color-type': './src/pages/color-type/color-type.ts',
     'headers-footers': './src/pages/headers-footers/headers-footers.ts',
@@ -102,8 +102,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/pages/room-detalis/room-detalis.pug',
-      filename: 'room-detalis.html'
+      template: './src/pages/room-details/room-details.pug',
+      filename: 'room-details.html'
     }),
     new HtmlWebpackPlugin({
       inject: false,

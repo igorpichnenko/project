@@ -1,16 +1,16 @@
 const signIn = document.querySelector('.button_signIn');
-const createAcount = document.querySelector('.button_regCreate');
-const formSignIn = document.querySelector('.registration-container__signin');
+const createAccount = document.querySelector('.button_regCreate');
+const formSignIn = document.querySelector('.registration-container__signing');
 const formCreate = document.querySelector('.registration-container__reg');
 const content = document.querySelector('.registration-container');
 
 signIn?.addEventListener('click', sign);
-createAcount?.addEventListener('click', reg);
+createAccount?.addEventListener('click', reg);
 
 function sign() {
   formSignIn?.classList.toggle('registration-container_active');
   formCreate?.classList.remove('registration-container_active');
-  window.history.pushState({ param: 'Value' }, '', 'signin.html');
+  window.history.pushState({ param: 'Value' }, '', 'signing.html');
   content?.classList.remove('registration-container_reg-bg');
   content?.classList.add('registration-container_signIn-bg');
 }

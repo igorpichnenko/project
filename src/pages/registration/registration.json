@@ -28,7 +28,7 @@
 
    "formReg": {
     "data": {
-      "regAcount": {
+      "regAccount": {
         "title": "Регистрация аккаунта",
         "mods": "large",
         "tag": "h1"
@@ -52,7 +52,7 @@
         "name": "man"
       },
       "data": {
-        "mods": "standart input_mask",
+        "mods": "standard input_mask",
         "inType": "text",
         "text": "ДД.ММ.ГГГГ",
         "label": "Дата рождения"
