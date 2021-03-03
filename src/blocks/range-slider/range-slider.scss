@@ -18,12 +18,8 @@
 }
 
 &__tooltip {
+  @include small-text($fw: normal, $col: $dark50);
   position: absolute;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: normal;
-  color: rgba(31,32,65,0.5);
   border-radius: 10px;
   padding: 0 2px;
   white-space: nowrap
@@ -54,11 +50,7 @@
 }
 
 &__out {
-  font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: normal;
-  color: rgba(31,32,65,0.5);
+  @include small-text($fw: normal, $col: $dark50);
   position: absolute
 }
 
@@ -114,11 +106,7 @@
   text-align: center;
   cursor: pointer;
   user-select: none;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: normal;
-  color: rgba(31,32,65,0.5);
+  @include small-text($fw: normal, $col: $dark50);
   z-index: 2
 }
 
@@ -161,11 +149,7 @@
 &__scale-value:after {
   content: attr(data-text);
   position: absolute;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: normal;
-  color: rgba(31,32,65,0.5)
+  @include small-text($fw: normal, $col: $dark50);
 }
 
 &__scale-value:hover:after {
