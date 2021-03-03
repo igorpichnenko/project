@@ -16,11 +16,11 @@ class CheckboxList {
   }
 
   private bindEventListeners() {
-    this.handlerClickMenu = this.handlerClickMenu.bind(this);
-    this.accordion.addEventListener('click', this.handlerClickMenu);
+    this.handleClickMenu = this.handleClickMenu.bind(this);
+    this.accordion.addEventListener('click', this.handleClickMenu);
   }
 
-  private handlerClickMenu() {
+  private handleClickMenu() {
 
     if (this.elements[0].style.display === 'block') {
       this.elements[0].style.display = 'none';

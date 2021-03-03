@@ -16,11 +16,11 @@ class Burger {
   }
 
   private bindEventListeners() {
-    this.handlerClickMenu = this.handlerClickMenu.bind(this);
-    this.elements[1].addEventListener('click', this.handlerClickMenu);
+    this.handleClickMenu = this.handleClickMenu.bind(this);
+    this.elements[1].addEventListener('click', this.handleClickMenu);
   }
 
-  private handlerClickMenu() {
+  private handleClickMenu() {
     this.elements[1].classList.toggle('js-active');
     this.elements[0].classList.toggle('js__open-menu');
   }
