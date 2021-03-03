@@ -23,11 +23,11 @@ class Like {
   }
 
   private bindEventListeners() {
-    this.handleClickLike = this.handleClickLike.bind(this);
-    this.checkbox.addEventListener('click', this.handleClickLike);
+    this.handleLikeClick = this.handleLikeClick.bind(this);
+    this.checkbox.addEventListener('click', this.handleLikeClick);
   }
 
-  private handleClickLike() {
+  private handleLikeClick() {
 
     const value: number = Number(this.valueEl.innerHTML);
 
