@@ -4,7 +4,7 @@ import './registration.scss';
 import '../../blocks/burger/burger-init';
 import '../../blocks/logic-room-reg/logic-room-init';
 
-
-/* проверяю пиксель перфект через свой плагин, после каждого изменения, я потом удалю эти пути после проверок*/
-//import '../../../pixel.js'
-//import '../../../pixel.css'
+/* проверяю пиксель перфект через свой плагин, после каждого изменения,
+я потом удалю эти пути после проверок */
+// import '../../../pixel.js'
+// import '../../../pixel.css'

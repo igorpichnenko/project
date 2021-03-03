@@ -12,17 +12,18 @@
   font-style: normal;
 }
 
-@font-face{
-    font-family: 'Quicksand';
-    src: url("quicksand/quicksand-regular.woff2");
-    src: url("quicksand/quicksand-regular.woff");
-    font-style: normal;
-    font-weight: normal;
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand/quicksand-regular.woff2');
+  src: url('quicksand/quicksand-regular.woff');
+  font-style: normal;
+  font-weight: normal;
 }
-@font-face{
-    font-family: 'Quicksand';
-    src: url("quicksand/quicksand-bold.woff2");
-    src: url("quicksand/quicksand-bold.woff");
-    font-style: normal;
-    font-weight: normal;
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand/quicksand-bold.woff2');
+  src: url('quicksand/quicksand-bold.woff');
+  font-style: normal;
+  font-weight: normal;
 }

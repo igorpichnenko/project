@@ -8,8 +8,7 @@ import '../../blocks/checkbox-list/checkbox-list-init';
 import '../../blocks/dropdown/dropdown-init';
 import '../../blocks/like/like-init';
 
-
-
-/* проверяю пиксель перфект через свой плагин, после каждого изменения, я потом удалю эти пути после проверок*/
-//import '../../../pixel.js'
-//import '../../../pixel.css'
+/* проверяю пиксель перфект через свой плагин, после каждого изменения,
+я потом удалю эти пути после проверок */
+// import '../../../pixel.js'
+// import '../../../pixel.css'

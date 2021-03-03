@@ -1,5 +1,5 @@
 mixin pie({items}={})
-  .canvas-container
+  .canvas-container.js-canvas-container
     +title({title:"Впечатления от номера",mods:"medium"})
     .canvas-container__pie
       .canvas-container__items
@@ -7,19 +7,19 @@ mixin pie({items}={})
         .canvas-container__text голосов
 
       svg.canvas-container__chart(viewBox="0 0 32.3 33.3")
-        circle.canvas-container__unit(
+        circle.canvas-container__unit.js-canvas-container__unit(
           stroke="url(#paint5_linear)",
           r="15.9",
           cx="50%",
           cy="50%"
         )
-        circle.canvas-container__unit(
+        circle.canvas-container__unit.js-canvas-container__unit(
           stroke="url(#paint4_linear)",
           r="15.9",
           cx="50%",
           cy="50%"
         )
-        circle.canvas-container__unit(
+        circle.canvas-container__unit.js-canvas-container__unit(
           stroke="url(#paint3_linear)",
           r="15.9",
           cx="50%",
@@ -39,4 +39,4 @@ mixin pie({items}={})
       .canvas-container__legend
         ul.canvas-container__list
           each item in items
-            li.canvas-container__item= item
+            li.canvas-container__item.js-canvas-container__item= item

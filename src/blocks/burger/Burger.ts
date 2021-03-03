@@ -1,18 +1,19 @@
 class Burger {
-
   private header: Element
+
   private elements: Element[]
 
-  constructor (header: Element) {
-    this.header = header
-    this.elements = this.findElement()
-    this.bindEventListeners()
+  constructor(header: Element) {
+    this.header = header;
+    this.elements = this.findElement();
+    this.bindEventListeners();
   }
+
   private findElement(): Element[] {
-    let navbar = this.header.querySelector('.js-header-nav')!
-    let button = this.header.querySelector('.js-burger__item')!
+    const navbar = this.header.querySelector('.js-header-nav')!;
+    const button = this.header.querySelector('.js-burger__item')!;
     return [navbar,
-      button]
+      button];
   }
 
   private bindEventListeners() {
@@ -27,5 +28,5 @@ class Burger {
 }
 
 export {
-  Burger
-}
+  Burger,
+};

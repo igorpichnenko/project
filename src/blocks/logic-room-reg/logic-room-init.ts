@@ -1,6 +1,5 @@
-import { LogicRoomReg } from './LogicRoomReg'
+import { LogicRoomReg } from './LogicRoomReg';
 
 document.querySelectorAll('.js-registration-container').forEach((room) => {
-  new LogicRoomReg(room)
-
-})
+  new LogicRoomReg(room);
+});

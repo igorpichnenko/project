@@ -1,5 +1,4 @@
-import '../../../node_modules/color-range-slider/dist/slider.js'
-
+import '../../../node_modules/color-range-slider/dist/slider';
 
 $('.js-range-slider').colorSlider({
   fromTo: true,
@@ -12,4 +11,4 @@ $('.js-range-slider').colorSlider({
   color: '#6fcf97',
   gradient: '#66d2ea',
   gradientDeg: '180',
-})
+});

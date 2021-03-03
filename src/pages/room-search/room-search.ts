@@ -8,7 +8,7 @@ import './room-search.scss';
 import '../../blocks/burger/burger-init';
 import '../../blocks/calendar/calendar';
 
-
-/* проверяю пиксель перфект через свой плагин, после каждого изменения, я потом удалю эти пути после проверок*/
-//import '../../../pixel.js'
-//import '../../../pixel.css'
+/* проверяю пиксель перфект через свой плагин, после каждого изменения,
+я потом удалю эти пути после проверок */
+// import '../../../pixel.js'
+// import '../../../pixel.css'
