@@ -4,8 +4,8 @@
       "text": "Copyright © 2018 Toxin отель. Все права зачищены.",
 
       "icon": {
-        "className": "footer-mobilie__icon fab fa-facebook-square",
-        "mod": "fab fa-twitter footer-mobilie__icon_absolute"
+        "className": "footer-mobile__icon fab fa-facebook-square",
+        "mod": "fab fa-twitter footer-mobile__icon_absolute"
       }
     }
   },

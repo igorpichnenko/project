@@ -14,45 +14,45 @@ include ../../blocks/person-comment/person-comment
 include ../../blocks/dropdown-control/dropdown-control
 
 block title
-  title room-detalis
-  link(rel='stylesheet', href='room-detalis.css')
+  title room-details
+  link(rel='stylesheet', href='details.css')
   
 
 block content
  -
-    content = require('./room-detalis.json');
- section.detalis
-  .detalis-background
-  .room-detalis
-    .room-detalis__item
-      .room-detalis__comment
+    content = require('./room-details.json');
+ section.details
+  .details-background
+  .room-details
+    .room-details__item
+      .room-details__comment
         +title(content.info)
-        .room-detalis__comments
+        .room-details__comments
           +comments(content.comments)
           +comments(content.commentsTwo)
           +comments(content.commentsThree)
 
-      .room-detalis__pie
+      .room-details__pie
         +pie(content.pie)
 
-      .room-detalis__reviews
-        .room-detalis__title
+      .room-details__reviews
+        .room-details__title
           +title(content.review)
-          span.room-detalis__title_lower= content.number
-        .room-detalis__title_murad
+          span.room-details__title_lower= content.number
+        .room-details__title_murad
           +person-comment(content.person)
-        .room-detalis__patricia
+        .room-details__patricia
           +person-comment(content.patricia)
 
-      .room-detalis__rules
-        .room-detalis__text
+      .room-details__rules
+        .room-details__text
           +title(content.rules)
         +bullet-list(content.bullet)
 
-      .room-detalis__cancel
+      .room-details__cancel
         +title(content.cancel)
-        .room-detalis__paragraf= content.text
+        .room-details__paragraph= content.text
 
-    .room-detalis__form
+    .room-details__form
       +formlux(content.formLux)
- script(src='./room-detalis.js')
+ script(src='./details.js')

@@ -15,8 +15,8 @@ block content
     content = require('./registration.json');
 
   .registration-container.registration-container_reg-bg
-    .registration-container__signin
-      +form-signin(content.formSignIn)
+    .registration-container__signing
+      +form-signing(content.formSignIn)
     .registration-container__reg.registration-container_active
       +form-reg(content.formReg)
   script(src='./registration.js')

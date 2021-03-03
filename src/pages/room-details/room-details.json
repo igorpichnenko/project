@@ -70,7 +70,7 @@
         "text": "888",
         "price": "9 990₽",
         "mods": "люкс",
-        "classlux": "price-container__lux room-detalis__formlux"
+        "classlux": "price-container__lux room-details__formlux"
       },
 
       "tax": "Сбор за дополнительные услуги",

@@ -36,7 +36,7 @@
   },
 
   "Imask": {
-    "mods": "standart input_mask",
+    "mods": "standard input_mask",
     "inType": "text",
     "text": "ДД.ММ.ГГГГ",
     "label": "masked text field"
@@ -92,7 +92,7 @@
       }
     ]
   },
-  "expanted": {
+  "expanded": {
     "title": "expanded",
     "mods": "hover"
   },
@@ -152,7 +152,7 @@
   },
   "titleToggle": {
     "title": "toggle",
-    "mods": "standart column-one__title_focus"
+    "mods": "standard column-one__title_focus"
   },
   "toggle": {
     "mod": "checked"

@@ -1,10 +1,10 @@
 @import '../../scss/_mixin';
 
-.detalis {
+.details {
   flex: 1 0 auto;
 }
 
-.detalis-background {
+.details-background {
   height: 484px;
   background: url(img/3.jpg) right bottom no-repeat,
   url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
@@ -27,7 +27,7 @@
   }
 }
 
-.room-detalis {
+.room-details {
   display: flex;
   justify-content: space-between;
   flex: 1 0 auto;
@@ -148,7 +148,7 @@
     margin-left: 10px;
   }
 
-  &__paragraf {
+  &__paragraph {
     width: 341px;
     height: 96px;
     margin-top: 18.5px;
