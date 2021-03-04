@@ -94,71 +94,73 @@
             <button class="button  button_arrow" type="button">Подобрать номер</button>
           </div>
         </form>
-        <form class="registration">
-          <div class="reg-container">
-            <h1 class="title  title_large">Регистрация аккаунта</h1>
-            <div class="reg-container__input">
-              <div class="text-field">
-                <label class="text-field__label">
-                  <input class="text-field__input_standard" type="text" placeholder="Имя">
-                </label>
+        <div class="card_reg">
+          <form class="registration">
+            <div class="reg-container">
+              <h1 class="title  title_large">Регистрация аккаунта</h1>
+              <div class="reg-container__input">
+                <div class="text-field">
+                  <label class="text-field__label">
+                    <input class="text-field__input_standard" type="text" placeholder="Имя">
+                  </label>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label">
+                    <input class="text-field__input_standard" type="text" placeholder="Фамилия">
+                  </label>
+                </div>
+              </div>
+              <div class="reg-container__radio">
+                <div class="radio">
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="man" checked="checked"><span class="radio__text">Мужчина</span>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="man"><span class="radio__text">Женщина</span>
+                  </label>
+                </div>
               </div>
               <div class="text-field">
-                <label class="text-field__label">
-                  <input class="text-field__input_standard" type="text" placeholder="Фамилия">
+                <label class="text-field__label">Дата рождения
+                  <input class="text-field__input_standard input_mask" type="text" placeholder="ДД.ММ.ГГГГ">
                 </label>
               </div>
-            </div>
-            <div class="reg-container__radio">
-              <div class="radio">
-                <label class="radio__label">
-                  <input class="radio__input" type="radio" name="man" checked="checked"><span class="radio__text">Мужчина</span>
-                </label>
+              <div class="reg-container__data">
+                <h3 class="title  title_standard">Данные для входа в сервис</h3>
               </div>
-              <div class="radio">
-                <label class="radio__label">
-                  <input class="radio__input" type="radio" name="man"><span class="radio__text">Женщина</span>
-                </label>
+              <div class="reg-container__data-in">
+                <div class="text-field">
+                  <label class="text-field__label">
+                    <input class="text-field__input_standard" type="email" placeholder="Email">
+                  </label>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label">
+                    <input class="text-field__input_standard" type="password" placeholder="Пароль">
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="text-field">
-              <label class="text-field__label">Дата рождения
-                <input class="text-field__input_standard input_mask" type="text" placeholder="ДД.ММ.ГГГГ">
-              </label>
-            </div>
-            <div class="reg-container__data">
-              <h3 class="title  title_standard">Данные для входа в сервис</h3>
-            </div>
-            <div class="reg-container__data-in">
-              <div class="text-field">
-                <label class="text-field__label">
-                  <input class="text-field__input_standard" type="email" placeholder="Email">
-                </label>
+              <div class="reg-container__toggle">
+                <div class="toggle">
+                  <label class="toggle__label">
+                    <input class="toggle__input" type="checkbox"><span class="toggle__border"></span><span class="toggle__text">Получать спецпредложения</span>
+                  </label>
+                </div>
               </div>
-              <div class="text-field">
-                <label class="text-field__label">
-                  <input class="text-field__input_standard" type="password" placeholder="Пароль">
-                </label>
-              </div>
-            </div>
-            <div class="reg-container__toggle">
-              <div class="toggle">
-                <label class="toggle__label">
-                  <input class="toggle__input" type="checkbox"><span class="toggle__border"></span><span class="toggle__text">Получать спецпредложения</span>
-                </label>
+              <button class="button  button_arrow" type="button">Перейти к оплате</button>
+              <div class="reg-container__sign-in">
+                <div class="reg-container__wrap">
+                  <div class="reg-container__text">Уже есть аккаунт на Toxin</div>
+                </div>
+                <div class="reg-container__button">
+                  <button class="button  button_border button_content-size button_large" type="button">Войти</button>
+                </div>
               </div>
             </div>
-            <button class="button  button_arrow" type="button">Перейти к оплате</button>
-            <div class="reg-container__sign-in">
-              <div class="reg-container__wrap">
-                <div class="reg-container__text">Уже есть аккаунт на Toxin</div>
-              </div>
-              <div class="reg-container__button">
-                <button class="button  button_border button_content-size button_large" type="button">Войти</button>
-              </div>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
       <div class="cards-two">
         <form class="card-lux">
