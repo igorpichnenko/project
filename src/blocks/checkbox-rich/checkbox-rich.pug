@@ -1,5 +1,5 @@
 mixin checkbox-rich(options={})
-  - let { text = "", title = "", mods = "", mod = "checkbox__title" } = options;
+  - let { text = '', title = '', mods = '', mod = 'checkbox__title' } = options;
     .checkbox-rich
       +checkbox({text: title,mods: mod})
       .checkbox-rich__comment(class="" + mods)= text
