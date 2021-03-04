@@ -26,22 +26,25 @@ class Dropdown {
   }
 
   handlersBind() {
-    this.handlerMenu = this.handlerMenu.bind(this);
-    this.toggle.addEventListener('click', this.handlerMenu);
-    this.handlerDocument = this.handlerDocument.bind(this);
-    document.addEventListener('click', this.handlerDocument);
-    if (this.buttonUse) this.handlerUse = this.handlerUse.bind(this);
-    this.buttonUse.addEventListener('click', this.handlerUse);
-    if (this.buttonClear) this.handlerClear = this.handlerClear.bind(this);
-    this.buttonClear.addEventListener('click', this.handlerClear);
+    this.handlerMenuClick = this.handlerMenuClick.bind(this);
+    this.toggle.addEventListener('click', this.handlerMenuClick);
+    
+    this.handlerDocumentClick = this.handlerDocumentClick.bind(this);
+    document.addEventListener('click', this.handlerDocumentClick);
+    
+    if (this.buttonUse) this.handlerUseButtonClick = this.handlerUseButtonClick.bind(this);
+    this.buttonUse.addEventListener('click', this.handlerUseButtonClick);
+    
+    if (this.buttonClear) this.handlerButtonClearClick = this.handlerButtonClearClick.bind(this);
+    this.buttonClear.addEventListener('click', this.handlerButtonClearClick);
   }
 
-  handlerMenu() {
+  handlerMenuClick() {
     this.menu.classList.toggle('dropdown_active');
     this.title.classList.toggle('title-active');
   }
 
-  handlerDocument(event) {
+  handlerDocumentClick(event) {
     if (event.target.closest('.dropdown') !== this.dropdown) {
       this.closeDropdown();
     }
@@ -54,14 +57,14 @@ class Dropdown {
     }
   }
 
-  handlerUse(event) {
+  handlerUseButtonClick(event) {
     if (this.sumGuests !== 0) {
       event.preventDefault();
       this.closeDropdown();
     }
   }
 
-  handlerClear(event) {
+  handlerButtonClearClick(event) {
     event.preventDefault();
     this.controls.forEach((element) => {
       element.upValue(0);
