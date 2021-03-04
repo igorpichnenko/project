@@ -91,13 +91,13 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/pages/index.pug',
+      favicon: './src/images/icon/favicon.png',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
       template: './src/pages/registration/registration.pug',
-      favicon: "./src/images/favicon.png",
       filename: 'registration.html'
     }),
     new HtmlWebpackPlugin({

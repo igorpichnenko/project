@@ -4,6 +4,7 @@
   display: flex;
   flex: 1 0 auto;
   justify-content: center;
+  overflow: hidden;
   gap: 5.2%;
   
   @include container(1.95%, 9.7%, 5.1%, 9.7%);
@@ -16,6 +17,10 @@
   @media (max-width: 1080px) {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  
+  @media (max-width: 600px) {
+    gap: 0;
   }
 
   &__aside {
@@ -86,6 +91,7 @@
   row-gap: 20px;
   column-gap: 11.5px;
   margin-top: 22px;
+  overflow: hidden;
   
   @media (max-width: 1439px) {
      row-gap: 40px;

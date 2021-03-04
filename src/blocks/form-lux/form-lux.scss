@@ -1,14 +1,13 @@
 .card-lux {
-  width: 380px;
-  height: 511px;
+  min-width: 320px;
   box-shadow: $shadow-02;
   background-color: #fff;
   border-radius: 4px;
+  padding: 40px 20px 30px 30px;
+ 
 
   &__container {
     width: 320px;
-    padding-top: 40px;
-    padding-left: 30px;
   }
 
   &__calendar {
@@ -79,11 +78,11 @@
 
   &__bottom {
     margin-top: 30px;
-    margin-left: 30px;
   }
 
   &__sum {
     margin-left: 1px;
+    white-space: nowrap;
 
     @include medium-text;
   }
@@ -99,7 +98,6 @@
   }
 
   &__button {
-    margin-left: 28.6px;
     margin-top: 21px;
   }
 }

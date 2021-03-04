@@ -1,14 +1,12 @@
 .registration {
-  height: 646px;
-  width: 380px;
+  min-width: 320px;
   box-shadow: $shadow-02;
   background-color: #fff;
-   border-radius: 4px;
+  border-radius: 4px;
+  padding: 40px 30px 30px 30px;
 }
 
 .reg-container {
-  padding-top: 40px;
-  padding-left: 30px;
   width: 320px;
 
   &__input {
@@ -66,6 +64,3 @@
   }
 }
 
-.title_reg {
-  margin-bottom: 20px;
-}

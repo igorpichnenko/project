@@ -1,17 +1,14 @@
 .sign-in {
-  width: 380px;
-  height: 358px;
+  min-width: 320px;
   background-color: #fff;
   box-shadow: $shadow-02;
   border-radius: 4px;
+  padding: 40px 30px 30px 30px;
 
 }
 
 .signing-container {
   width: 320px;
-  padding-top: 40px;
-  padding-left: 30px;
-  
 
   &__input {
     margin: 16px 0 20px 0;

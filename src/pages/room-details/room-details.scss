@@ -2,6 +2,7 @@
 
 .details {
   flex: 1 0 auto;
+  
 }
 
 .details-background {
@@ -15,16 +16,6 @@
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
 
-  @media (max-width: 1280px) {
-
-    background-size: 40% 50.15%, 40% 50%, 60% 100%;
-  }
-
-  @media (max-width: 1180px) {
-
-    background-size: 50% 50.15%, 50% 50%, 50% 100%;
-    min-width: 320px;
-  }
 }
 
 .room-details {
@@ -135,7 +126,6 @@
   }
 
   &__form {
-    max-width: 380px;
     padding-top: 1px;
 
     @media (max-width: 1240px) {
@@ -143,11 +133,7 @@
       margin-bottom: 40px;
     }
   }
-
-  &__formlux {
-    margin-left: 10px;
-  }
-
+  
   &__paragraph {
     width: 341px;
     height: 96px;
@@ -163,4 +149,8 @@
 
     @include intermediate-text($lh: 14px);
   }
+}
+
+.room-details__formlux{
+  margin-left: 10px;
 }
