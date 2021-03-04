@@ -98,6 +98,7 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/pages/registration/registration.pug',
+      favicon: './src/images/icon/safari-favicon.svg',
       filename: 'registration.html'
     }),
     new HtmlWebpackPlugin({
