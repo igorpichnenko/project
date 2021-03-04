@@ -97,6 +97,7 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/pages/registration/registration.pug',
+      favicon: "./src/images/favicon.png",
       filename: 'registration.html'
     }),
     new HtmlWebpackPlugin({
