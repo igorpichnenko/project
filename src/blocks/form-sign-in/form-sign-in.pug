@@ -5,7 +5,8 @@ mixin form-signing({data})
       .signing-container__input
         +text-field(data.inputEmail)
         +text-field(data.inputPass)
-      +button(data.btnSign)
+      .signing-container__btn
+       +button(data.btnSign)
       .signing-container__item
         .signing-container__text= data.content
         .signing-container__button-wrap

@@ -13,6 +13,10 @@
 .signing-container {
   max-width: 320px;
 
+  @media (max-width: 350px) {
+    padding-left: 20px;
+  }
+
   &__input {
     margin: 16px 0 20px 0;
 
@@ -34,5 +38,10 @@
   &__button-wrap {
     margin-right: 1.6px;
     margin-top: 1px;
+  }
+}
+.signing-container__btn{
+  @media (max-width: 350px) {
+   width: 80%;
   }
 }

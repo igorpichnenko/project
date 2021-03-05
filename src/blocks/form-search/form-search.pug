@@ -4,8 +4,10 @@ mixin form-search({data})
       .card-search__wrap-title
         +title(data.largeTitle)
       .card-search__calendar.js-datepicker-container
-        +datepicker(data.start)
-        +datepicker(data.end)
+        .card-search__datepicker
+         +datepicker(data.start)
+        .card-search__datepicker
+         +datepicker(data.end)
       .card-search__dropdown
         .card-search__title
          +title(data.guests)
