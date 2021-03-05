@@ -31,7 +31,7 @@
   }
 
   &__form {
-
+     display: flex;
     @media (max-width: 860px) {
       margin-top: 10%;
       align-self: center;

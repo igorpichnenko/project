@@ -38,11 +38,13 @@
     outline: none;
     padding: 11.5px 10px 12px 13.5px;
     
-    @media (max-width: 350px) {
-      width: 80%;
-    }
-
     @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
+    
+    @media (max-width: 330px) {
+      width: 80%;
+      
+      @include intermediate-text($fs: 12px, $lh: 12px, $col: $dark75);
+    }
 
     &:hover {
       border: 1px solid $dark50;
@@ -67,11 +69,6 @@
     box-sizing: border-box;
     border-radius: 4px;
     padding: 9px 10px 10px 14px;
-    
-    @media (max-width: 350px) {
-
-      width: 90%;
-    }
 
     @include intermediate-text($fs: 13.6px, $lh: 24px, $col: $dark75);
 

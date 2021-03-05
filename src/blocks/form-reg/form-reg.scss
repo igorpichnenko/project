@@ -6,7 +6,7 @@
   padding: 40px 30px 30px 30px;
   
   
-  @media (max-width: 350px) {
+  @media (max-width: 330px) {
     padding: 20px 15px 15px 15px;
   }
 }
@@ -14,7 +14,7 @@
 .reg-container {
   max-width: 320px;
 
-  @media (max-width: 350px) {
+  @media (max-width: 330px) {
     padding-left: 50px;
   }
   
@@ -62,7 +62,7 @@
     & > * + * {
       margin-left: 35.8px;
     }
-    @media (max-width: 350px) {
+    @media (max-width: 330px) {
       & > * + * {
         margin-left: 5px;
       }
@@ -70,7 +70,7 @@
 
   }
   &__btn{
-    @media (max-width: 350px) {
+    @media (max-width: 330px) {
      width: 80%;
       }
   }
@@ -82,7 +82,7 @@
     @include intermediate-text($fs: 14px, $lh: 18px, $col: #000) white-space:
       nowrap;
   }
-  @media (max-width: 350px) {
+  @media (max-width: 330px) {
     font-size: 10px;
     line-height: 12px;
   }

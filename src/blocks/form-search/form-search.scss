@@ -5,14 +5,14 @@
   padding: 40px 30px 30px 30px;
   box-sizing: border-box;
   
-  @media (max-width: 350px) {
+  @media (max-width: 330px) {
     padding: 20px 15px 15px 15px;
   }
 
   &__wrapper {
     max-width: 320px;
 
-    @media (max-width: 350px) {
+    @media (max-width: 330px) {
      padding-left: 20px;
     }
   }
@@ -34,8 +34,9 @@
     margin-top: 21px;
     margin-bottom: 31px;
     width: 320px;
-    @media (max-width: 350px) {
-      width: 80%;
+    
+    @media (max-width: 330px) {
+      width: 94%;
     }
   }
 
@@ -43,15 +44,17 @@
     margin-bottom: 5px;
   }
   &__button {
-    @media (max-width: 350px) {   
-      width: 80%;
+    width: 320px;
+    
+    @media (max-width: 330px) {   
+      width: 90%;
       padding-left: 20px;
     }
   }
 }
 
 .card-search__datepicker{
-  @media (max-width: 350px) {   
+  @media (max-width: 330px) {   
     width: 120px;    
   }
 }

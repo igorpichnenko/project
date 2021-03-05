@@ -5,16 +5,17 @@
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
   
-  @media (max-width: 350px) {
-    padding: 20px 15px 15px 15px;
+  @media (max-width: 330px) {
+   padding: 20px 10px 20px 20px;
+ 
   }
 }
 
 .signing-container {
   max-width: 320px;
 
-  @media (max-width: 350px) {
-    padding-left: 20px;
+  @media (max-width: 330px) {
+    padding-left: 40px;
   }
 
   &__input {
@@ -29,19 +30,34 @@
     padding-top: 29px;
 
     @include flex-between;
+    
+    @media (max-width: 330px) {
+    justify-content: center;
   }
+ }
 
   &__text {
     @include intermediate-text($fs: 14px, $lh: 18px, $col: #000);
+    
+    @media (max-width: 330px) {
+      
+    @include intermediate-text($fs: 12px, $lh: 12px, $col: #000);
   }
+ }
 
   &__button-wrap {
     margin-right: 1.6px;
     margin-top: 1px;
+    
+   @media (max-width: 330px) {
+   margin-left: 4px;
   }
+ }
 }
 .signing-container__btn{
-  @media (max-width: 350px) {
+  width: 320px;
+  
+  @media (max-width: 330px) {
    width: 80%;
   }
 }
