@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "deploy": "gh-pages -d dist",
     "lint": "eslint src --fix",
-    "slint": "stylelint src/**/*.scss --fix"
+    "slint": "stylelint"
   },
   "author": "",
   "dependencies": {

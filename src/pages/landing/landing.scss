@@ -25,6 +25,9 @@
     @media (max-width: 760px) {
       padding: 1% ;
     }
+    @media (max-width: 400px) {
+      padding: 0 ;
+    }
   }
 
   &__form {
