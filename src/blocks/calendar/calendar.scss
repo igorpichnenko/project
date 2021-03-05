@@ -2,9 +2,6 @@
 .js-datepicker-end {
   width: 150px;
   
-  @media (max-width: 350px) {
-    max-width: 120px;
-  }
 }
 
 .datepicker * {

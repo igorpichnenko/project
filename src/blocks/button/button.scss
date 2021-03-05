@@ -13,9 +13,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   
-  @media (max-width: 350px) {
-      width: 80%;
-    }
+  
 
   @include intermediate-text($fs: 12px, $lh: 15px, $fw: bold, $col: #fff);
 
@@ -53,12 +51,8 @@
 
   &_arrow {
     position: relative;
-    width: 320px;
+    width: 100%;
     height: 44px;
-
-    @media (max-width: 350px) {
-      width: 80%;
-    }
 
     &:after {
       top: 50%;

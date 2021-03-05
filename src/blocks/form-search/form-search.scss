@@ -11,6 +11,10 @@
 
   &__wrapper {
     max-width: 320px;
+
+    @media (max-width: 350px) {
+     
+    }
   }
 
   &__wrap-title {
@@ -26,18 +30,23 @@
     margin-top: 20px;
   }
 
-  &__calendar > * + * {
-    margin-left: 14px;
-  }
+ 
 
   &__dropdown {
     margin-top: 21px;
     margin-bottom: 31px;
     width: 320px;
+    @media (max-width: 350px) {
+      width: 280px;
+    }
   }
 
   &__title {
     margin-bottom: 5px;
   }
-  
+  &__button {
+    @media (max-width: 350px) {
+      padding-left: 50px;
+    }
+  }
 }

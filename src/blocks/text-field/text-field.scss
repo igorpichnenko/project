@@ -91,9 +91,7 @@
     width: 100%;
     outline: none;
     
-    @media (max-width: 350px) {
-      width: 80%;
-    }
+    
 
     @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
 

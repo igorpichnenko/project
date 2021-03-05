@@ -16,7 +16,8 @@ mixin form-reg({data})
         +text-field(data.password)
       .reg-container__toggle
         +toggle
-      +button(data.button)
+      .reg-container__btn
+       +button(data.button)
       .reg-container__sign-in
         .reg-container__wrap
           .reg-container__text= data.text

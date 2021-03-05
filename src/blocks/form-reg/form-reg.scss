@@ -69,7 +69,11 @@
     }
 
   }
-
+  &__btn{
+    @media (max-width: 350px) {
+     width: 80%;
+      }
+  }
   &__button {
     margin-top: 1px;
   }
