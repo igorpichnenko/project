@@ -12,6 +12,10 @@
   user-select: none;
   text-transform: uppercase;
   white-space: nowrap;
+  
+  @media (max-width: 350px) {
+      width: 80%;
+    }
 
   @include intermediate-text($fs: 12px, $lh: 15px, $fw: bold, $col: #fff);
 

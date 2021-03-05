@@ -1,6 +1,10 @@
 .js-datepicker-start,
 .js-datepicker-end {
   width: 150px;
+  
+  @media (max-width: 350px) {
+    max-width: 120px;
+  }
 }
 
 .datepicker * {
@@ -9,7 +13,7 @@
 }
 
 .datepicker {
-  width: 320px;
+  max-width: 320px;
   min-height: 369px;
   padding: 20px 20.2px 18px 20px;
   box-sizing: border-box;
