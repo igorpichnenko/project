@@ -56,6 +56,10 @@
     width: 320px;
     height: 44px;
 
+    @media (max-width: 350px) {
+      width: 80%;
+    }
+
     &:after {
       top: 50%;
       position: absolute;
