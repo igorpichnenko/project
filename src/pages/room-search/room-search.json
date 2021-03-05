@@ -100,7 +100,7 @@
   
   "title": {
     "title": "Номера, которые мы для вас подобрали",
-    "mods": "large",
+    "mods": "large room-search__title-width",
     "tag": "h1"
   },
   "slider": {

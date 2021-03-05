@@ -6,22 +6,24 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
         "airbnb-base",
         "plugin:fsd/all",
     ],
 
-    
-    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
     ],
     rules: {
-    
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "import/no-cycle": "off",
+    "no-undef": "off",
+    "no-param-reassign": "off",
+    "class-methods-use-this": "off",
+    "no-new": "off",
     "import/extensions": [
           "error",
           "ignorePackages",

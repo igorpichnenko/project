@@ -27,7 +27,7 @@ class DropdownControl {
   handlersBind() {
     this.handlerButtonPlusClick = this.handlerButtonPlusClick.bind(this);
     this.plusButton.addEventListener('click', this.handlerButtonPlusClick);
-    
+
     this.handlerButtonMinusClick = this.handlerButtonMinusClick.bind(this);
     this.minusButton.addEventListener('click', this.handlerButtonMinusClick);
   }

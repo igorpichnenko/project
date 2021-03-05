@@ -28,13 +28,13 @@ class Dropdown {
   handlersBind() {
     this.handlerMenuClick = this.handlerMenuClick.bind(this);
     this.toggle.addEventListener('click', this.handlerMenuClick);
-    
+
     this.handlerDocumentClick = this.handlerDocumentClick.bind(this);
     document.addEventListener('click', this.handlerDocumentClick);
-    
+
     if (this.buttonUse) this.handlerUseButtonClick = this.handlerUseButtonClick.bind(this);
     this.buttonUse.addEventListener('click', this.handlerUseButtonClick);
-    
+
     if (this.buttonClear) this.handlerButtonClearClick = this.handlerButtonClearClick.bind(this);
     this.buttonClear.addEventListener('click', this.handlerButtonClearClick);
   }

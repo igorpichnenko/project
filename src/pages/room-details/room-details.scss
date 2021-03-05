@@ -34,7 +34,7 @@
   }
 
   @media (max-width: 400px) {
-    padding-left: 0;
+    padding: 0;
   }
 
   &__item {
@@ -57,6 +57,10 @@
     @media (max-width: 780px) {
       margin-top: 40px;
     }
+    
+    @media (max-width: 350px) {
+      margin: 0;
+    }
   }
 
   &__comment {
@@ -65,12 +69,19 @@
     @media (max-width: 1320px) {
       padding-left: 3%;
     }
+    
+    @media (max-width: 350px) {
+      padding: 0;
+    }
   }
 
   &__reviews {
     @media (max-width: 1320px) {
       margin-left: 3%;
       margin-top: 40px;
+    }
+    @media (max-width: 350px) {
+      margin: 0;
     }
   }
 
@@ -91,6 +102,10 @@
     margin-right: 70px;
 
     @include intermediate-text($lh: 14px);
+    
+    @media (max-width: 35px) {
+      margin: 0;
+    }
   }
 
   &__title_murad {
@@ -109,6 +124,9 @@
     @media (max-width: 1320px) {
       padding-left: 3%;
     }
+    @media (max-width: 350px) {
+      padding: 0;
+    }
   }
 
   &__text {
@@ -122,6 +140,9 @@
 
     @media (max-width: 1320px) {
       padding-left: 3%;
+    }
+    @media (max-width: 350px) {
+      padding: 0;
     }
   }
 
@@ -148,6 +169,10 @@
     margin-left: 10px;
 
     @include intermediate-text($lh: 14px);
+  
+  @media (max-width: 350px) {
+      margin: 0;
+    }
   }
 }
 
