@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   overflow: hidden;
   gap: 40px;
+  padding-bottom: 40px;
 
   @include container(10.45%, 0, 0, 9.7%);
 

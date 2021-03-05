@@ -4,13 +4,17 @@
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
   box-sizing: border-box;
+  
+  @media (max-width: 350px) {
+    padding: 20px 15px 15px 15px;
+  }
 
   &__wrapper {
     width: 320px;
   }
 
   &__wrap-title {
-    width: 300px;
+    max-width: 300px;
   }
   
   &__container{
@@ -35,4 +39,5 @@
   &__title {
     margin-bottom: 5px;
   }
+  
 }
