@@ -3,11 +3,14 @@ mixin formlux({data})
     .card-lux__container
       +price(data.price)
       .card-lux__calendar.js-datepicker-container
-        +datepicker(data.startData)
-        +datepicker(data.endData)
+        .card-lux__datepicker
+         +datepicker(data.startData)
+        .card-lux__datepicker_end
+         +datepicker(data.endData)
       .card-lux__title
        +title(data.guests)
-      +dropdown(data.dropdown)
+      .card-lux__dropdown
+       +dropdown(data.dropdown)
 
       .card-lux__wrapper 
         .card-lux__price

@@ -5,8 +5,8 @@
   border-radius: 4px;
   padding: 40px 20px 30px 30px;
   
-  @media (max-width: 350px) {
-    padding: 20px 10px 15px 15px;
+  @media (max-width: 330px) {
+    padding: 0;
   }
 
   &__container {
@@ -18,11 +18,20 @@
     margin-bottom: 20px;
     margin-top: 19px;
   }
-
-  &__calendar > * + * {
+  
+  
+  
+  &__datepicker, &__datepicker_end{
+    width: 150px;
+    
+    @media (max-width: 330px) {
+    width: 120px;
+  }
+ }
+  
+  &__datepicker_end{
     margin-left: 20px;
   }
-
   &__title {
     margin-bottom: 5px;
   }
@@ -94,6 +103,9 @@
     margin: 0 3px 3.7px 4.5px;
     width: 183px;
     border-bottom: 1px dotted rgba(0, 0, 0, .12);
+    @media (max-width: 330px) {
+    width: 90%;
+  }
   }
 
   &__wrap {
@@ -102,5 +114,17 @@
 
   &__button {
     margin-top: 21px;
+    width: 320px;
+    
+    @media (max-width: 330px) {
+    width: 90%;
   }
+ }
+    &__dropdown{
+    width: 320px;
+    
+    @media (max-width: 330px) {
+    width: 82%;
+  }
+ }
 }

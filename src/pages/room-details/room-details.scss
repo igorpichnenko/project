@@ -162,6 +162,10 @@
     margin-top: 18.5px;
 
     @include body-text;
+    
+    @media (max-width: 350px) {
+      max-width: 320px;
+    }
   }
 
   &__title_lower {
