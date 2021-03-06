@@ -1,7 +1,8 @@
 mixin formlux({data})
   form.card-lux
     .card-lux__container
-      +price(data.price)
+      .card-lux__price-mix
+       +price(data.price)
       .card-lux__calendar.js-datepicker-container
         .card-lux__datepicker
          +datepicker(data.startData)

@@ -4,13 +4,22 @@
   background-color: #fff;
   border-radius: 4px;
   padding: 40px 20px 30px 30px;
-  
+
+  @media (max-width: 360px) {
+    padding: 30px 10px 30px 10px;
+  }
+
   @media (max-width: 330px) {
-    padding: 0;
+    padding: 20px 0;
   }
 
   &__container {
-    max-width: 320px;
+    width: 320px;
+
+    @media (max-width: 330px) {
+      width: 280px;
+      padding-left: 20px;
+    }
   }
 
   &__calendar {
@@ -18,18 +27,24 @@
     margin-bottom: 20px;
     margin-top: 19px;
   }
-  
-  
-  
-  &__datepicker, &__datepicker_end{
-    width: 150px;
-    
+
+  &__price-mix {
+
     @media (max-width: 330px) {
-    width: 120px;
+      width: 250px;
+
+    }
   }
- }
-  
-  &__datepicker_end{
+
+  &__datepicker, &__datepicker_end {
+    width: 150px;
+
+    @media (max-width: 330px) {
+      width: 120px;
+    }
+  }
+
+  &__datepicker_end {
     margin-left: 20px;
   }
   &__title {
@@ -38,6 +53,10 @@
 
   &__wrapper {
     margin-top: 18px;
+
+    @media (max-width: 330px) {
+      width: 260px;
+    }
   }
 
   &__price + &__price {
@@ -75,8 +94,15 @@
     margin-right: 60px;
     padding-top: 3.5px;
     margin-top: 2px;
-
+    
     @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px);
+    
+    @media (max-width: 330px) {
+     margin-right: 20px;
+     padding-top: 3px;
+    margin-top: 0;
+    
+    }
   }
 
   &__label_icon-right {
@@ -90,6 +116,10 @@
 
   &__bottom {
     margin-top: 30px;
+
+    @media (max-width: 330px) {
+      padding-left: 15px;
+    }
   }
 
   &__sum {
@@ -104,8 +134,8 @@
     width: 183px;
     border-bottom: 1px dotted rgba(0, 0, 0, .12);
     @media (max-width: 330px) {
-    width: 90%;
-  }
+      width: 120px;
+    }
   }
 
   &__wrap {
@@ -115,16 +145,17 @@
   &__button {
     margin-top: 21px;
     width: 320px;
-    
+
     @media (max-width: 330px) {
-    width: 90%;
+      width: 85%;
+      padding-left: 15px;
+    }
   }
- }
-    &__dropdown{
+  &__dropdown {
     width: 320px;
-    
+
     @media (max-width: 330px) {
-    width: 82%;
+      width: 93%;
+    }
   }
- }
 }
