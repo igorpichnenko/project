@@ -46,8 +46,10 @@ block content
         .column-one__iMask
           +text-field(data.Imask)
         .column-one__dabl-date.js-datepicker-container
-          +datepicker(data.start)
-          +datepicker(data.end)
+          .column-one__datepicker
+           +datepicker(data.start)
+          .column-one__datepicker
+           +datepicker(data.end)
         .column-one__medium.js-datepicker-container
           +datepicker(data.datepicker)
           .column-one__subscription
