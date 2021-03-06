@@ -4,8 +4,8 @@
   background-color: #fff;
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
-  
-  
+
+
   @media (max-width: 330px) {
     padding: 20px 15px 15px 15px;
   }
@@ -17,7 +17,12 @@
   @media (max-width: 330px) {
     padding-left: 50px;
   }
-  
+
+  &__title {
+    @media (max-width: 330px) {
+      width: 80%;
+    }
+  }
 
   &__input {
     margin-top: 16px;
@@ -69,22 +74,26 @@
     }
 
   }
-  &__btn{
+  &__btn {
     @media (max-width: 330px) {
-     width: 80%;
-      }
+      width: 80%;
+    }
   }
   &__button {
     margin-top: 1px;
+
+    @media (max-width: 330px) {
+      width: 120px;
+      height: 70%;
+    }
   }
 
   &__text {
     @include intermediate-text($fs: 14px, $lh: 18px, $col: #000) white-space:
-      nowrap;
+    nowrap;
   }
   @media (max-width: 330px) {
     font-size: 10px;
     line-height: 12px;
   }
 }
-

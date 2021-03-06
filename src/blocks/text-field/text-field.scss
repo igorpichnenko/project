@@ -91,6 +91,12 @@
     
 
     @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
+    
+    @media (max-width: 330px) {
+      padding: 5px;
+      
+      @include intermediate-text($fs: 12px, $lh: 12px, $col: $dark75);
+    }
 
     &:hover {
       border: 1px solid $dark50;
