@@ -76,10 +76,15 @@
   &__text_agree {
     margin-right: 10px;
 
+    @media (max-width: 767px) {
+      margin-right: 0;
+      }
+
     &:after {
       position: absolute;
 
       @include material-font;
+
     }
   }
 }
