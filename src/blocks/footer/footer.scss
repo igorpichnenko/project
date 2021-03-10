@@ -20,6 +20,7 @@
 
   &__logo {
     grid-column: span 3;
+
   }
 
   &__subscription {
@@ -37,6 +38,11 @@
     position: relative;
     height: 44px;
     box-sizing: border-box;
+  }
+
+  &__logotype{
+    width: 105.69px;
+    height: 40px;
   }
 
   &__button {
