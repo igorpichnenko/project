@@ -1,16 +1,19 @@
 mixin form-search({data})
+
+  - const {largeTitle,start,end,quests,dropdown,btn} = data
+
   form.card-search
     .card-search__wrapper
       .card-search__wrap-title
-        +title(data.largeTitle)
+        +title(largeTitle)
       .card-search__calendar.js-datepicker-container
         .card-search__datepicker
-         +datepicker(data.start)
+         +datepicker(start)
         .card-search__datepicker
-         +datepicker(data.end)
+         +datepicker(end)
       .card-search__dropdown
         .card-search__title
-         +title(data.guests)
-        +dropdown(data.dropdown)
+         +title(guests)
+        +dropdown(dropdown)
     .card-search__button
-      +button(data.btn) 
+      +button(btn) 

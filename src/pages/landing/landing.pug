@@ -14,11 +14,12 @@ block title
 block content
   -
     content = require("./landing.json");
+    const {formSearch, text} = content
 
   .landing-container
     .landing-container__items
       .landing-container__form
-       +form-search(content.formSearch)
-      .landing-container__slogan= content.text
+       +form-search(formSearch)
+      .landing-container__slogan= text
       
   script(src="./landing.js")

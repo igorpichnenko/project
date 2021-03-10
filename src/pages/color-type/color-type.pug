@@ -10,11 +10,12 @@ block title
 block content
   -
     data = require("./color-type.json");
+    const {color, types} = data
 
   .color-type
     .color-type__color
-      +color-options(data.color)
+      +color-options(color)
     .color-type__options
-      +title-options(data.types)
+      +title-options(types)
 
   script(src="./color-type.js")

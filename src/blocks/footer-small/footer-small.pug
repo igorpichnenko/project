@@ -1,7 +1,10 @@
 mixin footer-small({data})
+
+  - const {text,icon} = data
+  
   .footer-mobile
     .footer-mobile__logo
       include ../../images/logo-main.svg
-    .footer-mobile__text= data.text
+    .footer-mobile__text= text
     .footer-mobile__icons
-      +font-icon(data.icon)
+      +font-icon(icon)

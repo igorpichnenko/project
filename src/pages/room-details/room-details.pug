@@ -21,38 +21,41 @@ block title
 block content
  -
     content = require("./room-details.json");
+    const {info,comments,commentsTwo,commentsThree,pie,review,number,person,
+    patricia,rules, bullet,cancel,text,formLux} = content
+
  section.details
   .details-background
   .room-details
     .room-details__item
       .room-details__comment
-        +title(content.info)
+        +title(info)
         .room-details__comments
-          +comments(content.comments)
-          +comments(content.commentsTwo)
-          +comments(content.commentsThree)
+          +comments(comments)
+          +comments(commentsTwo)
+          +comments(commentsThree)
 
       .room-details__pie
-        +pie(content.pie)
+        +pie(pie)
 
       .room-details__reviews
         .room-details__title
-          +title(content.review)
-          span.room-details__title_lower= content.number
+          +title(review)
+          span.room-details__title_lower= number
         .room-details__title_murad
-          +person-comment(content.person)
+          +person-comment(person)
         .room-details__patricia
-          +person-comment(content.patricia)
+          +person-comment(patricia)
 
       .room-details__rules
         .room-details__text
-          +title(content.rules)
-        +bullet-list(content.bullet)
+          +title(rules)
+        +bullet-list(bullet)
 
       .room-details__cancel
-        +title(content.cancel)
-        .room-details__paragraph= content.text
+        +title(cancel)
+        .room-details__paragraph= text
 
     .room-details__form
-      +formlux(content.formLux)
+      +formlux(formLux)
  script(src="./details.js")

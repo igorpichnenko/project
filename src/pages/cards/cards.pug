@@ -25,18 +25,19 @@ block title
 block content
   -
     data = require("./cards.json");
-
+    const {formSearch, formReg, formLux, formSignIn, sliderCard, sliderCardTwo} = data
+    
   .cards
     .cards-one
-      +form-search(data.formSearch)
+      +form-search(formSearch)
       .card_reg
-       +form-reg(data.formReg)
+       +form-reg(formReg)
     .cards-two
-      +formlux(data.formLux)
-      +form-signing(data.formSignIn)
+      +formlux(formLux)
+      +form-signing(formSignIn)
     .cards-three 
       .js-datepicker-container
         .js-datepicker
-      +slider-card(data.sliderCard)
-      +slider-card(data.sliderCardTwo)
+      +slider-card(sliderCard)
+      +slider-card(sliderCardTwo)
   script(src="./cards.js")

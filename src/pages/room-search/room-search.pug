@@ -22,60 +22,63 @@ block title
 block content
   -
     content = require("./room-search.json");
+    const {filter,quest,dropdown,range,price,rules,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,
+    titleDrop,dropdownMedium,checkboxList,slider,sliderOne,sliderTwo,sliderThree,sliderFour,sliderFive,
+    sliderSix,sliderSeven,sliderEight,sliderNine,sliderTen,sliderEleven} = content
 
   .room-search
     .room-search__aside
       .room-search__input.js-datepicker-container
-        +text-field(content.filter)
+        +text-field(filter)
 
       .room-search__dropdown
-        +title(content.guest)
+        +title(guest)
         .room-search__drop
-         +dropdown(content.dropdown)
+         +dropdown(dropdown)
 
         .room-search__range
-          +title(content.range)
+          +title(range)
         .room-search__range-slider
          +range-slider
-        .room-search__price= content.price
+        .room-search__price= price
 
         .room-search__rule
           +title(content.rules)
         .room-search__checkbox
-          +checkbox(content.checkOne)
-          +checkbox(content.checkTwo)
-          +checkbox(content.checkThree)
+          +checkbox(checkOne)
+          +checkbox(checkTwo)
+          +checkbox(checkThree)
 
         .room-search__rich
           .room-search__rich-title
-           +title(content.titleBox)
+           +title(titleBox)
         .room-search__rich-button
-          +checkbox-rich(content.rich)
-          +checkbox-rich(content.richTwo)
+          +checkbox-rich(rich)
+          +checkbox-rich(richTwo)
 
         .room-search__medium-drop
           .room-search__drop-title
-           +title(content.titleDrop)
-          +dropdown(content.dropdownMedium)
+           +title(titleDrop)
+          +dropdown(dropdownMedium)
         .room-search__checkbox-list
-          +checkbox-list(content.checkboxList)
+          +checkbox-list(checkboxList)
 
     .room-search__cards
       .room-search__title
-        +title(content.title)
+        +title(title)
       .room-search__container
-        +slider-card(content.slider)
-        +slider-card(content.sliderOne)
-        +slider-card(content.sliderTwo)
-        +slider-card(content.sliderThree)
-        +slider-card(content.sliderFour)
-        +slider-card(content.sliderFive)
-        +slider-card(content.sliderSix)
-        +slider-card(content.sliderSeven)
-        +slider-card(content.sliderEight)
-        +slider-card(content.sliderNine)
-        +slider-card(content.sliderTen)
-        +slider-card(content.sliderEleven)
+        +slider-card(slider)
+        +slider-card(sliderOne)
+        +slider-card(sliderTwo)
+        +slider-card(sliderThree)
+        +slider-card(sliderFour)
+        +slider-card(sliderFive)
+        +slider-card(sliderSix)
+        +slider-card(sliderSeven)
+        +slider-card(sliderEight)
+        +slider-card(sliderNine)
+        +slider-card(sliderTen)
+        +slider-card(sliderEleven)
       .room-search__pagination
         +pagination
   script(src="./room-search.js")

@@ -1,28 +1,31 @@
 mixin formlux({data})
+
+  - const {price,startData,endData,quests,dropdown,cost,text,tax,btn} = data
+
   form.card-lux
     .card-lux__container
       .card-lux__price-mix
-       +price(data.price)
+       +price(price)
       .card-lux__calendar.js-datepicker-container
         .card-lux__datepicker
-         +datepicker(data.startData)
+         +datepicker(startData)
         .card-lux__datepicker_end
-         +datepicker(data.endData)
+         +datepicker(endData)
       .card-lux__title
-       +title(data.guests)
+       +title(guests)
       .card-lux__dropdown
-       +dropdown(data.dropdown)
+       +dropdown(dropdown)
 
       .card-lux__wrapper 
         .card-lux__price
-          span.card-lux__text.card-lux__text_left= data.cost
+          span.card-lux__text.card-lux__text_left= cost
           span.card-lux__text 39 960₽
         .card-lux__price
-          span.card-lux__text.card-lux__text_left= data.text
+          span.card-lux__text.card-lux__text_left= text
           span.card-lux__label.card-lux__label_top i
           span.card-lux__text 0₽
         .card-lux__price
-          .card-lux__text.card-lux__text_wrap= data.tax
+          .card-lux__text.card-lux__text_wrap= tax
           span.card-lux__label.card-lux__label_icon-right i
           .card-lux__text 300₽
     .card-lux__bottom
@@ -31,4 +34,4 @@ mixin formlux({data})
         .card-lux__border
         .card-lux__sum 38 081₽
     .card-lux__button
-      +button(data.btn)
+      +button(btn)

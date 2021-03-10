@@ -17,19 +17,20 @@ block title
 block content
   -
     data = require("./headers-footers.json");
+    const {header, login, footer, footerSmall} = data
 
   .headers-footers
     .headers-footers__background
-      +header(data.header)
+      +header(header)
 
     .headers-footers__background
-      +header(data.login)
+      +header(login)
 
     .headers-footers__background
       .headers-footers__large
-        +footer(data.footer)
+        +footer(footer)
 
     .headers-footers__small
-      +footer-small(data.footerSmall)
+      +footer-small(footerSmall)
 
   script(src="./headers-footers.js")

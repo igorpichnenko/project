@@ -13,13 +13,14 @@ block title
 block content
   -
     content = require("./registration.json");
+    const {formSignIn,formReg} = content
 
   .registration-container.registration-container_reg-bg.js-registration-container
     .registration-container__signing.js-registration-container__signing
     
-      +form-signing(content.formSignIn)
+      +form-signing(formSignIn)
       
     .registration-container__reg.registration-container_active.js-registration-container__reg
     
-      +form-reg(content.formReg)
+      +form-reg(formReg)
   script(src="./registration.js")

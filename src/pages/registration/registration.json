@@ -51,7 +51,7 @@
         "text": "Женщина",
         "name": "man"
       },
-      "data": {
+      "dataField": {
         "mods": "standard input_mask",
         "inType": "text",
         "text": "ДД.ММ.ГГГГ",

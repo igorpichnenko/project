@@ -1,26 +1,28 @@
 mixin footer({data})
+  - const {title,main,about,support,subscription,text,label} = data
+
   .footer
     .footer__container
       .footer__logo
         .footer__logotype
           include ../../images/logo-main.svg
-        .footer__paragraph= data.title
+        .footer__paragraph= title
       .footer__navigation
-        +footer-navigation(data.main)
+        +footer-navigation(main)
       .footer__navigation
-        +footer-navigation(data.about)
+        +footer-navigation(about)
       .footer__navigation
-        +footer-navigation(data.support)
+        +footer-navigation(support)
       .footer__subscription
-         +footer-navigation(data.subscription)
+         +footer-navigation(subscription)
          .footer__label
-          label.footer__text(for ="subscription")= data.label
+          label.footer__text(for ="subscription")= label
          .footer__field
           input(type="email", placeholder="Email",class="footer__input", id ="subscription")
           button.footer__button arrow_forward
   .footer__bottom 
     .footer__items
-      .footer__title= data.text
+      .footer__title= text
       .footer__icons
         +font-icon
         
