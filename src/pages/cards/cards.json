@@ -45,7 +45,7 @@
       },
       "endData": {
         "text": "23.08.2019",
-        "mods": "filter js-datepicker-end",
+        "mods": "small js-datepicker-end",
         "label": "Выезд"
       },
       "guests": {
@@ -67,7 +67,7 @@
       },
       "btn": {
         "text": "Забронировать",
-        "mods": "arrow"
+        "mods": "with-arrow"
       },
       "text": "Сбор за услуги: скидка 2 179₽",
       "cost": "9 990₽ х 4 суток"
@@ -117,11 +117,11 @@
       },
       "button": {
         "text": "Перейти к оплате",
-        "mods": "arrow"
+        "mods": "with-arrow"
       },
       "text": "Уже есть аккаунт на Toxin",
       "btnReg": {
-        "mods": "border,content-size,large",
+        "mods": "with-border,content-size,large-height",
         "text": "Войти"
       }
     }
@@ -138,7 +138,7 @@
         "label": "Прибытие"
       },
       "end": {
-        "mods": "filter js-datepicker-end",
+        "mods": "small js-datepicker-end",
         "label": "Выезд"
       },
       "guests": {
@@ -146,7 +146,7 @@
       },
       "btn": {
         "text": "Подобрать номер",
-        "mods": "arrow"
+        "mods": "with-arrow"
       },
       "dropdown": {
         "className": "dropdown_guest",
@@ -179,11 +179,11 @@
         "text": "Email"
       },
       "btnIn": {
-        "mods": "border,content-size,large",
+        "mods": "with-border,content-size,large-height",
         "text": "Создать"
       },
       "btnSign": {
-        "mods": "arrow",
+        "mods": "with-arrow",
         "text": "Войти"
       },
       "content": "Нет аккаунта на Toxin?"

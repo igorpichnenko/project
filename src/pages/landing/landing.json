@@ -11,7 +11,7 @@
         "label": "Прибытие"
       },
       "end": {
-        "mods": "filter js-datepicker-end",
+        "mods": "small js-datepicker-end",
         "label": "Выезд"
       },
       "guests": {
@@ -19,7 +19,7 @@
       },
       "btn": {
         "text": "Подобрать номер",
-        "mods": "arrow"
+        "mods": "with-arrow"
       },
       "dropdown": {
         "className": "dropdown_guest",

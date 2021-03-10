@@ -91,7 +91,7 @@
     "button": {
       "SigIn": {
         "text": "Войти",
-        "mods": "border,content-size"
+        "mods": "with-border,content-size"
       },
       "Reg": {
         "text": "Зарегистрироваться"

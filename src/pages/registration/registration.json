@@ -15,11 +15,11 @@
         "text": "Email"
       },
       "btnIn": {
-        "mods": "border,content-size,large js-button_regCreate",
+        "mods": "with-border,content-size,large-height js-button_regCreate",
         "text": "Создать"
       },
       "btnSign": {
-        "mods": "arrow",
+        "mods": "with-arrow",
         "text": "Войти"
       },
       "content": "Нет аккаунта на Toxin?"
@@ -69,11 +69,11 @@
       },
       "button": {
         "text": "Перейти к оплате",
-        "mods": "arrow"
+        "mods": "with-arrow"
       },
       "text": "Уже есть аккаунт на Toxin",
       "btnReg": {
-        "mods": "border,content-size,large js-button_signIn",
+        "mods": "with-border,content-size,large-height js-button_signIn",
         "text": "Войти"
       }
     }

@@ -1,6 +1,6 @@
 {
   "filter": {
-    "mods": "filter js-datepicker",
+    "mods": "small js-datepicker",
     "inType": "text",
     "text": "19 авг - 23 авг",
     "data": "d M",
