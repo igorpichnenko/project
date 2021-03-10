@@ -16,6 +16,11 @@
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
 
+  @media (max-width: 530px) {
+
+    background-size: 100% 33%, 100% 33%, 100% 36%;    
+  }
+
 }
 
 .room-details {
