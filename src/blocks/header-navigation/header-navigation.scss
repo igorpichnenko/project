@@ -13,6 +13,7 @@
 
   &__link_about {
     margin-right: 1px;
+    
   }
 
   &__link {
@@ -60,6 +61,10 @@
 
   &__text_services {
     margin-right: 25px;
+  
+    @media (max-width: 767px) {
+    margin-right: 0;
+    }
 
     &:after {
       position: absolute;
