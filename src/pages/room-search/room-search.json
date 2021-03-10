@@ -105,8 +105,8 @@
   },
   "slider": {
     "data": {
-      "className": "price-container__text_low",
-      "classlux": "price-container__lux room-search__lux",
+      "className": "price__text_low",
+      "classlux": "price__lux room-search__lux",
       "text": "888",
       "price": "9 990₽",
       "mods": "люкс",
@@ -121,7 +121,7 @@
   },
   "sliderOne": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "840",
       "price": "9 900₽",
       "number": "65",
@@ -135,8 +135,8 @@
   },
   "sliderTwo": {
     "data": {
-      "className": "price-container__text_low",
-      "classlux": "price-container__lux room-search__lux",
+      "className": "price__text_low",
+      "classlux": "price__lux room-search__lux",
       "text": "980",
       "price": "8 500₽",
       "number": "35",
@@ -151,7 +151,7 @@
   },
   "sliderThree": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "856",
       "price": "7 300₽",
       "number": "19",
@@ -165,7 +165,7 @@
   },
   "sliderFour": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "740",
       "price": "6 000₽",
       "number": "44",
@@ -179,7 +179,7 @@
   },
   "sliderFive": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "982",
       "price": "5 800₽",
       "number": "56",
@@ -193,7 +193,7 @@
   },
   "sliderSix": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "678",
       "price": "5 500₽",
       "number": "45",
@@ -207,7 +207,7 @@
   },
   "sliderSeven": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "450",
       "price": "5 300₽",
       "number": "39",
@@ -221,7 +221,7 @@
   },
   "sliderEight": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "350",
       "price": "5 000₽",
       "number": "77",
@@ -235,7 +235,7 @@
   },
   "sliderNine": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "666",
       "price": "5 000₽",
       "number": "25",
@@ -249,7 +249,7 @@
   },
   "sliderTen": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "444",
       "price": "5 000₽",
       "number": "15",
@@ -263,7 +263,7 @@
   },
   "sliderEleven": {
     "data": {
-      "className": "price-container__text_low",
+      "className": "price__text_low",
       "text": "352",
       "price": "5 000₽",
       "number": "55",

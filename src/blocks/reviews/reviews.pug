@@ -1,6 +1,6 @@
 mixin reviews({number,name,checked}={})
   .reviews
     +rate-button({newName: name,checked: checked})
-    .reviews-container
-      .reviews-container__number= number
-      .reviews-container__text Отзывов
+    .reviews__container
+      .reviews__number= number
+      .reviews__text Отзывов

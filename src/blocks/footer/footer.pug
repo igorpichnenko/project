@@ -1,26 +1,26 @@
 mixin footer({data})
-  .footer-wrapper
-    .footer-container
-      .footer-container__logo
-        .footer-container__logotype
+  .footer
+    .footer__container
+      .footer__logo
+        .footer__logotype
           include ../../images/logo-main.svg
-          .footer-container__paragraph= data.title
-      .footer-container__nav
+        .footer__paragraph= data.title
+      .footer__navigation
         +footer-navigation(data.main)
-      .footer-container__nav
+      .footer__navigation
         +footer-navigation(data.about)
-      .footer-container__nav
+      .footer__navigation
         +footer-navigation(data.support)
-      .footer-container__subscription
+      .footer__subscription
          +footer-navigation(data.subscription)
-         .footer-container__label
-          label.footer-container__text(for ="subscription")= data.label
-         .footer-container__text-field
-          input(type="email", placeholder="Email",class="footer-container__input", id ="subscription")
-          button.footer-container__button arrow_forward
-  .footer-bottom
-    .footer-bottom__wrapper
-      .footer-bottom__text= data.text
-      .footer-bottom__icons
+         .footer__label
+          label.footer__text(for ="subscription")= data.label
+         .footer__field
+          input(type="email", placeholder="Email",class="footer__input", id ="subscription")
+          button.footer__button arrow_forward
+  .footer__bottom 
+    .footer__items
+      .footer__title= data.text
+      .footer__icons
         +font-icon
         

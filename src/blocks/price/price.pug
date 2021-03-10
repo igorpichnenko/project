@@ -1,9 +1,9 @@
-mixin price({text,price,mods,className="price-container__text",classlux="price-container__lux"}={})
+mixin price({text,price,mods,className="price__text",classlux="price__lux"}={})
   .price
-    .price-container
-      span.price-container__title №
+    .price__container
+      span.price__title №
       span(class="" + className)= text
       span(class="" + classlux)= mods
-    .price-container
-      .price-container__cost= price
-      .price-container__duration в сутки
+    .price__container
+      .price__cost= price
+      .price__duration в сутки

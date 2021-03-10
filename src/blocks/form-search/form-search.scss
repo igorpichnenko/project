@@ -51,19 +51,20 @@
       padding-left: 20px;
     }
   }
-}
 
-.card-search__datepicker {
+
+&__datepicker {
   width: 150px;
 
   @media (max-width: 330px) {
     width: 120px;
   }
 }
-.card-search__datepicker + .card-search__datepicker {
+&__datepicker + &__datepicker {
   margin-left: 20px;
 
   @media (max-width: 330px) {
     margin-left: 10px;
   }
+ }
 }

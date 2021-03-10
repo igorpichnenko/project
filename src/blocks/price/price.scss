@@ -1,11 +1,11 @@
 .price {
   display: flex;
   justify-content: space-between;
-}
 
-.price-container {
+
+&__container {
   display: flex;
-
+}
   &__title {
     margin-bottom: 2px;
     align-self: flex-end;
@@ -52,4 +52,5 @@
 
     @include intermediate-text($fs: 12px, $lh: 18px);
   }
+
 }

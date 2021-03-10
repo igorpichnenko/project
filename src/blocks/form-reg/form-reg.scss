@@ -9,11 +9,11 @@
   @media (max-width: 330px) {
     padding: 20px 15px 15px 15px;
   }
-}
 
-.reg-container {
+
+&__container {
   max-width: 320px;
-
+}
   @media (max-width: 330px) {
     padding-left: 50px;
   }

@@ -1,12 +1,12 @@
 .reviews {
   display: flex;
   justify-content: space-between;
-}
 
-.reviews-container {
+
+&__container {
   display: flex;
   margin-top: 2px;
-
+}
   &__text {
     margin-right: 3px;
 
@@ -18,4 +18,5 @@
 
     @include intermediate-text($fw: bold, $fs: 14px, $lh: 18px);
   }
+
 }
