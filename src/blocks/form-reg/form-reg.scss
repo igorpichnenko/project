@@ -89,8 +89,7 @@
   }
 
   &__text {
-    @include intermediate-text($fs: 14px, $lh: 18px, $col: #000) white-space:
-    nowrap;
+    @include intermediate-text($fs: 14px, $lh: 18px, $col: #000); white-space: nowrap;
   }
   @media (max-width: 330px) {
     font-size: 10px;

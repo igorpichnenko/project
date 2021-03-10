@@ -86,10 +86,10 @@ class Dropdown {
   }
 
   checkButtonUse() {
-    const isAllZerro = !this.controls
-      .map((item) => item.isZerro())
+    const isAllZero = !this.controls
+      .map((item) => item.isZero())
       .includes(false);
-    if (isAllZerro === true) {
+    if (isAllZero === true) {
       this.hiddenButtonUse();
     } else {
       this.visibleButtonUse();

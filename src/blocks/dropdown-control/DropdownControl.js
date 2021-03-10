@@ -74,7 +74,7 @@ class DropdownControl {
     return this.value === this.min;
   }
 
-  isZerro() {
+  isZero() {
     return this.value === 0;
   }
 
