@@ -97,9 +97,11 @@ class Dropdown {
   }
 
   checkAdultButtonUse() {
-    if (this.sumAdult === 0 && this.sumBabies > 0) {
-      this.hiddenButtonUse();
-    }
+
+  const isGuestMin = this.sumAdult === 0 && this.sumBabies > 0
+
+  isGuestMin && (this.hiddenButtonUse())
+
   }
 
   hiddenClearButton() {
@@ -121,15 +123,11 @@ class Dropdown {
   formDeclension(number, form) {
     number = Math.abs(number) % 100;
     const n1 = number % 10;
-    if (number > 10 && number < 20) {
-      return form[2];
-    }
-    if (n1 > 1 && n1 < 5) {
-      return form[1];
-    }
-    if (n1 === 1) {
-      return form[0];
-    }
+    const isNumberRange = number > 10 && number < 20
+    const isNumRange = n1 > 1 && n1 < 5
+    if(isNumberRange) return form[2]
+    if(isNumRange) return form[1]
+    if (n1 === 1) return form[0];
     return form[2];
   }
 
@@ -168,7 +166,7 @@ class Dropdown {
     this.sumAdult = adults + children;
     this.sumBabies = babies;
 
-    if (adults + children < 10) {
+    if (this.sumAdult < 10) {
       this.controls.map((item) => item.activatePlus());
     } else {
       this.sumAdult = 10;
@@ -187,8 +185,9 @@ class Dropdown {
         }
       });
     }
+    const isGuestZero = adults > 0 || children > 0
 
-    if (adults > 0 || children > 0) {
+    if (isGuestZero) {
       this.checkButtonClear();
       this.checkButtonUse();
     } else {
@@ -204,13 +203,17 @@ class Dropdown {
     this.messageGuests = this.formDeclension(this.sumAdult, formGuests);
 
     this.messageNewborns = this.formDeclension(this.sumBabies, formNewborns);
-    if (this.sumBabies === 0 && this.sumAdult === 0) {
-      this.title.innerHTML = 'Сколько гостей';
-    } else if (this.sumAdult !== 0 && this.sumBabies === 0) {
-      this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}`;
-    } else {
-      this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}, ${this.sumBabies} ${this.messageNewborns}`;
-    }
+
+    const guestZero = this.sumBabies === 0 && this.sumAdult === 0;
+
+    const isAdultZero = this.sumAdult !== 0 && this.sumBabies === 0
+
+  if (guestZero) this.title.innerHTML = 'Сколько гостей'
+
+   else if (isAdultZero) this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}`
+     
+    else this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}, ${this.sumBabies} ${this.messageNewborns}`;
+    
   }
 
   updateDropdownRoom() {
@@ -242,8 +245,9 @@ class Dropdown {
     const messageBedroom = this.formDeclension(Bedroom, formBedroom);
     const messageBed = this.formDeclension(Bed, formBed);
     const messageBathroom = this.formDeclension(Bathroom, formBathroom);
+    const isZero = sum > 0 && Bathroom > 0
 
-    if (sum > 0 && Bathroom > 0) {
+    if (isZero) {
       this.title.innerHTML = `${Bedroom} ${messageBedroom}, ${Bed} ${messageBed},${Bathroom} ${messageBathroom}`
       + '...';
     } else this.title.innerHTML = `${Bedroom} ${messageBedroom}, ${Bed} ${messageBed}...`;
