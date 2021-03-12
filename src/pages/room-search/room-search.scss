@@ -10,7 +10,7 @@
   @include container(1.95%, 9.7%, 5.1%, 9.7%);
 
   @media (max-width: 1439px) {
-   gap: 3%;
+  gap: 3%;
     
   }
   
@@ -95,7 +95,7 @@
   overflow: hidden;
   
   @media (max-width: 1439px) {
-     row-gap: 40px;
+    row-gap: 40px;
     justify-content: center;
   }
   @media (max-width: 350px) {
@@ -108,6 +108,17 @@
   margin-right: 15px;
 
   @include flex-column-center;
+
+  @media (max-width: 1439px) {
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  @media (max-width: 970px) {
+    padding-bottom: 75px;
+  }
+  @media (max-width: 400px) {
+    padding-bottom: 30px;
+  }
 }
 
 .room-search__lux {
