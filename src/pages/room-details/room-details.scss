@@ -16,7 +16,7 @@
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
 
-  @media (max-width: 630px) {
+  @media (max-width: 470px) {
 
     background-size: 100% 33%, 100% 33%, 100% 36%;    
   }
@@ -35,11 +35,11 @@
   }
 
   @media (max-width: 450px) {
-    padding-left: 5%;
+    padding: 5%;
   }
 
   @media (max-width: 400px) {
-    padding: 0;
+    padding: 3%;
   }
 
   &__item {
@@ -77,7 +77,7 @@
     }
     
     @media (max-width: 350px) {
-      padding: 10px 0 10px 5px;
+      padding: 10px 0;
     }
   }
 
@@ -88,7 +88,7 @@
     }
     @media (max-width: 350px) {
       margin: 0;
-      padding: 10px 0 10px 5px;
+      padding: 10px 0;
     }
   }
 
@@ -132,7 +132,7 @@
       padding-left: 3%;
     }
     @media (max-width: 350px) {
-      padding: 10px 0 10px 5px;
+      padding: 10px 0;
     }
   }
 
@@ -149,7 +149,7 @@
       padding-left: 3%;
     }
     @media (max-width: 350px) {
-      padding: 10px 0 10px 5px;
+      padding: 10px 0;
     }
   }
 
@@ -161,6 +161,12 @@
       margin-bottom: 40px;
       padding-top: 20px;
     }
+    @media (max-width: 360px) {
+      padding-left: 6%;
+    }
+    @media (max-width: 328px) {
+      padding-left: 3%;
+    }
   }
   
   &__paragraph {
@@ -171,7 +177,8 @@
     @include body-text;
     
     @media (max-width: 350px) {
-      max-width: 310px;
+      max-width: 300px;
+      padding-bottom: 10px;
     }
   }
 
@@ -186,8 +193,9 @@
       margin: 0;
     }
   }
+
+&__formlux{
+  margin-left: 10px;
 }
 
-.room-details__formlux{
-  margin-left: 10px;
 }

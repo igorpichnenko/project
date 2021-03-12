@@ -1,25 +1,24 @@
 .card-lux {
-  min-width: 320px;
+  max-width: 380px;
+  max-height: 511px;
   box-shadow: $shadow-02;
   background-color: #fff;
   border-radius: 4px;
   padding: 40px 20px 30px 30px;
 
-  @media (max-width: 360px) {
-    padding: 30px 10px 30px 10px;
+  @media (max-width: 490px) {
+    padding: 8%;
   }
-
-  @media (max-width: 330px) {
-    padding: 20px 0;
+  @media (max-width: 390px) {
+    padding: 6% 4%;
+  }
+  @media (max-width: 360px) {
+    padding: 6% 3%;
   }
 
   &__container {
-    width: 320px;
+    max-width: 320px;
 
-    @media (max-width: 330px) {
-      width: 280px;
-      padding-left: 20px;
-    }
   }
 
   &__calendar {
@@ -30,8 +29,8 @@
 
   &__price-mix {
 
-    @media (max-width: 330px) {
-      width: 250px;
+    @media (max-width: 360px) {
+      width: 90%;
 
     }
   }
@@ -39,7 +38,7 @@
   &__datepicker, &__datepicker_end {
     width: 150px;
 
-    @media (max-width: 330px) {
+    @media (max-width: 360px) {
       width: 120px;
     }
   }
@@ -54,7 +53,7 @@
   &__wrapper {
     margin-top: 18px;
 
-    @media (max-width: 330px) {
+    @media (max-width: 360px) {
       width: 260px;
     }
   }
@@ -97,9 +96,9 @@
     
     @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px);
     
-    @media (max-width: 330px) {
-     margin-right: 20px;
-     padding-top: 3px;
+    @media (max-width: 360px) {
+    margin-right: 20px;
+    padding-top: 3px;
     margin-top: 0;
     
     }
@@ -117,7 +116,7 @@
   &__bottom {
     margin-top: 30px;
 
-    @media (max-width: 330px) {
+    @media (max-width: 360px) {
       padding-left: 15px;
     }
   }
@@ -133,7 +132,8 @@
     margin: 0 3px 3.7px 4.5px;
     width: 183px;
     border-bottom: 1px dotted rgba(0, 0, 0, .12);
-    @media (max-width: 330px) {
+
+    @media (max-width: 360px) {
       width: 120px;
     }
   }
@@ -144,18 +144,15 @@
 
   &__button {
     margin-top: 21px;
-    width: 320px;
+    width: 100%;
 
-    @media (max-width: 330px) {
+    @media (max-width: 360px) {
       width: 85%;
       padding-left: 15px;
     }
   }
   &__dropdown {
-    width: 320px;
+    width: 100%;
 
-    @media (max-width: 330px) {
-      width: 93%;
-    }
   }
 }
