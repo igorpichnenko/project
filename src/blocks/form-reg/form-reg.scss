@@ -1,31 +1,33 @@
 .registration {
-  min-width: 320px;
   box-shadow: $shadow-02;
   background-color: #fff;
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
+  max-width: 380px;
+  max-height: 646px;
 
-
-  @media (max-width: 330px) {
-    padding: 20px 15px 15px 15px;
+  @media (max-width: 790px) {
+    padding: 10% 9% 9% 9%;
   }
-
+  @media (max-width: 500px) {
+    padding: 10% 1% 5% 10%;
+  }
+  
 
 &__container {
   max-width: 320px;
+
 }
-  @media (max-width: 330px) {
-    padding-left: 50px;
-  }
-
-  &__title {
-    @media (max-width: 330px) {
-      width: 80%;
-    }
-  }
-
+   
   &__input {
     margin-top: 16px;
+
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+    @media (max-width: 420px) {
+      width: 90%;
+    }
   }
 
   &__input > * + * {
@@ -44,10 +46,28 @@
 
   &__data {
     margin-top: 20.5px;
+
+  }
+
+  &__mask{
+
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+    @media (max-width: 420px) {
+      width: 90%;
+    }
   }
 
   &__data-in {
     margin-bottom: 9px;
+
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+    @media (max-width: 420px) {
+      width: 90%;
+    }
   }
 
   &__data-in >*+* {
@@ -57,6 +77,7 @@
   &__toggle {
     margin-bottom: 25px;
     display: flex;
+
   }
 
   &__sign-in {
@@ -67,32 +88,66 @@
     & > * + * {
       margin-left: 35.8px;
     }
-    @media (max-width: 330px) {
+    @media (max-width: 790px) {
       & > * + * {
         margin-left: 5px;
       }
     }
+      @media (max-width: 420px) {
+        & > * + * {
+          margin-left: 5px;
+        }
+    }
 
   }
   &__btn {
-    @media (max-width: 330px) {
-      width: 80%;
+    @media (max-width: 500px) {
+      width: 94%;
+    }
+    @media (max-width: 420px) {
+      width: 90%;
     }
   }
   &__button {
     margin-top: 1px;
 
-    @media (max-width: 330px) {
+    @media (max-width: 500px) {
       width: 120px;
       height: 70%;
+    }
+    @media (max-width: 420px) {
+      width: 80px;
+      height: 50%;
     }
   }
 
   &__text {
-    @include intermediate-text($fs: 14px, $lh: 18px, $col: #000); white-space: nowrap;
+  font-family: Montserrat, Arial, sans-serif;  
+  color: #000;
+  white-space: nowrap;
+
+  @media (min-width: 790px) {
+    font-size: 14px;
+    line-height: 18px;
   }
-  @media (max-width: 330px) {
-    font-size: 10px;
-    line-height: 12px;
+  @media (max-width: 789px) {
+    font-size: 12px;
+    line-height: 15px;
   }
+  }
+&__title_wrap{
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  color: $dark100;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+
+@media (min-width: 790px) {
+  font-size: 24px;
+  line-height: 29px;
+
+}
+}
+
 }

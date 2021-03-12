@@ -12,10 +12,14 @@
   user-select: none;
   text-transform: uppercase;
   white-space: nowrap;
-  
-  
 
   @include intermediate-text($fs: 12px, $lh: 15px, $fw: bold, $col: #fff);
+
+  @media (max-width: 450px) {
+    font-size: 10px;
+    line-height: 12px;
+  
+  }
 
   &:active {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),

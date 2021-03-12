@@ -12,7 +12,8 @@ mixin form-reg({data})
       .registration__radio
         +radio(radioMan)
         +radio(radioWoman)
-      +text-field(dataField)
+      .registration__mask
+       +text-field(dataField)
       .registration__data
         +title(title)
       .registration__data-in
