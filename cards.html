@@ -10,13 +10,7 @@
     <link rel="stylesheet" href="cards.css">
   </head>
   <body>
-    <div class="logo-ui"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
-<path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"/>
-<path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"/>
-</svg>
-
-    </div>
+    <div class="logo-ui"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><defs/><path fill="#1F2041" fill-opacity=".25" d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594 22.5871 25.6241 18.14 21.177 12.7047 21.177 11.9283 21.177 11.293 20.5418 11.293 19.7653 11.293 18.9888 11.9283 18.3535 12.7047 18.3535 19.7283 18.3535 25.4106 24.0359 25.4106 31.0594 25.4106 31.8359 24.7753 32.4712 23.9989 32.4712zM36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177 31.9421 21.177 28.9421 22.8712 27.1774 25.4476 26.7892 24.4594 26.3303 23.5418 25.7656 22.6947 28.095 20.0123 31.5186 18.3535 35.295 18.3535 36.0715 18.3535 36.7068 18.9888 36.7068 19.7653z"/><path fill="#1F2041" fill-opacity=".25" d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z"/></svg></div>
     <div class="cards">
       <div class="cards-one">
         <form class="card-search">
@@ -29,7 +23,7 @@
                 <div class="text-field">
                   <button class="text-field__button_arrow" type="submit">expand_more</button>
                   <label class="text-field__label">Прибытие
-                    <input class="text-field__input_filter js-datepicker js-datepicker-start" type="text" placeholder="ДД.ММ.ГГГГ">
+                    <input class="text-field__input_small js-datepicker js-datepicker-start" type="text" placeholder="ДД.ММ.ГГГГ">
                   </label>
                 </div>
               </div>
@@ -37,7 +31,7 @@
                 <div class="text-field">
                   <button class="text-field__button_arrow" type="submit">expand_more</button>
                   <label class="text-field__label">Выезд
-                    <input class="text-field__input_filter js-datepicker-end" type="text" placeholder="ДД.ММ.ГГГГ">
+                    <input class="text-field__input_small js-datepicker-end" type="text" placeholder="ДД.ММ.ГГГГ">
                   </label>
                 </div>
               </div>
@@ -97,16 +91,16 @@
             </div>
           </div>
           <div class="card-search__button">
-            <button class="button  button_arrow" type="button">Подобрать номер</button>
+            <button class="button  button_with-arrow" type="button">Подобрать номер</button>
           </div>
         </form>
         <div class="card_reg">
           <form class="registration">
-            <div class="reg-container">
-              <div class="reg-container__title">
+            <div class="registration__container">
+              <div class="registration__title">
                 <h1 class="title  title_large">Регистрация аккаунта</h1>
               </div>
-              <div class="reg-container__input">
+              <div class="registration__input">
                 <div class="text-field">
                   <label class="text-field__label">
                     <input class="text-field__input_standard" type="text" placeholder="Имя">
@@ -118,7 +112,7 @@
                   </label>
                 </div>
               </div>
-              <div class="reg-container__radio">
+              <div class="registration__radio">
                 <div class="radio">
                   <label class="radio__label">
                     <input class="radio__input" type="radio" name="man" checked="checked"><span class="radio__text">Мужчина</span>
@@ -135,10 +129,10 @@
                   <input class="text-field__input_standard input_mask" type="text" placeholder="ДД.ММ.ГГГГ">
                 </label>
               </div>
-              <div class="reg-container__data">
+              <div class="registration__data">
                 <h3 class="title  title_standard">Данные для входа в сервис</h3>
               </div>
-              <div class="reg-container__data-in">
+              <div class="registration__data-in">
                 <div class="text-field">
                   <label class="text-field__label">
                     <input class="text-field__input_standard" type="email" placeholder="Email">
@@ -150,22 +144,22 @@
                   </label>
                 </div>
               </div>
-              <div class="reg-container__toggle">
+              <div class="registration__toggle">
                 <div class="toggle">
                   <label class="toggle__label">
                     <input class="toggle__input" type="checkbox"><span class="toggle__border"></span><span class="toggle__text">Получать спецпредложения</span>
                   </label>
                 </div>
               </div>
-              <div class="reg-container__btn">
-                <button class="button  button_arrow" type="button">Перейти к оплате</button>
+              <div class="registration__btn">
+                <button class="button  button_with-arrow" type="button">Перейти к оплате</button>
               </div>
-              <div class="reg-container__sign-in">
-                <div class="reg-container__wrap">
-                  <div class="reg-container__text">Уже есть аккаунт на Toxin</div>
+              <div class="registration__sign-in">
+                <div class="registration__wrap">
+                  <div class="registration__text">Уже есть аккаунт на Toxin</div>
                 </div>
-                <div class="reg-container__button">
-                  <button class="button  button_border button_content-size button_large" type="button">Войти</button>
+                <div class="registration__button">
+                  <button class="button  button_with-border button_content-size button_large-height" type="button">Войти</button>
                 </div>
               </div>
             </div>
@@ -177,10 +171,10 @@
           <div class="card-lux__container">
             <div class="card-lux__price-mix">
               <div class="price">
-                <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text">888</span><span class="price-container__lux">люкс</span></div>
-                <div class="price-container">
-                  <div class="price-container__cost">9 990₽</div>
-                  <div class="price-container__duration">в сутки</div>
+                <div class="price__container"><span class="price__title">№</span><span class="price__text">888</span><span class="price__lux">люкс</span></div>
+                <div class="price__container">
+                  <div class="price__cost">9 990₽</div>
+                  <div class="price__duration">в сутки</div>
                 </div>
               </div>
             </div>
@@ -189,7 +183,7 @@
                 <div class="text-field">
                   <button class="text-field__button_arrow" type="submit">expand_more</button>
                   <label class="text-field__label">Прибытие
-                    <input class="text-field__input_filter js-datepicker js-datepicker-start" type="text" placeholder="19.08.2019">
+                    <input class="text-field__input_small js-datepicker js-datepicker-start" type="text" placeholder="19.08.2019">
                   </label>
                 </div>
               </div>
@@ -197,7 +191,7 @@
                 <div class="text-field">
                   <button class="text-field__button_arrow" type="submit">expand_more</button>
                   <label class="text-field__label">Выезд
-                    <input class="text-field__input_filter js-datepicker-end" type="text" placeholder="23.08.2019">
+                    <input class="text-field__input_small js-datepicker-end" type="text" placeholder="23.08.2019">
                   </label>
                 </div>
               </div>
@@ -272,7 +266,7 @@
             </div>
           </div>
           <div class="card-lux__button">
-            <button class="button  button_arrow" type="button">Забронировать</button>
+            <button class="button  button_with-arrow" type="button">Забронировать</button>
           </div>
         </form>
         <form class="sign-in">
@@ -291,12 +285,12 @@
               </div>
             </div>
             <div class="signing-container__btn">
-              <button class="button  button_arrow" type="button">Войти</button>
+              <button class="button  button_with-arrow" type="button">Войти</button>
             </div>
             <div class="signing-container__item">
               <div class="signing-container__text">Нет аккаунта на Toxin?</div>
               <div class="signing-container__button-wrap">
-                <button class="button  button_border button_content-size button_large" type="button">Создать</button>
+                <button class="button  button_with-border button_content-size button_large-height" type="button">Создать</button>
               </div>
             </div>
           </div>
@@ -316,10 +310,10 @@
           <div class="slider-cards__reviews">
             <div class="slider-cards__title">
               <div class="price">
-                <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">888</span><span class="price-container__lux">люкс</span></div>
-                <div class="price-container">
-                  <div class="price-container__cost">9 990₽</div>
-                  <div class="price-container__duration">в сутки</div>
+                <div class="price__container"><span class="price__title">№</span><span class="price__text_low">888</span><span class="price__lux">люкс</span></div>
+                <div class="price__container">
+                  <div class="price__cost">9 990₽</div>
+                  <div class="price__duration">в сутки</div>
                 </div>
               </div>
             </div>
@@ -334,9 +328,9 @@
                     <input class="star-rating__input" name="images" type="radio"><span class="star-rating__ico"></span>
                   </div>
                 </div>
-                <div class="reviews-container">
-                  <div class="reviews-container__number">145</div>
-                  <div class="reviews-container__text">Отзывов</div>
+                <div class="reviews__container">
+                  <div class="reviews__number">145</div>
+                  <div class="reviews__text">Отзывов</div>
                 </div>
               </div>
             </div>
@@ -352,10 +346,10 @@
           <div class="slider-cards__reviews">
             <div class="slider-cards__title">
               <div class="price">
-                <div class="price-container"><span class="price-container__title">№</span><span class="price-container__text_low">840</span><span class="price-container__lux"></span></div>
-                <div class="price-container">
-                  <div class="price-container__cost">9 900₽</div>
-                  <div class="price-container__duration">в сутки</div>
+                <div class="price__container"><span class="price__title">№</span><span class="price__text_low">840</span><span class="price__lux"></span></div>
+                <div class="price__container">
+                  <div class="price__cost">9 900₽</div>
+                  <div class="price__duration">в сутки</div>
                 </div>
               </div>
             </div>
@@ -370,9 +364,9 @@
                     <input class="star-rating__input" name="imagesTwo" type="radio"><span class="star-rating__ico"></span>
                   </div>
                 </div>
-                <div class="reviews-container">
-                  <div class="reviews-container__number">65</div>
-                  <div class="reviews-container__text">Отзывов</div>
+                <div class="reviews__container">
+                  <div class="reviews__number">65</div>
+                  <div class="reviews__text">Отзывов</div>
                 </div>
               </div>
             </div>
