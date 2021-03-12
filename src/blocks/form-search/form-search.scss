@@ -4,17 +4,20 @@
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
   box-sizing: border-box;
-
-  @media (max-width: 330px) {
-    padding: 20px 15px 15px 15px;
+  max-width: 380px;
+  max-height: 374px;
+  
+  @media (max-width: 790px) {
+    padding: 10% 9% 9% 9%;
   }
-
+  @media (max-width: 490px) {
+    padding: 5% 5% 5% 8%;
+  }
+ 
   &__wrapper {
     max-width: 320px;
 
-    @media (max-width: 330px) {
-      padding-left: 20px;
-    }
+    
   }
 
   &__wrap-title {
@@ -33,22 +36,22 @@
   &__dropdown {
     margin-top: 21px;
     margin-bottom: 31px;
-    width: 320px;
-
-    @media (max-width: 330px) {
+    max-width: 100%;
+    @media (max-width: 450px) {
       width: 94%;
     }
+    
   }
 
   &__title {
     margin-bottom: 5px;
   }
   &__button {
-    width: 320px;
+    max-width: 100%;
 
-    @media (max-width: 330px) {
-      width: 90%;
-      padding-left: 20px;
+    @media (max-width: 450px) {
+      width: 94%;
+    
     }
   }
 
@@ -56,14 +59,14 @@
 &__datepicker {
   width: 150px;
 
-  @media (max-width: 330px) {
+  @media (max-width: 450px) {
     width: 120px;
   }
 }
 &__datepicker + &__datepicker {
   margin-left: 20px;
 
-  @media (max-width: 330px) {
+  @media (max-width: 450px) {
     margin-left: 10px;
   }
  }
