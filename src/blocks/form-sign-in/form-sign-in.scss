@@ -1,22 +1,21 @@
 .sign-in {
-  min-width: 320px;
+  max-width: 380px;
+  max-height: 358px;
   background-color: #fff;
   box-shadow: $shadow-02;
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
   
-  @media (max-width: 330px) {
-   padding: 20px 10px 20px 20px;
- 
+  
+  @media (max-width: 490px) {
+    padding: 5% 5% 6% 8%;
   }
 }
 
 .signing-container {
   max-width: 320px;
 
-  @media (max-width: 330px) {
-    padding-left: 40px;
-  }
+  
 
   &__input {
     margin: 16px 0 20px 0;
@@ -39,7 +38,7 @@
     @media (max-width: 330px) {
     justify-content: center;
   }
- }
+}
 
   &__text {
     @include intermediate-text($fs: 14px, $lh: 18px, $col: #000);
@@ -48,21 +47,21 @@
       
     @include intermediate-text($fs: 12px, $lh: 12px, $col: #000);
   }
- }
+}
 
   &__button-wrap {
     margin-right: 1.6px;
     margin-top: 1px;
     
-   @media (max-width: 330px) {
-   margin-left: 4px;
+  @media (max-width: 330px) {
+  margin-left: 4px;
   }
- }
+}
 }
 .signing-container__btn{
   width: 320px;
   
   @media (max-width: 330px) {
-   width: 80%;
+  width: 80%;
   }
 }

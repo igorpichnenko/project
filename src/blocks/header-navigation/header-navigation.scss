@@ -62,9 +62,9 @@
   &__text_services {
     margin-right: 25px;
   
-    @media (max-width: 767px) {
-    margin-right: 0;
-    }
+    @media (max-width: 970px) {
+      margin-right: 0;
+      }
 
     &:after {
       position: absolute;
