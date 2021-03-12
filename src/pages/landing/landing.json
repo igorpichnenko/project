@@ -14,7 +14,7 @@
         "mods": "small js-datepicker-end",
         "label": "Выезд"
       },
-      "guests": {
+      "title": {
         "title": "Гости"
       },
       "btn": {

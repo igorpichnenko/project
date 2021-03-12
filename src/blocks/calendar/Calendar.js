@@ -48,7 +48,7 @@ class Calendar{
       
         datepEl.find('.datepicker--buttons').append(applyButton);
 
-        dateTo.click(() => datep.show());
+        dateTo.click(() => datep.show()); 
         dateFrom.click(() => datep.show());
     }
   
