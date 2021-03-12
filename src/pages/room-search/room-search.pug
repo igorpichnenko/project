@@ -22,9 +22,9 @@ block title
 block content
   -
     content = require("./room-search.json");
-    const {filter,quest,dropdown,range,price,rules,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,
+    const {filter,subtitle,dropdown,range,price,rules,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,
     titleDrop,dropdownMedium,checkboxList,slider,sliderOne,sliderTwo,sliderThree,sliderFour,sliderFive,
-    sliderSix,sliderSeven,sliderEight,sliderNine,sliderTen,sliderEleven} = content
+    sliderSix,sliderSeven,sliderEight,sliderNine,sliderTen,sliderEleven,title} = content
 
   .room-search
     .room-search__aside
@@ -32,7 +32,7 @@ block content
         +text-field(filter)
 
       .room-search__dropdown
-        +title(guest)
+        +title(subtitle)
         .room-search__drop
          +dropdown(dropdown)
 

@@ -8,7 +8,7 @@
     "mod": "text-field__button_arrow",
     "label": "Даты пребывания в отеле"
   },
-  "guest": {
+  "subtitle": {
     "title": "гости"
   },
   "dropdown": {
