@@ -97,11 +97,9 @@ class Dropdown {
   }
 
   checkAdultButtonUse() {
+    const isGuestMin = this.sumAdult === 0 && this.sumBabies > 0;
 
-  const isGuestMin = this.sumAdult === 0 && this.sumBabies > 0
-
-  isGuestMin && (this.hiddenButtonUse())
-
+    isGuestMin && (this.hiddenButtonUse());
   }
 
   hiddenClearButton() {
@@ -123,10 +121,10 @@ class Dropdown {
   formDeclension(number, form) {
     number = Math.abs(number) % 100;
     const n1 = number % 10;
-    const isNumberRange = number > 10 && number < 20
-    const isNumRange = n1 > 1 && n1 < 5
-    if(isNumberRange) return form[2]
-    if(isNumRange) return form[1]
+    const isNumberRange = number > 10 && number < 20;
+    const isNumRange = n1 > 1 && n1 < 5;
+    if (isNumberRange) return form[2];
+    if (isNumRange) return form[1];
     if (n1 === 1) return form[0];
     return form[2];
   }
@@ -185,7 +183,7 @@ class Dropdown {
         }
       });
     }
-    const isGuestZero = adults > 0 || children > 0
+    const isGuestZero = adults > 0 || children > 0;
 
     if (isGuestZero) {
       this.checkButtonClear();
@@ -206,14 +204,13 @@ class Dropdown {
 
     const guestZero = this.sumBabies === 0 && this.sumAdult === 0;
 
-    const isAdultZero = this.sumAdult !== 0 && this.sumBabies === 0
+    const isAdultZero = this.sumAdult !== 0 && this.sumBabies === 0;
 
-  if (guestZero) this.title.innerHTML = 'Сколько гостей'
+    if (guestZero) this.title.innerHTML = 'Сколько гостей';
 
-   else if (isAdultZero) this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}`
-     
+    else if (isAdultZero) this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}`;
+
     else this.title.innerHTML = `${this.sumAdult} ${this.messageGuests}, ${this.sumBabies} ${this.messageNewborns}`;
-    
   }
 
   updateDropdownRoom() {
@@ -245,7 +242,7 @@ class Dropdown {
     const messageBedroom = this.formDeclension(Bedroom, formBedroom);
     const messageBed = this.formDeclension(Bed, formBed);
     const messageBathroom = this.formDeclension(Bathroom, formBathroom);
-    const isZero = sum > 0 && Bathroom > 0
+    const isZero = sum > 0 && Bathroom > 0;
 
     if (isZero) {
       this.title.innerHTML = `${Bedroom} ${messageBedroom}, ${Bed} ${messageBed},${Bathroom} ${messageBathroom}`

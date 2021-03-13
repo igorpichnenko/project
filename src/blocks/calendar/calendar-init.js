@@ -1,6 +1,5 @@
-import { Calendar } from "./Calendar"
-
+import { Calendar } from './Calendar';
 
 $('.js-datepicker-container').each((index, element) => {
-    new Calendar($(element))
-  });
+  new Calendar($(element));
+});

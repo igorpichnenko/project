@@ -41,11 +41,11 @@ class DropdownControl {
   }
 
   upValue(val) {
-    const isRange = val <= this.max && val >= this.min
-    const isZero = val === 0
-    
-    isRange && (this.value = val)
-    isZero && (this.value = this.min)
+    const isRange = val <= this.max && val >= this.min;
+    const isZero = val === 0;
+
+    isRange && (this.value = val);
+    isZero && (this.value = this.min);
 
     this.updateValue();
     this.checkValue();
