@@ -13,4 +13,3 @@ class InputMask {
 }
 
 export { InputMask };
-
