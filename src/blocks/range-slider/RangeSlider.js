@@ -1,4 +1,4 @@
-import { SliderAdapter } from '../../libs/SliderAdapter';
+import { SliderAdapter } from '../../libs/range-slider/SliderAdapter';
 
 class RangeSlider {
   constructor(element) {
