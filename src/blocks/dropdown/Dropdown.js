@@ -99,7 +99,7 @@ class Dropdown {
   checkAdultButtonUse() {
     const isGuestMin = this.sumAdult === 0 && this.sumBabies > 0;
 
-    isGuestMin && (this.hiddenButtonUse());
+    if (isGuestMin) this.hiddenButtonUse();
   }
 
   hiddenClearButton() {
