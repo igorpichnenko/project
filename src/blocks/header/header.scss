@@ -13,6 +13,7 @@
       flex-direction: column;
       align-items: unset;
       justify-content: center;
+    
     }
   }
 
@@ -25,6 +26,7 @@
     @media (max-width: 970px) {
       display: none;
       margin-top: 10px;
+      
     }
   }
 
@@ -39,7 +41,7 @@
 
   &__buttons {
     display: flex;
-    justify-content: space-between;
+   // justify-content: space-between;
 
     @media (max-width: 970px) {
       margin-top: 10px;

@@ -1,6 +1,6 @@
 import 'air-datepicker';
 
-class DatapickerAdapter {
+class DatepickerAdapter {
   init(element) {
     const dateFrom = element.find('.js-datepicker-start');
     const dateTo = element.find('.js-datepicker-end');
@@ -45,4 +45,4 @@ class DatapickerAdapter {
   }
 }
 
-export { DatapickerAdapter };
+export { DatepickerAdapter };

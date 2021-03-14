@@ -2,7 +2,7 @@ mixin formlux({data})
 
   - const {price,startData,endData,title,dropdown,cost,text,tax,btn} = data
 
-  form.card-lux
+  form.card-lux.js-price
     .card-lux__container
       .card-lux__price-mix
         +price(price)
@@ -18,8 +18,8 @@ mixin formlux({data})
 
       .card-lux__wrapper 
         .card-lux__price
-          span.card-lux__text.card-lux__text_left= cost
-          span.card-lux__text 39 960₽
+          span.card-lux__text.card-lux__text_left.js-price= cost
+          span.card-lux__text.js-sum 39 960₽
         .card-lux__price
           span.card-lux__text.card-lux__text_left= text
           span.card-lux__label.card-lux__label_top i
@@ -32,6 +32,6 @@ mixin formlux({data})
       .card-lux__wrap
         .card-lux__sum Итого
         .card-lux__border
-        .card-lux__sum 38 081₽
+        .card-lux__sum.js-total 38 081₽
     .card-lux__button
       +button(btn)

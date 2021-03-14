@@ -1,9 +1,9 @@
-import { DatapickerAdapter } from '../../libs/datepicker/DatapickerAdapter';
+import { DatepickerAdapter } from '../../libs/datepicker/DatepickerAdapter';
 
 class Calendar {
   constructor(element) {
     this.element = element;
-    this.adapter = new DatapickerAdapter();
+    this.adapter = new DatepickerAdapter();
     this.init();
   }
 
