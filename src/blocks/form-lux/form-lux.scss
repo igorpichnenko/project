@@ -90,14 +90,12 @@
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
-    margin-right: 60px;
     padding-top: 3.5px;
     margin-top: 2px;
     
     @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px);
     
     @media (max-width: 360px) {
-    margin-right: 20px;
     padding-top: 3px;
     margin-top: 0;
     
