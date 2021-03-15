@@ -1,40 +1,9 @@
-mixin pie({items}={})
-  .canvas-container.js-canvas-container
-    +title({title:"Впечатления от номера",mods:"medium"})
-    .canvas-container__pie
-      .canvas-container__items
-        .canvas-container__number 260
-        .canvas-container__text голосов
+mixin pie({items,mod,title}={})
 
-      svg.canvas-container__chart(viewBox="0 0 32.3 33.3")
-        circle.canvas-container__unit.js-canvas-container__unit(
-          stroke="url(#paint5_linear)",
-          r="15.9",
-          cx="50%",
-          cy="50%"
-        )
-        circle.canvas-container__unit.js-canvas-container__unit(
-          stroke="url(#paint4_linear)",
-          r="15.9",
-          cx="50%",
-          cy="50%"
-        )
-        circle.canvas-container__unit.js-canvas-container__unit(
-          stroke="url(#paint3_linear)",
-          r="15.9",
-          cx="50%",
-          cy="50%"
-        )
-        defs
-          linearGradient#paint5_linear(x1=".5", x2=".5", y2="1")
-            stop(stop-color="#ffe39c")
-            stop(offset="1", stop-color="#ffba9c")
-          linearGradient#paint4_linear(x1="100%", y1="0%", x2="0%", y2="0%")
-            stop(offset="0", stop-color="#6FCF97")
-            stop(offset="100%", stop-color="#66D2EA")
-          linearGradient#paint3_linear(x1="0%", y1="0%", x2="0%", y2="100%")
-            stop(offset="0", stop-color="#BC9CFF")
-            stop(offset="100%", stop-color="#8BA4F9")
+  .canvas-container
+    +title({title:title,mods:mod})
+    .canvas-container__pie
+      .canvas-container_pie-chart.js-pie-chart
             
       .canvas-container__legend
         ul.canvas-container__list

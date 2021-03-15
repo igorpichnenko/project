@@ -1,10 +1,3 @@
-@keyframes render {
-
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
 .canvas-container {
   width: 311px;
   height: 170px;
@@ -15,39 +8,10 @@
 
   &__pie {
     display: flex;
-    position: relative;
   }
 
   &__title {
     @include medium-text;
-  }
-
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    position: absolute;
-    left: 35.5px;
-    top: 56.5px;
-  }
-
-  &__number {
-    @include large-text($col: $primary);
-  }
-
-  &__text {
-    text-transform: uppercase;
-
-    @include small-text($col: $primary);
-  }
-
-  &__chart {
-    width: 120px;
-    height: 120px;
-    align-self: flex-start;
-    margin-top: 21.5px;
   }
 
   &__legend {
@@ -105,33 +69,35 @@
     background: $black-gradient;
   }
 
-  &__unit {
-    fill: none;
-    stroke-width: 1;
-    cursor: pointer;
-    animation-name: render;
-    animation-duration: 1.5s;
-    transition-property: all;
-    transition-duration: 1.5s;
-  }
+&__svg {
+  width: 120px;
+  height: 120px;
+  display: block;
+  transform: scale(-1,1);
+}
 
-  &__unit:hover,
-  .hovered {
-    opacity: .8;
-    stroke-width: 1.5;
-  }
+&_pie-chart {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
 
-  &__unit:nth-child(2) {
-    stroke-dasharray: 24 100;
-  }
+&__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #bc9cff;
+}
 
-  &__unit:nth-child(1) {
-    stroke-dasharray: 49 100;
-    stroke-dashoffset: -25;
+  &__count {
+    @include large-text($col: $primary);
   }
+  
+  &__text {
+    text-transform: uppercase;
 
-  &__unit:nth-child(3) {
-    stroke-dasharray: 24 100;
-    stroke-dashoffset: -75;
+    @include small-text($col: $primary);
   }
 }

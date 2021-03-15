@@ -13,11 +13,9 @@ class Price {
     this.sum = this.element.querySelector('.js-sum');
     this.outTotal = this.element.querySelector('.js-total');
     this.cost = this.element.querySelector('.js-cost');
-    this.outService = this.element.querySelector('.js-service')
-    this.discountInput = this.element.querySelector('.js-discount')
-    this.discountOut = this.element.querySelector('.js-discountOut')
-
-
+    this.outService = this.element.querySelector('.js-service');
+    this.discountInput = this.element.querySelector('.js-discount');
+    this.discountOut = this.element.querySelector('.js-discountOut');
 
     if (btnDrop) {
       let arr = [];
@@ -70,9 +68,6 @@ class Price {
   }
 
   updatePrice() {
-
-
-
     const form = ['сутки',
       'суток',
       'суток'];
@@ -82,31 +77,25 @@ class Price {
     if (this.days === undefined) this.days = 4;
     if (this.days > 500) return;
 
-    
+    const costValue = (this.cost.innerHTML).split('₽').join('');
+    const costCorrect = Number(costValue.split(' ').join(''));
+    const discountValue = (this.discountInput.innerHTML).split('₽').join('');
+    const discountCorrect = Number(discountValue.split(' ').join(''));
 
-    const costValue = (this.cost.innerHTML).split('₽').join('')
-    const costCorrect = Number(costValue.split(' ').join(''))
-    const discountValue = (this.discountInput.innerHTML).split('₽').join('')
-    const discountCorrect = Number(discountValue.split(' ').join(''))
+    const defaultDiscount = (discountCorrect / costCorrect) / 4;
+    const defaultCost = costCorrect / 3;
+    const defaultServiceOne = 300 / 3;
 
-    
-    const defaultDiscount = (discountCorrect / costCorrect) / 4
-    const defaultCost = costCorrect / 3
-    const defaultServiceOne = 300 / 3
-
-    const serviceCost = defaultServiceOne * this.guest
-    const price = Math.trunc(defaultCost * this.guest)
-    const discount =  Math.trunc(price * defaultDiscount * this.days) 
-    const total = Math.trunc((price * this.days) - discount + serviceCost)
-    
-    
+    const serviceCost = defaultServiceOne * this.guest;
+    const price = Math.trunc(defaultCost * this.guest);
+    const discount = Math.trunc(price * defaultDiscount * this.days);
+    const total = Math.trunc((price * this.days) - discount + serviceCost);
 
     this.outPrice.innerHTML = `${(price).toLocaleString()}₽ х ${this.days} ${this.formDeclension(this.days, form)}`;
-    this.sum.innerHTML = `${(price * this.days).toLocaleString()}₽`
+    this.sum.innerHTML = `${(price * this.days).toLocaleString()}₽`;
     this.outTotal.innerHTML = `${total.toLocaleString()}₽`;
     this.outService.innerHTML = `${(serviceCost).toLocaleString()}₽`;
     this.discountOut.innerHTML = `${(discount).toLocaleString()}₽`;
-    
   }
 }
 
