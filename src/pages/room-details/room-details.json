@@ -76,7 +76,8 @@
       },
         "discount": "2 179₽",
 
-      "tax": "Сбор за дополнительные услуги",
+      "tax": "Сбор за доп. услуги",
+      "mod": "room-details__form-bottom",
 
       "startData": {
         "text": "19.08.2019",

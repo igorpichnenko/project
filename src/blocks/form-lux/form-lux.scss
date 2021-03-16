@@ -65,10 +65,6 @@
     padding-top: 9.5px;
   }
 
-  &__label_top {
-    margin-left: 5px;
-  }
-
   &__text {
     @include body-text;
   }
@@ -94,7 +90,7 @@
     text-align: center;
     display: inline-block;
     padding-top: 3.5px;
-    margin-top: 2px;
+    margin-left: 6px;
     
     @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px);
     
@@ -105,17 +101,13 @@
     }
   }
 
-  &__label_icon-right {
-    margin-right: 22.5px;
-  }
-
   &__price {
     display: flex;
     justify-content: space-between;
   }
 
   &__bottom {
-    margin-top: 30px;
+    margin-top: 27px;
 
     @media (max-width: 360px) {
       padding-left: 15px;
@@ -145,7 +137,7 @@
 
   &__button {
     margin-top: 21px;
-    width: 100%;
+    width: 320px;
 
     @media (max-width: 360px) {
       width: 85%;

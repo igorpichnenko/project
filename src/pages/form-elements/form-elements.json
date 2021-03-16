@@ -134,7 +134,7 @@
      ]
   },
   "checkListTwo": {
-    "mods": "js-checkbox-list__icon_rotate",
+    "mods": "checkbox-list__icon_rotate",
     "mod": "checkbox-list__visible",
     "options": [ 
      

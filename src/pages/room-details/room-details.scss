@@ -77,7 +77,7 @@
 
   &__pie {
     padding-top: 1.5px;
-    margin-left: 10.5%;
+    margin-left: 10.4%;
 
     @media (max-width: 1320px) {
       margin-left: 3%;
@@ -135,14 +135,18 @@
 
     @include intermediate-text($lh: 14px);
     
-    @media (max-width: 35px) {
+    @media (max-width: 350px) {
       margin: 0;
     }
   }
 
   &__title_murad {
+    width: 711px;
     padding-top: 2px;
-    width: 91%;
+    
+    @media (max-width: 1000px) {
+      width: 91%;
+    }
   }
 
   &__patricia {
@@ -168,7 +172,7 @@
   }
 
   &__cancel {
-    padding-top: 32px;
+    padding-top: 33px;
     padding-left: 13%;
 
     @media (max-width: 1320px) {
@@ -224,7 +228,14 @@
   }
 
   &__formlux {
-    margin-left: 10px;
+    margin-left: 9px;
   }
-
+ 
+  &__bullet {
+    margin-top: 2px;
+  }
+  
+  &__form-bottom {
+    margin-top: 46px;
+  }
 }
