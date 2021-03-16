@@ -22,8 +22,8 @@ class Burger {
   }
 
   private handleButtonClick() {
-    this.elements[1].classList.toggle('js-active');
-    this.elements[0].classList.toggle('js__open-menu');
+    this.elements[1].classList.toggle('burger__item_active');
+    this.elements[0].classList.toggle('burger_open-menu');
   }
 }
 

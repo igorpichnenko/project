@@ -46,8 +46,8 @@
   &__visible {
     display: block;
   }
-}
 
-.js-checkbox-list__icon_rotate {
+&__icon_rotate {
     transform: rotate(180deg);
   }
+}

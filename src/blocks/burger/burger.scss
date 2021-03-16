@@ -38,17 +38,21 @@
     top: 10px;
   }
 
-  &__item.js-active &__items {
+  &__item.burger__item_active &__items {
     background: #fff;
   }
 
-  &__item.js-active &__items::before {
+  &__item.burger__item_active &__items::before {
     top: 0;
     transform: rotate(45deg);
   }
 
-  &__item.js-active &__items::after {
+  &__item.burger__item_active &__items::after {
     top: 0;
     transform: rotate(135deg);
   }
+
+  &_open-menu {
+  display: block;
+}
 }

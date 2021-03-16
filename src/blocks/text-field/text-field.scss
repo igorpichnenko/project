@@ -41,7 +41,7 @@
     @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
     
     @media (max-width: 330px) {
-     
+    
       
       @include intermediate-text($fs: 12px, $lh: 12px, $col: $dark75);
     }
