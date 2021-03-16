@@ -10,5 +10,5 @@ import '../../blocks/like/like-init';
 
 /* проверяю пиксель перфект через свой плагин, после каждого изменения,
 я потом удалю эти пути после проверок */
-// import '../../../pixel.js'
-// import '../../../pixel.css'
+ import '../../../pixel.js'
+ import '../../../pixel.css'
