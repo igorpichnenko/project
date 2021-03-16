@@ -54,6 +54,7 @@
     &:hover {
       @include intermediate-text(bold, $dark75);
     }
+
     &:active {
       @include intermediate-text(bold, $dark75);
     }
@@ -64,7 +65,7 @@
   
     @media (max-width: 970px) {
       margin-right: 0;
-      }
+    }
 
     &:after {
       position: absolute;
@@ -78,7 +79,7 @@
 
     @media (max-width: 767px) {
       margin-right: 0;
-      }
+    }
 
     &:after {
       position: absolute;

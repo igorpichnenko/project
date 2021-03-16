@@ -69,27 +69,27 @@
     background: $black-gradient;
   }
 
-&__svg {
-  width: 120px;
-  height: 120px;
-  display: block;
-  transform: scale(-1,1);
-}
+  &__svg {
+    width: 120px;
+    height: 120px;
+    display: block;
+    transform: scale(-1,1);
+  }
 
-&_pie-chart {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-}
+  &_pie-chart {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
 
-&__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #bc9cff;
-}
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #bc9cff;
+  }
 
   &__count {
     @include large-text($col: $primary);

@@ -29,7 +29,8 @@
   }
 
   &__form {
-     display: flex;
+    display: flex;
+
     @media (max-width: 860px) {
       margin-top: 10%;
       align-self: center;

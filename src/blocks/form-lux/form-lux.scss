@@ -9,9 +9,11 @@
   @media (max-width: 490px) {
     padding: 8%;
   }
+
   @media (max-width: 390px) {
     padding: 6% 4%;
   }
+
   @media (max-width: 360px) {
     padding: 6% 3%;
   }
@@ -28,14 +30,14 @@
   }
 
   &__price-mix {
-
     @media (max-width: 360px) {
       width: 90%;
 
     }
   }
 
-  &__datepicker, &__datepicker_end {
+  &__datepicker,
+  &__datepicker_end {
     width: 150px;
 
     @media (max-width: 360px) {
@@ -46,6 +48,7 @@
   &__datepicker_end {
     margin-left: 20px;
   }
+
   &__title {
     margin-bottom: 5px;
   }
@@ -96,8 +99,8 @@
     @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px);
     
     @media (max-width: 360px) {
-    padding-top: 3px;
-    margin-top: 0;
+      padding-top: 3px;
+      margin-top: 0;
     
     }
   }
@@ -149,6 +152,7 @@
       padding-left: 15px;
     }
   }
+
   &__dropdown {
     width: 100%;
 

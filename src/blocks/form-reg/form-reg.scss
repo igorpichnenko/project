@@ -9,15 +9,16 @@
   @media (max-width: 790px) {
     padding: 10% 9% 9% 9%;
   }
+
   @media (max-width: 500px) {
     padding: 10% 1% 5% 10%;
   }
   
 
-&__container {
-  max-width: 320px;
+  &__container {
+    max-width: 320px;
 
-}
+  }
   
   &__input {
     margin-top: 16px;
@@ -25,6 +26,7 @@
     @media (max-width: 500px) {
       width: 90%;
     }
+
     @media (max-width: 420px) {
       width: 90%;
     }
@@ -49,11 +51,11 @@
 
   }
 
-  &__mask{
-
+  &__mask {
     @media (max-width: 500px) {
       width: 90%;
     }
+
     @media (max-width: 420px) {
       width: 90%;
     }
@@ -65,6 +67,7 @@
     @media (max-width: 500px) {
       width: 90%;
     }
+
     @media (max-width: 420px) {
       width: 90%;
     }
@@ -85,29 +88,36 @@
     display: flex;
     align-items: center;
 
-    & > * + * {
-      margin-left: 35.8px;
-    }
     @media (max-width: 790px) {
+
       & > * + * {
         margin-left: 5px;
       }
     }
-      @media (max-width: 420px) {
-        & > * + * {
-          margin-left: 5px;
-        }
+
+    @media (max-width: 420px) {
+
+      & > * + * {
+        margin-left: 5px;
+      }
+    }
+
+    & > * + * {
+      margin-left: 35.8px;
     }
 
   }
+
   &__btn {
     @media (max-width: 500px) {
       width: 94%;
     }
+
     @media (max-width: 420px) {
       width: 90%;
     }
   }
+
   &__button {
     margin-top: 1px;
 
@@ -115,6 +125,7 @@
       width: 120px;
       height: 70%;
     }
+
     @media (max-width: 420px) {
       width: 80px;
       height: 50%;
@@ -122,32 +133,34 @@
   }
 
   &__text {
-  font-family: Montserrat, Arial, sans-serif;  
-  color: #000;
-  white-space: nowrap;
+    font-family: Montserrat, Arial, sans-serif;  
+    color: #000;
+    white-space: nowrap;
 
-  @media (min-width: 790px) {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  @media (max-width: 789px) {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  }
-&__title_wrap{
-  font-family: Montserrat, Arial, sans-serif;
-  font-style: normal;
-  color: $dark100;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 25px;
+    @media (min-width: 790px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
 
-@media (min-width: 790px) {
-  font-size: 24px;
-  line-height: 29px;
+    @media (max-width: 789px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
 
-}
-}
+  &__title_wrap {
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    color: $dark100;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+
+    @media (min-width: 790px) {
+      font-size: 24px;
+      line-height: 29px;
+
+    }
+  }
 
 }

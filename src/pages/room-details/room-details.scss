@@ -8,11 +8,13 @@
 .details-background {
   height: 484px;
   background: url(img/3.jpg) right bottom no-repeat,
-  url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
+    url(img/1.jpg) right top no-repeat, url(img/2.jpg) left no-repeat;
+
   @media (min-width: 1501px) {
 
     background-size: 33% 50.5%, 33% 50.5%, 68.15%;
   }
+
   @media (max-width: 1500px) {
 
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
@@ -22,14 +24,17 @@
 
     background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
   }
+
   @media (max-width: 1429px) {
 
     background-size: 33% 50.5%, 33% 50.5%, 68% 485px;    
   }
+
   @media (max-width: 1100px) {
 
     background-size: 40% 50.5%, 40% 50.5%, 60% 485px;    
   }
+
   @media (max-width: 750px) {
 
     background-size: 50% 50.5%, 50% 50.5%, 50% 485px;    
@@ -49,7 +54,7 @@
 
   @include container(70px, 9.7%, 74px, 9.7%)
 
-  @media (max-width: 1200px) {
+    @media (max-width: 1200px) {
     flex-wrap: wrap;
   }
 
@@ -105,6 +110,7 @@
       margin-left: 3%;
       margin-top: 40px;
     }
+
     @media (max-width: 350px) {
       margin: 0;
       padding: 10px 0;
@@ -150,6 +156,7 @@
     @media (max-width: 1320px) {
       padding-left: 3%;
     }
+
     @media (max-width: 350px) {
       padding: 10px 0;
     }
@@ -167,6 +174,7 @@
     @media (max-width: 1320px) {
       padding-left: 3%;
     }
+
     @media (max-width: 350px) {
       padding: 10px 0;
     }
@@ -180,9 +188,11 @@
       margin-bottom: 40px;
       padding-top: 20px;
     }
+
     @media (max-width: 360px) {
       padding-left: 6%;
     }
+
     @media (max-width: 328px) {
       padding-left: 3%;
     }
@@ -208,13 +218,13 @@
 
     @include intermediate-text($lh: 14px);
   
-  @media (max-width: 350px) {
+    @media (max-width: 350px) {
       margin: 0;
     }
   }
 
-&__formlux{
-  margin-left: 10px;
-}
+  &__formlux {
+    margin-left: 10px;
+  }
 
 }

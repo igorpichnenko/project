@@ -10,6 +10,7 @@
   @media (max-width: 790px) {
     padding: 10% 9% 9% 9%;
   }
+
   @media (max-width: 490px) {
     padding: 5% 5% 6% 8%;
   }
@@ -37,6 +38,7 @@
     margin-top: 21px;
     margin-bottom: 31px;
     max-width: 100%;
+
     @media (max-width: 450px) {
       width: 94%;
     }
@@ -46,6 +48,7 @@
   &__title {
     margin-bottom: 5px;
   }
+
   &__button {
     max-width: 100%;
 
@@ -56,18 +59,19 @@
   }
 
 
-&__datepicker {
-  width: 150px;
+  &__datepicker {
+    width: 150px;
 
-  @media (max-width: 450px) {
-    width: 120px;
+    @media (max-width: 450px) {
+      width: 120px;
+    }
   }
-}
-&__datepicker + &__datepicker {
-  margin-left: 20px;
 
-  @media (max-width: 450px) {
-    margin-left: 10px;
+  &__datepicker + &__datepicker {
+    margin-left: 20px;
+
+    @media (max-width: 450px) {
+      margin-left: 10px;
+    }
   }
-}
 }

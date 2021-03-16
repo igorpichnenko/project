@@ -10,7 +10,7 @@
   @include container(1.95%, 9.7%, 5.1%, 9.7%);
 
   @media (max-width: 1439px) {
-  gap: 3%;
+    gap: 3%;
     
   }
   
@@ -43,7 +43,8 @@
     margin-top: 31.5px;
     height: 12px;
   }
-  &__range-slider{
+
+  &__range-slider {
     margin-top: 22px;
   }
 
@@ -98,6 +99,7 @@
     row-gap: 40px;
     justify-content: center;
   }
+
   @media (max-width: 350px) {
     gap: 0;
   }
@@ -113,9 +115,11 @@
     padding-bottom: 30px;
     padding-top: 10px;
   }
+
   @media (max-width: 970px) {
     padding-bottom: 75px;
   }
+
   @media (max-width: 400px) {
     padding-bottom: 30px;
   }
@@ -133,7 +137,8 @@
     text-align: center;
   }
 }
-.room-search__title-width{
+
+.room-search__title-width {
   @media (max-width: 350px) {
     max-width: 320px;
   }
