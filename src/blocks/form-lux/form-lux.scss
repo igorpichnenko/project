@@ -138,6 +138,10 @@
   &__button {
     margin-top: 21px;
     width: 320px;
+    
+    @media (max-width: 1430px) {
+      width: 100%;
+    }
 
     @media (max-width: 360px) {
       width: 85%;

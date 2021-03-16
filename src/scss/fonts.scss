@@ -1,29 +1,29 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('montserrat/montserrat-regular.woff2'), url('montserrat/montserrat-regular.woff');
+  src: url('../public/fonts/montserrat/montserrat-regular.woff2'), url('../public/fonts/montserrat/montserrat-regular.woff');
   font-weight: normal;
   font-style: normal;
 } 
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('montserrat/montserrat-bold.woff2'), url('montserrat/montserrat-bold.woff');
+  src: url('../public/fonts/montserrat/montserrat-bold.woff2'), url('../public/fonts/montserrat/montserrat-bold.woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('quicksand/quicksand-regular.woff2');
-  src: url('quicksand/quicksand-regular.woff');
+  src: url('../public/fonts/quicksand/quicksand-regular.woff2');
+  src: url('../public/fonts/quicksand/quicksand-regular.woff');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('quicksand/quicksand-bold.woff2');
-  src: url('quicksand/quicksand-bold.woff');
+  src: url('../public/fonts/quicksand/quicksand-bold.woff2');
+  src: url('../public/fonts/quicksand/quicksand-bold.woff');
   font-style: normal;
   font-weight: normal;
 }
