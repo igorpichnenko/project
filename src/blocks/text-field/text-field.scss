@@ -49,11 +49,13 @@
       outline: none;
     }
 
-    &::-webkit-input-placeholder {
+    &::placeholder {
       color: $dark25;
     }
 
-    &:hover::-webkit-input-placeholder {
+    &:hover,
+    &:focus{
+      border-color: $dark50;
       color: $dark75;
     }
   }
@@ -70,7 +72,7 @@
 
     @include intermediate-text($fs: 13.6px, $lh: 24px, $col: $dark75);
 
-    &::-webkit-input-placeholder {
+    &::placeholder {
       color: $dark75;
     }
   }
@@ -101,11 +103,11 @@
       outline: none;
     }
 
-    &::-webkit-input-placeholder {
+    &::placeholder {
       color: $dark75;
     }
 
-    &:hover::-webkit-input-placeholder {
+    &:hover::placeholder {
       color: $dark75;
     }
   }

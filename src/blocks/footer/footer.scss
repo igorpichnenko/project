@@ -91,11 +91,11 @@
     outline: none;
   }
 
-  &::-webkit-input-placeholder {
+  &::placeholder {
     color: $dark25;
   }
 
-  &:hover::-webkit-input-placeholder {
+  &:hover::placeholder {
     color: $dark75;
   }
 }
