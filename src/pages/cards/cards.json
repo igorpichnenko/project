@@ -8,10 +8,10 @@
       "number": "145",
       "name": "images",
       "checked": "1",
-      "png": "1.png",
-      "png2": "2.png",
-      "png3": "3.png",
-      "png4": "4.png"
+      "image": "13.jpg",
+      "image2": "14.jpg",
+      "image3": "15.jpg",
+      "image4": "16.jpg"
     }
   },
   "sliderCardTwo": {
@@ -22,10 +22,10 @@
       "number": "65",
       "name": "imagesTwo",
       "checked": "2",
-      "png": "2.png",
-      "png2": "8.png",
-      "png3": "9.png",
-      "png4": "3.png"
+      "image": "14.jpg",
+      "image2": "13.jpg",
+      "image3": "15.jpg",
+      "image4": "16.jpg"
     }
   },
 

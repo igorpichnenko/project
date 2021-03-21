@@ -113,10 +113,10 @@
       "number": "145",
       "name": "slider",
       "checked": "1",
-      "png": "1.png",
-      "png2": "2.png",
-      "png3": "3.png",
-      "png4": "4.png"
+      "image": "1.jpg",
+      "image2": "2.jpg",
+      "image3": "3.jpg",
+      "image4": "4.jpg"
     }
   },
   "sliderOne": {
@@ -127,10 +127,10 @@
       "number": "65",
       "name": "sliderOne",
       "checked": "2",
-      "png": "2.png",
-      "png2": "8.png",
-      "png3": "9.png",
-      "png4": "3.png"
+      "image": "2.jpg",
+      "image2": "8.jpg",
+      "image3": "9.jpg",
+      "image4": "3.jpg"
     }
   },
   "sliderTwo": {
@@ -143,10 +143,10 @@
       "name": "sliderTwo",
       "checked": "3",
       "mods": "люкс",
-      "png": "3.png",
-      "png2": "4.png",
-      "png3": "2.png",
-      "png4": "1.png"
+      "image": "3.jpg",
+      "image2": "4.jpg",
+      "image3": "2.jpg",
+      "image4": "1.jpg"
     }
   },
   "sliderThree": {
@@ -157,10 +157,10 @@
       "number": "19",
       "name": "sliderThree",
       "checked": "1",
-      "png": "4.png",
-      "png2": "1.png",
-      "png3": "7.png",
-      "png4": "9.png"
+      "image": "4.jpg",
+      "image2": "1.jpg",
+      "image3": "7.jpg",
+      "image4": "9.jpg"
     }
   },
   "sliderFour": {
@@ -171,10 +171,10 @@
       "number": "44",
       "name": "sliderFour",
       "checked": "2",
-      "png": "5.png",
-      "png2": "7.png",
-      "png3": "11.png",
-      "png4": "12.png"
+      "image": "5.jpg",
+      "image2": "7.jpg",
+      "image3": "11.jpg",
+      "image4": "12.jpg"
     }
   },
   "sliderFive": {
@@ -185,10 +185,10 @@
       "number": "56",
       "name": "sliderFive",
       "checked": "3",
-      "png": "6.png",
-      "png2": "4.png",
-      "png3": "1.png",
-      "png4": "10.png"
+      "image": "6.jpg",
+      "image2": "4.jpg",
+      "image3": "1.jpg",
+      "image4": "10.jpg"
     }
   },
   "sliderSix": {
@@ -199,10 +199,10 @@
       "number": "45",
       "name": "sliderSix",
       "checked": "1",
-      "png": "7.png",
-      "png2": "9.png",
-      "png3": "8.png",
-      "png4": "3.png"
+      "image": "7.jpg",
+      "image2": "9.jpg",
+      "image3": "8.jpg",
+      "image4": "3.jpg"
     }
   },
   "sliderSeven": {
@@ -213,10 +213,10 @@
       "number": "39",
       "name": "sliderSeven",
       "checked": "2",
-      "png": "8.png",
-      "png2": "6.png",
-      "png3": "4.png",
-      "png4": "2.png"
+      "image": "8.jpg",
+      "image2": "6.jpg",
+      "image3": "4.jpg",
+      "image4": "2.jpg"
     }
   },
   "sliderEight": {
@@ -227,10 +227,10 @@
       "number": "77",
       "name": "sliderEight",
       "checked": "3",
-      "png": "9.png",
-      "png2": "1.png",
-      "png3": "10.png",
-      "png4": "12.png"
+      "image": "9.jpg",
+      "image2": "1.jpg",
+      "image3": "10.jpg",
+      "image4": "12.jpg"
     }
   },
   "sliderNine": {
@@ -241,10 +241,10 @@
       "number": "25",
       "name": "sliderNine",
       "checked": "1",
-      "png": "10.png",
-      "png2": "8.png",
-      "png3": "12.png",
-      "png4": "3.png"
+      "image": "10.jpg",
+      "image2": "8.jpg",
+      "image3": "12.jpg",
+      "image4": "3.jpg"
     }
   },
   "sliderTen": {
@@ -255,10 +255,10 @@
       "number": "15",
       "name": "sliderTen",
       "checked": "3",
-      "png": "11.png",
-      "png2": "4.png",
-      "png3": "1.png",
-      "png4": "7.png"
+      "image": "11.jpg",
+      "image2": "4.jpg",
+      "image3": "1.jpg",
+      "image4": "7.jpg"
     }
   },
   "sliderEleven": {
@@ -269,10 +269,10 @@
       "number": "55",
       "name": "sliderEleven",
       "checked": "3",
-      "png": "12.png",
-      "png2": "4.png",
-      "png3": "6.png",
-      "png4": "5.png"
+      "image": "12.jpg",
+      "image2": "4.jpg",
+      "image3": "6.jpg",
+      "image4": "5.jpg"
     }
   }
 }

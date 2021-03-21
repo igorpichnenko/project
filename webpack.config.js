@@ -151,7 +151,7 @@ module.exports = {
   ],
   devtool: 'inline-source-map',
   devServer: {
-    stats: 'errors-only',
+   // stats: 'errors-only',
     index: 'index.html',
     open: true,
   }
