@@ -2,49 +2,65 @@
 
 .room-details {
   flex: 1 0 auto;
-  
 
+  &__photos {
+    display: flex;
+    width: 100%;
+    height: 485px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &__photo {
+    background: center, center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &-1 {
+      width: 68.15%;
+      height: 100%;
+
+      @media (max-width: 790px) {
+        width: 60%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+        height: 33%;
+      }
+    }
+
+    &-2 {
+      width: 33%;
+      height: 50%;
+
+      @media (max-width: 790px) {
+        width: 40%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+        height: 33%;
+      }
+    }
+
+    &-3 {
+      width: 33%;
+      height: 50%;
+
+      @media (max-width: 790px) {
+        width: 40%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+        height: 33%;
+      }
+    }
+  }
 
   &__background {
     height: 484px;
     background: url(images/room3.jpg) right bottom no-repeat,
       url(images/room1.jpg) right top no-repeat, url(images/room2.jpg) left no-repeat;
 
-    @media (min-width: 1501px) {
-
-      background-size: 33% 50.5%, 33% 50.5%, 68.15%;
-    }
-
-    @media (max-width: 1500px) {
-
-      background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
-    }
-
-    @media (max-width: 1420px) {
-
-      background-size: 31.85% 50.15%, 31.85% 50%, 68.15%;
-    }
-
-    @media (max-width: 1429px) {
-
-      background-size: 33% 50.5%, 33% 50.5%, 68% 485px;    
-    }
-
-    @media (max-width: 1100px) {
-
-      background-size: 40% 50.5%, 40% 50.5%, 60% 485px;    
-    }
-
-    @media (max-width: 750px) {
-
-      background-size: 50% 50.5%, 50% 50.5%, 50% 485px;    
-    }
-
-    @media (max-width: 470px) {
-
-      background-size: 100% 33%, 100% 33%, 100% 36%;    
-    }
-
+    background-size: 459px 242px, 459px 244px, 981px 484px;
   }
 
   &__container {
@@ -52,9 +68,7 @@
     justify-content: space-between;
     flex: 1 0 auto;
 
-    @include container(70px, 9.7%, 74px, 9.7%)
-
-      @media (max-width: 1200px) {
+    @include container(70px, 9.7%, 74px, 9.7%) @media (max-width: 1200px) {
       flex-wrap: wrap;
     }
 
@@ -87,7 +101,7 @@
     @media (max-width: 780px) {
       margin-top: 40px;
     }
-    
+
     @media (max-width: 350px) {
       margin: 0;
       padding-left: 5px;
@@ -100,7 +114,7 @@
     @media (max-width: 1320px) {
       padding-left: 3%;
     }
-    
+
     @media (max-width: 350px) {
       padding: 10px 0;
     }
@@ -135,7 +149,7 @@
     margin-right: 70px;
 
     @include intermediate-text($lh: 14px);
-    
+
     @media (max-width: 350px) {
       margin: 0;
     }
@@ -144,7 +158,7 @@
   &__title_murad {
     width: 711px;
     padding-top: 2px;
-    
+
     @media (max-width: 1000px) {
       width: 91%;
     }
@@ -202,14 +216,14 @@
       padding-left: 3%;
     }
   }
-  
+
   &__paragraph {
     width: 341px;
     height: 96px;
     margin-top: 18.5px;
 
     @include body-text;
-    
+
     @media (max-width: 350px) {
       max-width: 300px;
       padding-bottom: 10px;
@@ -222,7 +236,7 @@
     margin-left: 10px;
 
     @include intermediate-text($lh: 14px);
-  
+
     @media (max-width: 350px) {
       margin: 0;
     }
@@ -231,11 +245,11 @@
   &__formlux {
     margin-left: 9px;
   }
- 
+
   &__bullet {
     margin-top: 2px;
   }
-  
+
   &__form-bottom {
     margin-top: 46px;
   }

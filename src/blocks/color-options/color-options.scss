@@ -1,12 +1,10 @@
 .color-options {
-
   &__items {
     display: flex;
     align-items: center;
   }
 
   &__item {
-
     &:not(first-child) {
       margin-bottom: 20px;
     }
@@ -19,12 +17,7 @@
   &__title {
     white-space: nowrap;
 
-    @include intermediate-text(
-      $fw: bold,
-      $fs: 19px,
-      $lh: 27.79px,
-      $col: $dark100
-    );
+    @include intermediate-text($fw: bold, $fs: 19px, $lh: 27.79px, $col: $dark100);
   }
 
   &__text {

@@ -1,5 +1,4 @@
 .footer-navigation {
-
   &__link {
     text-decoration: none;
     color: inherit;
@@ -10,12 +9,13 @@
 
     @include small-text;
   }
-
-  &__list:not(first-child) {
+  &__list:nth-child(even),
+  &__list:nth-child(3),
+  &__list:nth-child(5) {
     margin-bottom: 13%;
 
     @include intermediate-text;
-    
+
     &:hover {
       @include intermediate-text(bold, $dark75);
     }

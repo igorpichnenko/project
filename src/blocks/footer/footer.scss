@@ -1,7 +1,7 @@
 .footer {
   background-color: #fff;
   border-top: $border-01;
-  
+
   @include container(0, 9.7%, 0, 9.7%);
 }
 
@@ -11,7 +11,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 40px;
-  
 }
 
 .footer__navigation {
@@ -21,12 +20,11 @@
 
 .footer__logo {
   grid-column: span 3;
-
 }
 
 .footer__subscription {
   grid-column: span 3;
-  padding-top: 5.5px;
+  padding-top: 4px;
 }
 
 .footer__paragraph {
@@ -62,14 +60,21 @@
 
   @include material-font($bg: $primary);
 }
-  
+
 .footer__label {
   margin-top: 6.7%;
-  margin-left: .7px;
+  margin-left: 0.7px;
 }
 
 .footer__text {
   @include body-text;
+}
+
+.footer__item {
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include small-text;
 }
 
 .footer__input {
@@ -100,12 +105,11 @@
   }
 }
 
-
 .footer__bottom {
   width: 100%;
   border-top: $border-01;
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, .05);
-  
+  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+
   @include container(0, 9.7%, 0, 9.7%);
 }
 
@@ -126,4 +130,3 @@
 .footer__title {
   @include intermediate-text(normal, $dark75);
 }
-

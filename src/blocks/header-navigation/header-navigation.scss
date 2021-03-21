@@ -3,17 +3,7 @@
   list-style: none;
 
   @media (max-width: 970px) {
-
     flex-direction: column;
-  }
-
-  &__link:nth-child(3) {
-    margin-right: .5px;
-  }
-
-  &__link:first-child {
-    margin-right: 1px;
-    
   }
 
   &__link {
@@ -26,28 +16,23 @@
     @include intermediate-text;
 
     @media (max-width: 1120px) {
-
       margin-left: 10px;
     }
 
     @media (max-width: 1130px) {
-
       margin-left: 5px;
     }
 
     @media (max-width: 970px) {
-      
       padding-left: 43%;
       text-align: left;
     }
 
     @media (max-width: 800px) {
-      
       padding-left: 40%;
     }
-    
-    @media (max-width: 500px) {
 
+    @media (max-width: 500px) {
       padding-left: 35%;
     }
 
@@ -62,7 +47,7 @@
 
   &__text:nth-child(2) {
     margin-right: 25px;
-  
+
     @media (max-width: 970px) {
       margin-right: 0;
     }
@@ -85,7 +70,6 @@
       position: absolute;
 
       @include material-font;
-
     }
   }
 }
