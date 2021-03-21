@@ -2,6 +2,6 @@ import { RangeSlider } from './RangeSlider';
 
 const $wrappers = $('.js-range-slider');
 
-$wrappers.each((_index, element) => {
+$wrappers.each((_, element) => {
   new RangeSlider($(element));
 });

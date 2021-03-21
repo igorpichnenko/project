@@ -1,5 +1,5 @@
 import { Price } from './Price';
 
-$('.js-price').each((index, element) => {
+$('.js-price').each((_, element) => {
   new Price(element);
 });
