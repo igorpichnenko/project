@@ -5,14 +5,13 @@
     color: inherit;
   }
 
-  &__list_one {
+  &__list:first-child {
     text-transform: uppercase;
 
     @include small-text;
   }
 
-  &__list_other,
-  &__list_two {
+  &__list:not(first-child) {
     margin-bottom: 13%;
 
     @include intermediate-text;
@@ -22,7 +21,7 @@
     }
   }
 
-  &__list_two {
+  &__list:nth-child(2) {
     margin-top: 13.7%;
   }
 }

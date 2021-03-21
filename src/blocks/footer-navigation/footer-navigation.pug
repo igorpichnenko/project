@@ -1,12 +1,10 @@
 mixin footer-navigation(list)
 
   ul.footer-navigation
-    each item in list
-
-      - const { title, className } = item;
+    each title in list
       
-        li(class=`footer-navigation__list footer-navigation__list_${className}`)
+        li(class="footer-navigation__list")
           a(
-            class=`footer-navigation__link footer-navigation__link_${className}`,
+            class="footer-navigation__link",
             href="/mock-address/change-me" target="_blank"
           )= title

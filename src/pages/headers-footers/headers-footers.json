@@ -21,74 +21,10 @@
         "modThree":"footer__icon fab fa-instagram"
       },
 
-      "main": [
-        {
-          "title": "Навигация",
-          "className": "one"
-        },
-        {
-          "title": "О нас",
-          "className": "two"
-        },
-        {
-          "title": "Новости",
-          "className": "other"
-        },
-        {
-          "title": "Служба поддержки",
-          "className": "other"
-        },
-        {
-          "title": "Услуги",
-          "className": "other"
-        }
-      ],
-      "about": [
-        {
-          "title": "О нас",
-          "className": "one"
-        },
-        {
-          "title": "О сервисе",
-          "className": "two"
-        },
-        {
-          "title": "Наша команда",
-          "className": "other"
-        },
-        {
-          "title": "Вакансии",
-          "className": "other"
-        },
-        {
-          "title": "Инвесторы",
-          "className": "other"
-        }
-      ],
-      "support": [
-        {
-          "title": "Служба поддержки",
-          "className": "one"
-        },
-        {
-          "title": "Соглашения",
-          "className": "two"
-        },
-        {
-          "title": "Сообщества",
-          "className": "other"
-        },
-        {
-          "title": "Связь с нами",
-          "className": "other"
-        }
-      ],
-      "subscription": [
-        {
-          "title": "Подписка",
-          "className": "one"
-        }
-      ]
+      "main": ["Навигация", "О нас","Новости","Служба поддержки", "Услуги" ],
+      "about": ["О нас","О сервисе","Наша команда","Вакансии","Инвесторы" ],
+      "support": ["Служба поддержки", "Соглашения", "Сообщества", "Связь с нами" ],
+      "subscription": ["Подписка"]
     }
   },
 
@@ -103,54 +39,12 @@
       }
     },
 
-    "list": [
-      {
-        "title": "О нас",
-        "className": "about"
-      },
-      {
-        "title": "Услуги",
-        "className": "services"
-      },
-      {
-        "title": "Вакансии",
-        "className": "vacancies"
-      },
-      {
-        "title": "Новости",
-        "className": "news"
-      },
-      {
-        "title": "Соглашения",
-        "className": "agree"
-      }
-    ]
+    "list": [ "О нас", "Услуги", "Вакансии", "Новости", "Соглашения"]
   },
 
   "login": {
     "login": false,
 
-    "list": [
-      {
-        "title": "О нас",
-        "className": "about"
-      },
-      {
-        "title": "Услуги",
-        "className": "services"
-      },
-      {
-        "title": "Вакансии",
-        "className": "vacancies"
-      },
-      {
-        "title": "Новости",
-        "className": "news"
-      },
-      {
-        "title": "Соглашения",
-        "className": "agree"
-      }
-    ]
+    "list": ["О нас", "Услуги", "Вакансии", "Новости", "Соглашения" ]
   }
 }
