@@ -55,14 +55,6 @@
     }
   }
 
-  &__background {
-    height: 484px;
-    background: url(images/room3.jpg) right bottom no-repeat,
-      url(images/room1.jpg) right top no-repeat, url(images/room2.jpg) left no-repeat;
-
-    background-size: 459px 242px, 459px 244px, 981px 484px;
-  }
-
   &__container {
     display: flex;
     justify-content: space-between;
