@@ -113,10 +113,7 @@
       "number": "145",
       "name": "slider",
       "checked": "1",
-      "image": "1.jpg",
-      "image2": "2.jpg",
-      "image3": "3.jpg",
-      "image4": "4.jpg"
+      "images": ["1.jpg","2.jpg","3.jpg","4.jpg"]
     }
   },
   "sliderOne": {
@@ -127,10 +124,7 @@
       "number": "65",
       "name": "sliderOne",
       "checked": "2",
-      "image": "2.jpg",
-      "image2": "8.jpg",
-      "image3": "9.jpg",
-      "image4": "3.jpg"
+      "images": ["2.jpg","8.jpg","9.jpg","3.jpg"]
     }
   },
   "sliderTwo": {
@@ -143,10 +137,7 @@
       "name": "sliderTwo",
       "checked": "3",
       "mods": "люкс",
-      "image": "3.jpg",
-      "image2": "4.jpg",
-      "image3": "2.jpg",
-      "image4": "1.jpg"
+      "images": ["3.jpg","4.jpg","2.jpg","1.jpg"]
     }
   },
   "sliderThree": {
@@ -157,10 +148,7 @@
       "number": "19",
       "name": "sliderThree",
       "checked": "1",
-      "image": "4.jpg",
-      "image2": "1.jpg",
-      "image3": "7.jpg",
-      "image4": "9.jpg"
+      "images": ["4.jpg","1.jpg","7.jpg","9.jpg"]
     }
   },
   "sliderFour": {
@@ -171,10 +159,7 @@
       "number": "44",
       "name": "sliderFour",
       "checked": "2",
-      "image": "5.jpg",
-      "image2": "7.jpg",
-      "image3": "11.jpg",
-      "image4": "12.jpg"
+      "images": ["5.jpg","7.jpg","11.jpg","12.jpg"]
     }
   },
   "sliderFive": {
@@ -185,10 +170,7 @@
       "number": "56",
       "name": "sliderFive",
       "checked": "3",
-      "image": "6.jpg",
-      "image2": "4.jpg",
-      "image3": "1.jpg",
-      "image4": "10.jpg"
+      "images": ["6.jpg","4.jpg","1.jpg","10.jpg"]
     }
   },
   "sliderSix": {
@@ -199,10 +181,7 @@
       "number": "45",
       "name": "sliderSix",
       "checked": "1",
-      "image": "7.jpg",
-      "image2": "9.jpg",
-      "image3": "8.jpg",
-      "image4": "3.jpg"
+      "images": ["7.jpg","9.jpg","8.jpg","3.jpg"]
     }
   },
   "sliderSeven": {
@@ -213,10 +192,7 @@
       "number": "39",
       "name": "sliderSeven",
       "checked": "2",
-      "image": "8.jpg",
-      "image2": "6.jpg",
-      "image3": "4.jpg",
-      "image4": "2.jpg"
+      "images": ["8.jpg","6.jpg","4.jpg","2.jpg"]
     }
   },
   "sliderEight": {
@@ -227,10 +203,7 @@
       "number": "77",
       "name": "sliderEight",
       "checked": "3",
-      "image": "9.jpg",
-      "image2": "1.jpg",
-      "image3": "10.jpg",
-      "image4": "12.jpg"
+      "images": ["9.jpg","1.jpg","10.jpg","12.jpg"]
     }
   },
   "sliderNine": {
@@ -241,10 +214,7 @@
       "number": "25",
       "name": "sliderNine",
       "checked": "1",
-      "image": "10.jpg",
-      "image2": "8.jpg",
-      "image3": "12.jpg",
-      "image4": "3.jpg"
+      "images": ["10.jpg","8.jpg","12.jpg","3.jpg"]
     }
   },
   "sliderTen": {
@@ -255,10 +225,7 @@
       "number": "15",
       "name": "sliderTen",
       "checked": "3",
-      "image": "11.jpg",
-      "image2": "4.jpg",
-      "image3": "1.jpg",
-      "image4": "7.jpg"
+      "images": ["11.jpg","4.jpg","1.jpg","7.jpg"]
     }
   },
   "sliderEleven": {
@@ -269,10 +236,7 @@
       "number": "55",
       "name": "sliderEleven",
       "checked": "3",
-      "image": "12.jpg",
-      "image2": "4.jpg",
-      "image3": "6.jpg",
-      "image4": "5.jpg"
+      "images": ["12.jpg","4.jpg","6.jpg","5.jpg"]
     }
   }
 }

@@ -1,7 +1,4 @@
-mixin slider({image, image2, image3, image4}={})
-
-  .variable.js-slider 
-    .images(style=`background-image: url( ${require("./images/" + image)})`)
-    .images(style=`background-image: url( ${require("./images/" + image2)})`)
-    .images(style=`background-image: url( ${require("./images/" + image3)})`)
-    .images(style=`background-image: url( ${require("./images/" + image4)})`)
+mixin slick({images})
+    .variable.js-slider 
+        each image in images
+            .images(style=`background-image: url( ${require("./images/" + image)})`)
