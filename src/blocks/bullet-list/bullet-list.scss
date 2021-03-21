@@ -8,11 +8,11 @@
 
   @include body-text;
 
-  & > * + * {
+  &__items + &__items {
     margin-top: 10px;
   }
 
-  .bullet-list__items::before {
+  &__items::before {
     content: '';
     position: absolute;
     left: 0;

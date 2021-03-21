@@ -7,10 +7,6 @@
     margin-top: 0;
   }
 
-  &__input:checked ~ &__style {
-    border: 1px solid $primary;
-  }
-
   &__style {
     position: absolute;
     height: 20px;
@@ -49,16 +45,20 @@
     display: block;
   }
 
-  &__input:checked ~ &__style:after,
-  &__input:checked ~ &__style:before {
-    display: block;
-  }
-
   &__input {
     position: absolute;
     height: 0;
     width: 0;
     display: none;
+    
+    &:checked ~ .checkbox__style:after,
+    &:checked ~ .checkbox__style:before {
+      display: block;
+    }
+
+    &:checked ~ .checkbox__style {
+      border: 1px solid $primary;
+    }
   }
 
   &__text {

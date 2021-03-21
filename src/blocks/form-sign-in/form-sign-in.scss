@@ -10,27 +10,29 @@
     padding: 8% 2%;
  
   }
-}
 
-.signing-container {
-  max-width: 320px;
 
-  @media (max-width: 360px) {
-    padding-left: 40px;
+  &__container {
+    max-width: 320px;
+
+    @media (max-width: 360px) {
+      padding-left: 40px;
+    }
   }
 
-  &__input {
+  &__inputs {
     margin: 16px 0 20px 0;
 
     @media (max-width: 360px) {
       width: 90%;
     }
   
-
-    & > * + * {
-      margin-top: 5px;
-    }
   }
+  
+  &__input + &__input {
+    margin-top: 5px;
+  }
+  
 
   &__item {
     padding-top: 29px;
@@ -58,16 +60,18 @@
       margin-left: 4px;
     }
   }
-}
 
-.signing-container__btn {
-  width: 320px;
+
+  &__btn {
+    width: 320px;
   
-  @media (max-width: 400px) {
-    width: 300px;
+    @media (max-width: 400px) {
+      width: 300px;
+    }
+
+    @media (max-width: 360px) {
+      width: 90%;
+    }
   }
 
-  @media (max-width: 360px) {
-    width: 90%;
-  }
 }

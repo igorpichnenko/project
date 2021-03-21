@@ -3,14 +3,16 @@ mixin form-signing({data})
   - const {text,inputEmail,inputPass,btnSign,btnIn,content} = data 
 
   form.sign-in
-    .signing-container
+    .sign-in__container
       +title(text)
-      .signing-container__input
+      .sign-in__inputs
+       .sign-in__input
         +text-field(inputEmail)
+       .sign-in__input
         +text-field(inputPass)
-      .signing-container__btn
+      .sign-in__btn
        +button(btnSign)
-      .signing-container__item
-        .signing-container__text= content
-        .signing-container__button-wrap
+      .sign-in__item
+        .sign-in__text= content
+        .sign-in__button-wrap
           +button(btnIn)

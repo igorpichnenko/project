@@ -1,6 +1,6 @@
 mixin footer({data})
 
-  - const {title,main,about,support,subscription,text,label} = data
+  - const {title,main,about,support,subscription,text,label, icons} = data
 
   .footer
     .footer__container
@@ -25,5 +25,5 @@ mixin footer({data})
     .footer__items
       .footer__title= text
       .footer__icons
-        +font-icon
+        +font-icon(icons)
         

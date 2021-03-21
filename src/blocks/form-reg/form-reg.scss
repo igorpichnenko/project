@@ -20,7 +20,7 @@
 
   }
   
-  &__input {
+  &__inputs {
     margin-top: 16px;
 
     @media (max-width: 500px) {
@@ -32,17 +32,17 @@
     }
   }
 
-  &__input > * + * {
+  &__input + &__input {
     margin-top: 5px;
   }
 
-  &__radio {
+  &__radios {
     display: flex;
     margin-bottom: 20.5px;
     margin-top: 7.3px;
   }
 
-  &__radio > * + * {
+  &__radio  + &__radio {
     margin-left: 20px;
   }
 
@@ -73,10 +73,6 @@
     }
   }
 
-  &__data-in >*+* {
-    margin-top: 5px;
-  }
-
   &__toggle {
     margin-bottom: 25px;
     display: flex;
@@ -87,20 +83,7 @@
     margin-top: 28.5px;
     display: flex;
     align-items: center;
-    
-    @media (min-width: 791px) {
-
-      & > * + * {
-        margin-left: 35.8px;
-      }
-    }
-
-    @media (max-width: 790px) {
-
-      & > * + * {
-        margin-left: 5px;
-      }
-    }
+   
   }
 
   &__btn {
@@ -115,6 +98,11 @@
 
   &__button {
     margin-top: 1px;
+    margin-left: 35.8px;
+    
+    @media (max-width: 790px) {
+      margin-left: 5px;
+    }
 
     @media (max-width: 500px) {
       width: 120px;

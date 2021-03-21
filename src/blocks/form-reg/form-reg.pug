@@ -6,18 +6,24 @@ mixin form-reg({data})
     .registration__container
       .registration__title
        +title(regAccount)
-      .registration__input
+      .registration__inputs
+       .registration__input
         +text-field(name)
+       .registration__input
         +text-field(surname)
-      .registration__radio
+      .registration__radios
+       .registration__radio
         +radio(radioMan)
+       .registration__radio
         +radio(radioWoman)
       .registration__mask
        +text-field(dataField)
       .registration__data
         +title(title)
       .registration__data-in
+       .registration__input
         +text-field(email)
+       .registration__input
         +text-field(password)
       .registration__toggle
         +toggle

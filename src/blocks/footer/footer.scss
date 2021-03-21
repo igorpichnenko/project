@@ -115,7 +115,7 @@
   @include flex-between;
 }
 
-.footer__icons > * + * {
+.footer__icon + .footer__icon {
   margin-left: 22.5px;
 }
 

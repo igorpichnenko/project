@@ -22,11 +22,11 @@
     border-radius: 2px;
 
     @include intermediate-text($col: $dark75, $lh: 18px);
-  }
-
-  &__title:hover {
-    border: 1px solid rgba(31, 32, 65, .5);
-    border-radius: 2px 2px 0 0;
+  
+    &:hover {
+      border: 1px solid rgba(31, 32, 65, .5);
+      border-radius: 2px 2px 0 0;
+    }
   }
 
   &_active {

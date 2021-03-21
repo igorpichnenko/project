@@ -8,6 +8,15 @@
 
   &__input {
     display: none;
+    
+    &:checked ~ .toggle__border {
+      border-color: $primary;
+    }
+
+    &:checked ~ .toggle__border::before {
+      background: $primary-gradient;
+      margin-left: 20px;
+    }
   }
 
   &__border {
@@ -19,24 +28,16 @@
     border-radius: 10px;
     border: 1px solid $dark25;
     box-sizing: border-box;
-  }
+  
 
-  &__border::before {
-    content: '';
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: $dark25;
-    transition: margin-left .3s;
-  }
-
-  &__input:checked ~ &__border {
-    border-color: $primary;
-  }
-
-  &__input:checked ~ &__border::before {
-    background: $primary-gradient;
-    margin-left: 20px;
+    &::before {
+      content: '';
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background-color: $dark25;
+      transition: margin-left .3s;
+    }
   }
 
   &__text {
