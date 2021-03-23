@@ -5,9 +5,7 @@
   }
 
   &__item {
-    &:not(first-child) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
 
     &:nth-child(2) {
       margin-left: 40px;
