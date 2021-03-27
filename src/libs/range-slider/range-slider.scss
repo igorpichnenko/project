@@ -8,7 +8,7 @@
     position: absolute;
     cursor: pointer;
     z-index: 3;
-    transition: transform 0.25s;
+    transition: transform .25s;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffe39c), to(#ffba9c));
     background: -o-linear-gradient(top, #ffe39c 0%, #ffba9c 100%);
     background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
@@ -48,7 +48,7 @@
     position: absolute;
     border-radius: 5px;
     cursor: default;
-    border: rgba(31, 32, 65, 0.25) 1px solid;
+    border: rgba(31, 32, 65, .25) 1px solid;
     box-sizing: border-box;
   }
 
@@ -128,7 +128,7 @@
     position: absolute;
     width: 1px;
     height: 5px;
-    background-color: rgba(31, 32, 65, 0.5);
+    background-color: rgba(31, 32, 65, .5);
     cursor: pointer;
     transform: translateY(-26px);
   }
