@@ -8,7 +8,7 @@
       "number": "145",
       "name": "images",
       "checked": "1",
-      "images": ["13.jpg","14.jpg","15.jpg","16.jpg"]
+      "images": ["room13.jpg","room14.jpg","room15.jpg","room16.jpg"]
     }
   },
   "sliderCardTwo": {
@@ -19,7 +19,7 @@
       "number": "65",
       "name": "imagesTwo",
       "checked": "2",
-      "images": ["14.jpg","13.jpg","15.jpg","16.jpg"]
+      "images": ["room14.jpg","room13.jpg","room15.jpg","room16.jpg"]
     }
   },
 

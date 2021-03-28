@@ -113,7 +113,7 @@
       "number": "145",
       "name": "slider",
       "checked": "1",
-      "images": ["1.jpg","2.jpg","3.jpg","4.jpg"]
+      "images": ["room1.jpg","room2.jpg","room3.jpg","room4.jpg"]
     }
   },
   "sliderOne": {
@@ -124,7 +124,7 @@
       "number": "65",
       "name": "sliderOne",
       "checked": "2",
-      "images": ["2.jpg","8.jpg","9.jpg","3.jpg"]
+      "images": ["room2.jpg","room8.jpg","room9.jpg","room3.jpg"]
     }
   },
   "sliderTwo": {
@@ -137,7 +137,7 @@
       "name": "sliderTwo",
       "checked": "3",
       "mods": "люкс",
-      "images": ["3.jpg","4.jpg","2.jpg","1.jpg"]
+      "images": ["room3.jpg","room4.jpg","room2.jpg","room1.jpg"]
     }
   },
   "sliderThree": {
@@ -148,7 +148,7 @@
       "number": "19",
       "name": "sliderThree",
       "checked": "1",
-      "images": ["4.jpg","1.jpg","7.jpg","9.jpg"]
+      "images": ["room4.jpg","room1.jpg","room7.jpg","room9.jpg"]
     }
   },
   "sliderFour": {
@@ -159,7 +159,7 @@
       "number": "44",
       "name": "sliderFour",
       "checked": "2",
-      "images": ["5.jpg","7.jpg","11.jpg","12.jpg"]
+      "images": ["room5.jpg","room7.jpg","room11.jpg","room12.jpg"]
     }
   },
   "sliderFive": {
@@ -170,7 +170,7 @@
       "number": "56",
       "name": "sliderFive",
       "checked": "3",
-      "images": ["6.jpg","4.jpg","1.jpg","10.jpg"]
+      "images": ["room6.jpg","room4.jpg","room1.jpg","room10.jpg"]
     }
   },
   "sliderSix": {
@@ -181,7 +181,7 @@
       "number": "45",
       "name": "sliderSix",
       "checked": "1",
-      "images": ["7.jpg","9.jpg","8.jpg","3.jpg"]
+      "images": ["room7.jpg","room9.jpg","room8.jpg","room3.jpg"]
     }
   },
   "sliderSeven": {
@@ -192,7 +192,7 @@
       "number": "39",
       "name": "sliderSeven",
       "checked": "2",
-      "images": ["8.jpg","6.jpg","4.jpg","2.jpg"]
+      "images": ["room8.jpg","room6.jpg","room4.jpg","room2.jpg"]
     }
   },
   "sliderEight": {
@@ -203,7 +203,7 @@
       "number": "77",
       "name": "sliderEight",
       "checked": "3",
-      "images": ["9.jpg","1.jpg","10.jpg","12.jpg"]
+      "images": ["room9.jpg","room1.jpg","room10.jpg","room12.jpg"]
     }
   },
   "sliderNine": {
@@ -214,7 +214,7 @@
       "number": "25",
       "name": "sliderNine",
       "checked": "1",
-      "images": ["10.jpg","8.jpg","12.jpg","3.jpg"]
+      "images": ["room10.jpg","room8.jpg","room12.jpg","room3.jpg"]
     }
   },
   "sliderTen": {
@@ -225,7 +225,7 @@
       "number": "15",
       "name": "sliderTen",
       "checked": "3",
-      "images": ["11.jpg","4.jpg","1.jpg","7.jpg"]
+      "images": ["room11.jpg","room4.jpg","room1.jpg","room7.jpg"]
     }
   },
   "sliderEleven": {
@@ -236,7 +236,7 @@
       "number": "55",
       "name": "sliderEleven",
       "checked": "3",
-      "images": ["12.jpg","4.jpg","6.jpg","5.jpg"]
+      "images": ["room12.jpg","room4.jpg","room6.jpg","room5.jpg"]
     }
   }
 }
