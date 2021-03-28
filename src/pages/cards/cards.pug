@@ -28,14 +28,14 @@ block content
     const {formSearch, formReg, formLux, formSignIn, sliderCard, sliderCardTwo} = data
 
   .cards
-    .cards-one
+    .cards__container
       +form-search(formSearch)
-      .card_reg
+      .cards__registration
         +form-reg(formReg)
-    .cards-two
+    .cards__container
       +formlux(formLux)
       +form-signing(formSignIn)
-    .cards-three 
+    .cards__container
       .js-datepicker-container
         .js-datepicker
       +slider-card(sliderCard)
