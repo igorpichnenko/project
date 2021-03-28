@@ -7,7 +7,7 @@
   &__roller {
     position: absolute;
     cursor: pointer;
-    z-index: 3;
+    z-index: 1;
     transition: transform .25s;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffe39c), to(#ffba9c));
     background: -o-linear-gradient(top, #ffe39c 0%, #ffba9c 100%);
@@ -83,7 +83,6 @@
   }
 
   &__bar {
-    z-index: 1;
     position: absolute;
     border-radius: 5px;
     background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);

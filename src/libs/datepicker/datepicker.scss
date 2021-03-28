@@ -50,6 +50,10 @@
   &--nav-action {
     width: 23.93px;
     height: 24px;
+
+    &:hover {
+      background: transparent;
+    }
   }
 
   &--cell {
@@ -64,19 +68,19 @@
 
   &--nav-title {
     @include medium-text($lh: 20.2px);
+
+    &:hover {
+      background: transparent;
+    }
   }
 
   &--nav-title i {
     color: $dark100;
   }
 
-  &--nav-title:hover {
-    background: transparent;
-  }
+ 
 
-  &--nav-action:hover {
-    background: transparent;
-  }
+ 
 
   &--days-names {
     margin-top: 30px;
