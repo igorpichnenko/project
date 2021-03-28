@@ -3,12 +3,11 @@
 .headers-footers {
   background-color: $grey;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   
   @include container(9.75%, 0, 0, 0);
-
-  & > * + * {
-    margin-top: 40px;
-  }
 
   &__background {
     background-color: white;

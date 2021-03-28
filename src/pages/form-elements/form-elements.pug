@@ -79,23 +79,31 @@ block content
         +checkbox(checkOne)
         +checkbox(checkTwo)
         +checkbox(checkThree)
-      .column-two__radio
+      .column-two__radio-title  
         +title(radio)
-      .column-two__radio-button
-        +radio(radioMan)
-        +radio(radioWoman)
+      .column-two__radio    
+        .column-two__radio-button
+          +radio(radioMan)
+        .column-two__radio-button
+          +radio(radioWoman)
       +title(titleToggle)
       .column-two__toggle
-        +toggle(toggle)
-        +toggle
+        .column-two__toggle-wrap
+         +toggle(toggle)
+        .column-two__toggle-wrap
+         +toggle
       +title(titleLike)
       .column-two__like
-        +like(like)
-        +like(likeTwo)
+        .column-two__like-wrap
+          +like(like)
+        .column-two__like-wrap
+          +like(likeTwo)
       +title(titleRate)
       .column-two__rate
-        +rate-button(rate)
-        +rate-button(rateTwo)
+        .column-two__rate-wrap
+          +rate-button(rate)
+        .column-two__rate-wrap
+          +rate-button(rateTwo)
       +title(titleDrop)
       .column-two__dropdown
         +dropdown(dropGuest)
@@ -112,8 +120,10 @@ block content
       .column-three__title-btn
         +title(titleButton)
         .column-three__button-top
-          +button(buttonOne) 
-          +button(buttonTwo)
+          .column-three__button-wrap
+            +button(buttonOne) 
+          .column-three__button-wrap
+            +button(buttonTwo)
         .column-three__button-center
           +button(buttonTree)
           .column-three__button-small

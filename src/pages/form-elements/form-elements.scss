@@ -129,36 +129,39 @@
   }
 
   &__radio {
-    margin-top: 43px;
-    margin-bottom: 12px;
+    display: flex;
+    margin-bottom: 40px;
   }
 
-  &__radio-button {
-    margin-bottom: 40.3px;
-
-    & > * + * {
-      margin-left: 16px;
-    }
+  &__radio-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
   }
+   
+  &__radio-button + &__radio-button {
+    margin-left: 18px;
+  }
+  
 
   &__toggle {
     margin-top: 15px;
     margin-bottom: 45.5px;
+  }
 
-    & > * + * {
-      margin-top: 14px;
-    }
+  &__toggle-wrap + &__toggle-wrap {
+    margin-top: 14px;
   }
 
   &__like {
     display: flex;
     margin-top: 15px;
     margin-bottom: 41px;
-
-    & > * + * {
-      margin-left: 9.5px;
-    }
   }
+
+  &__like-wrap + &__like-wrap {
+    margin-left: 9.5px;
+  }
+  
 
   &__rate {
     display: flex;
@@ -169,11 +172,12 @@
 
       margin-bottom: 40px;
     }
-
-    & > * + * {
-      margin-left: 20px;
-    }
   }
+
+  &__rate-wrap + &__rate-wrap {
+    margin-left: 20px;
+  }
+  
 
   &__dropdown {
     width: 320px;
@@ -222,35 +226,37 @@
 
   &__button-top {
     margin-top: 15px;
-
-    & > * + * {
-      margin-left: 15px;
-    }
+    display: flex;
   }
+
+  &__button-wrap + &__button-wrap {
+    margin-left: 20px;
+  }
+  
 
   &__button-center {
     margin-top: 30px;
     display: flex;
 
-    & > * + * {
-      margin-left: 20px;
-    }
+   
   }
 
   &__button-small {
     width: 100px;
     height: 44px;
+    margin-left: 20px;
   }
 
   &__button-bottom {
     margin-bottom: 30px;
     margin-top: 30px;
     display: flex;
-
-    & > * + * {
-      margin-left: 21px;
-    }
   }
+
+  &__container + &__container {
+    margin-left: 21px;
+  }
+  
 
   &__pagination-title {
     margin-top: 40px;
