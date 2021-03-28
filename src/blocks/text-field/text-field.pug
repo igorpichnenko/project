@@ -1,12 +1,10 @@
 mixin text-field(options)
+  - const { inType, mods = 'standard', text = 'Email', button, mod, data, label, className = 'text-field__label' } = options;
 
-  - const { inType, mods = 'standard', text = 'Email', button, mod, data, label,className='text-field__label' } = options;
-  
   .text-field
-
     if button
       button(class=mod, type="submit")= button
- 
+
     label(class=className)= label
       input(
         type=inType,

@@ -1,5 +1,4 @@
 mixin header(options={})
-
   - let { login = true, user = 'Юлий Цезарь', list, button } = options;
 
   .header
@@ -7,9 +6,12 @@ mixin header(options={})
       .header-main__container
         .header-main__element
           .header-main__logo
-           a.header-main__link(href="/mock-address/change-me" target="_blank")
-            include ../../public/images/logo-main.svg
-                
+            a.header-main__link(
+              href="/mock-address/change-me",
+              target="_blank"
+            )
+              include ../../public/images/logo-main.svg
+
           +burger
 
         nav.header-main__nav.js-header-nav

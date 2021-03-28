@@ -11,12 +11,12 @@ mixin title({mods="standard",title="",tag="h3"}={})
 
   case tag
     when "h1"
-      - tag = "h1";
+      - tag = 'h1';
 
     when "h1"
-      - tag = "h2";
+      - tag = 'h2';
 
     default
-      - tag = "h3";
+      - tag = 'h3';
 
   #{tag}.title(class=allMods)= title

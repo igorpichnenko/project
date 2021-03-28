@@ -9,7 +9,7 @@ include ../../blocks/toggle/toggle
 block title
   title registration
   link(rel="stylesheet", href="registration.css")
-  
+
 block content
   -
     content = require("./registration.json");
@@ -17,10 +17,8 @@ block content
 
   .registration-container.registration-container_reg-bg.js-registration-container
     .registration-container__signing.js-registration-container__signing
-    
       +form-signing(formSignIn)
-      
+
     .registration-container__reg.registration-container_active.js-registration-container__reg
-    
       +form-reg(formReg)
   script(src="./registration.js")

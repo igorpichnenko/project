@@ -26,12 +26,12 @@ block content
   -
     data = require("./cards.json");
     const {formSearch, formReg, formLux, formSignIn, sliderCard, sliderCardTwo} = data
-    
+
   .cards
     .cards-one
       +form-search(formSearch)
       .card_reg
-       +form-reg(formReg)
+        +form-reg(formReg)
     .cards-two
       +formlux(formLux)
       +form-signing(formSignIn)

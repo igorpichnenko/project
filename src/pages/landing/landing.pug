@@ -9,7 +9,6 @@ include ../../blocks/dropdown-control/dropdown-control
 block title
   title landing
   link(rel="stylesheet", href="landing.css")
-  
 
 block content
   -
@@ -19,7 +18,7 @@ block content
   .landing-container
     .landing-container__items
       .landing-container__form
-       +form-search(formSearch)
+        +form-search(formSearch)
       .landing-container__slogan= text
-      
+
   script(src="./landing.js")

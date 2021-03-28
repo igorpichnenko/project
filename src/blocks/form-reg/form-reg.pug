@@ -1,34 +1,33 @@
 mixin form-reg({data})
+  - const { regAccount, name, surname, radioMan, radioWoman, title, email, password, button, text, btnReg, dataField } = data;
 
-  - const {regAccount, name,surname,radioMan,radioWoman,title,email,password,button,text,btnReg,dataField} = data
-  
   form.registration
     .registration__container
       .registration__title
-       +title(regAccount)
+        +title(regAccount)
       .registration__inputs
-       .registration__input
-        +text-field(name)
-       .registration__input
-        +text-field(surname)
+        .registration__input
+          +text-field(name)
+        .registration__input
+          +text-field(surname)
       .registration__radios
-       .registration__radio
-        +radio(radioMan)
-       .registration__radio
-        +radio(radioWoman)
+        .registration__radio
+          +radio(radioMan)
+        .registration__radio
+          +radio(radioWoman)
       .registration__mask
-       +text-field(dataField)
+        +text-field(dataField)
       .registration__data
         +title(title)
       .registration__data-in
-       .registration__input
-        +text-field(email)
-       .registration__input
-        +text-field(password)
+        .registration__input
+          +text-field(email)
+        .registration__input
+          +text-field(password)
       .registration__toggle
         +toggle
       .registration__btn
-       +button(button)
+        +button(button)
       .registration__sign-in
         .registration__wrap
           .registration__text= text

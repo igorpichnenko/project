@@ -1,6 +1,5 @@
 mixin footer({data})
-
-  - const {title,main,about,support,subscription,text,label, icons} = data
+  - const { title, main, about, support, subscription, text, label, icons } = data;
 
   .footer
     .footer__container
@@ -15,15 +14,14 @@ mixin footer({data})
       .footer__navigation
         +footer-navigation(support)
       .footer__subscription
-         a(href="/mock-address/change-me" target="_blank").footer__item  подписка
-         .footer__label
-          label.footer__text(for ="subscription")= label
-         .footer__field
-          input(type="email", placeholder="Email",class="footer__input", id ="subscription")
+        a.footer__item(href="/mock-address/change-me", target="_blank") подписка
+        .footer__label
+          label.footer__text(for="subscription")= label
+        .footer__field
+          input#subscription.footer__input(type="email", placeholder="Email")
           button.footer__button arrow_forward
   .footer__bottom 
     .footer__items
       .footer__title= text
       .footer__icons
         +font-icon(icons)
-        

@@ -1,9 +1,9 @@
 mixin checkbox(items)
-  - const { text, checked, mods='' } = items
+  - const { text, checked, mods = '' } = items;
 
   .checkbox
     label.checkbox__label
       span.checkbox__content
         input.checkbox__input(type="checkbox", checked=checked)
         span.checkbox__style
-      span.checkbox__text(class="" + mods)= text
+      span.checkbox__text(class='' + mods)= text

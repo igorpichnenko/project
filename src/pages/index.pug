@@ -1,29 +1,25 @@
 extends ../layouts/base
 
-
 block title
-    title index-page
-    link(rel="stylesheet", href="index.css")
+  title index-page
+  link(rel="stylesheet", href="index.css")
 
 block content
+  .index__link
+    a.index__page(href="./color-type.html") color-type
+  .index__link
+    a.index__page(href="./headers-footers.html") headers-footers
+  .index__link
+    a.index__page(href="./form-elements.html") form-elements
+  .index__link
+    a.index__page(href="./cards.html") cards
+  .index__link
+    a.index__page(href="./landing.html") landing
+  .index__link
+    a.index__page(href="./registration.html") registration
+  .index__link
+    a.index__page(href="./room-details.html") room-details
+  .index__link
+    a.index__page(href="./room-search.html") room-search
 
-     .index__link
-       a.index__page(href="./color-type.html") color-type
-     .index__link
-       a.index__page(href="./headers-footers.html") headers-footers
-     .index__link
-       a.index__page(href="./form-elements.html") form-elements
-     .index__link
-       a.index__page(href="./cards.html") cards
-     .index__link
-       a.index__page(href="./landing.html") landing
-     .index__link
-       a.index__page(href="./registration.html") registration
-     .index__link
-       a.index__page(href="./room-details.html") room-details
-     .index__link
-       a.index__page(href="./room-search.html") room-search
-
-    
-     script(src="./index.js")
- 
+  script(src="./index.js")

@@ -1,8 +1,8 @@
 mixin person-comment({title,text,content,image,mod,checked}={})
-
   .person-comment
-
-    .person-comment__icon(style=`background-image: url( ${require("./images/" + image)})`)
+    .person-comment__icon(
+      style=`background-image: url( ${require('./images/' + image)})`
+    )
     .person-comment__block
       .person-comment__name= title
       .person-comment__date= text

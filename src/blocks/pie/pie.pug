@@ -1,10 +1,9 @@
 mixin pie({items,mod,title}={})
-
   .canvas-container
     +title({title:title,mods:mod})
     .canvas-container__pie
       .canvas-container_pie-chart.js-pie-chart
-            
+
       .canvas-container__legend
         ul.canvas-container__list
           each item in items

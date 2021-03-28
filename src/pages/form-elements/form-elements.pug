@@ -21,12 +21,11 @@ include ../../blocks/bullet-list/bullet-list
 block title
   title form-elements
   link(rel="stylesheet", href="form-elements.css")
-     
 
 block content
   -
     data = require("./form-elements.json");
-    
+
     const {email,hover,pretty,focus,drop,dropdown,Imask,start,end,datepicker,arrow,titleDrop,medium,
     expanded,bedrooms,checkListOne,checkListTwo,titleCheck,checkOne,checkTwo,checkThree,radioMan,radio,
     radioWoman,titleToggle,titleLike,toggle,likeTwo,like,titleRate,rateTwo,rate,dropGuest,titleRich,
@@ -47,15 +46,15 @@ block content
             +title(focus)
         .column-one__dropdown
           .column-one__dropdown-title
-           +title(drop)
+            +title(drop)
           +dropdown(dropdown)
         .column-one__iMask
           +text-field(Imask)
         .column-one__dabl-date.js-datepicker-container
           .column-one__datepicker
-           +datepicker(start)
+            +datepicker(start)
           .column-one__datepicker
-           +datepicker(end)
+            +datepicker(end)
         .column-one__medium.js-datepicker-container
           +datepicker(datepicker)
           .column-one__subscription
@@ -64,12 +63,12 @@ block content
             +title(titleDrop)
             +title(hover)
           .column-one__drop
-           +dropdown(medium)
+            +dropdown(medium)
           .column-one__drop-medium
             +title(titleDrop)
             +title(expanded)
           .column-one__drop
-           +dropdown(bedrooms)
+            +dropdown(bedrooms)
           .column-one__checkbox
             +checkbox-list(checkListOne)
             .column-one__checkbox-list
@@ -125,8 +124,8 @@ block content
           .column-three__container
             +button(buttonSix)
         .column-three__container
-         .column-three__button
-          +button(buttonSeven)
+          .column-three__button
+            +button(buttonSeven)
         .column-three__pagination-title
           +title(titlePagination)
         .column-three__pagination
@@ -134,17 +133,16 @@ block content
         .column-three__dropdown
           +title(titleDrop)
           .column-three__drop
-           +dropdown(dropdownThree)
+            +dropdown(dropdownThree)
         .column-three__bullet
           +title(titleBullet)
         .column-three__bullet-list
           +bullet-list(bullet)
   .elements-footer
-      .elements-footer__comments
-        +comments(comments)
-        +comments(commentsTwo)
-      .elements-footer__murad
-       +person-comment(person)
-       
- 
+    .elements-footer__comments
+      +comments(comments)
+      +comments(commentsTwo)
+    .elements-footer__murad
+      +person-comment(person)
+
   script(src="./form-elements.js")

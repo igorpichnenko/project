@@ -1,10 +1,9 @@
 mixin price({text,price,mods,className="price__text",classlux="price__lux"}={})
-
   .price
     .price__container
       span.price__title №
-      span(class="" + className)= text
-      span(class="" + classlux)= mods
+      span(class='' + className)= text
+      span(class='' + classlux)= mods
     .price__container
       .price__cost.js-cost= price
       .price__duration в сутки

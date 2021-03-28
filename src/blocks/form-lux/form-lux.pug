@@ -1,6 +1,5 @@
 mixin formlux({data})
-
-  - const {price,startData,endData,title,dropdown,cost,text,tax,btn,discount,mod} = data
+  - const { price, startData, endData, title, dropdown, cost, text, tax, btn, discount, mod } = data;
 
   form.card-lux.js-price
     .card-lux__container
@@ -27,7 +26,7 @@ mixin formlux({data})
           span.card-lux__text.js-discountOut 0₽
         .card-lux__price
           .card-lux__text.card-lux__text_wrap= tax
-           span.card-lux__label.card-lux__label_icon-right i
+            span.card-lux__label.card-lux__label_icon-right i
           .card-lux__text.js-service 300₽
     .card-lux__bottom(class=mod)
       .card-lux__wrap

@@ -16,50 +16,49 @@ include ../../blocks/dropdown-control/dropdown-control
 block title
   title room-details
   link(rel="stylesheet", href="details.css")
-  
 
 block content
- -
+  -
     content = require("./room-details.json");
     const {info,comments,commentsTwo,commentsThree,pie,review,number,person,
     patricia,rules, bullet,cancel,text,formLux} = content
 
- section.room-details
-  .room-details__photos
-        img(src="./images/room2.jpg" class="room-details__photo")
-        img(src="./images/room1.jpg" class="room-details__photo")
-        img(src="./images/room3.jpg" class="room-details__photo")
-  .room-details__container
-    .room-details__item
-      .room-details__comment
-        +title(info)
-        .room-details__comments
-          +comments(comments)
-          +comments(commentsTwo)
-          +comments(commentsThree)
+  section.room-details
+    .room-details__photos
+      img.room-details__photo(src="./images/room2.jpg")
+      img.room-details__photo(src="./images/room1.jpg")
+      img.room-details__photo(src="./images/room3.jpg")
+    .room-details__container
+      .room-details__item
+        .room-details__comment
+          +title(info)
+          .room-details__comments
+            +comments(comments)
+            +comments(commentsTwo)
+            +comments(commentsThree)
 
-      .room-details__pie
-        +pie(pie)
-        
-      .room-details__reviews
-        .room-details__title
-          +title(review)
-          span.room-details__title_lower= number
-        .room-details__title_murad
-          +person-comment(person)
-        .room-details__patricia
-          +person-comment(patricia)
+        .room-details__pie
+          +pie(pie)
 
-      .room-details__rules
-        .room-details__text
-          +title(rules)
-        .room-details__bullet
-         +bullet-list(bullet)
+        .room-details__reviews
+          .room-details__title
+            +title(review)
+            span.room-details__title_lower= number
+          .room-details__title_murad
+            +person-comment(person)
+          .room-details__patricia
+            +person-comment(patricia)
 
-      .room-details__cancel
-        +title(cancel)
-        .room-details__paragraph= text
+        .room-details__rules
+          .room-details__text
+            +title(rules)
+          .room-details__bullet
+            +bullet-list(bullet)
 
-    .room-details__form
-      +formlux(formLux)
- script(src="./details.js")
+        .room-details__cancel
+          +title(cancel)
+          .room-details__paragraph= text
+
+      .room-details__form
+        +formlux(formLux)
+  script(src="./details.js")
