@@ -13,11 +13,10 @@
   },
   "dropdown": {
     "className": "dropdown_guest",
-    "items": [
-      {
-        "title": "взрослые",
-        "number": "2"
-      },
+    "items": [{
+      "title": "взрослые",
+      "number": "2"
+    },
       {
         "title": "дети",
         "number": "1"
@@ -25,8 +24,7 @@
       {
         "title": "младенцы",
         "number": "1"
-      }
-    ]
+      }]
   },
   "range": {
     "title": "Диапазон цены"
@@ -65,13 +63,12 @@
   "dropdownMedium": {
     "modBtn": "dropdown__button_hidden",
     "title": "Сколько спален и кроватей",
-    "items": [
-      {
-        "title": "спальни",
-        "min": "1",
-        "number": "2",
-        "max": "5"
-      },
+    "items": [{
+      "title": "спальни",
+      "min": "1",
+      "number": "2",
+      "max": "5"
+    },
       {
         "title": "кровати",
         "min": "1",
@@ -81,28 +78,33 @@
       {
         "title": "ванные комнаты",
         "max": "5"
-      }
-    ]
+      }]
   },
   "checkboxList": {
     "title": "Дополнительные удобства",
-    "options": [ 
-     
-     {"text": "Завтрак"}, 
-     {"text": "Письменный стол", "checked": "checked"}, 
-     {"text":"Стул для кормления","checked": "checked"},
-     {"text":"Кроватка","checked": "checked"}, 
-     {"text":"Телевизор"},
-     {"text":"Шампунь"}
-     
-     ]
+    "options": [{
+      "text": "Завтрак"
+    },
+      {
+        "text": "Письменный стол", "checked": "checked"
+      },
+      {
+        "text":"Стул для кормления","checked": "checked"
+      },
+      {
+        "text":"Кроватка","checked": "checked"
+      },
+      {
+        "text":"Телевизор"
+      },
+      {
+        "text":"Шампунь"
+      }]
   },
-  
-  "title": {
-    "title": "Номера, которые мы для вас подобрали",
-    "mods": "large room-search__title-width",
-    "tag": "h1"
-  },
+
+
+
+
   "slider": {
     "data": {
       "className": "price__text_low",
@@ -116,127 +118,136 @@
       "images": ["room1.jpg","room2.jpg","room3.jpg","room4.jpg"]
     }
   },
-  "sliderOne": {
-    "data": {
-      "className": "price__text_low",
-      "text": "840",
-      "price": "9 900₽",
-      "number": "65",
-      "name": "sliderOne",
-      "checked": "2",
-      "images": ["room2.jpg","room8.jpg","room9.jpg","room3.jpg"]
-    }
-  },
-  "sliderTwo": {
-    "data": {
-      "className": "price__text_low",
-      "classlux": "price__lux room-search__lux",
-      "text": "980",
-      "price": "8 500₽",
-      "number": "35",
-      "name": "sliderTwo",
-      "checked": "3",
-      "mods": "люкс",
-      "images": ["room3.jpg","room4.jpg","room2.jpg","room1.jpg"]
-    }
-  },
-  "sliderThree": {
-    "data": {
-      "className": "price__text_low",
-      "text": "856",
-      "price": "7 300₽",
-      "number": "19",
-      "name": "sliderThree",
-      "checked": "1",
-      "images": ["room4.jpg","room1.jpg","room7.jpg","room9.jpg"]
-    }
-  },
-  "sliderFour": {
-    "data": {
-      "className": "price__text_low",
-      "text": "740",
-      "price": "6 000₽",
-      "number": "44",
-      "name": "sliderFour",
-      "checked": "2",
-      "images": ["room5.jpg","room7.jpg","room11.jpg","room12.jpg"]
-    }
-  },
-  "sliderFive": {
-    "data": {
-      "className": "price__text_low",
-      "text": "982",
-      "price": "5 800₽",
-      "number": "56",
-      "name": "sliderFive",
-      "checked": "3",
-      "images": ["room6.jpg","room4.jpg","room1.jpg","room10.jpg"]
-    }
-  },
-  "sliderSix": {
-    "data": {
-      "className": "price__text_low",
-      "text": "678",
-      "price": "5 500₽",
-      "number": "45",
-      "name": "sliderSix",
-      "checked": "1",
-      "images": ["room7.jpg","room9.jpg","room8.jpg","room3.jpg"]
-    }
-  },
-  "sliderSeven": {
-    "data": {
-      "className": "price__text_low",
-      "text": "450",
-      "price": "5 300₽",
-      "number": "39",
-      "name": "sliderSeven",
-      "checked": "2",
-      "images": ["room8.jpg","room6.jpg","room4.jpg","room2.jpg"]
-    }
-  },
-  "sliderEight": {
-    "data": {
-      "className": "price__text_low",
-      "text": "350",
-      "price": "5 000₽",
-      "number": "77",
-      "name": "sliderEight",
-      "checked": "3",
-      "images": ["room9.jpg","room1.jpg","room10.jpg","room12.jpg"]
-    }
-  },
-  "sliderNine": {
-    "data": {
-      "className": "price__text_low",
-      "text": "666",
-      "price": "5 000₽",
-      "number": "25",
-      "name": "sliderNine",
-      "checked": "1",
-      "images": ["room10.jpg","room8.jpg","room12.jpg","room3.jpg"]
-    }
-  },
-  "sliderTen": {
-    "data": {
-      "className": "price__text_low",
-      "text": "444",
-      "price": "5 000₽",
-      "number": "15",
-      "name": "sliderTen",
-      "checked": "3",
-      "images": ["room11.jpg","room4.jpg","room1.jpg","room7.jpg"]
-    }
-  },
-  "sliderEleven": {
-    "data": {
-      "className": "price__text_low",
-      "text": "352",
-      "price": "5 000₽",
-      "number": "55",
-      "name": "sliderEleven",
-      "checked": "3",
-      "images": ["room12.jpg","room4.jpg","room6.jpg","room5.jpg"]
+
+
+  "cards": {
+    "title": {
+      "title": "Номера, которые мы для вас подобрали",
+      "mods": "large room-search__title-width",
+      "tag": "h1"
+    },
+    "sliderOne": {
+      "data": {
+        "className": "price__text_low",
+        "text": "840",
+        "price": "9 900₽",
+        "number": "65",
+        "name": "sliderOne",
+        "checked": "2",
+        "images": ["room2.jpg","room8.jpg","room9.jpg","room3.jpg"]
+      }
+    },
+    "sliderTwo": {
+      "data": {
+        "className": "price__text_low",
+        "classlux": "price__lux room-search__lux",
+        "text": "980",
+        "price": "8 500₽",
+        "number": "35",
+        "name": "sliderTwo",
+        "checked": "3",
+        "mods": "люкс",
+        "images": ["room3.jpg","room4.jpg","room2.jpg","room1.jpg"]
+      }
+    },
+    "sliderThree": {
+      "data": {
+        "className": "price__text_low",
+        "text": "856",
+        "price": "7 300₽",
+        "number": "19",
+        "name": "sliderThree",
+        "checked": "1",
+        "images": ["room4.jpg","room1.jpg","room7.jpg","room9.jpg"]
+      }
+    },
+    "sliderFour": {
+      "data": {
+        "className": "price__text_low",
+        "text": "740",
+        "price": "6 000₽",
+        "number": "44",
+        "name": "sliderFour",
+        "checked": "2",
+        "images": ["room5.jpg","room7.jpg","room11.jpg","room12.jpg"]
+      }
+    },
+    "sliderFive": {
+      "data": {
+        "className": "price__text_low",
+        "text": "982",
+        "price": "5 800₽",
+        "number": "56",
+        "name": "sliderFive",
+        "checked": "3",
+        "images": ["room6.jpg","room4.jpg","room1.jpg","room10.jpg"]
+      }
+    },
+    "sliderSix": {
+      "data": {
+        "className": "price__text_low",
+        "text": "678",
+        "price": "5 500₽",
+        "number": "45",
+        "name": "sliderSix",
+        "checked": "1",
+        "images": ["room7.jpg","room9.jpg","room8.jpg","room3.jpg"]
+      }
+    },
+    "sliderSeven": {
+      "data": {
+        "className": "price__text_low",
+        "text": "450",
+        "price": "5 300₽",
+        "number": "39",
+        "name": "sliderSeven",
+        "checked": "2",
+        "images": ["room8.jpg","room6.jpg","room4.jpg","room2.jpg"]
+      }
+    },
+    "sliderEight": {
+      "data": {
+        "className": "price__text_low",
+        "text": "350",
+        "price": "5 000₽",
+        "number": "77",
+        "name": "sliderEight",
+        "checked": "3",
+        "images": ["room9.jpg","room1.jpg","room10.jpg","room12.jpg"]
+      }
+    },
+    "sliderNine": {
+      "data": {
+        "className": "price__text_low",
+        "text": "666",
+        "price": "5 000₽",
+        "number": "25",
+        "name": "sliderNine",
+        "checked": "1",
+        "images": ["room10.jpg","room8.jpg","room12.jpg","room3.jpg"]
+      }
+    },
+    "sliderTen": {
+      "data": {
+        "className": "price__text_low",
+        "text": "444",
+        "price": "5 000₽",
+        "number": "15",
+        "name": "sliderTen",
+        "checked": "3",
+        "images": ["room11.jpg","room4.jpg","room1.jpg","room7.jpg"]
+      }
+    },
+    "sliderEleven": {
+      "data": {
+        "className": "price__text_low",
+        "text": "352",
+        "price": "5 000₽",
+        "number": "55",
+        "name": "sliderEleven",
+        "checked": "3",
+        "images": ["room12.jpg","room4.jpg","room6.jpg","room5.jpg"]
+      }
     }
   }
 }

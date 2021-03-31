@@ -22,9 +22,8 @@ block title
 block content
   -
     content = require("./room-search.json");
-    const {filter,subtitle,dropdown,range,price,rules,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,
-    titleDrop,dropdownMedium,checkboxList,slider,sliderOne,sliderTwo,sliderThree,sliderFour,sliderFive,
-    sliderSix,sliderSeven,sliderEight,sliderNine,sliderTen,sliderEleven,title} = content
+    
+    const {cards,filter,subtitle,dropdown,range,price,rules,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,titleDrop,dropdownMedium,checkboxList,slider} = content
 
   .room-search
     .room-search__aside
@@ -64,6 +63,9 @@ block content
           +checkbox-list(checkboxList)
 
     .room-search__cards
+      
+      - const { title,sliderOne,sliderTwo,sliderThree,sliderFour,sliderFive,sliderSix,sliderSeven,sliderEight,sliderNine,sliderTen,sliderEleven } = cards
+    
       .room-search__title
         +title(title)
       .room-search__container
