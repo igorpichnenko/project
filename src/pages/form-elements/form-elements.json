@@ -1,312 +1,339 @@
 {
-  "email": {
-    "inType": "email",
-    "label": "text field"
-  },
-  "hover": {
-    "title": "default",
-    "mods": "hover"
-  },
-  "focus": {
-    "title": "hover / focus",
-    "mods": "hover column-one__title_focus"
-  },
-  "pretty": {
-    "mods": "hover",
-    "inType": "text",
-    "text": "This is pretty awesome",
-    "label": "text field"
-  },
-  "drop": {
-    "title": "dropdown"
-  },
-  "dropdown": {
-    "className": "dropdown_guest",
-    "items": [
-      {
+  "inputs": {
+    "email": {
+      "inType": "email",
+      "label": "text field"
+    },
+    "hover": {
+      "title": "default",
+      "mods": "hover form-elements__title_absolute"
+    },
+    "focus": {
+      "title": "hover / focus",
+      "mods": "hover column-one__title_focus form-elements__title_absolute"
+    },
+    "mods": "js-datepicker-container",
+
+    "pretty": {
+      "mods": "hover",
+      "inType": "text",
+      "text": "This is pretty awesome",
+      "label": "text field"
+    },
+    "drop": {
+      "title": "dropdown"
+    },
+    "dropdown": {
+      "className": "dropdown_guest",
+      "items": [{
         "title": "взрослые"
       },
-      {
-        "title": "дети"
-      },
-      {
-        "title": "младенцы"
-      }
-    ]
+        {
+          "title": "дети"
+        },
+        {
+          "title": "младенцы"
+        }]
+    },
+
+    "Imask": {
+      "mods": "standard input_mask",
+      "inType": "text",
+      "text": "ДД.ММ.ГГГГ",
+      "label": "masked text field"
+    },
+    "start": {
+      "label": "date dropdown",
+      "text": "ДД.ММ.ГГГГ"
+    },
+    "end": {
+      "label": "date dropdown",
+      "text": "19.08.2019",
+      "mods": "small js-datepicker-end"
+    },
+    "datepicker": {
+      "text": "19 авг - 23 авг",
+      "mods": "small js-datepicker",
+      "data": "d M",
+      "label": "filter date dropdown"
+    },
+    "arrow": {
+      "label": "subscription text field",
+      "button": "arrow_forward",
+      "inType": "email",
+      "text": "Email",
+      "mod": "text-field__button"
+    }
   },
 
-  "Imask": {
-    "mods": "standard input_mask",
-    "inType": "text",
-    "text": "ДД.ММ.ГГГГ",
-    "label": "masked text field"
+  "checkboxs": {
+    "titleCheck": {
+      "title": "checkbox buttons"
+    },
+    "checkOne": {
+      "text": "Можно курить"
+    },
+    "checkTwo": {
+      "text": "Можно с питомцами",
+      "checked": "checked"
+    },
+    "checkThree": {
+      "text": "Можно пригласить гостей (до 10 человек)",
+      "mods": "checkbox__wrap",
+      "checked": "checked"
+    },
+
+    "radio": {
+      "title": "radio buttons"
+    },
+    "radioMan": {
+      "text": "Мужчина",
+      "name": "man",
+      "checked": "checked"
+    },
+    "radioWoman": {
+      "text": "Женщина",
+      "name": "man"
+    },
+    "titleToggle": {
+      "title": "toggle",
+      "mods": "standard column-one__title_focus"
+    },
+    "toggle": {
+      "mod": "checked"
+    },
+    "titleLike": {
+      "title": "like button"
+    },
+    "like": {
+      "number": "2"
+    },
+    "likeTwo": {
+      "number": "12",
+      "checked": "checked"
+    },
+    "titleRate": {
+      "title": "rate button"
+    },
+    "rate": {
+      "newName": "form-elements-2",
+      "checked": "2"
+    },
+    "rateTwo": {
+      "newName": "form-elements",
+      "checked": "1"
+    }
   },
-  "start": {
-    "label": "date dropdown",
-    "text": "ДД.ММ.ГГГГ"
+
+  "buttons": {
+    "titleRange": {
+      "title": "range slider"
+
+    },
+    "titleButton": {
+      "title": "buttons"
+    },
+    "buttonOne": {
+      "mods": "content-size,large-height"
+    },
+    "buttonTwo": {
+      "mods": "disable,content-size,large-height"
+    },
+    "buttonTree": {
+      "mods": "with-border,content-size,large-height"
+    },
+    "buttonFour": {
+      "mods": "with-border,disable,content-size, large-height"
+    },
+    "buttonFive": {
+      "mods": "with-border,content-none,large-height"
+    },
+    "buttonSix": {
+      "mods": "with-border,content-none,color-black,large-height"
+    },
+    "buttonSeven": {
+      "text": "Перейти к оплате",
+      "mods": "with-arrow"
+    },
+    "titlePagination": {
+      "title": "pagination"
+    },
+    "pagination": {
+      "className": "pagination__text column-three__pagination-text"
+    }
   },
-  "end": {
-    "label": "date dropdown",
-    "text": "19.08.2019",
-    "mods": "small js-datepicker-end"
-  },
-  "datepicker": {
-    "text": "19 авг - 23 авг",
-    "mods": "small js-datepicker",
-    "data": "d M",
-    "label": "filter date dropdown"
-  },
-  "arrow": {
-    "label": "subscription text field",
-    "button": "arrow_forward",
-    "inType": "email",
-    "text": "Email",
-    "mod": "text-field__button"
-  },
-  "titleDrop": {
-    "title": "dropdown"
-  },
-  "hover": {
-    "title": "Default",
-    "mods": "hover"
-  },
-  "medium": {
-    "modBtn": "dropdown__button_hidden",
-    "title": "Сколько спален и кроватей",
-    "items": [
-      {
+
+  "dropdowns": {
+
+    "titleDrop": {
+      "title": "dropdown",
+      "mods": "standard form-elements__subtitle"
+    },
+
+    "medium": {
+      "modBtn": "dropdown__button_hidden, form-elements__dropdown",
+      "title": "Сколько спален и кроватей",
+      "items": [{
         "title": "спальни",
         "min": 1,
         "max": 5,
         "number": 2
       },
-      {
-        "title": "кровати",
-        "min": 1,
-        "max": 6,
-        "number": 2
-      },
-      {
-        "title": "ванные комнаты",
-        "max": 4
-      }
-    ]
-  },
-  "expanded": {
-    "title": "expanded",
-    "mods": "hover"
-  },
-  "bedrooms": {
-    "mod": "dropdown_active",
-    "modBtn": "dropdown__button_hidden",
-    "title": "Сколько спален и кроватей",
-    "items": [
-      {
+        {
+          "title": "кровати",
+          "min": 1,
+          "max": 6,
+          "number": 2
+        },
+        {
+          "title": "ванные комнаты",
+          "max": 4
+        }]
+    },
+    "expanded": {
+      "title": "expanded",
+      "mods": "hover form-elements__title_absolute"
+    },
+    "bedrooms": {
+      "mod": "dropdown_active",
+      "modBtn": "dropdown__button_hidden",
+      "title": "Сколько спален и кроватей",
+      "items": [{
         "title": "спальни",
         "min": 1,
         "number": 2,
         "max": 6
       },
-      {
-        "title": "кровати",
-        "min": 1,
-        "number": 2,
-        "max": 5
-      },
-      {
-        "title": "ванные комнаты",
-        "max": 4
-      }
-    ]
-  },
-  
-  "checkListOne": {
-    
-    "options": [ 
-      
-     {"text": "Завтрак"}, 
-     {"text": "Письменный стол", "checked": "checked"}, 
-     {"text":"Стул для кормления","checked": "checked"},
-     {"text":"Кроватка","checked": "checked"}, 
-     {"text":"Телевизор"},
-     {"text":"Шампунь"}
-     
-     ]
-  },
-  "checkListTwo": {
-    "mods": "checkbox-list__icon_rotate",
-    "mod": "checkbox-list__visible",
-    "options": [ 
-     
-     {"text": "Завтрак"}, 
-     {"text": "Письменный стол", "checked": "checked"}, 
-     {"text":"Стул для кормления","checked": "checked"},
-     {"text":"Кроватка","checked": "checked"}, 
-     {"text":"Телевизор"},
-     {"text":"Шампунь"}
-     
-     ]
-  },
-  
-  "titleCheck": {
-    "title": "checkbox buttons"
-  },
-  "checkOne": {
-    "text": "Можно курить"
-  },
-  "checkTwo": {
-    "text": "Можно с питомцами",
-    "checked": "checked"
-  },
-  "checkThree": {
-    "text": "Можно пригласить гостей (до 10 человек)",
-    "mods": "checkbox__wrap",
-    "checked": "checked"
-  },
-  "radio": {
-    "title": "radio buttons"
-  },
-  "radioMan": {
-    "text": "Мужчина",
-    "name": "man",
-    "checked": "checked"
-  },
-  "radioWoman": {
-    "text": "Женщина",
-    "name": "man"
-  },
-  "titleToggle": {
-    "title": "toggle",
-    "mods": "standard column-one__title_focus"
-  },
-  "toggle": {
-    "mod": "checked"
-  },
-  "titleLike": {
-    "title": "like button"
-  },
-  "like": {
-    "number": "2"
-  },
-  "likeTwo": {
-    "number": "12",
-    "checked": "checked"
-  },
-  "titleRate": {
-    "title": "rate button"
-  },
-  "rate": {
-    "newName": "form-elements-2",
-    "checked": "2"
-  },
-  "rateTwo": {
-    "newName": "form-elements",
-    "checked": "1"
-  },
-  "dropGuest": {
-    "className": "dropdown_guest",
-    "mod": "dropdown_active",
-    "items": [
-      {
+        {
+          "title": "кровати",
+          "min": 1,
+          "number": 2,
+          "max": 5
+        },
+        {
+          "title": "ванные комнаты",
+          "max": 4
+        }]
+    },
+
+    "dropGuest": {
+      "className": "dropdown_guest",
+      "mod": "dropdown_active",
+      "items": [{
         "title": "взрослые"
       },
-      {
-        "title": "дети"
-      },
-      {
-        "title": "младенцы"
-      }
-    ]
-  },
-  "titleRich": {
-    "title": "rich checkbox buttons"
-  },
-  "rich": {
-    "title": "Широкий коридор",
-    "text": "Ширина коридоров в номере не менее 91 см."
-  },
-  "richTwo": {
-    "title": "Помощник для инвалидов",
-    "text": "На 1 этаже вас встретит специалист и проводит до номера",
-    "mods": "checkbox-rich__wrap"
-  },
-  "titleRange": {
-    "title": "range slider"
-  },
-  "titleButton": {
-    "title": "buttons"
-  },
-  "buttonOne": {
-    "mods": "content-size,large-height"
-  },
-  "buttonTwo": {
-    "mods": "disable,content-size,large-height"
-  },
-  "buttonTree": {
-    "mods": "with-border,content-size,large-height"
-  },
-  "buttonFour": {
-    "mods": "with-border,disable,content-size"
-  },
-  "buttonFive": {
-    "mods": "with-border,content-none"
-  },
-  "buttonSix": {
-    "mods": "with-border,content-none,color-black"
-  },
-  "buttonSeven": {
-    "text": "Перейти к оплате",
-    "mods": "with-arrow"
-  },
-  "titlePagination": {
-    "title": "pagination"
-  },
-  "pagination": {
-    "className": "pagination__text column-three__pagination-text"
-  },
-  "dropdownThree": {
-    "className": "dropdown_guest",
-    "mod": "dropdown_active",
-    "items": [
-      {
+        {
+          "title": "дети"
+        },
+        {
+          "title": "младенцы"
+        }]
+    },
+    "dropdownThree": {
+      "className": "dropdown_guest",
+      "mod": "dropdown_active",
+      "items": [{
         "title": "взрослые",
         "number": "2"
       },
-      {
-        "title": "дети",
-        "number": "1"
+        {
+          "title": "дети",
+          "number": "1"
+        },
+        {
+          "title": "младенцы"
+        }]
+    }
+  },
+
+  "lists": {
+    "checkListOne": {
+
+      "options": [{
+        "text": "Завтрак"
       },
-      {
-        "title": "младенцы"
-      }
-    ]
-  },
-  "titleBullet": {
-    "title": "bullet list"
-  },
-  "bullet": {
-    "items": [
-      "Нельзя с питомцами",
-      "Без вечеринок и мероприятий",
-      "Время прибытия — после 13:00, а выезд до 12:00"
-    ]
+        {
+          "text": "Письменный стол", "checked": "checked"
+        },
+        {
+          "text":"Стул для кормления","checked": "checked"
+        },
+        {
+          "text":"Кроватка","checked": "checked"
+        },
+        {
+          "text":"Телевизор"
+        },
+        {
+          "text":"Шампунь"
+        }]
+    },
+    "checkListTwo": {
+      "mods": "checkbox-list__icon_rotate",
+      "mod": "checkbox-list__visible",
+      "options": [{
+        "text": "Завтрак"
+      },
+        {
+          "text": "Письменный стол", "checked": "checked"
+        },
+        {
+          "text":"Стул для кормления","checked": "checked"
+        },
+        {
+          "text":"Кроватка","checked": "checked"
+        },
+        {
+          "text":"Телевизор"
+        },
+        {
+          "text":"Шампунь"
+        }]
+    },
+
+    "titleRich": {
+      "title": "rich checkbox buttons",
+      "mods": "standard form-elements__list"
+    },
+    "rich": {
+      "title": "Широкий коридор",
+      "text": "Ширина коридоров в номере не менее 91 см."
+    },
+    "richTwo": {
+      "title": "Помощник для инвалидов",
+      "text": "На 1 этаже вас встретит специалист и проводит до номера",
+      "mods": "checkbox-rich__wrap"
+    },
+    "titleBullet": {
+      "title": "bullet list",
+      "mods": "standard form-elements__list"
+    },
+    "bullet": {
+      "items": [
+        "Нельзя с питомцами",
+        "Без вечеринок и мероприятий",
+        "Время прибытия — после 13:00, а выезд до 12:00"
+      ]
+    }
   },
   "comments": {
-    "title": "insert_emoticon",
-    "titleText": "Комфорт",
-    "contentText": "Шумопоглощающие стены"
-  },
-  "commentsTwo": {
-    "title": "location_city",
-    "titleText": "Удобство",
-    "contentText": "Окно в каждой из спален"
-  },
-  "person": {
-    "title": "Мурад Сарофанов",
-    "text": "5 дней назад",
-    "content": "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.",
-    "image": "murad.jpg",
-    "mod": "12",
-    "checked": "checked"
+    "comment": {
+      "title": "insert_emoticon",
+      "titleText": "Комфорт",
+      "contentText": "Шумопоглощающие стены"
+    },
+    "commentTwo": {
+      "title": "location_city",
+      "titleText": "Удобство",
+      "contentText": "Окно в каждой из спален"
+    },
+    "person": {
+      "title": "Мурад Сарофанов",
+      "text": "5 дней назад",
+      "content": "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.",
+      "image": "murad.jpg",
+      "mod": "12",
+      "checked": "checked"
+    }
   }
 }

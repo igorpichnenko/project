@@ -26,133 +26,140 @@ block content
   -
     data = require("./form-elements.json");
 
-    const {email,hover,pretty,focus,drop,dropdown,Imask,start,end,datepicker,arrow,titleDrop,medium,
-    expanded,bedrooms,checkListOne,checkListTwo,titleCheck,checkOne,checkTwo,checkThree,radioMan,radio,
-    radioWoman,titleToggle,titleLike,toggle,likeTwo,like,titleRate,rateTwo,rate,dropGuest,titleRich,
-    richTwo,rich,titleRange,titleButton,buttonOne,buttonTwo,buttonTree,buttonFour,buttonFive,buttonSix,
-    buttonSeven,titlePagination,pagination,dropdownThree,titleBullet,bullet,comments,commentsTwo,person} = data
+    const { inputs,checkboxs,buttons,dropdowns,lists,comments } = data
 
   .form-elements
-    .column-one
-      form.column-one__form-mask
-        .column-one__container
-          .column-one__title
-            +text-field(email)
-            .column-one__title_hover
-              +title(hover)
-        .column-one__focus
-          +text-field(pretty)
-          .column-one__pretty
-            +title(focus)
-        .column-one__dropdown
-          .column-one__dropdown-title
-            +title(drop)
-          +dropdown(dropdown)
-        .column-one__iMask
-          +text-field(Imask)
-        .column-one__dabl-date.js-datepicker-container
-          .column-one__datepicker
-            +datepicker(start)
-          .column-one__datepicker
-            +datepicker(end)
-        .column-one__medium.js-datepicker-container
-          +datepicker(datepicker)
-          .column-one__subscription
-            +text-field(arrow)
-          .column-one__item
-            +title(titleDrop)
-            +title(hover)
-          .column-one__drop
-            +dropdown(medium)
-          .column-one__drop-medium
-            +title(titleDrop)
-            +title(expanded)
-          .column-one__drop
-            +dropdown(bedrooms)
-          .column-one__checkbox
-            +checkbox-list(checkListOne)
-            .column-one__checkbox-list
-              +checkbox-list(checkListTwo)
-    .column-two
-      +title(titleCheck)
-      .column-two__checkbox
-        +checkbox(checkOne)
-        +checkbox(checkTwo)
-        +checkbox(checkThree)
-      .column-two__radio-title  
-        +title(radio)
-      .column-two__radio    
-        .column-two__radio-button
-          +radio(radioMan)
-        .column-two__radio-button
-          +radio(radioWoman)
-      +title(titleToggle)
-      .column-two__toggle
-        .column-two__toggle-wrap
-         +toggle(toggle)
-        .column-two__toggle-wrap
-         +toggle
-      +title(titleLike)
-      .column-two__like
-        .column-two__like-wrap
-          +like(like)
-        .column-two__like-wrap
-          +like(likeTwo)
-      +title(titleRate)
-      .column-two__rate
-        .column-two__rate-wrap
-          +rate-button(rate)
-        .column-two__rate-wrap
-          +rate-button(rateTwo)
-      +title(titleDrop)
-      .column-two__dropdown
-        +dropdown(dropGuest)
-      .column-two__rich
-        +title(titleRich)
-        .column-two__rich-button
-          +checkbox-rich(rich)
-          +checkbox-rich(richTwo)
-    .column-three
-      .column-three__range
-        +title(titleRange)
-      .column-three__range-slider
-        +range-slider
-      .column-three__title-btn
-        +title(titleButton)
-        .column-three__button-top
-          .column-three__button-wrap
-            +button(buttonOne) 
-          .column-three__button-wrap
-            +button(buttonTwo)
-        .column-three__button-center
-          +button(buttonTree)
-          .column-three__button-small
-            +button(buttonFour)
-        .column-three__button-bottom
-          .column-three__container
-            +button(buttonFive) 
-          .column-three__container
-            +button(buttonSix)
-        .column-three__container
-          .column-three__button
-            +button(buttonSeven)
-        .column-three__pagination-title
-          +title(titlePagination)
-        .column-three__pagination
+   .form-elements__row
+    .form-elements__inputs
+    
+          - const { email,hover,pretty,focus,drop,dropdown,Imask,start,end,datepicker,arrow,mods } =  inputs
+
+          .form-elements__column
+             +text-field(email)
+             +title(hover)
+          .form-elements__column
+             +text-field(pretty)
+             +title(focus)
+          .form-elements__column
+             +title(drop)
+             +dropdown(dropdown)
+          .form-elements__column
+             +text-field(Imask)
+          .form-elements__column(class=mods)
+             +datepicker(start)
+             +datepicker(end)
+          .form-elements__column(class=mods)
+             +datepicker(datepicker)
+          .form-elements__column
+             +text-field(arrow)
+           
+   
+    .form-elements__checkboxs
+    
+          - const {titleCheck,checkOne,checkTwo,checkThree, radio, radioMan,radioWoman,titleToggle, toggle, titleLike, like,likeTwo, titleRate,rate,rateTwo } = checkboxs
+
+          .form-elements__title
+             +title(titleCheck)
+          .form-elements__column
+             +checkbox(checkOne)
+             +checkbox(checkTwo)
+             +checkbox(checkThree)
+          .form-elements__title
+             +title(radio)
+          .form-elements__column
+             +radio(radioMan)
+             +radio(radioWoman)
+          .form-elements__title
+             +title(titleToggle)
+          .form-elements__column
+             +toggle(toggle)
+             +toggle
+          .form-elements__title
+             +title(titleLike)
+          .form-elements__column
+             +like(like)
+             +like(likeTwo)
+          .form-elements__title
+             +title(titleRate)
+          .form-elements__column
+             +rate-button(rate)
+             +rate-button(rateTwo)
+            
+    .form-elements__buttons
+    
+          - const { titleRange,titleButton,buttonOne,buttonTwo,buttonTree,buttonFour,buttonFive,buttonSix,buttonSeven,titlePagination,pagination } = buttons
+    
+          .form-elements__title
+             +title(titleRange)
+          .form-elements__column
+             +range-slider
+          .form-elements__title
+             +title(titleButton)
+          .form-elements__button
+             +button(buttonOne) 
+             +button(buttonTwo)
+          .form-elements__button
+             +button(buttonTree)
+             +button(buttonFour)
+          .form-elements__button
+             +button(buttonFive) 
+             +button(buttonSix)
+          +button(buttonSeven)
+          .form-elements__title
+           +title(titlePagination)
           +pagination(pagination)
-        .column-three__dropdown
-          +title(titleDrop)
-          .column-three__drop
-            +dropdown(dropdownThree)
-        .column-three__bullet
-          +title(titleBullet)
-        .column-three__bullet-list
-          +bullet-list(bullet)
-  .elements-footer
-    .elements-footer__comments
-      +comments(comments)
-      +comments(commentsTwo)
-    .elements-footer__murad
-      +person-comment(person)
+          
+   .form-elements__row
+    .form-elements__dropdowns
+         
+          - const { medium,titleDrop,expanded,bedrooms,dropGuest,dropdownThree } = dropdowns 
+         
+          .form-elements__column
+             .form-elements__column
+               +title(titleDrop)
+               +title(hover)
+               +dropdown(medium)
+             .form-elements__column
+               +title(titleDrop)
+               +title(expanded)
+               +dropdown(bedrooms)
+          .form-elements__column
+             +title(titleDrop)
+             +dropdown(dropGuest)
+          .form-elements__column
+             +title(titleDrop)
+             +dropdown(dropdownThree)     
+             
+   .form-elements__row.row
+    .form-elements__lists
+    
+          - const { checkListOne, checkListTwo,titleRich,rich,richTwo,titleBullet,bullet } = lists
+
+          .form-elements__column
+            .form-elements__column
+               +checkbox-list(checkListOne)
+            .form-elements__column 
+               +checkbox-list(checkListTwo)
+          .form-elements__column
+             +title(titleRich)
+             +checkbox-rich(rich)
+             +checkbox-rich(richTwo)
+          .form-elements__column
+             +title(titleBullet)
+             +bullet-list(bullet)
+           
+   .form-elements__row
+    .form-elements__comments
+    
+          - const { comment,commentTwo,person } = comments
+    
+          .form-elements__column
+             +comments(comment)
+             +comments(commentTwo)
+          .form-elements__column
+             +person-comment(person)
 
   script(src="./form-elements.js")
+  
+
+  

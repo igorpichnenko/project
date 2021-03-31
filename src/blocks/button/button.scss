@@ -12,6 +12,7 @@
   user-select: none;
   text-transform: uppercase;
   white-space: nowrap;
+  display: block;
 
   @include intermediate-text($fs: 12px, $lh: 15px, $fw: bold, $col: #fff);
 
@@ -116,6 +117,5 @@
   &_large-height {
     height: 44px;
     width: 99px;
-
   }
 }
