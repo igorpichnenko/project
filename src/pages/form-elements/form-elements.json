@@ -86,12 +86,12 @@
     "radio": {
       "title": "radio buttons"
     },
-    "radioMan": {
+    "radioOne": {
       "text": "Мужчина",
       "name": "man",
       "checked": "checked"
     },
-    "radioWoman": {
+    "radioTwo": {
       "text": "Женщина",
       "name": "man"
     },

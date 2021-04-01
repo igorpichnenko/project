@@ -56,7 +56,7 @@ block content
    
     .form-elements__checkboxes
     
-          - const {titleCheck,checkOne,checkTwo,checkThree, radio, radioMan,radioWoman,titleToggle, toggle, titleLike, like,likeTwo, titleRate,rate,rateTwo } = checkboxes
+          - const {titleCheck,checkOne,checkTwo,checkThree,radio,radioOne,radioTwo,titleToggle,toggle,titleLike,like,likeTwo,titleRate,rate,rateTwo } = checkboxes
 
           .form-elements__title
              +title(titleCheck)
@@ -67,8 +67,8 @@ block content
           .form-elements__title
              +title(radio)
           .form-elements__column
-             +radio(radioMan)
-             +radio(radioWoman)
+             +radio(radioOne)
+             +radio(radioTwo)
           .form-elements__title
              +title(titleToggle)
           .form-elements__column
