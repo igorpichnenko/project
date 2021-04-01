@@ -26,13 +26,13 @@ block content
   -
     data = require("./form-elements.json");
 
-    const { inputs,checkboxs,buttons,dropdowns,lists,comments } = data
+    const { inputs,checkboxes,buttons,dropdown,lists,comments } = data
 
   .form-elements
    .form-elements__row
     .form-elements__inputs
     
-          - const { email,hover,pretty,focus,drop,dropdown,Imask,start,end,datepicker,arrow,mods } =  inputs
+          - const { email,hover,pretty,focus,drop,dropdownFirst,Imask,start,end,datepicker,arrow,mods } =  inputs
 
           .form-elements__column
              +text-field(email)
@@ -42,7 +42,7 @@ block content
              +title(focus)
           .form-elements__column
              +title(drop)
-             +dropdown(dropdown)
+             +dropdown(dropdownFirst)
           .form-elements__column
              +text-field(Imask)
           .form-elements__column(class=mods)
@@ -54,9 +54,9 @@ block content
              +text-field(arrow)
            
    
-    .form-elements__checkboxs
+    .form-elements__checkboxes
     
-          - const {titleCheck,checkOne,checkTwo,checkThree, radio, radioMan,radioWoman,titleToggle, toggle, titleLike, like,likeTwo, titleRate,rate,rateTwo } = checkboxs
+          - const {titleCheck,checkOne,checkTwo,checkThree, radio, radioMan,radioWoman,titleToggle, toggle, titleLike, like,likeTwo, titleRate,rate,rateTwo } = checkboxes
 
           .form-elements__title
              +title(titleCheck)
@@ -87,7 +87,7 @@ block content
             
     .form-elements__buttons
     
-          - const { titleRange,titleButton,buttonOne,buttonTwo,buttonTree,buttonFour,buttonFive,buttonSix,buttonSeven,titlePagination,pagination } = buttons
+          - const { titleRange,titleButton,btnOne,btnTwo,btnTree,btnFour,btnFive,btnSix,btnSeven,titlePagination,pagination } = buttons
     
           .form-elements__title
              +title(titleRange)
@@ -96,23 +96,23 @@ block content
           .form-elements__title
              +title(titleButton)
           .form-elements__button
-             +button(buttonOne) 
-             +button(buttonTwo)
+             +button(btnOne) 
+             +button(btnTwo)
           .form-elements__button
-             +button(buttonTree)
-             +button(buttonFour)
+             +button(btnTree)
+             +button(btnFour)
           .form-elements__button
-             +button(buttonFive) 
-             +button(buttonSix)
-          +button(buttonSeven)
+             +button(btnFive) 
+             +button(btnSix)
+          +button(btnSeven)
           .form-elements__title
            +title(titlePagination)
           +pagination(pagination)
           
    .form-elements__row
-    .form-elements__dropdowns
+    .form-elements__dropdown
          
-          - const { medium,titleDrop,expanded,bedrooms,dropGuest,dropdownThree } = dropdowns 
+          - const { medium,titleDrop,expanded,bedrooms,dropGuest,dropdownThree } = dropdown
          
           .form-elements__column
              .form-elements__column

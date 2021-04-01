@@ -45,9 +45,7 @@
     text-align: center;
     outline: none;
     padding-bottom: 3px;
-    -moz-appearance: textfield;
-    -webkit-appearance: none;
-
+    
     @include small-text;
   }
 
@@ -57,4 +55,3 @@
     cursor: unset;
   }
 }
-

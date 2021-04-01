@@ -49,18 +49,18 @@
     width: 150px;
   }
 
-  &__checkboxs {
+  &__checkboxes {
     width: 320px;
   }
 
-  &__checkboxs &__column:nth-child(4),
+  &__checkboxes &__column:nth-child(4),
   &__column:nth-child(8),
   &__column:nth-child(10) {
     display: flex;
     gap: 15px;
   }
 
-  &__checkboxs &__column:nth-child(6) {
+  &__checkboxes &__column:nth-child(6) {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -71,7 +71,7 @@
     margin-bottom: 10px;
   }
 
-  &__checkboxs &__title:first-child {
+  &__checkboxes &__title:first-child {
     margin-top: 0;
   }
 
@@ -99,14 +99,14 @@
     padding-top: 30px;
   }
 
-  &__dropdowns,
+  &__dropdown,
   &__comments,
   &__lists {
     display: flex;
     gap: 80px;
   }
 
-  &__dropdowns &__column:first-child {
+  &__dropdown &__column:first-child {
     padding-bottom: 40px;
   }
 

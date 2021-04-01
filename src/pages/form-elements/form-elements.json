@@ -23,7 +23,7 @@
     "drop": {
       "title": "dropdown"
     },
-    "dropdown": {
+    "dropdownFirst": {
       "className": "dropdown_guest",
       "items": [{
         "title": "взрослые"
@@ -66,7 +66,7 @@
     }
   },
 
-  "checkboxs": {
+  "checkboxes": {
     "titleCheck": {
       "title": "checkbox buttons"
     },
@@ -133,25 +133,25 @@
     "titleButton": {
       "title": "buttons"
     },
-    "buttonOne": {
+    "btnOne": {
       "mods": "content-size,large-height"
     },
-    "buttonTwo": {
+    "btnTwo": {
       "mods": "disable,content-size,large-height"
     },
-    "buttonTree": {
+    "btnTree": {
       "mods": "with-border,content-size,large-height"
     },
-    "buttonFour": {
+    "btnFour": {
       "mods": "with-border,disable,content-size, large-height"
     },
-    "buttonFive": {
+    "btnFive": {
       "mods": "with-border,content-none,large-height"
     },
-    "buttonSix": {
+    "btnSix": {
       "mods": "with-border,content-none,color-black,large-height"
     },
-    "buttonSeven": {
+    "btnSeven": {
       "text": "Перейти к оплате",
       "mods": "with-arrow"
     },
@@ -163,7 +163,7 @@
     }
   },
 
-  "dropdowns": {
+  "dropdown": {
 
     "titleDrop": {
       "title": "dropdown",
