@@ -1,8 +1,14 @@
 .nav-list {
   display: flex;
   list-style: none;
+ 
+  
 
-  @media (max-width: 970px) {
+  @media (max-width: 1100px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 550px) {
     flex-direction: column;
   }
 
@@ -10,30 +16,13 @@
     margin-left: 20px;
     text-decoration: none;
     position: relative;
-    text-align: center;
+    
     cursor: pointer;
 
     @include intermediate-text;
 
-    @media (max-width: 1120px) {
+    @media (max-width: 1400px) {
       margin-left: 10px;
-    }
-
-    @media (max-width: 1130px) {
-      margin-left: 5px;
-    }
-
-    @media (max-width: 970px) {
-      padding-left: 43%;
-      text-align: left;
-    }
-
-    @media (max-width: 800px) {
-      padding-left: 40%;
-    }
-
-    @media (max-width: 500px) {
-      padding-left: 35%;
     }
 
     &:hover {
@@ -48,7 +37,7 @@
   &__text:nth-child(2) {
     margin-right: 25px;
 
-    @media (max-width: 970px) {
+    @media (max-width: 550px) {
       margin-right: 0;
     }
 
@@ -60,11 +49,6 @@
   }
 
   &__text:nth-child(5) {
-    margin-right: 10px;
-
-    @media (max-width: 767px) {
-      margin-right: 0;
-    }
 
     &:after {
       position: absolute;

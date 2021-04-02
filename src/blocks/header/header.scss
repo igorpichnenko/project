@@ -5,47 +5,72 @@
   box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, .05);
 
   &__container {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr .5fr;
+    align-items: center ;
+    column-gap: 44px;
+
     @include container(1%, 9.7%, 1%, 9.7%);
-
-    @include flex-between;
-
-    @media (max-width: 970px) {
-      flex-direction: column;
-      align-items: unset;
-      justify-content: center;
     
+    @media (max-width: 1300px) {
+      grid-template-columns: .3fr 1.2fr .5fr;
+    }
+
+    @media (max-width: 1100px) {
+      
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 15px 1fr;
+    }
+
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 15px .5fr .3fr .5fr;
     }
   }
 
   &__nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-self: self-end;
+    grid-column-start: 2;
+    grid-column-end: 3;  
 
-    @media (max-width: 970px) {
+
+    @media (max-width: 1100px) {
+      justify-self: unset;
+      grid-row-start: 3;
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    @media (max-width: 550px) {
+      grid-row-start: 3;
+      grid-column: 1/2;
       display: none;
-      margin-top: 10px;
-      
+      margin-bottom: 10px;
     }
   }
 
   &__items {
-    padding-right: 3.38%;
 
-    @media (max-width: 990px) {
+ 
+    grid-column: 3/4;
 
-      padding-right: 10px;
+    @media (max-width: 550px) {
+      grid-row-start: 4;
+      grid-column: 1/4;
+  
     }
   }
+
+
 
   &__buttons {
     display: flex;
     
-    @media (max-width: 970px) {
-      margin-top: 10px;
-
-      @include flex-column-center;
+    
+    @media (max-width: 550px) {
+      
+      justify-content: space-between;
+      padding-bottom: 10px;
 
     }
   }
@@ -53,6 +78,12 @@
   &__left-button {
     height: 34px;
     width: 87px;
+
+    @media (max-width: 370px) {
+     
+      width: 40%;
+
+    }
   }
 
   &__right-button {
@@ -65,26 +96,27 @@
       margin-left: 10px;
     }
 
-    @media (max-width: 970px) {
-
-      margin-top: 10px;
+    @media (max-width: 370px) {
+      width: 70%;
+     
     }
   }
 
   &__element {
-    line-height: 0;
     display: flex;
     justify-content: space-between;
+    grid-column: 1/2;
+
+    @media (max-width: 550px) {
+      grid-row-start: 2;
+      grid-column: 1/4;
+  
+    }
   }
 
   &__logo {
     width: 105.69px;
     height: 40px;
-
-    @media (max-width: 970px) {
-
-      margin-top: 10px;
-    }
   }
 
   &__person {
@@ -94,7 +126,7 @@
 
     @include intermediate-text;
 
-    @media (max-width: 970px) {
+    @media (max-width: 550px) {
       @include flex-column-center;
 
     }

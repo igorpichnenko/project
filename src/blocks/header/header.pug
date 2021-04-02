@@ -12,13 +12,13 @@ mixin header(options={})
               target="_blank"
             )
               include ../../public/images/logo-main.svg
-
-          +burger
+          .header-main__burger
+            +burger
 
         nav.header-main__nav.js-header-nav
           +header-nav(list)
 
-          .header-main__items
+        .header-main__items
 
           if login
             .header-main__buttons

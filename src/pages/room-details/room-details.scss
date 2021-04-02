@@ -9,9 +9,12 @@
     grid-template-areas: 'big first-small'
       'big second-small';
     grid-template-columns: 70% 30%;
-    height: calc(100vw / 3);
+    height: 485px;
+
+    @media (max-width: 1439px) {
+      height: calc(100vw / 3);
     
-  
+    }
 
     @media (max-width: 550px) {
       grid-template-areas: 'big'
