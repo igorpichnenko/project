@@ -1,0 +1,31 @@
+mixin checkboxes(checkboxes)
+    
+         - const {checkOne,checkTwo,checkThree,radio,radioOne,radioTwo,toggle,like,likeTwo,rate,rateTwo, title } = checkboxes
+         - const { titleCheck,titleLike,titleRate,titleToggle } = title
+         .checkboxes
+          .checkboxes__title
+             +title(titleCheck)
+          .checkboxes__column
+             +checkbox(checkOne)
+             +checkbox(checkTwo)
+             +checkbox(checkThree)
+          .checkboxes__title
+             +title(radio)
+          .checkboxes__radio
+             +radio(radioOne)
+             +radio(radioTwo)
+          .checkboxes__title
+             +title(titleToggle)
+          .checkboxes__toggle
+             +toggle(toggle)
+             +toggle
+          .checkboxes__title
+             +title(titleLike)
+          .checkboxes__like
+             +like(like)
+             +like(likeTwo)
+          .checkboxes__title
+             +title(titleRate)
+          .checkboxes__rate
+             +rate-button(rate)
+             +rate-button(rateTwo)

@@ -1,0 +1,22 @@
+mixin inputs(inputs)
+    
+      - const { email,hover,pretty,focus,drop,dropdownFirst,Imask,start,end,datepicker,arrow,mods } =  inputs
+      .inputs
+          .inputs__row
+             +text-field(email)
+             +title(hover)
+          .inputs__row
+             +text-field(pretty)
+             +title(focus)
+          .inputs__row
+             +title(drop)
+             +dropdown(dropdownFirst)
+          .inputs__row
+             +text-field(Imask)
+          .inputs__row.inputs__calendar(class=mods)
+             +datepicker(start)
+             +datepicker(end)
+          .inputs__row.inputs__container(class=mods)
+             +datepicker(datepicker)
+          .inputs__row.inputs__container
+             +text-field(arrow)

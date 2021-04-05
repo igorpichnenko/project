@@ -1,6 +1,6 @@
 .like {
   position: relative;
-
+  
   &__label {
     @include intermediate-text($fs: 10px, $col: $dark25,$lh: 10px);
   }
@@ -11,7 +11,7 @@
     border: solid 1px $dark25;
     width: 38px;
     height: 18px;
-    display: block;
+    display: block; 
   }
 
   &__number {
@@ -19,6 +19,7 @@
     left: 21.7px;
     top: 5px;
     display: block;
+    cursor: pointer;
   }
 
   &__input {
@@ -33,6 +34,7 @@
     background-color: #fff;
     appearance: none;
     outline: none;
+    cursor: pointer;
   
 
     &::before {

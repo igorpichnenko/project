@@ -1,0 +1,8 @@
+.comments {
+  display: flex;
+  gap: 80px;
+
+  &__row:last-child {
+    width: 710px;
+  }
+}

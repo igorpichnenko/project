@@ -1,0 +1,14 @@
+.dropdown-ui {
+  display: flex;
+  gap: 80px;
+
+  &__row {
+    width: 320px;
+    position: relative;
+
+    &:first-child {
+      padding-bottom: 40px;
+    }
+  }
+
+}

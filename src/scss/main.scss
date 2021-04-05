@@ -37,11 +37,25 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 @import '../layouts/base.scss';
 
+// blocks-ui
+
+@import '../blocks-ui/color-options/color-options.scss';
+
+@import '../blocks-ui/title-options/title-options.scss';
+
+@import '../blocks-ui/inputs/inputs.scss';
+
+@import '../blocks-ui/checkboxes/checkboxes.scss';
+
+@import '../blocks-ui/comments/comments.scss';
+
+@import '../blocks-ui/dropdown/dropdown.scss';
+
+@import '../blocks-ui/lists/lists.scss';
+
+@import '../blocks-ui/buttons/buttons.scss';
+
 // blocks style
-
-@import '../blocks/color-options/color-options.scss';
-
-@import '../blocks/title-options/title-options.scss';
 
 @import '../blocks/footer/footer.scss';
 

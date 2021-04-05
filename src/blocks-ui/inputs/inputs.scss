@@ -1,0 +1,21 @@
+.inputs {
+  width: 320px;
+
+  &__row {
+    margin-bottom: 20px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__calendar {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__container {
+    width: 266px;
+  }
+}

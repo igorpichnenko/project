@@ -67,9 +67,21 @@
   },
 
   "checkboxes": {
+    "title": {
     "titleCheck": {
       "title": "checkbox buttons"
     },
+    "titleToggle": {
+      "title": "toggle",
+      "mods": "standard column-one__title_focus"
+    },
+    "titleRate": {
+      "title": "rate button"
+    },
+    "titleLike": {
+      "title": "like button"
+    }
+  },
     "checkOne": {
       "text": "Можно курить"
     },
@@ -95,16 +107,11 @@
       "text": "Женщина",
       "name": "man"
     },
-    "titleToggle": {
-      "title": "toggle",
-      "mods": "standard column-one__title_focus"
-    },
+    
     "toggle": {
       "mod": "checked"
     },
-    "titleLike": {
-      "title": "like button"
-    },
+    
     "like": {
       "number": "2"
     },
@@ -112,9 +119,7 @@
       "number": "12",
       "checked": "checked"
     },
-    "titleRate": {
-      "title": "rate button"
-    },
+   
     "rate": {
       "newName": "form-elements-2",
       "checked": "2"

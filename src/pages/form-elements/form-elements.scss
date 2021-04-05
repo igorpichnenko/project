@@ -18,25 +18,9 @@
     margin-bottom: 0;
   }
 
-  &__inputs {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
   &__column {
     width: 320px;
     position: relative;
-  }
-
-  &__column:nth-child(5) {
-    display: flex;
-    gap: 15px;
-  }
-
-  &__column:nth-child(7),
-  &__column:nth-child(6) {
-    width: 266px;
   }
 
   &__title_absolute {
@@ -49,81 +33,7 @@
     width: 150px;
   }
 
-  &__checkboxes {
-    width: 320px;
-  }
-
-  &__checkboxes &__column:nth-child(4),
-  &__column:nth-child(8),
-  &__column:nth-child(10) {
-    display: flex;
-    gap: 15px;
-  }
-
-  &__checkboxes &__column:nth-child(6) {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  &__title {
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-
-  &__checkboxes &__title:first-child {
-    margin-top: 0;
-  }
-
-  &__buttons &__title:first-child {
-    margin-top: 0;
-  }
-
-  &__buttons {
-    width: 320px;
-  }
-
-  &__button {
-    display: flex;
-    height: 44px;
-    width: 320px;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  &__buttons &__button:nth-child(6) {
-    margin-bottom: 10px;
-  }
-
-  &__buttons &__title:nth-child(3) {
-    padding-top: 30px;
-  }
-
-  &__dropdown,
-  &__comments,
-  &__lists {
-    display: flex;
-    gap: 80px;
-  }
-
-  &__dropdown &__column:first-child {
-    padding-bottom: 40px;
-  }
-
   &__subtitle {
     margin-bottom: 6px;
-  }
-
-  &__lists &__column:first-child {
-    margin-bottom: 40px;
-
-  }
-
-  &__list {
-    margin-bottom: 20px;
-  }
-  
-  &__comments &__column:nth-child(2) {
-    width: 710px;
   }
 }

@@ -1,0 +1,16 @@
+.lists {
+  display: flex;
+  gap: 80px;
+
+  &__row {
+    width: 266px;
+  }
+
+  &__row:first-child {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}

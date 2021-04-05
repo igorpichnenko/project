@@ -1,0 +1,24 @@
+mixin buttons(buttons)
+    
+      - const { titleRange,titleButton,btnOne,btnTwo,btnTree,btnFour,btnFive,btnSix,btnSeven,titlePagination,pagination } = buttons
+      .buttons
+          .buttons__title
+             +title(titleRange)
+          .buttons__slider
+             +range-slider
+          .buttons__title
+             +title(titleButton)
+          .buttons__item
+             +button(btnOne) 
+             +button(btnTwo)
+          .buttons__item
+             +button(btnTree)
+             +button(btnFour)
+          .buttons__item
+             +button(btnFive) 
+             +button(btnSix)
+          .buttons__item
+           +button(btnSeven)
+          .buttons__title
+           +title(titlePagination)
+          +pagination(pagination)
