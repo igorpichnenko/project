@@ -4,10 +4,10 @@
 
   &__row {
     width: 266px;
-  }
 
-  &__row:first-child {
-    margin-bottom: 40px;
+    &:first-child {
+      margin-bottom: 40px;
+    }
   }
 
   &__title {

@@ -13,13 +13,11 @@
   @media (max-width: 500px) {
     padding: 10% 1% 5% 10%;
   }
-  
 
   &__container {
     max-width: 320px;
-
   }
-  
+
   &__inputs {
     margin-top: 16px;
 
@@ -48,7 +46,6 @@
 
   &__data {
     margin-top: 20.5px;
-
   }
 
   &__mask {
@@ -76,14 +73,12 @@
   &__toggle {
     margin-bottom: 25px;
     display: flex;
-
   }
 
   &__sign-in {
     margin-top: 28.5px;
     display: flex;
     align-items: center;
-   
   }
 
   &__btn {
@@ -99,7 +94,7 @@
   &__button {
     margin-top: 1px;
     margin-left: 35.8px;
-    
+
     @media (max-width: 790px) {
       margin-left: 5px;
     }
@@ -115,33 +110,22 @@
   }
 
   &__text {
-    font-family: Montserrat, Arial, sans-serif;  
-    color: #000;
     white-space: nowrap;
 
     @media (min-width: 790px) {
-      font-size: 14px;
-      line-height: 18px;
+      @include intermediate-text($fs: 14px, $lh: 18px, $col: #000);
     }
 
     @media (max-width: 789px) {
-      font-size: 12px;
-      line-height: 15px;
+      @include intermediate-text($fs: 12px, $lh: 15px, $col: #000);
     }
   }
 
-  &__title_wrap {
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    color: $dark100;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 25px;
+  &__title {
+    @include intermediate-text($fs: 20px, $lh: 25px, $col: $dark100, $fw: bold);
 
     @media (min-width: 790px) {
-      font-size: 24px;
-      line-height: 29px;
-
+      @include intermediate-text($fs: 24px, $lh: 29px, $col: $dark100, $fw: bold);
     }
   }
 

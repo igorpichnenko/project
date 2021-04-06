@@ -10,7 +10,7 @@
     },
     "focus": {
       "title": "hover / focus",
-      "mods": "hover column-one__title_focus form-elements__title_absolute"
+      "mods": "hover form-elements__title_absolute"
     },
     "mods": "js-datepicker-container",
 
@@ -73,7 +73,7 @@
     },
     "titleToggle": {
       "title": "toggle",
-      "mods": "standard column-one__title_focus"
+      "mods": "standard"
     },
     "titleRate": {
       "title": "rate button"

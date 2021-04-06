@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
 
-
   &__container {
     display: flex;
     margin-top: 2px;
@@ -19,5 +18,4 @@
 
     @include intermediate-text($fw: bold, $fs: 14px, $lh: 18px);
   }
-
 }

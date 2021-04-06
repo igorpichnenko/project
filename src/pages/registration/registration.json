@@ -30,7 +30,7 @@
     "data": {
       "regAccount": {
         "title": "Регистрация аккаунта",
-        "mods": "stand registration__title_wrap",
+        "mods": "stand",
         "tag": "h1"
       },
       "name": {

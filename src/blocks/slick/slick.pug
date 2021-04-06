@@ -1,4 +1,4 @@
 mixin slick({images})
   .slick.js-slick 
     each image in images
-      .images(style=`background-image: url( ${require('./images/' + image)})`)
+      .slick__images(style=`background-image: url( ${require('./images/' + image)})`)

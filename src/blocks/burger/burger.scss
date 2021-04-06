@@ -38,16 +38,16 @@
     }
   }
   
-  &__item.burger__item_active  &__items {
+  &__item.burger_active-item  &__items {
     background: #fff;
   }
 
-  &__item.burger__item_active &__items::before {
+  &__item.burger_active-item &__items::before {
     top: 0;
     transform: rotate(45deg);
   }
 
-  &__item.burger__item_active &__items::after {
+  &__item.burger_active-item &__items::after {
     top: 0;
     transform: rotate(135deg);
   }

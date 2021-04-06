@@ -3,7 +3,6 @@
   min-width: 320px;
   padding: 8.23% 12.5% 8.23% 12.5%;
   
-
   @include flex-column-center;
 
   @media (max-width: 760px) {
@@ -41,7 +40,7 @@
     margin-right: 22px;
   }
 
-  &__icon_absolute {
+  &__icon_position-absolute {
     position: absolute;
     bottom: 2.3px;
     right: 87.2px;

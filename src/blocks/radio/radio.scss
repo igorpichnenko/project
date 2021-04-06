@@ -6,7 +6,6 @@
     opacity: 0;
     margin: 10px 0 0 7px;
   
-
     &:checked + .radio__text:after {
       opacity: 1;
     }
@@ -30,7 +29,6 @@
     cursor: pointer;
 
     @include body-text($dark50);
-  
 
     &:before {
       box-sizing: border-box;

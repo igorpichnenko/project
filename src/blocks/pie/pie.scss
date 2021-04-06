@@ -37,36 +37,36 @@
     @media (max-width: 330px) {
       margin-left: 15px;
     }
-  }
+  
+    &:hover {
+      opacity: .8;
+    }
 
-  &__item:hover {
-    opacity: .8;
-  }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+    }
 
-  &__item::before {
-    content: '';
-    position: absolute;
-    top: 7px;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 100px;
-  }
+    &:nth-child(1)::before {
+      background: $yellow-gradient;
+    }
 
-  &__item:nth-child(1)::before {
-    background: $yellow-gradient;
-  }
+    &:nth-child(2)::before {
+      background: $secondary-gradient;
+    }
 
-  &__item:nth-child(2)::before {
-    background: $secondary-gradient;
-  }
+    &:nth-child(3)::before {
+      background: $primary-gradient;
+    }
 
-  &__item:nth-child(3)::before {
-    background: $primary-gradient;
-  }
-
-  &__item:nth-child(4)::before {
-    background: $black-gradient;
+    &:nth-child(4)::before {
+      background: $black-gradient;
+    }
   }
 
   &__svg {
@@ -76,7 +76,7 @@
     transform: scale(-1,1);
   }
 
-  &_pie-chart {
+  &__pie-chart {
     position: relative;
     display: inline-block;
     margin-top: 21.5px;

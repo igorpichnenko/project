@@ -8,7 +8,7 @@ mixin formlux({data})
       .card-lux__calendar.js-datepicker-container
         .card-lux__datepicker
           +datepicker(startData)
-        .card-lux__datepicker_end
+        .card-lux__datepicker
           +datepicker(endData)
       .card-lux__title
         +title(title)
@@ -17,16 +17,16 @@ mixin formlux({data})
 
       .card-lux__wrapper 
         .card-lux__price
-          span.card-lux__text.card-lux__text_left.js-price= cost
+          span.card-lux__text.card-lux__text_position-left.js-price= cost
           span.card-lux__text.js-sum 39 960₽
         .card-lux__price
-          span.card-lux__text.card-lux__text_left= text
+          span.card-lux__text.card-lux__text_position-left= text
             span.card-lux__discount.js-discount= discount
-            span.card-lux__label.card-lux__label_top i
+            span.card-lux__label i
           span.card-lux__text.js-discountOut 0₽
         .card-lux__price
           .card-lux__text.card-lux__text_wrap= tax
-            span.card-lux__label.card-lux__label_icon-right i
+            span.card-lux__label i
           .card-lux__text.js-service 300₽
     .card-lux__bottom(class=mod)
       .card-lux__wrap

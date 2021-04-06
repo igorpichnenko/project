@@ -3,35 +3,29 @@
 .room-details {
   flex: 1 0 auto;
   
-  
   &__photos {
     display: grid;
+    height: 485px;
     grid-template-areas: 'big first-small'
       'big second-small';
     grid-template-columns: 70% 30%;
-    height: 485px;
 
     @media (min-width: 1490px) {
       height: calc(120vw / 3);
-    
     }
 
     @media (max-width: 1439px) {
       height: calc(100vw / 3);
-    
     }
 
     @media (max-width: 550px) {
+      height: 100%;
       grid-template-areas: 'big'
         'first-small'
         'second-small';
       grid-template-columns: 100%;
-      height: 100%;
-    
-    
     }
   }
-
 
   &__photo {
     object-fit: cover;
@@ -39,19 +33,15 @@
     height: 100%;
 
     &:nth-child(1) {
-      
       grid-area: first-small;
     }
 
     &:nth-child(2) {
-    
       grid-area: big;
-     
     }
 
     &:nth-child(3) {
       grid-area: second-small;
-     
     }
   }
 
@@ -138,18 +128,7 @@
     }
   }
 
-  &__title_lower {
-    margin-top: 2.5px;
-    margin-right: 70px;
-
-    @include intermediate-text($lh: 14px);
-
-    @media (max-width: 350px) {
-      margin: 0;
-    }
-  }
-
-  &__title_murad {
+  &__murad {
     width: 711px;
     padding-top: 2px;
 

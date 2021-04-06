@@ -8,9 +8,7 @@
   
   @media (max-width: 360px) {
     padding: 8% 2%;
- 
   }
-
 
   &__container {
     max-width: 320px;
@@ -26,14 +24,12 @@
     @media (max-width: 360px) {
       width: 90%;
     }
-  
   }
   
   &__input + &__input {
     margin-top: 5px;
   }
   
-
   &__item {
     padding-top: 29px;
 
@@ -52,7 +48,7 @@
     }
   }
 
-  &__button-wrap {
+  &__button {
     margin-right: 1.6px;
     margin-top: 1px;
     
@@ -60,7 +56,6 @@
       margin-left: 4px;
     }
   }
-
 
   &__btn {
     width: 320px;

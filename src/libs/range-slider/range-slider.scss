@@ -36,10 +36,6 @@
     display: none;
   }
 
-  &__tooltip_bg {
-    color: white;
-  }
-
   &__roller {
     transform: translateX(-50%);
   }
@@ -61,7 +57,7 @@
   &__out-start {
     right: 58px;
     bottom: 28px;
-  
+
 
     &:after {
       content: '-';
@@ -86,18 +82,11 @@
     position: absolute;
     border-radius: 5px;
     background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
-  }
-
-  &__bar {
     height: 5px;
     top: 4px;
   }
 
   &__scale {
     position: relative;
-  }
-
-  &__scale_none {
-    display: none;
   }
 }

@@ -1,7 +1,7 @@
 {
   "sliderCard": {
     "data": {
-      "className": "price__text_low",
+      "className": "price__text_size-lower",
       "text": "888",
       "price": "9 990₽",
       "mods": "люкс",
@@ -13,7 +13,7 @@
   },
   "sliderCardTwo": {
     "data": {
-      "className": "price__text_low",
+      "className": "price__text_size-lower",
       "text": "840",
       "price": "9 900₽",
       "number": "65",

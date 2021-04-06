@@ -20,7 +20,6 @@
 
   &__container {
     max-width: 320px;
-
   }
 
   &__calendar {
@@ -32,21 +31,19 @@
   &__price-mix {
     @media (max-width: 360px) {
       width: 90%;
-
     }
   }
 
-  &__datepicker,
-  &__datepicker_end {
+  &__datepicker {
     width: 150px;
 
     @media (max-width: 360px) {
       width: 120px;
     }
-  }
 
-  &__datepicker_end {
-    margin-left: 20px;
+    &:last-child {
+      margin-left: 20px;
+    }
   }
 
   &__title {
@@ -69,7 +66,7 @@
     @include body-text;
   }
 
-  &__text_left {
+  &__text_position-left {
     margin-left: 1px;
     margin-top: .5px;
   }
@@ -91,13 +88,12 @@
     display: inline-block;
     padding-top: 3.5px;
     margin-left: 6px;
-    
+
     @include intermediate-text($fw: bold, $col: $dark25, $fs: 10px, $lh: 11px);
-    
+
     @media (max-width: 360px) {
       padding-top: 3px;
       margin-top: 0;
-    
     }
   }
 
@@ -138,7 +134,7 @@
   &__button {
     margin-top: 21px;
     width: 320px;
-    
+
     @media (max-width: 1430px) {
       width: 100%;
     }
@@ -151,6 +147,5 @@
 
   &__dropdown {
     width: 100%;
-
   }
 }

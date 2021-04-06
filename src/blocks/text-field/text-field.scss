@@ -8,7 +8,7 @@
   }
 
   &__button,
-  &__button_arrow {
+  &__button_with-arrow {
     border: unset;
     background: none;
     cursor: pointer;
@@ -21,7 +21,7 @@
     @include material-font($bg: $primary);
   }
 
-  &__button_arrow {
+  &__button_with-arrow {
     pointer-events: none;
 
     @include material-font;
@@ -87,8 +87,6 @@
     height: 44px;
     width: 100%;
     outline: none;
-    
-    
 
     @include intermediate-text($fs: 14px, $lh: 18px, $col: $dark75);
     

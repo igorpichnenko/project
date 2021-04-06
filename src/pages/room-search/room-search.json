@@ -5,7 +5,7 @@
     "text": "19 авг - 23 авг",
     "data": "d M",
     "button": "expand_more",
-    "mod": "text-field__button_arrow",
+    "mod": "text-field__button_with-arrow",
     "label": "Даты пребывания в отеле"
   },
   "subtitle": {
@@ -107,7 +107,7 @@
 
   "slider": {
     "data": {
-      "className": "price__text_low",
+      "className": "price__text_size-lower",
       "classlux": "price__lux room-search__lux",
       "text": "888",
       "price": "9 990₽",
@@ -128,7 +128,7 @@
     },
     "sliderOne": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "840",
         "price": "9 900₽",
         "number": "65",
@@ -139,7 +139,7 @@
     },
     "sliderTwo": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "classlux": "price__lux room-search__lux",
         "text": "980",
         "price": "8 500₽",
@@ -152,7 +152,7 @@
     },
     "sliderThree": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "856",
         "price": "7 300₽",
         "number": "19",
@@ -163,7 +163,7 @@
     },
     "sliderFour": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "740",
         "price": "6 000₽",
         "number": "44",
@@ -174,7 +174,7 @@
     },
     "sliderFive": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "982",
         "price": "5 800₽",
         "number": "56",
@@ -185,7 +185,7 @@
     },
     "sliderSix": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "678",
         "price": "5 500₽",
         "number": "45",
@@ -196,7 +196,7 @@
     },
     "sliderSeven": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "450",
         "price": "5 300₽",
         "number": "39",
@@ -207,7 +207,7 @@
     },
     "sliderEight": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "350",
         "price": "5 000₽",
         "number": "77",
@@ -218,7 +218,7 @@
     },
     "sliderNine": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "666",
         "price": "5 000₽",
         "number": "25",
@@ -229,7 +229,7 @@
     },
     "sliderTen": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "444",
         "price": "5 000₽",
         "number": "15",
@@ -240,7 +240,7 @@
     },
     "sliderEleven": {
       "data": {
-        "className": "price__text_low",
+        "className": "price__text_size-lower",
         "text": "352",
         "price": "5 000₽",
         "number": "55",

@@ -27,33 +27,33 @@
     width: 70px;
     height: 70px;
     border-radius: 6px;
-  }
 
-  &__block_dark100 {
-    background-color: $dark100;
-  }
+    &_dark100 {
+      background-color: $dark100;
+    }
 
-  &__block_dark75 {
-    background-color: $dark75;
-  }
+    &_dark75 {
+      background-color: $dark75;
+    }
 
-  &__block_dark50 {
-    background-color: $dark50;
-  }
+    &_dark50 {
+      background-color: $dark50;
+    }
 
-  &__block_dark25 {
-    background-color: $dark25;
-  }
+    &_dark25 {
+      background-color: $dark25;
+    }
 
-  &__block_dark5 {
-    background-color: $dark5;
-  }
+    &_dark5 {
+      background-color: $dark5;
+    }
 
-  &__block_purple {
-    background-color: $primary;
-  }
+    &_purple {
+      background-color: $primary;
+    }
 
-  &__block_green {
-    background-color: $secondary;
+    &_green {
+      background-color: $secondary;
+    }
   }
 }

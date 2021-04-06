@@ -1,8 +1,7 @@
 .price {
   display: flex;
   justify-content: space-between;
-
-
+  
   &__container {
     display: flex;
   }
@@ -20,7 +19,7 @@
     @include large-text;
   }
 
-  &__text_low {
+  &__text_size-lower {
     margin-left: 3px;
 
     @include intermediate-text(
@@ -53,5 +52,4 @@
 
     @include intermediate-text($fs: 12px, $lh: 18px);
   }
-
 }

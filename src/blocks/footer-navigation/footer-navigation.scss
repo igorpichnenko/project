@@ -13,15 +13,15 @@
     &:hover {
       @include intermediate-text(bold, $dark75);
     }
-  }
 
-  &__list:first-child {
-    text-transform: uppercase;
+    &:first-child {
+      text-transform: uppercase;
 
-    @include small-text;
-  }
+      @include small-text;
+    }
 
-  &__list:nth-child(2) {
-    margin-top: 13.7%;
+    &:nth-child(2) {
+      margin-top: 13.7%;
+    }
   }
 }

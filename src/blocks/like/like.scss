@@ -35,17 +35,14 @@
     appearance: none;
     outline: none;
     cursor: pointer;
-  
-
+ 
     &::before {
       content: 'favorite_border';
       font-family: 'Material Icons';
-      font-family: Material Icons;
       font-size: 10px;
       color: $dark25;
       margin-left: 5px;
       margin-right: 5px;
-
     }
 
     &:checked::before {

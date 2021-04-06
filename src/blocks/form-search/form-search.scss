@@ -17,16 +17,10 @@
 
   &__wrapper {
     max-width: 320px;
-
-    
-  }
-
-  &__wrap-title {
-    max-width: 300px;
   }
 
   &__container {
-    box-sizing: border-box;
+    max-width: 300px;
   }
 
   &__calendar {
@@ -42,7 +36,6 @@
     @media (max-width: 450px) {
       width: 94%;
     }
-    
   }
 
   &__title {
@@ -54,10 +47,8 @@
 
     @media (max-width: 450px) {
       width: 94%;
-    
     }
   }
-
 
   &__datepicker {
     width: 150px;

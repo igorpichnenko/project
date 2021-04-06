@@ -2,8 +2,6 @@
   display: flex;
   list-style: none;
  
-  
-
   @media (max-width: 1100px) {
     justify-content: space-between;
   }
@@ -16,7 +14,6 @@
     margin-left: 20px;
     text-decoration: none;
     position: relative;
-    
     cursor: pointer;
 
     @include intermediate-text;
