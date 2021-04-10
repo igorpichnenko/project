@@ -41,8 +41,8 @@ import '../../blocks/iMask/iMask-init';
       window.history.pushState({
         param: 'Value',
       }, '', 'registration.html');
-      this.room.classList.add('registration-container_reg-bg');
-      this.room.classList.remove('registration-container_signIn-bg');
+      this.room.classList.add('registration-container__reg-background');
+      this.room.classList.remove('registration-container__signing-background');
     }
   
     private handleSignInButtonClick() {
@@ -51,8 +51,8 @@ import '../../blocks/iMask/iMask-init';
       window.history.pushState({
         param: 'Value',
       }, '', 'signing.html');
-      this.room.classList.remove('registration-container_reg-bg');
-      this.room.classList.add('registration-container_signIn-bg');
+      this.room.classList.remove('registration-container__reg-background');
+      this.room.classList.add('registration-container__signing-background');
     }
   }
   

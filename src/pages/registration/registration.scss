@@ -7,7 +7,7 @@
   
   @include flex-center;
   
-  &_reg-bg {
+  &__reg-background {
     background: url('./images/registration.jpg');
     height: 683px;
     min-width: 320px;
@@ -15,7 +15,7 @@
     @include foto-bg-size;
   }
 
-  &_signIn-bg {
+  &__signing-background {
     background: url('./images/signIn.jpg');
     height: 702px;
     min-width: 320px;

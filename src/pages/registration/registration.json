@@ -2,7 +2,7 @@
   "formSignIn": {
     "data": {
       "text": {
-        "mods": "large",
+        "mods": "large-size",
         "title": "Войти",
         "tag": "h1"
       },
@@ -15,7 +15,7 @@
         "text": "Email"
       },
       "btnIn": {
-        "mods": "with-border,content-size,large-height js-button_regCreate",
+        "mods": "with-border,content-size,small-size js-button_regCreate",
         "text": "Создать"
       },
       "btnSign": {
@@ -52,7 +52,7 @@
         "name": "man"
       },
       "dataField": {
-        "mods": "standard input_mask",
+        "mods": "standard-size input_mask",
         "inType": "text",
         "text": "ДД.ММ.ГГГГ",
         "label": "Дата рождения"
@@ -73,7 +73,7 @@
       },
       "text": "Уже есть аккаунт на Toxin",
       "btnReg": {
-        "mods": "with-border,content-size,large-height js-button_signIn",
+        "mods": "with-border,content-size,small-size js-button_signIn",
         "text": "Войти"
       }
     }

@@ -1,6 +1,6 @@
 .title {
 
-  &_standard {
+  &_standard-size {
     text-transform: uppercase;
 
     @include small-text;
@@ -12,7 +12,7 @@
     @include small-text($dark50, normal);
   }
 
-  &_large {
+  &_large-size {
     @include large-text;
 
     @media (max-width: 450px) {
@@ -22,7 +22,7 @@
     }
   }
 
-  &_medium {
+  &_medium-size {
     @include medium-text;
   }
 }

@@ -6,11 +6,11 @@
     },
     "hover": {
       "title": "default",
-      "mods": "hover form-elements__title_absolute"
+      "mods": "hover form-elements__title_top-heading"
     },
     "focus": {
       "title": "hover / focus",
-      "mods": "hover form-elements__title_absolute"
+      "mods": "hover form-elements__title_top-heading"
     },
     "mods": "js-datepicker-container",
 
@@ -37,7 +37,7 @@
     },
 
     "Imask": {
-      "mods": "standard input_mask",
+      "mods": "standard-size input_mask",
       "inType": "text",
       "text": "ДД.ММ.ГГГГ",
       "label": "masked text field"
@@ -49,11 +49,11 @@
     "end": {
       "label": "date dropdown",
       "text": "19.08.2019",
-      "mods": "small js-datepicker-end"
+      "mods": "small-size js-datepicker-end"
     },
     "datepicker": {
       "text": "19 авг - 23 авг",
-      "mods": "small js-datepicker",
+      "mods": "small-size js-datepicker",
       "data": "d M",
       "label": "filter date dropdown"
     },
@@ -73,7 +73,7 @@
     },
     "titleToggle": {
       "title": "toggle",
-      "mods": "standard"
+      "mods": "standard-size"
     },
     "titleRate": {
       "title": "rate button"
@@ -139,22 +139,22 @@
       "title": "buttons"
     },
     "btnOne": {
-      "mods": "content-size,large-height"
+      "mods": "content-size,small-size"
     },
     "btnTwo": {
-      "mods": "disable,content-size,large-height"
+      "mods": "disabled,content-size,small-size"
     },
     "btnTree": {
-      "mods": "with-border,content-size,large-height"
+      "mods": "with-border,content-size,small-size"
     },
     "btnFour": {
-      "mods": "with-border,disable,content-size, large-height"
+      "mods": "with-border,disabled,content-size, small-size"
     },
     "btnFive": {
-      "mods": "with-border,content-none,large-height"
+      "mods": "with-border,content-none,small-size"
     },
     "btnSix": {
-      "mods": "with-border,content-none,color-black,large-height"
+      "mods": "with-border,content-none,color-black,small-size"
     },
     "btnSeven": {
       "text": "Перейти к оплате",
@@ -172,7 +172,7 @@
 
     "titleDrop": {
       "title": "dropdown",
-      "mods": "standard form-elements__subtitle"
+      "mods": "standard-size form-elements__subtitle"
     },
 
     "medium": {
@@ -197,7 +197,7 @@
     },
     "expanded": {
       "title": "expanded",
-      "mods": "hover form-elements__title_absolute"
+      "mods": "hover form-elements__title_top-heading"
     },
     "bedrooms": {
       "mod": "dropdown_active",
@@ -298,7 +298,7 @@
 
     "titleRich": {
       "title": "rich checkbox buttons",
-      "mods": "standard form-elements__list"
+      "mods": "standard-size form-elements__list"
     },
     "rich": {
       "title": "Широкий коридор",
@@ -311,7 +311,7 @@
     },
     "titleBullet": {
       "title": "bullet list",
-      "mods": "standard form-elements__list"
+      "mods": "standard-size form-elements__list"
     },
     "bullet": {
       "items": [

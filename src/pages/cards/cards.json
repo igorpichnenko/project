@@ -1,7 +1,7 @@
 {
   "sliderCard": {
     "data": {
-      "className": "price__text_size-lower",
+      "className": "price__text_small-size",
       "text": "888",
       "price": "9 990₽",
       "mods": "люкс",
@@ -13,7 +13,7 @@
   },
   "sliderCardTwo": {
     "data": {
-      "className": "price__text_size-lower",
+      "className": "price__text_small-size",
       "text": "840",
       "price": "9 900₽",
       "number": "65",
@@ -40,7 +40,7 @@
       },
       "endData": {
         "text": "23.08.2019",
-        "mods": "small js-datepicker-end",
+        "mods": "small-size js-datepicker-end",
         "label": "Выезд"
       },
       "title": {
@@ -73,7 +73,7 @@
     "data": {
       "regAccount": {
         "title": "Регистрация аккаунта",
-        "mods": "large",
+        "mods": "large-size",
         "tag": "h1"
       },
       "name": {
@@ -95,7 +95,7 @@
         "name": "man"
       },
       "dataField": {
-        "mods": "standard input_mask",
+        "mods": "standard-size input_mask",
         "inType": "text",
         "text": "ДД.ММ.ГГГГ",
         "label": "Дата рождения"
@@ -116,7 +116,7 @@
       },
       "text": "Уже есть аккаунт на Toxin",
       "btnReg": {
-        "mods": "with-border,content-size,large-height",
+        "mods": "with-border,content-size,small-size",
         "text": "Войти"
       }
     }
@@ -126,14 +126,14 @@
     "data": {
       "largeTitle": {
         "title": "Найдём номера под ваши пожелания",
-        "mods": "large",
+        "mods": "large-size",
         "tag": "h1"
       },
       "start": {
         "label": "Прибытие"
       },
       "end": {
-        "mods": "small js-datepicker-end",
+        "mods": "small-size js-datepicker-end",
         "label": "Выезд"
       },
       "title": {
@@ -161,7 +161,7 @@
   "formSignIn": {
     "data": {
       "text": {
-        "mods": "large",
+        "mods": "large-size",
         "title": "Войти",
         "tag": "h1"
       },
@@ -174,7 +174,7 @@
         "text": "Email"
       },
       "btnIn": {
-        "mods": "with-border,content-size,large-height",
+        "mods": "with-border,content-size,small-size",
         "text": "Создать"
       },
       "btnSign": {

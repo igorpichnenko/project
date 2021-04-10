@@ -27,7 +27,7 @@
     @include material-font;
   }
 
-  &__input_standard {
+  &__input_standard-size {
     margin-top: 5px;
     background: #fff;
     height: 44px;
@@ -77,7 +77,7 @@
     }
   }
 
-  &__input_small {
+  &__input_small-size {
     margin-top: 5px;
     background: #fff;
     border: 1px solid $dark25;

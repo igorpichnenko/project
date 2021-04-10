@@ -21,8 +21,8 @@ class Dropdown {
     this.isGuests = this.dropdown.classList.contains('dropdown_guest');
     this.defaultTitle = this.dropdown.dataset.default || '';
     this.values = this.dropdown.querySelectorAll('.dropdown-counters');
-    this.buttonClear = this.dropdown.querySelector('.dropdown__button_clear') || undefined;
-    this.buttonUse = this.dropdown.querySelector('.dropdown__button_use') || undefined;
+    this.buttonClear = this.dropdown.querySelector('.dropdown__button-clear') || undefined;
+    this.buttonUse = this.dropdown.querySelector('.dropdown__button-use') || undefined;
   }
 
   handlersBind() {

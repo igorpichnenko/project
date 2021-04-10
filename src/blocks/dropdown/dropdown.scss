@@ -47,11 +47,11 @@
     justify-content: space-between;
   }
 
-  &__button_clear {
+  &__button-clear {
     padding: 12.5px 0 11.5px 13px;
   }
   
-  &__button_use {
+  &__button-use {
     padding: 12.5px 6px 11.5px 0;
   }
 
@@ -70,9 +70,5 @@
     @include flex-center;
 
     @include material-font($lh: 24px, $col: $dark75, $bg: $dark75);
-  }
-
-  &__button_hidden {
-    display: none;
   }
 }

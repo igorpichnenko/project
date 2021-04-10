@@ -4,14 +4,14 @@
     "data": {
       "largeTitle": {
         "title": "Найдём номера под ваши пожелания",
-        "mods": "large",
+        "mods": "large-size",
         "tag": "h1"
       },
       "start": {
         "label": "Прибытие"
       },
       "end": {
-        "mods": "small js-datepicker-end",
+        "mods": "small-size js-datepicker-end",
         "label": "Выезд"
       },
       "title": {

@@ -101,7 +101,7 @@
     }
   }
 
-  &_disable {
+  &_disabled {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
       linear-gradient(
         180deg,
@@ -113,7 +113,7 @@
     
   }
 
-  &_large-height {
+  &_small-size{
     height: 44px;
     width: 99px;
   }
