@@ -1,7 +1,7 @@
 mixin title-options(types)
   .title-options
     each item in types
-      - const { title, text, className } = item;
+      - const { title, text, className } = item
 
       .title-options__container
         div(class=`title-options__title title-options__title_${className}`)= title

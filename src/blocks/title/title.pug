@@ -7,16 +7,16 @@ mixin title({mods="standard-size",title="",tag="h3"}={})
     allMods = allMods + ' title_' + mod.trim()
     })
 
-  - let tagName;
+  - let tagName
 
   case tag
     when "h1"
-      - tag = 'h1';
+      - tag = 'h1'
 
     when "h1"
-      - tag = 'h2';
+      - tag = 'h2'
 
     default
-      - tag = 'h3';
+      - tag = 'h3'
 
   #{tag}.title(class=allMods)= title
