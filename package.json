@@ -9,7 +9,8 @@
     "deploy": "gh-pages -d dist",
     "lint": "eslint src --fix",
     "slint": "stylelint src/**/**/*.scss",
-    "flint": "stylelint src/**/**/*.scss --fix"
+    "flint": "stylelint src/**/**/*.scss --fix",
+    "prettier": "prettier --use-tabs --trailing-comma \"src/**/*.pug\""
   },
   "author": "",
   "dependencies": {

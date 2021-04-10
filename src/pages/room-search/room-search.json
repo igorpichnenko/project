@@ -1,38 +1,86 @@
 {
-  "filter": {
-    "mods": "small-size js-datepicker",
-    "inType": "text",
-    "text": "19 авг - 23 авг",
-    "data": "d M",
-    "button": "expand_more",
-    "mod": "text-field__button_with-arrow",
-    "label": "Даты пребывания в отеле"
+
+  "items":{
+    "filter": {
+      "mods": "small-size js-datepicker",
+      "inType": "text",
+      "text": "19 авг - 23 авг",
+      "data": "d M",
+      "button": "expand_more",
+      "mod": "text-field__button_with-arrow",
+      "label": "Даты пребывания в отеле"
+    },
+    "dropdown": {
+      "className": "dropdown_guest",
+      "items": [{
+        "title": "взрослые",
+        "number": "2"
+      },
+        {
+          "title": "дети",
+          "number": "1"
+        },
+        {
+          "title": "младенцы",
+          "number": "1"
+        }]
+    },
+    "dropdownMedium": {
+      "modBtn": "dropdown__button_hidden",
+      "title": "Сколько спален и кроватей",
+      "items": [{
+        "title": "спальни",
+        "min": "1",
+        "number": "2",
+        "max": "5"
+      },
+        {
+          "title": "кровати",
+          "min": "1",
+          "number": "2",
+          "max": "6"
+        },
+        {
+          "title": "ванные комнаты",
+          "max": "5"
+        }]
+    },
+    "range": {
+      "title": "Диапазон цены"
+    },
+    "price": "Стоймость за сутки пребывания в номере",
+    "rules": {
+      "title": "Правила Дома"
+    },
+    "checkboxList": {
+      "title": "Дополнительные удобства",
+      "options": [{
+        "text": "Завтрак"
+      },
+        {
+          "text": "Письменный стол", "checked": "checked"
+        },
+        {
+          "text":"Стул для кормления","checked": "checked"
+        },
+        {
+          "text":"Кроватка","checked": "checked"
+        },
+        {
+          "text":"Телевизор"
+        },
+        {
+          "text":"Шампунь"
+        }]
+    }
   },
+
+ 
   "subtitle": {
     "title": "гости"
   },
-  "dropdown": {
-    "className": "dropdown_guest",
-    "items": [{
-      "title": "взрослые",
-      "number": "2"
-    },
-      {
-        "title": "дети",
-        "number": "1"
-      },
-      {
-        "title": "младенцы",
-        "number": "1"
-      }]
-  },
-  "range": {
-    "title": "Диапазон цены"
-  },
-  "price": "Стоймость за сутки пребывания в номере",
-  "rules": {
-    "title": "Правила Дома"
-  },
+ 
+ 
   "checkOne": {
     "text": "Можно курить"
   },
@@ -60,65 +108,6 @@
   "titleDrop": {
     "title": "Удобства номера"
   },
-  "dropdownMedium": {
-    "modBtn": "dropdown__button_hidden",
-    "title": "Сколько спален и кроватей",
-    "items": [{
-      "title": "спальни",
-      "min": "1",
-      "number": "2",
-      "max": "5"
-    },
-      {
-        "title": "кровати",
-        "min": "1",
-        "number": "2",
-        "max": "6"
-      },
-      {
-        "title": "ванные комнаты",
-        "max": "5"
-      }]
-  },
-  "checkboxList": {
-    "title": "Дополнительные удобства",
-    "options": [{
-      "text": "Завтрак"
-    },
-      {
-        "text": "Письменный стол", "checked": "checked"
-      },
-      {
-        "text":"Стул для кормления","checked": "checked"
-      },
-      {
-        "text":"Кроватка","checked": "checked"
-      },
-      {
-        "text":"Телевизор"
-      },
-      {
-        "text":"Шампунь"
-      }]
-  },
-
-
-
-
-  "slider": {
-    "data": {
-      "className": "price__text_small-size",
-      "classlux": "price__lux room-search__lux",
-      "text": "888",
-      "price": "9 990₽",
-      "mods": "люкс",
-      "number": "145",
-      "name": "slider",
-      "checked": "1",
-      "images": ["room1.jpg","room2.jpg","room3.jpg","room4.jpg"]
-    }
-  },
-
 
   "cards": {
     "title": {
@@ -126,7 +115,20 @@
       "mods": "large-size room-search__title-width",
       "tag": "h1"
     },
-    "sliderOne": {
+    "card": {
+      "data": {
+        "className": "price__text_small-size",
+        "classlux": "price__lux room-search__lux",
+        "text": "888",
+        "price": "9 990₽",
+        "mods": "люкс",
+        "number": "145",
+        "name": "slider",
+        "checked": "1",
+        "images": ["room1.jpg","room2.jpg","room3.jpg","room4.jpg"]
+      }
+    },
+    "One": {
       "data": {
         "className": "price__text_small-size",
         "text": "840",
@@ -137,7 +139,7 @@
         "images": ["room2.jpg","room8.jpg","room9.jpg","room3.jpg"]
       }
     },
-    "sliderTwo": {
+    "Two": {
       "data": {
         "className": "price__text_small-size",
         "classlux": "price__lux room-search__lux",
@@ -150,7 +152,7 @@
         "images": ["room3.jpg","room4.jpg","room2.jpg","room1.jpg"]
       }
     },
-    "sliderThree": {
+    "Three": {
       "data": {
         "className": "price__text_small-size",
         "text": "856",
@@ -161,7 +163,7 @@
         "images": ["room4.jpg","room1.jpg","room7.jpg","room9.jpg"]
       }
     },
-    "sliderFour": {
+    "Four": {
       "data": {
         "className": "price__text_small-size",
         "text": "740",
@@ -172,7 +174,7 @@
         "images": ["room5.jpg","room7.jpg","room11.jpg","room12.jpg"]
       }
     },
-    "sliderFive": {
+    "Five": {
       "data": {
         "className": "price__text_small-size",
         "text": "982",
@@ -183,7 +185,7 @@
         "images": ["room6.jpg","room4.jpg","room1.jpg","room10.jpg"]
       }
     },
-    "sliderSix": {
+    "Six": {
       "data": {
         "className": "price__text_small-size",
         "text": "678",
@@ -194,7 +196,7 @@
         "images": ["room7.jpg","room9.jpg","room8.jpg","room3.jpg"]
       }
     },
-    "sliderSeven": {
+    "Seven": {
       "data": {
         "className": "price__text_small-size",
         "text": "450",
@@ -205,7 +207,7 @@
         "images": ["room8.jpg","room6.jpg","room4.jpg","room2.jpg"]
       }
     },
-    "sliderEight": {
+    "Eight": {
       "data": {
         "className": "price__text_small-size",
         "text": "350",
@@ -216,7 +218,7 @@
         "images": ["room9.jpg","room1.jpg","room10.jpg","room12.jpg"]
       }
     },
-    "sliderNine": {
+    "Nine": {
       "data": {
         "className": "price__text_small-size",
         "text": "666",
@@ -227,7 +229,7 @@
         "images": ["room10.jpg","room8.jpg","room12.jpg","room3.jpg"]
       }
     },
-    "sliderTen": {
+    "Ten": {
       "data": {
         "className": "price__text_small-size",
         "text": "444",
@@ -238,7 +240,7 @@
         "images": ["room11.jpg","room4.jpg","room1.jpg","room7.jpg"]
       }
     },
-    "sliderEleven": {
+    "Eleven": {
       "data": {
         "className": "price__text_small-size",
         "text": "352",

@@ -26,7 +26,7 @@ include ../../blocks-ui/comments/comments
 
 block title
   title form-elements
-  link(rel="stylesheet", href="form-elements.css")
+  link(rel='stylesheet', href='form-elements.css')
 
 block content
   -
@@ -35,28 +35,25 @@ block content
     const { inputs,checkboxes,buttons,dropdown,lists,comments } = data
 
   .form-elements
-   .form-elements__row
-    .form-elements__inputs
-         +inputs(inputs)
-   
-    .form-elements__checkboxes
-         +checkboxes(checkboxes)
+    .form-elements__row
+      .form-elements__inputs
+        +inputs(inputs)
 
-    .form-elements__buttons
-         +buttons(buttons)
+      .form-elements__checkboxes
+        +checkboxes(checkboxes)
 
-   .form-elements__row
-    .form-elements__dropdown
-         +dropdown-ui(dropdown)
+      .form-elements__buttons
+        +buttons(buttons)
 
-   .form-elements__row
-    .form-elements__lists
-         +lists(lists)
+    .form-elements__row
+      .form-elements__dropdown
+        +dropdown-ui(dropdown)
 
-   .form-elements__row
-         +comments-ui(comments)
+    .form-elements__row
+      .form-elements__lists
+        +lists(lists)
 
-  script(src="./form-elements.js")
-  
+    .form-elements__row
+      +comments-ui(comments)
 
-  
+  script(src='./form-elements.js')

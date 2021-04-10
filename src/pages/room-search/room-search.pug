@@ -23,8 +23,8 @@ block content
   -
     content = require("./room-search.json");
     
-    const {cards,filter,subtitle,dropdown,range,price,rules,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,titleDrop,dropdownMedium,checkboxList,slider} = content
-
+    const {cards,items,subtitle,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,titleDrop} = content
+    const {filter,dropdown,range,price,dropdownMedium,checkboxList,rules} = items
   .room-search
     .room-search__aside
       .room-search__input.js-datepicker-container
@@ -42,7 +42,7 @@ block content
         .room-search__price= price
 
         .room-search__rule
-          +title(content.rules)
+          +title(rules)
         .room-search__checkbox
           +checkbox(checkOne)
           +checkbox(checkTwo)
@@ -64,23 +64,23 @@ block content
 
     .room-search__cards
       
-      - const { title,sliderOne,sliderTwo,sliderThree,sliderFour,sliderFive,sliderSix,sliderSeven,sliderEight,sliderNine,sliderTen,sliderEleven } = cards
+      - const { title,card,One,Two,Three,Four,Five,Six,Seven,Eight,Nine,Ten,Eleven } = cards
     
       .room-search__title
         +title(title)
       .room-search__container
-        +slider-card(slider)
-        +slider-card(sliderOne)
-        +slider-card(sliderTwo)
-        +slider-card(sliderThree)
-        +slider-card(sliderFour)
-        +slider-card(sliderFive)
-        +slider-card(sliderSix)
-        +slider-card(sliderSeven)
-        +slider-card(sliderEight)
-        +slider-card(sliderNine)
-        +slider-card(sliderTen)
-        +slider-card(sliderEleven)
+        +slider-card(card)
+        +slider-card(One)
+        +slider-card(Two)
+        +slider-card(Three)
+        +slider-card(Four)
+        +slider-card(Five)
+        +slider-card(Six)
+        +slider-card(Seven)
+        +slider-card(Eight)
+        +slider-card(Nine)
+        +slider-card(Ten)
+        +slider-card(Eleven)
       .room-search__pagination
         +pagination
   script(src="./room-search.js")
