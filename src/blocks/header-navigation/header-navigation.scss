@@ -6,7 +6,7 @@
     justify-content: space-between;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 620px) {
     flex-direction: column;
   }
 
@@ -34,7 +34,7 @@
   &__text:nth-child(2) {
     margin-right: 25px;
 
-    @media (max-width: 550px) {
+    @media (max-width: 620px) {
       margin-right: 0;
     }
 

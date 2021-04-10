@@ -1,5 +1,5 @@
 mixin buttons(buttons)
-  - const { titleRange, titleButton, btnOne, btnTwo, btnTree, btnFour, btnFive, btnSix, btnSeven, titlePagination, pagination } = buttons;
+  - const { titleRange, titleButton, One, Two, Tree, Four, Five, Six, Seven, titlePagination, pagination } = buttons;
   .buttons
     .buttons__title
       +title(titleRange)
@@ -8,16 +8,16 @@ mixin buttons(buttons)
     .buttons__title
       +title(titleButton)
     .buttons__item
-      +button(btnOne) 
-      +button(btnTwo)
+      +button(One) 
+      +button(Two)
     .buttons__item
-      +button(btnTree)
-      +button(btnFour)
+      +button(Tree)
+      +button(Four)
     .buttons__item
-      +button(btnFive) 
-      +button(btnSix)
+      +button(Five) 
+      +button(Six)
     .buttons__item
-      +button(btnSeven)
+      +button(Seven)
     .buttons__title
       +title(titlePagination)
     +pagination(pagination)

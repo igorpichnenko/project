@@ -138,25 +138,25 @@
     "titleButton": {
       "title": "buttons"
     },
-    "btnOne": {
+    "One": {
       "mods": "content-size,small-size"
     },
-    "btnTwo": {
+    "Two": {
       "mods": "disabled,content-size,small-size"
     },
-    "btnTree": {
+    "Tree": {
       "mods": "with-border,content-size,small-size"
     },
-    "btnFour": {
+    "Four": {
       "mods": "with-border,disabled,content-size, small-size"
     },
-    "btnFive": {
+    "Five": {
       "mods": "with-border,content-none,small-size"
     },
-    "btnSix": {
+    "Six": {
       "mods": "with-border,content-none,color-black,small-size"
     },
-    "btnSeven": {
+    "Seven": {
       "text": "Перейти к оплате",
       "mods": "with-arrow"
     },
