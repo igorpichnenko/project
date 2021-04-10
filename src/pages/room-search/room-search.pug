@@ -22,7 +22,7 @@ block title
 block content
   -
     content = require("./room-search.json");
-    
+
     const {cards,items,subtitle,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,titleDrop} = content
     const {filter,dropdown,range,price,dropdownMedium,checkboxList,rules} = items
   .room-search
@@ -63,9 +63,8 @@ block content
           +checkbox-list(checkboxList)
 
     .room-search__cards
-      
-      - const { title,card,One,Two,Three,Four,Five,Six,Seven,Eight,Nine,Ten,Eleven } = cards
-    
+      - const { title, card, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven } = cards;
+
       .room-search__title
         +title(title)
       .room-search__container

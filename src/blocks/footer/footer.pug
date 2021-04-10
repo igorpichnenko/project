@@ -14,7 +14,11 @@ mixin footer({data})
       .footer__navigation
         +footer-navigation(support)
       .footer__subscription
-        a.footer__item(href="/mock-address/change-me", target="_blank" rel="noopener noreferrer") подписка
+        a.footer__item(
+          href="/mock-address/change-me",
+          target="_blank",
+          rel="noopener noreferrer"
+        ) подписка
         .footer__label
           label.footer__text(for="subscription")= label
         .footer__field

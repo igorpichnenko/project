@@ -1,18 +1,17 @@
 mixin lists(lists)
-    
-      - const { checkListOne, checkListTwo,titleRich,rich,richTwo,titleBullet,bullet } = lists
-      .lists
-          .lists__row
-            .lists__row
-               +checkbox-list(checkListOne)
-            .lists__row 
-               +checkbox-list(checkListTwo)
-          .lists__row
-             .lists__title
-              +title(titleRich)
-             +checkbox-rich(rich)
-             +checkbox-rich(richTwo)
-          .lists__row
-             .lists__title
-              +title(titleBullet)
-             +bullet-list(bullet)
+  - const { checkListOne, checkListTwo, titleRich, rich, richTwo, titleBullet, bullet } = lists;
+  .lists
+    .lists__row
+      .lists__row
+        +checkbox-list(checkListOne)
+      .lists__row 
+        +checkbox-list(checkListTwo)
+    .lists__row
+      .lists__title
+        +title(titleRich)
+      +checkbox-rich(rich)
+      +checkbox-rich(richTwo)
+    .lists__row
+      .lists__title
+        +title(titleBullet)
+      +bullet-list(bullet)

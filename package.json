@@ -10,7 +10,7 @@
     "lint": "eslint src --fix",
     "slint": "stylelint src/**/**/*.scss",
     "flint": "stylelint src/**/**/*.scss --fix",
-    "prettier": "prettier --use-tabs --trailing-comma \"src/**/*.pug\""
+    "prettier": "prettier --write **/*.pug"
   },
   "author": "",
   "dependencies": {

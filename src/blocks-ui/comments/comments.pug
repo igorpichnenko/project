@@ -1,9 +1,8 @@
 mixin comments-ui(comments)
-    
-      - const { comment,commentTwo,person } = comments
-      .comments
-          .comments__row
-             +comments(comment)
-             +comments(commentTwo)
-          .comments__row
-             +person-comment(person)
+  - const { comment, commentTwo, person } = comments;
+  .comments
+    .comments__row
+      +comments(comment)
+      +comments(commentTwo)
+    .comments__row
+      +person-comment(person)

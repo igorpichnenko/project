@@ -1,19 +1,18 @@
 mixin dropdown-ui(dropdown)
-         
-      - const { medium,titleDrop,expanded,bedrooms,dropGuest,dropdownThree } = dropdown
-      .dropdown-ui
-          .dropdown-ui__row
-             .dropdown-ui__row
-               +title(titleDrop)
-               +title(hover)
-               +dropdown(medium)
-             .dropdown-ui__row
-               +title(titleDrop)
-               +title(expanded)
-               +dropdown(bedrooms)
-          .dropdown-ui__row
-             +title(titleDrop)
-             +dropdown(dropGuest)
-          .dropdown-ui__row
-             +title(titleDrop)
-             +dropdown(dropdownThree)     
+  - const { medium, titleDrop, expanded, bedrooms, dropGuest, dropdownThree } = dropdown;
+  .dropdown-ui
+    .dropdown-ui__row
+      .dropdown-ui__row
+        +title(titleDrop)
+        +title(hover)
+        +dropdown(medium)
+      .dropdown-ui__row
+        +title(titleDrop)
+        +title(expanded)
+        +dropdown(bedrooms)
+    .dropdown-ui__row
+      +title(titleDrop)
+      +dropdown(dropGuest)
+    .dropdown-ui__row
+      +title(titleDrop)
+      +dropdown(dropdownThree) 
