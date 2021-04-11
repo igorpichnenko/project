@@ -7,8 +7,3 @@ import '../../blocks/pagination/pagination-init';
 import '../../blocks/checkbox-list/checkbox-list';
 import '../../blocks/dropdown/dropdown-init';
 import '../../blocks/like/like-init';
-
-/* проверяю пиксель перфект через свой плагин, после каждого изменения,
-я потом удалю эти пути после проверок */
- //import '../../../pixel.js'
- //import '../../../pixel.css'
