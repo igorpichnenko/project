@@ -131,12 +131,20 @@
   },
 
   "buttons": {
+    "items":{
     "titleRange": {
       "title": "range slider"
 
     },
     "titleButton": {
       "title": "buttons"
+    },
+    "titlePagination": {
+      "title": "pagination"
+    },
+    "pagination": {
+      "className": "pagination__text column-three__pagination-text"
+    }
     },
     "One": {
       "mods": "medium-size,small-size"
@@ -159,12 +167,6 @@
     "Seven": {
       "text": "Перейти к оплате",
       "mods": "with-arrow"
-    },
-    "titlePagination": {
-      "title": "pagination"
-    },
-    "pagination": {
-      "className": "pagination__text column-three__pagination-text"
     }
   },
 

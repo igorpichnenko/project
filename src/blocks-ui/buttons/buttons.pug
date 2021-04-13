@@ -1,5 +1,6 @@
 mixin buttons(buttons)
-  - const { titleRange, titleButton, One, Two, Tree, Four, Five, Six, Seven, titlePagination, pagination } = buttons
+  - const { One, Two, Tree, Four, Five, Six, Seven,items } = buttons
+  -  const { titleRange,titleButton,titlePagination,pagination } = items
   .buttons
     .buttons__title
       +title(titleRange)
