@@ -36,8 +36,8 @@ import '../../blocks/iMask/iMask-init';
     }
   
     private handleAccountButtonClick() {
-      this.elements[2].classList.toggle('registration-container_active');
-      this.elements[3].classList.remove('registration-container_active');
+      this.elements[2].classList.toggle('registration-container_is-visible');
+      this.elements[3].classList.remove('registration-container_is-visible');
       window.history.pushState({
         param: 'Value',
       }, '', 'registration.html');
@@ -46,8 +46,8 @@ import '../../blocks/iMask/iMask-init';
     }
   
     private handleSignInButtonClick() {
-      this.elements[3].classList.toggle('registration-container_active');
-      this.elements[2].classList.remove('registration-container_active');
+      this.elements[3].classList.toggle('registration-container_is-visible');
+      this.elements[2].classList.remove('registration-container_is-visible');
       window.history.pushState({
         param: 'Value',
       }, '', 'signing.html');

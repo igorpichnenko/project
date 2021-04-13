@@ -24,10 +24,10 @@ class CheckboxList {
   private handleAccordionClick() {
     if (this.elements[0].style.display === 'block') {
       this.elements[0].style.display = 'none';
-      this.elements[1].classList.toggle('checkbox-list__icon_rotate');
+      this.elements[1].classList.toggle('checkbox-list__icon_rotated');
     } else {
       this.elements[0].style.display = 'block';
-      this.elements[1].classList.toggle('checkbox-list__icon_rotate');
+      this.elements[1].classList.toggle('checkbox-list__icon_rotated');
     }
   }
 }

@@ -202,7 +202,7 @@
       "mods": "hover form-elements__title_top-heading"
     },
     "bedrooms": {
-      "mod": "dropdown_active",
+      "mod": "dropdown_is-visible",
       "modBtn": "dropdown__button_hidden",
       "title": "Сколько спален и кроватей",
       "items": [{
@@ -225,7 +225,7 @@
 
     "dropGuest": {
       "className": "dropdown_guest",
-      "mod": "dropdown_active",
+      "mod": "dropdown_is-visible",
       "items": [{
         "title": "взрослые"
       },
@@ -238,7 +238,7 @@
     },
     "dropdownThree": {
       "className": "dropdown_guest",
-      "mod": "dropdown_active",
+      "mod": "dropdown_is-visible",
       "items": [{
         "title": "взрослые",
         "number": "2"
@@ -276,7 +276,7 @@
         }]
     },
     "checkListTwo": {
-      "mods": "checkbox-list__icon_rotate",
+      "mods": "checkbox-list__icon_rotated",
       "mod": "checkbox-list__visible",
       "options": [{
         "text": "Завтрак"

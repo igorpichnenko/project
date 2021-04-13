@@ -40,7 +40,7 @@ class Dropdown {
   }
 
   handlerMenuClick() {
-    this.menu.classList.toggle('dropdown_active');
+    this.menu.classList.toggle('dropdown_is-visible');
     this.title.classList.toggle('title-active');
   }
 
@@ -51,9 +51,9 @@ class Dropdown {
   }
 
   closeDropdown() {
-    const isDropdownClosed = this.menu.classList.contains('dropdown_active');
+    const isDropdownClosed = this.menu.classList.contains('dropdown_is-visible');
     if (isDropdownClosed) {
-      this.menu.classList.remove('dropdown_active');
+      this.menu.classList.remove('dropdown_is-visible');
     }
   }
 
