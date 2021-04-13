@@ -116,7 +116,7 @@
       },
       "text": "Уже есть аккаунт на Toxin",
       "btnReg": {
-        "mods": "with-border,content-size,small-size",
+        "mods": "with-border,medium-size,small-size",
         "text": "Войти"
       }
     }

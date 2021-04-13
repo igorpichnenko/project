@@ -15,7 +15,7 @@
         "text": "Email"
       },
       "btnIn": {
-        "mods": "with-border,content-size,small-size js-button_regCreate",
+        "mods": "with-border,medium-size,small-size js-button_regCreate",
         "text": "Создать"
       },
       "btnSign": {
@@ -73,7 +73,7 @@
       },
       "text": "Уже есть аккаунт на Toxin",
       "btnReg": {
-        "mods": "with-border,content-size,small-size js-button_signIn",
+        "mods": "with-border,medium-size,small-size js-button_signIn",
         "text": "Войти"
       }
     }

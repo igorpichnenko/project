@@ -32,7 +32,7 @@
     "button": {
       "SigIn": {
         "text": "Войти",
-        "mods": "with-border,content-size"
+        "mods": "with-border,medium-size"
       },
       "Reg": {
         "text": "Зарегистрироваться"

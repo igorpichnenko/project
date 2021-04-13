@@ -139,22 +139,22 @@
       "title": "buttons"
     },
     "One": {
-      "mods": "content-size,small-size"
+      "mods": "medium-size,small-size"
     },
     "Two": {
-      "mods": "disabled,content-size,small-size"
+      "mods": "disabled,medium-size,small-size"
     },
     "Tree": {
-      "mods": "with-border,content-size,small-size"
+      "mods": "with-border,medium-size,small-size"
     },
     "Four": {
-      "mods": "with-border,disabled,content-size, small-size"
+      "mods": "with-border,disabled,medium-size, small-size"
     },
     "Five": {
-      "mods": "with-border,content-none,small-size"
+      "mods": "with-border,without-border,small-size"
     },
     "Six": {
-      "mods": "with-border,content-none,color-black,small-size"
+      "mods": "with-border,without-border,color-black,small-size"
     },
     "Seven": {
       "text": "Перейти к оплате",
