@@ -23,7 +23,7 @@ class Burger {
 
   private handleButtonClick() {
     this.elements[1].classList.toggle('burger_active-item');
-    this.elements[0].classList.toggle('burger_open-menu');
+    this.elements[0].classList.toggle('burger_is-visible');
   }
 }
 
