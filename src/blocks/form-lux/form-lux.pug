@@ -1,5 +1,5 @@
 mixin formlux({data})
-  - const { price, startData, endData, title, dropdown, cost, text, tax, btn, discount, mod } = data
+  - const { price,start,end,title,dropdown,cost,text,tax,btn,discount,mod }= data
 
   form.card-lux.js-price
     .card-lux__container
@@ -7,9 +7,9 @@ mixin formlux({data})
         +price(price)
       .card-lux__calendar.js-datepicker-container
         .card-lux__datepicker
-          +datepicker(startData)
+          +datepicker(start)
         .card-lux__datepicker
-          +datepicker(endData)
+          +datepicker(end)
       .card-lux__title
         +title(title)
       .card-lux__dropdown

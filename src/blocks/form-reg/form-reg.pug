@@ -1,5 +1,6 @@
 mixin form-reg({data})
-  - const { regAccount, name, surname, radioMan, radioWoman, title, email, password, button, text, btnReg, dataField } = data
+  - const {  email, password, button, text, btnReg, dataField,items } = data
+  - const { regAccount, name, surname, radioMan, radioWoman, title, }= items
 
   form.registration
     .registration__container

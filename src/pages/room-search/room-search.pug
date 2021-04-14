@@ -23,15 +23,15 @@ block content
   -
     content = require("./room-search.json");
 
-    const {cards,items,subtitle,checkOne,checkTwo,checkThree,titleBox,rich,richTwo,titleDrop} = content
-    const {filter,dropdown,range,price,dropdownMedium,checkboxList,rules} = items
+    const { cards,items,text,checkOne,checkTwo,checkThree,box,rich,drop }= content
+    const { filter,dropdown,range,price,medium,checkboxList,rules,richTwo } = items
   .room-search
     .room-search__aside
       .room-search__input.js-datepicker-container
         +text-field(filter)
 
       .room-search__dropdown
-        +title(subtitle)
+        +title(text)
         .room-search__drop
           +dropdown(dropdown)
 
@@ -50,36 +50,36 @@ block content
 
         .room-search__rich
           .room-search__rich-title
-            +title(titleBox)
+            +title(box)
         .room-search__rich-button
           +checkbox-rich(rich)
           +checkbox-rich(richTwo)
 
         .room-search__medium-drop
           .room-search__drop-title
-            +title(titleDrop)
-          +dropdown(dropdownMedium)
+            +title(drop)
+          +dropdown(medium)
         .room-search__checkbox-list
           +checkbox-list(checkboxList)
 
     .room-search__cards
-      - const { title, card, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven } = cards
+      - const {title,card,one,two,three,four,five,six,seven,eight,nine,ten,eleven}= cards
 
       .room-search__title
         +title(title)
       .room-search__container
         +slider-card(card)
-        +slider-card(One)
-        +slider-card(Two)
-        +slider-card(Three)
-        +slider-card(Four)
-        +slider-card(Five)
-        +slider-card(Six)
-        +slider-card(Seven)
-        +slider-card(Eight)
-        +slider-card(Nine)
-        +slider-card(Ten)
-        +slider-card(Eleven)
+        +slider-card(one)
+        +slider-card(two)
+        +slider-card(three)
+        +slider-card(four)
+        +slider-card(five)
+        +slider-card(six)
+        +slider-card(seven)
+        +slider-card(eight)
+        +slider-card(nine)
+        +slider-card(ten)
+        +slider-card(eleven)
       .room-search__pagination
         +pagination
   script(src="./room-search.js")

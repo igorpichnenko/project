@@ -1,5 +1,6 @@
 mixin inputs(inputs)
-  - const { email, hover, pretty, focus, drop, dropdownFirst, Imask, start, end, datepicker, arrow, mods } = inputs
+  - const { items,email,drop,dropdownFirst,start,end,datepicker } = inputs
+  - const { arrow, mods,hover, pretty, focus, Imask } = items
   .inputs
     .inputs__row
       +text-field(email)

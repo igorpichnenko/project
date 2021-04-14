@@ -1,13 +1,13 @@
 mixin checkboxes(checkboxes)
-  - const { checkOne, checkTwo, checkThree, radio, radioOne, radioTwo, toggle, like, likeTwo, rate, rateTwo, title } = checkboxes
-  - const { titleCheck, titleLike, titleRate, titleToggle } = title
+  - const { radio,radioOne,radioTwo,like,likeTwo,rate,rateTwo,items }= checkboxes
+  - const { check,titleLike,titleRate,titleToggle,one,two,three,toggle } = items
   .checkboxes
     .checkboxes__title
-      +title(titleCheck)
+      +title(check)
     .checkboxes__column
-      +checkbox(checkOne)
-      +checkbox(checkTwo)
-      +checkbox(checkThree)
+      +checkbox(one)
+      +checkbox(two)
+      +checkbox(three)
     .checkboxes__title
       +title(radio)
     .checkboxes__radio

@@ -12,17 +12,17 @@
     "mod": "12",
     "checked": "checked"
   },
-  "comments": {
+  "one": {
     "title": "insert_emoticon",
     "titleText": "Комфорт",
     "contentText": "Шумопоглощающие стены"
   },
-  "commentsTwo": {
+  "two": {
     "title": "location_city",
     "titleText": "Удобство",
     "contentText": "Окно в каждой из спален"
   },
-  "commentsThree": {
+  "three": {
     "title": "whatshot",
     "titleText": "Уют",
     "contentText": "Номер оснащён камином",

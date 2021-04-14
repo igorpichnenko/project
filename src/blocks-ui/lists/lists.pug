@@ -1,11 +1,11 @@
 mixin lists(lists)
-  - const { checkListOne, checkListTwo, titleRich, rich, richTwo, titleBullet, bullet } = lists
+  - const { one,two,titleRich,rich,richTwo,titleBullet,bullet } = lists
   .lists
     .lists__row
       .lists__row
-        +checkbox-list(checkListOne)
+        +checkbox-list(one)
       .lists__row 
-        +checkbox-list(checkListTwo)
+        +checkbox-list(two)
     .lists__row
       .lists__title
         +title(titleRich)

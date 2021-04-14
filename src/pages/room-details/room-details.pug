@@ -21,7 +21,7 @@ block content
   -
     content = require("./room-details.json");
 
-    const { items,info,comments,commentsTwo,commentsThree,person,patricia,text,formLux } = content
+    const { items,info,one,two,three,person,patricia,text,formLux } = content
     const { pie,review,number,bullet,rules,cancel } = items
 
   section.room-details
@@ -34,9 +34,9 @@ block content
         .room-details__comment
           +title(info)
           .room-details__comments
-            +comments(comments)
-            +comments(commentsTwo)
-            +comments(commentsThree)
+            +comments(one)
+            +comments(two)
+            +comments(three)
 
         .room-details__pie
           +pie(pie)

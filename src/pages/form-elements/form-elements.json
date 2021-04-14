@@ -1,25 +1,40 @@
 {
   "inputs": {
+    "items":{
+      "Imask": {
+        "mods": "standard-size input_mask",
+        "inType": "text",
+        "text": "ДД.ММ.ГГГГ",
+        "label": "masked text field"
+      },
+      "hover": {
+        "title": "default",
+        "mods": "hover form-elements__title_top-heading"
+      },
+      "focus": {
+        "title": "hover / focus",
+        "mods": "hover form-elements__title_top-heading"
+      },
+      "mods": "js-datepicker-container",
+  
+      "pretty": {
+        "mods": "hover",
+        "inType": "text",
+        "text": "This is pretty awesome",
+        "label": "text field"
+      },
+      "arrow": {
+        "label": "subscription text field",
+        "button": "arrow_forward",
+        "inType": "email",
+        "text": "Email",
+        "mod": "text-field__button"
+      }
+    },
     "email": {
       "inType": "email",
       "label": "text field"
-    },
-    "hover": {
-      "title": "default",
-      "mods": "hover form-elements__title_top-heading"
-    },
-    "focus": {
-      "title": "hover / focus",
-      "mods": "hover form-elements__title_top-heading"
-    },
-    "mods": "js-datepicker-container",
-
-    "pretty": {
-      "mods": "hover",
-      "inType": "text",
-      "text": "This is pretty awesome",
-      "label": "text field"
-    },
+    }, 
     "drop": {
       "title": "dropdown"
     },
@@ -36,12 +51,7 @@
         }]
     },
 
-    "Imask": {
-      "mods": "standard-size input_mask",
-      "inType": "text",
-      "text": "ДД.ММ.ГГГГ",
-      "label": "masked text field"
-    },
+    
     "start": {
       "label": "date dropdown",
       "text": "ДД.ММ.ГГГГ"
@@ -56,19 +66,12 @@
       "mods": "small-size js-datepicker",
       "data": "d M",
       "label": "filter date dropdown"
-    },
-    "arrow": {
-      "label": "subscription text field",
-      "button": "arrow_forward",
-      "inType": "email",
-      "text": "Email",
-      "mod": "text-field__button"
-    }
+    } 
   },
 
   "checkboxes": {
-    "title": {
-    "titleCheck": {
+    "items": {
+    "check": {
       "title": "checkbox buttons"
     },
     "titleToggle": {
@@ -80,21 +83,23 @@
     },
     "titleLike": {
       "title": "like button"
-    }
-  },
-    "checkOne": {
+    },
+    "toggle": {
+      "mod": "checked"
+    },
+    "one": {
       "text": "Можно курить"
     },
-    "checkTwo": {
+    "two": {
       "text": "Можно с питомцами",
       "checked": "checked"
     },
-    "checkThree": {
+    "three": {
       "text": "Можно пригласить гостей (до 10 человек)",
       "mods": "checkbox__wrap",
       "checked": "checked"
-    },
-
+    }
+  },
     "radio": {
       "title": "radio buttons"
     },
@@ -106,10 +111,6 @@
     "radioTwo": {
       "text": "Женщина",
       "name": "man"
-    },
-    
-    "toggle": {
-      "mod": "checked"
     },
     
     "like": {
@@ -254,7 +255,7 @@
   },
 
   "lists": {
-    "checkListOne": {
+    "one": {
 
       "options": [{
         "text": "Завтрак"
@@ -275,7 +276,7 @@
           "text":"Шампунь"
         }]
     },
-    "checkListTwo": {
+    "two": {
       "mods": "checkbox-list__icon_rotated",
       "mod": "checkbox-list__visible",
       "options": [{

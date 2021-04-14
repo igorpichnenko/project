@@ -34,11 +34,11 @@
       
       "tax": "Сбор за дополнительные услуги",
 
-      "startData": {
+      "start": {
         "text": "19.08.2019",
         "label": "Прибытие"
       },
-      "endData": {
+      "end": {
         "text": "23.08.2019",
         "mods": "small-size js-datepicker-end",
         "label": "Выезд"
@@ -71,38 +71,42 @@
 
   "formReg": {
     "data": {
-      "regAccount": {
-        "title": "Регистрация аккаунта",
-        "mods": "large-size",
-        "tag": "h1"
+      "items":{
+        "regAccount": {
+          "title": "Регистрация аккаунта",
+          "mods": "large-size",
+          "tag": "h1"
+        },
+        "name": {
+          "inType": "text",
+          "text": "Имя"
+        },
+        "surname": {
+          "inType": "text",
+          "text": "Фамилия"
+        },
+  
+        "radioMan": {
+          "text": "Мужчина",
+          "name": "man",
+          "checked": "checked"
+        },
+        "radioWoman": {
+          "text": "Женщина",
+          "name": "man"
+        },
+        "title": {
+          "title": "Данные для входа в сервис"
+        }
       },
-      "name": {
-        "inType": "text",
-        "text": "Имя"
-      },
-      "surname": {
-        "inType": "text",
-        "text": "Фамилия"
-      },
-
-      "radioMan": {
-        "text": "Мужчина",
-        "name": "man",
-        "checked": "checked"
-      },
-      "radioWoman": {
-        "text": "Женщина",
-        "name": "man"
-      },
+      
       "dataField": {
         "mods": "standard-size input_mask",
         "inType": "text",
         "text": "ДД.ММ.ГГГГ",
         "label": "Дата рождения"
       },
-      "title": {
-        "title": "Данные для входа в сервис"
-      },
+     
       "email": {
         "inType": "email"
       },

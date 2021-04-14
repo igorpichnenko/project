@@ -25,7 +25,12 @@
           "number": "1"
         }]
     },
-    "dropdownMedium": {
+    "richTwo": {
+      "title": "Помощник для инвалидов",
+      "text": "На 1 этаже вас встретит специалист и проводит до номера",
+      "mods": "checkbox-rich__wrap"
+    },
+    "medium": {
       "modBtn": "dropdown__button_hidden",
       "title": "Сколько спален и кроватей",
       "items": [{
@@ -34,6 +39,7 @@
         "number": "2",
         "max": "5"
       },
+      
         {
           "title": "кровати",
           "min": "1",
@@ -76,7 +82,7 @@
   },
 
  
-  "subtitle": {
+  "text": {
     "title": "гости"
   },
  
@@ -100,12 +106,7 @@
     "title": "Широкий коридор",
     "text": "Ширина коридоров в номере не менее 91 см."
   },
-  "richTwo": {
-    "title": "Помощник для инвалидов",
-    "text": "На 1 этаже вас встретит специалист и проводит до номера",
-    "mods": "checkbox-rich__wrap"
-  },
-  "titleDrop": {
+  "drop": {
     "title": "Удобства номера"
   },
 
@@ -128,7 +129,7 @@
         "images": ["room1.jpg","room2.jpg","room3.jpg","room4.jpg"]
       }
     },
-    "One": {
+    "one": {
       "data": {
         "className": "price__text_small-size",
         "text": "840",
@@ -139,7 +140,7 @@
         "images": ["room2.jpg","room8.jpg","room9.jpg","room3.jpg"]
       }
     },
-    "Two": {
+    "two": {
       "data": {
         "className": "price__text_small-size",
         "classlux": "price__lux room-search__lux",
@@ -152,7 +153,7 @@
         "images": ["room3.jpg","room4.jpg","room2.jpg","room1.jpg"]
       }
     },
-    "Three": {
+    "three": {
       "data": {
         "className": "price__text_small-size",
         "text": "856",
@@ -163,7 +164,7 @@
         "images": ["room4.jpg","room1.jpg","room7.jpg","room9.jpg"]
       }
     },
-    "Four": {
+    "four": {
       "data": {
         "className": "price__text_small-size",
         "text": "740",
@@ -174,7 +175,7 @@
         "images": ["room5.jpg","room7.jpg","room11.jpg","room12.jpg"]
       }
     },
-    "Five": {
+    "five": {
       "data": {
         "className": "price__text_small-size",
         "text": "982",
@@ -185,7 +186,7 @@
         "images": ["room6.jpg","room4.jpg","room1.jpg","room10.jpg"]
       }
     },
-    "Six": {
+    "six": {
       "data": {
         "className": "price__text_small-size",
         "text": "678",
@@ -196,7 +197,7 @@
         "images": ["room7.jpg","room9.jpg","room8.jpg","room3.jpg"]
       }
     },
-    "Seven": {
+    "seven": {
       "data": {
         "className": "price__text_small-size",
         "text": "450",
@@ -207,7 +208,7 @@
         "images": ["room8.jpg","room6.jpg","room4.jpg","room2.jpg"]
       }
     },
-    "Eight": {
+    "eight": {
       "data": {
         "className": "price__text_small-size",
         "text": "350",
@@ -218,7 +219,7 @@
         "images": ["room9.jpg","room1.jpg","room10.jpg","room12.jpg"]
       }
     },
-    "Nine": {
+    "nine": {
       "data": {
         "className": "price__text_small-size",
         "text": "666",
@@ -229,7 +230,7 @@
         "images": ["room10.jpg","room8.jpg","room12.jpg","room3.jpg"]
       }
     },
-    "Ten": {
+    "ten": {
       "data": {
         "className": "price__text_small-size",
         "text": "444",
@@ -240,7 +241,7 @@
         "images": ["room11.jpg","room4.jpg","room1.jpg","room7.jpg"]
       }
     },
-    "Eleven": {
+    "eleven": {
       "data": {
         "className": "price__text_small-size",
         "text": "352",
