@@ -9,16 +9,16 @@
       },
       "hover": {
         "title": "default",
-        "mods": "hover form-elements__title_with-top-position"
+        "mods": "focused form-elements__title_with-top-position"
       },
       "focus": {
         "title": "hover / focus",
-        "mods": "hover form-elements__title_with-top-position"
+        "mods": "focused form-elements__title_with-top-position"
       },
       "mods": "js-datepicker-container",
   
       "pretty": {
-        "mods": "hover",
+        "mods": "focused",
         "inType": "text",
         "text": "This is pretty awesome",
         "label": "text field"
@@ -200,7 +200,7 @@
     },
     "expanded": {
       "title": "expanded",
-      "mods": "hover form-elements__title_with-top-position"
+      "mods": "focused form-elements__title_with-top-position"
     },
     "bedrooms": {
       "mod": "dropdown_is-visible",

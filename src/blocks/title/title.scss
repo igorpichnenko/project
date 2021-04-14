@@ -6,7 +6,7 @@
     @include small-text;
   }
 
-  &_hover {
+  &_focused {
     text-transform: uppercase;
 
     @include small-text($dark50, normal);
