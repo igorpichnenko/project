@@ -9,11 +9,11 @@
       },
       "hover": {
         "title": "default",
-        "mods": "hover form-elements__title_top-heading"
+        "mods": "hover form-elements__title_with-top-position"
       },
       "focus": {
         "title": "hover / focus",
-        "mods": "hover form-elements__title_top-heading"
+        "mods": "hover form-elements__title_with-top-position"
       },
       "mods": "js-datepicker-container",
   
@@ -200,7 +200,7 @@
     },
     "expanded": {
       "title": "expanded",
-      "mods": "hover form-elements__title_top-heading"
+      "mods": "hover form-elements__title_with-top-position"
     },
     "bedrooms": {
       "mod": "dropdown_is-visible",
@@ -278,7 +278,7 @@
     },
     "two": {
       "mods": "checkbox-list__icon_rotated",
-      "mod": "checkbox-list__visible",
+      "mod": "checkbox-list_is-visible",
       "options": [{
         "text": "Завтрак"
       },

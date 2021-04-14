@@ -65,12 +65,7 @@
   &__text {
     @include body-text;
   }
-
-  &__text_position-left {
-    margin-left: 1px;
-    margin-top: .5px;
-  }
-
+  
   &__label {
     border: 1px solid rgba(0, 0, 0, .12);
     border-radius: 100px;

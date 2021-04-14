@@ -40,22 +40,22 @@
     {
       "title": "H1",
       "text": "This one is the sub-section or widget title",
-      "className": "h1"
+      "className": "size-large"
     },
     {
       "title": "H2",
       "text": "Next one is the item title inside widgets",
-      "className": "h2"
+      "className": "size-medium"
     },
     {
       "title": "H3",
       "text": "This is a label or CTA text",
-      "className": "h3"
+      "className": "size-small"
     },
     {
       "title": "Body",
       "text": "This is the body text which is used for most of the design, like paragraphs, lists, etc.",
-      "className": "body"
+      "className": "size-normal"
     }
   ]
 }

@@ -26,19 +26,19 @@
   &__title {
     @include large-text($dark25, $fw: normal);
 
-    &_h1 {
+    &_size-large {
       padding-left: 1.5px;
     }
 
-    &_h2 {
+    &_size-medium {
       @include medium-text($col: $dark25, $fw: normal);
     }
 
-    &_h3 {
+    &_size-small {
       @include small-text($col: $dark25, $fw: normal);
     }
 
-    &_body {
+    &_size-normal {
       margin-left: 1px;
 
       @include body-text($dark25);
@@ -50,24 +50,24 @@
 
     @include large-text;
 
-    &_h1 {
+    &_size-large {
       padding-left: 1px;
     }
 
-    &_h2 {
+    &_size-medium {
       padding-top: .8px;
 
       @include medium-text;
     }
 
-    &_h3 {
+    &_size-small {
       padding-left: 1.4px;
       text-transform: uppercase;
 
       @include small-text;
     }
 
-    &_body {
+    &_size-normal {
       margin-bottom: .8px;
       padding-left: 1px;
       width: 310px;
