@@ -198,6 +198,7 @@ class Dropdown {
     const formNewborns = ['младенец',
       'младенца',
       'младенцев'];
+      
     this.messageGuests = this.formDeclension(this.sumAdult, formGuests);
 
     this.messageNewborns = this.formDeclension(this.sumBabies, formNewborns);
