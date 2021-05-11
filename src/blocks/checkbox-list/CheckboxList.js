@@ -1,27 +1,24 @@
 class CheckboxList {
-  private accordion: Element
 
-  private elements: HTMLElement[]
-
-  constructor(accordion: Element) {
+  constructor(accordion) {
     this.accordion = accordion;
     this.elements = this.findElement();
     this.bindEventListeners();
   }
 
-  private findElement(): HTMLElement[] {
-    const panel = this.accordion.querySelector('.js-checkbox-list__wrapper')! as HTMLElement;
-    const icon = this.accordion.querySelector('.js-checkbox-list__icon')! as HTMLElement;
+  findElement(){
+    const panel = this.accordion.querySelector('.js-checkbox-list__wrapper');
+    const icon = this.accordion.querySelector('.js-checkbox-list__icon');
     return [panel,
       icon];
   }
 
-  private bindEventListeners() {
+   bindEventListeners() {
     this.handleAccordionClick = this.handleAccordionClick.bind(this);
     this.accordion.addEventListener('click', this.handleAccordionClick);
   }
 
-  private handleAccordionClick() {
+  handleAccordionClick() {
     if (this.elements[0].style.display === 'block') {
       this.elements[0].style.display = 'none';
       this.elements[1].classList.toggle('checkbox-list__icon_rotated');

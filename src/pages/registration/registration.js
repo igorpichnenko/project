@@ -5,21 +5,18 @@ import '../../blocks/burger/burger-init';
 import '../../blocks/iMask/iMask-init';
 
  class LogicRoomReg {
-    private room: Element
+   
   
-    private elements: Element[]
-  
-    constructor(room: Element) {
+    constructor(room) {
       this.room = room;
       this.elements = this.findElement();
       this.bindEventListeners();
     }
-  
-    private findElement(): Element[] {
-      const buttonSignIn = this.room.querySelector('.js-button_signIn')!;
-      const buttonCreateAccount = this.room.querySelector('.js-button_regCreate')!;
-      const formSignIn = this.room.querySelector('.js-registration-container__signing')!;
-      const formCreate = this.room.querySelector('.js-registration-container__reg')!;
+ findElement() {
+      const buttonSignIn = this.room.querySelector('.js-button_signIn');
+      const buttonCreateAccount = this.room.querySelector('.js-button_regCreate');
+      const formSignIn = this.room.querySelector('.js-registration-container__signing');
+      const formCreate = this.room.querySelector('.js-registration-container__reg');
   
       return [buttonSignIn,
         buttonCreateAccount,
@@ -27,7 +24,7 @@ import '../../blocks/iMask/iMask-init';
         formSignIn];
     }
   
-    private bindEventListeners() {
+     bindEventListeners() {
       this.handleSignInButtonClick = this.handleSignInButtonClick.bind(this);
       this.elements[0].addEventListener('click', this.handleSignInButtonClick);
   
@@ -35,7 +32,7 @@ import '../../blocks/iMask/iMask-init';
       this.elements[1].addEventListener('click', this.handleAccountButtonClick);
     }
   
-    private handleAccountButtonClick() {
+   handleAccountButtonClick() {
       this.elements[2].classList.toggle('registration-container_is-visible');
       this.elements[3].classList.remove('registration-container_is-visible');
       window.history.pushState({
@@ -45,7 +42,7 @@ import '../../blocks/iMask/iMask-init';
       this.room.classList.remove('registration-container__signing-background');
     }
   
-    private handleSignInButtonClick() {
+     handleSignInButtonClick() {
       this.elements[3].classList.toggle('registration-container_is-visible');
       this.elements[2].classList.remove('registration-container_is-visible');
       window.history.pushState({

@@ -1,27 +1,24 @@
 class Burger {
-  private header: Element
-
-  private elements: Element[]
-
-  constructor(header: Element) {
+  
+  constructor(header) {
     this.header = header;
     this.elements = this.findElement();
     this.bindEventListeners();
   }
 
-  private findElement(): Element[] {
-    const navbar = this.header.querySelector('.js-header-nav')!;
-    const button = this.header.querySelector('.js-burger__item')!;
+ findElement() {
+    const navbar = this.header.querySelector('.js-header-nav');
+    const button = this.header.querySelector('.js-burger__item');
     return [navbar,
       button];
   }
 
-  private bindEventListeners() {
+  bindEventListeners() {
     this.handleButtonClick = this.handleButtonClick.bind(this);
     this.elements[1].addEventListener('click', this.handleButtonClick);
   }
 
-  private handleButtonClick() {
+  handleButtonClick() {
     this.elements[1].classList.toggle('burger_active-item');
     this.elements[0].classList.toggle('burger_is-visible');
   }

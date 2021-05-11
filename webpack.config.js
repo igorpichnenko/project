@@ -11,19 +11,19 @@ const ghpages = require('gh-pages');
 
 module.exports = {
   entry: {
-    'index': './src/pages/index.ts',
-    'registration': './src/pages/registration/registration.ts',
-    'room-search': './src/pages/room-search/room-search.ts',
-    'details': './src/pages/room-details/room-details.ts',
-    'landing': './src/pages/landing/landing.ts',
-    'color-type': './src/pages/color-type/color-type.ts',
-    'headers-footers': './src/pages/headers-footers/headers-footers.ts',
-    'form-elements': './src/pages/form-elements/form-elements.ts',
-    'cards': './src/pages/cards/cards.ts',
+    'index': './src/pages/index.js',
+    'registration': './src/pages/registration/registration.js',
+    'room-search': './src/pages/room-search/room-search.js',
+    'details': './src/pages/room-details/room-details.js',
+    'landing': './src/pages/landing/landing.js',
+    'color-type': './src/pages/color-type/color-type.js',
+    'headers-footers': './src/pages/headers-footers/headers-footers.js',
+    'form-elements': './src/pages/form-elements/form-elements.js',
+    'cards': './src/pages/cards/cards.js',
   },
   resolve: {
     extensions: ['.js',
-      '.ts',
+      
       '.json'],
   },
   output: {
@@ -53,11 +53,6 @@ module.exports = {
             }
           },
           'sass-loader']
-      },
-      {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
       },
       {
         test: /\.pug$/,
