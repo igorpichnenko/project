@@ -12,6 +12,7 @@ npm install
 ## Запуск разработки
 ```
 npm run start
+(port 8080)
 ```
 ## Билд 
 ```
